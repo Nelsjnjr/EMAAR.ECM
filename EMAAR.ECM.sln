@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{95965C52-E791-4D58-A71A-CCE7A969DA10}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{FFE7C731-AB9F-4B1A-981C-5024ABF419E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{0B776C14-1336-44FB-BEA9-03E309FE676C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{073A5A3F-26E7-44BD-A84C-F4791B69E0A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Project.Website", "src\Project\Website\code\EMAAR.ECM.Project.Website.csproj", "{E9752059-9A34-4CFA-9B29-80DD8485F3C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ORM", "ORM", "{4A5988D6-DC30-4374-AD84-6D260C69FA5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Foundation.ORM", "src\Foundation\ORM\code\EMAAR.ECM.Foundation.ORM.csproj", "{06009BA6-B14B-4018-9209-F483CB820555}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Navigation", "Navigation", "{4E5BB3FA-FAD3-46BB-AA03-C0F905885408}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Feature.Navigation", "src\Feature\Navigation\code\EMAAR.ECM.Feature.Navigation.csproj", "{E7E5AEE5-550B-40A1-ADE3-4220326F62B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{DE7EBC49-2A6F-4999-8FA7-00E8978022A4}"
+	ProjectSection(SolutionItems) = preProject
+		gulp-config.js = gulp-config.js
+		gulpfile.js = gulpfile.js
+		package.json = package.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TDS", "TDS", "{2F379CF4-1A11-47F6-921B-940FB98755F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ErrorHandling", "ErrorHandling", "{F87BB540-719F-45EA-BACC-5DCCC365B345}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Foundation.ErrorHandling", "src\Foundation\code\EMAAR.ECM.Foundation.ErrorHandling.csproj", "{CE84DA7C-E46B-442E-BFF0-6BACDB7F33A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9752059-9A34-4CFA-9B29-80DD8485F3C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9752059-9A34-4CFA-9B29-80DD8485F3C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9752059-9A34-4CFA-9B29-80DD8485F3C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9752059-9A34-4CFA-9B29-80DD8485F3C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06009BA6-B14B-4018-9209-F483CB820555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06009BA6-B14B-4018-9209-F483CB820555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06009BA6-B14B-4018-9209-F483CB820555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06009BA6-B14B-4018-9209-F483CB820555}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7E5AEE5-550B-40A1-ADE3-4220326F62B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7E5AEE5-550B-40A1-ADE3-4220326F62B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7E5AEE5-550B-40A1-ADE3-4220326F62B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7E5AEE5-550B-40A1-ADE3-4220326F62B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE84DA7C-E46B-442E-BFF0-6BACDB7F33A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE84DA7C-E46B-442E-BFF0-6BACDB7F33A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE84DA7C-E46B-442E-BFF0-6BACDB7F33A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE84DA7C-E46B-442E-BFF0-6BACDB7F33A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{073A5A3F-26E7-44BD-A84C-F4791B69E0A6} = {0B776C14-1336-44FB-BEA9-03E309FE676C}
+		{E9752059-9A34-4CFA-9B29-80DD8485F3C4} = {073A5A3F-26E7-44BD-A84C-F4791B69E0A6}
+		{4A5988D6-DC30-4374-AD84-6D260C69FA5D} = {95965C52-E791-4D58-A71A-CCE7A969DA10}
+		{06009BA6-B14B-4018-9209-F483CB820555} = {4A5988D6-DC30-4374-AD84-6D260C69FA5D}
+		{4E5BB3FA-FAD3-46BB-AA03-C0F905885408} = {FFE7C731-AB9F-4B1A-981C-5024ABF419E4}
+		{E7E5AEE5-550B-40A1-ADE3-4220326F62B2} = {4E5BB3FA-FAD3-46BB-AA03-C0F905885408}
+		{F87BB540-719F-45EA-BACC-5DCCC365B345} = {95965C52-E791-4D58-A71A-CCE7A969DA10}
+		{CE84DA7C-E46B-442E-BFF0-6BACDB7F33A3} = {F87BB540-719F-45EA-BACC-5DCCC365B345}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {19DFE5D1-44BF-4ED4-8BC4-548544D4F79B}
+	EndGlobalSection
+EndGlobal
