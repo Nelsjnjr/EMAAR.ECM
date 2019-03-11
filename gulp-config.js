@@ -1,5 +1,5 @@
 module.exports = function () {
-    var instanceRoot = "C:\\inetpub\\wwwroot\\EMAAR.ECM.dev";
+    var instanceRoot = "D:\\Nelson\\sc1.local";
   var config = {
     websiteRoot: instanceRoot + "\\",
     sitecoreLibraries: instanceRoot + "\\bin",

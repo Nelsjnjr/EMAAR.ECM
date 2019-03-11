@@ -1,0 +1,107 @@
+//Revision: 059dff7f-ea63-4065-bdce-be9c8258f85e
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature
+{
+
+
+ 	/// <summary>
+	/// ITestGlass Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/TestGlass</para>	
+	/// <para>ID: a0bc9e43-93d4-4135-b30d-0f54e58d3f22</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=ITestGlassConstants.TemplateIdString )] //, Cachable = true
+	public partial interface ITestGlass : IGlassBase 
+	{
+								/// <summary>
+					/// The Description field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: 43b91dcc-3382-4473-9844-27a5d1dd73b0</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(ITestGlassConstants.DescriptionFieldName)]
+					string Description  {get; set;}
+			
+								/// <summary>
+					/// The Title field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: 85c09877-1c43-4b80-8785-6f6cff57cf1e</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(ITestGlassConstants.TitleFieldName)]
+					string Title  {get; set;}
+			
+				}
+
+
+	public static partial class ITestGlassConstants{
+
+			public const string TemplateIdString = "a0bc9e43-93d4-4135-b30d-0f54e58d3f22";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "TestGlass";
+
+					
+			public static readonly ID DescriptionFieldId = new ID("43b91dcc-3382-4473-9844-27a5d1dd73b0");
+			public const string DescriptionFieldName = "Description";
+			
+					
+			public static readonly ID TitleFieldId = new ID("85c09877-1c43-4b80-8785-6f6cff57cf1e");
+			public const string TitleFieldName = "Title";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// TestGlass
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/TestGlass</para>	
+	/// <para>ID: a0bc9e43-93d4-4135-b30d-0f54e58d3f22</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=ITestGlassConstants.TemplateIdString)] //, Cachable = true
+	public partial class TestGlass  : GlassBase, ITestGlass 
+	{
+	   
+						/// <summary>
+				/// The Description field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 43b91dcc-3382-4473-9844-27a5d1dd73b0</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(ITestGlassConstants.DescriptionFieldName)]
+				public virtual string Description  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 85c09877-1c43-4b80-8785-6f6cff57cf1e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(ITestGlassConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
+			
+	}
+}
+

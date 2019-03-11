@@ -229,7 +229,7 @@ gulp.task("Publish-Project",
 gulp.task("Publish-Assemblies",
     function() {
         var root = "./src";
-        var binFiles = root + "/**/code/**/bin/Sitecore.{Feature,Foundation,Habitat}.*.{dll,pdb}";
+        var binFiles = root + "/**/code/**/bin/Emaar.ECM.{Feature,Foundation,Habitat}.*.{dll,pdb}";
         var destination = config.websiteRoot + "/bin/";
         return gulp.src(binFiles, { base: root })
             .pipe(rename({ dirname: "" }))
