@@ -15,9 +15,9 @@ namespace EMAAR.ECM.Feature.Banner.Repositories
     [Service(typeof(IBannerRepository))]
     public class BannerRepository : IBannerRepository
     {
-        private readonly IMvcContext _mvcContext;
+        private readonly Func<IMvcContext> _mvcContext;
         private readonly IImageText _imageText;
-        public BannerRepository(IMvcContext mvcContext, IImageText imageText)
+        public BannerRepository(Func<IMvcContext> mvcContext, IImageText imageText)
         {
             _imageText = imageText;
             _mvcContext = mvcContext;
@@ -30,13 +30,13 @@ namespace EMAAR.ECM.Feature.Banner.Repositories
         public IImageText GetBannerVariants(out Alignment alignment)
         {
             alignment = Alignment.Left;//Assigning default varaiant to left unless if nothing selected in sitecore
-            IImageText model = _mvcContext.GetDataSourceItem<IImageText>();
+            IImageText model = _mvcContext().GetDataSourceItem<IImageText>();
             if (model != null)
             {
-                IParametersTemplate_ImageAlignment renderingParameter = _mvcContext.GetRenderingParameters<IParametersTemplate_ImageAlignment>();
+                IParametersTemplate_ImageAlignment renderingParameter = _mvcContext().GetRenderingParameters<IParametersTemplate_ImageAlignment>();
                 if (renderingParameter != null && renderingParameter.Image_Alignment != Guid.Empty)
                 {
-                    ISettings settings = _mvcContext.SitecoreService.GetItem<ISettings>(renderingParameter.Image_Alignment);
+                    ISettings settings = _mvcContext().SitecoreService.GetItem<ISettings>(renderingParameter.Image_Alignment);
                     Enum.TryParse(settings.Key, out alignment);
                 }
             }
