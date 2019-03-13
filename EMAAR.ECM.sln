@@ -41,6 +41,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInjection", "Depe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.DependencyInjection", "src\Foundation\DependencyInjection\code\Sitecore.Foundation.DependencyInjection.csproj", "{E7ACC4FC-B18C-45A3-8871-D4AE93471623}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Banner", "Banner", "{07EE97C3-856E-4BBF-BB14-C538E4C3B6A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Feature.Banner", "src\Feature\Banner\code\EMAAR.ECM.Feature.Banner.csproj", "{551879C4-C1D7-4BF1-997D-CB0C796430B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Constants", "Constants", "{F721D22A-FB5B-431A-A0AF-D36E37544DB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Foundation.Constants", "src\Foundation\Constants\code\EMAAR.ECM.Foundation.Constants.csproj", "{AE0F609C-CC68-45B2-A242-A537B657EB2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +81,14 @@ Global
 		{E7ACC4FC-B18C-45A3-8871-D4AE93471623}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7ACC4FC-B18C-45A3-8871-D4AE93471623}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7ACC4FC-B18C-45A3-8871-D4AE93471623}.Release|Any CPU.Build.0 = Release|Any CPU
+		{551879C4-C1D7-4BF1-997D-CB0C796430B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{551879C4-C1D7-4BF1-997D-CB0C796430B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{551879C4-C1D7-4BF1-997D-CB0C796430B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{551879C4-C1D7-4BF1-997D-CB0C796430B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE0F609C-CC68-45B2-A242-A537B657EB2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE0F609C-CC68-45B2-A242-A537B657EB2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE0F609C-CC68-45B2-A242-A537B657EB2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE0F609C-CC68-45B2-A242-A537B657EB2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,9 +106,13 @@ Global
 		{85175316-7AAE-4E6D-9303-2E616184CBA1} = {E4020F51-AE16-4CC8-8D88-03D1B993BBCF}
 		{3C51C9B8-38C4-411D-B411-5EED260E8F1B} = {95965C52-E791-4D58-A71A-CCE7A969DA10}
 		{E7ACC4FC-B18C-45A3-8871-D4AE93471623} = {3C51C9B8-38C4-411D-B411-5EED260E8F1B}
+		{07EE97C3-856E-4BBF-BB14-C538E4C3B6A0} = {FFE7C731-AB9F-4B1A-981C-5024ABF419E4}
+		{551879C4-C1D7-4BF1-997D-CB0C796430B4} = {07EE97C3-856E-4BBF-BB14-C538E4C3B6A0}
+		{F721D22A-FB5B-431A-A0AF-D36E37544DB9} = {95965C52-E791-4D58-A71A-CCE7A969DA10}
+		{AE0F609C-CC68-45B2-A242-A537B657EB2D} = {F721D22A-FB5B-431A-A0AF-D36E37544DB9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {19DFE5D1-44BF-4ED4-8BC4-548544D4F79B}
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {19DFE5D1-44BF-4ED4-8BC4-548544D4F79B}
 	EndGlobalSection
 EndGlobal
