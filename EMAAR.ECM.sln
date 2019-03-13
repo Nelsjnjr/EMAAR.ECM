@@ -31,7 +31,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configurat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ErrorHandling", "ErrorHandling", "{F87BB540-719F-45EA-BACC-5DCCC365B345}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Foundation.ErrorHandling", "src\Foundation\code\EMAAR.ECM.Foundation.ErrorHandling.csproj", "{CE84DA7C-E46B-442E-BFF0-6BACDB7F33A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Foundation.ErrorHandling", "src\Foundation\ErrorHandling\code\EMAAR.ECM.Foundation.ErrorHandling.csproj", "{CE84DA7C-E46B-442E-BFF0-6BACDB7F33A3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serialization", "Serialization", "{E4020F51-AE16-4CC8-8D88-03D1B993BBCF}"
 EndProject
