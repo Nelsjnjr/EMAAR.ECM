@@ -104,4 +104,8 @@
   <Item ItemPath="/sitecore/layout/Renderings/Feature" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
   <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
   <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM/Banner" ItemIcon="/temp/iconcache/software/16x16/element.png" />
+  <Item ItemPath="/sitecore/content/ECM/Home" ItemIcon="/temp/iconcache/network/16x16/home.png" />
+  <Item ItemPath="/sitecore/content/ECM/Home/a place where children grow" ItemIcon="/temp/iconcache/applications/16x16/text_rich_colored.png" />
+  <Item ItemPath="/sitecore/content/ECM/Home/play eat laugh" ItemIcon="/temp/iconcache/applications/16x16/text_rich_colored.png" />
+  <Item ItemPath="/sitecore/content/ECM/Home/why should you make downtown dubai home" ItemIcon="/temp/iconcache/applications/16x16/text_rich_colored.png" />
 </ItemIconCache>

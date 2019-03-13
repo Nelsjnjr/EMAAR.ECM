@@ -305,7 +305,7 @@ sitecore\admin
 ----version----
 language: en
 version: 1
-revision: f7fc1bd1-06bf-4b8a-8fb1-da5b22eb0dc6
+revision: 2a727563-4ee6-4c2a-9d4d-d9b708f96848
 
 ----field----
 field: {75577384-3C97-45DA-A847-81B00500E250}
@@ -348,9 +348,9 @@ Welcome to Sitecore.
 field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
 name: __Final Renderings
 key: __final renderings
-content-length: 330
+content-length: 934
 
-<r xmlns:p="p" xmlns:s="s" p:p="1" s:xsd="http://www.w3.org/2001/XMLSchema"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{48AD5A12-A4FD-4220-815E-EB660951057B}" p:before="*" s:ds="{CDAEBE58-1CFE-42AE-8797-ED52FB908938}" s:id="{100264D9-CFB1-4655-B4C8-BEBB422E5911}" s:par="Image Alignment=Left" s:ph="content" /></d></r>
+<r xmlns:p="p" xmlns:s="s" p:p="1" s:xsd="http://www.w3.org/2001/XMLSchema"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{48AD5A12-A4FD-4220-815E-EB660951057B}" p:before="*" s:ds="{CDAEBE58-1CFE-42AE-8797-ED52FB908938}" s:id="{100264D9-CFB1-4655-B4C8-BEBB422E5911}" s:par="Image Alignment=%7BFAACC429-FDC3-4315-ABFC-B23D7845529B%7D" s:ph="content" /><r uid="{CA8F454C-A933-4B2B-B31F-BBFB5262B2A9}" p:after="r[@uid='{48AD5A12-A4FD-4220-815E-EB660951057B}']" s:ds="{421487F0-30C1-4E47-B3D1-8683F7C6710E}" s:id="{100264D9-CFB1-4655-B4C8-BEBB422E5911}" s:par="Image Alignment=%7BE3740415-990F-44F2-89B4-2570666E5AE7%7D" s:ph="content" /><r uid="{10F8E65C-EDEC-47BF-99AD-C51349DED0DF}" p:after="r[@uid='{CA8F454C-A933-4B2B-B31F-BBFB5262B2A9}']" s:ds="{D14EE714-2DF9-4ADD-A991-A75F99E485DB}" s:id="{100264D9-CFB1-4655-B4C8-BEBB422E5911}" s:par="Image Alignment=%7BA5BEC681-9E27-46D7-AA97-9D95CF9F808C%7D" s:ph="content" /></d></r>
 ----field----
 field: {C8F93AFE-BFD4-4E8F-9C61-152559854661}
 name: __Valid from
@@ -392,14 +392,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f7fc1bd1-06bf-4b8a-8fb1-da5b22eb0dc6
+2a727563-4ee6-4c2a-9d4d-d9b708f96848
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190312T125932Z
+20190313T081917Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
