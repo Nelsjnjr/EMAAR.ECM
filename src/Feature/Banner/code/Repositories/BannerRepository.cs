@@ -29,14 +29,15 @@ namespace EMAAR.ECM.Feature.Banner.Repositories
 
         public IImageText GetBannerVariants(out Alignment alignment)
         {
+            var mvcContext = _mvcContext();
             alignment = Alignment.Left;//Assigning default varaiant to left unless if nothing selected in sitecore
-            IImageText model = _mvcContext().GetDataSourceItem<IImageText>();
+            IImageText model = mvcContext.GetDataSourceItem<IImageText>();
             if (model != null)
             {
-                IParametersTemplate_ImageAlignment renderingParameter = _mvcContext().GetRenderingParameters<IParametersTemplate_ImageAlignment>();
+                IParametersTemplate_ImageAlignment renderingParameter = mvcContext.GetRenderingParameters<IParametersTemplate_ImageAlignment>();
                 if (renderingParameter != null && renderingParameter.Image_Alignment != Guid.Empty)
                 {
-                    ISettings settings = _mvcContext().SitecoreService.GetItem<ISettings>(renderingParameter.Image_Alignment);
+                    ISettings settings = mvcContext.SitecoreService.GetItem<ISettings>(renderingParameter.Image_Alignment);
                     Enum.TryParse(settings.Key, out alignment);
                 }
             }
