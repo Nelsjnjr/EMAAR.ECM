@@ -1,0 +1,108 @@
+//Revision: 896a4c53-dab5-43f0-9605-853f90659cf6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
+{
+
+
+ 	/// <summary>
+	/// I_TitleDesc Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_TitleDesc</para>	
+	/// <para>ID: e50c06fa-f066-4400-a6f3-4bed23e726e0</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_TitleDescConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_TitleDesc : IGlassBase 
+	{
+								/// <summary>
+					/// The Description field.
+					/// <para></para>
+					/// <para>Field Type: Rich Text</para>		
+					/// <para>Field ID: 86ef63d0-7e10-4df7-80a7-28df2d6ba18f</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_TitleDescConstants.DescriptionFieldName)]
+					string Description  {get; set;}
+			
+								/// <summary>
+					/// The Title field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: cddd22f9-558a-4e98-a614-53c5e090fb96</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_TitleDescConstants.TitleFieldName)]
+					string Title  {get; set;}
+			
+				}
+
+
+	public static partial class I_TitleDescConstants{
+
+			public const string TemplateIdString = "e50c06fa-f066-4400-a6f3-4bed23e726e0";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_TitleDesc";
+
+					
+			public static readonly ID DescriptionFieldId = new ID("86ef63d0-7e10-4df7-80a7-28df2d6ba18f");
+			public const string DescriptionFieldName = "Description";
+			
+					
+			public static readonly ID TitleFieldId = new ID("cddd22f9-558a-4e98-a614-53c5e090fb96");
+			public const string TitleFieldName = "Title";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _TitleDesc
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_TitleDesc</para>	
+	/// <para>ID: e50c06fa-f066-4400-a6f3-4bed23e726e0</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_TitleDescConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_TitleDesc))]
+	public partial class _TitleDesc  : GlassBase, I_TitleDesc 
+	{
+	   
+						/// <summary>
+				/// The Description field.
+				/// <para></para>
+				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field ID: 86ef63d0-7e10-4df7-80a7-28df2d6ba18f</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_TitleDescConstants.DescriptionFieldName)]
+				public virtual string Description  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: cddd22f9-558a-4e98-a614-53c5e090fb96</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_TitleDescConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
+			
+	}
+}
+

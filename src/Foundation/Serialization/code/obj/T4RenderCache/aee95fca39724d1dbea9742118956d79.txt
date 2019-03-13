@@ -24,7 +24,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature
 	/// <para>Path: /sitecore/templates/Feature/Sample2</para>	
 	/// <para>ID: aee95fca-3972-4d1d-bea9-742118956d79</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=ISample2Constants.TemplateIdString )] //, Cachable = true
+	[SitecoreType(TemplateId=ISample2Constants.TemplateIdString,AutoMap=true )] //, Cachable = true
 	public partial interface ISample2 : IGlassBase 
 	{
 								/// <summary>
@@ -89,7 +89,8 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature
 	/// <para>Path: /sitecore/templates/Feature/Sample2</para>	
 	/// <para>ID: aee95fca-3972-4d1d-bea9-742118956d79</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=ISample2Constants.TemplateIdString)] //, Cachable = true
+	[SitecoreType(TemplateId=ISample2Constants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(ISample2))]
 	public partial class Sample2  : GlassBase, ISample2 
 	{
 	   

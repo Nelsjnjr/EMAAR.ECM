@@ -1,0 +1,143 @@
+//Revision: 440c5d6e-5f46-4ad4-ab01-9c13f27d0f59
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Banner
+{
+
+
+ 	/// <summary>
+	/// I_ImageText Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Banner/_ImageText</para>	
+	/// <para>ID: 0b50476d-6da5-43bb-ad05-93c12cab75bf</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_ImageTextConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_ImageText : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_Base
+	{
+								/// <summary>
+					/// The CTA Image field.
+					/// <para></para>
+					/// <para>Field Type: Image</para>		
+					/// <para>Field ID: 38e61e7f-0e33-4350-ad9a-e42a1db5e91a</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_ImageTextConstants.CTA_ImageFieldName)]
+					Image CTA_Image  {get; set;}
+			
+				}
+
+
+	public static partial class I_ImageTextConstants{
+
+			public const string TemplateIdString = "0b50476d-6da5-43bb-ad05-93c12cab75bf";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_ImageText";
+
+					
+			public static readonly ID CTA_ImageFieldId = new ID("38e61e7f-0e33-4350-ad9a-e42a1db5e91a");
+			public const string CTA_ImageFieldName = "CTA Image";
+			
+					
+			public static readonly ID DescriptionFieldId = new ID("86ef63d0-7e10-4df7-80a7-28df2d6ba18f");
+			public const string DescriptionFieldName = "Description";
+			
+					
+			public static readonly ID TitleFieldId = new ID("cddd22f9-558a-4e98-a614-53c5e090fb96");
+			public const string TitleFieldName = "Title";
+			
+					
+			public static readonly ID ImageFieldId = new ID("f6ba7b09-176f-4bb1-a680-c070d4b92c65");
+			public const string ImageFieldName = "Image";
+			
+					
+			public static readonly ID CTAFieldId = new ID("f9401c09-1121-4bb5-abed-48bc2b29de71");
+			public const string CTAFieldName = "CTA";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _ImageText
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Banner/_ImageText</para>	
+	/// <para>ID: 0b50476d-6da5-43bb-ad05-93c12cab75bf</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_ImageTextConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_ImageText))]
+	public partial class _ImageText  : GlassBase, I_ImageText 
+	{
+	   
+						/// <summary>
+				/// The CTA Image field.
+				/// <para></para>
+				/// <para>Field Type: Image</para>		
+				/// <para>Field ID: 38e61e7f-0e33-4350-ad9a-e42a1db5e91a</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_ImageTextConstants.CTA_ImageFieldName)]
+				public virtual Image CTA_Image  {get; set;}
+					
+						/// <summary>
+				/// The Description field.
+				/// <para></para>
+				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field ID: 86ef63d0-7e10-4df7-80a7-28df2d6ba18f</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_ImageTextConstants.DescriptionFieldName)]
+				public virtual string Description  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: cddd22f9-558a-4e98-a614-53c5e090fb96</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_ImageTextConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
+						/// <summary>
+				/// The Image field.
+				/// <para></para>
+				/// <para>Field Type: Image</para>		
+				/// <para>Field ID: f6ba7b09-176f-4bb1-a680-c070d4b92c65</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_ImageTextConstants.ImageFieldName)]
+				public virtual Image Image  {get; set;}
+					
+						/// <summary>
+				/// The CTA field.
+				/// <para></para>
+				/// <para>Field Type: General Link</para>		
+				/// <para>Field ID: f9401c09-1121-4bb5-abed-48bc2b29de71</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_ImageTextConstants.CTAFieldName)]
+				public virtual Link CTA  {get; set;}
+					
+			
+	}
+}
+

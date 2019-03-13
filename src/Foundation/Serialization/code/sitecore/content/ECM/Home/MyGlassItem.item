@@ -1,0 +1,91 @@
+----item----
+version: 1
+id: {841A2B8F-6FBF-4D5D-AE3A-D309514AAC13}
+database: master
+path: /sitecore/content/ECM/Home/MyGlassItem
+parent: {110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}
+name: MyGlassItem
+master: {00000000-0000-0000-0000-000000000000}
+template: {A0BC9E43-93D4-4135-B30D-0F54E58D3F22}
+templatekey: TestGlass
+created: 20190306T061029Z
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 224
+
+<r>
+  <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{B255404C-4183-4E11-BC30-74E4D4595BEC}">
+    <r id="{2EA6695E-AB34-482C-B6D6-9041591B6A71}" ph="content" uid="{5D498138-8FC4-46D2-9A96-58A8BC5B5A8C}" />
+  </d>
+</r>
+----version----
+language: en
+version: 1
+revision: 03c945eb-3b8e-4921-8a50-6ff0429ae891
+
+----field----
+field: {85C09877-1C43-4B80-8785-6F6CFF57CF1E}
+name: Title
+key: title
+content-length: 5
+
+Hello
+----field----
+field: {43B91DCC-3382-4473-9844-27A5D1DD73B0}
+name: Description
+key: description
+content-length: 23
+
+Hi Im from Glass object
+----field----
+field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
+name: __Final Renderings
+key: __final renderings
+content-length: 251
+
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{B255404C-4183-4E11-BC30-74E4D4595BEC}"><r id="{2EA6695E-AB34-482C-B6D6-9041591B6A71}" ph="main" uid="{769E809B-5BBB-4869-82E8-A2AE5A18B6C5}" /></d></r>
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190306T061029Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+03c945eb-3b8e-4921-8a50-6ff0429ae891
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190310T124930Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

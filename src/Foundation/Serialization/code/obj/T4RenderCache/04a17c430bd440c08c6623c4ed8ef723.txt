@@ -1,0 +1,83 @@
+//Revision: 3423fd92-0f15-4bcc-8a5e-59acda6b680f
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Banner.Parameters_Templates
+{
+
+
+ 	/// <summary>
+	/// I_ImageAlignment Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Banner/Parameters Templates/_ImageAlignment</para>	
+	/// <para>ID: 04a17c43-0bd4-40c0-8c66-23c4ed8ef723</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_ImageAlignmentConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_ImageAlignment : IGlassBase 
+	{
+								/// <summary>
+					/// The Image Alignment field.
+					/// <para></para>
+					/// <para>Field Type: Droplink</para>		
+					/// <para>Field ID: cd6c42bc-cfb9-4c9a-8ba7-fc857696abe3</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_ImageAlignmentConstants.Image_AlignmentFieldName)]
+					Guid Image_Alignment  {get; set;}
+			
+				}
+
+
+	public static partial class I_ImageAlignmentConstants{
+
+			public const string TemplateIdString = "04a17c43-0bd4-40c0-8c66-23c4ed8ef723";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_ImageAlignment";
+
+					
+			public static readonly ID Image_AlignmentFieldId = new ID("cd6c42bc-cfb9-4c9a-8ba7-fc857696abe3");
+			public const string Image_AlignmentFieldName = "Image Alignment";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _ImageAlignment
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Banner/Parameters Templates/_ImageAlignment</para>	
+	/// <para>ID: 04a17c43-0bd4-40c0-8c66-23c4ed8ef723</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_ImageAlignmentConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_ImageAlignment))]
+	public partial class _ImageAlignment  : GlassBase, I_ImageAlignment 
+	{
+	   
+						/// <summary>
+				/// The Image Alignment field.
+				/// <para></para>
+				/// <para>Field Type: Droplink</para>		
+				/// <para>Field ID: cd6c42bc-cfb9-4c9a-8ba7-fc857696abe3</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_ImageAlignmentConstants.Image_AlignmentFieldName)]
+				public virtual Guid Image_Alignment  {get; set;}
+					
+			
+	}
+}
+

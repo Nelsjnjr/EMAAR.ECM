@@ -1,0 +1,58 @@
+//Revision: 574ec479-681f-4c43-aab7-2c51fc1007a1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
+{
+
+
+ 	/// <summary>
+	/// I_BannerFolder Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_BannerFolder</para>	
+	/// <para>ID: 0b75430e-d4a4-439f-83da-a279ce705e71</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_BannerFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_BannerFolder : IGlassBase 
+	{
+				}
+
+
+	public static partial class I_BannerFolderConstants{
+
+			public const string TemplateIdString = "0b75430e-d4a4-439f-83da-a279ce705e71";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_BannerFolder";
+
+			
+
+	}
+
+	
+	/// <summary>
+	/// _BannerFolder
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_BannerFolder</para>	
+	/// <para>ID: 0b75430e-d4a4-439f-83da-a279ce705e71</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_BannerFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_BannerFolder))]
+	public partial class _BannerFolder  : GlassBase, I_BannerFolder 
+	{
+	   
+			
+	}
+}
+

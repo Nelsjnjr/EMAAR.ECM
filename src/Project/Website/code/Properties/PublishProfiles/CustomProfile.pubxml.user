@@ -9,14 +9,17 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <_PublishTargetUrl>D:\Nelson\sc1.local</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
+    <File Include="App_Config/Include/ECM/EMAAR.ECM.Project.Website.config">
+      <publishTime>03/11/2019 15:31:42</publishTime>
+    </File>
     <File Include="App_Config/Include/ECM/Sitecore.Project.Common.config">
       <publishTime>03/10/2019 17:07:24</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Project.Website.dll">
-      <publishTime>03/10/2019 17:08:50</publishTime>
+      <publishTime>03/11/2019 15:29:30</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Project.Website.pdb">
-      <publishTime>03/10/2019 17:08:50</publishTime>
+      <publishTime>03/11/2019 15:29:30</publishTime>
     </File>
     <File Include="bin/HtmlAgilityPack.dll">
       <publishTime>03/10/2019 14:20:19</publishTime>
@@ -282,6 +285,48 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/Site.css">
       <publishTime>03/10/2019 14:20:34</publishTime>
     </File>
+    <File Include="css/.DS_Store">
+      <publishTime>03/11/2019 15:17:17</publishTime>
+    </File>
+    <File Include="css/maps/style.css.map">
+      <publishTime>03/11/2019 15:17:17</publishTime>
+    </File>
+    <File Include="css/style.css">
+      <publishTime>03/11/2019 15:17:17</publishTime>
+    </File>
+    <File Include="css/vendors/swiper.css">
+      <publishTime>03/11/2019 15:17:17</publishTime>
+    </File>
+    <File Include="fonts/1069d95068cdf58f125fe7df3221f5f7.eot">
+      <publishTime>03/11/2019 15:17:18</publishTime>
+    </File>
+    <File Include="fonts/1069d95068cdf58f125fe7df3221f5f7.svg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="fonts/1069d95068cdf58f125fe7df3221f5f7.ttf">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="fonts/1069d95068cdf58f125fe7df3221f5f7.woff">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="fonts/1069d95068cdf58f125fe7df3221f5f7.woff2">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="fonts/4f2bf8530c19ba6a7c0e161d71fc65a5.eot">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="fonts/4f2bf8530c19ba6a7c0e161d71fc65a5.svg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="fonts/4f2bf8530c19ba6a7c0e161d71fc65a5.ttf">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="fonts/4f2bf8530c19ba6a7c0e161d71fc65a5.woff">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="fonts/4f2bf8530c19ba6a7c0e161d71fc65a5.woff2">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
     <File Include="fonts/glyphicons-halflings-regular.eot">
       <publishTime>03/10/2019 14:20:35</publishTime>
     </File>
@@ -293,6 +338,174 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="fonts/glyphicons-halflings-regular.woff">
       <publishTime>03/10/2019 14:20:35</publishTime>
+    </File>
+    <File Include="images/.DS_Store">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Area Background Image.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/bk.jpg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Boulevard Height.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/bp.jpg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Downtown-Dubai_tcm223-49617.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/icon/btn-arrow.svg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/icon/chevron.svg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/icon/chevronup.svg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/icon/clsoe.svg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/icon/icon-hand.svg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/icon/login.svg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/icon/mail.svg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/icon/phone.svg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/icon/pin.svg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/icon/scroll-down.svg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/icon/search.svg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/icon/swiper-left.svg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/icon/swiper-right.svg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Image_Section1.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Image_Section2.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Image_Section3.jpg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Image_Section4.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/img-map.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Logo/emaar.svg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Logo/logo.svg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Mobile_Area Background Image.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Mobile_BackgroundImage.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Mobile_Pop up image.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Pop up image.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/slider1.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/slider2.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/slider3.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/slider4.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/sr.jpeg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/tdf.jpg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="js/.DS_Store">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="js/app.js">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="js/app.min.js">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="js/bundle.js">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="js/jquery.min.js">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="js/main.js">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="js/main.min.js">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="js/vendor/.DS_Store">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="js/vendor/bootstrap/bootstrap.min.js">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="js/vendor/jquery-ui.min.js">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="js/vendor/jquery.counterup.min.js">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="js/vendor/jquery.scrollTo-1.4.2-min.js">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="js/vendor/jquery.validate.js">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="js/vendor/jquery.validate.unobtrusive.min.js">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="js/vendor/map-popup.js">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="js/vendor/mobMenu.js">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="js/vendor/smooth_anchor_links.js">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="js/vendor/swiper.min.js">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="js/vendor/utils.js">
+      <publishTime>03/11/2019 15:17:20</publishTime>
+    </File>
+    <File Include="js/vendor/wow.min.js">
+      <publishTime>03/11/2019 15:17:20</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>03/10/2019 14:20:34</publishTime>
@@ -312,11 +525,17 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Scripts/modernizr-2.6.2.js">
       <publishTime>03/10/2019 14:20:34</publishTime>
     </File>
+    <File Include="Scripts/swiper-init.js">
+      <publishTime>03/11/2019 15:17:17</publishTime>
+    </File>
+    <File Include="Scripts/swiper.min.js">
+      <publishTime>03/11/2019 15:17:17</publishTime>
+    </File>
     <File Include="Views/ECM/FirstView.cshtml">
       <publishTime>03/10/2019 14:20:34</publishTime>
     </File>
     <File Include="Views/Shared/ECM/_baseLayout.cshtml">
-      <publishTime>03/10/2019 14:20:34</publishTime>
+      <publishTime>03/13/2019 11:14:41</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
       <publishTime>03/10/2019 14:20:34</publishTime>

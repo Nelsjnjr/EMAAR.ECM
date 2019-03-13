@@ -10,7 +10,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="App_Config/Include/ECM/Foundation/zzz.Sitecore.Foundation.DependencyInjection.config">
-      <publishTime>03/11/2019 10:22:55</publishTime>
+      <publishTime>03/12/2019 11:58:51</publishTime>
     </File>
     <File Include="App_Config/Include/zzz.Sitecore.DependencyInjection.config">
       <publishTime>03/11/2019 10:22:55</publishTime>

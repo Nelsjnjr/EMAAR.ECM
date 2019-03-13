@@ -1,0 +1,88 @@
+//Revision: 932dec73-f147-45f1-891e-b6a7db729ceb
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
+{
+
+
+ 	/// <summary>
+	/// ISettings Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/Settings</para>	
+	/// <para>ID: ca138dc3-9c6d-42f5-8424-5f7c4c2e6bab</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=ISettingsConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface ISettings : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_Settings
+	{
+				}
+
+
+	public static partial class ISettingsConstants{
+
+			public const string TemplateIdString = "ca138dc3-9c6d-42f5-8424-5f7c4c2e6bab";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "Settings";
+
+					
+			public static readonly ID KeyFieldId = new ID("74950b52-2701-4909-82d1-325dc9297e87");
+			public const string KeyFieldName = "Key";
+			
+					
+			public static readonly ID ValueFieldId = new ID("34b856f1-4932-49dc-adab-90c37866c0b2");
+			public const string ValueFieldName = "Value";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// Settings
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/Settings</para>	
+	/// <para>ID: ca138dc3-9c6d-42f5-8424-5f7c4c2e6bab</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=ISettingsConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(ISettings))]
+	public partial class Settings  : GlassBase, ISettings 
+	{
+	   
+						/// <summary>
+				/// The Key field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 74950b52-2701-4909-82d1-325dc9297e87</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(ISettingsConstants.KeyFieldName)]
+				public virtual string Key  {get; set;}
+					
+						/// <summary>
+				/// The Value field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 34b856f1-4932-49dc-adab-90c37866c0b2</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(ISettingsConstants.ValueFieldName)]
+				public virtual string Value  {get; set;}
+					
+			
+	}
+}
+

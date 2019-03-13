@@ -1,0 +1,58 @@
+//Revision: 25989fd2-cbe0-4b19-aea3-3c7b396e6bf5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
+{
+
+
+ 	/// <summary>
+	/// IBannerFolder Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/BannerFolder</para>	
+	/// <para>ID: 6cf70f1e-be87-43fc-9a2d-c4ccb365223f</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IBannerFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IBannerFolder : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_BannerFolder
+	{
+				}
+
+
+	public static partial class IBannerFolderConstants{
+
+			public const string TemplateIdString = "6cf70f1e-be87-43fc-9a2d-c4ccb365223f";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "BannerFolder";
+
+			
+
+	}
+
+	
+	/// <summary>
+	/// BannerFolder
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/BannerFolder</para>	
+	/// <para>ID: 6cf70f1e-be87-43fc-9a2d-c4ccb365223f</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IBannerFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IBannerFolder))]
+	public partial class BannerFolder  : GlassBase, IBannerFolder 
+	{
+	   
+			
+	}
+}
+

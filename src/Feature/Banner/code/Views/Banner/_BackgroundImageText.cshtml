@@ -1,0 +1,67 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Glass.Mapper.Sc.Web.Mvc
+@model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.Banner.IImageText
+@{ var image = Model.Image != null ? Model.Image.Src : String.Empty;
+}
+<!-- background image with text starts -->
+@if (!Sitecore.Context.PageMode.IsExperienceEditor)
+{
+    <section style="background:url(@image ) no-repeat center center fixed" class="bg-image-text">
+        <div class="container">
+            <div class="text-wrap wow fadeInUp">
+                <h2 class="heading">@Html.Glass().Editable(Model, x => x.Title)</h2>
+                <p>
+                    @Html.Glass().Editable(Model, x => x.Description)
+                </p>
+                @if (Model.CTA != null)
+                {
+                    using (Html.Glass().BeginRenderLink(Model, x => x.CTA, new { @class = "btn btn-primary mt-3 mt-md-5" }, isEditable: true))
+                    {
+                        @Model.CTA.Title
+                        <i>
+
+                            @if (Model.CTA_Image != null)
+                            {
+                                <img src="@Model.CTA_Image.Src" alt="arrow" class="svg">
+                            }
+
+                        </i>
+                    }
+                }
+
+            </div>
+        </div>
+    </section>
+}
+else
+{
+    <section>
+        @Html.Glass().RenderImage(Model, x => x.Image, new { @class = "bg-image-text" }, isEditable: true)
+        <div class="container">
+            <div class="text-wrap wow fadeInUp">
+                <h2 class="heading">@Html.Glass().Editable(Model, x => x.Title)</h2>
+                <p>
+                    @Html.Glass().Editable(Model, x => x.Description)
+                </p>
+                @if (Model.CTA != null)
+                {
+                    using (Html.Glass().BeginRenderLink(Model, x => x.CTA, new { @class = "btn btn-primary mt-3 mt-md-5" }, isEditable: true))
+                    {
+                        @Model.CTA.Title
+                        <i>
+
+                            @if (Model.CTA_Image != null)
+                            {
+                                <img src="@Model.CTA_Image.Src" alt="arrow" class="svg">
+                            }
+
+                        </i>
+                    }
+                }
+
+            </div>
+        </div>
+    </section>
+}
+<!-- background image with text ends -->

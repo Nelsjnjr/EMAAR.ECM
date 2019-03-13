@@ -61,7 +61,7 @@ namespace <#= GetNamespace(DefaultNamespace, template)#>
 	/// <para>Path: <#= template.Path #></para>	
 	/// <para>ID: <#= template.ID.ToString() #></para>	
 	/// </summary>
-	[SitecoreType(TemplateId=<#= AsInterfaceName(template.Name) #>Constants.TemplateIdString )] //, Cachable = true
+	[SitecoreType(TemplateId=<#= AsInterfaceName(template.Name) #>Constants.TemplateIdString,AutoMap=true )] //, Cachable = true
 	public partial interface <#= AsInterfaceName(template.Name) #> : IGlassBase <#=GetObjectInheritanceDefinition(DefaultNamespace, template, true, (string s) => AsInterfaceName(s))#>
 	{
 			<#foreach(SitecoreField field in GetFieldsForTemplate(template, false)){#>
@@ -103,7 +103,8 @@ if (!IsInterfaceWord(template.Name)){ #>
 	/// <para>Path: <#= template.Path #></para>	
 	/// <para>ID: <#= template.ID.ToString() #></para>	
 	/// </summary>
-	[SitecoreType(TemplateId=<#= AsInterfaceName(template.Name) #>Constants.TemplateIdString)] //, Cachable = true
+	[SitecoreType(TemplateId=<#= AsInterfaceName(template.Name) #>Constants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(<#=AsInterfaceName(template.Name)#>))]
 	public partial class <#= AsClassName(template.Name) #>  : GlassBase, <#=AsInterfaceName(template.Name)#> 
 	{
 	   
