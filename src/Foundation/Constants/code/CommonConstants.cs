@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EMAAR.ECM.Foundation.Constants
+﻿namespace EMAAR.ECM.Foundation.Constants
 {
+    /// <summary>
+    /// Common constants
+    /// </summary>
     public static class CommonConstants
     {
-        public  enum Alignment { Left,Right,Background };
+        public enum Alignment { Left, Right, Background };
     }
 }

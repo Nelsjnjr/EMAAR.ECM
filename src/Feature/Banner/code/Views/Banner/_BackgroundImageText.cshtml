@@ -4,9 +4,10 @@
 @model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.Banner.IImageText
 @{ var image = Model.Image != null ? Model.Image.Src : String.Empty;
 }
-<!-- background image with text starts -->
+
 @if (!Sitecore.Context.PageMode.IsExperienceEditor)
 {
+    <!-- background image with text starts(In Experience Editor mode) -->
     <section style="background:url(@image ) no-repeat center center fixed" class="bg-image-text">
         <div class="container">
             <div class="text-wrap wow fadeInUp">
@@ -36,6 +37,7 @@
 }
 else
 {
+    <!-- background image with text starts(In Normal Editor mode) -->
     <section>
         @Html.Glass().RenderImage(Model, x => x.Image, new { @class = "bg-image-text" }, isEditable: true)
         <div class="container">

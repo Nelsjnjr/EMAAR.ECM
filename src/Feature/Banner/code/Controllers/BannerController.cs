@@ -1,21 +1,20 @@
-﻿using System;
-using System.Web.Mvc;
-using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
+﻿using System.Web.Mvc;
+using EMAAR.ECM.Feature.Banner.Interfaces;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.Banner;
-using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Parameters;
 using Glass.Mapper.Sc.Web.Mvc;
 using static EMAAR.ECM.Foundation.Constants.CommonConstants;
 
 namespace EMAAR.ECM.Feature.Banner.Controllers
 {
+    /// <summary>
+    /// This controller is used for loading ImageText component
+    /// </summary>
     public class BannerController : Controller
-    {
-        private readonly IMvcContext _mvcContext;
-        private readonly IImageText _imageText;
-        public BannerController(IMvcContext mvcContext, IImageText imageText)
-        {
-            _imageText = imageText;
-            _mvcContext = mvcContext;
+    {     
+        private readonly IBannerRepository _bannerRepository;
+        public BannerController( IBannerRepository bannerRepository)
+        {  
+            _bannerRepository = bannerRepository;
         }
         /// <summary>
         /// Getting 3 variants of ImageText components(Left,Right and Background)
@@ -23,21 +22,9 @@ namespace EMAAR.ECM.Feature.Banner.Controllers
         /// <returns>ImageText component variation based on parameter selected from Sitecore</returns>
         public ActionResult Banners()
         {
-            IImageText model = _mvcContext.GetDataSourceItem<IImageText>();
-            if (model != null)
-            {
-                ViewBag.Variants = Alignment.Left;//Setting to default to Left ImageText component
-                IParametersTemplate_ImageAlignment renderingParameter = _mvcContext.GetRenderingParameters<IParametersTemplate_ImageAlignment>();
-                if (renderingParameter != null && renderingParameter.Image_Alignment != Guid.Empty)
-                {
-                    ISettings settings = _mvcContext.SitecoreService.GetItem<ISettings>(renderingParameter.Image_Alignment);
-                    if (Enum.TryParse(settings.Key, out Alignment alignment))
-                    {
-                        ViewBag.Variants = alignment;
-                    }
-                }
-            }
-            return View(model ?? _imageText);
+            IImageText imageText = _bannerRepository.GetBannerVariants(out Alignment alignment);
+            ViewBag.Variants = alignment;
+            return View(imageText);
         }
     }
 }

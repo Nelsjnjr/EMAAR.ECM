@@ -273,6 +273,7 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Microsoft.Web
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Mvp.Xml.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Newtonsoft.Json.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\RazorGenerator.Mvc.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Sitecore.Foundation.DependencyInjection.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Sitecore.Kernel.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Sitecore.Logging.Client.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Sitecore.Logging.dll
@@ -289,6 +290,8 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\System.Web.We
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\System.Web.WebPages.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\System.Web.WebPages.Razor.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\WebActivatorEx.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Sitecore.Foundation.DependencyInjection.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Sitecore.Foundation.DependencyInjection.dll.config
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Castle.Core.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Glass.Mapper.pdb
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Glass.Mapper.xml
@@ -322,11 +325,8 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\System.Web.Ra
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\System.Web.WebPages.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\System.Web.WebPages.Razor.xml
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\obj\Debug\EMAAR.ECM.Foundation.ORM.csprojAssemblyReference.cache
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\obj\Debug\EMAAR.ECM.Foundation.ORM.csproj.CoreCompileInputs.cache
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\obj\Debug\EMAAR.ECM.Foundation.ORM.csproj.CopyComplete
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\obj\Debug\EMAAR.ECM.Foundation.ORM.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\obj\Debug\EMAAR.ECM.Foundation.ORM.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Sitecore.Foundation.DependencyInjection.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Sitecore.Foundation.DependencyInjection.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Sitecore.Foundation.DependencyInjection.dll.config
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\obj\Debug\EMAAR.ECM.Foundation.ORM.csprojAssemblyReference.cache
