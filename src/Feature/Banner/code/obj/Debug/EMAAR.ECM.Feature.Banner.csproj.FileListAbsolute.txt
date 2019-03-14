@@ -132,3 +132,5 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\obj\Debug\EMAAR.E
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\obj\Debug\EMAAR.ECM.Feature.Banner.csproj.CopyComplete
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\obj\Debug\EMAAR.ECM.Feature.Banner.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\obj\Debug\EMAAR.ECM.Feature.Banner.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Feature.Banner.dll.CodeAnalysisLog.xml
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Feature.Banner.dll.lastcodeanalysissucceeded

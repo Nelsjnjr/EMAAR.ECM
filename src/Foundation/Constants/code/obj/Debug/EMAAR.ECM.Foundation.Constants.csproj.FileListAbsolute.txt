@@ -3,3 +3,4 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\Constants\code\bin\Debug\E
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\Constants\code\obj\Debug\EMAAR.ECM.Foundation.Constants.csproj.CoreCompileInputs.cache
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\Constants\code\obj\Debug\EMAAR.ECM.Foundation.Constants.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\Constants\code\obj\Debug\EMAAR.ECM.Foundation.Constants.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\Constants\code\obj\Debug\EMAAR.ECM.Foundation.Constants.csprojAssemblyReference.cache
