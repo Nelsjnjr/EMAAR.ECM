@@ -10,10 +10,17 @@ template: {0437FEE2-44C9-46A6-ABE9-28858D9FEE8C}
 templatekey: Template Folder
 created: 20190311T105416Z
 
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 36
+
+Applications/16x16/folder_window.png
 ----version----
 language: en
 version: 1
-revision: 72f5b0ee-52be-4e12-9382-5ed1039f0f3f
+revision: 10a6add7-144e-488d-a4b2-cac3ba55ac55
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -35,14 +42,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-72f5b0ee-52be-4e12-9382-5ed1039f0f3f
+10a6add7-144e-488d-a4b2-cac3ba55ac55
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190311T105521Z
+20190314T070030Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

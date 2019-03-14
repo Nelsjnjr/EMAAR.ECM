@@ -1,0 +1,58 @@
+//Revision: 42ec39e2-5176-48fd-aa93-7f021dd7fa50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
+{
+
+
+ 	/// <summary>
+	/// I_Page_Datasources Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_Page Datasources</para>	
+	/// <para>ID: 44209d30-c72a-4c6e-baff-6aa6bb550cee</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_Page_DatasourcesConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Page_Datasources : IGlassBase 
+	{
+				}
+
+
+	public static partial class I_Page_DatasourcesConstants{
+
+			public const string TemplateIdString = "44209d30-c72a-4c6e-baff-6aa6bb550cee";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_Page Datasources";
+
+			
+
+	}
+
+	
+	/// <summary>
+	/// _Page_Datasources
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_Page Datasources</para>	
+	/// <para>ID: 44209d30-c72a-4c6e-baff-6aa6bb550cee</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_Page_DatasourcesConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Page_Datasources))]
+	public partial class _Page_Datasources  : GlassBase, I_Page_Datasources 
+	{
+	   
+			
+	}
+}
+

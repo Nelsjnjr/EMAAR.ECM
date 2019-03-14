@@ -10,10 +10,17 @@ template: {B1855187-5299-4704-9CF2-4C2BCA89E76D}
 templatekey: ParametersTemplate_ImageAlignment
 created: 20190311T111203Z
 
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 36
+
+Applications/16x16/form_red_edit.png
 ----version----
 language: en
 version: 1
-revision: 16b7f04e-2481-4b61-8f59-2cb624ba913f
+revision: 65c773cb-37c7-4bfa-9249-cd21c1156ae3
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -42,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-16b7f04e-2481-4b61-8f59-2cb624ba913f
+65c773cb-37c7-4bfa-9249-cd21c1156ae3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190311T111203Z
+20190314T070605Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

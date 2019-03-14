@@ -10,10 +10,17 @@ template: {CA138DC3-9C6D-42F5-8424-5F7C4C2E6BAB}
 templatekey: Settings
 created: 20190312T070511Z
 
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 31
+
+Applications/16x16/gear_add.png
 ----version----
 language: en
 version: 1
-revision: 1c5b7cc0-3a95-4950-b260-f5309841b079
+revision: 7f2c70e0-ed15-42bd-9b4d-20a1ac024ed1
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -42,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1c5b7cc0-3a95-4950-b260-f5309841b079
+7f2c70e0-ed15-42bd-9b4d-20a1ac024ed1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190312T070511Z
+20190314T065846Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
