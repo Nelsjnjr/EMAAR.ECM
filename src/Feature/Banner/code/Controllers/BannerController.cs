@@ -15,12 +15,10 @@ namespace EMAAR.ECM.Feature.Banner.Controllers
     {     
         private readonly IBannerRepository _bannerRepository;
         private readonly ISitecoreHelper _sitecoreHelper;
-        private readonly INavigationArrow _navigationArrow;
-        public BannerController( IBannerRepository bannerRepository,ISitecoreHelper sitecoreHelper,INavigationArrow navigationArrow)
+        public BannerController( IBannerRepository bannerRepository,ISitecoreHelper sitecoreHelper)
         {  
             _bannerRepository = bannerRepository;
-            _sitecoreHelper = sitecoreHelper;
-            _navigationArrow = navigationArrow;
+            _sitecoreHelper = sitecoreHelper;          
         }
         /// <summary>
         /// Getting 3 variants of ImageText components(Left,Right and Background)
