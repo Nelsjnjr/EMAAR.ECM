@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ItemIconCache>
+  <Item ItemPath="/sitecore/content" ItemIcon="/temp/IconCache/People/16x16/cubes_blue.png" />
+  <Item ItemPath="/sitecore/content/Applications" ItemIcon="/temp/IconCache/Software/16x16/application.png" />
+  <Item ItemPath="/sitecore/content/Applications/WebEdit" ItemIcon="/sitecore/shell/themes/standard/Network/16x16/Environment.png" />
+  <Item ItemPath="/sitecore/content/Applications/WebEdit/Edit Frame Buttons" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/content/Applications/WebEdit/Edit Frame Buttons/FullBannerImage" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/content/Applications/WebEdit/Edit Frame Buttons/FullBannerImage/EditBackGroundImage" ItemIcon="/temp/iconcache/people/16x16/cube_blue_preferences.png" />
+</ItemIconCache>
