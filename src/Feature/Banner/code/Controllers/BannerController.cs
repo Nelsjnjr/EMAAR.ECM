@@ -1,9 +1,7 @@
 ﻿using System.Web.Mvc;
 using EMAAR.ECM.Feature.Banner.Interfaces;
 using EMAAR.ECM.Foundation.Constants.Interfaces;
-using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.Banner;
-using Glass.Mapper.Sc.Web.Mvc;
 using static EMAAR.ECM.Foundation.Constants.CommonConstants;
 
 namespace EMAAR.ECM.Feature.Banner.Controllers
@@ -15,6 +13,8 @@ namespace EMAAR.ECM.Feature.Banner.Controllers
     {     
         private readonly IBannerRepository _bannerRepository;
         private readonly ISitecoreHelper _sitecoreHelper;
+
+
         public BannerController( IBannerRepository bannerRepository,ISitecoreHelper sitecoreHelper)
         {  
             _bannerRepository = bannerRepository;
