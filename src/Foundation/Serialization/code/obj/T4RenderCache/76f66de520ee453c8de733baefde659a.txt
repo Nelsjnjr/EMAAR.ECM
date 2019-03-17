@@ -1,0 +1,108 @@
+//Revision: 6f0c5404-2b67-4414-b4ad-d96f642e1c06
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Carousel
+{
+
+
+ 	/// <summary>
+	/// I_CarouselList Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Carousel/_CarouselList</para>	
+	/// <para>ID: 76f66de5-20ee-453c-8de7-33baefde659a</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_CarouselListConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_CarouselList : IGlassBase 
+	{
+								/// <summary>
+					/// The Carousel Title field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: 43ae9faf-4548-4df9-b505-c6928ea48b3d</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_CarouselListConstants.Carousel_TitleFieldName)]
+					string Carousel_Title  {get; set;}
+			
+								/// <summary>
+					/// The Carousel field.
+					/// <para></para>
+					/// <para>Field Type: Multilist</para>		
+					/// <para>Field ID: 96c03c76-a871-4acf-91f6-21a3e49a8e32</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_CarouselListConstants.CarouselsFieldName)]
+					IEnumerable<Guid> Carousels  {get; set;}
+			
+				}
+
+
+	public static partial class I_CarouselListConstants{
+
+			public const string TemplateIdString = "76f66de5-20ee-453c-8de7-33baefde659a";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_CarouselList";
+
+					
+			public static readonly ID Carousel_TitleFieldId = new ID("43ae9faf-4548-4df9-b505-c6928ea48b3d");
+			public const string Carousel_TitleFieldName = "Carousel Title";
+			
+					
+			public static readonly ID CarouselsFieldId = new ID("96c03c76-a871-4acf-91f6-21a3e49a8e32");
+			public const string CarouselsFieldName = "Carousel";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _CarouselList
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Carousel/_CarouselList</para>	
+	/// <para>ID: 76f66de5-20ee-453c-8de7-33baefde659a</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_CarouselListConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_CarouselList))]
+	public partial class _CarouselList  : GlassBase, I_CarouselList 
+	{
+	   
+						/// <summary>
+				/// The Carousel Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 43ae9faf-4548-4df9-b505-c6928ea48b3d</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_CarouselListConstants.Carousel_TitleFieldName)]
+				public virtual string Carousel_Title  {get; set;}
+					
+						/// <summary>
+				/// The Carousel field.
+				/// <para></para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: 96c03c76-a871-4acf-91f6-21a3e49a8e32</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_CarouselListConstants.CarouselsFieldName)]
+				public virtual IEnumerable<Guid> Carousels  {get; set;}
+					
+			
+	}
+}
+

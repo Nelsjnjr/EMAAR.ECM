@@ -37,10 +37,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string TemplateName = "ImageText";
 
 					
-			public static readonly ID CTA_ImageFieldId = new ID("38e61e7f-0e33-4350-ad9a-e42a1db5e91a");
-			public const string CTA_ImageFieldName = "CTA Image";
-			
-					
 			public static readonly ID DescriptionFieldId = new ID("86ef63d0-7e10-4df7-80a7-28df2d6ba18f");
 			public const string DescriptionFieldName = "Description";
 			
@@ -72,17 +68,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 	public partial class ImageText  : GlassBase, IImageText 
 	{
 	   
-						/// <summary>
-				/// The CTA Image field.
-				/// <para></para>
-				/// <para>Field Type: Image</para>		
-				/// <para>Field ID: 38e61e7f-0e33-4350-ad9a-e42a1db5e91a</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IImageTextConstants.CTA_ImageFieldName)]
-				public virtual Image CTA_Image  {get; set;}
-					
 						/// <summary>
 				/// The Description field.
 				/// <para></para>

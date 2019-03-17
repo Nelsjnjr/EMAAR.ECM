@@ -17,20 +17,19 @@
                             @Model.CTA.Title
                             <i>
 
-                                @if (Model.CTA_Image != null)
+                                @if (!String.IsNullOrEmpty(ViewBag.RightArrow))
                                 {
-                                    <img src="@Model.CTA_Image.Src" alt="arrow" class="svg">
+                                    <img src="@ViewBag.RightArrow.ToString()" alt="arrow" class="svg">
                                 }
-
                             </i>
                         }
                     }
-                    </div>
+                </div>
             </div>
             <div class="col-sm-6 d-none d-xl-block d-md-block">
                 <div class="imgWrap wow fadeInUp">
                     @Html.Glass().RenderImage(Model, x => x.Image, new { alt = "image", @class = "img-fluid" }, isEditable: true)
-                    
+
                 </div>
             </div>
         </div>

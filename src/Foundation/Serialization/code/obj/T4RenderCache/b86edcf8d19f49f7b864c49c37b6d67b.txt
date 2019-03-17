@@ -1,0 +1,83 @@
+//Revision: 4fd625d0-6fb3-40bd-a331-d4d82eab0eba
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
+{
+
+
+ 	/// <summary>
+	/// I_NavigationArrow Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_NavigationArrow</para>	
+	/// <para>ID: b86edcf8-d19f-49f7-b864-c49c37b6d67b</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_NavigationArrowConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_NavigationArrow : IGlassBase 
+	{
+								/// <summary>
+					/// The Image field.
+					/// <para></para>
+					/// <para>Field Type: Image</para>		
+					/// <para>Field ID: b50bddd1-afaa-4a00-bf33-21abb35df20f</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_NavigationArrowConstants.ImageFieldName)]
+					Image Image  {get; set;}
+			
+				}
+
+
+	public static partial class I_NavigationArrowConstants{
+
+			public const string TemplateIdString = "b86edcf8-d19f-49f7-b864-c49c37b6d67b";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_NavigationArrow";
+
+					
+			public static readonly ID ImageFieldId = new ID("b50bddd1-afaa-4a00-bf33-21abb35df20f");
+			public const string ImageFieldName = "Image";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _NavigationArrow
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_NavigationArrow</para>	
+	/// <para>ID: b86edcf8-d19f-49f7-b864-c49c37b6d67b</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_NavigationArrowConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_NavigationArrow))]
+	public partial class _NavigationArrow  : GlassBase, I_NavigationArrow 
+	{
+	   
+						/// <summary>
+				/// The Image field.
+				/// <para></para>
+				/// <para>Field Type: Image</para>		
+				/// <para>Field ID: b50bddd1-afaa-4a00-bf33-21abb35df20f</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_NavigationArrowConstants.ImageFieldName)]
+				public virtual Image Image  {get; set;}
+					
+			
+	}
+}
+

@@ -7,4 +7,5 @@
     {
         public enum Alignment { Left, Right, Background };
     }
+
 }

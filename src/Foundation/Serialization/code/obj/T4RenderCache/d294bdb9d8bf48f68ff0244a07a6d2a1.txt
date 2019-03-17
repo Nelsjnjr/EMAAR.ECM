@@ -1,4 +1,4 @@
-//Revision: 5bb1cec8-91b7-4f12-a69c-3be7064bce27
+//Revision: 2a0e1aee-44d6-4202-8332-2a9e035d54ea
 
 
 
@@ -19,40 +19,26 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 
 
  	/// <summary>
-	/// IPage_Datasources Interface
+	/// IPageDatasources Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/Page Datasources</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/PageDatasources</para>	
 	/// <para>ID: d294bdb9-d8bf-48f6-8ff0-244a07a6d2a1</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=IPage_DatasourcesConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface IPage_Datasources : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_Page_Datasources
-	{
-				}
+	[SitecoreType(TemplateId=IPageDatasourcesConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IPageDatasources : IGlassBase 
+*********************************************
+An error occured while generating code for item '/sitecore/templates/Project/ECM/Common/Content Types/PageDatasources'.
+T4 Template: C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\Serialization\code\Code Generation Templates\GlassV3Item.tt
+Errors:
 
+Running transformation: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.VisualStudio.TextTemplating755393EE9C3672CDB7D17E096F0EEBEE61652EBF110D805931DBD19F6B14DC135399BD12260246CC89D0EB5AB8B4A0633E511AE98D292AAF98C82BB14ED79263.GeneratedTextTransformation.GetNamespace(String defaultNamespace, SitecoreItem item, Boolean includeGlobal)
+   at Microsoft.VisualStudio.TextTemplating755393EE9C3672CDB7D17E096F0EEBEE61652EBF110D805931DBD19F6B14DC135399BD12260246CC89D0EB5AB8B4A0633E511AE98D292AAF98C82BB14ED79263.GeneratedTextTransformation.GetFullyQualifiedName(String defaultNamespace, SitecoreItem item, Func`2 nameFunc)
+   at Microsoft.VisualStudio.TextTemplating755393EE9C3672CDB7D17E096F0EEBEE61652EBF110D805931DBD19F6B14DC135399BD12260246CC89D0EB5AB8B4A0633E511AE98D292AAF98C82BB14ED79263.GeneratedTextTransformation.<>c__DisplayClass1_0.<GetObjectInheritanceDefinition>b__0(SitecoreTemplate bt)
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Linq.Enumerable.Aggregate[TSource](IEnumerable`1 source, Func`3 func)
+   at Microsoft.VisualStudio.TextTemplating755393EE9C3672CDB7D17E096F0EEBEE61652EBF110D805931DBD19F6B14DC135399BD12260246CC89D0EB5AB8B4A0633E511AE98D292AAF98C82BB14ED79263.GeneratedTextTransformation.GetObjectInheritanceDefinition(String defaultNamespace, SitecoreTemplate item, Boolean includeLeadingComma, Func`2 nameFunc)
+   at Microsoft.VisualStudio.TextTemplating755393EE9C3672CDB7D17E096F0EEBEE61652EBF110D805931DBD19F6B14DC135399BD12260246CC89D0EB5AB8B4A0633E511AE98D292AAF98C82BB14ED79263.GeneratedTextTransformation.TransformText()
 
-	public static partial class IPage_DatasourcesConstants{
-
-			public const string TemplateIdString = "d294bdb9-d8bf-48f6-8ff0-244a07a6d2a1";
-			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "Page Datasources";
-
-			
-
-	}
-
-	
-	/// <summary>
-	/// Page_Datasources
-	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/Page Datasources</para>	
-	/// <para>ID: d294bdb9-d8bf-48f6-8ff0-244a07a6d2a1</para>	
-	/// </summary>
-	[SitecoreType(TemplateId=IPage_DatasourcesConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(IPage_Datasources))]
-	public partial class Page_Datasources  : GlassBase, IPage_Datasources 
-	{
-	   
-			
-	}
-}
+*********************************************
 

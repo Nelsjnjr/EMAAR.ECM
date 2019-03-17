@@ -10,10 +10,17 @@ template: {7EE0975B-0698-493E-B3A2-0B2EF33D0522}
 templatekey: Rendering Folder
 created: 20190312T062619Z
 
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 35
+
+Applications/16x16/folder_cubes.png
 ----version----
 language: en
 version: 1
-revision: 0296eab6-c731-44cb-bc47-2dfd8b69b0c8
+revision: 502f46dc-2769-49d9-9f10-960babca402a
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -28,14 +35,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0296eab6-c731-44cb-bc47-2dfd8b69b0c8
+502f46dc-2769-49d9-9f10-960babca402a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190312T062620Z
+20190314T070350Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

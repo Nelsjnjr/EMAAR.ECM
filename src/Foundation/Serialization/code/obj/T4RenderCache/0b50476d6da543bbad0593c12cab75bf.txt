@@ -27,16 +27,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Banner
 	[SitecoreType(TemplateId=I_ImageTextConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
 	public partial interface I_ImageText : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_Base
 	{
-								/// <summary>
-					/// The CTA Image field.
-					/// <para></para>
-					/// <para>Field Type: Image</para>		
-					/// <para>Field ID: 38e61e7f-0e33-4350-ad9a-e42a1db5e91a</para>
-					/// <para>Custom Data: </para>
-					/// </summary>
-					[SitecoreField(I_ImageTextConstants.CTA_ImageFieldName)]
-					Image CTA_Image  {get; set;}
-			
 				}
 
 
@@ -46,10 +36,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Banner
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "_ImageText";
 
-					
-			public static readonly ID CTA_ImageFieldId = new ID("38e61e7f-0e33-4350-ad9a-e42a1db5e91a");
-			public const string CTA_ImageFieldName = "CTA Image";
-			
 					
 			public static readonly ID DescriptionFieldId = new ID("86ef63d0-7e10-4df7-80a7-28df2d6ba18f");
 			public const string DescriptionFieldName = "Description";
@@ -82,17 +68,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Banner
 	public partial class _ImageText  : GlassBase, I_ImageText 
 	{
 	   
-						/// <summary>
-				/// The CTA Image field.
-				/// <para></para>
-				/// <para>Field Type: Image</para>		
-				/// <para>Field ID: 38e61e7f-0e33-4350-ad9a-e42a1db5e91a</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_ImageTextConstants.CTA_ImageFieldName)]
-				public virtual Image CTA_Image  {get; set;}
-					
 						/// <summary>
 				/// The Description field.
 				/// <para></para>

@@ -22,9 +22,9 @@
                         @Model.CTA.Title
                         <i>
 
-                            @if (Model.CTA_Image != null)
+                            @if (!String.IsNullOrEmpty(ViewBag.RightArrow))
                             {
-                                <img src="@Model.CTA_Image.Src" alt="arrow" class="svg">
+                                <img src="@ViewBag.RightArrow.ToString()" alt="arrow" class="svg">
                             }
 
                         </i>
@@ -53,9 +53,9 @@ else
                         @Model.CTA.Title
                         <i>
 
-                            @if (Model.CTA_Image != null)
+                            @if (!String.IsNullOrEmpty(ViewBag.RightArrow))
                             {
-                                <img src="@Model.CTA_Image.Src" alt="arrow" class="svg">
+                                <img src="@ViewBag.RightArrow.ToString()" alt="arrow" class="svg">
                             }
 
                         </i>

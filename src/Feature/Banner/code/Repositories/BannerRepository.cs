@@ -34,7 +34,7 @@ namespace EMAAR.ECM.Feature.Banner.Repositories
             IImageText model = mvcContext.GetDataSourceItem<IImageText>();
             if (model != null)
             {
-                IParametersTemplate_ImageAlignment renderingParameter = mvcContext.GetRenderingParameters<IParametersTemplate_ImageAlignment>();
+                IParametersTemplate_ImageAlignment renderingParameter = mvcContext?.GetRenderingParameters<IParametersTemplate_ImageAlignment>();
                 if (renderingParameter != null && renderingParameter.Image_Alignment != Guid.Empty)
                 {
                     ISettings settings = mvcContext.SitecoreService.GetItem<ISettings>(renderingParameter.Image_Alignment);

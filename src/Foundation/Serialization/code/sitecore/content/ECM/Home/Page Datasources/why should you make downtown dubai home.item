@@ -3,7 +3,7 @@ version: 1
 id: {CDAEBE58-1CFE-42AE-8797-ED52FB908938}
 database: master
 path: /sitecore/content/ECM/Home/Page Datasources/why should you make downtown dubai home
-parent: {00387080-50F3-425A-AECC-96EAED6F5BA3}
+parent: {FD5AB8FD-2BCF-4FD7-8B20-246D1A1CA565}
 name: why should you make downtown dubai home
 master: {00000000-0000-0000-0000-000000000000}
 template: {86217B8B-D63D-48F5-932C-CC46442B8243}
@@ -13,7 +13,7 @@ created: 20190312T053532Z
 ----version----
 language: en
 version: 1
-revision: e533ff75-d530-4a48-8211-2cae55254dde
+revision: 944f478a-05e9-4f8e-bb27-8f5a991273cb
 
 ----field----
 field: {F9401C09-1121-4BB5-ABED-48BC2B29DE71}
@@ -22,13 +22,6 @@ key: cta
 content-length: 132
 
 <link linktype="internal" text="Apply now" title="Apply now" querystring="" target="" id="{110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}" />
-----field----
-field: {38E61E7F-0E33-4350-AD9A-E42A1DB5E91A}
-name: CTA Image
-key: cta image
-content-length: 233
-
-<image mediapath="/Images/Feature/ECM/Icons/btn-arrow" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Feature/ECM/Icons/btn-arrow" mediaid="{EDB7121E-9A57-4EDD-B1B3-7A872C467B74}" />
 ----field----
 field: {CDDD22F9-558A-4E98-A614-53C5E090FB96}
 name: Title
@@ -63,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e533ff75-d530-4a48-8211-2cae55254dde
+944f478a-05e9-4f8e-bb27-8f5a991273cb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190314T071234Z
+20190314T124155Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
