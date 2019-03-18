@@ -34,6 +34,16 @@
     <LightningDeployMode>False</LightningDeployMode>
     <SitecoreDeployFolder>D:\Nelson\sc1.local</SitecoreDeployFolder>
     <SitecoreAccessGuid>c9f9a0d0-168b-49da-b286-e4474c2dd08b</SitecoreAccessGuid>
+    <PackageName>Emaar.ECM.Foundation.Serialization.Core</PackageName>
+    <PackageAuthor />
+    <PackagePublisher />
+    <PackageVersion />
+    <PackageReadme />
+    <SitecoreAssemblyPath>D:\Nelson\sc1.local\bin</SitecoreAssemblyPath>
+    <GeneratePackage>True</GeneratePackage>
+    <SeperateFilesAndItems>False</SeperateFilesAndItems>
+    <PackageExcludeCode>False</PackageExcludeCode>
+    <AddDateTimeToPackageName>True</AddDateTimeToPackageName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>

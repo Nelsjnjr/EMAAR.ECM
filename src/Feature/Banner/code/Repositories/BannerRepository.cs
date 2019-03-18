@@ -36,7 +36,7 @@ namespace EMAAR.ECM.Feature.Banner.Repositories
 
         /// <summary>
         /// Getting 3 variants of ImageText components(Left,Right and Background)
-        /// <param name="alignment">Variant</param>
+        /// <param name="alignment">Variant(Left/Right/Background)</param>
         /// <returns>ImageText component variation based on parameter selected from Sitecore</returns>
 
         public IImageText GetBannerVariants(out Alignment alignment)

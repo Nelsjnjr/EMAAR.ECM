@@ -39,7 +39,6 @@ namespace EMAAR.ECM.Feature.Banner.Controllers
         /// Getting all related component asigned in Sitecore with the Background CSS (eg:explore)
         /// </summary>  
         /// <returns>Relatedcontent list</returns>
-
         public ActionResult RelatedContent()
         {
             IRelatedContentViewModel relatedContentList = _bannerRepository.GetRelatedContent();
