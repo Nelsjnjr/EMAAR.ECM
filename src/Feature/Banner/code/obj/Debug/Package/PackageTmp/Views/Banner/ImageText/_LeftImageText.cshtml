@@ -1,0 +1,39 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Glass.Mapper.Sc.Web.Mvc
+@model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.Banner.IImageText
+
+<!-- image with text starts -->
+<section class="text-img-box left-img">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 d-none d-xl-block d-md-block">
+                <div class="imgWrap wow fadeInUp">
+                    @Html.Glass().RenderImage(Model, x => x.Image, new { alt = "image", @class = "img-fluid" }, isEditable: true)
+                </div>
+            </div>
+            <div class="col-md-6 align-self-center">
+                <div class="textWrap wow fadeInUp" data-wow-delay=".5s">
+                    <h2 class="heading">@Html.Glass().Editable(Model, x => x.Title)</h2>
+                    <p>@Html.Raw(Html.Glass().Editable(Model, x => x.Description)) </p>
+                    @if (Model.CTA != null)
+                    {
+                        using (Html.Glass().BeginRenderLink(Model, x => x.CTA, new { @class = "btn btn-primary mt-3 mt-md-5" }, isEditable: true))
+                        {
+                            @Model.CTA.Title
+                            <i>
+                                @if (!String.IsNullOrEmpty(ViewBag.RightArrow))
+                                {
+                                    <img src="@ViewBag.RightArrow.ToString()" alt="arrow" class="svg">
+                                }
+
+                            </i>
+                        }
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- image with text ends -->

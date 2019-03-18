@@ -212,15 +212,20 @@
   <ItemGroup>
     <Compile Include="Controllers\BannerController.cs" />
     <Compile Include="Interfaces\IBannerRepository.cs" />
+    <Compile Include="Interfaces\IRelatedContentViewModel.cs" />
+    <Compile Include="Models\RelatedContentViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BannerRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Banner\Banners.cshtml" />
+    <Content Include="Views\Banner\ImageText\ImageText.cshtml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
-    <Content Include="Views\Banner\_LeftImageText.cshtml" />
-    <Content Include="Views\Banner\_RightImageText.cshtml" />
-    <Content Include="Views\Banner\_BackgroundImageText.cshtml" />
+    <Content Include="Views\Banner\ImageText\_LeftImageText.cshtml" />
+    <Content Include="Views\Banner\ImageText\_RightImageText.cshtml" />
+    <Content Include="Views\Banner\ImageText\_BackgroundImageText.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Banner\RelatedContent\RelatedContent.cshtml" />
     <None Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -231,7 +236,6 @@
     <None Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>

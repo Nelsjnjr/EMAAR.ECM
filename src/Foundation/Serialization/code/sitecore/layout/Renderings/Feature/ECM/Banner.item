@@ -21,9 +21,9 @@ EMAAR.ECM.Feature.Banner.Controllers.BannerController,EMAAR.ECM.Feature.Banner
 field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
 name: Controller Action
 key: controller action
-content-length: 7
+content-length: 9
 
-Banners
+ImageText
 ----field----
 field: {13F89250-AD6B-4548-882E-118A12C18094}
 name: Parameters Template
@@ -55,7 +55,7 @@ content-length: 59
 ----version----
 language: en
 version: 1
-revision: a44660df-436c-464e-b2f7-f1438e5617f0
+revision: e023ea58-6f60-404c-8a42-a681294d88dc
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -70,14 +70,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a44660df-436c-464e-b2f7-f1438e5617f0
+e023ea58-6f60-404c-8a42-a681294d88dc
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190314T102031Z
+20190317T130410Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

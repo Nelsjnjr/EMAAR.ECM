@@ -1,4 +1,4 @@
-//Revision: a7ac3c4d-f788-4a29-99e8-eaf6d43eed62
+//Revision: 18a006a1-1ae2-403c-a0a6-cc77e99469ea
 
 
 
@@ -14,27 +14,27 @@
 
 
 
-namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Carousel
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related_Content
 {
 
 
  	/// <summary>
-	/// I_Carousel Interface
+	/// I_RelatedContent Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/Carousel/_Carousel</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/Related Content/_RelatedContent</para>	
 	/// <para>ID: c9cd874a-7fcb-4eb3-802b-acc23bb25198</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_CarouselConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_Carousel : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_Image, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_TitleDesc, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_CTA
+	[SitecoreType(TemplateId=I_RelatedContentConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_RelatedContent : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_Image, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_TitleDesc, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_CTA
 	{
 				}
 
 
-	public static partial class I_CarouselConstants{
+	public static partial class I_RelatedContentConstants{
 
 			public const string TemplateIdString = "c9cd874a-7fcb-4eb3-802b-acc23bb25198";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "_Carousel";
+			public const string TemplateName = "_RelatedContent";
 
 					
 			public static readonly ID ImageFieldId = new ID("f6ba7b09-176f-4bb1-a680-c070d4b92c65");
@@ -58,14 +58,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Carouse
 
 	
 	/// <summary>
-	/// _Carousel
+	/// _RelatedContent
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/Carousel/_Carousel</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/Related Content/_RelatedContent</para>	
 	/// <para>ID: c9cd874a-7fcb-4eb3-802b-acc23bb25198</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_CarouselConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(I_Carousel))]
-	public partial class _Carousel  : GlassBase, I_Carousel 
+	[SitecoreType(TemplateId=I_RelatedContentConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_RelatedContent))]
+	public partial class _RelatedContent  : GlassBase, I_RelatedContent 
 	{
 	   
 						/// <summary>
@@ -76,7 +76,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Carouse
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_CarouselConstants.ImageFieldName)]
+				[SitecoreField(I_RelatedContentConstants.ImageFieldName)]
 				public virtual Image Image  {get; set;}
 					
 						/// <summary>
@@ -87,7 +87,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Carouse
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_CarouselConstants.DescriptionFieldName)]
+				[SitecoreField(I_RelatedContentConstants.DescriptionFieldName)]
 				public virtual string Description  {get; set;}
 					
 						/// <summary>
@@ -98,7 +98,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Carouse
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_CarouselConstants.TitleFieldName)]
+				[SitecoreField(I_RelatedContentConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
 					
 						/// <summary>
@@ -109,7 +109,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Carouse
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_CarouselConstants.CTAFieldName)]
+				[SitecoreField(I_RelatedContentConstants.CTAFieldName)]
 				public virtual Link CTA  {get; set;}
 					
 			

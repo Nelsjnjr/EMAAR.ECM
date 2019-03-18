@@ -76,30 +76,6 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\Global.item">
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\Global\Carousel.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\Global\Carousel\Boulevard heights.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\Global\Carousel\Reehan.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\Global\Carousel\Yansoon.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\Global\Carousel\Zanzebeel features.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
     <SitecoreItem Include="sitecore\content\ECM\Home.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
@@ -108,23 +84,27 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\Home\Page Datasources\a place where children grow.item">
+    <SitecoreItem Include="sitecore\content\ECM\Home\Page Datasources\Banner.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\Home\Page Datasources\Exploring the neighborhood.item">
+    <SitecoreItem Include="sitecore\content\ECM\Home\Page Datasources\Banner\a place where children grow.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\Home\Page Datasources\ImageText.item">
+    <SitecoreItem Include="sitecore\content\ECM\Home\Page Datasources\Banner\play eat laugh.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\Home\Page Datasources\play eat laugh.item">
+    <SitecoreItem Include="sitecore\content\ECM\Home\Page Datasources\Banner\why should you make downtown dubai home.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\Home\Page Datasources\why should you make downtown dubai home.item">
+    <SitecoreItem Include="sitecore\content\ECM\Home\Page Datasources\Related Content.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\Home\Page Datasources\Related Content\Exploring the neighborhood.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
@@ -140,23 +120,63 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\Settings\Rendering Parameters.item">
+    <SitecoreItem Include="sitecore\content\ECM\Site Content.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\Site Content\RelatedContent.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\Settings\Rendering Parameters\Image Alignment.item">
+    <SitecoreItem Include="sitecore\content\ECM\Site Content\RelatedContent\Boulevard heights.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\Settings\Rendering Parameters\Image Alignment\Background.item">
+    <SitecoreItem Include="sitecore\content\ECM\Site Content\RelatedContent\Reehan.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\Settings\Rendering Parameters\Image Alignment\Left.item">
+    <SitecoreItem Include="sitecore\content\ECM\Site Content\RelatedContent\Reehan2.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\Settings\Rendering Parameters\Image Alignment\Right.item">
+    <SitecoreItem Include="sitecore\content\ECM\Site Content\RelatedContent\Yansoon.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\Site Content\RelatedContent\Zanzebeel features.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Settings.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Settings\Rendering Parameters.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Settings\Rendering Parameters\Image Alignment.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Settings\Rendering Parameters\Image Alignment\Background.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Settings\Rendering Parameters\Image Alignment\Left.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Settings\Rendering Parameters\Image Alignment\Right.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Settings\Rendering Parameters\Related BackgroundCss.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Settings\Rendering Parameters\Related BackgroundCss\explore.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
@@ -192,6 +212,26 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Email.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Email\SampleNewsletter.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Email\SampleNewsletter\newsletter.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Email\SampleNewsletter\newsletter_head.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\webedit.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
@@ -208,9 +248,125 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\Feature\ECM\RelatedContent.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings\Foundation.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\Modules.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\Sample.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\Sample\Sample Rendering.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\System.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\System\Email.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\System\Email\Display Body.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\System\Email\Display Footer.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\System\Email\Display Sidebar.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\System\Email\Sample Newsletter.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\System\Email\Sample Newsletter\Call to Action.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\System\Email\Sample Newsletter\Content.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\System\Email\Sample Newsletter\Footer.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\System\Email\Sample Newsletter\Header.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\System\Email\Sample Newsletter\Image.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\System\Email\Sample Newsletter\List.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\System\Email\Sample Newsletter\Two Column Call to Action.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\System\Email\Set Page Title.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\System\Email\Text Message.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\System\Feeds.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\System\Feeds\FeedRenderer.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\System\FieldRenderer.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\System\Forms.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\System\Forms\Mvc Form.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\System\ItemRenderer.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\System\WebEdit.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\System\WebEdit\Hidden Rendering.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\System\WebEdit\WebEdit Content Editor.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\System\WebEdit\WebEdit Ribbon.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\media library.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
@@ -229,6 +385,18 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\Area Background Image.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\Banner.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\Banner\Image_Section3.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\Banner\Image_Section4.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
@@ -256,14 +424,6 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\Image_Section3.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\Image_Section4.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
     <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\img-map.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -281,6 +441,10 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\Pop up image.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\Related Content.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
@@ -416,71 +580,55 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Feature\ECM\Carousel.item">
+    <SitecoreItem Include="sitecore\templates\Feature\ECM\Related Content.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Feature\ECM\Carousel\_Carousel.item">
+    <SitecoreItem Include="sitecore\templates\Feature\ECM\Related Content\_RelatedContent.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Feature\ECM\Carousel\_Carousel\__Standard Values.item">
+    <SitecoreItem Include="sitecore\templates\Feature\ECM\Related Content\_RelatedContent\__Standard Values.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Feature\ECM\Carousel\_CarouselList.item">
+    <SitecoreItem Include="sitecore\templates\Feature\ECM\Related Content\_RelatedContentList.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Feature\ECM\Carousel\_CarouselList\__Standard Values.item">
+    <SitecoreItem Include="sitecore\templates\Feature\ECM\Related Content\_RelatedContentList\__Standard Values.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Feature\ECM\Carousel\_CarouselList\Carousel.item">
+    <SitecoreItem Include="sitecore\templates\Feature\ECM\Related Content\_RelatedContentList\Data.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Feature\ECM\Carousel\_CarouselList\Carousel\Carousel Title.item">
+    <SitecoreItem Include="sitecore\templates\Feature\ECM\Related Content\_RelatedContentList\Data\IsBackgroundCssAvailable.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Feature\ECM\Carousel\_CarouselList\Carousel\Carousel.item">
+    <SitecoreItem Include="sitecore\templates\Feature\ECM\Related Content\_RelatedContentList\Data\RelatedContent Title.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Feature\Sample2.item">
+    <SitecoreItem Include="sitecore\templates\Feature\ECM\Related Content\_RelatedContentList\Data\RelatedContent.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Feature\Sample2\Data.item">
+    <SitecoreItem Include="sitecore\templates\Feature\ECM\Related Content\Parameters Templates.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Feature\Sample2\Data\Sample image.item">
+    <SitecoreItem Include="sitecore\templates\Feature\ECM\Related Content\Parameters Templates\_RelatedContent BackgroundCss.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Feature\Sample2\Data\Sample Link.item">
+    <SitecoreItem Include="sitecore\templates\Feature\ECM\Related Content\Parameters Templates\_RelatedContent BackgroundCss\Css.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Feature\Sample2\Data\SampleName.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Feature\TestGlass.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Feature\TestGlass\Data.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Feature\TestGlass\Data\Description.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Feature\TestGlass\Data\Title.item">
+    <SitecoreItem Include="sitecore\templates\Feature\ECM\Related Content\Parameters Templates\_RelatedContent BackgroundCss\Css\BackgroundCss.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
@@ -571,6 +719,14 @@
     <SitecoreItem Include="sitecore\templates\Foundation\ECM\Base\_PageDatasources\__Standard Values.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Foundation\ECM\Base\_RelatedContentFolder.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Foundation\ECM\Base\_RelatedContentFolder\__Standard Values.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Foundation\ECM\Base\_Settings.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
@@ -668,6 +824,18 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\ECM\Common\Content Types\PageDatasources\__Standard Values.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\ECM\Common\Content Types\RelatedContentFolder.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\ECM\Common\Content Types\RelatedContentFolder\__Standard Values.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Project\ECM\Common\Content Types\Settings.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -700,23 +868,23 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Project\ECM\Page Types\Carousel.item">
+    <SitecoreItem Include="sitecore\templates\Project\ECM\Page Types\RelatedContent.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Project\ECM\Page Types\Carousel\Carousel.item">
+    <SitecoreItem Include="sitecore\templates\Project\ECM\Page Types\RelatedContent\RelatedContent.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Project\ECM\Page Types\Carousel\Carousel\__Standard Values.item">
+    <SitecoreItem Include="sitecore\templates\Project\ECM\Page Types\RelatedContent\RelatedContent\__Standard Values.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Project\ECM\Page Types\Carousel\CarouselList.item">
+    <SitecoreItem Include="sitecore\templates\Project\ECM\Page Types\RelatedContent\RelatedContentList.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Project\ECM\Page Types\Carousel\CarouselList\__Standard Values.item">
+    <SitecoreItem Include="sitecore\templates\Project\ECM\Page Types\RelatedContent\RelatedContentList\__Standard Values.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
@@ -729,6 +897,14 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Project\ECM\Parameters\ParametersTemplate_ImageAlignment\__Standard Values.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\ECM\Parameters\ParametersTemplate_RelatedContentBackgroundCss.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\ECM\Parameters\ParametersTemplate_RelatedContentBackgroundCss\__Standard Values.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>

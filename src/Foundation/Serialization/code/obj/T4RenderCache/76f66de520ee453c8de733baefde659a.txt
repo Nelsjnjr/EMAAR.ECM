@@ -1,4 +1,4 @@
-//Revision: 6f0c5404-2b67-4414-b4ad-d96f642e1c06
+//Revision: e8d57846-2be7-44f4-b3e3-2cef544d01dd
 
 
 
@@ -14,55 +14,69 @@
 
 
 
-namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Carousel
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related_Content
 {
 
 
  	/// <summary>
-	/// I_CarouselList Interface
+	/// I_RelatedContentList Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/Carousel/_CarouselList</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/Related Content/_RelatedContentList</para>	
 	/// <para>ID: 76f66de5-20ee-453c-8de7-33baefde659a</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_CarouselListConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_CarouselList : IGlassBase 
+	[SitecoreType(TemplateId=I_RelatedContentListConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_RelatedContentList : IGlassBase 
 	{
 								/// <summary>
-					/// The Carousel Title field.
+					/// The IsBackgroundCssAvailable field.
+					/// <para></para>
+					/// <para>Field Type: Checkbox</para>		
+					/// <para>Field ID: 4a8bff42-5e3b-4bb1-ba59-1db2fdfae5c5</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_RelatedContentListConstants.IsBackgroundCssAvailableFieldName)]
+					bool IsBackgroundCssAvailable  {get; set;}
+			
+								/// <summary>
+					/// The RelatedContent Title field.
 					/// <para></para>
 					/// <para>Field Type: Single-Line Text</para>		
 					/// <para>Field ID: 43ae9faf-4548-4df9-b505-c6928ea48b3d</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_CarouselListConstants.Carousel_TitleFieldName)]
-					string Carousel_Title  {get; set;}
+					[SitecoreField(I_RelatedContentListConstants.RelatedContent_TitleFieldName)]
+					string RelatedContent_Title  {get; set;}
 			
 								/// <summary>
-					/// The Carousel field.
+					/// The RelatedContent field.
 					/// <para></para>
 					/// <para>Field Type: Multilist</para>		
 					/// <para>Field ID: 96c03c76-a871-4acf-91f6-21a3e49a8e32</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_CarouselListConstants.CarouselsFieldName)]
-					IEnumerable<Guid> Carousels  {get; set;}
+					[SitecoreField(I_RelatedContentListConstants.RelatedContentsFieldName)]
+					IEnumerable<Guid> RelatedContents  {get; set;}
 			
 				}
 
 
-	public static partial class I_CarouselListConstants{
+	public static partial class I_RelatedContentListConstants{
 
 			public const string TemplateIdString = "76f66de5-20ee-453c-8de7-33baefde659a";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "_CarouselList";
+			public const string TemplateName = "_RelatedContentList";
 
 					
-			public static readonly ID Carousel_TitleFieldId = new ID("43ae9faf-4548-4df9-b505-c6928ea48b3d");
-			public const string Carousel_TitleFieldName = "Carousel Title";
+			public static readonly ID IsBackgroundCssAvailableFieldId = new ID("4a8bff42-5e3b-4bb1-ba59-1db2fdfae5c5");
+			public const string IsBackgroundCssAvailableFieldName = "IsBackgroundCssAvailable";
 			
 					
-			public static readonly ID CarouselsFieldId = new ID("96c03c76-a871-4acf-91f6-21a3e49a8e32");
-			public const string CarouselsFieldName = "Carousel";
+			public static readonly ID RelatedContent_TitleFieldId = new ID("43ae9faf-4548-4df9-b505-c6928ea48b3d");
+			public const string RelatedContent_TitleFieldName = "RelatedContent Title";
+			
+					
+			public static readonly ID RelatedContentsFieldId = new ID("96c03c76-a871-4acf-91f6-21a3e49a8e32");
+			public const string RelatedContentsFieldName = "RelatedContent";
 			
 			
 
@@ -70,37 +84,48 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Carouse
 
 	
 	/// <summary>
-	/// _CarouselList
+	/// _RelatedContentList
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/Carousel/_CarouselList</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/Related Content/_RelatedContentList</para>	
 	/// <para>ID: 76f66de5-20ee-453c-8de7-33baefde659a</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_CarouselListConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(I_CarouselList))]
-	public partial class _CarouselList  : GlassBase, I_CarouselList 
+	[SitecoreType(TemplateId=I_RelatedContentListConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_RelatedContentList))]
+	public partial class _RelatedContentList  : GlassBase, I_RelatedContentList 
 	{
 	   
 						/// <summary>
-				/// The Carousel Title field.
+				/// The IsBackgroundCssAvailable field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4a8bff42-5e3b-4bb1-ba59-1db2fdfae5c5</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_RelatedContentListConstants.IsBackgroundCssAvailableFieldName)]
+				public virtual bool IsBackgroundCssAvailable  {get; set;}
+					
+						/// <summary>
+				/// The RelatedContent Title field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
 				/// <para>Field ID: 43ae9faf-4548-4df9-b505-c6928ea48b3d</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_CarouselListConstants.Carousel_TitleFieldName)]
-				public virtual string Carousel_Title  {get; set;}
+				[SitecoreField(I_RelatedContentListConstants.RelatedContent_TitleFieldName)]
+				public virtual string RelatedContent_Title  {get; set;}
 					
 						/// <summary>
-				/// The Carousel field.
+				/// The RelatedContent field.
 				/// <para></para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 96c03c76-a871-4acf-91f6-21a3e49a8e32</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_CarouselListConstants.CarouselsFieldName)]
-				public virtual IEnumerable<Guid> Carousels  {get; set;}
+				[SitecoreField(I_RelatedContentListConstants.RelatedContentsFieldName)]
+				public virtual IEnumerable<Guid> RelatedContents  {get; set;}
 					
 			
 	}

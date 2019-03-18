@@ -1,0 +1,39 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Glass.Mapper.Sc.Web.Mvc
+@model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.Banner.IImageText
+@{ var image = Model.Image != null ? Model.Image.Src : String.Empty;
+}
+
+@using (Html.BeginEditFrame(Model.FullPath, "FullBannerImage", "Edit Background Image"))
+{
+    <!-- background image with text starts(In Experience Editor mode) -->
+    <section style="background:url(@image ) no-repeat center center fixed" class="bg-image-text">
+        <div class="container">
+            <div class="text-wrap wow fadeInUp">
+                <h2 class="heading">@Html.Glass().Editable(Model, x => x.Title)</h2>
+                <p>
+                    @Html.Raw(Html.Glass().Editable(Model, x => x.Description))
+                </p>
+                @if (Model.CTA != null)
+                {
+                    using (Html.Glass().BeginRenderLink(Model, x => x.CTA, new { @class = "btn btn-primary mt-3 mt-md-5" }, isEditable: true))
+                    {
+                        @Model.CTA.Title
+                        <i>
+
+                            @if (!String.IsNullOrEmpty(ViewBag.RightArrow))
+                            {
+                                <img src="@ViewBag.RightArrow.ToString()" alt="arrow" class="svg">
+                            }
+
+                        </i>
+                    }
+                }
+
+            </div>
+        </div>
+    </section>
+}
+
+<!-- background image with text ends -->

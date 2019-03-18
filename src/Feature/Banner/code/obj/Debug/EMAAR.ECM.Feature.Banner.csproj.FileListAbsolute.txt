@@ -88,6 +88,7 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\System.Web.We
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\System.Web.WebPages.Razor.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\WebGrease.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Foundation.Constants.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Foundation.Constants.dll.config
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Sitecore.Foundation.DependencyInjection.pdb
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Sitecore.Foundation.DependencyInjection.dll.config
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Foundation.ORM.pdb
@@ -132,4 +133,3 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\obj\Debug\EMAAR.E
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\obj\Debug\EMAAR.ECM.Feature.Banner.csproj.CopyComplete
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\obj\Debug\EMAAR.ECM.Feature.Banner.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\obj\Debug\EMAAR.ECM.Feature.Banner.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Foundation.Constants.dll.config

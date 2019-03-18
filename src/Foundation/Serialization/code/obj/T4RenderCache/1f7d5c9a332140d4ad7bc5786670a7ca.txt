@@ -1,0 +1,83 @@
+//Revision: b8423755-ead1-4a4d-8d52-960c672c1a19
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related_Content.Parameters_Templates
+{
+
+
+ 	/// <summary>
+	/// I_RelatedContent_BackgroundCss Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Related Content/Parameters Templates/_RelatedContent BackgroundCss</para>	
+	/// <para>ID: 1f7d5c9a-3321-40d4-ad7b-c5786670a7ca</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_RelatedContent_BackgroundCssConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_RelatedContent_BackgroundCss : IGlassBase 
+	{
+								/// <summary>
+					/// The BackgroundCss field.
+					/// <para></para>
+					/// <para>Field Type: Droplink</para>		
+					/// <para>Field ID: fa850c21-f71d-415b-b712-35edfd24016e</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_RelatedContent_BackgroundCssConstants.BackgroundCssFieldName)]
+					Guid BackgroundCss  {get; set;}
+			
+				}
+
+
+	public static partial class I_RelatedContent_BackgroundCssConstants{
+
+			public const string TemplateIdString = "1f7d5c9a-3321-40d4-ad7b-c5786670a7ca";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_RelatedContent BackgroundCss";
+
+					
+			public static readonly ID BackgroundCssFieldId = new ID("fa850c21-f71d-415b-b712-35edfd24016e");
+			public const string BackgroundCssFieldName = "BackgroundCss";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _RelatedContent_BackgroundCss
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Related Content/Parameters Templates/_RelatedContent BackgroundCss</para>	
+	/// <para>ID: 1f7d5c9a-3321-40d4-ad7b-c5786670a7ca</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_RelatedContent_BackgroundCssConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_RelatedContent_BackgroundCss))]
+	public partial class _RelatedContent_BackgroundCss  : GlassBase, I_RelatedContent_BackgroundCss 
+	{
+	   
+						/// <summary>
+				/// The BackgroundCss field.
+				/// <para></para>
+				/// <para>Field Type: Droplink</para>		
+				/// <para>Field ID: fa850c21-f71d-415b-b712-35edfd24016e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_RelatedContent_BackgroundCssConstants.BackgroundCssFieldName)]
+				public virtual Guid BackgroundCss  {get; set;}
+					
+			
+	}
+}
+
