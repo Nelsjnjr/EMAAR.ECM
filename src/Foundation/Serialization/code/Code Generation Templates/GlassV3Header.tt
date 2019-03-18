@@ -56,6 +56,12 @@ namespace <#=fullNamespace #>
         [SitecoreInfo(SitecoreInfoType.Version)]
         int Version { get; }
 
+		[SitecoreInfo(SitecoreInfoType.Url)]
+        string Url { get; }
+
+		[SitecoreInfo(SitecoreInfoType.FullPath)]
+        string FullPath { get;}
+		
 	}
 
 	public abstract partial class GlassBase : IGlassBase{
@@ -71,5 +77,8 @@ namespace <#=fullNamespace #>
 
 		[SitecoreInfo(SitecoreInfoType.Url)]
         public virtual string Url { get; private set; }
+
+		[SitecoreInfo(SitecoreInfoType.FullPath)]
+        public virtual string FullPath { get; private set; }
 	}
 }

@@ -1,0 +1,133 @@
+//Revision: 097cd3de-2ac2-49cd-a470-991a64125c7d
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature
+{
+
+
+ 	/// <summary>
+	/// ISample2 Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/Sample2</para>	
+	/// <para>ID: aee95fca-3972-4d1d-bea9-742118956d79</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=ISample2Constants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface ISample2 : IGlassBase 
+	{
+								/// <summary>
+					/// The Sample image field.
+					/// <para></para>
+					/// <para>Field Type: Image</para>		
+					/// <para>Field ID: 26b26ed4-cd4f-48f4-8621-3ba345c8f10a</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(ISample2Constants.Sample_ImageFieldName)]
+					Image Sample_Image  {get; set;}
+			
+								/// <summary>
+					/// The Sample Link field.
+					/// <para></para>
+					/// <para>Field Type: Droplist</para>		
+					/// <para>Field ID: 06968340-cfa3-4942-ab1b-b099f25152fc</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(ISample2Constants.Sample_LinkFieldName)]
+					string Sample_Link  {get; set;}
+			
+								/// <summary>
+					/// The SampleName field.
+					/// <para></para>
+					/// <para>Field Type: Datetime</para>		
+					/// <para>Field ID: 7fe02d51-3900-44c1-844b-e326652ca68e</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(ISample2Constants.SampleNameFieldName)]
+					DateTime SampleName  {get; set;}
+			
+				}
+
+
+	public static partial class ISample2Constants{
+
+			public const string TemplateIdString = "aee95fca-3972-4d1d-bea9-742118956d79";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "Sample2";
+
+					
+			public static readonly ID Sample_ImageFieldId = new ID("26b26ed4-cd4f-48f4-8621-3ba345c8f10a");
+			public const string Sample_ImageFieldName = "Sample image";
+			
+					
+			public static readonly ID Sample_LinkFieldId = new ID("06968340-cfa3-4942-ab1b-b099f25152fc");
+			public const string Sample_LinkFieldName = "Sample Link";
+			
+					
+			public static readonly ID SampleNameFieldId = new ID("7fe02d51-3900-44c1-844b-e326652ca68e");
+			public const string SampleNameFieldName = "SampleName";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// Sample2
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/Sample2</para>	
+	/// <para>ID: aee95fca-3972-4d1d-bea9-742118956d79</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=ISample2Constants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(ISample2))]
+	public partial class Sample2  : GlassBase, ISample2 
+	{
+	   
+						/// <summary>
+				/// The Sample image field.
+				/// <para></para>
+				/// <para>Field Type: Image</para>		
+				/// <para>Field ID: 26b26ed4-cd4f-48f4-8621-3ba345c8f10a</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(ISample2Constants.Sample_ImageFieldName)]
+				public virtual Image Sample_Image  {get; set;}
+					
+						/// <summary>
+				/// The Sample Link field.
+				/// <para></para>
+				/// <para>Field Type: Droplist</para>		
+				/// <para>Field ID: 06968340-cfa3-4942-ab1b-b099f25152fc</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(ISample2Constants.Sample_LinkFieldName)]
+				public virtual string Sample_Link  {get; set;}
+					
+						/// <summary>
+				/// The SampleName field.
+				/// <para></para>
+				/// <para>Field Type: Datetime</para>		
+				/// <para>Field ID: 7fe02d51-3900-44c1-844b-e326652ca68e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(ISample2Constants.SampleNameFieldName)]
+				public virtual DateTime SampleName  {get; set;}
+					
+			
+	}
+}
+

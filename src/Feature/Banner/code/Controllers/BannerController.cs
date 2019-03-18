@@ -35,7 +35,6 @@ namespace EMAAR.ECM.Feature.Banner.Controllers
             ViewBag.RightArrow = _sitecoreHelper.RightArrow;
             return View("~/Views/Banner/ImageText/ImageText.cshtml", imageText);
         }
-
         /// <summary>
         /// Getting all related component asigned in Sitecore with the Background CSS (eg:explore)
         /// </summary>  
