@@ -1,24 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
+﻿#region namespace
+using System;
+#endregion
 namespace Sitecore.Foundation.DependencyInjection
 {
-  [AttributeUsage(AttributeTargets.Class, Inherited = false)]
-  public class ServiceAttribute : Attribute
-  {
-    public ServiceAttribute()
+    [AttributeUsage(AttributeTargets.Class, Inherited = false)]
+    public class ServiceAttribute : Attribute
     {
+        #region constructor
+        public ServiceAttribute()
+        {
 
+        }
+        #endregion
+        public ServiceAttribute(Type serviceType)
+        {
+            ServiceType = serviceType;
+        }
+        #region property
+        public Lifetime Lifetime { get; set; } = Lifetime.Singleton;
+        public Type ServiceType { get; set; }
+        #endregion
     }
-
-    public ServiceAttribute(Type serviceType)
-    {
-      this.ServiceType = serviceType;
-    }
-
-    public Lifetime Lifetime { get; set; } = Lifetime.Singleton;
-    public Type ServiceType { get; set; }
-  }
 }

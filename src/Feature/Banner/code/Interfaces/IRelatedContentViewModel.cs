@@ -1,6 +1,7 @@
-﻿using System.Collections.Generic;
+﻿#region namespace
+using System.Collections.Generic;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.RelatedContent;
-
+#endregion
 namespace EMAAR.ECM.Feature.Banner.Interfaces
 {
     /// <summary>

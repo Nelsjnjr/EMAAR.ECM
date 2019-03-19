@@ -1,9 +1,10 @@
-﻿using System.Web.Mvc;
+﻿#region namespace
+using System.Web.Mvc;
 using EMAAR.ECM.Feature.Banner.Interfaces;
 using EMAAR.ECM.Foundation.Constants.Interfaces;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.Banner;
 using static EMAAR.ECM.Foundation.Constants.CommonConstants;
-
+#endregion
 namespace EMAAR.ECM.Feature.Banner.Controllers
 {
     /// <summary>

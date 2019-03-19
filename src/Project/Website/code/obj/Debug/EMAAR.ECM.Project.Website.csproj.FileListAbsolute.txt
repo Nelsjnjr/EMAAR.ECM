@@ -334,3 +334,5 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\obj\Debug\EMAAR.
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\obj\Debug\EMAAR.ECM.Project.Website.csproj.CopyComplete
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\obj\Debug\EMAAR.ECM.Project.Website.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\obj\Debug\EMAAR.ECM.Project.Website.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\EMAAR.ECM.Project.Website.dll.CodeAnalysisLog.xml
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\EMAAR.ECM.Project.Website.dll.lastcodeanalysissucceeded

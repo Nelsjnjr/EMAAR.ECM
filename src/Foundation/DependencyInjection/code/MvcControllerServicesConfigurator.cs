@@ -1,16 +1,19 @@
-﻿namespace Sitecore.Foundation.DependencyInjection.Infrastructure
+﻿#region namespace
+using System;
+using Glass.Mapper.Sc;
+using Glass.Mapper.Sc.Web;
+using Glass.Mapper.Sc.Web.Mvc;
+using Glass.Mapper.Sc.Web.WebForms;
+using Microsoft.Extensions.DependencyInjection;
+using Sitecore.Data;
+using Sitecore.DependencyInjection;
+#endregion
+namespace Sitecore.Foundation.DependencyInjection.Infrastructure
 {
-    using System;
-    using Glass.Mapper.Sc;
-    using Glass.Mapper.Sc.Web;
-    using Glass.Mapper.Sc.Web.Mvc;
-    using Glass.Mapper.Sc.Web.WebForms;
-    using Microsoft.Extensions.DependencyInjection;
-    using Sitecore.Data;
-    using Sitecore.DependencyInjection;
-
+ 
     public class MvcControllerServicesConfigurators : IServicesConfigurator
     {
+        #region method
         public void Configure(IServiceCollection serviceCollection)
         { 
             // For getting a SitecoreService for any database
@@ -35,6 +38,8 @@
             serviceCollection.AddClassesWithServiceAttribute("*.Feature.*", "*.Foundation.*");
 
         }
+        #endregion
+        #region private method
         private static ISitecoreService CreateSitecoreService(Database database)
         {
             return new SitecoreService(database);
@@ -70,6 +75,7 @@
         {
             return new WebFormsContext(Get<ISitecoreService>(), Get<IGlassHtml>());
         }
+        #endregion
 
     }
 }

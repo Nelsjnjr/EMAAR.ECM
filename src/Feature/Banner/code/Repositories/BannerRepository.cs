@@ -1,4 +1,5 @@
-﻿using System;
+﻿#region namespace
+using System;
 using System.Collections.Generic;
 using EMAAR.ECM.Feature.Banner.Interfaces;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
@@ -8,7 +9,7 @@ using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Parameters;
 using Glass.Mapper.Sc.Web.Mvc;
 using Sitecore.Foundation.DependencyInjection;
 using static EMAAR.ECM.Foundation.Constants.CommonConstants;
-
+#endregion
 namespace EMAAR.ECM.Feature.Banner.Repositories
 {
     /// <summary>

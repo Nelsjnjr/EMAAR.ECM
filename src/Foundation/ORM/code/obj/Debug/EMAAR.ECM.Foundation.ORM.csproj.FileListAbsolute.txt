@@ -330,3 +330,5 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\obj\Debug\EMAAR.E
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\obj\Debug\EMAAR.ECM.Foundation.ORM.csproj.CopyComplete
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\obj\Debug\EMAAR.ECM.Foundation.ORM.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\obj\Debug\EMAAR.ECM.Foundation.ORM.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\EMAAR.ECM.Foundation.ORM.dll.CodeAnalysisLog.xml
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\EMAAR.ECM.Foundation.ORM.dll.lastcodeanalysissucceeded

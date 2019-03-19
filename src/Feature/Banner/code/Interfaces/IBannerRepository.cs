@@ -1,6 +1,7 @@
-﻿using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.Banner;
+﻿#region namespace
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.Banner;
 using static EMAAR.ECM.Foundation.Constants.CommonConstants;
-
+#endregion
 namespace EMAAR.ECM.Feature.Banner.Interfaces
 {
     /// <summary>
