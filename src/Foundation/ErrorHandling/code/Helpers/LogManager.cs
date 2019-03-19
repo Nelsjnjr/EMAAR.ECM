@@ -20,10 +20,10 @@ namespace EMAAR.ECM.Foundation.ErrorHandling.Helpers
     public class LogManager :ILogManager
     {
         #region Properties
-         /// <summary>
-         /// Properties
-         /// </summary>       
-         log4net.ILog logger = Sitecore.Diagnostics.LoggerFactory.GetLogger("ECMLog");
+        /// <summary>
+        /// Properties
+        /// </summary>       
+        readonly log4net.ILog logger = Sitecore.Diagnostics.LoggerFactory.GetLogger("ECMLog");
 
         #endregion
 
