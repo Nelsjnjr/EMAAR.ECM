@@ -5,10 +5,12 @@
     /// </summary>
     public interface ISitecoreHelper
     {
+        #region property
         /// <summary>
         /// Getting RightArrow image url from Sitecore based on Site
         /// </summary>
         string RightArrow { get; }
+        #endregion
 
     }
 }

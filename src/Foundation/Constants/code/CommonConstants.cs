@@ -5,8 +5,10 @@
     /// </summary>
     public static class CommonConstants
     {
+        #region property
         public enum Alignment { Left, Right, Background };
         public static string Explore { get; } = "explore";
+        #endregion
     }
 
 }

@@ -114,5 +114,3 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\obj\Deb
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\obj\Debug\EMAAR.ECM.Foundation.ErrorHandling.csproj.CopyComplete
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\obj\Debug\EMAAR.ECM.Foundation.ErrorHandling.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\obj\Debug\EMAAR.ECM.Foundation.ErrorHandling.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\bin\EMAAR.ECM.Foundation.ErrorHandling.dll.CodeAnalysisLog.xml
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\bin\EMAAR.ECM.Foundation.ErrorHandling.dll.lastcodeanalysissucceeded

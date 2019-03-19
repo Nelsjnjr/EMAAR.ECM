@@ -10,17 +10,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 #pragma warning disable 1591
 #pragma warning disable 0108
 //------------------------------------------------------------------------------
@@ -44,7 +33,6 @@ using Sitecore.Data;
 using Sitecore.Foundation.DependencyInjection;
 
 
-
 namespace EMAAR.ECM.Foundation.ORM.Models
 {
 
@@ -64,6 +52,24 @@ namespace EMAAR.ECM.Foundation.ORM.Models
 
 		[SitecoreInfo(SitecoreInfoType.FullPath)]
         string FullPath { get;}
+
+		[SitecoreInfo(SitecoreInfoType.Name)]
+		string Name { get; }
+
+        [SitecoreInfo(SitecoreInfoType.DisplayName)]
+        string DisplayName { get; }
+
+        [SitecoreInfo(SitecoreInfoType.Key)]
+        string Key { get; }
+
+        [SitecoreInfo(SitecoreInfoType.TemplateName)]
+        string TemplateName { get; }		
+		
+        [SitecoreInfo(SitecoreInfoType.TemplateId)]
+        string TemplateId { get; }
+
+		[SitecoreInfo(SitecoreInfoType.MediaUrl)]
+        string MediaUrl { get;  }
 		
 	}
 
@@ -83,6 +89,24 @@ namespace EMAAR.ECM.Foundation.ORM.Models
 
 		[SitecoreInfo(SitecoreInfoType.FullPath)]
         public virtual string FullPath { get; private set; }
+
+		[SitecoreInfo(SitecoreInfoType.Name)]
+        public virtual string Name { get; private set; }
+
+        [SitecoreInfo(SitecoreInfoType.DisplayName)]
+        public virtual string DisplayName { get; private set; }
+
+        [SitecoreInfo(SitecoreInfoType.Key)]
+        public virtual string Key { get; private set; }
+
+        [SitecoreInfo(SitecoreInfoType.TemplateName)]
+        public virtual string TemplateName { get; private set; }
+
+        [SitecoreInfo(SitecoreInfoType.TemplateId)]
+        public virtual string TemplateId { get; private set; }
+
+		[SitecoreInfo(SitecoreInfoType.MediaUrl)]
+        public virtual string MediaUrl { get; private set; }
 	}
 }
 

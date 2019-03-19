@@ -100,5 +100,4 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\o
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\obj\Debug\Sitecore.Foundation.DependencyInjection.csproj.CopyComplete
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\obj\Debug\Sitecore.Foundation.DependencyInjection.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\obj\Debug\Sitecore.Foundation.DependencyInjection.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\Sitecore.Foundation.DependencyInjection.dll.CodeAnalysisLog.xml
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\Sitecore.Foundation.DependencyInjection.dll.lastcodeanalysissucceeded
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\obj\Debug\Sitecore.Foundation.DependencyInjection.csprojAssemblyReference.cache
