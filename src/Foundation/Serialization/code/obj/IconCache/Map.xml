@@ -164,7 +164,6 @@
   <Item ItemPath="/sitecore/content/ECM/Site Content/RelatedContent/Yansoon" ItemIcon="/temp/iconcache/control/16x16/splitter_ver.png" />
   <Item ItemPath="/sitecore/content/ECM/Site Content/RelatedContent/Zanzebeel features" ItemIcon="/temp/iconcache/control/16x16/splitter_ver.png" />
   <Item ItemPath="/sitecore/layout/Placeholder Settings/ECM" ItemIcon="/temp/IconCache/Network/16x16/earth.png" />
-  <Item ItemPath="/sitecore/layout/Placeholder Settings/ECM/content" ItemIcon="/temp/iconcache/business/16x16/table_selection_block.png" />
   <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM/Banner" ItemIcon="/temp/iconcache/software/16x16/element.png" />
   <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM/RelatedContent" ItemIcon="/temp/iconcache/software/16x16/element.png" />
   <Item ItemPath="/sitecore/media library/Images" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
@@ -225,7 +224,6 @@
   <Item ItemPath="/sitecore/content/ECM/Dictionary/Global" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home/Page Datasources" ItemIcon="/temp/iconcache/applications/32x32/folder_view.png" />
   <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM/DowntownDubai/Banner" ItemIcon="/temp/iconcache/software/16x16/element.png" />
-  <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM/DowntownDubai/HeroBanner" ItemIcon="/temp/iconcache/software/16x16/element.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home/Page Datasources/Related Content" ItemIcon="/temp/iconcache/control/16x16/splitter_ver_b_h.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home/Page Datasources/Banner" ItemIcon="/temp/IconCache/Applications/16x16/text_rich_colored.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home/Page Datasources/HeroBanner" ItemIcon="/temp/iconcache/multimedia/32x32/image_h.png" />
@@ -273,7 +271,6 @@
   <Item ItemPath="/sitecore/layout/Renderings/Feature" ItemIcon="/temp/IconCache/Applications/16x16/folder_cubes.png" />
   <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM" ItemIcon="/temp/IconCache/Network/16x16/earth.png" />
   <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM/DowntownDubai" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
-  <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM/DowntownDubai/RelatedContent" ItemIcon="/temp/iconcache/software/16x16/element.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM" ItemIcon="/temp/IconCache/Network/16x16/earth.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Base" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_BannerFolder" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
@@ -368,8 +365,11 @@
   <Item ItemPath="/sitecore/content/ECM/Dictionary/DowntownDubai/S/scrolldown" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home/Page Datasources/Related Content/Exploring the neighborhood" ItemIcon="/temp/iconcache/control/16x16/splitter_ver_b_h.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home/Page Datasources/HeroBanner/HeroBanner" ItemIcon="/temp/iconcache/multimedia/32x32/image_h.png" />
-  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home" ItemIcon="/temp/IconCache/Network/16x16/home.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/HeroBanner/Buildings" ItemIcon="/temp/iconcache/multimedia/32x32/image_h.png" />
   <Item ItemPath="/sitecore/media library/Images/Feature/ECM" ItemIcon="/temp/IconCache/flags/32x32/flag_united_arab_emirates.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home/Page Datasources/HeroBanner/Reach the stars" ItemIcon="/temp/iconcache/multimedia/32x32/image_h.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home" ItemIcon="/temp/IconCache/Network/16x16/home.png" />
+  <Item ItemPath="/sitecore/layout/Placeholder Settings/ECM/content" ItemIcon="/temp/iconcache/business/16x16/table_selection_block.png" />
+  <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM/DowntownDubai/HeroBanner" ItemIcon="/temp/iconcache/software/16x16/element.png" />
+  <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM/DowntownDubai/RelatedContent" ItemIcon="/temp/iconcache/software/16x16/element.png" />
 </ItemIconCache>

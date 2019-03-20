@@ -66,7 +66,7 @@
     <DisableFileDeployment>False</DisableFileDeployment>
     <LightningDeployMode>False</LightningDeployMode>
     <SitecoreWebUrl>http://sc1.local</SitecoreWebUrl>
-    <SitecoreAccessGuid>543791c7-1e5c-4da2-a42a-5a785ba749ce</SitecoreAccessGuid>
+    <SitecoreAccessGuid>0ad2f489-144f-4c4a-85b4-7ff773f25ad5</SitecoreAccessGuid>
   </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">

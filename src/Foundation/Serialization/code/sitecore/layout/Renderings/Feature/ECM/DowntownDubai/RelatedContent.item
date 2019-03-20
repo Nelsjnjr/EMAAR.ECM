@@ -28,9 +28,9 @@ RelatedContent
 field: {94069F66-609C-48B0-8281-521C30FB269D}
 name: Open Properties after Add
 key: open properties after add
-content-length: 0
+content-length: 1
 
-
+1
 ----field----
 field: {B5B27AF1-25EF-405C-87CE-369B3A004016}
 name: Datasource Location
@@ -48,7 +48,7 @@ content-length: 76
 ----version----
 language: en
 version: 1
-revision: 0d4d176d-ea7e-400d-bab5-fa22466cf4ba
+revision: 8c638df9-4bbd-423c-aa37-afbac305145e
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -63,14 +63,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0d4d176d-ea7e-400d-bab5-fa22466cf4ba
+8c638df9-4bbd-423c-aa37-afbac305145e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190320T065602Z
+20190320T121221Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

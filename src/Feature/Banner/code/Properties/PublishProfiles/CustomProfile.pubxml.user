@@ -361,7 +361,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/17/2019 10:37:25</publishTime>
     </File>
     <File Include="Views/Project/ECM/DowntownDubai/Banner/HeroBanner/HeroBanner.cshtml">
-      <publishTime>03/20/2019 12:56:45</publishTime>
+      <publishTime>03/20/2019 15:02:55</publishTime>
     </File>
     <File Include="Views/Project/ECM/DowntownDubai/Banner/ImageText/ImageText.cshtml">
       <publishTime>03/20/2019 11:55:15</publishTime>

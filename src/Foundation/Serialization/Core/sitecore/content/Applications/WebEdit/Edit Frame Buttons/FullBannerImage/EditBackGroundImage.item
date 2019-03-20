@@ -21,13 +21,13 @@ Imaging/16x16/pencil.png
 field: {CF738220-908D-4C3F-9482-32E625DAF13C}
 name: Fields
 key: fields
-content-length: 5
+content-length: 21
 
-Image
+Image|HeroBannerImage
 ----version----
 language: en
 version: 1
-revision: ad77c939-da0e-491d-87c4-d5621564b584
+revision: e8dfef44-9844-4a5d-9d01-0896c0047f30
 
 ----field----
 field: {108D3A63-BAAA-4560-86D8-3A112ED84717}
@@ -70,14 +70,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ad77c939-da0e-491d-87c4-d5621564b584
+e8dfef44-9844-4a5d-9d01-0896c0047f30
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190317T072949Z
+20190320T110027Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

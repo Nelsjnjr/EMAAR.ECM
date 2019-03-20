@@ -25,6 +25,13 @@ content-length: 10
 
 HeroBanner
 ----field----
+field: {94069F66-609C-48B0-8281-521C30FB269D}
+name: Open Properties after Add
+key: open properties after add
+content-length: 1
+
+1
+----field----
 field: {B5B27AF1-25EF-405C-87CE-369B3A004016}
 name: Datasource Location
 key: datasource location
@@ -41,7 +48,7 @@ content-length: 68
 ----version----
 language: en
 version: 1
-revision: 54d621f2-5ce9-485d-8940-05ae3313102c
+revision: af97b3a9-e9b4-491f-95b4-19605ebe7f7c
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -56,14 +63,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-54d621f2-5ce9-485d-8940-05ae3313102c
+af97b3a9-e9b4-491f-95b4-19605ebe7f7c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190320T065849Z
+20190320T120147Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
