@@ -141,7 +141,8 @@
     <Compile Include="CommonConstants.cs" />
     <Compile Include="Interfaces\ISitecoreHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SitecoreHelper.cs" />
+    <Compile Include="Services\SitecoreHelper.cs" />
+    <Compile Include="SitecoreGuids.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

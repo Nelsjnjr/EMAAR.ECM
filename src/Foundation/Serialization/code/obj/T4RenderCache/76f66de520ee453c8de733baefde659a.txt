@@ -28,14 +28,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related
 	public partial interface I_RelatedContentList : IGlassBase 
 	{
 								/// <summary>
-					/// The IsBackgroundCssAvailable field.
+					/// The IsBackgroundColorAvailable field.
 					/// <para></para>
 					/// <para>Field Type: Checkbox</para>		
 					/// <para>Field ID: 4a8bff42-5e3b-4bb1-ba59-1db2fdfae5c5</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_RelatedContentListConstants.IsBackgroundCssAvailableFieldName)]
-					bool IsBackgroundCssAvailable  {get; set;}
+					[SitecoreField(I_RelatedContentListConstants.IsBackgroundColorAvailableFieldName)]
+					bool IsBackgroundColorAvailable  {get; set;}
 			
 								/// <summary>
 					/// The RelatedContent Title field.
@@ -52,10 +52,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related
 					/// <para></para>
 					/// <para>Field Type: Multilist</para>		
 					/// <para>Field ID: 96c03c76-a871-4acf-91f6-21a3e49a8e32</para>
-					/// <para>Custom Data: </para>
+					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.RelatedContent.IRelatedContent</para>
 					/// </summary>
 					[SitecoreField(I_RelatedContentListConstants.RelatedContentsFieldName)]
-					IEnumerable<Guid> RelatedContents  {get; set;}
+					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.RelatedContent.IRelatedContent> RelatedContents  {get; set;}
 			
 				}
 
@@ -67,8 +67,8 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related
 			public const string TemplateName = "_RelatedContentList";
 
 					
-			public static readonly ID IsBackgroundCssAvailableFieldId = new ID("4a8bff42-5e3b-4bb1-ba59-1db2fdfae5c5");
-			public const string IsBackgroundCssAvailableFieldName = "IsBackgroundCssAvailable";
+			public static readonly ID IsBackgroundColorAvailableFieldId = new ID("4a8bff42-5e3b-4bb1-ba59-1db2fdfae5c5");
+			public const string IsBackgroundColorAvailableFieldName = "IsBackgroundColorAvailable";
 			
 					
 			public static readonly ID RelatedContent_TitleFieldId = new ID("43ae9faf-4548-4df9-b505-c6928ea48b3d");
@@ -95,15 +95,15 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related
 	{
 	   
 						/// <summary>
-				/// The IsBackgroundCssAvailable field.
+				/// The IsBackgroundColorAvailable field.
 				/// <para></para>
 				/// <para>Field Type: Checkbox</para>		
 				/// <para>Field ID: 4a8bff42-5e3b-4bb1-ba59-1db2fdfae5c5</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_RelatedContentListConstants.IsBackgroundCssAvailableFieldName)]
-				public virtual bool IsBackgroundCssAvailable  {get; set;}
+				[SitecoreField(I_RelatedContentListConstants.IsBackgroundColorAvailableFieldName)]
+				public virtual bool IsBackgroundColorAvailable  {get; set;}
 					
 						/// <summary>
 				/// The RelatedContent Title field.
@@ -121,11 +121,11 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related
 				/// <para></para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 96c03c76-a871-4acf-91f6-21a3e49a8e32</para>
-				/// <para>Custom Data: </para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.RelatedContent.IRelatedContent</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_RelatedContentListConstants.RelatedContentsFieldName)]
-				public virtual IEnumerable<Guid> RelatedContents  {get; set;}
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.RelatedContent.IRelatedContent> RelatedContents  {get; set;}
 					
 			
 	}

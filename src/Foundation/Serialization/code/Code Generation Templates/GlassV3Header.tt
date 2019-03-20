@@ -1,6 +1,5 @@
 <#@ template language="C#"  #>
 <#@ assembly name="System.Core" #>
-
 <#@ include file="Helpers.tt" #>
 <#@ include file="StringExtensions.tt" #>
 <#@ include file="GeneralExtensions.tt" #>
@@ -68,9 +67,6 @@ namespace <#=fullNamespace #>
         [SitecoreInfo(SitecoreInfoType.DisplayName)]
         string DisplayName { get; }
 
-        [SitecoreInfo(SitecoreInfoType.Key)]
-        string Key { get; }
-
         [SitecoreInfo(SitecoreInfoType.TemplateName)]
         string TemplateName { get; }		
 		
@@ -104,9 +100,6 @@ namespace <#=fullNamespace #>
 
         [SitecoreInfo(SitecoreInfoType.DisplayName)]
         public virtual string DisplayName { get; private set; }
-
-        [SitecoreInfo(SitecoreInfoType.Key)]
-        public virtual string Key { get; private set; }
 
         [SitecoreInfo(SitecoreInfoType.TemplateName)]
         public virtual string TemplateName { get; private set; }

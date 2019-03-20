@@ -1,0 +1,45 @@
+﻿@model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.HeroBanner.IHeroBannerList
+@using Glass.Mapper.Sc.Web.Mvc
+<!-- mainLayout starts here -->
+<section id="mainLayout">
+    <div style="background:url(../images/Downtown-Dubai_tcm223-49617.png) no-repeat center center" class="sectionImage"></div>
+    <div style="background:url(../images/Mobile_BackgroundImage.png) no-repeat center center" class="sectionImageMobile"></div>
+    <div class="container">
+        <div class="contentBox">
+            <h1 class="sectionTitle wow fadeInUp">@Model.Title</h1>
+            <!-- sectionTitle ends here  -->
+            <ul class="siteStats wow fadeInUp">
+                @foreach (var item in Model.Hero_Community_Metrics)
+                {
+                    if (!Sitecore.Context.PageMode.IsExperienceEditor)
+                    {
+                        <li>
+                            <span class="timer count-number" data-to="@Html.Glass().Editable(item, x => x.Count)" data-speed="1500"><!-- 79 --></span>
+                            @Html.Glass().Editable(item, x => x.Title)
+                        </li>
+                    }
+                    else
+                    {
+                        <li>
+                            <span >@Html.Glass().Editable(item, x => x.Count)<!-- 79 --></span>
+                            @Html.Glass().Editable(item, x => x.Title)
+                        </li>
+                    }
+
+                }
+
+
+            </ul>
+            <!-- siteStats ends here -->
+        </div>
+    </div>
+    <a href="javascript:;" class="scrollIndicator">
+        @if (!String.IsNullOrEmpty(ViewBag.Scrolldown))
+        {
+            <img src="@ViewBag.Scrolldown.ToString()" alt="">
+        }
+        @Sitecore.Globalization.Translate.Text("scrolldown")
+
+    </a>
+</section>
+<!-- mainLayout ends here -->

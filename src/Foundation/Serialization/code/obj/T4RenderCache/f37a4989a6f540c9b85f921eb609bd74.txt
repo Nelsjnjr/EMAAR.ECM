@@ -1,0 +1,88 @@
+//Revision: f6da3a51-dd15-4079-b4d0-b3da6fd24b1c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.HeroBanner
+{
+
+
+ 	/// <summary>
+	/// IHeroBanner Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/HeroBanner/HeroBanner</para>	
+	/// <para>ID: f37a4989-a6f5-40c9-b85f-921eb609bd74</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IHeroBannerConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IHeroBanner : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.HeroBanner.I_HeroBanner
+	{
+				}
+
+
+	public static partial class IHeroBannerConstants{
+
+			public const string TemplateIdString = "f37a4989-a6f5-40c9-b85f-921eb609bd74";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "HeroBanner";
+
+					
+			public static readonly ID CountFieldId = new ID("31d6185a-e7e2-42ad-b4ab-d96bd72d218e");
+			public const string CountFieldName = "Count";
+			
+					
+			public static readonly ID TitleFieldId = new ID("574981a6-efd9-442e-ac0d-706f77d72115");
+			public const string TitleFieldName = "Title";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// HeroBanner
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/HeroBanner/HeroBanner</para>	
+	/// <para>ID: f37a4989-a6f5-40c9-b85f-921eb609bd74</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IHeroBannerConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IHeroBanner))]
+	public partial class HeroBanner  : GlassBase, IHeroBanner 
+	{
+	   
+						/// <summary>
+				/// The Count field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 31d6185a-e7e2-42ad-b4ab-d96bd72d218e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IHeroBannerConstants.CountFieldName)]
+				public virtual string Count  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 574981a6-efd9-442e-ac0d-706f77d72115</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IHeroBannerConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
+			
+	}
+}
+

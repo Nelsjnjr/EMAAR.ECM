@@ -1,0 +1,58 @@
+//Revision: 8ff0fb3b-5411-431b-98ea-e85644f927ed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
+{
+
+
+ 	/// <summary>
+	/// ITenantRoot Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/TenantRoot</para>	
+	/// <para>ID: 1ce52398-4893-4084-bed5-8ea46d6d0fbf</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=ITenantRootConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface ITenantRoot : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_TenantRoot
+	{
+				}
+
+
+	public static partial class ITenantRootConstants{
+
+			public const string TemplateIdString = "1ce52398-4893-4084-bed5-8ea46d6d0fbf";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "TenantRoot";
+
+			
+
+	}
+
+	
+	/// <summary>
+	/// TenantRoot
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/TenantRoot</para>	
+	/// <para>ID: 1ce52398-4893-4084-bed5-8ea46d6d0fbf</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=ITenantRootConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(ITenantRoot))]
+	public partial class TenantRoot  : GlassBase, ITenantRoot 
+	{
+	   
+			
+	}
+}
+

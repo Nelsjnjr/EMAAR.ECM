@@ -8,7 +8,11 @@
         #region property
         public enum Alignment { Left, Right, Background };
         public static string Explore { get; } = "explore";
-        #endregion
+        public static string ArrowPath { get; } = "/Settings/Navigation Arrow/RightArrow";
+        public static string ScrolldownPath { get; } = "/Settings/Navigation Arrow/scrolldown";
+        public static string ECMViewPath { get; } = "~/Views/Project/ECM/DowntownDubai/";
+        #endregion";
+
     }
 
 }

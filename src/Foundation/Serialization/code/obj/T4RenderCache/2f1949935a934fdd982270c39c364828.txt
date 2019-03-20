@@ -1,0 +1,158 @@
+//Revision: c6955aef-5421-4102-b59d-b0f298bcfe86
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.HeroBanner
+{
+
+
+ 	/// <summary>
+	/// I_HeroBannerList Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/HeroBanner/_HeroBannerList</para>	
+	/// <para>ID: 2f194993-5a93-4fdd-9822-70c39c364828</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_HeroBannerListConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_HeroBannerList : IGlassBase 
+	{
+								/// <summary>
+					/// The Hero Community Metrics field.
+					/// <para></para>
+					/// <para>Field Type: Multilist</para>		
+					/// <para>Field ID: 61256258-c337-4d5a-b150-6b765a10fbbf</para>
+					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.HeroBanner.IHeroBanner</para>
+					/// </summary>
+					[SitecoreField(I_HeroBannerListConstants.Hero_Community_MetricsFieldName)]
+					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.HeroBanner.IHeroBanner> Hero_Community_Metrics  {get; set;}
+			
+								/// <summary>
+					/// The HeroBannerImage field.
+					/// <para></para>
+					/// <para>Field Type: Image</para>		
+					/// <para>Field ID: 18aed467-a7bf-4e76-aa40-fae487b2308f</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_HeroBannerListConstants.HeroBannerImageFieldName)]
+					Image HeroBannerImage  {get; set;}
+			
+								/// <summary>
+					/// The MobileHeroBannerImage field.
+					/// <para></para>
+					/// <para>Field Type: Image</para>		
+					/// <para>Field ID: db9afe05-491a-4f77-be15-6e14c9ae15a4</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_HeroBannerListConstants.MobileHeroBannerImageFieldName)]
+					Image MobileHeroBannerImage  {get; set;}
+			
+								/// <summary>
+					/// The Title field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: 3e63b712-d4ba-479b-943b-2589baf36631</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_HeroBannerListConstants.TitleFieldName)]
+					string Title  {get; set;}
+			
+				}
+
+
+	public static partial class I_HeroBannerListConstants{
+
+			public const string TemplateIdString = "2f194993-5a93-4fdd-9822-70c39c364828";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_HeroBannerList";
+
+					
+			public static readonly ID Hero_Community_MetricsFieldId = new ID("61256258-c337-4d5a-b150-6b765a10fbbf");
+			public const string Hero_Community_MetricsFieldName = "Hero Community Metrics";
+			
+					
+			public static readonly ID HeroBannerImageFieldId = new ID("18aed467-a7bf-4e76-aa40-fae487b2308f");
+			public const string HeroBannerImageFieldName = "HeroBannerImage";
+			
+					
+			public static readonly ID MobileHeroBannerImageFieldId = new ID("db9afe05-491a-4f77-be15-6e14c9ae15a4");
+			public const string MobileHeroBannerImageFieldName = "MobileHeroBannerImage";
+			
+					
+			public static readonly ID TitleFieldId = new ID("3e63b712-d4ba-479b-943b-2589baf36631");
+			public const string TitleFieldName = "Title";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _HeroBannerList
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/HeroBanner/_HeroBannerList</para>	
+	/// <para>ID: 2f194993-5a93-4fdd-9822-70c39c364828</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_HeroBannerListConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_HeroBannerList))]
+	public partial class _HeroBannerList  : GlassBase, I_HeroBannerList 
+	{
+	   
+						/// <summary>
+				/// The Hero Community Metrics field.
+				/// <para></para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: 61256258-c337-4d5a-b150-6b765a10fbbf</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.HeroBanner.IHeroBanner</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_HeroBannerListConstants.Hero_Community_MetricsFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.HeroBanner.IHeroBanner> Hero_Community_Metrics  {get; set;}
+					
+						/// <summary>
+				/// The HeroBannerImage field.
+				/// <para></para>
+				/// <para>Field Type: Image</para>		
+				/// <para>Field ID: 18aed467-a7bf-4e76-aa40-fae487b2308f</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_HeroBannerListConstants.HeroBannerImageFieldName)]
+				public virtual Image HeroBannerImage  {get; set;}
+					
+						/// <summary>
+				/// The MobileHeroBannerImage field.
+				/// <para></para>
+				/// <para>Field Type: Image</para>		
+				/// <para>Field ID: db9afe05-491a-4f77-be15-6e14c9ae15a4</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_HeroBannerListConstants.MobileHeroBannerImageFieldName)]
+				public virtual Image MobileHeroBannerImage  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 3e63b712-d4ba-479b-943b-2589baf36631</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_HeroBannerListConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
+			
+	}
+}
+

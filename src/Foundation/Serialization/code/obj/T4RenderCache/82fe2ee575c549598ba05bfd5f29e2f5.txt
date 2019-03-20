@@ -37,8 +37,8 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string TemplateName = "RelatedContentList";
 
 					
-			public static readonly ID IsBackgroundCssAvailableFieldId = new ID("4a8bff42-5e3b-4bb1-ba59-1db2fdfae5c5");
-			public const string IsBackgroundCssAvailableFieldName = "IsBackgroundCssAvailable";
+			public static readonly ID IsBackgroundColorAvailableFieldId = new ID("4a8bff42-5e3b-4bb1-ba59-1db2fdfae5c5");
+			public const string IsBackgroundColorAvailableFieldName = "IsBackgroundColorAvailable";
 			
 					
 			public static readonly ID RelatedContent_TitleFieldId = new ID("43ae9faf-4548-4df9-b505-c6928ea48b3d");
@@ -65,15 +65,15 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 	{
 	   
 						/// <summary>
-				/// The IsBackgroundCssAvailable field.
+				/// The IsBackgroundColorAvailable field.
 				/// <para></para>
 				/// <para>Field Type: Checkbox</para>		
 				/// <para>Field ID: 4a8bff42-5e3b-4bb1-ba59-1db2fdfae5c5</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IRelatedContentListConstants.IsBackgroundCssAvailableFieldName)]
-				public virtual bool IsBackgroundCssAvailable  {get; set;}
+				[SitecoreField(IRelatedContentListConstants.IsBackgroundColorAvailableFieldName)]
+				public virtual bool IsBackgroundColorAvailable  {get; set;}
 					
 						/// <summary>
 				/// The RelatedContent Title field.
@@ -91,11 +91,11 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				/// <para></para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 96c03c76-a871-4acf-91f6-21a3e49a8e32</para>
-				/// <para>Custom Data: </para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.RelatedContent.IRelatedContent</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IRelatedContentListConstants.RelatedContentsFieldName)]
-				public virtual IEnumerable<Guid> RelatedContents  {get; set;}
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.RelatedContent.IRelatedContent> RelatedContents  {get; set;}
 					
 			
 	}

@@ -28,28 +28,28 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/10/2017 08:13:52</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Feature.Banner.dll">
-      <publishTime>03/19/2019 12:11:16</publishTime>
+      <publishTime>03/20/2019 12:13:36</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Feature.Banner.pdb">
-      <publishTime>03/19/2019 12:11:16</publishTime>
+      <publishTime>03/20/2019 12:13:36</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.Constants.dll">
-      <publishTime>03/19/2019 12:11:16</publishTime>
+      <publishTime>03/20/2019 12:13:35</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.Constants.dll.config">
       <publishTime>03/17/2019 10:08:13</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.Constants.pdb">
-      <publishTime>03/19/2019 12:11:16</publishTime>
+      <publishTime>03/20/2019 12:13:35</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll">
-      <publishTime>03/19/2019 12:11:15</publishTime>
+      <publishTime>03/20/2019 12:13:35</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll.config">
       <publishTime>03/10/2019 14:42:45</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.pdb">
-      <publishTime>03/19/2019 12:11:15</publishTime>
+      <publishTime>03/20/2019 12:13:35</publishTime>
     </File>
     <File Include="bin/Glass.Mapper.dll">
       <publishTime>02/25/2019 13:27:08</publishTime>
@@ -271,13 +271,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/24/2018 13:38:24</publishTime>
     </File>
     <File Include="bin/Sitecore.Foundation.DependencyInjection.dll">
-      <publishTime>03/19/2019 10:39:41</publishTime>
+      <publishTime>03/20/2019 10:31:58</publishTime>
     </File>
     <File Include="bin/Sitecore.Foundation.DependencyInjection.dll.config">
       <publishTime>03/11/2019 10:11:29</publishTime>
     </File>
     <File Include="bin/Sitecore.Foundation.DependencyInjection.pdb">
-      <publishTime>03/19/2019 10:39:41</publishTime>
+      <publishTime>03/20/2019 10:31:58</publishTime>
     </File>
     <File Include="bin/Sitecore.Kernel.dll">
       <publishTime>03/10/2019 14:20:21</publishTime>
@@ -330,6 +330,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/Banner/Banners.cshtml">
       <publishTime>03/13/2019 11:47:04</publishTime>
     </File>
+    <File Include="Views/Banner/HeroBanner/HeroBanner.cshtml">
+      <publishTime>03/20/2019 11:07:39</publishTime>
+    </File>
     <File Include="Views/Banner/ImageText/ImageText.cshtml">
       <publishTime>03/13/2019 11:47:04</publishTime>
     </File>
@@ -346,7 +349,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/12/2019 10:02:13</publishTime>
     </File>
     <File Include="Views/Banner/RelatedContent/RelatedContent.cshtml">
-      <publishTime>03/19/2019 12:08:04</publishTime>
+      <publishTime>03/20/2019 11:19:06</publishTime>
     </File>
     <File Include="Views/Banner/_BackgroundImageText.cshtml">
       <publishTime>03/17/2019 11:36:23</publishTime>
@@ -356,6 +359,24 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Views/Banner/_RightImageText.cshtml">
       <publishTime>03/17/2019 10:37:25</publishTime>
+    </File>
+    <File Include="Views/Project/ECM/DowntownDubai/Banner/HeroBanner/HeroBanner.cshtml">
+      <publishTime>03/20/2019 12:56:45</publishTime>
+    </File>
+    <File Include="Views/Project/ECM/DowntownDubai/Banner/ImageText/ImageText.cshtml">
+      <publishTime>03/20/2019 11:55:15</publishTime>
+    </File>
+    <File Include="Views/Project/ECM/DowntownDubai/Banner/ImageText/_BackgroundImageText.cshtml">
+      <publishTime>03/17/2019 17:38:34</publishTime>
+    </File>
+    <File Include="Views/Project/ECM/DowntownDubai/Banner/ImageText/_LeftImageText.cshtml">
+      <publishTime>03/17/2019 17:38:25</publishTime>
+    </File>
+    <File Include="Views/Project/ECM/DowntownDubai/Banner/ImageText/_RightImageText.cshtml">
+      <publishTime>03/17/2019 17:38:34</publishTime>
+    </File>
+    <File Include="Views/Project/ECM/DowntownDubai/Banner/RelatedContent/RelatedContent.cshtml">
+      <publishTime>03/20/2019 12:27:52</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
       <publishTime>03/17/2019 15:05:09</publishTime>

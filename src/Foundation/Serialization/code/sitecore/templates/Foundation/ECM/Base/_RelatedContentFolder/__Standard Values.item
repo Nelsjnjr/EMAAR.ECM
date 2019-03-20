@@ -1,26 +1,26 @@
 ----item----
 version: 1
-id: {65BDCDEA-E597-4E51-99C8-98F424B3C5E7}
+id: {81A221FD-D547-4070-92F5-84E86D0604DF}
 database: master
 path: /sitecore/templates/Foundation/ECM/Base/_RelatedContentFolder/__Standard Values
-parent: {884E19C5-5966-4E31-BDEB-132EFBCFCC3C}
+parent: {F02569FD-5078-4A74-8057-42F08B7AB0B0}
 name: __Standard Values
 master: {00000000-0000-0000-0000-000000000000}
-template: {884E19C5-5966-4E31-BDEB-132EFBCFCC3C}
+template: {F02569FD-5078-4A74-8057-42F08B7AB0B0}
 templatekey: _RelatedContentFolder
-created: 20190318T062800Z
+created: 20190319T084723Z
 
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
-content-length: 34
+content-length: 40
 
-Control/16x16/splitter_ver_b_h.png
+Applications/16x16/text_rich_colored.png
 ----version----
 language: en
 version: 1
-revision: a4ed183a-3d7c-4f49-8f2b-a9e250263947
+revision: ae8e7011-afdc-4dc8-9397-b056f524d08e
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -49,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a4ed183a-3d7c-4f49-8f2b-a9e250263947
+ae8e7011-afdc-4dc8-9397-b056f524d08e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190318T064410Z
+20190319T084723Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

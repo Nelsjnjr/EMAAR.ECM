@@ -1,9 +1,10 @@
 ﻿#region namespace
 using System;
-using System.Collections.Generic;
 using EMAAR.ECM.Feature.Banner.Interfaces;
+using EMAAR.ECM.Foundation.Constants.Interfaces;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.Banner;
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.HeroBanner;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.RelatedContent;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Parameters;
 using Glass.Mapper.Sc.Web.Mvc;
@@ -21,16 +22,18 @@ namespace EMAAR.ECM.Feature.Banner.Repositories
         #region property
         private readonly Func<IMvcContext> _mvcContext;
         private readonly IImageText _imageText;
-        private readonly IRelatedContentViewModel _relatedContentViewModel;
+        private readonly IRelatedContentList _relatedContentList;
+        private readonly IHeroBannerList _heroBannerList;
 
         #endregion
         #region construtor
-        public BannerRepository(Func<IMvcContext> mvcContext, IImageText imageText, IRelatedContentViewModel relatedContentViewModel)
+        public BannerRepository(Func<IMvcContext> mvcContext, IImageText imageText, IRelatedContentList relatedContentList, IHeroBannerList heroBannerList)
         {
             _imageText = imageText;
             _mvcContext = mvcContext;
-            _relatedContentViewModel = relatedContentViewModel;
-
+            _relatedContentList = relatedContentList;
+            _heroBannerList = heroBannerList;
+        
         }
         #endregion
         #region public method
@@ -48,10 +51,9 @@ namespace EMAAR.ECM.Feature.Banner.Repositories
             if (model != null)
             {
                 IParametersTemplate_ImageAlignment renderingParameter = mvcContext?.GetRenderingParameters<IParametersTemplate_ImageAlignment>();
-                if (renderingParameter != null && renderingParameter.Image_Alignment != Guid.Empty)
-                {
-                    ISettings settings = mvcContext.SitecoreService.GetItem<ISettings>(renderingParameter.Image_Alignment);
-                    Enum.TryParse(settings.Key, out alignment);
+                if (renderingParameter?.Image_Alignment!=null)
+                {                    
+                    Enum.TryParse(renderingParameter.Image_Alignment.Key, out alignment);
                 }
             }
             return model ?? _imageText;
@@ -61,41 +63,25 @@ namespace EMAAR.ECM.Feature.Banner.Repositories
         /// Getting all related component asigned in Sitecore with the Background CSS (eg:explore)
         /// </summary>
         /// <returns>Related content details</returns>
-        public IRelatedContentViewModel GetRelatedContent()
+        public IRelatedContentList GetRelatedContent()
         {
             IMvcContext mvcContext = _mvcContext();
-            IRelatedContentList model = mvcContext.GetDataSourceItem<IRelatedContentList>();
-            IRelatedContentViewModel relatedContentViewModel = null;
-            if (model != null)
-            {
-                relatedContentViewModel = MapRelatedContent(model);
-
-            }
-            return relatedContentViewModel ?? _relatedContentViewModel;
+            IRelatedContentList relatedContentList = mvcContext.GetDataSourceItem<IRelatedContentList>();          
+            return relatedContentList ?? _relatedContentList;
+        }
+        /// <summary>
+        /// Getting all HeroBanner component asigned in Sitecore on field (Hero Community Metrics)
+        /// </summary>
+        /// <returns>HeroBannerList</returns>
+        public IHeroBannerList GetHeroBanner()
+        {           
+            IMvcContext mvcContext = _mvcContext();
+            IHeroBannerList heroBannerList = mvcContext.GetDataSourceItem<IHeroBannerList>();           
+            return heroBannerList ?? _heroBannerList;
         }
         #endregion
         #region private method
-        /// <summary>
-        /// Mapping the view model for RelatedContent
-        /// </summary>
-        /// <param name="model">Passing RelatedContentList to map to RelatedContentViewModel</param>
-        /// <returns>RelatedContentViewModel</returns>
-        private IRelatedContentViewModel MapRelatedContent(IRelatedContentList model)
-        {
-            int count = 0;
-            List<IRelatedContent> reletedContents = new List<IRelatedContent>();
-            IMvcContext mvcContext = _mvcContext(); 
-            //Getting all related content from Multilist
-            foreach (Guid item in model.RelatedContents)
-            {
-                count++;
-                reletedContents.Add(mvcContext.SitecoreService.GetItem<IRelatedContent>(item));
-            }
-            _relatedContentViewModel.RelatedContentList = model;
-            _relatedContentViewModel.RelatedContent = reletedContents;
-            _relatedContentViewModel.ReletedContentCount = count;
-            return _relatedContentViewModel;
-        }
+ 
         #endregion
 
     }

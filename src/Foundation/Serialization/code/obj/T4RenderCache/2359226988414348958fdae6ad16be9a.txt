@@ -1,0 +1,58 @@
+//Revision: 26b0ab0c-3b16-4621-86fe-9688044c3db6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
+{
+
+
+ 	/// <summary>
+	/// IHeroBannerFolder Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/HeroBannerFolder</para>	
+	/// <para>ID: 23592269-8841-4348-958f-dae6ad16be9a</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IHeroBannerFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IHeroBannerFolder : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_HeroBannerListFolder
+	{
+				}
+
+
+	public static partial class IHeroBannerFolderConstants{
+
+			public const string TemplateIdString = "23592269-8841-4348-958f-dae6ad16be9a";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "HeroBannerFolder";
+
+			
+
+	}
+
+	
+	/// <summary>
+	/// HeroBannerFolder
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/HeroBannerFolder</para>	
+	/// <para>ID: 23592269-8841-4348-958f-dae6ad16be9a</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IHeroBannerFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IHeroBannerFolder))]
+	public partial class HeroBannerFolder  : GlassBase, IHeroBannerFolder 
+	{
+	   
+			
+	}
+}
+

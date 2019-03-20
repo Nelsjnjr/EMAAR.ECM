@@ -7,9 +7,13 @@
     {
         #region property
         /// <summary>
-        /// Getting RightArrow image url from Sitecore based on Site
+        /// Getting RightArrow image url from Sitecore settings based on Site
         /// </summary>
         string RightArrow { get; }
+        /// <summary>
+        /// Getting Scrolldown image url from Sitecore settings based on Site
+        /// </summary>
+        string Scrolldown { get; }
         #endregion
 
     }

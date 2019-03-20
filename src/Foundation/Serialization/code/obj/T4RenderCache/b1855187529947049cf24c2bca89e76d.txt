@@ -61,11 +61,11 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Paramet
 				/// <para></para>
 				/// <para>Field Type: Droplink</para>		
 				/// <para>Field ID: cd6c42bc-cfb9-4c9a-8ba7-fc857696abe3</para>
-				/// <para>Custom Data: </para>
+				/// <para>Custom Data: Type=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.ISettings</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IParametersTemplate_ImageAlignmentConstants.Image_AlignmentFieldName)]
-				public virtual Guid Image_Alignment  {get; set;}
+				public virtual EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.ISettings Image_Alignment  {get; set;}
 					
 			
 	}

@@ -190,7 +190,7 @@ public static string GetGlassFieldType(SitecoreField field)
 			case "checklist":
 			case "multilist with search":
 			case "multilist":
-	            return string.Format("IEnumerable<{0}>", string.IsNullOrEmpty(generic) ? "Guid" : generic);
+	            return string.Format("IEnumerable<{0}>",  generic);
 
 			case "grouped droplink":
 			case "droplink":

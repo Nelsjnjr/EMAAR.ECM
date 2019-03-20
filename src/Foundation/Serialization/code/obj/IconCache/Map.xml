@@ -43,11 +43,6 @@
   <Item ItemPath="/sitecore/content/ECM/Global/Carousel/Zanzebeel features" ItemIcon="/temp/iconcache/control/16x16/splitter_ver.png" />
   <Item ItemPath="/sitecore/content/ECM/Global/Carousel/Boulevard heights" ItemIcon="/temp/iconcache/control/16x16/splitter_ver.png" />
   <Item ItemPath="/sitecore/content/ECM/Home/Page Datasources/why should you make downtown dubai home" ItemIcon="/temp/iconcache/applications/16x16/text_rich_colored.png" />
-  <Item ItemPath="/sitecore/content/ECM/Settings/Rendering Parameters" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
-  <Item ItemPath="/sitecore/content/ECM/Settings/Rendering Parameters/Image Alignment" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
-  <Item ItemPath="/sitecore/content/ECM/Settings/Rendering Parameters/Image Alignment/Background" ItemIcon="/temp/iconcache/applications/16x16/gear_add.png" />
-  <Item ItemPath="/sitecore/content/ECM/Settings/Rendering Parameters/Image Alignment/Left" ItemIcon="/temp/iconcache/applications/16x16/gear_add.png" />
-  <Item ItemPath="/sitecore/content/ECM/Settings/Rendering Parameters/Image Alignment/Right" ItemIcon="/temp/iconcache/applications/16x16/gear_add.png" />
   <Item ItemPath="/sitecore/content/ECM/Home/Page Datasources/play eat laugh" ItemIcon="/temp/iconcache/applications/16x16/text_rich_colored.png" />
   <Item ItemPath="/sitecore/templates/Feature/ECM/Carousel" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
   <Item ItemPath="/sitecore/templates/Feature/ECM/Carousel/_Carousel" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
@@ -133,64 +128,17 @@
   <Item ItemPath="/sitecore/media library/Images/Feature/ECM/Banner" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
   <Item ItemPath="/sitecore/media library/Images/Feature/ECM/Area Background Image" ItemIcon="/temp/IconCache/-/media/2B61D81548F043CE855F26E64910DE25.ashx?h=16&amp;thn=1&amp;w=16" />
   <Item ItemPath="/sitecore/content/ECM/Site Content/RelatedContent/Copy of Reehan" ItemIcon="/temp/iconcache/control/16x16/splitter_ver.png" />
-  <Item ItemPath="/sitecore/templates/Feature/ECM" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
   <Item ItemPath="/sitecore/templates/Feature/Sample2" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
   <Item ItemPath="/sitecore/templates/Feature/Sample2/Data/SampleName" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/templates/Feature/Sample2/Data/Sample image" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/templates/Feature/TestGlass/Data/Title" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
-  <Item ItemPath="/sitecore/content/ECM" ItemIcon="/temp/iconcache/network/16x16/earth.png" />
   <Item ItemPath="/sitecore/content/Settings" ItemIcon="/temp/IconCache/PeopleV2/16x16/gears.png" />
-  <Item ItemPath="/sitecore/templates/Feature" ItemIcon="/temp/IconCache/Applications/16x16/folder_cubes.png" />
-  <Item ItemPath="/sitecore/templates/Feature/ECM/Banner" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
-  <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
-  <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content/Parameters Templates" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
-  <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content/_RelatedContent" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
-  <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content/_RelatedContentList" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
-  <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content/_RelatedContentList/__Standard Values" ItemIcon="/temp/iconcache/applications/32x32/form_blue.png" />
-  <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content/_RelatedContentList/Data" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content/_RelatedContentList/Data/IsBackgroundCssAvailable" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
-  <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content/_RelatedContentList/Data/RelatedContent" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
-  <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content/_RelatedContentList/Data/RelatedContent Title" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/templates/Feature/Sample2/Data" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/templates/Feature/Sample2/Data/Sample Link" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/templates/Feature/TestGlass" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
   <Item ItemPath="/sitecore/templates/Feature/TestGlass/Data" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/templates/Feature/TestGlass/Data/Description" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
-  <Item ItemPath="/sitecore/templates/Foundation" ItemIcon="/temp/IconCache/Applications/16x16/folder_gear.png" />
-  <Item ItemPath="/sitecore/templates/Foundation/ECM" ItemIcon="/temp/IconCache/Network/16x16/earth.png" />
-  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
-  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_BannerFolder" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
-  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_Base" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
-  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_CTA" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
-  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_DataFolder" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
-  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_Image" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
-  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_NavigationArrow" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
-  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_PageDatasources" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
-  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_RelatedContentFolder" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
-  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_Settings" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
-  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_TitleDesc" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
-  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
-  <Item ItemPath="/sitecore/templates/Project" ItemIcon="/temp/IconCache/Applications/16x16/folder_window.png" />
-  <Item ItemPath="/sitecore/templates/Project/ECM" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
-  <Item ItemPath="/sitecore/templates/Project/ECM/Common" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
-  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
-  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/BannerFolder" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
-  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/DataFolder" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
-  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/NavigationArrow" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
-  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/PageDatasources" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
-  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/RelatedContentFolder" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
-  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/Settings" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
-  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Page Types" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
-  <Item ItemPath="/sitecore/templates/Project/ECM/Content Types" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
-  <Item ItemPath="/sitecore/templates/Project/ECM/Page Types" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
-  <Item ItemPath="/sitecore/templates/Project/ECM/Page Types/Banner" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
-  <Item ItemPath="/sitecore/templates/Project/ECM/Page Types/Banner/ImageText" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
-  <Item ItemPath="/sitecore/templates/Project/ECM/Page Types/RelatedContent" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
-  <Item ItemPath="/sitecore/templates/Project/ECM/Page Types/RelatedContent/RelatedContent" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
-  <Item ItemPath="/sitecore/templates/Project/ECM/Page Types/RelatedContent/RelatedContentList" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
-  <Item ItemPath="/sitecore/templates/Project/ECM/Parameters" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
-  <Item ItemPath="/sitecore/templates/Project/ECM/Parameters/ParametersTemplate_ImageAlignment" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
-  <Item ItemPath="/sitecore/templates/Project/ECM/Parameters/ParametersTemplate_RelatedContentBackgroundCss" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
   <Item ItemPath="/sitecore/content/Settings/Rendering Parameters" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
   <Item ItemPath="/sitecore/content/Settings/Rendering Parameters/Image Alignment" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
   <Item ItemPath="/sitecore/content/Settings/Rendering Parameters/Image Alignment/Background" ItemIcon="/temp/iconcache/applications/16x16/gear_add.png" />
@@ -206,7 +154,6 @@
   <Item ItemPath="/sitecore/content/ECM/Home/Page Datasources/Banner/why should you make downtown dubai home" ItemIcon="/temp/iconcache/applications/16x16/text_rich_colored.png" />
   <Item ItemPath="/sitecore/content/ECM/Home/Page Datasources/Related Content" ItemIcon="/temp/IconCache/Control/16x16/splitter_ver_b_h.png" />
   <Item ItemPath="/sitecore/content/ECM/Home/Page Datasources/Related Content/Exploring the neighborhood" ItemIcon="/temp/iconcache/control/16x16/splitter_ver_b_h.png" />
-  <Item ItemPath="/sitecore/content/ECM/Settings" ItemIcon="/temp/IconCache/PeopleV2/16x16/gears.png" />
   <Item ItemPath="/sitecore/content/ECM/Settings/Navigation Arrow" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
   <Item ItemPath="/sitecore/content/ECM/Settings/Navigation Arrow/RightArrow" ItemIcon="/temp/iconcache/applications/16x16/navigate_right.png" />
   <Item ItemPath="/sitecore/content/ECM/Site Content" ItemIcon="/temp/iconcache/applications/16x16/folder_green.png" />
@@ -216,5 +163,213 @@
   <Item ItemPath="/sitecore/content/ECM/Site Content/RelatedContent/Reehan2" ItemIcon="/temp/iconcache/control/16x16/splitter_ver.png" />
   <Item ItemPath="/sitecore/content/ECM/Site Content/RelatedContent/Yansoon" ItemIcon="/temp/iconcache/control/16x16/splitter_ver.png" />
   <Item ItemPath="/sitecore/content/ECM/Site Content/RelatedContent/Zanzebeel features" ItemIcon="/temp/iconcache/control/16x16/splitter_ver.png" />
+  <Item ItemPath="/sitecore/layout/Placeholder Settings/ECM" ItemIcon="/temp/IconCache/Network/16x16/earth.png" />
+  <Item ItemPath="/sitecore/layout/Placeholder Settings/ECM/content" ItemIcon="/temp/iconcache/business/16x16/table_selection_block.png" />
+  <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM/Banner" ItemIcon="/temp/iconcache/software/16x16/element.png" />
+  <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM/RelatedContent" ItemIcon="/temp/iconcache/software/16x16/element.png" />
+  <Item ItemPath="/sitecore/media library/Images" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/media library/Images/Feature" ItemIcon="/temp/IconCache/Applications/16x16/folder_cubes.png" />
+  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/bk" ItemIcon="/temp/IconCache/-/media/877433FA7A5E454EAD0C6B6460D649A2.ashx?h=16&amp;thn=1&amp;w=16" />
+  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/Boulevard Height" ItemIcon="/temp/IconCache/-/media/1C702138DA104455837CA8215F7193B2.ashx?h=16&amp;thn=1&amp;w=16" />
+  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/bp" ItemIcon="/temp/IconCache/-/media/315D68599B8642E5ACADE6032FA095C2.ashx?h=16&amp;thn=1&amp;w=16" />
+  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/Downtown-Dubai_tcm223-49617" ItemIcon="/temp/IconCache/-/media/7955B05B2A7349D198348BA6F7B0F04C.ashx?h=16&amp;thn=1&amp;w=16" />
+  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/Image_Section1" ItemIcon="/temp/IconCache/-/media/472BBE066A914992922905DE6ED48015.ashx?h=16&amp;thn=1&amp;w=16" />
+  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/Image_Section2" ItemIcon="/temp/IconCache/-/media/55921A3070004FFAA15253BBF116168A.ashx?h=16&amp;thn=1&amp;w=16" />
+  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/img-map" ItemIcon="/temp/IconCache/-/media/D1D6A8AE395C46F8BF8E106D1ACD194A.ashx?h=16&amp;thn=1&amp;w=16" />
+  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/Mobile_Area Background Image" ItemIcon="/temp/IconCache/-/media/82C108BC11904E988A2E08FD92B30683.ashx?h=16&amp;thn=1&amp;w=16" />
+  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/Mobile_BackgroundImage" ItemIcon="/temp/IconCache/-/media/D0FB1A056A84413A86DE2E84CCA27FC0.ashx?h=16&amp;thn=1&amp;w=16" />
+  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/Mobile_Pop up image" ItemIcon="/temp/IconCache/-/media/8669B6A1245A472889431F90394F1337.ashx?h=16&amp;thn=1&amp;w=16" />
+  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/Pop up image" ItemIcon="/temp/IconCache/-/media/B24AAECBCE8C4F398113772C4042226E.ashx?h=16&amp;thn=1&amp;w=16" />
+  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/Related Content" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/sr" ItemIcon="/temp/IconCache/-/media/1D61F22E29AA4556B5FC434EB823995D.ashx?h=16&amp;thn=1&amp;w=16" />
+  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/tdf" ItemIcon="/temp/IconCache/-/media/D9C153CF3F4447E5B92AC9D52DA43DD3.ashx?h=16&amp;thn=1&amp;w=16" />
+  <Item ItemPath="/sitecore/media library/Images/Foundation" ItemIcon="/temp/IconCache/Applications/16x16/folder_gear.png" />
+  <Item ItemPath="/sitecore/media library/Images/Foundation/ECM" ItemIcon="/temp/IconCache/Network/16x16/earth.png" />
+  <Item ItemPath="/sitecore/media library/Images/Foundation/ECM/Icons" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/media library/Images/Project" ItemIcon="/temp/IconCache/Applications/16x16/folder_window.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/Banner" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/HeroBanner" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/Banner/_ImageText" ItemIcon="/temp/iconcache/applications/32x32/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/Banner/Parameters Templates" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/HeroBanner/_HeroBanner" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content/Parameters Templates" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content/_RelatedContent" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/HeroBanner/_HeroBanner/Data" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/HeroBanner/_HeroBanner/__Standard Values" ItemIcon="/temp/IconCache/multimedia/32x32/image_h.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/HeroBanner/_HeroBanner/Data/Title" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/HeroBanner/_HeroBanner/Data/Count" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Feature" ItemIcon="/temp/IconCache/Applications/16x16/folder_cubes.png" />
+  <Item ItemPath="/sitecore/templates/Foundation" ItemIcon="/temp/IconCache/Applications/16x16/folder_gear.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content/_RelatedContentList" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content/_RelatedContentList/Data" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content/_RelatedContentList/__Standard Values" ItemIcon="/temp/iconcache/applications/32x32/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content/_RelatedContentList/Data/RelatedContent Title" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content/_RelatedContentList/Data/RelatedContent" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content/_RelatedContentList/Data/IsBackgroundColorAvailable" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Project" ItemIcon="/temp/IconCache/Applications/16x16/folder_window.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Content Types" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Page Types" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Page Types/Banner" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Page Types/HeroBanner" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Page Types/RelatedContent" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Parameters" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/HeroBanner/_HeroBannerList/Data/Hero Community Metrics" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/HeroBanner/_HeroBannerList/Data/Title" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/HeroBanner/_HeroBannerList/Data/HeroBannerImage" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/content/ECM" ItemIcon="/temp/iconcache/flags/32x32/flag_united_arab_emirates.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai" ItemIcon="/temp/iconcache/network/16x16/earth.png" />
+  <Item ItemPath="/sitecore/content/ECM/Dictionary" ItemIcon="/temp/iconcache/people/16x16/book_red.png" />
+  <Item ItemPath="/sitecore/content/ECM/Dictionary/Global" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home/Page Datasources" ItemIcon="/temp/iconcache/applications/32x32/folder_view.png" />
+  <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM/DowntownDubai/Banner" ItemIcon="/temp/iconcache/software/16x16/element.png" />
+  <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM/DowntownDubai/HeroBanner" ItemIcon="/temp/iconcache/software/16x16/element.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home/Page Datasources/Related Content" ItemIcon="/temp/iconcache/control/16x16/splitter_ver_b_h.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home/Page Datasources/Banner" ItemIcon="/temp/IconCache/Applications/16x16/text_rich_colored.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home/Page Datasources/HeroBanner" ItemIcon="/temp/iconcache/multimedia/32x32/image_h.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Settings" ItemIcon="/temp/IconCache/PeopleV2/16x16/gears.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content" ItemIcon="/temp/iconcache/applications/16x16/folder_green.png" />
+  <Item ItemPath="/sitecore/content/ECM/Settings" ItemIcon="/temp/IconCache/PeopleV2/16x16/gears.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/HeroBanner" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/HeroBanner/Nationalites" ItemIcon="/temp/iconcache/multimedia/32x32/image_h.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/RelatedContent" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Settings/Navigation Arrow" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Settings/Navigation Arrow/RightArrow" ItemIcon="/temp/iconcache/applications/16x16/navigate_right.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Settings/Navigation Arrow/scrolldown" ItemIcon="/temp/iconcache/applications/16x16/navigate_right.png" />
+  <Item ItemPath="/sitecore/content/ECM/Settings/Rendering Parameters" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/content/ECM/Settings/Rendering Parameters/Image Alignment" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/content/ECM/Settings/Rendering Parameters/Image Alignment/Background" ItemIcon="/temp/iconcache/applications/16x16/gear_add.png" />
+  <Item ItemPath="/sitecore/content/ECM/Settings/Rendering Parameters/Image Alignment/Left" ItemIcon="/temp/iconcache/applications/16x16/gear_add.png" />
+  <Item ItemPath="/sitecore/content/ECM/Settings/Rendering Parameters/Image Alignment/Right" ItemIcon="/temp/iconcache/applications/16x16/gear_add.png" />
+  <Item ItemPath="/sitecore/content/ECM/Settings/Rendering Parameters/Related BackgroundCss" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/content/ECM/Settings/Rendering Parameters/Related BackgroundCss/explore" ItemIcon="/temp/iconcache/applications/16x16/gear_add.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/HeroBanner/_HeroBannerList" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/HeroBanner/_HeroBannerList/__Standard Values" ItemIcon="/temp/IconCache/Multimedia/32x32/image_h.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/HeroBanner/_HeroBannerList/Data" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/HeroBanner/_HeroBannerList/Data/MobileHeroBannerImage" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/Banner/_ImageText/__Standard Values" ItemIcon="/temp/iconcache/applications/32x32/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/Banner/Parameters Templates/_ImageAlignment" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/Banner/Parameters Templates/_ImageAlignment/Alignment" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/Banner/Parameters Templates/_ImageAlignment/Alignment/Image Alignment" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content/Parameters Templates/_RelatedContent BackgroundCss" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content/Parameters Templates/_RelatedContent BackgroundCss/Css" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content/Parameters Templates/_RelatedContent BackgroundCss/Css/BackgroundCss" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content/_RelatedContent/__Standard Values" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/content/ECM/Dictionary/Global/S" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/content/ECM/Dictionary/Global/S/scrolldown" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home/Page Datasources/Banner/a place where children grow" ItemIcon="/temp/iconcache/applications/16x16/text_rich_colored.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home/Page Datasources/Banner/play eat laugh" ItemIcon="/temp/iconcache/applications/16x16/text_rich_colored.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home/Page Datasources/Banner/why should you make downtown dubai home" ItemIcon="/temp/iconcache/applications/16x16/text_rich_colored.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/RelatedContent/Boulevard heights" ItemIcon="/temp/iconcache/control/16x16/splitter_ver.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/RelatedContent/Reehan" ItemIcon="/temp/iconcache/control/16x16/splitter_ver.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/RelatedContent/Reehan2" ItemIcon="/temp/iconcache/control/16x16/splitter_ver.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/RelatedContent/Yansoon" ItemIcon="/temp/iconcache/control/16x16/splitter_ver.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/RelatedContent/Zanzebeel features" ItemIcon="/temp/iconcache/control/16x16/splitter_ver.png" />
+  <Item ItemPath="/sitecore/layout/Layouts/Project" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/layout/Layouts/Project/ECM" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/layout/Layouts/Project/ECM/Main" ItemIcon="/temp/iconcache/applications/32x32/window.png" />
+  <Item ItemPath="/sitecore/layout/Renderings/Feature" ItemIcon="/temp/IconCache/Applications/16x16/folder_cubes.png" />
+  <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM" ItemIcon="/temp/IconCache/Network/16x16/earth.png" />
+  <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM/DowntownDubai" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM/DowntownDubai/RelatedContent" ItemIcon="/temp/iconcache/software/16x16/element.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM" ItemIcon="/temp/IconCache/Network/16x16/earth.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_BannerFolder" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_BannerFolder/__Standard Values" ItemIcon="/temp/IconCache/Applications/16x16/text_rich_colored.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_Base" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_Base/__Standard Values" ItemIcon="/temp/iconcache/applications/32x32/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_Base/Data" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_CTA" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_CTA/CTA" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_CTA/CTA/CTA" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_DataFolder" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_DataFolder/__Standard Values" ItemIcon="/temp/IconCache/Applications/16x16/folder_cubes.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_HeroBannerFolder" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_HeroBannerFolder/__Standard Values" ItemIcon="/temp/IconCache/multimedia/32x32/image_h.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_HeroBannerListFolder" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_HeroBannerListFolder/__Standard Values" ItemIcon="/temp/IconCache/multimedia/32x32/image_h.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_Image" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_Image/Image" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_Image/Image/Image" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_NavigationArrow" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_NavigationArrow/__Standard Values" ItemIcon="/temp/iconcache/applications/32x32/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_NavigationArrow/Data" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_NavigationArrow/Data/Image" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_PageDatasources" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_PageDatasources/__Standard Values" ItemIcon="/temp/IconCache/Applications/32x32/folder_view.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_RelatedContentFolder" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_RelatedContentFolder/__Standard Values" ItemIcon="/temp/IconCache/Applications/16x16/text_rich_colored.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_RelatedContentListFolder" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_RelatedContentListFolder/__Standard Values" ItemIcon="/temp/IconCache/Control/16x16/splitter_ver_b_h.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_Settings" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_Settings/__Standard Values" ItemIcon="/temp/iconcache/applications/32x32/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_Settings/Data" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_Settings/Data/Key" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_Settings/Data/Value" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_TitleDesc" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_TitleDesc/Data" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_TitleDesc/Data/Description" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_TitleDesc/Data/Title" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_SiteRoot" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_SiteRoot/__Standard Values" ItemIcon="/temp/IconCache/Network/16x16/earth.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_SiteRoot/Data" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_TenantRoot" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_TenantRoot/__Standard Values" ItemIcon="/temp/IconCache/Flags/32x32/flag_united_arab_emirates.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_TenantRoot/Data" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Common" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/BannerFolder" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/BannerFolder/__Standard Values" ItemIcon="/temp/iconcache/applications/16x16/text_rich_colored.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/DataFolder" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/DataFolder/__Standard Values" ItemIcon="/temp/IconCache/Applications/16x16/folder_green.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/HeroBannerFolder" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/HeroBannerFolder/__Standard Values" ItemIcon="/temp/iconcache/multimedia/32x32/image_h.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/NavigationArrow" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/NavigationArrow/__Standard Values" ItemIcon="/temp/IconCache/Applications/16x16/navigate_right.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/PageDatasources" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/PageDatasources/__Standard Values" ItemIcon="/temp/iconcache/applications/32x32/folder_view.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/RelatedContentFolder" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/RelatedContentFolder/__Standard Values" ItemIcon="/temp/iconcache/control/16x16/splitter_ver_b_h.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/Settings" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/Settings/__Standard Values" ItemIcon="/temp/IconCache/Applications/16x16/gear_add.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/SiteRoot" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/SiteRoot/__Standard Values" ItemIcon="/temp/IconCache/Network/16x16/earth.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/TenantRoot" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/TenantRoot/__Standard Values" ItemIcon="/temp/IconCache/flags/32x32/flag_united_arab_emirates.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Page Types" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Page Types/Banner/ImageText" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Page Types/Banner/ImageText/__Standard Values" ItemIcon="/temp/IconCache/Applications/16x16/text_rich_colored.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Page Types/HeroBanner/HeroBanner" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Page Types/HeroBanner/HeroBanner/__Standard Values" ItemIcon="/temp/iconcache/multimedia/32x32/image_h.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Page Types/HeroBanner/HeroBannerList" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Page Types/HeroBanner/HeroBannerList/__Standard Values" ItemIcon="/temp/iconcache/multimedia/32x32/image_h.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Page Types/RelatedContent/RelatedContent" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Page Types/RelatedContent/RelatedContent/__Standard Values" ItemIcon="/temp/IconCache/Control/16x16/splitter_ver.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Page Types/RelatedContent/RelatedContentList" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Page Types/RelatedContent/RelatedContentList/__Standard Values" ItemIcon="/temp/IconCache/Control/16x16/splitter_ver_b_h.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Parameters/ParametersTemplate_ImageAlignment" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Parameters/ParametersTemplate_ImageAlignment/__Standard Values" ItemIcon="/temp/IconCache/Applications/16x16/form_red_edit.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Parameters/ParametersTemplate_RelatedContentBackgroundCss" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Parameters/ParametersTemplate_RelatedContentBackgroundCss/__Standard Values" ItemIcon="/temp/IconCache/Applications/16x16/form_red_edit.png" />
+  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/Related Content/slider1" ItemIcon="/temp/IconCache/-/media/65953C177FBD4ABAB1F6AAFC80139DCD.ashx?h=16&amp;thn=1&amp;w=16" />
+  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/Related Content/slider2" ItemIcon="/temp/IconCache/-/media/5AF38824DD8149409D25C0EECD544990.ashx?h=16&amp;thn=1&amp;w=16" />
+  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/Related Content/slider3" ItemIcon="/temp/IconCache/-/media/BBE3BB9E43C5426C9690220EEFB0D13E.ashx?h=16&amp;thn=1&amp;w=16" />
+  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/HeroBanner/Downtown-Dubai_tcm223-49617" ItemIcon="/temp/IconCache/-/media/7955B05B2A7349D198348BA6F7B0F04C.ashx?h=16&amp;thn=1&amp;w=16" />
+  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/HeroBanner" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/HeroBanner/Mobile_BackgroundImage" ItemIcon="/temp/IconCache/-/media/D0FB1A056A84413A86DE2E84CCA27FC0.ashx?h=16&amp;thn=1&amp;w=16" />
+  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/Related Content/slider4" ItemIcon="/temp/IconCache/-/media/4C583F9D92994B1E925666DE25761184.ashx?h=16&amp;thn=1&amp;w=16" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/HeroBanner/Homes" ItemIcon="/temp/iconcache/multimedia/32x32/image_h.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/HeroBanner/Residents" ItemIcon="/temp/iconcache/multimedia/32x32/image_h.png" />
+  <Item ItemPath="/sitecore/content/ECM/Dictionary/DowntownDubai" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/content/ECM/Dictionary/DowntownDubai/S" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/content/ECM/Dictionary/DowntownDubai/S/scrolldown" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home/Page Datasources/Related Content/Exploring the neighborhood" ItemIcon="/temp/iconcache/control/16x16/splitter_ver_b_h.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home/Page Datasources/HeroBanner/HeroBanner" ItemIcon="/temp/iconcache/multimedia/32x32/image_h.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home" ItemIcon="/temp/IconCache/Network/16x16/home.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/HeroBanner/Buildings" ItemIcon="/temp/iconcache/multimedia/32x32/image_h.png" />
+  <Item ItemPath="/sitecore/media library/Images/Feature/ECM" ItemIcon="/temp/IconCache/flags/32x32/flag_united_arab_emirates.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home/Page Datasources/HeroBanner/Reach the stars" ItemIcon="/temp/iconcache/multimedia/32x32/image_h.png" />
 </ItemIconCache>

@@ -1,6 +1,6 @@
 ----item----
 version: 1
-id: {884E19C5-5966-4E31-BDEB-132EFBCFCC3C}
+id: {F02569FD-5078-4A74-8057-42F08B7AB0B0}
 database: master
 path: /sitecore/templates/Foundation/ECM/Base/_RelatedContentFolder
 parent: {5AE78ACD-8177-4B34-BC0A-5E61ABA401BE}
@@ -8,7 +8,7 @@ name: _RelatedContentFolder
 master: {00000000-0000-0000-0000-000000000000}
 template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
 templatekey: Template
-created: 20190318T062800Z
+created: 20190319T084723Z
 
 ----field----
 field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
@@ -23,11 +23,11 @@ name: __Standard values
 key: __standard values
 content-length: 38
 
-{65BDCDEA-E597-4E51-99C8-98F424B3C5E7}
+{81A221FD-D547-4070-92F5-84E86D0604DF}
 ----version----
 language: en
 version: 1
-revision: 04273a5f-aa16-46d0-a246-22c8faa90dcb
+revision: 32e709a8-7a67-48b9-af2d-48637e83d735
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -49,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-04273a5f-aa16-46d0-a246-22c8faa90dcb
+32e709a8-7a67-48b9-af2d-48637e83d735
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190318T062800Z
+20190319T084723Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
