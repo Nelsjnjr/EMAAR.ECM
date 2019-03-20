@@ -372,4 +372,5 @@
   <Item ItemPath="/sitecore/layout/Placeholder Settings/ECM/content" ItemIcon="/temp/iconcache/business/16x16/table_selection_block.png" />
   <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM/DowntownDubai/HeroBanner" ItemIcon="/temp/iconcache/software/16x16/element.png" />
   <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM/DowntownDubai/RelatedContent" ItemIcon="/temp/iconcache/software/16x16/element.png" />
+  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/Common" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
 </ItemIconCache>

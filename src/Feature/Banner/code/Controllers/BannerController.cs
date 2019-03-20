@@ -1,7 +1,7 @@
 ﻿#region namespace
 using System.Web.Mvc;
 using EMAAR.ECM.Feature.Banner.Interfaces;
-using EMAAR.ECM.Foundation.Constants;
+using EMAAR.ECM.Feature.Banner.Settings;
 using EMAAR.ECM.Foundation.Constants.Interfaces;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.Banner;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.HeroBanner;
@@ -37,7 +37,7 @@ namespace EMAAR.ECM.Feature.Banner.Controllers
             IImageText imageText = _bannerRepository.GetBannerVariants(out Alignment alignment);
             ViewBag.Variants = alignment;
             ViewBag.RightArrow = _sitecoreHelper.RightArrow;
-            return View($"{CommonConstants.ECMViewPath}Banner/ImageText/ImageText.cshtml", imageText);
+            return View($"{SitecoreSettings.ViewPath}Banner/ImageText/ImageText.cshtml", imageText);
         }
         /// <summary>
         /// Getting all related component asigned in Sitecore with the Background CSS (eg:explore)
@@ -46,13 +46,13 @@ namespace EMAAR.ECM.Feature.Banner.Controllers
         public ActionResult RelatedContent()
         {
             IRelatedContentList relatedContentList = _bannerRepository.GetRelatedContent();
-            return View($"{CommonConstants.ECMViewPath}Banner/RelatedContent/RelatedContent.cshtml", relatedContentList);
+            return View($"{SitecoreSettings.ViewPath}Banner/RelatedContent/RelatedContent.cshtml", relatedContentList);
         }
         public ActionResult HeroBanner()
         {
             IHeroBannerList heroBannerList = _bannerRepository.GetHeroBanner();
             ViewBag.Scrolldown= _sitecoreHelper.Scrolldown;
-            return View($"{CommonConstants.ECMViewPath}Banner/HeroBanner/HeroBanner.cshtml", heroBannerList);
+            return View($"{SitecoreSettings.ViewPath}Banner/HeroBanner/HeroBanner.cshtml", heroBannerList);
         }
         #endregion
     }

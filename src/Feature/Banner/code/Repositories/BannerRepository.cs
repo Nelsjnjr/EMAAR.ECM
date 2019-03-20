@@ -1,8 +1,6 @@
 ﻿#region namespace
 using System;
 using EMAAR.ECM.Feature.Banner.Interfaces;
-using EMAAR.ECM.Foundation.Constants.Interfaces;
-using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.Banner;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.HeroBanner;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.RelatedContent;

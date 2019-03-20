@@ -2,10 +2,7 @@
 using System;
 using EMAAR.ECM.Foundation.Constants.Interfaces;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
-using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.HeroBanner;
-using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.RelatedContent;
 using Glass.Mapper.Sc.Web.Mvc;
-using Sitecore.Data;
 using Sitecore.Foundation.DependencyInjection;
 #endregion
 

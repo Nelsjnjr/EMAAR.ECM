@@ -217,10 +217,12 @@
     <Compile Include="Interfaces\IBannerRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BannerRepository.cs" />
+    <Compile Include="Settings\SitecoreSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Project\ECM\DowntownDubai\Banner\ImageText\ImageText.cshtml" />
     <Content Include="EMAAR.ECM.Feature.Banner.ruleset" />
+    <Content Include="App_Config\Include\Feature\ECM\Banner\EMAAR.ECM.Feature.Banner.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="Views\Project\ECM\DowntownDubai\Banner\ImageText\_LeftImageText.cshtml" />
     <Content Include="Views\Project\ECM\DowntownDubai\Banner\ImageText\_RightImageText.cshtml" />
