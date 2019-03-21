@@ -45,8 +45,8 @@ namespace EMAAR.ECM.Feature.Banner.Repositories
         {
             IMvcContext mvcContext = _mvcContext();
             alignment = Alignment.Left;//Assigning default varaiant to left unless if nothing selected in sitecore
-            IImageText model = mvcContext.GetDataSourceItem<IImageText>();
-            if (model != null)
+            IImageText imageText = mvcContext.GetDataSourceItem<IImageText>();
+            if (imageText != null)
             {
                 IParametersTemplate_ImageAlignment renderingParameter = mvcContext?.GetRenderingParameters<IParametersTemplate_ImageAlignment>();
                 if (renderingParameter?.Image_Alignment!=null)
@@ -54,7 +54,7 @@ namespace EMAAR.ECM.Feature.Banner.Repositories
                     Enum.TryParse(renderingParameter.Image_Alignment.Key, out alignment);
                 }
             }
-            return model ?? _imageText;
+            return imageText ?? _imageText;
         }
 
         /// <summary>

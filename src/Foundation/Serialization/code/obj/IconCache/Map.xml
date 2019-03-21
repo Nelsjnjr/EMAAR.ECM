@@ -368,9 +368,13 @@
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/HeroBanner/Buildings" ItemIcon="/temp/iconcache/multimedia/32x32/image_h.png" />
   <Item ItemPath="/sitecore/media library/Images/Feature/ECM" ItemIcon="/temp/IconCache/flags/32x32/flag_united_arab_emirates.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home/Page Datasources/HeroBanner/Reach the stars" ItemIcon="/temp/iconcache/multimedia/32x32/image_h.png" />
-  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home" ItemIcon="/temp/IconCache/Network/16x16/home.png" />
   <Item ItemPath="/sitecore/layout/Placeholder Settings/ECM/content" ItemIcon="/temp/iconcache/business/16x16/table_selection_block.png" />
   <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM/DowntownDubai/HeroBanner" ItemIcon="/temp/iconcache/software/16x16/element.png" />
   <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM/DowntownDubai/RelatedContent" ItemIcon="/temp/iconcache/software/16x16/element.png" />
   <Item ItemPath="/sitecore/media library/Images/Feature/ECM/Common" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_Home" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Page Types/Home" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home" ItemIcon="/temp/iconcache/network/16x16/home.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_Home/__Standard Values" ItemIcon="/temp/IconCache/network/16x16/home.png" />
+  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Page Types/Home/__Standard Values" ItemIcon="/temp/iconcache/network/16x16/home.png" />
 </ItemIconCache>

@@ -818,6 +818,47 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.HeroBan
 			
 	}
 }
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Page_Types
+{
+
+
+ 	/// <summary>
+	/// IHome Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Page Types/Home</para>	
+	/// <para>ID: 337b3473-e10a-4490-88b5-8255ff80d0f2</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IHomeConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IHome : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_Home
+	{
+				}
+
+
+	public static partial class IHomeConstants{
+
+			public const string TemplateIdString = "337b3473-e10a-4490-88b5-8255ff80d0f2";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "Home";
+
+			
+
+	}
+
+	
+	/// <summary>
+	/// Home
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Page Types/Home</para>	
+	/// <para>ID: 337b3473-e10a-4490-88b5-8255ff80d0f2</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IHomeConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IHome))]
+	public partial class Home  : GlassBase, IHome 
+	{
+	   
+			
+	}
+}
 namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types
 {
 
@@ -1130,6 +1171,47 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.HeroBan
 				[SitecoreField(I_HeroBannerConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
 					
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
+{
+
+
+ 	/// <summary>
+	/// I_Home Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_Home</para>	
+	/// <para>ID: 6757c518-6566-45a6-9db6-d342bbd00ae2</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_HomeConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Home : IGlassBase 
+	{
+				}
+
+
+	public static partial class I_HomeConstants{
+
+			public const string TemplateIdString = "6757c518-6566-45a6-9db6-d342bbd00ae2";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_Home";
+
+			
+
+	}
+
+	
+	/// <summary>
+	/// _Home
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_Home</para>	
+	/// <para>ID: 6757c518-6566-45a6-9db6-d342bbd00ae2</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_HomeConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Home))]
+	public partial class _Home  : GlassBase, I_Home 
+	{
+	   
 			
 	}
 }

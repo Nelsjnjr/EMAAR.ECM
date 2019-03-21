@@ -1,0 +1,26 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Glass.Mapper.Sc.Web.Mvc
+@using EMAAR.ECM.Foundation.Constants
+@using EMAAR.ECM.Feature.Banner.Settings
+@model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.Banner.IImageText
+
+@{
+    CommonConstants.Alignment alignment = ViewBag.Variants;
+
+    switch (alignment)
+    {
+        case CommonConstants.Alignment.Right:
+            @Html.Partial(String.Format("{0}Banner/ImageText/_RightImageText.cshtml", SitecoreSettings.ViewPath), Model)
+            break;
+        case CommonConstants.Alignment.Background:
+            @Html.Partial(String.Format("{0}Banner/ImageText/_BackgroundImageText.cshtml", SitecoreSettings.ViewPath), Model)
+            break;
+        default:
+            @Html.Partial(String.Format("{0}Banner/ImageText/_LeftImageText.cshtml", SitecoreSettings.ViewPath), Model)
+            break;
+    }
+}
+
+
+

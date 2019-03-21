@@ -6,8 +6,8 @@ path: /sitecore/content/ECM/DowntownDubai/Home
 parent: {D19DCEB9-BE03-491E-9A68-B8A3B5944A3A}
 name: Home
 master: {00000000-0000-0000-0000-000000000000}
-template: {76036F5E-CBCE-46D1-AF0A-4143F9B557AA}
-templatekey: Sample Item
+template: {337B3473-E10A-4490-88B5-8255FF80D0F2}
+templatekey: Home
 created: 20171219T153530Z
 
 ----field----
@@ -77,9 +77,9 @@ content-length: 38
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 308
+content-length: 305
 
-<r xmlns:p="p" xmlns:s="s" p:p="1" s:xsd="http://www.w3.org/2001/XMLSchema"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{43222D12-08C9-453B-AE96-D406EBB95126}"><p:d /></r><r uid="{CF044AD9-0332-407A-ABDE-587214A2C808}"><p:d /></r><r uid="{B343725A-3A93-446E-A9C8-3A2CBD3DB489}"><p:d /></r></d></r>
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{B255404C-4183-4E11-BC30-74E4D4595BEC}"><r ds="{420C2C2E-BAF6-481E-AF4A-E8A691E0B3E4}" id="{2D95EC20-A47F-458D-9A5B-76B7D3DCDA1C}" par="" ph="content" uid="{F78390F7-8F95-4123-86D3-75D0668FFD6A}" /></d></r>
 ----field----
 field: {86FE4F77-4D9A-4EC3-9ED9-263D03BD1965}
 name: __Publish
@@ -149,21 +149,6 @@ version: 1
 revision: f56cf006-6564-4849-8682-8219e2163a9d
 
 ----field----
-field: {75577384-3C97-45DA-A847-81B00500E250}
-name: Title
-key: title
-content-length: 8
-
-Sitecore
-----field----
-field: {A60ACD61-A6DB-4182-8329-C957982CEC74}
-name: Text
-key: text
-content-length: 828
-
-<p style="line-height: 22px;">Fra en enkelt tilsluttet platform, der også kan integreres med andre kundeorienterede platforme, til et enkelt overblik over kunden i et big data-marketinglager, til at slippe for meget af den kompleksitet, der har holdt marketingafdelingerne tilbage – med den nyeste version af Sitecore er det muligt at opnå en fantastisk kundeoplevelse. Se, hvordan den nyeste version af Sitecore giver marketingafdelingen fyldestgørende data, integrerede værktøjer og automatiske funktioner, der engagerer kunderne i løbet af en iterativ livscyklus &ndash; det teknologiske grundlag, der er helt afgørende for at skabe kunder for livet.</p>
-<p>Du kan få flere oplysninger ved at gå til <a href="https://doc.sitecore.net/" target="_blank" title="Sitecore Documentation site">Sitecores dokumentationssite</a></p>
-----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
 name: __Display name
 key: __display name
@@ -232,21 +217,6 @@ version: 1
 revision: f3cca34a-a612-467a-a2ad-e42e9198233f
 
 ----field----
-field: {75577384-3C97-45DA-A847-81B00500E250}
-name: Title
-key: title
-content-length: 29
-
-Sitecore Experience Plattform
-----field----
-field: {A60ACD61-A6DB-4182-8329-C957982CEC74}
-name: Text
-key: text
-content-length: 858
-
-<p style="line-height: 22px;">Von einer einzelnen verbundenen Plattform, die auch auf anderen kundenorientierten Plattformen abgestimmt ist, zu einer Einzelansicht des Kunden in einem Big Data Marketing Repository, um einen Gutteil der Komplexität, die zuvor Marketer zurückgehalten hat, vollständig zu eliminieren, macht die neuste Sitecore Version das Kundenerlebnis erreichbar. Erfahren Sie, wie die neuste Sitecore Version Marketern die vollständigen Daten, integrierte Tools und automatisierte Fähigkeiten gibt, um Kunden während der sich wiederholenden Nutzungszeit&ndash anzusprechen; Diese Technologiegrundlage ist absolut nötig, um Kunden fürs Leben zu gewinnen.</p>
-<p>Für weiterführende Informationen gehen Sie bitte zur <a href="https://doc.sitecore.net/" target="_blank" title="Sitecore Dokumentationsseite">Sitecore Dokumentationsseite</a></p>
-----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
 name: __Display name
 key: __display name
@@ -312,23 +282,7 @@ sitecore\admin
 ----version----
 language: en
 version: 1
-revision: 33c1e6d4-2527-47c8-ac9f-5bf07e7511b7
-
-----field----
-field: {75577384-3C97-45DA-A847-81B00500E250}
-name: Title
-key: title
-content-length: 29
-
-Sitecore Experience Platform1
-----field----
-field: {A60ACD61-A6DB-4182-8329-C957982CEC74}
-name: Text
-key: text
-content-length: 782
-
-<p style="line-height: 22px;">From a single connected platform that also integrates with other customer-facing platforms, to a single view of the customer in a big data marketing repository, to completely eliminating much of the complexity that has previously held marketers back, the latest version of Sitecore makes customer experience highly achievable. Learn how the latest version of Sitecore gives marketers the complete data, integrated tools, and automation capabilities to engage customers throughout an iterative lifecycle – the technology foundation absolutely necessary to win customers for life.</p>
-<p>For further information, please go to the <a href="https://doc.sitecore.net/" target="_blank" title="Sitecore Documentation site">Sitecore Documentation site</a></p>
+revision: bf15a49d-5c0c-40c3-892a-fbe7b5596daf
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -355,9 +309,9 @@ Welcome to Sitecore.
 field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
 name: __Final Renderings
 key: __final renderings
-content-length: 1324
+content-length: 1383
 
-<r xmlns:p="p" xmlns:s="s" p:p="1" s:xsd="http://www.w3.org/2001/XMLSchema"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{74CB18E3-73AC-4E1E-8746-7B40EB00C806}" p:before="*" s:ds="{420C2C2E-BAF6-481E-AF4A-E8A691E0B3E4}" s:id="{2D95EC20-A47F-458D-9A5B-76B7D3DCDA1C}" s:ph="content" /><r uid="{0C0D4CC7-8118-41EA-AD9A-5E61C380DBB3}" p:after="r[@uid='{74CB18E3-73AC-4E1E-8746-7B40EB00C806}']" s:ds="{614EB08E-07F1-4174-A569-C762B0F8E710}" s:id="{DAD6781C-9D13-4F4F-8960-DA29312B3D64}" s:ph="content" /><r uid="{AB6BA520-B014-49F2-8A18-58FD800CFE09}" p:after="r[@uid='{0C0D4CC7-8118-41EA-AD9A-5E61C380DBB3}']" s:ds="{CDAEBE58-1CFE-42AE-8797-ED52FB908938}" s:id="{100264D9-CFB1-4655-B4C8-BEBB422E5911}" s:par="Image Alignment=%7B932A364C-2C5F-494F-8371-73266F382F40%7D" s:ph="content" /><r uid="{D1AE5099-36F4-4A17-9D1F-8CABE9528578}" p:after="r[@uid='{AB6BA520-B014-49F2-8A18-58FD800CFE09}']" s:ds="{421487F0-30C1-4E47-B3D1-8683F7C6710E}" s:id="{100264D9-CFB1-4655-B4C8-BEBB422E5911}" s:par="Image Alignment=%7B30C2FC6B-A07C-4E18-A583-A9EF29EE24D3%7D" s:ph="content" /><r uid="{3E4E95FE-0841-4702-B6B4-85337A2343AC}" p:after="*[1=2]" s:ds="{D14EE714-2DF9-4ADD-A991-A75F99E485DB}" s:id="{100264D9-CFB1-4655-B4C8-BEBB422E5911}" s:par="Image Alignment=%7B6DD1D332-13AF-444D-934B-85738246E73A%7D" s:ph="content" /></d></r>
+<r xmlns:p="p" xmlns:s="s" p:p="1" s:xsd="http://www.w3.org/2001/XMLSchema"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{F78390F7-8F95-4123-86D3-75D0668FFD6A}"><p:d /></r><r uid="{74CB18E3-73AC-4E1E-8746-7B40EB00C806}" p:before="*" s:ds="{420C2C2E-BAF6-481E-AF4A-E8A691E0B3E4}" s:id="{2D95EC20-A47F-458D-9A5B-76B7D3DCDA1C}" s:ph="content" /><r uid="{0C0D4CC7-8118-41EA-AD9A-5E61C380DBB3}" p:after="r[@uid='{74CB18E3-73AC-4E1E-8746-7B40EB00C806}']" s:ds="{614EB08E-07F1-4174-A569-C762B0F8E710}" s:id="{DAD6781C-9D13-4F4F-8960-DA29312B3D64}" s:ph="content" /><r uid="{AB6BA520-B014-49F2-8A18-58FD800CFE09}" p:after="r[@uid='{0C0D4CC7-8118-41EA-AD9A-5E61C380DBB3}']" s:ds="{CDAEBE58-1CFE-42AE-8797-ED52FB908938}" s:id="{100264D9-CFB1-4655-B4C8-BEBB422E5911}" s:par="Image Alignment=%7B932A364C-2C5F-494F-8371-73266F382F40%7D" s:ph="content" /><r uid="{D1AE5099-36F4-4A17-9D1F-8CABE9528578}" p:after="r[@uid='{AB6BA520-B014-49F2-8A18-58FD800CFE09}']" s:ds="{421487F0-30C1-4E47-B3D1-8683F7C6710E}" s:id="{100264D9-CFB1-4655-B4C8-BEBB422E5911}" s:par="Image Alignment=%7B30C2FC6B-A07C-4E18-A583-A9EF29EE24D3%7D" s:ph="content" /><r uid="{3E4E95FE-0841-4702-B6B4-85337A2343AC}" p:after="*[1=2]" s:ds="{D14EE714-2DF9-4ADD-A991-A75F99E485DB}" s:id="{100264D9-CFB1-4655-B4C8-BEBB422E5911}" s:par="Image Alignment=%7B6DD1D332-13AF-444D-934B-85738246E73A%7D" s:ph="content" /></d></r>
 ----field----
 field: {C8F93AFE-BFD4-4E8F-9C61-152559854661}
 name: __Valid from
@@ -399,14 +353,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-33c1e6d4-2527-47c8-ac9f-5bf07e7511b7
+bf15a49d-5c0c-40c3-892a-fbe7b5596daf
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190320T115442Z
+20190321T052325Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -426,21 +380,6 @@ language: ja-JP
 version: 1
 revision: be040b48-adc3-4740-8f6b-dbf682a860a4
 
-----field----
-field: {75577384-3C97-45DA-A847-81B00500E250}
-name: Title
-key: title
-content-length: 28
-
-サイトコア エクスペリエンス プラットフォームへようこそ
-----field----
-field: {A60ACD61-A6DB-4182-8329-C957982CEC74}
-name: Text
-key: text
-content-length: 447
-
-<p style="line-height: 22px;">他の顧客対応プラットフォームとも統合した単独接続プラットフォームから、ビッグ データ マーケティング レポジトリーの顧客の単独ビューまで、従来マーケターを阻んでいた複雑性を完全に解消するため、Sitecore の最新バージョンがカスタマー エクスペリエンスを達成可能にします。インタラクティブなライフサイクル全体を通して顧客のエンゲージメントを高めるために、Sitecore の最新バージョンがマーケターに完全なデータ、統合されたツール、オートメーション機能をどのように提供するかを学びます &ndash; 一生の顧客を獲得するためには技術基盤は絶対に必要です。</p>
-<p>詳細は<a href="https://doc.sitecore.net/" target="_blank" title="Sitecore Documentation site">Sitecore ドキュメント サイト</a>をご参照ください。</p>
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
 name: __Display name
