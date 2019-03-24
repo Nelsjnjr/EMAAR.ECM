@@ -26,9 +26,6 @@
     <ManageRoles>False</ManageRoles>
     <SitecoreDatabase>master</SitecoreDatabase>
     <AssemblyStatus>Exclude</AssemblyStatus>
-    <SourceWebVirtualPath>/EMAAR.ECM.Project.Website.csproj</SourceWebVirtualPath>
-    <SourceWebProject>{e9752059-9a34-4cfa-9b29-80dd8485f3c4}|src\Project\Website\code\EMAAR.ECM.Project.Website.csproj</SourceWebProject>
-    <SourceWebPhysicalPath>..\..\..\Project\Website\code</SourceWebPhysicalPath>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -1176,16 +1173,10 @@
     </SitecoreItem>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Project\Website\code\EMAAR.ECM.Project.Website.csproj">
-      <Project>{e9752059-9a34-4cfa-9b29-80dd8485f3c4}</Project>
-      <Name>EMAAR.ECM.Project.Website</Name>
-    </ProjectReference>
+    <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ExcludedAssemblies Include="Sitecore.%2a.Dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
   <Import Project="..\..\..\..\packages\HedgehogDevelopment.TDS.5.7.0.27\build\HedgehogDevelopment.TDS.targets" Condition="Exists('..\..\..\..\packages\HedgehogDevelopment.TDS.5.7.0.27\build\HedgehogDevelopment.TDS.targets')" />
