@@ -61,11 +61,13 @@
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
     <EnableValidations>False</EnableValidations>
     <ValidationSettingsFilePath>.\EMAAR.ECM.Foundation.Serialization.Master_Release.xml</ValidationSettingsFilePath>
-    <SitecoreDeployFolder>D:\Nelson\sc1.local</SitecoreDeployFolder>
+    <SitecoreDeployFolder>
+    </SitecoreDeployFolder>
     <InstallSitecoreConnector>False</InstallSitecoreConnector>
     <DisableFileDeployment>False</DisableFileDeployment>
     <LightningDeployMode>False</LightningDeployMode>
-    <SitecoreWebUrl>http://sc1.local</SitecoreWebUrl>
+    <SitecoreWebUrl>
+    </SitecoreWebUrl>
     <SitecoreAccessGuid>
     </SitecoreAccessGuid>
   </PropertyGroup>
