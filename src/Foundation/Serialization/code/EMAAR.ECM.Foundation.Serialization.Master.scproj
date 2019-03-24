@@ -33,12 +33,15 @@
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>.\bin\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <SitecoreWebUrl>http://sc1.local</SitecoreWebUrl>
-    <InstallSitecoreConnector>True</InstallSitecoreConnector>
+    <SitecoreWebUrl>
+    </SitecoreWebUrl>
+    <InstallSitecoreConnector>False</InstallSitecoreConnector>
     <DisableFileDeployment>False</DisableFileDeployment>
     <LightningDeployMode>False</LightningDeployMode>
-    <SitecoreDeployFolder>D:\Nelson\sc1.local</SitecoreDeployFolder>
-    <SitecoreAccessGuid>c9f9a0d0-168b-49da-b286-e4474c2dd08b</SitecoreAccessGuid>
+    <SitecoreDeployFolder>
+    </SitecoreDeployFolder>
+    <SitecoreAccessGuid>
+    </SitecoreAccessGuid>
     <PackageName>EMAAR.ECM.Foundation.Serialization.Master</PackageName>
     <PackageAuthor />
     <PackagePublisher />
@@ -59,11 +62,12 @@
     <EnableValidations>False</EnableValidations>
     <ValidationSettingsFilePath>.\EMAAR.ECM.Foundation.Serialization.Master_Release.xml</ValidationSettingsFilePath>
     <SitecoreDeployFolder>D:\Nelson\sc1.local</SitecoreDeployFolder>
-    <InstallSitecoreConnector>True</InstallSitecoreConnector>
+    <InstallSitecoreConnector>False</InstallSitecoreConnector>
     <DisableFileDeployment>False</DisableFileDeployment>
     <LightningDeployMode>False</LightningDeployMode>
     <SitecoreWebUrl>http://sc1.local</SitecoreWebUrl>
-    <SitecoreAccessGuid>0ad2f489-144f-4c4a-85b4-7ff773f25ad5</SitecoreAccessGuid>
+    <SitecoreAccessGuid>
+    </SitecoreAccessGuid>
   </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">
