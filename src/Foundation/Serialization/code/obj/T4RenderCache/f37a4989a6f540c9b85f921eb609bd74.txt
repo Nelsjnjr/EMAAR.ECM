@@ -14,14 +14,14 @@
 
 
 
-namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.HeroBanner
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.HeroBanner
 {
 
 
  	/// <summary>
 	/// IHeroBanner Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/HeroBanner/HeroBanner</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/HeroBanner/HeroBanner</para>	
 	/// <para>ID: f37a4989-a6f5-40c9-b85f-921eb609bd74</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IHeroBannerConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
@@ -52,7 +52,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 	/// <summary>
 	/// HeroBanner
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/HeroBanner/HeroBanner</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/HeroBanner/HeroBanner</para>	
 	/// <para>ID: f37a4989-a6f5-40c9-b85f-921eb609bd74</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IHeroBannerConstants.TemplateIdString,AutoMap=true )] //, Cachable = true

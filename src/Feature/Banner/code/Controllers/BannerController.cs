@@ -3,9 +3,9 @@ using System.Web.Mvc;
 using EMAAR.ECM.Feature.Banner.Interfaces;
 using EMAAR.ECM.Feature.Banner.Settings;
 using EMAAR.ECM.Foundation.Constants.Interfaces;
-using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.Banner;
-using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.HeroBanner;
-using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.RelatedContent;
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Banner;
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.HeroBanner;
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.RelatedContent;
 using static EMAAR.ECM.Foundation.Constants.CommonConstants;
 #endregion
 namespace EMAAR.ECM.Feature.Banner.Controllers
@@ -48,6 +48,10 @@ namespace EMAAR.ECM.Feature.Banner.Controllers
             IRelatedContentList relatedContentList = _bannerRepository.GetRelatedContent();
             return View($"{SitecoreSettings.ViewPath}Banner/RelatedContent/RelatedContent.cshtml", relatedContentList);
         }
+        /// <summary>
+        ///  Getting all Hero Banner asigned in Sitecore 
+        /// </summary>
+        /// <returns>HeroBannerList</returns>
         public ActionResult HeroBanner()
         {
             IHeroBannerList heroBannerList = _bannerRepository.GetHeroBanner();

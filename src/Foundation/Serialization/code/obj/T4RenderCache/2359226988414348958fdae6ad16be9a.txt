@@ -1,4 +1,4 @@
-//Revision: 26b0ab0c-3b16-4621-86fe-9688044c3db6
+//Revision: 8e73df16-016e-41b2-90ef-f77fe18ac971
 
 
 
@@ -25,7 +25,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 	/// <para>ID: 23592269-8841-4348-958f-dae6ad16be9a</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IHeroBannerFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface IHeroBannerFolder : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_HeroBannerListFolder
+	public partial interface IHeroBannerFolder : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_HeroBannerFolder
 	{
 				}
 

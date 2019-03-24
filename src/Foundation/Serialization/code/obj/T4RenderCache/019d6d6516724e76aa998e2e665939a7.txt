@@ -1,4 +1,4 @@
-//Revision: 5beee259-92e1-4d05-ab49-555612126da8
+//Revision: 80cffd70-5b90-4de5-9b43-a996cba84104
 
 
 
@@ -25,7 +25,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 	/// <para>ID: 019d6d65-1672-4e76-aa99-8e2e665939a7</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IRelatedContentFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface IRelatedContentFolder : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_RelatedContentListFolder
+	public partial interface IRelatedContentFolder : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_RelatedContentFolder
 	{
 				}
 

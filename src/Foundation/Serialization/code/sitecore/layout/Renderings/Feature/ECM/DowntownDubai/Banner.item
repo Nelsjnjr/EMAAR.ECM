@@ -49,13 +49,13 @@ content-length: 25
 field: {1A7C85E5-DC0B-490D-9187-BB1DBCB4C72F}
 name: Datasource Template
 key: datasource template
-content-length: 59
+content-length: 62
 
-/sitecore/templates/Project/ECM/Page Types/Banner/ImageText
+/sitecore/templates/Project/ECM/Content Types/Banner/ImageText
 ----version----
 language: en
 version: 1
-revision: fc21b7f6-60ce-4877-ac0b-bd1f2735ea07
+revision: 38ad38b9-eb5c-45d3-84ac-ac3948bfb82a
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -70,14 +70,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fc21b7f6-60ce-4877-ac0b-bd1f2735ea07
+38ad38b9-eb5c-45d3-84ac-ac3948bfb82a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190320T065601Z
+20190321T065154Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

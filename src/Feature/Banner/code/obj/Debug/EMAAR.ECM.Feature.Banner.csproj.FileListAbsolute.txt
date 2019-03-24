@@ -1,3 +1,4 @@
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\obj\Debug\EMAAR.ECM.Feature.Banner.csproj.CoreCompileInputs.cache
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Feature.Banner.dll.config
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Feature.Banner.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Feature.Banner.pdb
@@ -47,6 +48,8 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\roslyn\vbc.ex
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\roslyn\vbc.rsp
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\roslyn\VBCSCompiler.exe
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Feature.Banner.dll.CodeAnalysisLog.xml
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Feature.Banner.dll.lastcodeanalysissucceeded
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Antlr3.Runtime.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Castle.Core.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Foundation.Constants.dll
@@ -129,9 +132,6 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\System.Diagno
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\obj\Debug\EMAAR.ECM.Feature.Banner.csprojAssemblyReference.cache
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\obj\Debug\EMAAR.ECM.Feature.Banner.csproj.CoreCompileInputs.cache
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\obj\Debug\EMAAR.ECM.Feature.Banner.csproj.CopyComplete
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\obj\Debug\EMAAR.ECM.Feature.Banner.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\obj\Debug\EMAAR.ECM.Feature.Banner.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Feature.Banner.dll.CodeAnalysisLog.xml
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Feature.Banner.dll.lastcodeanalysissucceeded

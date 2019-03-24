@@ -6,8 +6,8 @@ path: /sitecore/content/ECM/DowntownDubai/Home/Page Datasources/Related Content
 parent: {FD5AB8FD-2BCF-4FD7-8B20-246D1A1CA565}
 name: Related Content
 master: {00000000-0000-0000-0000-000000000000}
-template: {019D6D65-1672-4E76-AA99-8E2E665939A7}
-templatekey: RelatedContentFolder
+template: {D6580CB4-74A3-42F9-9DF4-C0B91019A921}
+templatekey: RelatedContentListFolder
 created: 20190317T102030Z
 
 ----field----
@@ -27,7 +27,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 7b2e9dd3-f322-484b-9266-473598781de3
+revision: 489295d6-cd48-4fb7-8b5c-fae4f9cafedf
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -49,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7b2e9dd3-f322-484b-9266-473598781de3
+489295d6-cd48-4fb7-8b5c-fae4f9cafedf
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190318T064332Z
+20190321T090306Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -14,14 +14,14 @@
 
 
 
-namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.RelatedContent
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.RelatedContent
 {
 
 
  	/// <summary>
 	/// IRelatedContentList Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/RelatedContent/RelatedContentList</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/RelatedContent/RelatedContentList</para>	
 	/// <para>ID: 82fe2ee5-75c5-4959-8ba0-5bfd5f29e2f5</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IRelatedContentListConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
@@ -56,7 +56,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 	/// <summary>
 	/// RelatedContentList
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/RelatedContent/RelatedContentList</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/RelatedContent/RelatedContentList</para>	
 	/// <para>ID: 82fe2ee5-75c5-4959-8ba0-5bfd5f29e2f5</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IRelatedContentListConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
@@ -91,11 +91,11 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				/// <para></para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 96c03c76-a871-4acf-91f6-21a3e49a8e32</para>
-				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.RelatedContent.IRelatedContent</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.RelatedContent.IRelatedContent</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IRelatedContentListConstants.RelatedContentsFieldName)]
-				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.RelatedContent.IRelatedContent> RelatedContents  {get; set;}
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.RelatedContent.IRelatedContent> RelatedContents  {get; set;}
 					
 			
 	}

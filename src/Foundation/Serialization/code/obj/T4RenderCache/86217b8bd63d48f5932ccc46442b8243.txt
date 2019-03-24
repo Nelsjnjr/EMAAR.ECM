@@ -14,14 +14,14 @@
 
 
 
-namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.Banner
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Banner
 {
 
 
  	/// <summary>
 	/// IImageText Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/Banner/ImageText</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/Banner/ImageText</para>	
 	/// <para>ID: 86217b8b-d63d-48f5-932c-cc46442b8243</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IImageTextConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
@@ -60,7 +60,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 	/// <summary>
 	/// ImageText
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/Banner/ImageText</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/Banner/ImageText</para>	
 	/// <para>ID: 86217b8b-d63d-48f5-932c-cc46442b8243</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IImageTextConstants.TemplateIdString,AutoMap=true )] //, Cachable = true

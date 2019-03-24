@@ -1,0 +1,58 @@
+//Revision: 55c9226e-8430-4839-b0d7-fb602dc23f22
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
+{
+
+
+ 	/// <summary>
+	/// IInteractiveMapFolder Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/InteractiveMapFolder</para>	
+	/// <para>ID: 078d45e0-2f1f-4ff6-9bfe-563820ef99ae</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IInteractiveMapFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IInteractiveMapFolder : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_InteractiveMapFolder
+	{
+				}
+
+
+	public static partial class IInteractiveMapFolderConstants{
+
+			public const string TemplateIdString = "078d45e0-2f1f-4ff6-9bfe-563820ef99ae";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "InteractiveMapFolder";
+
+			
+
+	}
+
+	
+	/// <summary>
+	/// InteractiveMapFolder
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/InteractiveMapFolder</para>	
+	/// <para>ID: 078d45e0-2f1f-4ff6-9bfe-563820ef99ae</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IInteractiveMapFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IInteractiveMapFolder))]
+	public partial class InteractiveMapFolder  : GlassBase, IInteractiveMapFolder 
+	{
+	   
+			
+	}
+}
+

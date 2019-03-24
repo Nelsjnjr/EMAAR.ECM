@@ -14,14 +14,14 @@
 
 
 
-namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.RelatedContent
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.RelatedContent
 {
 
 
  	/// <summary>
 	/// IRelatedContent Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/RelatedContent/RelatedContent</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/RelatedContent/RelatedContent</para>	
 	/// <para>ID: 1fe16dfe-5b53-447e-bb34-d945f6de8cd0</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IRelatedContentConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
@@ -60,7 +60,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 	/// <summary>
 	/// RelatedContent
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/RelatedContent/RelatedContent</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/RelatedContent/RelatedContent</para>	
 	/// <para>ID: 1fe16dfe-5b53-447e-bb34-d945f6de8cd0</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IRelatedContentConstants.TemplateIdString,AutoMap=true )] //, Cachable = true

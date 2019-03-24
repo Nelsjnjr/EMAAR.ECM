@@ -1,0 +1,58 @@
+//Revision: bbcac161-ef96-4f4d-8635-6b6d15d7b2ac
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
+{
+
+
+ 	/// <summary>
+	/// IRelatedContentListFolder Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/RelatedContentListFolder</para>	
+	/// <para>ID: d6580cb4-74a3-42f9-9df4-c0b91019a921</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IRelatedContentListFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IRelatedContentListFolder : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_RelatedContentListFolder
+	{
+				}
+
+
+	public static partial class IRelatedContentListFolderConstants{
+
+			public const string TemplateIdString = "d6580cb4-74a3-42f9-9df4-c0b91019a921";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "RelatedContentListFolder";
+
+			
+
+	}
+
+	
+	/// <summary>
+	/// RelatedContentListFolder
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/RelatedContentListFolder</para>	
+	/// <para>ID: d6580cb4-74a3-42f9-9df4-c0b91019a921</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IRelatedContentListFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IRelatedContentListFolder))]
+	public partial class RelatedContentListFolder  : GlassBase, IRelatedContentListFolder 
+	{
+	   
+			
+	}
+}
+

@@ -1,0 +1,103 @@
+//Revision: 1c696bf4-2df4-48f8-976d-22a78b0623c5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.InteractiveMap
+{
+
+
+ 	/// <summary>
+	/// IInteractiveMapList Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/InteractiveMap/InteractiveMapList</para>	
+	/// <para>ID: 849370a4-9478-486e-813b-8aed2f947af9</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IInteractiveMapListConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IInteractiveMapList : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.InteractiveMap.I_InteractiveMapList
+	{
+				}
+
+
+	public static partial class IInteractiveMapListConstants{
+
+			public const string TemplateIdString = "849370a4-9478-486e-813b-8aed2f947af9";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "InteractiveMapList";
+
+					
+			public static readonly ID Interactive_MapsFieldId = new ID("661c5898-9da8-4a26-b33d-e8f7797209f4");
+			public const string Interactive_MapsFieldName = "Interactive Maps";
+			
+					
+			public static readonly ID TitleFieldId = new ID("6d5d0a92-1283-4c10-b057-7d40a1b88de6");
+			public const string TitleFieldName = "Title";
+			
+					
+			public static readonly ID ImageFieldId = new ID("f6ba7b09-176f-4bb1-a680-c070d4b92c65");
+			public const string ImageFieldName = "Image";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// InteractiveMapList
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/InteractiveMap/InteractiveMapList</para>	
+	/// <para>ID: 849370a4-9478-486e-813b-8aed2f947af9</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IInteractiveMapListConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IInteractiveMapList))]
+	public partial class InteractiveMapList  : GlassBase, IInteractiveMapList 
+	{
+	   
+						/// <summary>
+				/// The Interactive Maps field.
+				/// <para></para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: 661c5898-9da8-4a26-b33d-e8f7797209f4</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.InteractiveMap.IInteractiveMap</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IInteractiveMapListConstants.Interactive_MapsFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.InteractiveMap.IInteractiveMap> Interactive_Maps  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d5d0a92-1283-4c10-b057-7d40a1b88de6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IInteractiveMapListConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
+						/// <summary>
+				/// The Image field.
+				/// <para></para>
+				/// <para>Field Type: Image</para>		
+				/// <para>Field ID: f6ba7b09-176f-4bb1-a680-c070d4b92c65</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IInteractiveMapListConstants.ImageFieldName)]
+				public virtual Image Image  {get; set;}
+					
+			
+	}
+}
+
