@@ -2,7 +2,7 @@
 version: 1
 id: {FA69727F-69B8-4DE9-929B-C0032CFD2FFD}
 database: master
-path: /sitecore/media library/Images/Foundation/ECM/Icons/search-btn
+path: /sitecore/media library/Images/Foundation/ECM/DowntownDubai/Icons/search-btn
 parent: {30F290E0-F0C2-417A-A9FD-20062AB8B58D}
 name: search-btn
 master: {00000000-0000-0000-0000-000000000000}

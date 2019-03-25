@@ -2,7 +2,7 @@
 version: 1
 id: {081835C8-68F5-42B5-B9FA-644D9A114074}
 database: master
-path: /sitecore/media library/Images/Foundation/ECM/Icons/login
+path: /sitecore/media library/Images/Foundation/ECM/DowntownDubai/Icons/login
 parent: {30F290E0-F0C2-417A-A9FD-20062AB8B58D}
 name: login
 master: {00000000-0000-0000-0000-000000000000}

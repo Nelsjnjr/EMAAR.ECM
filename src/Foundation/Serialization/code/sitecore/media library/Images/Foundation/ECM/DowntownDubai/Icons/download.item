@@ -2,7 +2,7 @@
 version: 1
 id: {96239719-68AE-42FC-88BE-6A8B7AC371D5}
 database: master
-path: /sitecore/media library/Images/Foundation/ECM/Icons/download
+path: /sitecore/media library/Images/Foundation/ECM/DowntownDubai/Icons/download
 parent: {30F290E0-F0C2-417A-A9FD-20062AB8B58D}
 name: download
 master: {00000000-0000-0000-0000-000000000000}

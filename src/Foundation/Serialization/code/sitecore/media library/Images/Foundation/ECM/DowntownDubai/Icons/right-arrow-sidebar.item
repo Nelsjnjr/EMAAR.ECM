@@ -2,7 +2,7 @@
 version: 1
 id: {C0E9C4FA-0FD8-4F9D-993E-128F94D35EFF}
 database: master
-path: /sitecore/media library/Images/Foundation/ECM/Icons/right-arrow-sidebar
+path: /sitecore/media library/Images/Foundation/ECM/DowntownDubai/Icons/right-arrow-sidebar
 parent: {30F290E0-F0C2-417A-A9FD-20062AB8B58D}
 name: right-arrow-sidebar
 master: {00000000-0000-0000-0000-000000000000}

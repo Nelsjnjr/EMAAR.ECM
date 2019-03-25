@@ -2,7 +2,7 @@
 version: 1
 id: {ACAB148E-B461-4E41-AE65-17D08D70CC90}
 database: master
-path: /sitecore/media library/Images/Foundation/ECM/Icons/clsoe
+path: /sitecore/media library/Images/Foundation/ECM/DowntownDubai/Icons/clsoe
 parent: {30F290E0-F0C2-417A-A9FD-20062AB8B58D}
 name: clsoe
 master: {00000000-0000-0000-0000-000000000000}

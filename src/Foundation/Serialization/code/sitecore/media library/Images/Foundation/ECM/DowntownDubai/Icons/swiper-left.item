@@ -2,7 +2,7 @@
 version: 1
 id: {FD450310-1574-4E1C-88CA-F462ACB41571}
 database: master
-path: /sitecore/media library/Images/Foundation/ECM/Icons/swiper-left
+path: /sitecore/media library/Images/Foundation/ECM/DowntownDubai/Icons/swiper-left
 parent: {30F290E0-F0C2-417A-A9FD-20062AB8B58D}
 name: swiper-left
 master: {00000000-0000-0000-0000-000000000000}

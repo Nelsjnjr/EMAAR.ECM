@@ -2,7 +2,7 @@
 version: 1
 id: {D613ACB2-7791-43ED-A725-960B1DC0B3E7}
 database: master
-path: /sitecore/media library/Images/Foundation/ECM/Icons/btn-arrow
+path: /sitecore/media library/Images/Foundation/ECM/DowntownDubai/Icons/btn-arrow
 parent: {30F290E0-F0C2-417A-A9FD-20062AB8B58D}
 name: btn-arrow
 master: {00000000-0000-0000-0000-000000000000}

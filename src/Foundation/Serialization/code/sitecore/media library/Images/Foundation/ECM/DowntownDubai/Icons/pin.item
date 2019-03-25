@@ -2,7 +2,7 @@
 version: 1
 id: {A619E48E-2E42-4A1D-B5F1-D40C905A1362}
 database: master
-path: /sitecore/media library/Images/Foundation/ECM/Icons/pin
+path: /sitecore/media library/Images/Foundation/ECM/DowntownDubai/Icons/pin
 parent: {30F290E0-F0C2-417A-A9FD-20062AB8B58D}
 name: pin
 master: {00000000-0000-0000-0000-000000000000}

@@ -2,7 +2,7 @@
 version: 1
 id: {23AF7DBD-20B9-4EC7-8275-A5BB8FDC4535}
 database: master
-path: /sitecore/media library/Images/Foundation/ECM/Icons/external
+path: /sitecore/media library/Images/Foundation/ECM/DowntownDubai/Icons/external
 parent: {30F290E0-F0C2-417A-A9FD-20062AB8B58D}
 name: external
 master: {00000000-0000-0000-0000-000000000000}

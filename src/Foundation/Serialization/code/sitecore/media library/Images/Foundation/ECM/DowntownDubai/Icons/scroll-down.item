@@ -2,7 +2,7 @@
 version: 1
 id: {FFF50F5A-EFD9-4AE2-87FC-C4CE361544DD}
 database: master
-path: /sitecore/media library/Images/Foundation/ECM/Icons/scroll-down
+path: /sitecore/media library/Images/Foundation/ECM/DowntownDubai/Icons/scroll-down
 parent: {30F290E0-F0C2-417A-A9FD-20062AB8B58D}
 name: scroll-down
 master: {00000000-0000-0000-0000-000000000000}

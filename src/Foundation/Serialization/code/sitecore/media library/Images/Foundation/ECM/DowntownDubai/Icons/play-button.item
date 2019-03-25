@@ -2,7 +2,7 @@
 version: 1
 id: {87F5DD29-753B-4BB9-ACA7-426883C408F1}
 database: master
-path: /sitecore/media library/Images/Foundation/ECM/Icons/play-button
+path: /sitecore/media library/Images/Foundation/ECM/DowntownDubai/Icons/play-button
 parent: {30F290E0-F0C2-417A-A9FD-20062AB8B58D}
 name: play-button
 master: {00000000-0000-0000-0000-000000000000}

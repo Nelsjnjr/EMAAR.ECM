@@ -2,7 +2,7 @@
 version: 1
 id: {1FC9A0C1-ABE5-42A4-9DC4-F0786933C9AB}
 database: master
-path: /sitecore/media library/Images/Foundation/ECM/Icons/Pdf
+path: /sitecore/media library/Images/Foundation/ECM/DowntownDubai/Icons/Pdf
 parent: {30F290E0-F0C2-417A-A9FD-20062AB8B58D}
 name: Pdf
 master: {00000000-0000-0000-0000-000000000000}
