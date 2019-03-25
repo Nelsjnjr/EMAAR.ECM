@@ -55,7 +55,7 @@ namespace <#=fullNamespace #>
         [SitecoreInfo(SitecoreInfoType.Version)]
         int Version { get; }
 
-		[SitecoreInfo(SitecoreInfoType.Url)]
+		[SitecoreInfo(SitecoreInfoType.Url, UrlOptions = SitecoreInfoUrlOptions.AlwaysIncludeServerUrl)]
         string Url { get; }
 
 		[SitecoreInfo(SitecoreInfoType.FullPath)]
@@ -71,10 +71,16 @@ namespace <#=fullNamespace #>
         string TemplateName { get; }		
 		
         [SitecoreInfo(SitecoreInfoType.TemplateId)]
-        string TemplateId { get; }
+        Guid  TemplateId { get; }
 
 		[SitecoreInfo(SitecoreInfoType.MediaUrl)]
         string MediaUrl { get;  }
+
+		[SitecoreParent(InferType = true)]
+        IGlassBase Parent { get; }
+
+		[SitecoreChildren(InferType = true)]
+        IEnumerable<IGlassBase> Children { get; }
 		
 	}
 
@@ -89,7 +95,7 @@ namespace <#=fullNamespace #>
         [SitecoreInfo(SitecoreInfoType.Version)]
         public virtual int Version { get; private set; }
 
-		[SitecoreInfo(SitecoreInfoType.Url)]
+		[SitecoreInfo(SitecoreInfoType.Url, UrlOptions = SitecoreInfoUrlOptions.AlwaysIncludeServerUrl)]
         public virtual string Url { get; private set; }
 
 		[SitecoreInfo(SitecoreInfoType.FullPath)]
@@ -105,9 +111,15 @@ namespace <#=fullNamespace #>
         public virtual string TemplateName { get; private set; }
 
         [SitecoreInfo(SitecoreInfoType.TemplateId)]
-        public virtual string TemplateId { get; private set; }
+        public virtual Guid  TemplateId { get; private set; }
 
 		[SitecoreInfo(SitecoreInfoType.MediaUrl)]
         public virtual string MediaUrl { get; private set; }
+
+		[SitecoreParent(InferType = true)]
+        public virtual IGlassBase Parent { get;private set; }
+
+		[SitecoreChildren(InferType = true)]
+        public virtual IEnumerable<IGlassBase> Children { get; private set; }
 	}
 }

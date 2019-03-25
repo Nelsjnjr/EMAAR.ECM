@@ -96,8 +96,8 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\b
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\System.Diagnostics.DiagnosticSource.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\obj\Debug\Sitecore.Foundation.DependencyInjection.csprojAssemblyReference.cache
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\obj\Debug\Sitecore.Foundation.DependencyInjection.csproj.CoreCompileInputs.cache
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\obj\Debug\Sitecore.Foundation.DependencyInjection.csproj.CopyComplete
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\obj\Debug\Sitecore.Foundation.DependencyInjection.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\obj\Debug\Sitecore.Foundation.DependencyInjection.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\obj\Debug\Sitecore.Foundation.DependencyInjection.csprojAssemblyReference.cache

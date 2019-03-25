@@ -1,0 +1,133 @@
+//Revision: 0494339e-85e1-4dbd-85e8-87509b8ca0d4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
+{
+
+
+ 	/// <summary>
+	/// I_Navigation Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_Navigation</para>	
+	/// <para>ID: 3f106ce8-3e4d-4649-b1c2-8dd7f13cf266</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_NavigationConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Navigation : IGlassBase 
+	{
+								/// <summary>
+					/// The Navigation Link field.
+					/// <para></para>
+					/// <para>Field Type: General Link</para>		
+					/// <para>Field ID: a5ef15ae-8fed-49c5-add1-33f750df450b</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_NavigationConstants.Navigation_LinkFieldName)]
+					Link Navigation_Link  {get; set;}
+			
+								/// <summary>
+					/// The Navigation Title field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: c00fbb0e-51b0-4563-9cea-a39fb1dd64c2</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_NavigationConstants.Navigation_TitleFieldName)]
+					string Navigation_Title  {get; set;}
+			
+								/// <summary>
+					/// The Sub Navigations field.
+					/// <para></para>
+					/// <para>Field Type: Multilist</para>		
+					/// <para>Field ID: 0c5fd746-6b36-451b-a3e1-19f9b101f442</para>
+					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.ISub_Navigation</para>
+					/// </summary>
+					[SitecoreField(I_NavigationConstants.Sub_NavigationsFieldName)]
+					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.ISub_Navigation> Sub_Navigations  {get; set;}
+			
+				}
+
+
+	public static partial class I_NavigationConstants{
+
+			public const string TemplateIdString = "3f106ce8-3e4d-4649-b1c2-8dd7f13cf266";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_Navigation";
+
+					
+			public static readonly ID Navigation_LinkFieldId = new ID("a5ef15ae-8fed-49c5-add1-33f750df450b");
+			public const string Navigation_LinkFieldName = "Navigation Link";
+			
+					
+			public static readonly ID Navigation_TitleFieldId = new ID("c00fbb0e-51b0-4563-9cea-a39fb1dd64c2");
+			public const string Navigation_TitleFieldName = "Navigation Title";
+			
+					
+			public static readonly ID Sub_NavigationsFieldId = new ID("0c5fd746-6b36-451b-a3e1-19f9b101f442");
+			public const string Sub_NavigationsFieldName = "Sub Navigations";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _Navigation
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_Navigation</para>	
+	/// <para>ID: 3f106ce8-3e4d-4649-b1c2-8dd7f13cf266</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_NavigationConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Navigation))]
+	public partial class _Navigation  : GlassBase, I_Navigation 
+	{
+	   
+						/// <summary>
+				/// The Navigation Link field.
+				/// <para></para>
+				/// <para>Field Type: General Link</para>		
+				/// <para>Field ID: a5ef15ae-8fed-49c5-add1-33f750df450b</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_NavigationConstants.Navigation_LinkFieldName)]
+				public virtual Link Navigation_Link  {get; set;}
+					
+						/// <summary>
+				/// The Navigation Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: c00fbb0e-51b0-4563-9cea-a39fb1dd64c2</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_NavigationConstants.Navigation_TitleFieldName)]
+				public virtual string Navigation_Title  {get; set;}
+					
+						/// <summary>
+				/// The Sub Navigations field.
+				/// <para></para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: 0c5fd746-6b36-451b-a3e1-19f9b101f442</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.ISub_Navigation</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_NavigationConstants.Sub_NavigationsFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.ISub_Navigation> Sub_Navigations  {get; set;}
+					
+			
+	}
+}
+

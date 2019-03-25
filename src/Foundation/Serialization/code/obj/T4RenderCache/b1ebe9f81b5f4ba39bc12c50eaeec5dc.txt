@@ -1,0 +1,208 @@
+//Revision: b98e5f77-2777-4a04-8b57-94dc1c4e148a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
+{
+
+
+ 	/// <summary>
+	/// I_Logo Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_Logo</para>	
+	/// <para>ID: b1ebe9f8-1b5f-4ba3-9bc1-2c50eaeec5dc</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_LogoConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Logo : IGlassBase 
+	{
+								/// <summary>
+					/// The Brand Logo Url field.
+					/// <para></para>
+					/// <para>Field Type: General Link</para>		
+					/// <para>Field ID: c1fcf0b0-f4d1-4866-bd3e-96ff23092858</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_LogoConstants.Brand_Logo_UrlFieldName)]
+					Link Brand_Logo_Url  {get; set;}
+			
+								/// <summary>
+					/// The Brand Logo field.
+					/// <para></para>
+					/// <para>Field Type: Image</para>		
+					/// <para>Field ID: 45d89051-7992-4d9f-9979-85dd606cb56c</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_LogoConstants.Brand_LogoFieldName)]
+					Image Brand_Logo  {get; set;}
+			
+								/// <summary>
+					/// The ContentPage BrandLogo field.
+					/// <para></para>
+					/// <para>Field Type: Image</para>		
+					/// <para>Field ID: 63f10079-2b51-4df1-92fe-7d4900dc738d</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_LogoConstants.ContentPage_BrandLogoFieldName)]
+					Image ContentPage_BrandLogo  {get; set;}
+			
+								/// <summary>
+					/// The ContentPage SiteLogo field.
+					/// <para></para>
+					/// <para>Field Type: Image</para>		
+					/// <para>Field ID: 761d2c09-0867-4684-9349-25edf255400e</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_LogoConstants.ContentPage_SiteLogoFieldName)]
+					Image ContentPage_SiteLogo  {get; set;}
+			
+								/// <summary>
+					/// The Site Logo Url field.
+					/// <para></para>
+					/// <para>Field Type: General Link</para>		
+					/// <para>Field ID: a241368f-8cb5-46dc-b3e3-1e9c4b29b0a6</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_LogoConstants.Site_Logo_UrlFieldName)]
+					Link Site_Logo_Url  {get; set;}
+			
+								/// <summary>
+					/// The Site Logo field.
+					/// <para></para>
+					/// <para>Field Type: Image</para>		
+					/// <para>Field ID: 59e823a8-3da8-40be-8799-03acae2a4457</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_LogoConstants.Site_LogoFieldName)]
+					Image Site_Logo  {get; set;}
+			
+				}
+
+
+	public static partial class I_LogoConstants{
+
+			public const string TemplateIdString = "b1ebe9f8-1b5f-4ba3-9bc1-2c50eaeec5dc";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_Logo";
+
+					
+			public static readonly ID Brand_Logo_UrlFieldId = new ID("c1fcf0b0-f4d1-4866-bd3e-96ff23092858");
+			public const string Brand_Logo_UrlFieldName = "Brand Logo Url";
+			
+					
+			public static readonly ID Brand_LogoFieldId = new ID("45d89051-7992-4d9f-9979-85dd606cb56c");
+			public const string Brand_LogoFieldName = "Brand Logo";
+			
+					
+			public static readonly ID ContentPage_BrandLogoFieldId = new ID("63f10079-2b51-4df1-92fe-7d4900dc738d");
+			public const string ContentPage_BrandLogoFieldName = "ContentPage BrandLogo";
+			
+					
+			public static readonly ID ContentPage_SiteLogoFieldId = new ID("761d2c09-0867-4684-9349-25edf255400e");
+			public const string ContentPage_SiteLogoFieldName = "ContentPage SiteLogo";
+			
+					
+			public static readonly ID Site_Logo_UrlFieldId = new ID("a241368f-8cb5-46dc-b3e3-1e9c4b29b0a6");
+			public const string Site_Logo_UrlFieldName = "Site Logo Url";
+			
+					
+			public static readonly ID Site_LogoFieldId = new ID("59e823a8-3da8-40be-8799-03acae2a4457");
+			public const string Site_LogoFieldName = "Site Logo";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _Logo
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_Logo</para>	
+	/// <para>ID: b1ebe9f8-1b5f-4ba3-9bc1-2c50eaeec5dc</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_LogoConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Logo))]
+	public partial class _Logo  : GlassBase, I_Logo 
+	{
+	   
+						/// <summary>
+				/// The Brand Logo Url field.
+				/// <para></para>
+				/// <para>Field Type: General Link</para>		
+				/// <para>Field ID: c1fcf0b0-f4d1-4866-bd3e-96ff23092858</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_LogoConstants.Brand_Logo_UrlFieldName)]
+				public virtual Link Brand_Logo_Url  {get; set;}
+					
+						/// <summary>
+				/// The Brand Logo field.
+				/// <para></para>
+				/// <para>Field Type: Image</para>		
+				/// <para>Field ID: 45d89051-7992-4d9f-9979-85dd606cb56c</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_LogoConstants.Brand_LogoFieldName)]
+				public virtual Image Brand_Logo  {get; set;}
+					
+						/// <summary>
+				/// The ContentPage BrandLogo field.
+				/// <para></para>
+				/// <para>Field Type: Image</para>		
+				/// <para>Field ID: 63f10079-2b51-4df1-92fe-7d4900dc738d</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_LogoConstants.ContentPage_BrandLogoFieldName)]
+				public virtual Image ContentPage_BrandLogo  {get; set;}
+					
+						/// <summary>
+				/// The ContentPage SiteLogo field.
+				/// <para></para>
+				/// <para>Field Type: Image</para>		
+				/// <para>Field ID: 761d2c09-0867-4684-9349-25edf255400e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_LogoConstants.ContentPage_SiteLogoFieldName)]
+				public virtual Image ContentPage_SiteLogo  {get; set;}
+					
+						/// <summary>
+				/// The Site Logo Url field.
+				/// <para></para>
+				/// <para>Field Type: General Link</para>		
+				/// <para>Field ID: a241368f-8cb5-46dc-b3e3-1e9c4b29b0a6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_LogoConstants.Site_Logo_UrlFieldName)]
+				public virtual Link Site_Logo_Url  {get; set;}
+					
+						/// <summary>
+				/// The Site Logo field.
+				/// <para></para>
+				/// <para>Field Type: Image</para>		
+				/// <para>Field ID: 59e823a8-3da8-40be-8799-03acae2a4457</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_LogoConstants.Site_LogoFieldName)]
+				public virtual Image Site_Logo  {get; set;}
+					
+			
+	}
+}
+

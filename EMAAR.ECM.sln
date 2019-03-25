@@ -19,8 +19,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Foundation.ORM", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Navigation", "Navigation", "{4E5BB3FA-FAD3-46BB-AA03-C0F905885408}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Feature.Navigation", "src\Feature\Navigation\code\EMAAR.ECM.Feature.Navigation.csproj", "{E7E5AEE5-550B-40A1-ADE3-4220326F62B2}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{DE7EBC49-2A6F-4999-8FA7-00E8978022A4}"
 	ProjectSection(SolutionItems) = preProject
 		gulp-config.js = gulp-config.js
@@ -55,6 +53,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Map", "Map", "{604F352B-C7D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Feature.Map", "src\Feature\Map\code\EMAAR.ECM.Feature.Map.csproj", "{2E0C4C0C-6CE9-47CF-9FDC-A1065EF60B0A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Feature.Navigation", "src\Feature\Navigation\code\EMAAR.ECM.Feature.Navigation.csproj", "{70787CF6-A67E-4DB3-868D-48230C93860C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,10 +69,6 @@ Global
 		{06009BA6-B14B-4018-9209-F483CB820555}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06009BA6-B14B-4018-9209-F483CB820555}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06009BA6-B14B-4018-9209-F483CB820555}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E7E5AEE5-550B-40A1-ADE3-4220326F62B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E7E5AEE5-550B-40A1-ADE3-4220326F62B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E7E5AEE5-550B-40A1-ADE3-4220326F62B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E7E5AEE5-550B-40A1-ADE3-4220326F62B2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CE84DA7C-E46B-442E-BFF0-6BACDB7F33A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CE84DA7C-E46B-442E-BFF0-6BACDB7F33A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE84DA7C-E46B-442E-BFF0-6BACDB7F33A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -101,6 +97,10 @@ Global
 		{2E0C4C0C-6CE9-47CF-9FDC-A1065EF60B0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E0C4C0C-6CE9-47CF-9FDC-A1065EF60B0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E0C4C0C-6CE9-47CF-9FDC-A1065EF60B0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70787CF6-A67E-4DB3-868D-48230C93860C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70787CF6-A67E-4DB3-868D-48230C93860C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70787CF6-A67E-4DB3-868D-48230C93860C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70787CF6-A67E-4DB3-868D-48230C93860C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -111,7 +111,6 @@ Global
 		{4A5988D6-DC30-4374-AD84-6D260C69FA5D} = {95965C52-E791-4D58-A71A-CCE7A969DA10}
 		{06009BA6-B14B-4018-9209-F483CB820555} = {4A5988D6-DC30-4374-AD84-6D260C69FA5D}
 		{4E5BB3FA-FAD3-46BB-AA03-C0F905885408} = {FFE7C731-AB9F-4B1A-981C-5024ABF419E4}
-		{E7E5AEE5-550B-40A1-ADE3-4220326F62B2} = {4E5BB3FA-FAD3-46BB-AA03-C0F905885408}
 		{F87BB540-719F-45EA-BACC-5DCCC365B345} = {95965C52-E791-4D58-A71A-CCE7A969DA10}
 		{CE84DA7C-E46B-442E-BFF0-6BACDB7F33A3} = {F87BB540-719F-45EA-BACC-5DCCC365B345}
 		{E4020F51-AE16-4CC8-8D88-03D1B993BBCF} = {95965C52-E791-4D58-A71A-CCE7A969DA10}
@@ -125,9 +124,10 @@ Global
 		{BB4A62B8-31DC-40DA-8B08-E1F4A8560059} = {E4020F51-AE16-4CC8-8D88-03D1B993BBCF}
 		{604F352B-C7D7-4F79-92B2-1F4DAF1F5320} = {FFE7C731-AB9F-4B1A-981C-5024ABF419E4}
 		{2E0C4C0C-6CE9-47CF-9FDC-A1065EF60B0A} = {604F352B-C7D7-4F79-92B2-1F4DAF1F5320}
+		{70787CF6-A67E-4DB3-868D-48230C93860C} = {4E5BB3FA-FAD3-46BB-AA03-C0F905885408}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 		SolutionGuid = {19DFE5D1-44BF-4ED4-8BC4-548544D4F79B}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 	EndGlobalSection
 EndGlobal

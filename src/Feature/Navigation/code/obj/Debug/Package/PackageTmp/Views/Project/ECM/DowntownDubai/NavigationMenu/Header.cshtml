@@ -1,0 +1,146 @@
+﻿@using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
+@model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.IHeader
+@using Glass.Mapper.Sc.Web.Mvc
+@{
+    string headerCss = "siteHeader";
+    bool isHomePage = false;
+    ILogo logo = null;
+    if (ViewBag.Logo != null)
+    {
+        logo = (ILogo)ViewBag.Logo;
+    }
+    if (ViewBag.IsHomePage != null)
+    {
+        isHomePage = (bool)ViewBag.IsHomePage;
+        if (isHomePage == true)
+        {
+            headerCss = "siteHeader innerHeader";
+        }
+    }
+}
+
+<!-- Header starts here -->
+<header class="@headerCss">
+    <div class="container">
+        <div class="flexBox">
+
+            @if (isHomePage && logo != null && logo.Site_Logo != null)
+            {  //Home page logo
+                using (Html.Glass().BeginRenderLink(logo, x => x.Site_Logo_Url, new { @class = "siteLogo" }, isEditable: true))
+                {
+                    @Html.Glass().RenderImage(logo, x => x.Site_Logo, new { alt = "image description" }, isEditable: true)
+                }
+            }
+            else if (!isHomePage && logo != null && logo.ContentPage_SiteLogo != null)
+            {
+                //Content page logo
+                using (Html.Glass().BeginRenderLink(logo, x => x.Site_Logo_Url, new { @class = "siteLogo" }, isEditable: true))
+                {
+                    @Html.Glass().RenderImage(logo, x => x.ContentPage_SiteLogo, new { alt = "image description" }, isEditable: true)
+                }
+            }
+            <nav class="siteNavigation">
+                <ul>
+                    @{
+                        if (Model != null && Model.Root_Navigations != null)
+                        {
+                            var navigation = new List<INavigation>(Model.Root_Navigations).Count;
+                            if (navigation > 0)
+                            {
+                                foreach (var rootNav in Model.Root_Navigations)
+                                {
+                                    var subNavigation = new List<ISub_Navigation>(rootNav.Sub_Navigations).Count;
+                                    //No Subnavigation
+                                    if (subNavigation <= 0)
+                                    {
+                                        <li class="nosub">
+                                            @using (Html.Glass().BeginRenderLink(rootNav, x => x.Navigation_Link, isEditable: true))
+                                            {
+                                                @Html.Glass().Editable(rootNav, x => x.Navigation_Title)
+                                            }
+                                        </li>
+                                        continue;
+                                    }
+                                    <li>
+                                        <!--Link with Sub navigation-->
+                                        @using (Html.Glass().BeginRenderLink(rootNav, x => x.Navigation_Link, new { @class = "active" }, isEditable: true))
+                                        {
+                                            @Html.Glass().Editable(rootNav, x => x.Navigation_Title)
+                                        }
+                                        <div class="sub-menu">
+                                            <ul>
+                                                @if (subNavigation > 0)
+                                                {
+                                                    foreach (var subNav in rootNav.Sub_Navigations)
+                                                    {
+                                                        <li>
+                                                            @using (Html.Glass().BeginRenderLink(subNav, x => x.Navigation_Link, isEditable: true))
+                                                            {
+                                                                @Html.Glass().Editable(subNav, x => x.Navigation_Title)
+                                                            }
+
+                                                        </li>
+                                                    }
+                                                }
+                                            </ul>
+                                        </div>
+
+                                    </li>
+                                }
+                            }
+                        }
+                    }
+                </ul>
+                <aside class="siteSearch js-sOnTrigger">
+                    <form action="http://google.com">
+                        <div class="swrap">
+                            <button class="sbtn" type="submit">
+                                @if (isHomePage == true)
+                                {
+                                    <img src="~/images/icon/search.svg" alt="">
+                                }
+                                else
+                                {
+                                    <img src="~/images/icon/search-btn.svg" alt="">
+                                }
+                            </button>
+                            <div class="searchFielfds">
+                                <input type="search" placeholder="@Html.Glass().Editable(Model,  x => x.Search_Watermark)" class="searchinput" />
+                                <a href="javascript:;" class="clsoebtn">
+                                    @if (isHomePage == true)
+                                    {
+                                        <img src="~/images/icon/clsoe.svg" alt="">
+                                    }
+                                    else
+                                    {
+                                        <img src="~/images/icon/clsoe-gray.svg" alt="">
+                                    }
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </aside>
+                <!-- siteSearch ends here -->
+            </nav>
+            <!-- siteNavigation ends here -->
+            <div class="mobileWrapper">
+                <a href="javascript:;" class="loginmobile">
+                    <img src="~/images/icon/login.svg" alt="login">
+                </a>
+                <a class="hamburgers hamburger--squeeze js-hamburger mobile-menu-trigger" href="javascript:;">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <a href="javascript:;" class="siteLogin">
+        <i class="ico">
+            <img src="../images/icon/login.svg" alt="login" class="svg">
+        </i>
+        <span>@Html.Glass().Editable(Model, x => x.Login_Text)</span>
+    </a>
+    <!-- siteLogin ends here -->
+</header>
+<!-- Header ends here -->

@@ -361,43 +361,67 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/11/2019 15:17:19</publishTime>
     </File>
     <File Include="images/icon/btn-arrow.svg">
-      <publishTime>03/11/2019 15:17:19</publishTime>
+      <publishTime>03/25/2019 16:03:53</publishTime>
     </File>
     <File Include="images/icon/chevron.svg">
-      <publishTime>03/11/2019 15:17:19</publishTime>
+      <publishTime>03/25/2019 16:03:53</publishTime>
     </File>
     <File Include="images/icon/chevronup.svg">
-      <publishTime>03/11/2019 15:17:19</publishTime>
+      <publishTime>03/25/2019 16:03:53</publishTime>
+    </File>
+    <File Include="images/icon/clsoe-gray.svg">
+      <publishTime>03/25/2019 16:03:53</publishTime>
     </File>
     <File Include="images/icon/clsoe.svg">
-      <publishTime>03/11/2019 15:17:19</publishTime>
+      <publishTime>03/25/2019 16:03:53</publishTime>
+    </File>
+    <File Include="images/icon/download.svg">
+      <publishTime>03/25/2019 16:03:53</publishTime>
+    </File>
+    <File Include="images/icon/external.svg">
+      <publishTime>03/25/2019 16:03:53</publishTime>
     </File>
     <File Include="images/icon/icon-hand.svg">
-      <publishTime>03/11/2019 15:17:19</publishTime>
+      <publishTime>03/25/2019 16:03:53</publishTime>
     </File>
     <File Include="images/icon/login.svg">
-      <publishTime>03/11/2019 15:17:19</publishTime>
+      <publishTime>03/25/2019 16:03:53</publishTime>
     </File>
     <File Include="images/icon/mail.svg">
-      <publishTime>03/11/2019 15:17:19</publishTime>
+      <publishTime>03/25/2019 16:03:53</publishTime>
+    </File>
+    <File Include="images/icon/Pdf.svg">
+      <publishTime>03/25/2019 16:03:53</publishTime>
     </File>
     <File Include="images/icon/phone.svg">
-      <publishTime>03/11/2019 15:17:19</publishTime>
+      <publishTime>03/25/2019 16:03:53</publishTime>
     </File>
     <File Include="images/icon/pin.svg">
-      <publishTime>03/11/2019 15:17:19</publishTime>
+      <publishTime>03/25/2019 16:03:53</publishTime>
+    </File>
+    <File Include="images/icon/play-button.svg">
+      <publishTime>03/25/2019 16:03:53</publishTime>
+    </File>
+    <File Include="images/icon/right-arrow-sidebar.svg">
+      <publishTime>03/25/2019 16:03:50</publishTime>
     </File>
     <File Include="images/icon/scroll-down.svg">
-      <publishTime>03/11/2019 15:17:19</publishTime>
+      <publishTime>03/25/2019 16:03:51</publishTime>
+    </File>
+    <File Include="images/icon/search-btn.svg">
+      <publishTime>03/25/2019 16:03:53</publishTime>
     </File>
     <File Include="images/icon/search.svg">
-      <publishTime>03/11/2019 15:17:19</publishTime>
+      <publishTime>03/25/2019 16:03:53</publishTime>
+    </File>
+    <File Include="images/icon/select-arrow.svg">
+      <publishTime>03/25/2019 16:03:53</publishTime>
     </File>
     <File Include="images/icon/swiper-left.svg">
-      <publishTime>03/11/2019 15:17:19</publishTime>
+      <publishTime>03/25/2019 16:03:53</publishTime>
     </File>
     <File Include="images/icon/swiper-right.svg">
-      <publishTime>03/11/2019 15:17:19</publishTime>
+      <publishTime>03/25/2019 16:03:53</publishTime>
     </File>
     <File Include="images/Image_Section1.png">
       <publishTime>03/11/2019 15:17:19</publishTime>
@@ -416,6 +440,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="images/Logo/emaar.svg">
       <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Logo/logo-gray.svg">
+      <publishTime>03/25/2019 15:49:03</publishTime>
     </File>
     <File Include="images/Logo/logo.svg">
       <publishTime>03/11/2019 15:17:19</publishTime>
@@ -538,7 +565,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/10/2019 14:20:34</publishTime>
     </File>
     <File Include="Views/Shared/ECM/_baseLayout.cshtml">
-      <publishTime>03/24/2019 10:57:01</publishTime>
+      <publishTime>03/25/2019 11:46:26</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
       <publishTime>03/10/2019 14:20:34</publishTime>

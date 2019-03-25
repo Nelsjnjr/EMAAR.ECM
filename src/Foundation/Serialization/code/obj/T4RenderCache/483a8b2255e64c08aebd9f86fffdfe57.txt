@@ -1,0 +1,58 @@
+//Revision: e235114a-c815-40a5-a60b-bd3cea157b8a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
+{
+
+
+ 	/// <summary>
+	/// INavigationFolder Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/NavigationFolder</para>	
+	/// <para>ID: 483a8b22-55e6-4c08-aebd-9f86fffdfe57</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=INavigationFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface INavigationFolder : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_NavigationFolder
+	{
+				}
+
+
+	public static partial class INavigationFolderConstants{
+
+			public const string TemplateIdString = "483a8b22-55e6-4c08-aebd-9f86fffdfe57";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "NavigationFolder";
+
+			
+
+	}
+
+	
+	/// <summary>
+	/// NavigationFolder
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/NavigationFolder</para>	
+	/// <para>ID: 483a8b22-55e6-4c08-aebd-9f86fffdfe57</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=INavigationFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(INavigationFolder))]
+	public partial class NavigationFolder  : GlassBase, INavigationFolder 
+	{
+	   
+			
+	}
+}
+

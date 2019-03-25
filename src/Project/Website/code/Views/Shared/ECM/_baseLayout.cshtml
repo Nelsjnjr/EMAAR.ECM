@@ -13,86 +13,10 @@
     <!--[if lt IE 9]>      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>    <![endif]-->
 </head>
 <body>
-    <!-- Header starts here -->
-    <header class="siteHeader">
-        <div class="container">
-            <div class="flexBox">
-                <a href="javascript:;" class="siteLogo">
-                    <img src="../images/Logo/logo.svg" alt="">
-                </a>
-                <nav class="siteNavigation">
-                    <ul>
-                        <li>
-                            <a href="javascript:;" class="active">Discover</a>
-                            <div class="sub-menu">
-                                <ul>
-                                    <li><a href="javascript:;">Option 1</a></li>
-                                    <li><a href="javascript:;">Option 2</a></li>
-                                    <li><a href="javascript:;">Option 3</a></li>
-                                    <li><a href="javascript:;">Option 4</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="javascript:;">Lifestyle</a>
-                            <div class="sub-menu">
-                                <ul>
-                                    <li><a href="javascript:;">Rules & regulations</a></li>
-                                    <li><a href="javascript:;">All neighbourhoods</a></li>
-                                    <li><a href="javascript:;">Guidelines</a></li>
-                                    <li><a href="javascript:;">Community service fee</a></li>
-                                    <li><a href="javascript:;">Tips</a></li>
-                                    <li><a href="javascript:;">FAQs</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nosub"><a href="javascript:;">Media</a></li>
-                        <li class="nosub"><a href="javascript:;">Get in touch</a></li>
-                    </ul>
-                    <aside class="siteSearch js-sOnTrigger">
-                        <form action="http://google.com">
-                            <div class="swrap">
-                                <button class="sbtn" type="submit">
-                                    <img src="../images/icon/search.svg" alt="">
-                                </button>
-                                <div class="searchFielfds">
-                                    <input type="search" placeholder="How may we help you?" class="searchinput" />
-                                    <a href="javascript:;" class="clsoebtn">
-                                        <img src="../images/icon/clsoe.svg" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </form>
-                    </aside>
-                    <!-- siteSearch ends here -->
-                </nav>
-                <!-- siteNavigation ends here -->
-                <div class="mobileWrapper">
-                    <a href="javascript:;" class="loginmobile">
-                        <img src="../images/icon/login.svg" alt="login">
-                    </a>
-                    <a class="hamburgers hamburger--squeeze js-hamburger mobile-menu-trigger" href="javascript:;">
-                        <div class="hamburger-box">
-                            <div class="hamburger-inner"></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <a href="javascript:;" class="siteLogin">
-            <i class="ico">
-                <img src="../images/icon/login.svg" alt="login" class="svg">
-            </i>
-            <span>Log in</span>
-        </a>
-        <!-- siteLogin ends here -->
-    </header>
-    <!-- Header ends here -->
-   
-   
-    @Html.Sitecore().Placeholder("content")
-
-    <!-- footer starts here -->
+ 
+    @Html.Sitecore().Placeholder("ecm_header")
+    @Html.Sitecore().Placeholder("ecm_content") 
+    @Html.Sitecore().Placeholder("ecm_footer")
     <footer>
         <div class="container">
             <div class="footer-logo">
@@ -197,7 +121,7 @@
             <div class="emaar-logo">
                 <a href="javasript:;">
                     <img src="../images/Logo/emaar.svg" alt="emaar">
-                </a>    
+                </a>
             </div>
         </div>
     </footer>

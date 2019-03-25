@@ -1,0 +1,108 @@
+//Revision: 4a80c12f-aadb-42f6-8d88-d11a1c326a32
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
+{
+
+
+ 	/// <summary>
+	/// I_SubNavigation Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_SubNavigation</para>	
+	/// <para>ID: 93f213a4-7819-4318-a388-9beed0588d77</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_SubNavigationConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_SubNavigation : IGlassBase 
+	{
+								/// <summary>
+					/// The Navigation Link field.
+					/// <para></para>
+					/// <para>Field Type: General Link</para>		
+					/// <para>Field ID: 6c2d0631-17e6-4bbb-bedf-cea0939448c9</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_SubNavigationConstants.Navigation_LinkFieldName)]
+					Link Navigation_Link  {get; set;}
+			
+								/// <summary>
+					/// The Navigation Title field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: b66e4688-ab06-4ff0-a976-aa2492379cf5</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_SubNavigationConstants.Navigation_TitleFieldName)]
+					string Navigation_Title  {get; set;}
+			
+				}
+
+
+	public static partial class I_SubNavigationConstants{
+
+			public const string TemplateIdString = "93f213a4-7819-4318-a388-9beed0588d77";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_SubNavigation";
+
+					
+			public static readonly ID Navigation_LinkFieldId = new ID("6c2d0631-17e6-4bbb-bedf-cea0939448c9");
+			public const string Navigation_LinkFieldName = "Navigation Link";
+			
+					
+			public static readonly ID Navigation_TitleFieldId = new ID("b66e4688-ab06-4ff0-a976-aa2492379cf5");
+			public const string Navigation_TitleFieldName = "Navigation Title";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _SubNavigation
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_SubNavigation</para>	
+	/// <para>ID: 93f213a4-7819-4318-a388-9beed0588d77</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_SubNavigationConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_SubNavigation))]
+	public partial class _SubNavigation  : GlassBase, I_SubNavigation 
+	{
+	   
+						/// <summary>
+				/// The Navigation Link field.
+				/// <para></para>
+				/// <para>Field Type: General Link</para>		
+				/// <para>Field ID: 6c2d0631-17e6-4bbb-bedf-cea0939448c9</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_SubNavigationConstants.Navigation_LinkFieldName)]
+				public virtual Link Navigation_Link  {get; set;}
+					
+						/// <summary>
+				/// The Navigation Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: b66e4688-ab06-4ff0-a976-aa2492379cf5</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_SubNavigationConstants.Navigation_TitleFieldName)]
+				public virtual string Navigation_Title  {get; set;}
+					
+			
+	}
+}
+

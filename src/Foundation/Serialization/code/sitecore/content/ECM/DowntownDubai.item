@@ -13,8 +13,43 @@ created: 20190311T112008Z
 ----version----
 language: en
 version: 1
-revision: c0b4033c-c991-40eb-af4a-3303d17ec639
+revision: a303ff87-6420-4b0a-bd9c-1d80ca266ff7
 
+----field----
+field: {45D89051-7992-4D9F-9979-85DD606CB56C}
+name: Brand Logo
+key: brand logo
+content-length: 58
+
+<image mediaid="{2FC16B39-3D30-473A-8028-EB239CCB76DF}" />
+----field----
+field: {63F10079-2B51-4DF1-92FE-7D4900DC738D}
+name: ContentPage BrandLogo
+key: contentpage brandlogo
+content-length: 58
+
+<image mediaid="{DAC94E00-398E-4B4F-A6D6-178CFD7FD43E}" />
+----field----
+field: {C1FCF0B0-F4D1-4866-BD3E-96FF23092858}
+name: Brand Logo Url
+key: brand logo url
+content-length: 133
+
+<link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{34853065-F482-4073-9AE0-73E2E2FBFEF3}" />
+----field----
+field: {59E823A8-3DA8-40BE-8799-03ACAE2A4457}
+name: Site Logo
+key: site logo
+content-length: 58
+
+<image mediaid="{BC145B74-089D-4001-AB35-FB205B8B73E3}" />
+----field----
+field: {A241368F-8CB5-46DC-B3E3-1E9C4B29B0A6}
+name: Site Logo Url
+key: site logo url
+content-length: 133
+
+<link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{34853065-F482-4073-9AE0-73E2E2FBFEF3}" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -42,14 +77,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c0b4033c-c991-40eb-af4a-3303d17ec639
+a303ff87-6420-4b0a-bd9c-1d80ca266ff7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190319T121027Z
+20190325T120323Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
