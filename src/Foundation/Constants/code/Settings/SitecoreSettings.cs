@@ -29,7 +29,7 @@ namespace EMAAR.ECM.Foundation.Constants.Settings
         /// <summary>
         ///  Getting Srolldown icon image url from Sitecore settings based on Site
         /// </summary>
-        public static string Scrolldown { get; set; } = GetSetting("EMAAR.ECM.Foundation.Constants.scrolldown");
+        public static string Scrolldown { get; set; } = GetSetting("EMAAR.ECM.Foundation.Constants.Scrolldown");
 
     }
 }

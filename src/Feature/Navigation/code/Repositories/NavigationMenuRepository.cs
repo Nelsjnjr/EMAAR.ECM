@@ -5,6 +5,7 @@ using EMAAR.ECM.Foundation.Constants;
 using EMAAR.ECM.Foundation.Constants.Interfaces;
 using EMAAR.ECM.Foundation.ORM.Models;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Page_Types;
 using Glass.Mapper.Sc.Web.Mvc;
 using Sitecore.Foundation.DependencyInjection;
 
@@ -39,7 +40,7 @@ namespace EMAAR.ECM.Feature.Navigation.Repositories
         {
             IMvcContext mvcContext = _mvcContext();
             //Checking the current item is the home item to display the Header based on this
-            IGlassBase contextItem = mvcContext.GetContextItem<IGlassBase>();
+            IHome contextItem = mvcContext.GetContextItem<IHome>();
             if (contextItem.TemplateId.ToString().Equals(SitecoreSettings.HomeTemplateID, StringComparison.InvariantCultureIgnoreCase))
             {
                 _headerViewModel.SearchIcon = _sitecoreHelper.HomePageSearch;
