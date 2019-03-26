@@ -14,6 +14,23 @@
         /// Getting Scrolldown image url from Sitecore settings based on Site
         /// </summary>
         string Scrolldown { get; }
+        /// <summary>
+        ///  Getting Home page search icon image url from Sitecore settings based on Site
+        /// </summary>
+        string HomePageSearch { get; }
+        /// <summary>
+        ///  Getting Home page search icon image url from Sitecore settings based on Site
+        /// </summary>
+        string HomePageClose { get; }
+        /// <summary>
+        ///  Getting Content page Close icon image url from Sitecore settings based on Site
+        /// </summary>
+        string ContentPageSearch { get; }
+        /// <summary>
+        ///  Getting Content page Close icon image url from Sitecore settings based on Site
+        /// </summary>
+        string ContentPageClose { get; }
+
         #endregion
 
     }

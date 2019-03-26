@@ -1,53 +1,29 @@
 ﻿@using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
-@model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.IHeader
+@model EMAAR.ECM.Feature.Navigation.Interface.IHeaderViewModel
 @using Glass.Mapper.Sc.Web.Mvc
-@{
-    string headerCss = "siteHeader";
-    bool isHomePage = false;
-    ILogo logo = null;
-    if (ViewBag.Logo != null)
-    {
-        logo = (ILogo)ViewBag.Logo;
-    }
-    if (ViewBag.IsHomePage != null)
-    {
-        isHomePage = (bool)ViewBag.IsHomePage;
-        if (isHomePage == true)
-        {
-            headerCss = "siteHeader innerHeader";
-        }
-    }
-}
+@using EMAAR.ECM.Foundation.Constants
+
 
 <!-- Header starts here -->
-<header class="@headerCss">
+<header class="@Model.HomeCss">
     <div class="container">
         <div class="flexBox">
-
-            @if (isHomePage && logo != null && logo.Site_Logo != null)
-            {  //Home page logo
-                using (Html.Glass().BeginRenderLink(logo, x => x.Site_Logo_Url, new { @class = "siteLogo" }, isEditable: true))
-                {
-                    @Html.Glass().RenderImage(logo, x => x.Site_Logo, new { alt = "image description" }, isEditable: true)
-                }
-            }
-            else if (!isHomePage && logo != null && logo.ContentPage_SiteLogo != null)
+            @if (Model.Logos != null && Model.Logos.Site_Logo != null)
             {
-                //Content page logo
-                using (Html.Glass().BeginRenderLink(logo, x => x.Site_Logo_Url, new { @class = "siteLogo" }, isEditable: true))
+                using (Html.Glass().BeginRenderLink(Model.Logos, x => x.Site_Logo_Url, new { @class = "siteLogo" }, isEditable: true))
                 {
-                    @Html.Glass().RenderImage(logo, x => x.ContentPage_SiteLogo, new { alt = "image description" }, isEditable: true)
+                    @Html.Glass().RenderImage(Model.Logos, x => x.Site_Logo, new { alt = "image description" }, isEditable: true)
                 }
             }
             <nav class="siteNavigation">
                 <ul>
                     @{
-                        if (Model != null && Model.Root_Navigations != null)
+                        if (Model != null && Model.Header.Root_Navigations != null)
                         {
-                            var navigation = new List<INavigation>(Model.Root_Navigations).Count;
+                            var navigation = new List<INavigation>(Model.Header.Root_Navigations).Count;
                             if (navigation > 0)
                             {
-                                foreach (var rootNav in Model.Root_Navigations)
+                                foreach (var rootNav in Model.Header.Root_Navigations)
                                 {
                                     var subNavigation = new List<ISub_Navigation>(rootNav.Sub_Navigations).Count;
                                     //No Subnavigation
@@ -95,26 +71,14 @@
                     <form action="http://google.com">
                         <div class="swrap">
                             <button class="sbtn" type="submit">
-                                @if (isHomePage == true)
-                                {
-                                    <img src="~/images/icon/search.svg" alt="">
-                                }
-                                else
-                                {
-                                    <img src="~/images/icon/search-btn.svg" alt="">
-                                }
+                                <img src="@Model.SearchIcon" alt="">
                             </button>
                             <div class="searchFielfds">
-                                <input type="search" placeholder="@Html.Glass().Editable(Model,  x => x.Search_Watermark)" class="searchinput" />
+                                <input type="search" placeholder="@Html.Glass().Editable(Model.Header,  x => x.Search_Watermark)" class="searchinput" />
                                 <a href="javascript:;" class="clsoebtn">
-                                    @if (isHomePage == true)
-                                    {
-                                        <img src="~/images/icon/clsoe.svg" alt="">
-                                    }
-                                    else
-                                    {
-                                        <img src="~/images/icon/clsoe-gray.svg" alt="">
-                                    }
+
+                                    <img src="@Model.CloseIcon" alt="">
+
                                 </a>
                             </div>
                         </div>
@@ -139,7 +103,7 @@
         <i class="ico">
             <img src="../images/icon/login.svg" alt="login" class="svg">
         </i>
-        <span>@Html.Glass().Editable(Model, x => x.Login_Text)</span>
+        <span>@Html.Glass().Editable(Model.Header, x => x.Login_Text)</span>
     </a>
     <!-- siteLogin ends here -->
 </header>

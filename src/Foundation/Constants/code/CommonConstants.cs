@@ -8,9 +8,9 @@
         #region property
         public enum Alignment { Left, Right, Background };
         public static string Explore { get; } = "explore";
-        public static string ArrowPath { get; } = "/Settings/Navigation Arrow/RightArrow";
-        public static string ScrolldownPath { get; } = "/Settings/Navigation Arrow/scrolldown";
-      
+        public static string  HomePageHeaderCss { get; } = "siteHeader";
+        public static string ContentPageHeaderCss { get; } = "siteHeader innerHeader";
+
         #endregion;
 
     }

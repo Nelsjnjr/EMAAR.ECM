@@ -12,7 +12,7 @@ namespace EMAAR.ECM.Feature.Navigation.Settings
         /// <summary>
         /// Home Template ID
         /// </summary>
-        public static string HomeTemplateID { get; set; } =  IHomeConstants.TemplateIdString;
+        public static string HomeTemplateID { get; set; } =  IHomeConstants.TemplateIdString;      
 
     }
 }

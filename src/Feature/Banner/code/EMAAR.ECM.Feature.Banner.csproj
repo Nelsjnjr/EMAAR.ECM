@@ -220,15 +220,15 @@
     <Compile Include="Settings\SitecoreSettings.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Project\ECM\DowntownDubai\Banner\ImageText\ImageText.cshtml" />
+    <Content Include="Views\Feature\ECM\DowntownDubai\Banner\ImageText\ImageText.cshtml" />
     <Content Include="EMAAR.ECM.Feature.Banner.ruleset" />
     <Content Include="App_Config\Include\Feature\ECM\Banner\EMAAR.ECM.Feature.Banner.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
-    <Content Include="Views\Project\ECM\DowntownDubai\Banner\ImageText\_LeftImageText.cshtml" />
-    <Content Include="Views\Project\ECM\DowntownDubai\Banner\ImageText\_RightImageText.cshtml" />
-    <Content Include="Views\Project\ECM\DowntownDubai\Banner\ImageText\_BackgroundImageText.cshtml" />
-    <Content Include="Views\Project\ECM\DowntownDubai\Banner\RelatedContent\RelatedContent.cshtml" />
-    <Content Include="Views\Project\ECM\DowntownDubai\Banner\HeroBanner\HeroBanner.cshtml" />
+    <Content Include="Views\Feature\ECM\DowntownDubai\Banner\ImageText\_LeftImageText.cshtml" />
+    <Content Include="Views\Feature\ECM\DowntownDubai\Banner\ImageText\_RightImageText.cshtml" />
+    <Content Include="Views\Feature\ECM\DowntownDubai\Banner\ImageText\_BackgroundImageText.cshtml" />
+    <Content Include="Views\Feature\ECM\DowntownDubai\Banner\RelatedContent\RelatedContent.cshtml" />
+    <Content Include="Views\Feature\ECM\DowntownDubai\Banner\HeroBanner\HeroBanner.cshtml" />
     <None Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -247,7 +247,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Foundation\Constants\code\EMAAR.ECM.Foundation.Constants.csproj">
-      <Project>{ae0f609c-cc68-45b2-a242-a537b657eb2d}</Project>
+      <Project>{5a9c69d0-c859-4df1-ac9c-4ef90d684b2b}</Project>
       <Name>EMAAR.ECM.Foundation.Constants</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\DependencyInjection\code\Sitecore.Foundation.DependencyInjection.csproj">

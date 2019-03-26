@@ -13,7 +13,7 @@ namespace EMAAR.ECM.Feature.Navigation.Interface
         /// </summary>
         /// <param name="logo">Brand logo,Site logo with urls</param>
         /// <returns>Header details</returns>
-        IHeader GetHeader(out ILogo logo, out bool isHomePage);
+        IHeaderViewModel GetHeader();
         #endregion
     }
 }
