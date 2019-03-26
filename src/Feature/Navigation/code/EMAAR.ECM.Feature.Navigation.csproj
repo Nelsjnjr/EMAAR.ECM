@@ -234,7 +234,7 @@
   <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Views\Project\ECM\DowntownDubai\NavigationMenu\Header.cshtml" />
+    <Content Include="Views\Feature\ECM\DowntownDubai\NavigationMenu\Header.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Foundation\Constants\code\EMAAR.ECM.Foundation.Constants.csproj">
