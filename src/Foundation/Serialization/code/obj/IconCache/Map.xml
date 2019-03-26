@@ -349,7 +349,6 @@
   <Item ItemPath="/sitecore/templates/Feature/ECM/InteractiveMap/_InteractiveMap/Coordinates/Top" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/media library/Images" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
   <Item ItemPath="/sitecore/media library/Images/Feature" ItemIcon="/temp/iconcache/applications/16x16/folder_cubes.png" />
-  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/DowntownDubai/Banner" ItemIcon="/temp/iconcache/applications/16x16/text_rich_colored.png" />
   <Item ItemPath="/sitecore/media library/Images/Feature/ECM/DowntownDubai/Common" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
   <Item ItemPath="/sitecore/media library/Images/Feature/ECM/DowntownDubai/Common/Area Background Image" ItemIcon="/sitecore/shell/themes/standard/-/media/2B61D81548F043CE855F26E64910DE25.ashx?h=16&amp;thn=1&amp;w=16&amp;db=master" />
   <Item ItemPath="/sitecore/media library/Images/Feature/ECM/DowntownDubai/Common/Boulevard Height" ItemIcon="/sitecore/shell/themes/standard/-/media/1C702138DA104455837CA8215F7193B2.ashx?h=16&amp;thn=1&amp;w=16&amp;db=master" />
@@ -394,7 +393,6 @@
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_SubNavigation/Sub Navigation/Navigation Link" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_SiteRoot" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
   <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/Logo/__Standard Values" ItemIcon="/temp/iconcache/applications/32x32/form_blue.png" />
-  <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/Navigation/__Standard Values" ItemIcon="/temp/iconcache/applications/32x32/nav_right_green.png" />
   <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/Sub Navigation" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
   <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/Sub Navigation/__Standard Values" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
   <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/Header/__Standard Values" ItemIcon="/temp/iconcache/office/32x32/window.png" />
@@ -425,7 +423,6 @@
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Settings/Navigation Arrow" ItemIcon="/temp/IconCache/applications/16x16/navigate_right.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content" ItemIcon="/temp/iconcache/applications/16x16/folder_green.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/HeroBanner" ItemIcon="/temp/IconCache/multimedia/16x16/image_h.png" />
-  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/HeroBanner/Buildings" ItemIcon="/temp/iconcache/multimedia/32x32/image_h.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/HeroBanner/Homes" ItemIcon="/temp/iconcache/multimedia/32x32/image_h.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/HeroBanner/Nationalites" ItemIcon="/temp/iconcache/multimedia/32x32/image_h.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/HeroBanner/Residents" ItemIcon="/temp/iconcache/multimedia/32x32/image_h.png" />
@@ -434,7 +431,6 @@
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/InteractiveMaps/Burjpark" ItemIcon="/temp/iconcache/apps/32x32/map.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/InteractiveMaps/Dubaimall" ItemIcon="/temp/iconcache/apps/32x32/map.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/InteractiveMaps/Lakeside" ItemIcon="/temp/iconcache/apps/32x32/map.png" />
-  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/Navigation" ItemIcon="/temp/iconcache/office/32x32/navigate_right2.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/Navigation/Header" ItemIcon="/temp/iconcache/office/32x32/window.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/Navigation/Header/Discovery" ItemIcon="/temp/iconcache/applications/32x32/nav_right_green.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/Navigation/Header/Discovery/Option 2" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
@@ -520,7 +516,6 @@
   <Item ItemPath="/sitecore/layout/Placeholder Settings/ECM" ItemIcon="/temp/iconcache/flags/16x16/flag_united_arab_emirates.png" />
   <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM" ItemIcon="/temp/iconcache/flags/16x16/flag_united_arab_emirates.png" />
   <Item ItemPath="/sitecore/media library/Images/Foundation/ECM/DowntownDubai" ItemIcon="/temp/iconcache/network/16x16/earth.png" />
-  <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM/DowntownDubai/Header" ItemIcon="/temp/iconcache/software/16x16/element.png" />
   <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM/DowntownDubai" ItemIcon="/temp/iconcache/network/16x16/earth.png" />
   <Item ItemPath="/sitecore/layout/Layouts/Project/ECM" ItemIcon="/temp/IconCache/flags/16x16/flag_united_arab_emirates.png" />
   <Item ItemPath="/sitecore/media library/Images/Feature/ECM" ItemIcon="/temp/IconCache/flags/16x16/flag_united_arab_emirates.png" />
@@ -528,9 +523,7 @@
   <Item ItemPath="/sitecore/media library/Images/Project/ECM" ItemIcon="/temp/IconCache/flags/16x16/flag_united_arab_emirates.png" />
   <Item ItemPath="/sitecore/media library/Images/Project/ECM/DowntownDubai" ItemIcon="/temp/IconCache/network/16x16/earth.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Settings/Site Specific Images" ItemIcon="/temp/IconCache/applications/16x16/navigate_right.png" />
-  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/DowntownDubai/Banner/Image_Section3" ItemIcon="/temp/IconCache/-/media/19A12036A9794BEF9877D32384124E05.ashx?h=16&amp;thn=1&amp;w=16" />
   <Item ItemPath="/sitecore/media library/Images/Feature/ECM/DowntownDubai/Banner/Image_Section4" ItemIcon="/temp/IconCache/-/media/BE41F0E10D8D49F1AE27DA3EBA404182.ashx?h=16&amp;thn=1&amp;w=16" />
-  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/DowntownDubai/HeroBanner/Downtown-Dubai_tcm223-49617" ItemIcon="/temp/IconCache/-/media/7955B05B2A7349D198348BA6F7B0F04C.ashx?h=16&amp;thn=1&amp;w=16" />
   <Item ItemPath="/sitecore/media library/Images/Feature/ECM/DowntownDubai/HeroBanner/Mobile_BackgroundImage" ItemIcon="/temp/IconCache/-/media/D0FB1A056A84413A86DE2E84CCA27FC0.ashx?h=16&amp;thn=1&amp;w=16" />
   <Item ItemPath="/sitecore/media library/Images/Feature/ECM/DowntownDubai/InteractiveMap/bk" ItemIcon="/temp/IconCache/-/media/877433FA7A5E454EAD0C6B6460D649A2.ashx?h=16&amp;thn=1&amp;w=16" />
   <Item ItemPath="/sitecore/media library/Images/Feature/ECM/DowntownDubai/InteractiveMap/bp" ItemIcon="/temp/IconCache/-/media/315D68599B8642E5ACADE6032FA095C2.ashx?h=16&amp;thn=1&amp;w=16" />
@@ -569,4 +562,7 @@
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home/Page Datasources/InteractiveMap/Click to discover the area" ItemIcon="/temp/iconcache/apps/32x32/map.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home/Page Datasources/Related Content" ItemIcon="/temp/IconCache/Control/16x16/splitter_ver_b_h.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home/Page Datasources/Related Content/Exploring the neighborhood" ItemIcon="/temp/iconcache/control/16x16/splitter_ver_b_h.png" />
+  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/DowntownDubai/Banner" ItemIcon="/temp/IconCache/applications/16x16/text_rich_colored.png" />
+  <Item ItemPath="/sitecore/media library/Images/Feature/ECM/DowntownDubai/HeroBanner/Downtown-Dubai_tcm223-49617" ItemIcon="/sitecore/shell/themes/standard/-/media/7955B05B2A7349D198348BA6F7B0F04C.ashx?h=16&amp;thn=1&amp;w=16&amp;db=master" />
+  <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM/DowntownDubai/Header" ItemIcon="/temp/iconcache/software/16x16/element.png" />
 </ItemIconCache>

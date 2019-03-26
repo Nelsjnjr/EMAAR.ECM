@@ -20,7 +20,7 @@ namespace EMAAR.ECM.Foundation.Constants
         #endregion
         #region constructor
 
-        public SitecoreHelper(Func<IMvcContext> mvcContext, INavigationArrow navigationArrow)
+        public SitecoreHelper(Func<IMvcContext> mvcContext)
         {
             _mvcContext = mvcContext;
 
@@ -30,32 +30,32 @@ namespace EMAAR.ECM.Foundation.Constants
         /// <summary>
         /// Getting RightArrow image url from Sitecore settings based on Site
         /// </summary>
-        public string RightArrow => _mvcContext()?.SitecoreService.GetItem<INavigationArrow>
+        public string RightArrow => _mvcContext()?.SitecoreService.GetItem<IIconImages>
             ($"{Sitecore.Context.Site.RootPath}{SitecoreSettings.RightArrow}")?.Image?.Src ?? string.Empty;
         /// <summary>
         /// Getting Scrolldown image url from Sitecore settings based on Site
         /// </summary>
-        public string Scrolldown => _mvcContext()?.SitecoreService.GetItem<INavigationArrow>
+        public string Scrolldown => _mvcContext()?.SitecoreService.GetItem<IIconImages>
             ($"{Sitecore.Context.Site.RootPath}{SitecoreSettings.Scrolldown}")?.Image?.Src ?? string.Empty;
         /// <summary>
         ///  Getting Home page search icon image url from Sitecore settings based on Site
         /// </summary>
-        public string HomePageSearch => _mvcContext()?.SitecoreService.GetItem<INavigationArrow>
+        public string HomePageSearch => _mvcContext()?.SitecoreService.GetItem<IIconImages>
             ($"{Sitecore.Context.Site.RootPath}{SitecoreSettings.HomePageSearch}")?.Image?.Src ?? string.Empty;
         /// <summary>
         /// Getting Home page Close icon image url from Sitecore settings based on Site
         /// </summary>
-        public string HomePageClose => _mvcContext()?.SitecoreService.GetItem<INavigationArrow>
+        public string HomePageClose => _mvcContext()?.SitecoreService.GetItem<IIconImages>
             ($"{Sitecore.Context.Site.RootPath}{SitecoreSettings.HomePageClose}")?.Image?.Src ?? string.Empty;
         /// <summary>
         /// Getting Content page search icon image url from Sitecore settings based on Site
         /// </summary>
-        public string ContentPageSearch => _mvcContext()?.SitecoreService.GetItem<INavigationArrow>
+        public string ContentPageSearch => _mvcContext()?.SitecoreService.GetItem<IIconImages>
             ($"{Sitecore.Context.Site.RootPath}{SitecoreSettings.ContentPageSearch}")?.Image?.Src ?? string.Empty;
         /// <summary>
         /// Getting Content page Close icon image url from Sitecore settings based on Site
         /// </summary>
-        public string ContentPageClose => _mvcContext()?.SitecoreService.GetItem<INavigationArrow>
+        public string ContentPageClose => _mvcContext()?.SitecoreService.GetItem<IIconImages>
             ($"{Sitecore.Context.Site.RootPath}{SitecoreSettings.ContentPageClose}")?.Image?.Src ?? string.Empty;
         #endregion
 

@@ -2101,22 +2101,22 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 
 
  	/// <summary>
-	/// INavigationArrow Interface
+	/// IIconImages Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/NavigationArrow</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/IconImages</para>	
 	/// <para>ID: 6a90871f-2dd9-406f-96b8-edc42b7d044d</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=INavigationArrowConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface INavigationArrow : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_NavigationArrow
+	[SitecoreType(TemplateId=IIconImagesConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IIconImages : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_IconImages
 	{
 				}
 
 
-	public static partial class INavigationArrowConstants{
+	public static partial class IIconImagesConstants{
 
 			public const string TemplateIdString = "6a90871f-2dd9-406f-96b8-edc42b7d044d";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "NavigationArrow";
+			public const string TemplateName = "IconImages";
 
 					
 			public static readonly ID ImageFieldId = new ID("b50bddd1-afaa-4a00-bf33-21abb35df20f");
@@ -2128,14 +2128,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 
 	
 	/// <summary>
-	/// NavigationArrow
+	/// IconImages
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/NavigationArrow</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/IconImages</para>	
 	/// <para>ID: 6a90871f-2dd9-406f-96b8-edc42b7d044d</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=INavigationArrowConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(INavigationArrow))]
-	public partial class NavigationArrow  : GlassBase, INavigationArrow 
+	[SitecoreType(TemplateId=IIconImagesConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IIconImages))]
+	public partial class IconImages  : GlassBase, IIconImages 
 	{
 	   
 						/// <summary>
@@ -2146,7 +2146,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(INavigationArrowConstants.ImageFieldName)]
+				[SitecoreField(IIconImagesConstants.ImageFieldName)]
 				public virtual Image Image  {get; set;}
 					
 			
@@ -3200,13 +3200,13 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 
 
  	/// <summary>
-	/// I_NavigationArrow Interface
+	/// I_IconImages Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_NavigationArrow</para>	
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_IconImages</para>	
 	/// <para>ID: b86edcf8-d19f-49f7-b864-c49c37b6d67b</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_NavigationArrowConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_NavigationArrow : IGlassBase 
+	[SitecoreType(TemplateId=I_IconImagesConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_IconImages : IGlassBase 
 	{
 								/// <summary>
 					/// The Image field.
@@ -3215,17 +3215,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 					/// <para>Field ID: b50bddd1-afaa-4a00-bf33-21abb35df20f</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_NavigationArrowConstants.ImageFieldName)]
+					[SitecoreField(I_IconImagesConstants.ImageFieldName)]
 					Image Image  {get; set;}
 			
 				}
 
 
-	public static partial class I_NavigationArrowConstants{
+	public static partial class I_IconImagesConstants{
 
 			public const string TemplateIdString = "b86edcf8-d19f-49f7-b864-c49c37b6d67b";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "_NavigationArrow";
+			public const string TemplateName = "_IconImages";
 
 					
 			public static readonly ID ImageFieldId = new ID("b50bddd1-afaa-4a00-bf33-21abb35df20f");
@@ -3237,14 +3237,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 
 	
 	/// <summary>
-	/// _NavigationArrow
+	/// _IconImages
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_NavigationArrow</para>	
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_IconImages</para>	
 	/// <para>ID: b86edcf8-d19f-49f7-b864-c49c37b6d67b</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_NavigationArrowConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(I_NavigationArrow))]
-	public partial class _NavigationArrow  : GlassBase, I_NavigationArrow 
+	[SitecoreType(TemplateId=I_IconImagesConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_IconImages))]
+	public partial class _IconImages  : GlassBase, I_IconImages 
 	{
 	   
 						/// <summary>
@@ -3255,7 +3255,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_NavigationArrowConstants.ImageFieldName)]
+				[SitecoreField(I_IconImagesConstants.ImageFieldName)]
 				public virtual Image Image  {get; set;}
 					
 			
