@@ -1,4 +1,6 @@
-﻿using static Sitecore.Configuration.Settings;
+﻿#region namespace
+using static Sitecore.Configuration.Settings;
+#endregion
 namespace EMAAR.ECM.Feature.Banner.Settings
 {
     /// <summary>

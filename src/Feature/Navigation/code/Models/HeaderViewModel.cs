@@ -1,7 +1,8 @@
-﻿using EMAAR.ECM.Feature.Navigation.Interface;
+﻿#region namespace
+using EMAAR.ECM.Feature.Navigation.Interface;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
 using Sitecore.Foundation.DependencyInjection;
-
+#endregion
 namespace EMAAR.ECM.Feature.Navigation.Models
 {
     /// <summary>

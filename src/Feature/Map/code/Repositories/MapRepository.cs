@@ -1,9 +1,10 @@
-﻿using System;
+﻿#region namespace
+using System;
 using EMAAR.ECM.Feature.Map.Interfaces;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.InteractiveMap;
 using Glass.Mapper.Sc.Web.Mvc;
 using Sitecore.Foundation.DependencyInjection;
-
+#endregion
 namespace EMAAR.ECM.Feature.Map.Repositories
 {
     /// <summary>

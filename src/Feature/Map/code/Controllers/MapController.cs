@@ -1,9 +1,10 @@
-﻿using System.Web.Mvc;
+﻿#region namespace
+using System.Web.Mvc;
 using EMAAR.ECM.Feature.Map.Interfaces;
 using EMAAR.ECM.Feature.Map.Settings;
 using EMAAR.ECM.Foundation.Constants.Interfaces;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.InteractiveMap;
-
+#endregion
 namespace EMAAR.ECM.Feature.Map.Controllers
 {
     public class MapController : Controller
