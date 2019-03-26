@@ -45,13 +45,13 @@ namespace EMAAR.ECM.Feature.Navigation.Repositories
             {
                 _headerViewModel.SearchIcon = _sitecoreHelper.HomePageSearch;
                 _headerViewModel.CloseIcon = _sitecoreHelper.HomePageClose;
-                _headerViewModel.HomeCss = CommonConstants.HomePageHeaderCss;
+                _headerViewModel.HeaderCss = CommonConstants.HomePageHeaderCss;
             }
             else
             {
                 _headerViewModel.SearchIcon = _sitecoreHelper.ContentPageSearch;
                 _headerViewModel.CloseIcon = _sitecoreHelper.ContentPageClose;
-                _headerViewModel.HomeCss = CommonConstants.ContentPageHeaderCss;
+                _headerViewModel.HeaderCss = CommonConstants.ContentPageHeaderCss;
             }
             _headerViewModel.Header = mvcContext.GetDataSourceItem<IHeader>();
             _headerViewModel.Logos = GetLogo();
