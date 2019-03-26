@@ -1,0 +1,49 @@
+﻿@model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.InteractiveMap.IInteractiveMapList
+@using Glass.Mapper.Sc.Web.Mvc
+<!-- map starts here -->
+<section id="map-section" class="map-section viewport-section">
+    <div class="container">
+        <div class="title-holder">
+            <h2 class="heading wow fadeInUp"> @Html.Glass().Editable(Model, x => x.Title)</h2>
+        </div>
+    </div>
+    @using (Html.BeginEditFrame(Model.FullPath, "FullBannerImage", "Edit Background Image"))
+    {
+        <div class="map-section-inner">
+            <div class="map-section-frame">
+                @Html.Glass().RenderImage(Model, x => x.Image, new { alt = "image description", @class = "mapMainimage" }, isEditable: true)
+                @{
+                    float delay = 0.3f;
+                }
+                @foreach (var maps in Model.Interactive_Maps)
+                {
+
+                    <div class="map-item" style="top: @maps.Top; left: @maps.Left;">
+                        <a href="#" class="map-item-link wow fadeInUp" data-wow-delay="@delay.ToString()s"><span class="map-item-text">@Html.Glass().Editable(maps, x => x.Title)</span></a>
+                        <div class="map-item-popup">
+                            <a href="#" class="close-ico"></a>
+                            <div class="map-item-popup-content">
+                                <div class="map-item-popup-content-img">
+                                    @Html.Glass().RenderImage(maps, x => x.Image, new { alt = "image description" }, isEditable: true)
+
+                                </div>
+                                <div class="map-item-popup-content-text">
+                                    <h3> @Html.Glass().Editable(maps, x => x.Description_Title)</h3>
+                                    <p>
+                                        @Html.Glass().Editable(maps, x => x.Description)
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    delay += 0.2f;
+                }
+
+
+            </div>
+        </div>
+    }
+    <img src="~/images/icon/icon-hand.svg" class="map-section-swipe-icon" alt="ico">
+</section>
+<!-- map ends -->

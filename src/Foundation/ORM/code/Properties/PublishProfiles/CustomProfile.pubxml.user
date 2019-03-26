@@ -25,10 +25,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/10/2017 08:13:52</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll">
-      <publishTime>03/12/2019 15:26:59</publishTime>
+      <publishTime>03/26/2019 14:39:29</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.pdb">
-      <publishTime>03/12/2019 15:26:59</publishTime>
+      <publishTime>03/26/2019 14:39:29</publishTime>
     </File>
     <File Include="bin/Glass.Mapper.dll">
       <publishTime>02/25/2019 13:27:08</publishTime>
@@ -259,13 +259,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/10/2019 14:20:21</publishTime>
     </File>
     <File Include="bin/Sitecore.Foundation.DependencyInjection.dll">
-      <publishTime>03/12/2019 15:26:59</publishTime>
+      <publishTime>03/26/2019 14:39:28</publishTime>
     </File>
     <File Include="bin/Sitecore.Foundation.DependencyInjection.dll.config">
       <publishTime>03/11/2019 10:11:29</publishTime>
     </File>
     <File Include="bin/Sitecore.Foundation.DependencyInjection.pdb">
-      <publishTime>03/12/2019 15:26:59</publishTime>
+      <publishTime>03/26/2019 14:39:28</publishTime>
     </File>
     <File Include="bin/Sitecore.Kernel.dll">
       <publishTime>03/10/2019 14:20:21</publishTime>
@@ -314,6 +314,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="bin/WebActivatorEx.dll">
       <publishTime>03/10/2019 14:20:27</publishTime>
+    </File>
+    <File Include="EMAAR.ECM.Foundation.ORM.ruleset">
+      <publishTime>03/18/2019 16:52:51</publishTime>
     </File>
   </ItemGroup>
 </Project>

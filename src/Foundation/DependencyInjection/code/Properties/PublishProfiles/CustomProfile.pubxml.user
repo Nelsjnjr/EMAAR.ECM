@@ -211,10 +211,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/28/2015 00:51:34</publishTime>
     </File>
     <File Include="bin/Sitecore.Foundation.DependencyInjection.dll">
-      <publishTime>03/11/2019 10:21:32</publishTime>
+      <publishTime>03/26/2019 14:39:28</publishTime>
     </File>
     <File Include="bin/Sitecore.Foundation.DependencyInjection.pdb">
-      <publishTime>03/11/2019 10:21:32</publishTime>
+      <publishTime>03/26/2019 14:39:28</publishTime>
     </File>
     <File Include="bin/Sitecore.Kernel.dll">
       <publishTime>03/10/2019 14:20:21</publishTime>
@@ -254,6 +254,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Global.asax">
       <publishTime>03/10/2019 17:34:42</publishTime>
+    </File>
+    <File Include="Sitecore.Foundation.DependencyInjection.ruleset">
+      <publishTime>03/18/2019 16:52:51</publishTime>
     </File>
     <File Include="Web.Debug.config">
       <publishTime>03/10/2019 17:23:54</publishTime>
