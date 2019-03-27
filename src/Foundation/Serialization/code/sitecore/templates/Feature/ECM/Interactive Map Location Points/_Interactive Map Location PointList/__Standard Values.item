@@ -11,6 +11,13 @@ templatekey: _Interactive Map Location PointList
 created: 20190321T083927Z
 
 ----field----
+field: {61CF7151-0CBD-4DB4-9738-D753A55A6E65}
+name: __Enforce version presence
+key: __enforce version presence
+content-length: 1
+
+1
+----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
@@ -20,7 +27,7 @@ apps/32x32/map.png
 ----version----
 language: en
 version: 1
-revision: a481bfef-e114-4045-8121-704af81fc02b
+revision: e68c7f08-a39d-4563-97c6-7ce64c19e53b
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -49,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a481bfef-e114-4045-8121-704af81fc02b
+e68c7f08-a39d-4563-97c6-7ce64c19e53b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190321T085053Z
+20190327T120003Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

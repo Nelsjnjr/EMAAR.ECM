@@ -1,33 +1,33 @@
 ----item----
 version: 1
-id: {23592269-8841-4348-958F-DAE6AD16BE9A}
+id: {7CD093D6-B0DE-4E2D-8094-A52AEA78755B}
 database: master
-path: /sitecore/templates/Project/ECM/Common/Content Types/HeroBannerFolder
-parent: {FF7EB5F6-0438-4DC2-8C61-E80FCDB460E3}
-name: HeroBannerFolder
+path: /sitecore/templates/Foundation/ECM/Base/_CommunityMetricsListFolder
+parent: {5AE78ACD-8177-4B34-BC0A-5E61ABA401BE}
+name: _CommunityMetricsListFolder
 master: {00000000-0000-0000-0000-000000000000}
 template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
 templatekey: Template
-created: 20190320T070003Z
+created: 20190319T084827Z
 
 ----field----
 field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
 name: __Base template
 key: __base template
-content-length: 77
+content-length: 38
 
-{1930BBEB-7805-471A-A3BE-4858AC7CF696}|{BFEA91A4-7A55-4585-BE18-1040B7040116}
+{1930BBEB-7805-471A-A3BE-4858AC7CF696}
 ----field----
 field: {F7D48A55-2158-4F02-9356-756654404F73}
 name: __Standard values
 key: __standard values
 content-length: 38
 
-{8B15B9D8-4719-4B9E-AB2B-350C05622770}
+{4C476411-BBBE-42AF-AFCC-6968528E4B10}
 ----version----
 language: en
 version: 1
-revision: 8e73df16-016e-41b2-90ef-f77fe18ac971
+revision: ad4c2293-81c3-486e-9490-358348f33567
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -35,7 +35,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20190312T053225Z
+20190312T052841Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -49,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8e73df16-016e-41b2-90ef-f77fe18ac971
+ad4c2293-81c3-486e-9490-358348f33567
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190321T085916Z
+20190327T120456Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -11,6 +11,13 @@ templatekey: _Community Metric
 created: 20190319T083039Z
 
 ----field----
+field: {61CF7151-0CBD-4DB4-9738-D753A55A6E65}
+name: __Enforce version presence
+key: __enforce version presence
+content-length: 1
+
+1
+----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
@@ -20,7 +27,7 @@ multimedia/32x32/image_h.png
 ----version----
 language: en
 version: 1
-revision: 6872a1ea-c41b-4c82-bae7-21706aa68ecc
+revision: 48485ee8-2420-4277-92b6-0bf49c35941c
 
 ----field----
 field: {574981A6-EFD9-442E-AC0D-706F77D72115}
@@ -56,14 +63,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6872a1ea-c41b-4c82-bae7-21706aa68ecc
+48485ee8-2420-4277-92b6-0bf49c35941c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190319T084319Z
+20190327T115729Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

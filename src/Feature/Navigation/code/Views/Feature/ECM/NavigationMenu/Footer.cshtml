@@ -13,12 +13,14 @@
         </div>
         <div class="row">
             @{
+                <!--Link with Navigation-->
                 foreach (var rootNav in Model.Footer.Root_Navigations)
                 {
                     <div class="col-6 col-md-3">
                         <div class="footer-ul">
                             <h2 class="footer-title upperCase">@Html.Glass().Editable(rootNav, x => x.Navigation_Title)</h2>
                             @{
+                                <!--Link with Sub navigation-->
                                 var subNavigation = new List<ISub_Navigation>(rootNav.Sub_Navigations).Count;
                                 if (subNavigation > 0)
                                 {
@@ -43,6 +45,8 @@
                     <div class="footer-ul icons">
                         <h2 class="footer-title upperCase">@Html.Glass().Editable(Model.Footer.Contact_Info, x => x.Title)</h2>
                         @{
+                            //Loading Contact Types
+                            //Default setting ContactType as Phone
                             CommonConstants.ContactTypes contactTypes = CommonConstants.ContactTypes.Phone;
                             foreach (var contactInfo in Model.Footer.Contact_Info.Contact_Infos)
                             {
@@ -88,6 +92,7 @@
         </div>
         <div class="footer-copy">
             <ul>
+                <!--Loading Legal pages-->
                 @foreach (var legalPages in Model.Footer.Legal_Pages)
                 {
                     <li>

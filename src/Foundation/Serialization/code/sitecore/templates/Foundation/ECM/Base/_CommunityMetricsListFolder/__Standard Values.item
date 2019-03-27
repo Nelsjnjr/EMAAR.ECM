@@ -2,12 +2,12 @@
 version: 1
 id: {4C476411-BBBE-42AF-AFCC-6968528E4B10}
 database: master
-path: /sitecore/templates/Foundation/ECM/Base/_HeroBannerListFolder/__Standard Values
+path: /sitecore/templates/Foundation/ECM/Base/_CommunityMetricsListFolder/__Standard Values
 parent: {7CD093D6-B0DE-4E2D-8094-A52AEA78755B}
 name: __Standard Values
 master: {00000000-0000-0000-0000-000000000000}
 template: {7CD093D6-B0DE-4E2D-8094-A52AEA78755B}
-templatekey: _HeroBannerListFolder
+templatekey: _CommunityMetricsListFolder
 created: 20190319T084827Z
 
 ----field----
