@@ -22,7 +22,14 @@
         /// Getting Content Page Css Class name
         /// </summary>
         public static string ContentPageHeaderCss { get; } = "siteHeader innerHeader";
-
+        /// <summary>
+        /// Getting Contact Types
+        /// </summary>
+        public enum ContactTypes { Email, Phone, Map };
+        /// <summary>
+        /// Year Token for dynamically modify it
+        /// </summary>
+        public static string YearToken { get; } = "{year}";
         #endregion;
 
     }

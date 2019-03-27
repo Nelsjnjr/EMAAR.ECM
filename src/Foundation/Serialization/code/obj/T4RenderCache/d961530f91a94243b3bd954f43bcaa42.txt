@@ -1,0 +1,58 @@
+//Revision: 556a3872-dbae-45ad-938a-e239de4c3e60
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
+{
+
+
+ 	/// <summary>
+	/// IContactInfoFolder Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/ContactInfoFolder</para>	
+	/// <para>ID: d961530f-91a9-4243-b3bd-954f43bcaa42</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IContactInfoFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IContactInfoFolder : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_ContactInfoFolder
+	{
+				}
+
+
+	public static partial class IContactInfoFolderConstants{
+
+			public const string TemplateIdString = "d961530f-91a9-4243-b3bd-954f43bcaa42";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "ContactInfoFolder";
+
+			
+
+	}
+
+	
+	/// <summary>
+	/// ContactInfoFolder
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/ContactInfoFolder</para>	
+	/// <para>ID: d961530f-91a9-4243-b3bd-954f43bcaa42</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IContactInfoFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IContactInfoFolder))]
+	public partial class ContactInfoFolder  : GlassBase, IContactInfoFolder 
+	{
+	   
+			
+	}
+}
+

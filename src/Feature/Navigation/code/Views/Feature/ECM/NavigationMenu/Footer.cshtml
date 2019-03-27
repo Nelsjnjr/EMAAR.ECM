@@ -1,0 +1,117 @@
+﻿@using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
+@model EMAAR.ECM.Feature.Navigation.Interface.IFooterViewModel
+@using Glass.Mapper.Sc.Web.Mvc
+@using EMAAR.ECM.Foundation.Constants
+<!-- footer starts here -->
+<footer>
+    <div class="container">
+        <div class="footer-logo">
+            @if (Model.Logos != null && Model.Logos.Site_Logo != null)
+            {
+                @Html.Glass().RenderImage(Model.Logos, x => x.Site_Logo, new { alt = "image description" }, isEditable: true)
+            }
+        </div>
+        <div class="row">
+            @{
+                foreach (var rootNav in Model.Footer.Root_Navigations)
+                {
+                    <div class="col-6 col-md-3">
+                        <div class="footer-ul">
+                            <h2 class="footer-title upperCase">@Html.Glass().Editable(rootNav, x => x.Navigation_Title)</h2>
+                            @{
+                                var subNavigation = new List<ISub_Navigation>(rootNav.Sub_Navigations).Count;
+                                if (subNavigation > 0)
+                                {
+                                    <ul>
+                                        @foreach (var subNav in rootNav.Sub_Navigations)
+                                        {
+                                            <li>
+                                                @using (Html.Glass().BeginRenderLink(subNav, x => x.Navigation_Link, isEditable: true))
+                                                {
+                                                    @Html.Glass().Editable(subNav, x => x.Navigation_Title)
+                                                }
+                                            </li>
+                                        }
+                                    </ul>
+                                }
+                            }
+
+                        </div>
+                    </div>
+                }
+                <div class="col-6 col-md-3">
+                    <div class="footer-ul icons">
+                        <h2 class="footer-title upperCase">@Html.Glass().Editable(Model.Footer.Contact_Info, x => x.Title)</h2>
+                        @{
+                            CommonConstants.ContactTypes contactTypes = CommonConstants.ContactTypes.Phone;
+                            foreach (var contactInfo in Model.Footer.Contact_Info.Contact_Infos)
+                            {
+                                Enum.TryParse(contactInfo.Type.Key, out contactTypes);
+                                <ul>
+                                    @switch (contactTypes)
+                                    {
+                                        case CommonConstants.ContactTypes.Phone:
+                                            <li>
+                                                <a href="@contactInfo.Contact_Url">
+                                                    <i><img src="../images/icon/phone.svg" alt="phone" class="svg"></i>
+                                                    @Html.Glass().Editable(contactInfo, x => x.Contact_Title)
+                                                </a>
+                                            </li>
+                                            break;
+                                        case CommonConstants.ContactTypes.Map:
+                                            <li>
+                                                <a href="@contactInfo.Contact_Url">
+                                                    <i><img src="../images/icon/pin.svg" alt="phone" class="svg"></i>
+                                                    @Html.Glass().Editable(contactInfo, x => x.Contact_Title)
+                                                </a>
+                                            </li>
+                                            break;
+                                        case CommonConstants.ContactTypes.Email:
+                                            <li>
+                                                <a href="@contactInfo.Contact_Url" class="underlined">
+                                                    <i><img src="../images/icon/mail.svg" alt="phone" class="svg"></i>
+                                                    @Html.Glass().Editable(contactInfo, x => x.Contact_Title)
+                                                </a>
+                                            </li>
+                                            break;
+                                        default:
+                                            break;
+                                    }
+
+                                </ul>
+                            }
+                        }
+                    </div>
+                </div>
+
+            }
+        </div>
+        <div class="footer-copy">
+            <ul>
+                @foreach (var legalPages in Model.Footer.Legal_Pages)
+                {
+                    <li>
+                        @using (Html.Glass().BeginRenderLink(legalPages, x => x.Navigation_Link, isEditable: true))
+                        {
+                            @Html.Glass().Editable(legalPages, x => x.Navigation_Title)
+                        }
+
+                    </li>
+
+                }
+            </ul>
+            <p class="rights">  @Model.Footer.Copyright.ToString().Replace(CommonConstants.YearToken, System.DateTime.Now.Year.ToString())</p>
+        </div>
+        <div class="emaar-logo">
+            @if (Model.Logos.Brand_Logo != null)
+            {
+                using (Html.Glass().BeginRenderLink(Model.Logos, x => x.Brand_Logo, new { @class = "btn btn-primary mt-3 mt-md-5" }, isEditable: true))
+                {
+                    @Html.Glass().RenderImage(Model.Logos, x => x.Brand_Logo, new { alt = "emaar" }, isEditable: true)
+                }
+            }
+
+        </div>
+    </div>
+</footer>
+<!-- footer ends here -->

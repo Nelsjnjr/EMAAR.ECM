@@ -2,8 +2,8 @@
 using System;
 using EMAAR.ECM.Feature.Banner.Interfaces;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Banner;
-using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.HeroBanner;
-using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.RelatedContent;
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Community_Metrics;
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Content_Slides;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Parameters;
 using Glass.Mapper.Sc.Web.Mvc;
 using Sitecore.Foundation.DependencyInjection;
@@ -20,17 +20,17 @@ namespace EMAAR.ECM.Feature.Banner.Repositories
         #region property
         private readonly Func<IMvcContext> _mvcContext;
         private readonly IImageText _imageText;
-        private readonly IRelatedContentList _relatedContentList;
-        private readonly IHeroBannerList _heroBannerList;
+        private readonly IRelated_Content_SlideList _related_Content_SlideList ;
+        private readonly ICommunity_MetricList _community_MetricList;
 
         #endregion
         #region construtor
-        public BannerRepository(Func<IMvcContext> mvcContext, IImageText imageText, IRelatedContentList relatedContentList, IHeroBannerList heroBannerList)
+        public BannerRepository(Func<IMvcContext> mvcContext, IImageText imageText, IRelated_Content_SlideList related_Content_SlideList , ICommunity_MetricList community_MetricList )
         {
             _imageText = imageText;
             _mvcContext = mvcContext;
-            _relatedContentList = relatedContentList;
-            _heroBannerList = heroBannerList;
+            _related_Content_SlideList = related_Content_SlideList;
+            _community_MetricList = community_MetricList;
         
         }
         #endregion
@@ -60,22 +60,22 @@ namespace EMAAR.ECM.Feature.Banner.Repositories
         /// <summary>
         /// Getting all related component asigned in Sitecore with the Background CSS (eg:explore)
         /// </summary>
-        /// <returns>Related content details</returns>
-        public IRelatedContentList GetRelatedContent()
+        /// <returns>Related content Slides details</returns>
+        public IRelated_Content_SlideList RelatedContentSlides()
         {
             IMvcContext mvcContext = _mvcContext();
-            IRelatedContentList relatedContentList = mvcContext.GetDataSourceItem<IRelatedContentList>();          
-            return relatedContentList ?? _relatedContentList;
+            IRelated_Content_SlideList relatedContentList = mvcContext.GetDataSourceItem<IRelated_Content_SlideList>();          
+            return relatedContentList ?? _related_Content_SlideList;
         }
         /// <summary>
-        /// Getting all HeroBanner component asigned in Sitecore on field (Hero Community Metrics)
+        /// Getting all CommunityMetric component asigned in Sitecore on field (Hero Community Metrics)
         /// </summary>
         /// <returns>HeroBannerList</returns>
-        public IHeroBannerList GetHeroBanner()
+        public ICommunity_MetricList GetCommunityMetrics()
         {           
             IMvcContext mvcContext = _mvcContext();
-            IHeroBannerList heroBannerList = mvcContext.GetDataSourceItem<IHeroBannerList>();           
-            return heroBannerList ?? _heroBannerList;
+            ICommunity_MetricList heroBannerList = mvcContext.GetDataSourceItem<ICommunity_MetricList>();           
+            return heroBannerList ?? _community_MetricList;
         }
         #endregion
         #region private method

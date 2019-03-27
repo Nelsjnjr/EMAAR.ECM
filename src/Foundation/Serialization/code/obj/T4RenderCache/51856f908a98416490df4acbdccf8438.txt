@@ -1,0 +1,58 @@
+//Revision: 5e53cf54-7202-4436-828e-c8f2c88c0d75
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
+{
+
+
+ 	/// <summary>
+	/// ILegalPagesFolder Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/LegalPagesFolder</para>	
+	/// <para>ID: 51856f90-8a98-4164-90df-4acbdccf8438</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=ILegalPagesFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface ILegalPagesFolder : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_LegalPagesFolder
+	{
+				}
+
+
+	public static partial class ILegalPagesFolderConstants{
+
+			public const string TemplateIdString = "51856f90-8a98-4164-90df-4acbdccf8438";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "LegalPagesFolder";
+
+			
+
+	}
+
+	
+	/// <summary>
+	/// LegalPagesFolder
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/LegalPagesFolder</para>	
+	/// <para>ID: 51856f90-8a98-4164-90df-4acbdccf8438</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=ILegalPagesFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(ILegalPagesFolder))]
+	public partial class LegalPagesFolder  : GlassBase, ILegalPagesFolder 
+	{
+	   
+			
+	}
+}
+

@@ -9,6 +9,11 @@ namespace EMAAR.ECM.Foundation.Constants.Settings
     public static class SitecoreSettings
     {
         /// <summary>
+        ///  Getting Root View location for controller to load view
+        ///  Physical location of the view path for the action method
+        /// </summary>
+        public static string ViewPath { get; set; } = GetSetting("EMAAR.ECM.Foundation.Constants.ViewPath");
+        /// <summary>
         ///  Getting Home page search icon image url from Sitecore settings based on Site
         /// </summary>
         public static string HomePageSearch { get; set; } = GetSetting("EMAAR.ECM.Foundation.Constants.HomePageSearch");

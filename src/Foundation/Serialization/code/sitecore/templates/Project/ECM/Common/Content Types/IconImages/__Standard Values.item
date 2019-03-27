@@ -14,13 +14,13 @@ created: 20190314T134008Z
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
-content-length: 37
+content-length: 24
 
-Applications/16x16/navigate_right.png
+office/32x32/yinyang.png
 ----version----
 language: en
 version: 1
-revision: f6a03e86-0687-4480-bc70-a0ae529c1aa1
+revision: b0ef879c-6863-4ebd-925a-f386d89c9449
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -35,14 +35,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f6a03e86-0687-4480-bc70-a0ae529c1aa1
+b0ef879c-6863-4ebd-925a-f386d89c9449
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190314T134027Z
+20190327T103825Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

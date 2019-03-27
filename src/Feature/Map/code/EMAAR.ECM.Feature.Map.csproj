@@ -223,8 +223,7 @@
     <Compile Include="Settings\SitecoreSettings.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Feature\ECM\Map\EMAAR.ECM.Feature.Map.config" />
-    <Content Include="Views\Feature\ECM\DowntownDubai\Map\InteractiveMap\InteractiveMap.cshtml" />
+    <Content Include="Views\Feature\ECM\Map\InteractiveMapLocationPoints\InteractiveMapLocationPoint.cshtml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Web.config" />
     <Content Include="Web.Debug.config">

@@ -5,7 +5,7 @@ using EMAAR.ECM.Feature.Navigation.Settings;
 using EMAAR.ECM.Foundation.Constants;
 using EMAAR.ECM.Foundation.Constants.Interfaces;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
-using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Page_Types;
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types;
 using Glass.Mapper.Sc.Web.Mvc;
 using Sitecore.Foundation.DependencyInjection;
 #endregion
@@ -20,14 +20,16 @@ namespace EMAAR.ECM.Feature.Navigation.Repositories
         #region Property
         private readonly Func<IMvcContext> _mvcContext;
         private readonly IHeaderViewModel _headerViewModel;
+        private readonly IFooterViewModel _footerViewModel;
         private readonly ISitecoreHelper _sitecoreHelper;
 
         #endregion
         #region constructor
-        public NavigationMenuRepository(Func<IMvcContext> mvcContext, IHeaderViewModel headerViewModel, ISitecoreHelper sitecoreHelper)
+        public NavigationMenuRepository(Func<IMvcContext> mvcContext, IHeaderViewModel headerViewModel, IFooterViewModel footerViewModel, ISitecoreHelper sitecoreHelper)
         {
             _sitecoreHelper = sitecoreHelper;
             _headerViewModel = headerViewModel;
+            _footerViewModel = footerViewModel;
             _mvcContext = mvcContext;
         }
         #endregion
@@ -56,6 +58,17 @@ namespace EMAAR.ECM.Feature.Navigation.Repositories
             _headerViewModel.Header = mvcContext.GetDataSourceItem<IHeader>();
             _headerViewModel.Logos = GetLogo();
             return _headerViewModel;
+        }
+        /// <summary>
+        /// Getting Footer navigation menu along with logo/legal pages and contact info details for the footer
+        /// </summary>
+        /// <returns>Footer details</returns>
+        public IFooterViewModel GetFooter()
+        {
+            IMvcContext mvcContext = _mvcContext();
+            _footerViewModel.Footer = mvcContext.GetDataSourceItem<IFooter>();
+            _footerViewModel.Logos = GetLogo();
+            return _footerViewModel;
         }
         #endregion
         #region private method

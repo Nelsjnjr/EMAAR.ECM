@@ -1,0 +1,108 @@
+//Revision: 10e32f09-3cb8-4c77-b616-beca08f41835
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.ContactInfo
+{
+
+
+ 	/// <summary>
+	/// I_ContactInfoList Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/ContactInfo/_ContactInfoList</para>	
+	/// <para>ID: c282ab35-a6a2-4155-b8c6-6495d9465fe3</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_ContactInfoListConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_ContactInfoList : IGlassBase 
+	{
+								/// <summary>
+					/// The Contact Infos field.
+					/// <para></para>
+					/// <para>Field Type: Multilist</para>		
+					/// <para>Field ID: 09a37ddc-581d-4d28-a130-d4642cc5ce41</para>
+					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.ContactInfo.IContactInfo</para>
+					/// </summary>
+					[SitecoreField(I_ContactInfoListConstants.Contact_InfosFieldName)]
+					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.ContactInfo.IContactInfo> Contact_Infos  {get; set;}
+			
+								/// <summary>
+					/// The Title field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: 0e6606bd-d4f4-499b-bc1a-6f43ce363beb</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_ContactInfoListConstants.TitleFieldName)]
+					string Title  {get; set;}
+			
+				}
+
+
+	public static partial class I_ContactInfoListConstants{
+
+			public const string TemplateIdString = "c282ab35-a6a2-4155-b8c6-6495d9465fe3";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_ContactInfoList";
+
+					
+			public static readonly ID Contact_InfosFieldId = new ID("09a37ddc-581d-4d28-a130-d4642cc5ce41");
+			public const string Contact_InfosFieldName = "Contact Infos";
+			
+					
+			public static readonly ID TitleFieldId = new ID("0e6606bd-d4f4-499b-bc1a-6f43ce363beb");
+			public const string TitleFieldName = "Title";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _ContactInfoList
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/ContactInfo/_ContactInfoList</para>	
+	/// <para>ID: c282ab35-a6a2-4155-b8c6-6495d9465fe3</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_ContactInfoListConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_ContactInfoList))]
+	public partial class _ContactInfoList  : GlassBase, I_ContactInfoList 
+	{
+	   
+						/// <summary>
+				/// The Contact Infos field.
+				/// <para></para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: 09a37ddc-581d-4d28-a130-d4642cc5ce41</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.ContactInfo.IContactInfo</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_ContactInfoListConstants.Contact_InfosFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.ContactInfo.IContactInfo> Contact_Infos  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 0e6606bd-d4f4-499b-bc1a-6f43ce363beb</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_ContactInfoListConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
+			
+	}
+}
+

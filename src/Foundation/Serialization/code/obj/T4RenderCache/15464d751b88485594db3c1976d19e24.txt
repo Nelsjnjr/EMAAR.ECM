@@ -25,7 +25,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 	/// <para>ID: 15464d75-1b88-4855-94db-3c1976d19e24</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=ILogoConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface ILogo : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_Logo
+	public partial interface ILogo : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Logo
 	{
 				}
 

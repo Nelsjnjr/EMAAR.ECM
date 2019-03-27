@@ -1,4 +1,4 @@
-//Revision: 6c1dffa8-4b61-4e64-8f69-1c64838b12bf
+//Revision: 8528fbe0-3876-4910-b137-7fd7782f0008
 
 
 
@@ -14,14 +14,14 @@
 
 
 
-namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types
 {
 
 
  	/// <summary>
 	/// I_TitleDesc Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_TitleDesc</para>	
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Content Types/_TitleDesc</para>	
 	/// <para>ID: e50c06fa-f066-4400-a6f3-4bed23e726e0</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=I_TitleDescConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
@@ -72,7 +72,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 	/// <summary>
 	/// _TitleDesc
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_TitleDesc</para>	
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Content Types/_TitleDesc</para>	
 	/// <para>ID: e50c06fa-f066-4400-a6f3-4bed23e726e0</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=I_TitleDescConstants.TemplateIdString,AutoMap=true )] //, Cachable = true

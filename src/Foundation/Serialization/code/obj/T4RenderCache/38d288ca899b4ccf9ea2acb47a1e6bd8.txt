@@ -25,7 +25,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 	/// <para>ID: 38d288ca-899b-4ccf-9ea2-acb47a1e6bd8</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=I_SiteRootConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_SiteRoot : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_Logo
+	public partial interface I_SiteRoot : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Logo
 	{
 				}
 

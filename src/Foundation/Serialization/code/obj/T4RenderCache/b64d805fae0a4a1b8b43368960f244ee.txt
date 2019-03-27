@@ -1,0 +1,108 @@
+//Revision: 1e5ba612-7c89-49c2-9644-998d2d801480
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types
+{
+
+
+ 	/// <summary>
+	/// I_LegalPages Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Content Types/_LegalPages</para>	
+	/// <para>ID: b64d805f-ae0a-4a1b-8b43-368960f244ee</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_LegalPagesConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_LegalPages : IGlassBase 
+	{
+								/// <summary>
+					/// The Navigation Link field.
+					/// <para></para>
+					/// <para>Field Type: General Link</para>		
+					/// <para>Field ID: 9d509d11-e258-4d34-8193-5628906b8201</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_LegalPagesConstants.Navigation_LinkFieldName)]
+					Link Navigation_Link  {get; set;}
+			
+								/// <summary>
+					/// The Navigation Title field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: f481d655-9101-46fd-8283-71bedbdc10e1</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_LegalPagesConstants.Navigation_TitleFieldName)]
+					string Navigation_Title  {get; set;}
+			
+				}
+
+
+	public static partial class I_LegalPagesConstants{
+
+			public const string TemplateIdString = "b64d805f-ae0a-4a1b-8b43-368960f244ee";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_LegalPages";
+
+					
+			public static readonly ID Navigation_LinkFieldId = new ID("9d509d11-e258-4d34-8193-5628906b8201");
+			public const string Navigation_LinkFieldName = "Navigation Link";
+			
+					
+			public static readonly ID Navigation_TitleFieldId = new ID("f481d655-9101-46fd-8283-71bedbdc10e1");
+			public const string Navigation_TitleFieldName = "Navigation Title";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _LegalPages
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Content Types/_LegalPages</para>	
+	/// <para>ID: b64d805f-ae0a-4a1b-8b43-368960f244ee</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_LegalPagesConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_LegalPages))]
+	public partial class _LegalPages  : GlassBase, I_LegalPages 
+	{
+	   
+						/// <summary>
+				/// The Navigation Link field.
+				/// <para></para>
+				/// <para>Field Type: General Link</para>		
+				/// <para>Field ID: 9d509d11-e258-4d34-8193-5628906b8201</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_LegalPagesConstants.Navigation_LinkFieldName)]
+				public virtual Link Navigation_Link  {get; set;}
+					
+						/// <summary>
+				/// The Navigation Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: f481d655-9101-46fd-8283-71bedbdc10e1</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_LegalPagesConstants.Navigation_TitleFieldName)]
+				public virtual string Navigation_Title  {get; set;}
+					
+			
+	}
+}
+

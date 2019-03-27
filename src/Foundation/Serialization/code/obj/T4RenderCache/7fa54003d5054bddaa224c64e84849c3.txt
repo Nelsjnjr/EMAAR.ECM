@@ -1,4 +1,4 @@
-//Revision: 479bf5b8-5b6c-467b-90b5-8ba0cd149062
+//Revision: a2efc603-32bd-40d3-a257-556861925a89
 
 
 
@@ -25,7 +25,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 	/// <para>ID: 7fa54003-d505-4bdd-aa22-4c64e84849c3</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IHeaderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface IHeader : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_Header
+	public partial interface IHeader : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Header.I_Header
 	{
 				}
 
@@ -37,16 +37,16 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 			public const string TemplateName = "Header";
 
 					
-			public static readonly ID Login_TextFieldId = new ID("5af3ef93-85cd-4b72-b086-aefe1654a5ef");
+			public static readonly ID Login_TextFieldId = new ID("c8825bf7-2e94-48ae-afd0-b9b6b0a72ba5");
 			public const string Login_TextFieldName = "Login Text";
+			
+					
+			public static readonly ID Search_WatermarkFieldId = new ID("9c97a02a-585c-4a33-a821-92ef325d7ccd");
+			public const string Search_WatermarkFieldName = "Search Watermark";
 			
 					
 			public static readonly ID Root_NavigationsFieldId = new ID("e28651a0-d55a-47fa-987d-9528e30e9283");
 			public const string Root_NavigationsFieldName = "Root Navigations";
-			
-					
-			public static readonly ID Search_WatermarkFieldId = new ID("80184959-4f28-48fc-9c5d-ac376d4d2b6c");
-			public const string Search_WatermarkFieldName = "Search Watermark";
 			
 			
 
@@ -68,12 +68,23 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 				/// The Login Text field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
-				/// <para>Field ID: 5af3ef93-85cd-4b72-b086-aefe1654a5ef</para>
+				/// <para>Field ID: c8825bf7-2e94-48ae-afd0-b9b6b0a72ba5</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IHeaderConstants.Login_TextFieldName)]
 				public virtual string Login_Text  {get; set;}
+					
+						/// <summary>
+				/// The Search Watermark field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 9c97a02a-585c-4a33-a821-92ef325d7ccd</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IHeaderConstants.Search_WatermarkFieldName)]
+				public virtual string Search_Watermark  {get; set;}
 					
 						/// <summary>
 				/// The Root Navigations field.
@@ -85,17 +96,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IHeaderConstants.Root_NavigationsFieldName)]
 				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.INavigation> Root_Navigations  {get; set;}
-					
-						/// <summary>
-				/// The Search Watermark field.
-				/// <para></para>
-				/// <para>Field Type: Single-Line Text</para>		
-				/// <para>Field ID: 80184959-4f28-48fc-9c5d-ac376d4d2b6c</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IHeaderConstants.Search_WatermarkFieldName)]
-				public virtual string Search_Watermark  {get; set;}
 					
 			
 	}

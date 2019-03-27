@@ -39,6 +39,20 @@ content-length: 1
 
 1
 ----field----
+field: {3D08DB46-2267-41B0-BC52-BE69FD618633}
+name: Cacheable
+key: cacheable
+content-length: 1
+
+1
+----field----
+field: {F3E7E552-D7C8-469B-A150-69E4E14AB35C}
+name: ClearOnIndexUpdate
+key: clearonindexupdate
+content-length: 1
+
+1
+----field----
 field: {B5B27AF1-25EF-405C-87CE-369B3A004016}
 name: Datasource Location
 key: datasource location
@@ -55,7 +69,7 @@ content-length: 62
 ----version----
 language: en
 version: 1
-revision: 38ad38b9-eb5c-45d3-84ac-ac3948bfb82a
+revision: 3e745aa3-329a-4402-b118-c719cba4c717
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -70,14 +84,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-38ad38b9-eb5c-45d3-84ac-ac3948bfb82a
+3e745aa3-329a-4402-b118-c719cba4c717
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190321T065154Z
+20190327T090804Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -1,4 +1,4 @@
-//Revision: 2687f91d-93af-4289-9cf8-256e70964935
+//Revision: af95ee32-2f1b-4276-abf7-44ecea497bb0
 
 
 
@@ -14,18 +14,18 @@
 
 
 
-namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Page_Types
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types
 {
 
 
  	/// <summary>
 	/// IHome Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Common/Page Types/Home</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/Home</para>	
 	/// <para>ID: 337b3473-e10a-4490-88b5-8255ff80d0f2</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IHomeConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface IHome : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_Home
+	public partial interface IHome : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Home.I_Home
 	{
 				}
 
@@ -44,7 +44,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 	/// <summary>
 	/// Home
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Common/Page Types/Home</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/Home</para>	
 	/// <para>ID: 337b3473-e10a-4490-88b5-8255ff80d0f2</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IHomeConstants.TemplateIdString,AutoMap=true )] //, Cachable = true

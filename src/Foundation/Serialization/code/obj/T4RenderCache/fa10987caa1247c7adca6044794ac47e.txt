@@ -1,0 +1,118 @@
+//Revision: d5b2a09d-d827-417e-ace7-776c5233f274
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
+{
+
+
+ 	/// <summary>
+	/// IFooter Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/Footer</para>	
+	/// <para>ID: fa10987c-aa12-47c7-adca-6044794ac47e</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IFooterConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IFooter : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Footer.I_Footer
+	{
+				}
+
+
+	public static partial class IFooterConstants{
+
+			public const string TemplateIdString = "fa10987c-aa12-47c7-adca-6044794ac47e";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "Footer";
+
+					
+			public static readonly ID Contact_InfoFieldId = new ID("4518387f-0fe0-451a-b417-9bcc524e3012");
+			public const string Contact_InfoFieldName = "Contact Info";
+			
+					
+			public static readonly ID CopyrightFieldId = new ID("f868f9da-af3c-4a18-b6c3-4d80486243b4");
+			public const string CopyrightFieldName = "Copyright";
+			
+					
+			public static readonly ID Legal_PagesFieldId = new ID("ad94dcd0-6573-4650-b8e2-cc29bab61abf");
+			public const string Legal_PagesFieldName = "Legal Pages";
+			
+					
+			public static readonly ID Root_NavigationsFieldId = new ID("b7301b8a-72c1-4ed0-b484-f5e3cc3b8af4");
+			public const string Root_NavigationsFieldName = "Root Navigations";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// Footer
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/Footer</para>	
+	/// <para>ID: fa10987c-aa12-47c7-adca-6044794ac47e</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IFooterConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IFooter))]
+	public partial class Footer  : GlassBase, IFooter 
+	{
+	   
+						/// <summary>
+				/// The Contact Info field.
+				/// <para></para>
+				/// <para>Field Type: Droplink</para>		
+				/// <para>Field ID: 4518387f-0fe0-451a-b417-9bcc524e3012</para>
+				/// <para>Custom Data: Type=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.ContactInfo.IContactInfoList</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IFooterConstants.Contact_InfoFieldName)]
+				public virtual EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.ContactInfo.IContactInfoList Contact_Info  {get; set;}
+					
+						/// <summary>
+				/// The Copyright field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: f868f9da-af3c-4a18-b6c3-4d80486243b4</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IFooterConstants.CopyrightFieldName)]
+				public virtual string Copyright  {get; set;}
+					
+						/// <summary>
+				/// The Legal Pages field.
+				/// <para></para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: ad94dcd0-6573-4650-b8e2-cc29bab61abf</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.LegalPages.ILegalPages</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IFooterConstants.Legal_PagesFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.LegalPages.ILegalPages> Legal_Pages  {get; set;}
+					
+						/// <summary>
+				/// The Root Navigations field.
+				/// <para></para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: b7301b8a-72c1-4ed0-b484-f5e3cc3b8af4</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.INavigation</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IFooterConstants.Root_NavigationsFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.INavigation> Root_Navigations  {get; set;}
+					
+			
+	}
+}
+

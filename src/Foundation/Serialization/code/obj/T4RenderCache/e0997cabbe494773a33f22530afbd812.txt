@@ -1,4 +1,4 @@
-//Revision: 5fcba68f-b3f6-417f-809b-0541ee6b9c19
+//Revision: 12896ef2-f1e1-4d98-993c-9fd731c0c373
 
 
 
@@ -14,14 +14,14 @@
 
 
 
-namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types
 {
 
 
  	/// <summary>
 	/// I_Image Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_Image</para>	
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Content Types/_Image</para>	
 	/// <para>ID: e0997cab-be49-4773-a33f-22530afbd812</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=I_ImageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
@@ -58,7 +58,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 	/// <summary>
 	/// _Image
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_Image</para>	
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Content Types/_Image</para>	
 	/// <para>ID: e0997cab-be49-4773-a33f-22530afbd812</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=I_ImageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true

@@ -220,15 +220,14 @@
     <Compile Include="Settings\SitecoreSettings.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Feature\ECM\DowntownDubai\Banner\ImageText\ImageText.cshtml" />
+    <Content Include="Views\Feature\ECM\Banner\ImageText\ImageText.cshtml" />
     <Content Include="EMAAR.ECM.Feature.Banner.ruleset" />
-    <Content Include="App_Config\Include\Feature\ECM\Banner\EMAAR.ECM.Feature.Banner.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
-    <Content Include="Views\Feature\ECM\DowntownDubai\Banner\ImageText\_LeftImageText.cshtml" />
-    <Content Include="Views\Feature\ECM\DowntownDubai\Banner\ImageText\_RightImageText.cshtml" />
-    <Content Include="Views\Feature\ECM\DowntownDubai\Banner\ImageText\_BackgroundImageText.cshtml" />
-    <Content Include="Views\Feature\ECM\DowntownDubai\Banner\RelatedContent\RelatedContent.cshtml" />
-    <Content Include="Views\Feature\ECM\DowntownDubai\Banner\HeroBanner\HeroBanner.cshtml" />
+    <Content Include="Views\Feature\ECM\Banner\ImageText\_LeftImageText.cshtml" />
+    <Content Include="Views\Feature\ECM\Banner\ImageText\_RightImageText.cshtml" />
+    <Content Include="Views\Feature\ECM\Banner\ImageText\_BackgroundImageText.cshtml" />
+    <Content Include="Views\Feature\ECM\Banner\RelatedContentSlides\RelatedContentSlide.cshtml" />
+    <Content Include="Views\Feature\ECM\Banner\CommunityMetrics\CommunityMetric.cshtml" />
     <None Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -1,7 +1,7 @@
 ﻿#region namespace
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Banner;
-using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.HeroBanner;
-using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.RelatedContent;
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Community_Metrics;
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Content_Slides;
 using static EMAAR.ECM.Foundation.Constants.CommonConstants;
 #endregion
 namespace EMAAR.ECM.Feature.Banner.Interfaces
@@ -21,12 +21,12 @@ namespace EMAAR.ECM.Feature.Banner.Interfaces
         /// Getting all related component asigned in Sitecore with the Background CSS (eg:explore)
         /// </summary>
         /// <returns>Related content details</returns>
-        IRelatedContentList GetRelatedContent();
+        IRelated_Content_SlideList RelatedContentSlides();
         /// <summary>
         /// Getting all HeroBanner component asigned in Sitecore on field (Hero Community Metrics)
         /// </summary>
         /// <returns>HeroBannerList</returns>
-        IHeroBannerList GetHeroBanner();
+        ICommunity_MetricList GetCommunityMetrics();
         #endregion
     }
 }

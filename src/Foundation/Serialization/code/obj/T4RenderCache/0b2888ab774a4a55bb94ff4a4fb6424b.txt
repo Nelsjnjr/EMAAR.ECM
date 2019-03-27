@@ -1,0 +1,123 @@
+//Revision: 478c7bc3-e397-4843-9125-78f58e22fb6d
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Header
+{
+
+
+ 	/// <summary>
+	/// I_Header Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Header/_Header</para>	
+	/// <para>ID: 0b2888ab-774a-4a55-bb94-ff4a4fb6424b</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_HeaderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Header : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Header
+	{
+								/// <summary>
+					/// The Login Text field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: c8825bf7-2e94-48ae-afd0-b9b6b0a72ba5</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_HeaderConstants.Login_TextFieldName)]
+					string Login_Text  {get; set;}
+			
+								/// <summary>
+					/// The Search Watermark field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: 9c97a02a-585c-4a33-a821-92ef325d7ccd</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_HeaderConstants.Search_WatermarkFieldName)]
+					string Search_Watermark  {get; set;}
+			
+				}
+
+
+	public static partial class I_HeaderConstants{
+
+			public const string TemplateIdString = "0b2888ab-774a-4a55-bb94-ff4a4fb6424b";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_Header";
+
+					
+			public static readonly ID Login_TextFieldId = new ID("c8825bf7-2e94-48ae-afd0-b9b6b0a72ba5");
+			public const string Login_TextFieldName = "Login Text";
+			
+					
+			public static readonly ID Search_WatermarkFieldId = new ID("9c97a02a-585c-4a33-a821-92ef325d7ccd");
+			public const string Search_WatermarkFieldName = "Search Watermark";
+			
+					
+			public static readonly ID Root_NavigationsFieldId = new ID("e28651a0-d55a-47fa-987d-9528e30e9283");
+			public const string Root_NavigationsFieldName = "Root Navigations";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _Header
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Header/_Header</para>	
+	/// <para>ID: 0b2888ab-774a-4a55-bb94-ff4a4fb6424b</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_HeaderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Header))]
+	public partial class _Header  : GlassBase, I_Header 
+	{
+	   
+						/// <summary>
+				/// The Login Text field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: c8825bf7-2e94-48ae-afd0-b9b6b0a72ba5</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_HeaderConstants.Login_TextFieldName)]
+				public virtual string Login_Text  {get; set;}
+					
+						/// <summary>
+				/// The Search Watermark field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 9c97a02a-585c-4a33-a821-92ef325d7ccd</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_HeaderConstants.Search_WatermarkFieldName)]
+				public virtual string Search_Watermark  {get; set;}
+					
+						/// <summary>
+				/// The Root Navigations field.
+				/// <para></para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: e28651a0-d55a-47fa-987d-9528e30e9283</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.INavigation</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_HeaderConstants.Root_NavigationsFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.INavigation> Root_Navigations  {get; set;}
+					
+			
+	}
+}
+

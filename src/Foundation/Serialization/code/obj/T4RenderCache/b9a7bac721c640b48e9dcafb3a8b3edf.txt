@@ -1,4 +1,4 @@
-//Revision: fb6678c7-a402-4d0c-beec-dca5792ea695
+//Revision: f0f0c3d1-5a0a-4902-b1b7-6df1c591cb28
 
 
 
@@ -14,18 +14,18 @@
 
 
 
-namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.InteractiveMap
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interactive_Map_Location_Points
 {
 
 
  	/// <summary>
-	/// I_InteractiveMap Interface
+	/// I_Interactive_Map_Location_Point Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/InteractiveMap/_InteractiveMap</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/Interactive Map Location Points/_Interactive Map Location Point</para>	
 	/// <para>ID: b9a7bac7-21c6-40b4-8e9d-cafb3a8b3edf</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_InteractiveMapConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_InteractiveMap : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_TitleDesc, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_Image
+	[SitecoreType(TemplateId=I_Interactive_Map_Location_PointConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Interactive_Map_Location_Point : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_TitleDesc, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Image
 	{
 								/// <summary>
 					/// The Left field.
@@ -34,7 +34,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 					/// <para>Field ID: 0c64bb2b-9145-4140-b6bd-dad404d34913</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_InteractiveMapConstants.LeftFieldName)]
+					[SitecoreField(I_Interactive_Map_Location_PointConstants.LeftFieldName)]
 					string Left  {get; set;}
 			
 								/// <summary>
@@ -44,7 +44,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 					/// <para>Field ID: 24ceaac1-8ea4-4625-9d60-844ddf3f8eba</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_InteractiveMapConstants.TopFieldName)]
+					[SitecoreField(I_Interactive_Map_Location_PointConstants.TopFieldName)]
 					string Top  {get; set;}
 			
 								/// <summary>
@@ -54,17 +54,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 					/// <para>Field ID: eda7d252-061d-4b6b-a69c-b6544172b348</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_InteractiveMapConstants.Description_TitleFieldName)]
+					[SitecoreField(I_Interactive_Map_Location_PointConstants.Description_TitleFieldName)]
 					string Description_Title  {get; set;}
 			
 				}
 
 
-	public static partial class I_InteractiveMapConstants{
+	public static partial class I_Interactive_Map_Location_PointConstants{
 
 			public const string TemplateIdString = "b9a7bac7-21c6-40b4-8e9d-cafb3a8b3edf";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "_InteractiveMap";
+			public const string TemplateName = "_Interactive Map Location Point";
 
 					
 			public static readonly ID LeftFieldId = new ID("0c64bb2b-9145-4140-b6bd-dad404d34913");
@@ -96,14 +96,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 
 	
 	/// <summary>
-	/// _InteractiveMap
+	/// _Interactive_Map_Location_Point
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/InteractiveMap/_InteractiveMap</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/Interactive Map Location Points/_Interactive Map Location Point</para>	
 	/// <para>ID: b9a7bac7-21c6-40b4-8e9d-cafb3a8b3edf</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_InteractiveMapConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(I_InteractiveMap))]
-	public partial class _InteractiveMap  : GlassBase, I_InteractiveMap 
+	[SitecoreType(TemplateId=I_Interactive_Map_Location_PointConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Interactive_Map_Location_Point))]
+	public partial class _Interactive_Map_Location_Point  : GlassBase, I_Interactive_Map_Location_Point 
 	{
 	   
 						/// <summary>
@@ -114,7 +114,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_InteractiveMapConstants.LeftFieldName)]
+				[SitecoreField(I_Interactive_Map_Location_PointConstants.LeftFieldName)]
 				public virtual string Left  {get; set;}
 					
 						/// <summary>
@@ -125,7 +125,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_InteractiveMapConstants.TopFieldName)]
+				[SitecoreField(I_Interactive_Map_Location_PointConstants.TopFieldName)]
 				public virtual string Top  {get; set;}
 					
 						/// <summary>
@@ -136,7 +136,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_InteractiveMapConstants.Description_TitleFieldName)]
+				[SitecoreField(I_Interactive_Map_Location_PointConstants.Description_TitleFieldName)]
 				public virtual string Description_Title  {get; set;}
 					
 						/// <summary>
@@ -147,7 +147,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_InteractiveMapConstants.DescriptionFieldName)]
+				[SitecoreField(I_Interactive_Map_Location_PointConstants.DescriptionFieldName)]
 				public virtual string Description  {get; set;}
 					
 						/// <summary>
@@ -158,7 +158,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_InteractiveMapConstants.TitleFieldName)]
+				[SitecoreField(I_Interactive_Map_Location_PointConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
 					
 						/// <summary>
@@ -169,7 +169,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_InteractiveMapConstants.ImageFieldName)]
+				[SitecoreField(I_Interactive_Map_Location_PointConstants.ImageFieldName)]
 				public virtual Image Image  {get; set;}
 					
 			

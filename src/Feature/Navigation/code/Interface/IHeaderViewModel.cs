@@ -1,4 +1,6 @@
-﻿using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
+﻿#region namespace
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
+#endregion
 
 namespace EMAAR.ECM.Feature.Navigation.Interface
 { /// <summary>
@@ -6,6 +8,7 @@ namespace EMAAR.ECM.Feature.Navigation.Interface
   /// </summary>
     public interface IHeaderViewModel
     {
+        #region property
         /// <summary>
         /// Getting Header Menu details from Sitecore
         /// </summary>
@@ -26,5 +29,6 @@ namespace EMAAR.ECM.Feature.Navigation.Interface
         /// Getting Header CSS Class name
         /// </summary>
         string HeaderCss { get; set; }
+        #endregion
     }
 }

@@ -1,4 +1,4 @@
-//Revision: decdab8f-b0a9-475f-b161-a83d1cd20974
+//Revision: f3d7a2db-9a69-40d2-a29d-a80071d50c1a
 
 
 
@@ -14,14 +14,14 @@
 
 
 
-namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types
 {
 
 
  	/// <summary>
 	/// I_CTA Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_CTA</para>	
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Content Types/_CTA</para>	
 	/// <para>ID: 75180707-35bb-4854-8b48-b8882eb6c359</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=I_CTAConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
@@ -58,7 +58,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 	/// <summary>
 	/// _CTA
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_CTA</para>	
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Content Types/_CTA</para>	
 	/// <para>ID: 75180707-35bb-4854-8b48-b8882eb6c359</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=I_CTAConstants.TemplateIdString,AutoMap=true )] //, Cachable = true

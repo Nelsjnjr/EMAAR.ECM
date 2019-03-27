@@ -1,4 +1,4 @@
-//Revision: 0494339e-85e1-4dbd-85e8-87509b8ca0d4
+//Revision: 70aea7f6-2ddf-4973-81df-bf50f933d002
 
 
 
@@ -14,14 +14,14 @@
 
 
 
-namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types
 {
 
 
  	/// <summary>
 	/// I_Navigation Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_Navigation</para>	
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Content Types/_Navigation</para>	
 	/// <para>ID: 3f106ce8-3e4d-4649-b1c2-8dd7f13cf266</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=I_NavigationConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
@@ -86,7 +86,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 	/// <summary>
 	/// _Navigation
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_Navigation</para>	
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Content Types/_Navigation</para>	
 	/// <para>ID: 3f106ce8-3e4d-4649-b1c2-8dd7f13cf266</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=I_NavigationConstants.TemplateIdString,AutoMap=true )] //, Cachable = true

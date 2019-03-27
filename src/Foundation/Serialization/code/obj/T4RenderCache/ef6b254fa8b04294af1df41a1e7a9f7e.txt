@@ -25,7 +25,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 	/// <para>ID: ef6b254f-a8b0-4294-af1d-f41a1e7a9f7e</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=INavigationConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface INavigation : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_Navigation
+	public partial interface INavigation : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Navigation
 	{
 				}
 

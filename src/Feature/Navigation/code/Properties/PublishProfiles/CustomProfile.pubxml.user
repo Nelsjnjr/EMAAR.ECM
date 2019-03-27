@@ -10,7 +10,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="App_Config/Include/Feature/ECM/Navigation/EMAAR.ECM.Feature.Navigation.config">
-      <publishTime>03/26/2019 16:15:07</publishTime>
+      <publishTime>03/26/2019 17:01:49</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>09/10/2013 16:29:20</publishTime>
@@ -22,10 +22,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/10/2017 08:13:52</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Feature.Navigation.dll">
-      <publishTime>03/26/2019 16:12:13</publishTime>
+      <publishTime>03/27/2019 12:52:29</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Feature.Navigation.pdb">
-      <publishTime>03/26/2019 16:12:13</publishTime>
+      <publishTime>03/27/2019 12:52:29</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundatation.Constants.dll">
       <publishTime>03/26/2019 12:23:47</publishTime>
@@ -37,22 +37,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/26/2019 12:23:47</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.Constants.dll">
-      <publishTime>03/26/2019 16:11:43</publishTime>
+      <publishTime>03/27/2019 12:41:40</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.Constants.dll.config">
       <publishTime>03/26/2019 12:14:55</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.Constants.pdb">
-      <publishTime>03/26/2019 16:11:43</publishTime>
+      <publishTime>03/27/2019 12:41:40</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll">
-      <publishTime>03/26/2019 14:39:29</publishTime>
+      <publishTime>03/27/2019 12:41:40</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll.config">
       <publishTime>03/10/2019 14:42:45</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.pdb">
-      <publishTime>03/26/2019 14:39:29</publishTime>
+      <publishTime>03/27/2019 12:41:40</publishTime>
     </File>
     <File Include="bin/Glass.Mapper.dll">
       <publishTime>02/25/2019 13:27:08</publishTime>
@@ -274,13 +274,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/24/2018 13:38:24</publishTime>
     </File>
     <File Include="bin/Sitecore.Foundation.DependencyInjection.dll">
-      <publishTime>03/26/2019 14:39:28</publishTime>
+      <publishTime>03/27/2019 11:28:10</publishTime>
     </File>
     <File Include="bin/Sitecore.Foundation.DependencyInjection.dll.config">
       <publishTime>03/11/2019 10:11:29</publishTime>
     </File>
     <File Include="bin/Sitecore.Foundation.DependencyInjection.pdb">
-      <publishTime>03/26/2019 14:39:28</publishTime>
+      <publishTime>03/27/2019 11:28:10</publishTime>
     </File>
     <File Include="bin/Sitecore.Kernel.dll">
       <publishTime>03/10/2019 14:20:21</publishTime>
@@ -324,7 +324,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/WebGrease.dll">
       <publishTime>01/23/2014 13:57:34</publishTime>
     </File>
+    <File Include="Content/Site.css">
+      <publishTime>03/27/2019 11:45:03</publishTime>
+    </File>
+    <File Include="Views/Feature/ECM/DowntownDubai/NavigationMenu/Footer.cshtml">
+      <publishTime>03/27/2019 12:32:11</publishTime>
+    </File>
     <File Include="Views/Feature/ECM/DowntownDubai/NavigationMenu/Header.cshtml">
+      <publishTime>03/26/2019 15:26:15</publishTime>
+    </File>
+    <File Include="Views/Feature/ECM/NavigationMenu/Footer.cshtml">
+      <publishTime>03/27/2019 13:04:30</publishTime>
+    </File>
+    <File Include="Views/Feature/ECM/NavigationMenu/Header.cshtml">
       <publishTime>03/26/2019 15:26:15</publishTime>
     </File>
     <File Include="Views/Project/ECM/DowntownDubai/NavigationMenu/GetHeader.cshtml">
@@ -332,6 +344,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Views/Project/ECM/DowntownDubai/NavigationMenu/Header.cshtml">
       <publishTime>03/26/2019 11:54:46</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>03/27/2019 11:45:03</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>03/27/2019 11:45:02</publishTime>
     </File>
     <File Include="Web.Debug.config">
       <publishTime>03/25/2019 12:15:00</publishTime>
