@@ -21,9 +21,9 @@ Multilist
 field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
 name: Source
 key: source
-content-length: 110
+content-length: 118
 
-query:ancestor-or-self::*[@@templateid='{407F6EA5-A542-4D83-9D03-B598E06D3422}']/Site Content/RelatedContent/*
+query:ancestor-or-self::*[@@templateid='{407F6EA5-A542-4D83-9D03-B598E06D3422}']/Site Content/Related Content Slides/*
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -34,7 +34,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: c23c7d34-4474-4694-820d-ae1b28799e11
+revision: b92fb93e-b19a-4e07-9c0b-9d8c7e7c58a7
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -49,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c23c7d34-4474-4694-820d-ae1b28799e11
+b92fb93e-b19a-4e07-9c0b-9d8c7e7c58a7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190327T060820Z
+20190327T130948Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -13,15 +13,15 @@ created: 20190326T133742Z
 ----version----
 language: en
 version: 1
-revision: d7b43659-7c05-4da6-bb22-b93957a5b9b5
+revision: 04f22d46-94e4-48de-85d1-ce917d90ce4e
 
 ----field----
 field: {F481D655-9101-46FD-8283-71BEDBDC10E1}
 name: Navigation Title
 key: navigation title
-content-length: 17
+content-length: 18
 
-Term & conditions
+Terms & conditions
 ----field----
 field: {9D509D11-E258-4D34-8193-5628906B8201}
 name: Navigation Link
@@ -42,14 +42,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d7b43659-7c05-4da6-bb22-b93957a5b9b5
+04f22d46-94e4-48de-85d1-ce917d90ce4e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190327T101351Z
+20190327T124009Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -57,3 +57,10 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />
