@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Extensions.DependencyInjection;
 using Sitecore.DependencyInjection;
-namespace Sitecore.Foundation.DependencyInjection.Extensions
+namespace EMAAR.ECM.Foundation.DependencyInjection.Extensions
 {
     public static class ServiceCollectionExtensions
     {

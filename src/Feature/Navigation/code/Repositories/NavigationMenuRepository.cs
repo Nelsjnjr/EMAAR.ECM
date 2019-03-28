@@ -7,7 +7,7 @@ using EMAAR.ECM.Foundation.Constants.Interfaces;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types;
 using Glass.Mapper.Sc.Web.Mvc;
-using Sitecore.Foundation.DependencyInjection;
+using EMAAR.ECM.Foundation.DependencyInjection;
 #endregion
 namespace EMAAR.ECM.Feature.Navigation.Repositories
 {

@@ -53,6 +53,27 @@ content-length: 1
 
 1
 ----field----
+field: {8B6D532B-6128-4486-A044-CA06D90948BA}
+name: VaryByData
+key: varybydata
+content-length: 1
+
+1
+----field----
+field: {3AD2506A-DC39-4B1E-959F-9D524ADDBF50}
+name: VaryByParm
+key: varybyparm
+content-length: 1
+
+1
+----field----
+field: {1084D3D2-0457-456A-ABBC-EB4CC0966072}
+name: VaryByQueryString
+key: varybyquerystring
+content-length: 1
+
+1
+----field----
 field: {B5B27AF1-25EF-405C-87CE-369B3A004016}
 name: Datasource Location
 key: datasource location
@@ -69,7 +90,7 @@ content-length: 62
 ----version----
 language: en
 version: 1
-revision: 3e745aa3-329a-4402-b118-c719cba4c717
+revision: 3698e42e-b7f7-4f31-81be-85ed281c27ed
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -84,14 +105,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3e745aa3-329a-4402-b118-c719cba4c717
+3698e42e-b7f7-4f31-81be-85ed281c27ed
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190327T090804Z
+20190327T132938Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

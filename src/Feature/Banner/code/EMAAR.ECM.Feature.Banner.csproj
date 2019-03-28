@@ -249,9 +249,9 @@
       <Project>{5a9c69d0-c859-4df1-ac9c-4ef90d684b2b}</Project>
       <Name>EMAAR.ECM.Foundation.Constants</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Foundation\DependencyInjection\code\Sitecore.Foundation.DependencyInjection.csproj">
+    <ProjectReference Include="..\..\..\Foundation\DependencyInjection\code\EMAAR.ECM.Foundation.DependencyInjection.csproj">
       <Project>{e7acc4fc-b18c-45a3-8871-d4ae93471623}</Project>
-      <Name>Sitecore.Foundation.DependencyInjection</Name>
+      <Name>EMAAR.ECM.Foundation.DependencyInjection</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\ORM\code\EMAAR.ECM.Foundation.ORM.csproj">
       <Project>{06009BA6-B14B-4018-9209-F483CB820555}</Project>

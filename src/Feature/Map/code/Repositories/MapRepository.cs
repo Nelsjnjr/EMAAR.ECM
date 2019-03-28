@@ -3,7 +3,7 @@ using System;
 using EMAAR.ECM.Feature.Map.Interfaces;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Interactive_Map_Location_Points;
 using Glass.Mapper.Sc.Web.Mvc;
-using Sitecore.Foundation.DependencyInjection;
+using EMAAR.ECM.Foundation.DependencyInjection;
 #endregion
 namespace EMAAR.ECM.Feature.Map.Repositories
 {

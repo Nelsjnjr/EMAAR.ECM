@@ -238,10 +238,6 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Site Content\LegalPages\Privacy Policy - Copy.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
     <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Site Content\LegalPages\Privacy Policy.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -610,59 +606,59 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\HeroBanner.item">
+    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\CommunityMetrics.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\HeroBanner\Downtown-Dubai_tcm223-49617.item">
+    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\CommunityMetrics\Downtown-Dubai_tcm223-49617.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\HeroBanner\Mobile_BackgroundImage.item">
+    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\CommunityMetrics\Mobile_BackgroundImage.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\InteractiveMap.item">
+    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\InteractiveMapLocationPoints.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\InteractiveMap\bk.item">
+    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\InteractiveMapLocationPoints\bk.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\InteractiveMap\bp.item">
+    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\InteractiveMapLocationPoints\bp.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\InteractiveMap\img-map.item">
+    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\InteractiveMapLocationPoints\img-map.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\InteractiveMap\sr.item">
+    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\InteractiveMapLocationPoints\sr.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\InteractiveMap\tdf.item">
+    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\InteractiveMapLocationPoints\tdf.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\Related Content.item">
+    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\Related Content Slides.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\Related Content\slider1.item">
+    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\Related Content Slides\slider1.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\Related Content\slider2.item">
+    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\Related Content Slides\slider2.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\Related Content\slider3.item">
+    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\Related Content Slides\slider3.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\Related Content\slider4.item">
+    <SitecoreItem Include="sitecore\media library\Images\Feature\ECM\DowntownDubai\Related Content Slides\slider4.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
@@ -834,6 +830,14 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <CodeGenData>Type=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.ISettings</CodeGenData>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Feature\ECM\Branch.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Feature\ECM\Branch\_BranchPageContent.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Feature\ECM\Community Metrics.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
@@ -1638,6 +1642,10 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Project\ECM\Common\Page Types.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\ECM\Common\Page Types\BranchPageContent.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>

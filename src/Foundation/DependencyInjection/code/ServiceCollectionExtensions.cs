@@ -9,7 +9,7 @@ using System.Web.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using System.IO;
 #endregion
-namespace Sitecore.Foundation.DependencyInjection
+namespace EMAAR.ECM.Foundation.DependencyInjection
 {
     public static class ServiceCollectionExtensions
     {

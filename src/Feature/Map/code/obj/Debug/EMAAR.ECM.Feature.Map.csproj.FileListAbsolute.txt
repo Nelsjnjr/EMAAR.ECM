@@ -50,6 +50,8 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\roslyn\VBCSCompi
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Feature.Map.dll.CodeAnalysisLog.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Feature.Map.dll.lastcodeanalysissucceeded
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Castle.Core.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Foundation.Constants.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Foundation.DependencyInjection.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Foundation.ORM.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Glass.Mapper.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Glass.Mapper.Sc.dll
@@ -69,15 +71,16 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Microsoft.Practi
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Mvp.Xml.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Newtonsoft.Json.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Sitecore.Foundation.DependencyInjection.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Sitecore.Kernel.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Sitecore.Logging.Client.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Sitecore.Logging.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Sitecore.NVelocity.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Sitecore.Zip.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\System.Web.Mvc.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Sitecore.Foundation.DependencyInjection.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Sitecore.Foundation.DependencyInjection.dll.config
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Foundation.Constants.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Foundation.Constants.dll.config
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Foundation.DependencyInjection.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Foundation.DependencyInjection.dll.config
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Foundation.ORM.pdb
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Foundation.ORM.dll.config
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Castle.Core.xml
@@ -110,6 +113,3 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\obj\Debug\EMAAR.ECM.
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\obj\Debug\EMAAR.ECM.Feature.Map.csproj.CopyComplete
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\obj\Debug\EMAAR.ECM.Feature.Map.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\obj\Debug\EMAAR.ECM.Feature.Map.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Foundation.Constants.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Foundation.Constants.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Foundation.Constants.dll.config

@@ -33,7 +33,7 @@ using Glass.Mapper.Sc.Configuration;
 using Glass.Mapper.Sc.Fields;
 using Sitecore.Globalization;
 using Sitecore.Data;
-using Sitecore.Foundation.DependencyInjection;
+using EMAAR.ECM.Foundation.DependencyInjection;
 
 <#
 // Calculate the top leve namespace as configured in the target project and

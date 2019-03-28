@@ -25,6 +25,10 @@ namespace EMAAR.ECM.Feature.Navigation.Controllers
         {
             return View($"{ViewPath}NavigationMenu/Header.cshtml", _navigationMenuRepository.GetHeader());
         }
+        /// <summary>
+        ///  Getting Footer with all necessary details like(Menus,Logo,Contact Info and Legalpages etc)
+        /// </summary>
+        /// <returns>Footer</returns>
         public ActionResult GetFooter()
         {
             return View($"{ViewPath}NavigationMenu/Footer.cshtml", _navigationMenuRepository.GetFooter());

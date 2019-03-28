@@ -3,7 +3,7 @@ using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Cont
 #endregion
 namespace EMAAR.ECM.Feature.Navigation.Interface
 { /// <summary>
-  /// This  used to load header component
+  /// This  used to load Footer component
   /// </summary>
     public interface IFooterViewModel
     {

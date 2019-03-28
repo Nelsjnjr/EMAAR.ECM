@@ -110,7 +110,7 @@
         <div class="emaar-logo">
             @if (Model.Logos.Brand_Logo != null)
             {
-                using (Html.Glass().BeginRenderLink(Model.Logos, x => x.Brand_Logo, new { @class = "btn btn-primary mt-3 mt-md-5" }, isEditable: true))
+                using (Html.Glass().BeginRenderLink(Model.Logos, x => x.Brand_Logo_Url, isEditable: true))
                 {
                     @Html.Glass().RenderImage(Model.Logos, x => x.Brand_Logo, new { alt = "emaar" }, isEditable: true)
                 }

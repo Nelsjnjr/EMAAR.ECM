@@ -238,9 +238,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\DependencyInjection\code\Sitecore.Foundation.DependencyInjection.csproj">
+    <ProjectReference Include="..\..\DependencyInjection\code\EMAAR.ECM.Foundation.DependencyInjection.csproj">
       <Project>{e7acc4fc-b18c-45a3-8871-d4ae93471623}</Project>
-      <Name>Sitecore.Foundation.DependencyInjection</Name>
+      <Name>EMAAR.ECM.Foundation.DependencyInjection</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\ORM\code\EMAAR.ECM.Foundation.ORM.csproj">
       <Project>{06009ba6-b14b-4018-9209-f483cb820555}</Project>

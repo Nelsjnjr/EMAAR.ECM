@@ -1,0 +1,58 @@
+//Revision: a5e1805c-6f34-40c1-9507-804a1043f01a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Page_Types
+{
+
+
+ 	/// <summary>
+	/// IBranchPageContent Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Page Types/BranchPageContent</para>	
+	/// <para>ID: d0841ac9-6c7e-4b07-a737-bf2562af6501</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IBranchPageContentConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IBranchPageContent : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Branch.I_BranchPageContent
+	{
+				}
+
+
+	public static partial class IBranchPageContentConstants{
+
+			public const string TemplateIdString = "d0841ac9-6c7e-4b07-a737-bf2562af6501";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "BranchPageContent";
+
+			
+
+	}
+
+	
+	/// <summary>
+	/// BranchPageContent
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Page Types/BranchPageContent</para>	
+	/// <para>ID: d0841ac9-6c7e-4b07-a737-bf2562af6501</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IBranchPageContentConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IBranchPageContent))]
+	public partial class BranchPageContent  : GlassBase, IBranchPageContent 
+	{
+	   
+			
+	}
+}
+

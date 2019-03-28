@@ -1,7 +1,7 @@
 ﻿#region namespace
 using System;
 #endregion
-namespace Sitecore.Foundation.DependencyInjection
+namespace EMAAR.ECM.Foundation.DependencyInjection
 {
     [AttributeUsage(AttributeTargets.Class, Inherited = false)]
     public class ServiceAttribute : Attribute

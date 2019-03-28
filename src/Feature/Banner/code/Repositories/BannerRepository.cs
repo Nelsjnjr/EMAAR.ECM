@@ -1,12 +1,12 @@
 ﻿#region namespace
 using System;
 using EMAAR.ECM.Feature.Banner.Interfaces;
+using EMAAR.ECM.Foundation.DependencyInjection;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Banner;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Community_Metrics;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Content_Slides;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Parameters;
 using Glass.Mapper.Sc.Web.Mvc;
-using Sitecore.Foundation.DependencyInjection;
 using static EMAAR.ECM.Foundation.Constants.CommonConstants;
 #endregion
 namespace EMAAR.ECM.Feature.Banner.Repositories

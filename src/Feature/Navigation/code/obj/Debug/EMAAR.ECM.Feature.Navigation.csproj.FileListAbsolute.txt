@@ -49,6 +49,8 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\roslyn\VB
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\Antlr3.Runtime.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\Castle.Core.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\EMAAR.ECM.Foundation.Constants.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\EMAAR.ECM.Foundation.DependencyInjection.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\EMAAR.ECM.Foundation.ORM.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\Glass.Mapper.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\Glass.Mapper.Sc.dll
@@ -71,7 +73,6 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\Microsoft
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\Mvp.Xml.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\Newtonsoft.Json.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\Sitecore.Foundation.DependencyInjection.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\Sitecore.Kernel.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\Sitecore.Logging.Client.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\Sitecore.Logging.dll
@@ -86,8 +87,10 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\System.We
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\System.Web.WebPages.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\System.Web.WebPages.Razor.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\WebGrease.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\Sitecore.Foundation.DependencyInjection.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\Sitecore.Foundation.DependencyInjection.dll.config
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\EMAAR.ECM.Foundation.Constants.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\EMAAR.ECM.Foundation.Constants.dll.config
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\EMAAR.ECM.Foundation.DependencyInjection.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\EMAAR.ECM.Foundation.DependencyInjection.dll.config
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\EMAAR.ECM.Foundation.ORM.pdb
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\EMAAR.ECM.Foundation.ORM.dll.config
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\Castle.Core.xml
@@ -130,6 +133,3 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\obj\Debug\EMA
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\obj\Debug\EMAAR.ECM.Feature.Navigation.csproj.CopyComplete
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\obj\Debug\EMAAR.ECM.Feature.Navigation.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\obj\Debug\EMAAR.ECM.Feature.Navigation.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\EMAAR.ECM.Foundation.Constants.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\EMAAR.ECM.Foundation.Constants.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\EMAAR.ECM.Foundation.Constants.dll.config

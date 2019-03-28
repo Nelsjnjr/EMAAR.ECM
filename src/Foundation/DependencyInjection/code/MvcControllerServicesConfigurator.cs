@@ -8,7 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Sitecore.Data;
 using Sitecore.DependencyInjection;
 #endregion
-namespace Sitecore.Foundation.DependencyInjection.Infrastructure
+namespace EMAAR.ECM.Foundation.DependencyInjection.Infrastructure
 {
  
     public class MvcControllerServicesConfigurators : IServicesConfigurator

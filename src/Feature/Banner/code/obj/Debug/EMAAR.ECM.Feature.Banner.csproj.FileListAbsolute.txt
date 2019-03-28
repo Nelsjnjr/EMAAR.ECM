@@ -51,6 +51,8 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Fea
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Feature.Banner.dll.lastcodeanalysissucceeded
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Antlr3.Runtime.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Castle.Core.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Foundation.Constants.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Foundation.DependencyInjection.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Foundation.ORM.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Glass.Mapper.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Glass.Mapper.Sc.dll
@@ -73,7 +75,6 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Microsoft.Pra
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Mvp.Xml.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Newtonsoft.Json.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Sitecore.Foundation.DependencyInjection.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Sitecore.Kernel.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Sitecore.Logging.Client.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Sitecore.Logging.dll
@@ -88,8 +89,10 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\System.Web.We
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\System.Web.WebPages.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\System.Web.WebPages.Razor.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\WebGrease.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Sitecore.Foundation.DependencyInjection.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Sitecore.Foundation.DependencyInjection.dll.config
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Foundation.Constants.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Foundation.Constants.dll.config
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Foundation.DependencyInjection.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Foundation.DependencyInjection.dll.config
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Foundation.ORM.pdb
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Foundation.ORM.dll.config
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Castle.Core.xml
@@ -132,6 +135,3 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\obj\Debug\EMAAR.E
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\obj\Debug\EMAAR.ECM.Feature.Banner.csproj.CopyComplete
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\obj\Debug\EMAAR.ECM.Feature.Banner.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\obj\Debug\EMAAR.ECM.Feature.Banner.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Foundation.Constants.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Foundation.Constants.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Foundation.Constants.dll.config
