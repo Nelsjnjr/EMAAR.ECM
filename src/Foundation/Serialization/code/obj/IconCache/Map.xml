@@ -605,7 +605,6 @@
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Settings/Site Specific Images/Home" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Settings/Site Specific Images/Home/HomePageClose" ItemIcon="/temp/iconcache/applications/16x16/navigate_right.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Settings/Site Specific Images/Home/HomePageSearch" ItemIcon="/temp/iconcache/applications/16x16/navigate_right.png" />
-  <Item ItemPath="/sitecore/content/ECM/Settings/ConatctTypes" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
   <Item ItemPath="/sitecore/content/ECM/Settings/ConatctTypes/Map" ItemIcon="/temp/iconcache/applications/16x16/gear_add.png" />
   <Item ItemPath="/sitecore/content/ECM/Settings/ConatctTypes/Phone" ItemIcon="/temp/iconcache/applications/16x16/gear_add.png" />
   <Item ItemPath="/sitecore/templates/Feature/ECM/Community Metrics/_Community Metric" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
@@ -640,7 +639,6 @@
   <Item ItemPath="/sitecore/templates/Feature/ECM/Interactive Map Location Points/_Interactive Map Location PointList/Data" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content Slides/_Related Content SlideList" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
   <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content Slides/_Related Content SlideList/Data" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
-  <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content Slides/_Related Content SlideList/Data/IsBackgroundColorAvailable" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/templates/Project/ECM/Content Types/Related Content Slides" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
   <Item ItemPath="/sitecore/templates/Project/ECM/Content Types/Community Metrics/Community MetricList/__Standard Values" ItemIcon="/temp/iconcache/multimedia/32x32/image_h.png" />
   <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/LegalPages" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
@@ -705,8 +703,6 @@
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Footer" ItemIcon="/temp/iconcache/applications/32x32/form_blue.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Footer/Data" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Footer/Data/Root Navigations" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
-  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Footer/Data/Legal Pages" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
-  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Footer/Data/Copyright" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/templates/Feature/ECM/Footer" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
   <Item ItemPath="/sitecore/templates/Feature/ECM/Header/_Header/Data/Search Watermark" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Header" ItemIcon="/temp/iconcache/applications/32x32/form_blue.png" />
@@ -733,7 +729,6 @@
   <Item ItemPath="/sitecore/templates/Project/ECM/Content Types/LegalPages" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
   <Item ItemPath="/sitecore/templates/Project/ECM/Content Types/LegalPages/LegalPages" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
   <Item ItemPath="/sitecore/templates/Project/ECM/Content Types/LegalPages/LegalPages/__Standard Values" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
-  <Item ItemPath="/sitecore/templates/Feature/ECM/Footer/_Footer/Data/Contact Info" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM/DowntownDubai/CommunityMetrics" ItemIcon="/temp/iconcache/software/16x16/element.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/ContactInfo/Get in touch" ItemIcon="/temp/iconcache/office/32x32/user_telephone.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/ContactInfo/Get in touch/Email" ItemIcon="/temp/iconcache/office/32x32/id_card.png" />
@@ -804,12 +799,8 @@
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home/Page Datasources/InteractiveMap Location Points/Click to discover the area" ItemIcon="/temp/iconcache/apps/32x32/map.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home/Page Datasources/Related Content Slides/Exploring the neighborhood" ItemIcon="/temp/iconcache/control/16x16/splitter_ver_b_h.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/LegalPages/Term and condition" ItemIcon="/temp/iconcache/office/32x32/book_bookmark.png" />
-  <Item ItemPath="/sitecore/templates/Feature/ECM/Community Metrics/_Community MetricList/Data/Community Metrics" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/templates/Feature/ECM/Community Metrics/_Community MetricList/Data/Title" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
-  <Item ItemPath="/sitecore/templates/Feature/ECM/Interactive Map Location Points/_Interactive Map Location PointList/Data/Interactive Map Location Points" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/templates/Feature/ECM/Interactive Map Location Points/_Interactive Map Location PointList/Data/Title" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
-  <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content Slides/_Related Content SlideList/Data/Related Content Slides" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
-  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home" ItemIcon="/temp/iconcache/network/16x16/home.png" />
   <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM/DowntownDubai/Banner" ItemIcon="/temp/iconcache/software/16x16/element.png" />
   <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM/DowntownDubai/CommunityMetric" ItemIcon="/temp/iconcache/software/16x16/element.png" />
   <Item ItemPath="/sitecore/layout/Renderings/Feature/ECM/DowntownDubai/InteractiveMapLocationPoint" ItemIcon="/temp/iconcache/software/16x16/element.png" />
@@ -834,4 +825,13 @@
   <Item ItemPath="/sitecore/media library/Images/Feature/ECM/DowntownDubai/Related Content Slides/slider3" ItemIcon="/temp/IconCache/-/media/BBE3BB9E43C5426C9690220EEFB0D13E.ashx?h=16&amp;thn=1&amp;w=16" />
   <Item ItemPath="/sitecore/media library/Images/Feature/ECM/DowntownDubai/Related Content Slides/slider4" ItemIcon="/temp/IconCache/-/media/4C583F9D92994B1E925666DE25761184.ashx?h=16&amp;thn=1&amp;w=16" />
   <Item ItemPath="/sitecore/templates/Project/ECM/Common/Content Types/CommunityMetricsListFolder/__Standard Values" ItemIcon="/temp/iconcache/multimedia/32x32/image_h.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home" ItemIcon="/temp/IconCache/Network/16x16/home.png" />
+  <Item ItemPath="/sitecore/content/ECM/Settings/ConatctTypes" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/Community Metrics/_Community MetricList/Data/Community Metrics" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/Footer/_Footer/Data/Contact Info" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content Slides/_Related Content SlideList/Data/IsBackgroundColorAvailable" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/Related Content Slides/_Related Content SlideList/Data/Related Content Slides" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Footer/Data/Copyright" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Footer/Data/Legal Pages" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Feature/ECM/Interactive Map Location Points/_Interactive Map Location PointList/Data/Interactive Map Location Points" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
 </ItemIconCache>

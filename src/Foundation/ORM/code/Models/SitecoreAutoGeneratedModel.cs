@@ -223,7 +223,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 					
 						/// <summary>
 				/// The Community Metrics field.
-				/// <para></para>
+				/// <para>Datasource items from Site Content\Community Metrics</para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 61256258-c337-4d5a-b150-6b765a10fbbf</para>
 				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Community_Metrics.ICommunity_Metric</para>
@@ -1362,7 +1362,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Communi
 			
 								/// <summary>
 					/// The Community Metrics field.
-					/// <para></para>
+					/// <para>Datasource items from Site Content\Community Metrics</para>
 					/// <para>Field Type: Multilist</para>		
 					/// <para>Field ID: 61256258-c337-4d5a-b150-6b765a10fbbf</para>
 					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Community_Metrics.ICommunity_Metric</para>
@@ -1444,7 +1444,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Communi
 					
 						/// <summary>
 				/// The Community Metrics field.
-				/// <para></para>
+				/// <para>Datasource items from Site Content\Community Metrics</para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 61256258-c337-4d5a-b150-6b765a10fbbf</para>
 				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Community_Metrics.ICommunity_Metric</para>
@@ -2207,7 +2207,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 	{
 								/// <summary>
 					/// The Interactive Map Location Points field.
-					/// <para></para>
+					/// <para>Datasource items from Site Content\Interactive Map Location Points</para>
 					/// <para>Field Type: Multilist</para>		
 					/// <para>Field ID: 661c5898-9da8-4a26-b33d-e8f7797209f4</para>
 					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Interactive_Map_Location_Points.IInteractive_Map_Location_Point</para>
@@ -2264,7 +2264,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 	   
 						/// <summary>
 				/// The Interactive Map Location Points field.
-				/// <para></para>
+				/// <para>Datasource items from Site Content\Interactive Map Location Points</para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 661c5898-9da8-4a26-b33d-e8f7797209f4</para>
 				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Interactive_Map_Location_Points.IInteractive_Map_Location_Point</para>
@@ -2740,7 +2740,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 	{
 								/// <summary>
 					/// The Copyright field.
-					/// <para></para>
+					/// <para>{year} token will be dynamically replaced with current Year , Do not remove {year} token</para>
 					/// <para>Field Type: Single-Line Text</para>		
 					/// <para>Field ID: f868f9da-af3c-4a18-b6c3-4d80486243b4</para>
 					/// <para>Custom Data: </para>
@@ -2750,7 +2750,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 			
 								/// <summary>
 					/// The Legal Pages field.
-					/// <para></para>
+					/// <para>Datasource items from Site Content\Legal pages</para>
 					/// <para>Field Type: Multilist</para>		
 					/// <para>Field ID: ad94dcd0-6573-4650-b8e2-cc29bab61abf</para>
 					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.LegalPages.ILegalPages</para>
@@ -2807,7 +2807,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 	   
 						/// <summary>
 				/// The Copyright field.
-				/// <para></para>
+				/// <para>{year} token will be dynamically replaced with current Year , Do not remove {year} token</para>
 				/// <para>Field Type: Single-Line Text</para>		
 				/// <para>Field ID: f868f9da-af3c-4a18-b6c3-4d80486243b4</para>
 				/// <para>Custom Data: </para>
@@ -2818,7 +2818,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 					
 						/// <summary>
 				/// The Legal Pages field.
-				/// <para></para>
+				/// <para>Datasource items from Site Content\Legal pages</para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: ad94dcd0-6573-4650-b8e2-cc29bab61abf</para>
 				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.LegalPages.ILegalPages</para>
@@ -2922,7 +2922,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related
 	{
 								/// <summary>
 					/// The IsBackgroundColorAvailable field.
-					/// <para></para>
+					/// <para>This field will change the background if selected, if not white background will be displayed</para>
 					/// <para>Field Type: Checkbox</para>		
 					/// <para>Field ID: 4a8bff42-5e3b-4bb1-ba59-1db2fdfae5c5</para>
 					/// <para>Custom Data: </para>
@@ -2932,7 +2932,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related
 			
 								/// <summary>
 					/// The Related Content Slides field.
-					/// <para></para>
+					/// <para>Datasource items from Site Content\Related content Slides</para>
 					/// <para>Field Type: Multilist</para>		
 					/// <para>Field ID: 96c03c76-a871-4acf-91f6-21a3e49a8e32</para>
 					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Content_Slides.IRelated_Content_Slide</para>
@@ -2989,7 +2989,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related
 	   
 						/// <summary>
 				/// The IsBackgroundColorAvailable field.
-				/// <para></para>
+				/// <para>This field will change the background if selected, if not white background will be displayed</para>
 				/// <para>Field Type: Checkbox</para>		
 				/// <para>Field ID: 4a8bff42-5e3b-4bb1-ba59-1db2fdfae5c5</para>
 				/// <para>Custom Data: </para>
@@ -3000,7 +3000,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related
 					
 						/// <summary>
 				/// The Related Content Slides field.
-				/// <para></para>
+				/// <para>Datasource items from Site Content\Related content Slides</para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 96c03c76-a871-4acf-91f6-21a3e49a8e32</para>
 				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Content_Slides.IRelated_Content_Slide</para>
@@ -3243,7 +3243,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 	   
 						/// <summary>
 				/// The IsBackgroundColorAvailable field.
-				/// <para></para>
+				/// <para>This field will change the background if selected, if not white background will be displayed</para>
 				/// <para>Field Type: Checkbox</para>		
 				/// <para>Field ID: 4a8bff42-5e3b-4bb1-ba59-1db2fdfae5c5</para>
 				/// <para>Custom Data: </para>
@@ -3254,7 +3254,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 					
 						/// <summary>
 				/// The Related Content Slides field.
-				/// <para></para>
+				/// <para>Datasource items from Site Content\Related content Slides</para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 96c03c76-a871-4acf-91f6-21a3e49a8e32</para>
 				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Content_Slides.IRelated_Content_Slide</para>
@@ -3329,7 +3329,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 	   
 						/// <summary>
 				/// The Interactive Map Location Points field.
-				/// <para></para>
+				/// <para>Datasource items from Site Content\Interactive Map Location Points</para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 661c5898-9da8-4a26-b33d-e8f7797209f4</para>
 				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Interactive_Map_Location_Points.IInteractive_Map_Location_Point</para>
@@ -3611,7 +3611,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Footer
 	{
 								/// <summary>
 					/// The Contact Info field.
-					/// <para></para>
+					/// <para>Datasource items from Site Content\ContactInfo</para>
 					/// <para>Field Type: Droplink</para>		
 					/// <para>Field ID: 4518387f-0fe0-451a-b417-9bcc524e3012</para>
 					/// <para>Custom Data: Type=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.ContactInfo.IContactInfoList</para>
@@ -3662,7 +3662,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Footer
 	   
 						/// <summary>
 				/// The Contact Info field.
-				/// <para></para>
+				/// <para>Datasource items from Site Content\ContactInfo</para>
 				/// <para>Field Type: Droplink</para>		
 				/// <para>Field ID: 4518387f-0fe0-451a-b417-9bcc524e3012</para>
 				/// <para>Custom Data: Type=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.ContactInfo.IContactInfoList</para>
@@ -3673,7 +3673,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Footer
 					
 						/// <summary>
 				/// The Copyright field.
-				/// <para></para>
+				/// <para>{year} token will be dynamically replaced with current Year , Do not remove {year} token</para>
 				/// <para>Field Type: Single-Line Text</para>		
 				/// <para>Field ID: f868f9da-af3c-4a18-b6c3-4d80486243b4</para>
 				/// <para>Custom Data: </para>
@@ -3684,7 +3684,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Footer
 					
 						/// <summary>
 				/// The Legal Pages field.
-				/// <para></para>
+				/// <para>Datasource items from Site Content\Legal pages</para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: ad94dcd0-6573-4650-b8e2-cc29bab61abf</para>
 				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.LegalPages.ILegalPages</para>
@@ -5461,7 +5461,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 	   
 						/// <summary>
 				/// The Contact Info field.
-				/// <para></para>
+				/// <para>Datasource items from Site Content\ContactInfo</para>
 				/// <para>Field Type: Droplink</para>		
 				/// <para>Field ID: 4518387f-0fe0-451a-b417-9bcc524e3012</para>
 				/// <para>Custom Data: Type=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.ContactInfo.IContactInfoList</para>
@@ -5472,7 +5472,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 					
 						/// <summary>
 				/// The Copyright field.
-				/// <para></para>
+				/// <para>{year} token will be dynamically replaced with current Year , Do not remove {year} token</para>
 				/// <para>Field Type: Single-Line Text</para>		
 				/// <para>Field ID: f868f9da-af3c-4a18-b6c3-4d80486243b4</para>
 				/// <para>Custom Data: </para>
@@ -5483,7 +5483,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 					
 						/// <summary>
 				/// The Legal Pages field.
-				/// <para></para>
+				/// <para>Datasource items from Site Content\Legal pages</para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: ad94dcd0-6573-4650-b8e2-cc29bab61abf</para>
 				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.LegalPages.ILegalPages</para>

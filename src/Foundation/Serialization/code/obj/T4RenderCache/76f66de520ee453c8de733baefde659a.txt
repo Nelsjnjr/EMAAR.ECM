@@ -29,7 +29,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related
 	{
 								/// <summary>
 					/// The IsBackgroundColorAvailable field.
-					/// <para></para>
+					/// <para>This field will change the background if selected, if not white background will be displayed</para>
 					/// <para>Field Type: Checkbox</para>		
 					/// <para>Field ID: 4a8bff42-5e3b-4bb1-ba59-1db2fdfae5c5</para>
 					/// <para>Custom Data: </para>
@@ -39,7 +39,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related
 			
 								/// <summary>
 					/// The Related Content Slides field.
-					/// <para></para>
+					/// <para>Datasource items from Site Content\Related content Slides</para>
 					/// <para>Field Type: Multilist</para>		
 					/// <para>Field ID: 96c03c76-a871-4acf-91f6-21a3e49a8e32</para>
 					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Content_Slides.IRelated_Content_Slide</para>
@@ -96,7 +96,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related
 	   
 						/// <summary>
 				/// The IsBackgroundColorAvailable field.
-				/// <para></para>
+				/// <para>This field will change the background if selected, if not white background will be displayed</para>
 				/// <para>Field Type: Checkbox</para>		
 				/// <para>Field ID: 4a8bff42-5e3b-4bb1-ba59-1db2fdfae5c5</para>
 				/// <para>Custom Data: </para>
@@ -107,7 +107,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related
 					
 						/// <summary>
 				/// The Related Content Slides field.
-				/// <para></para>
+				/// <para>Datasource items from Site Content\Related content Slides</para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 96c03c76-a871-4acf-91f6-21a3e49a8e32</para>
 				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Content_Slides.IRelated_Content_Slide</para>

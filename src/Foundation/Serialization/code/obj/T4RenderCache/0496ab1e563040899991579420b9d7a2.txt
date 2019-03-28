@@ -81,7 +81,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 					
 						/// <summary>
 				/// The Community Metrics field.
-				/// <para></para>
+				/// <para>Datasource items from Site Content\Community Metrics</para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 61256258-c337-4d5a-b150-6b765a10fbbf</para>
 				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Community_Metrics.ICommunity_Metric</para>

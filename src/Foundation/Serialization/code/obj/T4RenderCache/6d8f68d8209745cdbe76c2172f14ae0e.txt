@@ -29,7 +29,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 	{
 								/// <summary>
 					/// The Copyright field.
-					/// <para></para>
+					/// <para>{year} token will be dynamically replaced with current Year , Do not remove {year} token</para>
 					/// <para>Field Type: Single-Line Text</para>		
 					/// <para>Field ID: f868f9da-af3c-4a18-b6c3-4d80486243b4</para>
 					/// <para>Custom Data: </para>
@@ -39,7 +39,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 			
 								/// <summary>
 					/// The Legal Pages field.
-					/// <para></para>
+					/// <para>Datasource items from Site Content\Legal pages</para>
 					/// <para>Field Type: Multilist</para>		
 					/// <para>Field ID: ad94dcd0-6573-4650-b8e2-cc29bab61abf</para>
 					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.LegalPages.ILegalPages</para>
@@ -96,7 +96,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 	   
 						/// <summary>
 				/// The Copyright field.
-				/// <para></para>
+				/// <para>{year} token will be dynamically replaced with current Year , Do not remove {year} token</para>
 				/// <para>Field Type: Single-Line Text</para>		
 				/// <para>Field ID: f868f9da-af3c-4a18-b6c3-4d80486243b4</para>
 				/// <para>Custom Data: </para>
@@ -107,7 +107,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 					
 						/// <summary>
 				/// The Legal Pages field.
-				/// <para></para>
+				/// <para>Datasource items from Site Content\Legal pages</para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: ad94dcd0-6573-4650-b8e2-cc29bab61abf</para>
 				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.LegalPages.ILegalPages</para>
