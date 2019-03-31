@@ -261,6 +261,7 @@
     <Content Include="js\vendor\jquery.validate.unobtrusive.min.js" />
     <Content Include="js\vendor\map-popup.js" />
     <Content Include="js\vendor\mobMenu.js" />
+    <Content Include="js\vendor\select2.min.js" />
     <Content Include="js\vendor\smooth_anchor_links.js" />
     <Content Include="js\vendor\swiper.min.js" />
     <Content Include="js\vendor\utils.js" />

@@ -13,7 +13,7 @@ created: 20190321T090417Z
 ----version----
 language: en
 version: 1
-revision: 7fad210c-6a06-402a-a966-07ac7bc44121
+revision: 6e54b498-a50b-430c-bd29-c52f98e036d6
 
 ----field----
 field: {6D5D0A92-1283-4C10-B057-7D40A1B88DE6}
@@ -26,9 +26,9 @@ Click and discover the area
 field: {661C5898-9DA8-4A26-B33D-E8F7797209F4}
 name: Interactive Map Location Points
 key: interactive map location points
-content-length: 155
+content-length: 194
 
-{75153B99-995A-4796-B6DD-9D9749327252}|{6200803F-5957-4704-BB88-7CC7B52DC00F}|{85A94395-C637-4B3C-9EBC-20228C0CCA13}|{E4153BAB-E86A-4D21-AD1D-78C2F031D279}
+{75153B99-995A-4796-B6DD-9D9749327252}|{6200803F-5957-4704-BB88-7CC7B52DC00F}|{85A94395-C637-4B3C-9EBC-20228C0CCA13}|{E4153BAB-E86A-4D21-AD1D-78C2F031D279}|{1108BA16-DBAB-4C50-B7C9-12505C559ECE}
 ----field----
 field: {F6BA7B09-176F-4BB1-A680-C070D4B92C65}
 name: Image
@@ -49,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7fad210c-6a06-402a-a966-07ac7bc44121
+6e54b498-a50b-430c-bd29-c52f98e036d6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190327T131035Z
+20190328T122637Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

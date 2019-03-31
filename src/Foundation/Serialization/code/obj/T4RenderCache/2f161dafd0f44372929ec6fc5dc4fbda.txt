@@ -78,7 +78,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 	   
 						/// <summary>
 				/// The Left field.
-				/// <para></para>
+				/// <para>Value in percentage (%)</para>
 				/// <para>Field Type: Single-Line Text</para>		
 				/// <para>Field ID: 0c64bb2b-9145-4140-b6bd-dad404d34913</para>
 				/// <para>Custom Data: </para>
@@ -89,7 +89,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 					
 						/// <summary>
 				/// The Top field.
-				/// <para></para>
+				/// <para>Value in percentage (%)</para>
 				/// <para>Field Type: Single-Line Text</para>		
 				/// <para>Field ID: 24ceaac1-8ea4-4625-9d60-844ddf3f8eba</para>
 				/// <para>Custom Data: </para>

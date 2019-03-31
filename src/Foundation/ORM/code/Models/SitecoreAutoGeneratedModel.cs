@@ -1143,16 +1143,16 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 			public const string TemplateName = "ContactInfo";
 
 					
-			public static readonly ID Contact_TitleFieldId = new ID("8c21da68-3647-4b11-ae50-f456692e678e");
-			public const string Contact_TitleFieldName = "Contact Title";
+			public static readonly ID ImageFieldId = new ID("ddeb70ae-536a-492a-9635-b363eda13056");
+			public const string ImageFieldName = "Image";
 			
 					
-			public static readonly ID Contact_UrlFieldId = new ID("0a8939ea-cd6e-46c0-a61d-9489b4f660ea");
-			public const string Contact_UrlFieldName = "Contact Url";
+			public static readonly ID LinkUrlFieldId = new ID("0a8939ea-cd6e-46c0-a61d-9489b4f660ea");
+			public const string LinkUrlFieldName = "LinkUrl";
 			
 					
-			public static readonly ID TypeFieldId = new ID("ddeb70ae-536a-492a-9635-b363eda13056");
-			public const string TypeFieldName = "Type";
+			public static readonly ID TitleFieldId = new ID("8c21da68-3647-4b11-ae50-f456692e678e");
+			public const string TitleFieldName = "Title";
 			
 			
 
@@ -1171,37 +1171,37 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 	{
 	   
 						/// <summary>
-				/// The Contact Title field.
+				/// The Image field.
+				/// <para></para>
+				/// <para>Field Type: Image</para>		
+				/// <para>Field ID: ddeb70ae-536a-492a-9635-b363eda13056</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IContactInfoConstants.ImageFieldName)]
+				public virtual Image Image  {get; set;}
+					
+						/// <summary>
+				/// The LinkUrl field.
+				/// <para></para>
+				/// <para>Field Type: General Link</para>		
+				/// <para>Field ID: 0a8939ea-cd6e-46c0-a61d-9489b4f660ea</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IContactInfoConstants.LinkUrlFieldName)]
+				public virtual Link LinkUrl  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
 				/// <para>Field ID: 8c21da68-3647-4b11-ae50-f456692e678e</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IContactInfoConstants.Contact_TitleFieldName)]
-				public virtual string Contact_Title  {get; set;}
-					
-						/// <summary>
-				/// The Contact Url field.
-				/// <para></para>
-				/// <para>Field Type: Single-Line Text</para>		
-				/// <para>Field ID: 0a8939ea-cd6e-46c0-a61d-9489b4f660ea</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IContactInfoConstants.Contact_UrlFieldName)]
-				public virtual string Contact_Url  {get; set;}
-					
-						/// <summary>
-				/// The Type field.
-				/// <para></para>
-				/// <para>Field Type: Droplink</para>		
-				/// <para>Field ID: ddeb70ae-536a-492a-9635-b363eda13056</para>
-				/// <para>Custom Data: Type=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.ISettings</para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IContactInfoConstants.TypeFieldName)]
-				public virtual EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.ISettings Type  {get; set;}
+				[SitecoreField(IContactInfoConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
 					
 			
 	}
@@ -1270,7 +1270,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 	   
 						/// <summary>
 				/// The Left field.
-				/// <para></para>
+				/// <para>Value in percentage (%)</para>
 				/// <para>Field Type: Single-Line Text</para>		
 				/// <para>Field ID: 0c64bb2b-9145-4140-b6bd-dad404d34913</para>
 				/// <para>Custom Data: </para>
@@ -1281,7 +1281,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 					
 						/// <summary>
 				/// The Top field.
-				/// <para></para>
+				/// <para>Value in percentage (%)</para>
 				/// <para>Field Type: Single-Line Text</para>		
 				/// <para>Field ID: 24ceaac1-8ea4-4625-9d60-844ddf3f8eba</para>
 				/// <para>Custom Data: </para>
@@ -2312,34 +2312,34 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Contact
 	public partial interface I_ContactInfo : IGlassBase 
 	{
 								/// <summary>
-					/// The Contact Title field.
+					/// The Image field.
+					/// <para></para>
+					/// <para>Field Type: Image</para>		
+					/// <para>Field ID: ddeb70ae-536a-492a-9635-b363eda13056</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_ContactInfoConstants.ImageFieldName)]
+					Image Image  {get; set;}
+			
+								/// <summary>
+					/// The LinkUrl field.
+					/// <para></para>
+					/// <para>Field Type: General Link</para>		
+					/// <para>Field ID: 0a8939ea-cd6e-46c0-a61d-9489b4f660ea</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_ContactInfoConstants.LinkUrlFieldName)]
+					Link LinkUrl  {get; set;}
+			
+								/// <summary>
+					/// The Title field.
 					/// <para></para>
 					/// <para>Field Type: Single-Line Text</para>		
 					/// <para>Field ID: 8c21da68-3647-4b11-ae50-f456692e678e</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_ContactInfoConstants.Contact_TitleFieldName)]
-					string Contact_Title  {get; set;}
-			
-								/// <summary>
-					/// The Contact Url field.
-					/// <para></para>
-					/// <para>Field Type: Single-Line Text</para>		
-					/// <para>Field ID: 0a8939ea-cd6e-46c0-a61d-9489b4f660ea</para>
-					/// <para>Custom Data: </para>
-					/// </summary>
-					[SitecoreField(I_ContactInfoConstants.Contact_UrlFieldName)]
-					string Contact_Url  {get; set;}
-			
-								/// <summary>
-					/// The Type field.
-					/// <para></para>
-					/// <para>Field Type: Droplink</para>		
-					/// <para>Field ID: ddeb70ae-536a-492a-9635-b363eda13056</para>
-					/// <para>Custom Data: Type=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.ISettings</para>
-					/// </summary>
-					[SitecoreField(I_ContactInfoConstants.TypeFieldName)]
-					EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.ISettings Type  {get; set;}
+					[SitecoreField(I_ContactInfoConstants.TitleFieldName)]
+					string Title  {get; set;}
 			
 				}
 
@@ -2351,16 +2351,16 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Contact
 			public const string TemplateName = "_ContactInfo";
 
 					
-			public static readonly ID Contact_TitleFieldId = new ID("8c21da68-3647-4b11-ae50-f456692e678e");
-			public const string Contact_TitleFieldName = "Contact Title";
+			public static readonly ID ImageFieldId = new ID("ddeb70ae-536a-492a-9635-b363eda13056");
+			public const string ImageFieldName = "Image";
 			
 					
-			public static readonly ID Contact_UrlFieldId = new ID("0a8939ea-cd6e-46c0-a61d-9489b4f660ea");
-			public const string Contact_UrlFieldName = "Contact Url";
+			public static readonly ID LinkUrlFieldId = new ID("0a8939ea-cd6e-46c0-a61d-9489b4f660ea");
+			public const string LinkUrlFieldName = "LinkUrl";
 			
 					
-			public static readonly ID TypeFieldId = new ID("ddeb70ae-536a-492a-9635-b363eda13056");
-			public const string TypeFieldName = "Type";
+			public static readonly ID TitleFieldId = new ID("8c21da68-3647-4b11-ae50-f456692e678e");
+			public const string TitleFieldName = "Title";
 			
 			
 
@@ -2379,37 +2379,37 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Contact
 	{
 	   
 						/// <summary>
-				/// The Contact Title field.
+				/// The Image field.
+				/// <para></para>
+				/// <para>Field Type: Image</para>		
+				/// <para>Field ID: ddeb70ae-536a-492a-9635-b363eda13056</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_ContactInfoConstants.ImageFieldName)]
+				public virtual Image Image  {get; set;}
+					
+						/// <summary>
+				/// The LinkUrl field.
+				/// <para></para>
+				/// <para>Field Type: General Link</para>		
+				/// <para>Field ID: 0a8939ea-cd6e-46c0-a61d-9489b4f660ea</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_ContactInfoConstants.LinkUrlFieldName)]
+				public virtual Link LinkUrl  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
 				/// <para>Field ID: 8c21da68-3647-4b11-ae50-f456692e678e</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_ContactInfoConstants.Contact_TitleFieldName)]
-				public virtual string Contact_Title  {get; set;}
-					
-						/// <summary>
-				/// The Contact Url field.
-				/// <para></para>
-				/// <para>Field Type: Single-Line Text</para>		
-				/// <para>Field ID: 0a8939ea-cd6e-46c0-a61d-9489b4f660ea</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_ContactInfoConstants.Contact_UrlFieldName)]
-				public virtual string Contact_Url  {get; set;}
-					
-						/// <summary>
-				/// The Type field.
-				/// <para></para>
-				/// <para>Field Type: Droplink</para>		
-				/// <para>Field ID: ddeb70ae-536a-492a-9635-b363eda13056</para>
-				/// <para>Custom Data: Type=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.ISettings</para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_ContactInfoConstants.TypeFieldName)]
-				public virtual EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.ISettings Type  {get; set;}
+				[SitecoreField(I_ContactInfoConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
 					
 			
 	}
@@ -4126,7 +4126,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 	{
 								/// <summary>
 					/// The Left field.
-					/// <para></para>
+					/// <para>Value in percentage (%)</para>
 					/// <para>Field Type: Single-Line Text</para>		
 					/// <para>Field ID: 0c64bb2b-9145-4140-b6bd-dad404d34913</para>
 					/// <para>Custom Data: </para>
@@ -4136,7 +4136,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 			
 								/// <summary>
 					/// The Top field.
-					/// <para></para>
+					/// <para>Value in percentage (%)</para>
 					/// <para>Field Type: Single-Line Text</para>		
 					/// <para>Field ID: 24ceaac1-8ea4-4625-9d60-844ddf3f8eba</para>
 					/// <para>Custom Data: </para>
@@ -4205,7 +4205,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 	   
 						/// <summary>
 				/// The Left field.
-				/// <para></para>
+				/// <para>Value in percentage (%)</para>
 				/// <para>Field Type: Single-Line Text</para>		
 				/// <para>Field ID: 0c64bb2b-9145-4140-b6bd-dad404d34913</para>
 				/// <para>Custom Data: </para>
@@ -4216,7 +4216,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 					
 						/// <summary>
 				/// The Top field.
-				/// <para></para>
+				/// <para>Value in percentage (%)</para>
 				/// <para>Field Type: Single-Line Text</para>		
 				/// <para>Field ID: 24ceaac1-8ea4-4625-9d60-844ddf3f8eba</para>
 				/// <para>Custom Data: </para>

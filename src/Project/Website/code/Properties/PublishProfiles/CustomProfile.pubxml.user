@@ -525,6 +525,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="js/vendor/mobMenu.js">
       <publishTime>03/11/2019 15:17:19</publishTime>
     </File>
+    <File Include="js/vendor/select2.min.js">
+      <publishTime>03/31/2019 09:47:01</publishTime>
+    </File>
     <File Include="js/vendor/smooth_anchor_links.js">
       <publishTime>03/11/2019 15:17:19</publishTime>
     </File>
@@ -565,7 +568,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/10/2019 14:20:34</publishTime>
     </File>
     <File Include="Views/Shared/ECM/_baseLayout.cshtml">
-      <publishTime>03/25/2019 17:22:49</publishTime>
+      <publishTime>03/31/2019 11:24:57</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
       <publishTime>03/10/2019 14:20:34</publishTime>

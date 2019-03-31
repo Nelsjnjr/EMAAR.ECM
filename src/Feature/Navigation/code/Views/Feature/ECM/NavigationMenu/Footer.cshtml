@@ -46,42 +46,24 @@
                         <h2 class="footer-title upperCase">@Html.Glass().Editable(Model.Footer.Contact_Info, x => x.Title)</h2>
                         @{
                             //Loading Contact Types
-                            //Default setting ContactType as Phone
-                            CommonConstants.ContactTypes contactTypes = CommonConstants.ContactTypes.Phone;
+
                             foreach (var contactInfo in Model.Footer.Contact_Info.Contact_Infos)
                             {
-                                Enum.TryParse(contactInfo.Type.Key, out contactTypes);
                                 <ul>
-                                    @switch (contactTypes)
-                                    {
-                                        case CommonConstants.ContactTypes.Phone:
-                                            <li>
-                                                <a href="@contactInfo.Contact_Url">
-                                                    <i><img src="../images/icon/phone.svg" alt="phone" class="svg"></i>
-                                                    @Html.Glass().Editable(contactInfo, x => x.Contact_Title)
-                                                </a>
-                                            </li>
-                                            break;
-                                        case CommonConstants.ContactTypes.Map:
-                                            <li>
-                                                <a href="@contactInfo.Contact_Url">
-                                                    <i><img src="../images/icon/pin.svg" alt="phone" class="svg"></i>
-                                                    @Html.Glass().Editable(contactInfo, x => x.Contact_Title)
-                                                </a>
-                                            </li>
-                                            break;
-                                        case CommonConstants.ContactTypes.Email:
-                                            <li>
-                                                <a href="@contactInfo.Contact_Url" class="underlined">
-                                                    <i><img src="../images/icon/mail.svg" alt="phone" class="svg"></i>
-                                                    @Html.Glass().Editable(contactInfo, x => x.Contact_Title)
-                                                </a>
-                                            </li>
-                                            break;
-                                        default:
-                                            break;
-                                    }
+                                    <li>
+                                        @if (contactInfo.LinkUrl != null)
+                                        {
+                                            using (Html.Glass().BeginRenderLink(contactInfo, x => x.LinkUrl, isEditable: true))
+                                            {
+                                                <i>
+                                                    @Html.Glass().RenderImage(contactInfo, x => x.Image, new { @class = "svg" }, isEditable: true)
 
+                                                </i>
+                                                @Html.Glass().Editable(contactInfo, x => x.Title)
+
+                                            }
+                                        }    
+                                        </li>
                                 </ul>
                             }
                         }
