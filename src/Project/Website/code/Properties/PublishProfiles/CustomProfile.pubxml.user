@@ -10,16 +10,79 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="App_Config/Include/ECM/EMAAR.ECM.Project.Website.config">
-      <publishTime>03/27/2019 17:26:08</publishTime>
+      <publishTime>03/31/2019 15:06:06</publishTime>
     </File>
     <File Include="App_Config/Include/ECM/Sitecore.Project.Common.config">
       <publishTime>03/10/2019 17:07:24</publishTime>
     </File>
+    <File Include="App_Config/Include/Project/ECM/EMAAR.ECM.Project.Website.config">
+      <publishTime>04/01/2019 09:35:51</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>02/22/2013 08:43:40</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>02/22/2013 08:43:40</publishTime>
+    </File>
+    <File Include="bin/Castle.Core.dll">
+      <publishTime>10/10/2017 08:13:52</publishTime>
+    </File>
+    <File Include="bin/EMAAR.ECM.Foundation.Constants.dll">
+      <publishTime>04/01/2019 13:52:45</publishTime>
+    </File>
+    <File Include="bin/EMAAR.ECM.Foundation.Constants.dll.config">
+      <publishTime>03/26/2019 12:14:55</publishTime>
+    </File>
+    <File Include="bin/EMAAR.ECM.Foundation.Constants.pdb">
+      <publishTime>04/01/2019 13:52:45</publishTime>
+    </File>
+    <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.dll">
+      <publishTime>04/01/2019 12:16:01</publishTime>
+    </File>
+    <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.dll.config">
+      <publishTime>03/11/2019 10:11:29</publishTime>
+    </File>
+    <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.pdb">
+      <publishTime>04/01/2019 12:16:01</publishTime>
+    </File>
+    <File Include="bin/EMAAR.ECM.Foundation.ORM.dll">
+      <publishTime>04/01/2019 13:52:44</publishTime>
+    </File>
+    <File Include="bin/EMAAR.ECM.Foundation.ORM.dll.config">
+      <publishTime>03/10/2019 14:42:45</publishTime>
+    </File>
+    <File Include="bin/EMAAR.ECM.Foundation.ORM.pdb">
+      <publishTime>04/01/2019 13:52:44</publishTime>
+    </File>
     <File Include="bin/EMAAR.ECM.Project.Website.dll">
-      <publishTime>03/20/2019 12:45:05</publishTime>
+      <publishTime>04/01/2019 14:06:52</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Project.Website.pdb">
-      <publishTime>03/20/2019 12:45:05</publishTime>
+      <publishTime>04/01/2019 14:06:52</publishTime>
+    </File>
+    <File Include="bin/Glass.Mapper.dll">
+      <publishTime>02/25/2019 13:27:08</publishTime>
+    </File>
+    <File Include="bin/Glass.Mapper.pdb">
+      <publishTime>02/25/2019 13:27:08</publishTime>
+    </File>
+    <File Include="bin/Glass.Mapper.Sc.dll">
+      <publishTime>02/25/2019 13:27:08</publishTime>
+    </File>
+    <File Include="bin/Glass.Mapper.Sc.Mvc.dll">
+      <publishTime>02/25/2019 13:27:10</publishTime>
+    </File>
+    <File Include="bin/Glass.Mapper.Sc.Mvc.pdb">
+      <publishTime>02/25/2019 13:27:10</publishTime>
+    </File>
+    <File Include="bin/Glass.Mapper.Sc.pdb">
+      <publishTime>02/25/2019 13:27:08</publishTime>
+    </File>
+    <File Include="bin/Glass.Mapper.Sc.WebForms.dll">
+      <publishTime>02/25/2019 13:27:14</publishTime>
+    </File>
+    <File Include="bin/Glass.Mapper.Sc.WebForms.pdb">
+      <publishTime>02/25/2019 13:27:14</publishTime>
     </File>
     <File Include="bin/HtmlAgilityPack.dll">
       <publishTime>03/10/2019 14:20:19</publishTime>
@@ -261,6 +324,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/System.Web.Mvc.dll">
       <publishTime>03/10/2019 14:20:19</publishTime>
     </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
     <File Include="bin/System.Web.Razor.dll">
       <publishTime>03/10/2019 14:20:19</publishTime>
     </File>
@@ -276,6 +342,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/WebActivatorEx.dll">
       <publishTime>03/10/2019 14:20:27</publishTime>
     </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>01/23/2014 13:57:34</publishTime>
+    </File>
     <File Include="Content/bootstrap.css">
       <publishTime>03/10/2019 14:20:34</publishTime>
     </File>
@@ -288,14 +357,35 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="css/.DS_Store">
       <publishTime>03/11/2019 15:17:17</publishTime>
     </File>
+    <File Include="css/fancybox/fancy.css">
+      <publishTime>04/01/2019 09:32:29</publishTime>
+    </File>
+    <File Include="css/fancybox/fancybox_loading%402x.gif">
+      <publishTime>04/01/2019 09:32:29</publishTime>
+    </File>
+    <File Include="css/fancybox/fancybox_loading.gif">
+      <publishTime>04/01/2019 09:32:29</publishTime>
+    </File>
+    <File Include="css/fancybox/fancybox_overlay.png">
+      <publishTime>04/01/2019 09:32:29</publishTime>
+    </File>
+    <File Include="css/fancybox/fancybox_sprite%402x.png">
+      <publishTime>04/01/2019 09:32:29</publishTime>
+    </File>
+    <File Include="css/fancybox/fancybox_sprite.png">
+      <publishTime>04/01/2019 09:32:29</publishTime>
+    </File>
     <File Include="css/maps/style.css.map">
       <publishTime>03/11/2019 15:17:17</publishTime>
     </File>
     <File Include="css/style.css">
-      <publishTime>03/11/2019 15:17:17</publishTime>
+      <publishTime>04/01/2019 09:23:10</publishTime>
+    </File>
+    <File Include="css/vendors/select2.css">
+      <publishTime>04/01/2019 09:32:05</publishTime>
     </File>
     <File Include="css/vendors/swiper.css">
-      <publishTime>03/11/2019 15:17:17</publishTime>
+      <publishTime>04/01/2019 09:32:05</publishTime>
     </File>
     <File Include="EMAAR.ECM.Project.Website.ruleset">
       <publishTime>03/18/2019 16:52:51</publishTime>
@@ -486,6 +576,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="js/app.min.js">
       <publishTime>03/11/2019 15:17:19</publishTime>
     </File>
+    <File Include="js/bootstrap.min.js">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
     <File Include="js/bundle.js">
       <publishTime>03/11/2019 15:17:19</publishTime>
     </File>
@@ -498,7 +591,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="js/main.min.js">
       <publishTime>03/11/2019 15:17:19</publishTime>
     </File>
+    <File Include="js/modernizr.js">
+      <publishTime>03/10/2019 14:20:34</publishTime>
+    </File>
     <File Include="js/vendor/.DS_Store">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="js/vendor/bootstrap.min.js">
       <publishTime>03/11/2019 15:17:19</publishTime>
     </File>
     <File Include="js/vendor/bootstrap/bootstrap.min.js">
@@ -558,6 +657,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Scripts/modernizr-2.6.2.js">
       <publishTime>03/10/2019 14:20:34</publishTime>
     </File>
+    <File Include="Scripts/modernizr.js">
+      <publishTime>03/10/2019 14:20:34</publishTime>
+    </File>
     <File Include="Scripts/swiper-init.js">
       <publishTime>03/11/2019 15:17:17</publishTime>
     </File>
@@ -568,7 +670,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/10/2019 14:20:34</publishTime>
     </File>
     <File Include="Views/Shared/ECM/_baseLayout.cshtml">
-      <publishTime>03/31/2019 11:24:57</publishTime>
+      <publishTime>04/01/2019 14:12:29</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
       <publishTime>03/10/2019 14:20:34</publishTime>
@@ -578,6 +680,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Views/_ViewStart.cshtml">
       <publishTime>03/10/2019 14:20:34</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/31/2019 14:40:05</publishTime>
     </File>
   </ItemGroup>
 </Project>

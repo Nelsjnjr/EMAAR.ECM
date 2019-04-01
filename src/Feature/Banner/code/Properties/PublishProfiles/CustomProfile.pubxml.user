@@ -31,37 +31,37 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/10/2017 08:13:52</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Feature.Banner.dll">
-      <publishTime>03/31/2019 09:41:24</publishTime>
+      <publishTime>03/31/2019 15:16:35</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Feature.Banner.pdb">
-      <publishTime>03/31/2019 09:41:24</publishTime>
+      <publishTime>03/31/2019 15:16:35</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.Constants.dll">
-      <publishTime>03/31/2019 09:41:23</publishTime>
+      <publishTime>03/31/2019 15:16:34</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.Constants.dll.config">
       <publishTime>03/26/2019 12:14:55</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.Constants.pdb">
-      <publishTime>03/31/2019 09:41:23</publishTime>
+      <publishTime>03/31/2019 15:16:34</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.dll">
-      <publishTime>03/31/2019 09:41:22</publishTime>
+      <publishTime>03/31/2019 15:13:55</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.dll.config">
       <publishTime>03/11/2019 10:11:29</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.pdb">
-      <publishTime>03/31/2019 09:41:22</publishTime>
+      <publishTime>03/31/2019 15:13:55</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll">
-      <publishTime>03/31/2019 09:41:23</publishTime>
+      <publishTime>03/31/2019 15:16:34</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll.config">
       <publishTime>03/10/2019 14:42:45</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.pdb">
-      <publishTime>03/31/2019 09:41:23</publishTime>
+      <publishTime>03/31/2019 15:16:34</publishTime>
     </File>
     <File Include="bin/Glass.Mapper.dll">
       <publishTime>02/25/2019 13:27:08</publishTime>

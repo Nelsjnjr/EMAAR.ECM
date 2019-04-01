@@ -45,6 +45,24 @@
     <CodeAnalysisRuleSet>EMAAR.ECM.Project.Website.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Castle.Core.4.2.1\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Glass.Mapper, Version=5.3.17.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Glass.Mapper.Sc.90.Core.5.3.17\lib\net462\Glass.Mapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Glass.Mapper.Sc, Version=5.3.17.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Glass.Mapper.Sc.90.Core.5.3.17\lib\net462\Glass.Mapper.Sc.dll</HintPath>
+    </Reference>
+    <Reference Include="Glass.Mapper.Sc.Mvc, Version=5.3.17.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Glass.Mapper.Sc.90.Mvc.5.3.17\lib\net462\Glass.Mapper.Sc.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Glass.Mapper.Sc.WebForms, Version=5.3.17.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Glass.Mapper.Sc.90.WebForms.5.3.17\lib\net462\Glass.Mapper.Sc.WebForms.dll</HintPath>
+    </Reference>
     <Reference Include="HtmlAgilityPack, Version=1.4.9.5, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\HtmlAgilityPack.1.4.9.5\lib\Net45\HtmlAgilityPack.dll</HintPath>
     </Reference>
@@ -166,6 +184,9 @@
     <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
     </Reference>
@@ -188,6 +209,9 @@
     <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\WebActivatorEx.2.0.3\lib\net40\WebActivatorEx.dll</HintPath>
     </Reference>
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Web.Infrastructure">
@@ -198,7 +222,14 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="css\fancybox\fancy.css" />
+    <Content Include="css\fancybox\fancybox_loading%402x.gif" />
+    <Content Include="css\fancybox\fancybox_loading.gif" />
+    <Content Include="css\fancybox\fancybox_overlay.png" />
+    <Content Include="css\fancybox\fancybox_sprite%402x.png" />
+    <Content Include="css\fancybox\fancybox_sprite.png" />
     <Content Include="css\style.css" />
+    <Content Include="css\vendors\select2.css" />
     <Content Include="css\vendors\swiper.css" />
     <Content Include="fonts\1069d95068cdf58f125fe7df3221f5f7.svg" />
     <Content Include="fonts\4f2bf8530c19ba6a7c0e161d71fc65a5.svg" />
@@ -253,21 +284,12 @@
     <Content Include="js\jquery.min.js" />
     <Content Include="js\main.js" />
     <Content Include="js\main.min.js" />
-    <Content Include="js\vendor\bootstrap\bootstrap.min.js" />
-    <Content Include="js\vendor\jquery-ui.min.js" />
+    <Content Include="js\vendor\bootstrap.min.js" />
     <Content Include="js\vendor\jquery.counterup.min.js" />
-    <Content Include="js\vendor\jquery.scrollTo-1.4.2-min.js" />
-    <Content Include="js\vendor\jquery.validate.js" />
-    <Content Include="js\vendor\jquery.validate.unobtrusive.min.js" />
     <Content Include="js\vendor\map-popup.js" />
-    <Content Include="js\vendor\mobMenu.js" />
     <Content Include="js\vendor\select2.min.js" />
-    <Content Include="js\vendor\smooth_anchor_links.js" />
     <Content Include="js\vendor\swiper.min.js" />
-    <Content Include="js\vendor\utils.js" />
     <Content Include="js\vendor\wow.min.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="css\.DS_Store" />
     <Content Include="css\maps\style.css.map" />
     <Content Include="fonts\1069d95068cdf58f125fe7df3221f5f7.eot" />
@@ -279,25 +301,18 @@
     <Content Include="fonts\4f2bf8530c19ba6a7c0e161d71fc65a5.woff" />
     <Content Include="fonts\4f2bf8530c19ba6a7c0e161d71fc65a5.woff2" />
     <Content Include="images\.DS_Store" />
-    <Content Include="js\.DS_Store" />
-    <Content Include="js\vendor\.DS_Store" />
-    <Content Include="App_Config\Include\ECM\EMAAR.ECM.Project.Website.config" />
+    <Content Include="App_Config\Include\Project\ECM\EMAAR.ECM.Project.Website.config" />
     <Content Include="EMAAR.ECM.Project.Website.ruleset" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\swiper-init.js" />
-    <Content Include="Scripts\swiper.min.js" />
+    <Content Include="js\modernizr.js" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Shared\ECM\_baseLayout.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\RegisterPlatformBundles.cs" />
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -313,8 +328,28 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="Interfaces\" />
     <Folder Include="Models\" />
+    <Folder Include="Repositories\" />
     <Folder Include="Views\ECM\" />
+    <Folder Include="Views\Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\Constants\code\EMAAR.ECM.Foundation.Constants.csproj">
+      <Project>{5a9c69d0-c859-4df1-ac9c-4ef90d684b2b}</Project>
+      <Name>EMAAR.ECM.Foundation.Constants</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\DependencyInjection\code\EMAAR.ECM.Foundation.DependencyInjection.csproj">
+      <Project>{e7acc4fc-b18c-45a3-8871-d4ae93471623}</Project>
+      <Name>EMAAR.ECM.Foundation.DependencyInjection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\ORM\code\EMAAR.ECM.Foundation.ORM.csproj">
+      <Project>{06009ba6-b14b-4018-9209-f483cb820555}</Project>
+      <Name>EMAAR.ECM.Foundation.ORM</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

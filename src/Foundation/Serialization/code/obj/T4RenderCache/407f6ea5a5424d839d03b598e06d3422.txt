@@ -60,6 +60,18 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 			public static readonly ID Site_LogoFieldId = new ID("59e823a8-3da8-40be-8799-03acae2a4457");
 			public const string Site_LogoFieldName = "Site Logo";
 			
+					
+			public static readonly ID Post_Site_ScriptsFieldId = new ID("b0e24d12-34b3-4985-be53-bdf2b3ad9711");
+			public const string Post_Site_ScriptsFieldName = "Post Site scripts";
+			
+					
+			public static readonly ID Pre_Site_ScriptsFieldId = new ID("67c36a77-5a20-4fd3-ad59-54f50be2d851");
+			public const string Pre_Site_ScriptsFieldName = "Pre Site scripts";
+			
+					
+			public static readonly ID Robots_File_AccessFieldId = new ID("1f0ad353-b94c-4b2e-b135-dd129e1a2509");
+			public const string Robots_File_AccessFieldName = "Robots File access";
+			
 			
 
 	}
@@ -141,6 +153,39 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(ISiteRootConstants.Site_LogoFieldName)]
 				public virtual Image Site_Logo  {get; set;}
+					
+						/// <summary>
+				/// The Post Site scripts field.
+				/// <para></para>
+				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field ID: b0e24d12-34b3-4985-be53-bdf2b3ad9711</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(ISiteRootConstants.Post_Site_ScriptsFieldName)]
+				public virtual string Post_Site_Scripts  {get; set;}
+					
+						/// <summary>
+				/// The Pre Site scripts field.
+				/// <para></para>
+				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field ID: 67c36a77-5a20-4fd3-ad59-54f50be2d851</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(ISiteRootConstants.Pre_Site_ScriptsFieldName)]
+				public virtual string Pre_Site_Scripts  {get; set;}
+					
+						/// <summary>
+				/// The Robots File access field.
+				/// <para></para>
+				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field ID: 1f0ad353-b94c-4b2e-b135-dd129e1a2509</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(ISiteRootConstants.Robots_File_AccessFieldName)]
+				public virtual string Robots_File_Access  {get; set;}
 					
 			
 	}

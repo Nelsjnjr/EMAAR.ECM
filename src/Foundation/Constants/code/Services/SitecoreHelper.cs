@@ -57,6 +57,7 @@ namespace EMAAR.ECM.Foundation.Constants
         /// </summary>
         public string ContentPageClose => _mvcContext()?.SitecoreService.GetItem<IIconImages>
             ($"{Sitecore.Context.Site.RootPath}{SitecoreSettings.ContentPageClose}")?.Image?.Src ?? string.Empty;
+        public ISiteRoot SiteRootItemContent => _mvcContext()?.GetRootItem<ISiteRoot>();
         #endregion
 
     }

@@ -16,7 +16,8 @@ namespace EMAAR.ECM.Feature.Map.Controllers
         #region construtor     
         public MapController(IMapRepository mapRepository, ISitecoreHelper sitecoreHelper)
         {
-            _mapRepository = mapRepository;
+           
+               _mapRepository = mapRepository;
         }
         #endregion
         #region method     

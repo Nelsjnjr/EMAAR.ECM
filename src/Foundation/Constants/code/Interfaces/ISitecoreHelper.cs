@@ -1,4 +1,6 @@
-﻿namespace EMAAR.ECM.Foundation.Constants.Interfaces
+﻿using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
+
+namespace EMAAR.ECM.Foundation.Constants.Interfaces
 {
     /// <summary>
     /// This SitecoreHelper interface used to retrieve common data from Sitecore
@@ -31,6 +33,7 @@
         /// </summary>
         string ContentPageClose { get; }
 
+        ISiteRoot SiteRootItemContent { get; }
         #endregion
 
     }
