@@ -1,11 +1,11 @@
 ﻿using EMAAR.ECM.Foundation.Constants;
+using EMAAR.ECM.Foundation.DependencyInjection;
 using EMAAR.ECM.Foundation.Search.Helpers;
 using EMAAR.ECM.Foundation.Search.Interfaces;
 using EMAAR.ECM.Foundation.Search.Models;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.Linq;
 using Sitecore.ContentSearch.SearchTypes;
-using Sitecore.Foundation.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
