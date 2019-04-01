@@ -55,6 +55,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Feature.Navigatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Foundation.Constants", "src\Foundation\Constants\code\EMAAR.ECM.Foundation.Constants.csproj", "{5A9C69D0-C859-4DF1-AC9C-4EF90D684B2B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SEO", "SEO", "{30556D28-564D-4EE5-A23C-56F25E6D5D22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Feature.SEO", "src\Feature\SEO\code\EMAAR.ECM.Feature.SEO.csproj", "{8C92C840-ACD8-4247-AA08-F349A31A8A36}"
+EndProject 
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -101,6 +105,10 @@ Global
 		{5A9C69D0-C859-4DF1-AC9C-4EF90D684B2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A9C69D0-C859-4DF1-AC9C-4EF90D684B2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A9C69D0-C859-4DF1-AC9C-4EF90D684B2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C92C840-ACD8-4247-AA08-F349A31A8A36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C92C840-ACD8-4247-AA08-F349A31A8A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C92C840-ACD8-4247-AA08-F349A31A8A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C92C840-ACD8-4247-AA08-F349A31A8A36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -125,9 +133,11 @@ Global
 		{2E0C4C0C-6CE9-47CF-9FDC-A1065EF60B0A} = {604F352B-C7D7-4F79-92B2-1F4DAF1F5320}
 		{70787CF6-A67E-4DB3-868D-48230C93860C} = {4E5BB3FA-FAD3-46BB-AA03-C0F905885408}
 		{5A9C69D0-C859-4DF1-AC9C-4EF90D684B2B} = {F721D22A-FB5B-431A-A0AF-D36E37544DB9}
+		{30556D28-564D-4EE5-A23C-56F25E6D5D22} = {FFE7C731-AB9F-4B1A-981C-5024ABF419E4}
+		{8C92C840-ACD8-4247-AA08-F349A31A8A36} = {30556D28-564D-4EE5-A23C-56F25E6D5D22}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {19DFE5D1-44BF-4ED4-8BC4-548544D4F79B}
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {19DFE5D1-44BF-4ED4-8BC4-548544D4F79B}
 	EndGlobalSection
 EndGlobal

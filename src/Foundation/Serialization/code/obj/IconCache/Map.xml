@@ -836,16 +836,11 @@
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/Navigation/Get in touch/we care" ItemIcon="/temp/iconcache/office/32x32/id_card.png" />
   <Item ItemPath="/sitecore/templates/Feature/ECM/Header/_Header/__Standard Values" ItemIcon="/temp/iconcache/office/32x32/document_header.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_SiteScriptsTags/Scripts/Pre Site scripts" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
-  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_SiteScriptsTags" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_SiteScriptsTags/__Standard Values" ItemIcon="/temp/iconcache/applications/32x32/form_blue.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_SiteScriptsTags/Scripts" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_SiteScriptsTags/Scripts/Post Site scripts" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
-  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Robots/Robots" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
-  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Robots" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
-  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Robots/__Standard Values" ItemIcon="/temp/iconcache/applications/32x32/form_blue.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Robots/Robots/Robots File access" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_SiteRoot" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
-  <Item ItemPath="/sitecore/content/ECM/DowntownDubai" ItemIcon="/temp/iconcache/network/16x16/earth.png" />
   <Item ItemPath="/sitecore/templates/Feature/ECM/Banner/_ImageText" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
   <Item ItemPath="/sitecore/templates/Feature/ECM/Banner/_ImageText/__Standard Values" ItemIcon="/temp/iconcache/applications/32x32/form_blue.png" />
   <Item ItemPath="/sitecore/templates/Feature/ECM/Community Metrics/_Community Metric/__Standard Values" ItemIcon="/temp/IconCache/multimedia/32x32/image_h.png" />
@@ -853,4 +848,10 @@
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_Base" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_SiteRoot/__Standard Values" ItemIcon="/temp/IconCache/Network/16x16/earth.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Home" ItemIcon="/temp/iconcache/network/16x16/home.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Robots/Robots/Robots File content" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Robots" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Robots/__Standard Values" ItemIcon="/temp/iconcache/applications/32x32/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Robots/Robots" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai" ItemIcon="/temp/iconcache/network/16x16/earth.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_SiteScriptsTags" ItemIcon="/temp/iconcache/applications/32x32/form_blue.png" />
 </ItemIconCache>

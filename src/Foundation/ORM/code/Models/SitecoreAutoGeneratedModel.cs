@@ -669,7 +669,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 								/// <summary>
 					/// The Post Site scripts field.
 					/// <para></para>
-					/// <para>Field Type: Rich Text</para>		
+					/// <para>Field Type: Multi-Line Text</para>		
 					/// <para>Field ID: b0e24d12-34b3-4985-be53-bdf2b3ad9711</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
@@ -679,7 +679,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 								/// <summary>
 					/// The Pre Site scripts field.
 					/// <para></para>
-					/// <para>Field Type: Rich Text</para>		
+					/// <para>Field Type: Multi-Line Text</para>		
 					/// <para>Field ID: 67c36a77-5a20-4fd3-ad59-54f50be2d851</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
@@ -722,7 +722,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 						/// <summary>
 				/// The Post Site scripts field.
 				/// <para></para>
-				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field Type: Multi-Line Text</para>		
 				/// <para>Field ID: b0e24d12-34b3-4985-be53-bdf2b3ad9711</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
@@ -733,7 +733,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 						/// <summary>
 				/// The Pre Site scripts field.
 				/// <para></para>
-				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field Type: Multi-Line Text</para>		
 				/// <para>Field ID: 67c36a77-5a20-4fd3-ad59-54f50be2d851</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
@@ -1665,8 +1665,8 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 			public const string Pre_Site_ScriptsFieldName = "Pre Site scripts";
 			
 					
-			public static readonly ID Robots_File_AccessFieldId = new ID("1f0ad353-b94c-4b2e-b135-dd129e1a2509");
-			public const string Robots_File_AccessFieldName = "Robots File access";
+			public static readonly ID Robots_File_ContentFieldId = new ID("1f0ad353-b94c-4b2e-b135-dd129e1a2509");
+			public const string Robots_File_ContentFieldName = "Robots File content";
 			
 			
 
@@ -1753,7 +1753,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 						/// <summary>
 				/// The Post Site scripts field.
 				/// <para></para>
-				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field Type: Multi-Line Text</para>		
 				/// <para>Field ID: b0e24d12-34b3-4985-be53-bdf2b3ad9711</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
@@ -1764,7 +1764,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 						/// <summary>
 				/// The Pre Site scripts field.
 				/// <para></para>
-				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field Type: Multi-Line Text</para>		
 				/// <para>Field ID: 67c36a77-5a20-4fd3-ad59-54f50be2d851</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
@@ -1773,15 +1773,15 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 				public virtual string Pre_Site_Scripts  {get; set;}
 					
 						/// <summary>
-				/// The Robots File access field.
+				/// The Robots File content field.
 				/// <para></para>
 				/// <para>Field Type: Rich Text</para>		
 				/// <para>Field ID: 1f0ad353-b94c-4b2e-b135-dd129e1a2509</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_SiteRootConstants.Robots_File_AccessFieldName)]
-				public virtual string Robots_File_Access  {get; set;}
+				[SitecoreField(I_SiteRootConstants.Robots_File_ContentFieldName)]
+				public virtual string Robots_File_Content  {get; set;}
 					
 			
 	}
@@ -2069,8 +2069,8 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 			public const string Pre_Site_ScriptsFieldName = "Pre Site scripts";
 			
 					
-			public static readonly ID Robots_File_AccessFieldId = new ID("1f0ad353-b94c-4b2e-b135-dd129e1a2509");
-			public const string Robots_File_AccessFieldName = "Robots File access";
+			public static readonly ID Robots_File_ContentFieldId = new ID("1f0ad353-b94c-4b2e-b135-dd129e1a2509");
+			public const string Robots_File_ContentFieldName = "Robots File content";
 			
 			
 
@@ -2157,7 +2157,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 						/// <summary>
 				/// The Post Site scripts field.
 				/// <para></para>
-				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field Type: Multi-Line Text</para>		
 				/// <para>Field ID: b0e24d12-34b3-4985-be53-bdf2b3ad9711</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
@@ -2168,7 +2168,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 						/// <summary>
 				/// The Pre Site scripts field.
 				/// <para></para>
-				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field Type: Multi-Line Text</para>		
 				/// <para>Field ID: 67c36a77-5a20-4fd3-ad59-54f50be2d851</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
@@ -2177,15 +2177,15 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 				public virtual string Pre_Site_Scripts  {get; set;}
 					
 						/// <summary>
-				/// The Robots File access field.
+				/// The Robots File content field.
 				/// <para></para>
 				/// <para>Field Type: Rich Text</para>		
 				/// <para>Field ID: 1f0ad353-b94c-4b2e-b135-dd129e1a2509</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(ISiteRootConstants.Robots_File_AccessFieldName)]
-				public virtual string Robots_File_Access  {get; set;}
+				[SitecoreField(ISiteRootConstants.Robots_File_ContentFieldName)]
+				public virtual string Robots_File_Content  {get; set;}
 					
 			
 	}
@@ -2327,8 +2327,8 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 			public const string Pre_Site_ScriptsFieldName = "Pre Site scripts";
 			
 					
-			public static readonly ID Robots_File_AccessFieldId = new ID("1f0ad353-b94c-4b2e-b135-dd129e1a2509");
-			public const string Robots_File_AccessFieldName = "Robots File access";
+			public static readonly ID Robots_File_ContentFieldId = new ID("1f0ad353-b94c-4b2e-b135-dd129e1a2509");
+			public const string Robots_File_ContentFieldName = "Robots File content";
 			
 			
 
@@ -2415,7 +2415,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 						/// <summary>
 				/// The Post Site scripts field.
 				/// <para></para>
-				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field Type: Multi-Line Text</para>		
 				/// <para>Field ID: b0e24d12-34b3-4985-be53-bdf2b3ad9711</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
@@ -2426,7 +2426,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 						/// <summary>
 				/// The Pre Site scripts field.
 				/// <para></para>
-				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field Type: Multi-Line Text</para>		
 				/// <para>Field ID: 67c36a77-5a20-4fd3-ad59-54f50be2d851</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
@@ -2435,15 +2435,15 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 				public virtual string Pre_Site_Scripts  {get; set;}
 					
 						/// <summary>
-				/// The Robots File access field.
+				/// The Robots File content field.
 				/// <para></para>
 				/// <para>Field Type: Rich Text</para>		
 				/// <para>Field ID: 1f0ad353-b94c-4b2e-b135-dd129e1a2509</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_BaseConstants.Robots_File_AccessFieldName)]
-				public virtual string Robots_File_Access  {get; set;}
+				[SitecoreField(I_BaseConstants.Robots_File_ContentFieldName)]
+				public virtual string Robots_File_Content  {get; set;}
 					
 			
 	}
@@ -3775,14 +3775,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 	public partial interface I_Robots : IGlassBase 
 	{
 								/// <summary>
-					/// The Robots File access field.
+					/// The Robots File content field.
 					/// <para></para>
 					/// <para>Field Type: Rich Text</para>		
 					/// <para>Field ID: 1f0ad353-b94c-4b2e-b135-dd129e1a2509</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_RobotsConstants.Robots_File_AccessFieldName)]
-					string Robots_File_Access  {get; set;}
+					[SitecoreField(I_RobotsConstants.Robots_File_ContentFieldName)]
+					string Robots_File_Content  {get; set;}
 			
 				}
 
@@ -3794,8 +3794,8 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 			public const string TemplateName = "_Robots";
 
 					
-			public static readonly ID Robots_File_AccessFieldId = new ID("1f0ad353-b94c-4b2e-b135-dd129e1a2509");
-			public const string Robots_File_AccessFieldName = "Robots File access";
+			public static readonly ID Robots_File_ContentFieldId = new ID("1f0ad353-b94c-4b2e-b135-dd129e1a2509");
+			public const string Robots_File_ContentFieldName = "Robots File content";
 			
 			
 
@@ -3814,15 +3814,15 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 	{
 	   
 						/// <summary>
-				/// The Robots File access field.
+				/// The Robots File content field.
 				/// <para></para>
 				/// <para>Field Type: Rich Text</para>		
 				/// <para>Field ID: 1f0ad353-b94c-4b2e-b135-dd129e1a2509</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_RobotsConstants.Robots_File_AccessFieldName)]
-				public virtual string Robots_File_Access  {get; set;}
+				[SitecoreField(I_RobotsConstants.Robots_File_ContentFieldName)]
+				public virtual string Robots_File_Content  {get; set;}
 					
 			
 	}

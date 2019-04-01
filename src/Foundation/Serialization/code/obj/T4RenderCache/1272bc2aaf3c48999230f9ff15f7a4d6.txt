@@ -30,7 +30,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 								/// <summary>
 					/// The Post Site scripts field.
 					/// <para></para>
-					/// <para>Field Type: Rich Text</para>		
+					/// <para>Field Type: Multi-Line Text</para>		
 					/// <para>Field ID: b0e24d12-34b3-4985-be53-bdf2b3ad9711</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
@@ -40,7 +40,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 								/// <summary>
 					/// The Pre Site scripts field.
 					/// <para></para>
-					/// <para>Field Type: Rich Text</para>		
+					/// <para>Field Type: Multi-Line Text</para>		
 					/// <para>Field ID: 67c36a77-5a20-4fd3-ad59-54f50be2d851</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
@@ -83,7 +83,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 						/// <summary>
 				/// The Post Site scripts field.
 				/// <para></para>
-				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field Type: Multi-Line Text</para>		
 				/// <para>Field ID: b0e24d12-34b3-4985-be53-bdf2b3ad9711</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
@@ -94,7 +94,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 						/// <summary>
 				/// The Pre Site scripts field.
 				/// <para></para>
-				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field Type: Multi-Line Text</para>		
 				/// <para>Field ID: 67c36a77-5a20-4fd3-ad59-54f50be2d851</para>
 				/// <para>Custom Data: </para>
 				/// </summary>

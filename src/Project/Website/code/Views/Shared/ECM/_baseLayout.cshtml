@@ -1,6 +1,6 @@
 ﻿@using System.Web.Optimization
 @using Glass.Mapper.Sc.Web.Mvc
-
+@using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +17,7 @@
     @{
         //Getting Page Pre site scripts
         var SiteRoot = Sitecore.Context.Database.GetItem(Sitecore.Context.Site.RootPath);
-        @Html.Raw(SiteRoot.Fields["Pre Site Scripts"].Value)
+        @Html.Raw(SiteRoot.Fields[I_SiteScriptsTagsConstants.Pre_Site_ScriptsFieldName].Value)
     }
 </head>
 <body>
@@ -36,7 +36,7 @@
     @Scripts.Render("/bundles/app")
     @Scripts.Render("/bundles/main")
     <!--Getting Page Post site scripts-->
-    @Html.Raw(SiteRoot.Fields["Pre Site Scripts"].Value)
+    @Html.Raw(SiteRoot.Fields[I_SiteScriptsTagsConstants.Post_Site_ScriptsFieldName].Value)
 
 </body>
 </html>

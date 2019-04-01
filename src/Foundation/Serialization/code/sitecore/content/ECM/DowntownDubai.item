@@ -13,7 +13,7 @@ created: 20190311T112008Z
 ----version----
 language: en
 version: 1
-revision: d7cc20d4-31aa-488f-9aec-911631596d2b
+revision: 12b431a5-9e7d-4965-87db-45e661ac772c
 
 ----field----
 field: {45D89051-7992-4D9F-9979-85DD606CB56C}
@@ -50,6 +50,23 @@ key: site logo url
 content-length: 133
 
 <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{34853065-F482-4073-9AE0-73E2E2FBFEF3}" />
+----field----
+field: {1F0AD353-B94C-4B2E-B135-DD129E1A2509}
+name: Robots File content
+key: robots file content
+content-length: 240
+
+User-agent: *
+Disallow: /sitecore
+Disallow: /Sitecore
+Disallow: /sitecore_files/
+Disallow: /sitecore modules/
+Disallow: /App_Browsers/
+Disallow: /App_config/
+Disallow: /App_Data/
+Disallow: /temp/
+Disallow: /upload/
+Disallow: /xsl/
 ----field----
 field: {67C36A77-5A20-4FD3-AD59-54F50BE2D851}
 name: Pre Site scripts
@@ -95,14 +112,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d7cc20d4-31aa-488f-9aec-911631596d2b
+12b431a5-9e7d-4965-87db-45e661ac772c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190401T070906Z
+20190401T104052Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
