@@ -130,7 +130,6 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\Constants\code\obj\Debug\E
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\Constants\code\obj\Debug\EMAAR.ECM.Foundation.Constants.csproj.CopyComplete
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\Constants\code\obj\Debug\EMAAR.ECM.Foundation.Constants.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\Constants\code\obj\Debug\EMAAR.ECM.Foundation.Constants.pdb
-D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\bin\EMAAR.ECM.Foundation.Constants.dll.config
 D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\bin\EMAAR.ECM.Foundation.Constants.dll
 D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\bin\EMAAR.ECM.Foundation.Constants.pdb
 D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\bin\roslyn\csc.exe
@@ -219,9 +218,7 @@ D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\bin\System
 D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\bin\System.Web.WebPages.Razor.dll
 D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\bin\WebGrease.dll
 D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\bin\EMAAR.ECM.Foundation.DependencyInjection.pdb
-D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\bin\EMAAR.ECM.Foundation.DependencyInjection.dll.config
 D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\bin\EMAAR.ECM.Foundation.ORM.pdb
-D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\bin\EMAAR.ECM.Foundation.ORM.dll.config
 D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\bin\Castle.Core.xml
 D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\bin\Glass.Mapper.pdb
 D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\bin\Glass.Mapper.xml
@@ -257,8 +254,11 @@ D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\bin\Antlr3
 D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\bin\System.Diagnostics.DiagnosticSource.xml
 D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\obj\Debug\EMAAR.ECM.Foundation.Constants.dll
+D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\obj\Debug\EMAAR.ECM.Foundation.Constants.pdb
+D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\bin\EMAAR.ECM.Foundation.Constants.dll.config
+D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\bin\EMAAR.ECM.Foundation.DependencyInjection.dll.config
+D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\bin\EMAAR.ECM.Foundation.ORM.dll.config
 D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\obj\Debug\EMAAR.ECM.Foundation.Constants.csprojAssemblyReference.cache
 D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\obj\Debug\EMAAR.ECM.Foundation.Constants.csproj.CoreCompileInputs.cache
 D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\obj\Debug\EMAAR.ECM.Foundation.Constants.csproj.CopyComplete
-D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\obj\Debug\EMAAR.ECM.Foundation.Constants.dll
-D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\Constants\code\obj\Debug\EMAAR.ECM.Foundation.Constants.pdb
