@@ -33,11 +33,11 @@
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>.\bin\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <SitecoreWebUrl>http://sc1.local</SitecoreWebUrl>
+    <SitecoreWebUrl>http://emaar.ecm.local</SitecoreWebUrl>
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
     <DisableFileDeployment>False</DisableFileDeployment>
     <LightningDeployMode>False</LightningDeployMode>
-    <SitecoreDeployFolder>D:\Nelson\sc1.local</SitecoreDeployFolder>
+    <SitecoreDeployFolder>C:\inetpub\wwwroot\EMAAR.ECM.dev</SitecoreDeployFolder>
     <SitecoreAccessGuid>212f81c0-a79c-48f2-a93f-eeb2fb9cacb7</SitecoreAccessGuid>
     <PackageName>EMAAR.ECM.Foundation.Serialization.Master</PackageName>
     <PackageAuthor />

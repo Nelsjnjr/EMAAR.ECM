@@ -26,8 +26,7 @@ if (fs.existsSync("./gulp-config.js.user")) {
 
 module.exports.config = config;
 
-helix.header("The Habitat source code, tools and processes are examples of Sitecore Helix.",
-    "Habitat is not supported by Sitecore and should be used at your own risk.");
+helix.header("EMAAR ECM Helix Principles based Solution.");
 
 gulp.task("default",
     function(callback) {
