@@ -1,5 +1,5 @@
-﻿using System.Web.Optimization;
-using EMAAR.ECM.Foundation.Constants;
+﻿using System.Collections.Generic;
+using System.Web.Optimization;
 using Sitecore;
 using Sitecore.Pipelines;
 
@@ -11,21 +11,33 @@ namespace EMAAR.ECM.Project.Website.App_Start
         public virtual void Process(PipelineArgs args)
         {
             RegisterBundles(BundleTable.Bundles);
-          
+
         }
 
         private void RegisterBundles(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include("~/js/jquery.min.js"));
-            bundles.Add(new ScriptBundle("~/bundles/vendor").IncludeDirectory("~/js/vendor/", "*.js", true));
-            bundles.Add(new ScriptBundle("~/bundles/main").Include("~/js/main.js"));
-            bundles.Add(new ScriptBundle("~/bundles/app").Include("~/js/app.js"));
-            // Use the development version of Modernizr to develop with and learn from. Then, when you're
-            // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
-            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                      "~/js/modernizr.js"));
-          
+            Bundle scriptBundle = new ScriptBundle("~/bundles/jquery")
+                .Include("~/js/modernizr.js")
+                        .Include("~/js/jquery.js")
+                        .Include("~/js/vendor/bootstrap.js")
+                        .Include("~/js/vendor/swiper.js")
+                        .Include("~/js/app.js")
+                        .Include("~/js/main.js");
+
+            scriptBundle.Orderer = new AsIsBundleOrderer();
+            bundles.Add(scriptBundle);
             BundleTable.EnableOptimizations = true;
+        }
+
+    }
+    public sealed class AsIsBundleOrderer : IBundleOrderer
+    {
+
+        public IEnumerable<BundleFile> OrderFiles(BundleContext context, IEnumerable<BundleFile> files)
+
+        {
+
+            return files;
 
         }
 

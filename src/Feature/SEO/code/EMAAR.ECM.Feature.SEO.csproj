@@ -215,6 +215,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Site.css" />
     <Content Include="App_Config\Include\Feature\ECM\EMAAR.ECM.Foundation.SEO.config">
       <SubType>Designer</SubType>
     </Content>
