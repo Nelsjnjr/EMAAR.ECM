@@ -212,10 +212,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\NavigationMenuController.cs" />
-    <Compile Include="Interface\IFooterViewModel.cs" />
     <Compile Include="Interface\IHeaderViewModel.cs" />
     <Compile Include="Interface\INavigationMenuRepository.cs" />
-    <Compile Include="Models\FooterViewModel.cs" />
     <Compile Include="Models\HeaderViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\NavigationMenuRepository.cs" />

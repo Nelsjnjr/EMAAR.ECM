@@ -3,9 +3,8 @@ using System.Web.Mvc;
 using EMAAR.ECM.Feature.Banner.Interfaces;
 using EMAAR.ECM.Foundation.Constants.Interfaces;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Banner;
-using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Community_Metrics;
-using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Content_Slides;
-using static EMAAR.ECM.Foundation.Constants.CommonConstants;
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Hero;
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Homepage_carousel;
 using static EMAAR.ECM.Foundation.Constants.Settings.SitecoreSettings;
 #endregion
 namespace EMAAR.ECM.Feature.Banner.Controllers
@@ -29,34 +28,42 @@ namespace EMAAR.ECM.Feature.Banner.Controllers
         #endregion
         #region method
         /// <summary>
-        /// Getting 3 variants of ImageText components(Left,Right and Background)
+        /// Getting 2 variants of ImageText components(Left,Right )
         /// </summary>
         /// <returns>ImageText component variation based on parameter selected from Sitecore</returns>
         public ActionResult ImageText()
         {
-            IImageText imageText = _bannerRepository.GetBannerVariants(out Alignment alignment);
-            ViewBag.Variants = alignment;
-            ViewBag.RightArrow = _sitecoreHelper.RightArrow;
+            IImageText imageText = _bannerRepository.GetImageText();
             return View($"{ViewPath}Banner/ImageText/ImageText.cshtml", imageText);
+        }
+        /// <summary>
+        /// Getting 2 variants of Parallax components(background image )
+        /// </summary>
+        /// <returns>Parallax</returns>
+        public ActionResult Parallax()
+        {
+            IParallax parallax = _bannerRepository.GetParallax();
+            ViewBag.RightArrow = _sitecoreHelper.RightArrow;
+            return View($"{ViewPath}Banner/Parallax/Parallax.cshtml", parallax);
         }
         /// <summary>
         /// Getting all related component asigned in Sitecore with the Background CSS (eg:explore)
         /// </summary>  
         /// <returns>Relatedcontent list</returns>
-        public ActionResult RelatedContentSlides()
+        public ActionResult HomePageCarousels()
         {
-            IRelated_Content_SlideList related_Content_SlideList = _bannerRepository.RelatedContentSlides();
-            return View($"{ViewPath}Banner/RelatedContentSlides/RelatedContentSlide.cshtml", related_Content_SlideList);
+            IHomepage_CarouselList homepage_CarouselList = _bannerRepository.HomePageCarousels();
+            return View($"{ViewPath}Banner/HomePageCarousel/HomePageCarousel.cshtml", homepage_CarouselList);
         }
         /// <summary>
         ///  Getting all Hero Banner asigned in Sitecore 
         /// </summary>
         /// <returns>HeroBannerList</returns>
-        public ActionResult GetCommunityMetrics()
+        public ActionResult GetHero()
         {
-            ICommunity_MetricList community_MetricList  = _bannerRepository.GetCommunityMetrics();
-            ViewBag.Scrolldown= _sitecoreHelper.Scrolldown;
-            return View($"{ViewPath}Banner/CommunityMetrics/CommunityMetric.cshtml", community_MetricList);
+            IHero hero = _bannerRepository.GetHero();
+            ViewBag.Scrolldown = _sitecoreHelper.Scrolldown;
+            return View($"{ViewPath}Banner/Hero/Hero.cshtml", hero);
         }
         #endregion
     }

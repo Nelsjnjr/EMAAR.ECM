@@ -7,7 +7,7 @@ parent: {9F11BAA4-4954-43F4-8593-2CB1B16B8CA7}
 name: Get in touch
 master: {00000000-0000-0000-0000-000000000000}
 template: {205AFEE9-2334-43BF-BF98-00F356C6E451}
-templatekey: ContactInfoList
+templatekey: FooterContactList
 created: 20190326T132417Z
 
 ----field----

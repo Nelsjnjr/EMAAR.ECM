@@ -1,0 +1,83 @@
+//Revision: 08cd81a6-1e5d-43b1-8c67-bfb32514d4f1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types
+{
+
+
+ 	/// <summary>
+	/// I_Button Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Content Types/_Button</para>	
+	/// <para>ID: 3bd49bfa-8aba-4847-b883-efac213e6e7a</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_ButtonConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Button : IGlassBase 
+	{
+								/// <summary>
+					/// The Button field.
+					/// <para></para>
+					/// <para>Field Type: General Link</para>		
+					/// <para>Field ID: cd52c386-4ebe-4916-85b9-7128d2028100</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_ButtonConstants.ButtonFieldName)]
+					Link Button  {get; set;}
+			
+				}
+
+
+	public static partial class I_ButtonConstants{
+
+			public const string TemplateIdString = "3bd49bfa-8aba-4847-b883-efac213e6e7a";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_Button";
+
+					
+			public static readonly ID ButtonFieldId = new ID("cd52c386-4ebe-4916-85b9-7128d2028100");
+			public const string ButtonFieldName = "Button";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _Button
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Content Types/_Button</para>	
+	/// <para>ID: 3bd49bfa-8aba-4847-b883-efac213e6e7a</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_ButtonConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Button))]
+	public partial class _Button  : GlassBase, I_Button 
+	{
+	   
+						/// <summary>
+				/// The Button field.
+				/// <para></para>
+				/// <para>Field Type: General Link</para>		
+				/// <para>Field ID: cd52c386-4ebe-4916-85b9-7128d2028100</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_ButtonConstants.ButtonFieldName)]
+				public virtual Link Button  {get; set;}
+					
+			
+	}
+}
+

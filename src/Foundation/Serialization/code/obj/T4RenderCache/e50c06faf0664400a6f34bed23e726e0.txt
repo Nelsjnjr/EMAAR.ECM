@@ -28,14 +28,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 	public partial interface I_TitleDesc : IGlassBase 
 	{
 								/// <summary>
-					/// The Description field.
+					/// The Summary field.
 					/// <para></para>
 					/// <para>Field Type: Rich Text</para>		
 					/// <para>Field ID: 86ef63d0-7e10-4df7-80a7-28df2d6ba18f</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_TitleDescConstants.DescriptionFieldName)]
-					string Description  {get; set;}
+					[SitecoreField(I_TitleDescConstants.SummaryFieldName)]
+					string Summary  {get; set;}
 			
 								/// <summary>
 					/// The Title field.
@@ -57,8 +57,8 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 			public const string TemplateName = "_TitleDesc";
 
 					
-			public static readonly ID DescriptionFieldId = new ID("86ef63d0-7e10-4df7-80a7-28df2d6ba18f");
-			public const string DescriptionFieldName = "Description";
+			public static readonly ID SummaryFieldId = new ID("86ef63d0-7e10-4df7-80a7-28df2d6ba18f");
+			public const string SummaryFieldName = "Summary";
 			
 					
 			public static readonly ID TitleFieldId = new ID("cddd22f9-558a-4e98-a614-53c5e090fb96");
@@ -81,15 +81,15 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 	{
 	   
 						/// <summary>
-				/// The Description field.
+				/// The Summary field.
 				/// <para></para>
 				/// <para>Field Type: Rich Text</para>		
 				/// <para>Field ID: 86ef63d0-7e10-4df7-80a7-28df2d6ba18f</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_TitleDescConstants.DescriptionFieldName)]
-				public virtual string Description  {get; set;}
+				[SitecoreField(I_TitleDescConstants.SummaryFieldName)]
+				public virtual string Summary  {get; set;}
 					
 						/// <summary>
 				/// The Title field.

@@ -1,0 +1,53 @@
+﻿@model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Hero.IHero
+@using Glass.Mapper.Sc.Web.Mvc
+<!-- mainLayout starts here -->
+@{ 
+    var heroimage = Model.Hero_Image != null ? Model.Hero_Image.Src : String.Empty;
+    var mobheroimage = Model.Mobile_Hero_Image != null ? Model.Mobile_Hero_Image.Src : String.Empty;
+}
+
+@using (Html.BeginEditFrame(Model.FullPath, "FullBannerImage", "Edit Background Image"))
+{
+    <section id="mainLayout">
+        <div style="background:url(@heroimage) no-repeat center center" class="sectionImage"></div>
+        <div style="background:url(@mobheroimage) no-repeat center center" class="sectionImageMobile"></div>
+        <div class="container">
+            <div class="contentBox">
+                <h1 class="sectionTitle wow fadeInUp">    @Html.Glass().Editable(Model, x => x.Title)</h1>
+                <!-- sectionTitle ends here  -->
+                <ul class="siteStats wow fadeInUp">
+                    @foreach (var item in Model.Statistics)
+                    {
+                        if (!Sitecore.Context.PageMode.IsExperienceEditor)
+                        {
+                            <li>
+                                <span class="timer count-number" data-to="@Html.Glass().Editable(item, x => x.Count)" data-speed="1500"><!-- 79 --></span>
+                                @Html.Glass().Editable(item, x => x.Title)
+                            </li>
+                        }
+                        else
+                        {
+                            <li>
+                                <span>@Html.Glass().Editable(item, x => x.Count)<!-- 79 --></span>
+                                @Html.Glass().Editable(item, x => x.Title)
+                            </li>
+                        }
+
+                    }
+
+
+                </ul>
+                <!-- siteStats ends here -->
+            </div>
+        </div>
+        <a href="javascript:;" class="scrollIndicator">
+            @if (!String.IsNullOrEmpty(ViewBag.Scrolldown))
+            {
+                <img src="@ViewBag.Scrolldown.ToString()" alt="">
+            }
+            @Sitecore.Globalization.Translate.Text("scrolldown")
+
+        </a>
+    </section>
+}
+<!-- mainLayout ends here -->

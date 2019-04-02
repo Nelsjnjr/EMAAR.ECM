@@ -1,4 +1,4 @@
-//Revision: dd386951-6ac3-40f9-b70d-d7c1130d5ead
+//Revision: fe604749-9b95-4322-9c0a-894a6094e550
 
 
 
@@ -14,19 +14,29 @@
 
 
 
-namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related_Content_Slides
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Homepage_carousel
 {
 
 
  	/// <summary>
-	/// I_Related_Content_SlideList Interface
+	/// I_Homepage_CarouselList Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/Related Content Slides/_Related Content SlideList</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/Homepage carousel/_Homepage carouselList</para>	
 	/// <para>ID: 76f66de5-20ee-453c-8de7-33baefde659a</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_Related_Content_SlideListConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_Related_Content_SlideList : IGlassBase 
+	[SitecoreType(TemplateId=I_Homepage_CarouselListConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Homepage_CarouselList : IGlassBase 
 	{
+								/// <summary>
+					/// The Homepage carousels field.
+					/// <para>Datasource items from Site Content\Related content Slides</para>
+					/// <para>Field Type: Multilist</para>		
+					/// <para>Field ID: 96c03c76-a871-4acf-91f6-21a3e49a8e32</para>
+					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Homepage_carousel.IHomepage_Carousel</para>
+					/// </summary>
+					[SitecoreField(I_Homepage_CarouselListConstants.Homepage_CarouselsFieldName)]
+					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Homepage_carousel.IHomepage_Carousel> Homepage_Carousels  {get; set;}
+			
 								/// <summary>
 					/// The IsBackgroundColorAvailable field.
 					/// <para>This field will change the background if selected, if not white background will be displayed</para>
@@ -34,49 +44,39 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related
 					/// <para>Field ID: 4a8bff42-5e3b-4bb1-ba59-1db2fdfae5c5</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_Related_Content_SlideListConstants.IsBackgroundColorAvailableFieldName)]
+					[SitecoreField(I_Homepage_CarouselListConstants.IsBackgroundColorAvailableFieldName)]
 					bool IsBackgroundColorAvailable  {get; set;}
 			
 								/// <summary>
-					/// The Related Content Slides field.
-					/// <para>Datasource items from Site Content\Related content Slides</para>
-					/// <para>Field Type: Multilist</para>		
-					/// <para>Field ID: 96c03c76-a871-4acf-91f6-21a3e49a8e32</para>
-					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Content_Slides.IRelated_Content_Slide</para>
-					/// </summary>
-					[SitecoreField(I_Related_Content_SlideListConstants.Related_Content_SlidesFieldName)]
-					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Content_Slides.IRelated_Content_Slide> Related_Content_Slides  {get; set;}
-			
-								/// <summary>
-					/// The RelatedContent Slide Title field.
+					/// The Title field.
 					/// <para></para>
 					/// <para>Field Type: Single-Line Text</para>		
 					/// <para>Field ID: 43ae9faf-4548-4df9-b505-c6928ea48b3d</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_Related_Content_SlideListConstants.RelatedContent_Slide_TitleFieldName)]
-					string RelatedContent_Slide_Title  {get; set;}
+					[SitecoreField(I_Homepage_CarouselListConstants.TitleFieldName)]
+					string Title  {get; set;}
 			
 				}
 
 
-	public static partial class I_Related_Content_SlideListConstants{
+	public static partial class I_Homepage_CarouselListConstants{
 
 			public const string TemplateIdString = "76f66de5-20ee-453c-8de7-33baefde659a";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "_Related Content SlideList";
+			public const string TemplateName = "_Homepage carouselList";
 
+					
+			public static readonly ID Homepage_CarouselsFieldId = new ID("96c03c76-a871-4acf-91f6-21a3e49a8e32");
+			public const string Homepage_CarouselsFieldName = "Homepage carousels";
+			
 					
 			public static readonly ID IsBackgroundColorAvailableFieldId = new ID("4a8bff42-5e3b-4bb1-ba59-1db2fdfae5c5");
 			public const string IsBackgroundColorAvailableFieldName = "IsBackgroundColorAvailable";
 			
 					
-			public static readonly ID Related_Content_SlidesFieldId = new ID("96c03c76-a871-4acf-91f6-21a3e49a8e32");
-			public const string Related_Content_SlidesFieldName = "Related Content Slides";
-			
-					
-			public static readonly ID RelatedContent_Slide_TitleFieldId = new ID("43ae9faf-4548-4df9-b505-c6928ea48b3d");
-			public const string RelatedContent_Slide_TitleFieldName = "RelatedContent Slide Title";
+			public static readonly ID TitleFieldId = new ID("43ae9faf-4548-4df9-b505-c6928ea48b3d");
+			public const string TitleFieldName = "Title";
 			
 			
 
@@ -84,16 +84,27 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related
 
 	
 	/// <summary>
-	/// _Related_Content_SlideList
+	/// _Homepage_CarouselList
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/Related Content Slides/_Related Content SlideList</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/Homepage carousel/_Homepage carouselList</para>	
 	/// <para>ID: 76f66de5-20ee-453c-8de7-33baefde659a</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_Related_Content_SlideListConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(I_Related_Content_SlideList))]
-	public partial class _Related_Content_SlideList  : GlassBase, I_Related_Content_SlideList 
+	[SitecoreType(TemplateId=I_Homepage_CarouselListConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Homepage_CarouselList))]
+	public partial class _Homepage_CarouselList  : GlassBase, I_Homepage_CarouselList 
 	{
 	   
+						/// <summary>
+				/// The Homepage carousels field.
+				/// <para>Datasource items from Site Content\Related content Slides</para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: 96c03c76-a871-4acf-91f6-21a3e49a8e32</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Homepage_carousel.IHomepage_Carousel</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_Homepage_CarouselListConstants.Homepage_CarouselsFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Homepage_carousel.IHomepage_Carousel> Homepage_Carousels  {get; set;}
+					
 						/// <summary>
 				/// The IsBackgroundColorAvailable field.
 				/// <para>This field will change the background if selected, if not white background will be displayed</para>
@@ -102,30 +113,19 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_Related_Content_SlideListConstants.IsBackgroundColorAvailableFieldName)]
+				[SitecoreField(I_Homepage_CarouselListConstants.IsBackgroundColorAvailableFieldName)]
 				public virtual bool IsBackgroundColorAvailable  {get; set;}
 					
 						/// <summary>
-				/// The Related Content Slides field.
-				/// <para>Datasource items from Site Content\Related content Slides</para>
-				/// <para>Field Type: Multilist</para>		
-				/// <para>Field ID: 96c03c76-a871-4acf-91f6-21a3e49a8e32</para>
-				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Content_Slides.IRelated_Content_Slide</para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_Related_Content_SlideListConstants.Related_Content_SlidesFieldName)]
-				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Content_Slides.IRelated_Content_Slide> Related_Content_Slides  {get; set;}
-					
-						/// <summary>
-				/// The RelatedContent Slide Title field.
+				/// The Title field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
 				/// <para>Field ID: 43ae9faf-4548-4df9-b505-c6928ea48b3d</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_Related_Content_SlideListConstants.RelatedContent_Slide_TitleFieldName)]
-				public virtual string RelatedContent_Slide_Title  {get; set;}
+				[SitecoreField(I_Homepage_CarouselListConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
 					
 			
 	}

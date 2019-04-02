@@ -2,9 +2,9 @@
 using System;
 using EMAAR.ECM.Foundation.Constants.Interfaces;
 using EMAAR.ECM.Foundation.Constants.Settings;
+using EMAAR.ECM.Foundation.DependencyInjection;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
 using Glass.Mapper.Sc.Web.Mvc;
-using EMAAR.ECM.Foundation.DependencyInjection;
 #endregion
 
 namespace EMAAR.ECM.Foundation.Constants
@@ -57,9 +57,18 @@ namespace EMAAR.ECM.Foundation.Constants
         /// </summary>
         public string ContentPageClose => _mvcContext()?.SitecoreService.GetItem<IIconImages>
             ($"{Sitecore.Context.Site.RootPath}{SitecoreSettings.ContentPageClose}")?.Image?.Src ?? string.Empty;
-        public ISiteRoot SiteRootItemContent => _mvcContext()?.GetRootItem<ISiteRoot>();
+      
+        /// <summary>
+        /// Getting Header Navigation details
+        /// </summary>
+        public IHeader NavigationHeader => _mvcContext()?.SitecoreService.GetItem<IHeader>
+            ($"{Sitecore.Context.Site.RootPath}{SitecoreSettings.NavigationHeaderPath}");
+        /// <summary>
+        /// Getting footer navigation details
+        /// </summary>
+        public IFooter NavigationFooter => _mvcContext()?.SitecoreService.GetItem<IFooter>
+            ($"{Sitecore.Context.Site.RootPath}{SitecoreSettings.NavigationFooterPath}");
         #endregion
-
     }
 
 }

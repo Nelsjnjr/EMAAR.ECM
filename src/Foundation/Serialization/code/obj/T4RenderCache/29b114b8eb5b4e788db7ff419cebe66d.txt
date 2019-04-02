@@ -1,4 +1,4 @@
-//Revision: efb270ac-3274-4892-9e48-2de389beee8e
+//Revision: ee33c9bc-f0d3-4fcb-aea9-6733befddbcd
 
 
 
@@ -14,27 +14,27 @@
 
 
 
-namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.ContactInfo
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Footer_Contact
 {
 
 
  	/// <summary>
-	/// IContactInfo Interface
+	/// IFooterContact Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/ContactInfo/ContactInfo</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/Footer Contact/FooterContact</para>	
 	/// <para>ID: 29b114b8-eb5b-4e78-8db7-ff419cebe66d</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=IContactInfoConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface IContactInfo : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.ContactInfo.I_ContactInfo
+	[SitecoreType(TemplateId=IFooterContactConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IFooterContact : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Footer_Contact.I_FooterContact
 	{
 				}
 
 
-	public static partial class IContactInfoConstants{
+	public static partial class IFooterContactConstants{
 
 			public const string TemplateIdString = "29b114b8-eb5b-4e78-8db7-ff419cebe66d";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "ContactInfo";
+			public const string TemplateName = "FooterContact";
 
 					
 			public static readonly ID ImageFieldId = new ID("ddeb70ae-536a-492a-9635-b363eda13056");
@@ -54,14 +54,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 
 	
 	/// <summary>
-	/// ContactInfo
+	/// FooterContact
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/ContactInfo/ContactInfo</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/Footer Contact/FooterContact</para>	
 	/// <para>ID: 29b114b8-eb5b-4e78-8db7-ff419cebe66d</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=IContactInfoConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(IContactInfo))]
-	public partial class ContactInfo  : GlassBase, IContactInfo 
+	[SitecoreType(TemplateId=IFooterContactConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IFooterContact))]
+	public partial class FooterContact  : GlassBase, IFooterContact 
 	{
 	   
 						/// <summary>
@@ -72,7 +72,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IContactInfoConstants.ImageFieldName)]
+				[SitecoreField(IFooterContactConstants.ImageFieldName)]
 				public virtual Image Image  {get; set;}
 					
 						/// <summary>
@@ -83,7 +83,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IContactInfoConstants.LinkUrlFieldName)]
+				[SitecoreField(IFooterContactConstants.LinkUrlFieldName)]
 				public virtual Link LinkUrl  {get; set;}
 					
 						/// <summary>
@@ -94,7 +94,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IContactInfoConstants.TitleFieldName)]
+				[SitecoreField(IFooterContactConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
 					
 			

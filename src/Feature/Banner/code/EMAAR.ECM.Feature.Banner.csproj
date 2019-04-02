@@ -225,9 +225,9 @@
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="Views\Feature\ECM\Banner\ImageText\_LeftImageText.cshtml" />
     <Content Include="Views\Feature\ECM\Banner\ImageText\_RightImageText.cshtml" />
-    <Content Include="Views\Feature\ECM\Banner\ImageText\_BackgroundImageText.cshtml" />
-    <Content Include="Views\Feature\ECM\Banner\RelatedContentSlides\RelatedContentSlide.cshtml" />
-    <Content Include="Views\Feature\ECM\Banner\CommunityMetrics\CommunityMetric.cshtml" />
+    <Content Include="Views\Feature\ECM\Banner\HomePageCarousel\HomePageCarousel.cshtml" />
+    <Content Include="Views\Feature\ECM\Banner\Hero\Hero.cshtml" />
+    <Content Include="Views\Feature\ECM\Banner\Parallax\Parallax.cshtml" />
     <None Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

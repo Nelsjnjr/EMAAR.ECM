@@ -1,4 +1,4 @@
-//Revision: f0f0c3d1-5a0a-4902-b1b7-6df1c591cb28
+//Revision: 0566a63b-9fe5-43d5-ae64-67d682b6bfcb
 
 
 
@@ -14,18 +14,18 @@
 
 
 
-namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interactive_Map_Location_Points
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interactive_Map
 {
 
 
  	/// <summary>
-	/// I_Interactive_Map_Location_Point Interface
+	/// I_Hotspot Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/Interactive Map Location Points/_Interactive Map Location Point</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/Interactive Map/_Hotspot</para>	
 	/// <para>ID: b9a7bac7-21c6-40b4-8e9d-cafb3a8b3edf</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_Interactive_Map_Location_PointConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_Interactive_Map_Location_Point : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_TitleDesc, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Image
+	[SitecoreType(TemplateId=I_HotspotConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Hotspot : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_TitleDesc, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Image
 	{
 								/// <summary>
 					/// The Left field.
@@ -34,7 +34,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 					/// <para>Field ID: 0c64bb2b-9145-4140-b6bd-dad404d34913</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_Interactive_Map_Location_PointConstants.LeftFieldName)]
+					[SitecoreField(I_HotspotConstants.LeftFieldName)]
 					string Left  {get; set;}
 			
 								/// <summary>
@@ -44,27 +44,27 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 					/// <para>Field ID: 24ceaac1-8ea4-4625-9d60-844ddf3f8eba</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_Interactive_Map_Location_PointConstants.TopFieldName)]
+					[SitecoreField(I_HotspotConstants.TopFieldName)]
 					string Top  {get; set;}
 			
 								/// <summary>
-					/// The Description Title field.
+					/// The Summary heading field.
 					/// <para></para>
 					/// <para>Field Type: Single-Line Text</para>		
 					/// <para>Field ID: eda7d252-061d-4b6b-a69c-b6544172b348</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_Interactive_Map_Location_PointConstants.Description_TitleFieldName)]
-					string Description_Title  {get; set;}
+					[SitecoreField(I_HotspotConstants.Summary_HeadingFieldName)]
+					string Summary_Heading  {get; set;}
 			
 				}
 
 
-	public static partial class I_Interactive_Map_Location_PointConstants{
+	public static partial class I_HotspotConstants{
 
 			public const string TemplateIdString = "b9a7bac7-21c6-40b4-8e9d-cafb3a8b3edf";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "_Interactive Map Location Point";
+			public const string TemplateName = "_Hotspot";
 
 					
 			public static readonly ID LeftFieldId = new ID("0c64bb2b-9145-4140-b6bd-dad404d34913");
@@ -75,12 +75,12 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 			public const string TopFieldName = "Top";
 			
 					
-			public static readonly ID Description_TitleFieldId = new ID("eda7d252-061d-4b6b-a69c-b6544172b348");
-			public const string Description_TitleFieldName = "Description Title";
+			public static readonly ID Summary_HeadingFieldId = new ID("eda7d252-061d-4b6b-a69c-b6544172b348");
+			public const string Summary_HeadingFieldName = "Summary heading";
 			
 					
-			public static readonly ID DescriptionFieldId = new ID("86ef63d0-7e10-4df7-80a7-28df2d6ba18f");
-			public const string DescriptionFieldName = "Description";
+			public static readonly ID SummaryFieldId = new ID("86ef63d0-7e10-4df7-80a7-28df2d6ba18f");
+			public const string SummaryFieldName = "Summary";
 			
 					
 			public static readonly ID TitleFieldId = new ID("cddd22f9-558a-4e98-a614-53c5e090fb96");
@@ -96,14 +96,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 
 	
 	/// <summary>
-	/// _Interactive_Map_Location_Point
+	/// _Hotspot
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/Interactive Map Location Points/_Interactive Map Location Point</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/Interactive Map/_Hotspot</para>	
 	/// <para>ID: b9a7bac7-21c6-40b4-8e9d-cafb3a8b3edf</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_Interactive_Map_Location_PointConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(I_Interactive_Map_Location_Point))]
-	public partial class _Interactive_Map_Location_Point  : GlassBase, I_Interactive_Map_Location_Point 
+	[SitecoreType(TemplateId=I_HotspotConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Hotspot))]
+	public partial class _Hotspot  : GlassBase, I_Hotspot 
 	{
 	   
 						/// <summary>
@@ -114,7 +114,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_Interactive_Map_Location_PointConstants.LeftFieldName)]
+				[SitecoreField(I_HotspotConstants.LeftFieldName)]
 				public virtual string Left  {get; set;}
 					
 						/// <summary>
@@ -125,30 +125,30 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_Interactive_Map_Location_PointConstants.TopFieldName)]
+				[SitecoreField(I_HotspotConstants.TopFieldName)]
 				public virtual string Top  {get; set;}
 					
 						/// <summary>
-				/// The Description Title field.
+				/// The Summary heading field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
 				/// <para>Field ID: eda7d252-061d-4b6b-a69c-b6544172b348</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_Interactive_Map_Location_PointConstants.Description_TitleFieldName)]
-				public virtual string Description_Title  {get; set;}
+				[SitecoreField(I_HotspotConstants.Summary_HeadingFieldName)]
+				public virtual string Summary_Heading  {get; set;}
 					
 						/// <summary>
-				/// The Description field.
+				/// The Summary field.
 				/// <para></para>
 				/// <para>Field Type: Rich Text</para>		
 				/// <para>Field ID: 86ef63d0-7e10-4df7-80a7-28df2d6ba18f</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_Interactive_Map_Location_PointConstants.DescriptionFieldName)]
-				public virtual string Description  {get; set;}
+				[SitecoreField(I_HotspotConstants.SummaryFieldName)]
+				public virtual string Summary  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -158,7 +158,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_Interactive_Map_Location_PointConstants.TitleFieldName)]
+				[SitecoreField(I_HotspotConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
 					
 						/// <summary>
@@ -169,7 +169,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_Interactive_Map_Location_PointConstants.ImageFieldName)]
+				[SitecoreField(I_HotspotConstants.ImageFieldName)]
 				public virtual Image Image  {get; set;}
 					
 			

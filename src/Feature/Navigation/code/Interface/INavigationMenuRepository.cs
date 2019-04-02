@@ -1,4 +1,6 @@
-﻿namespace EMAAR.ECM.Feature.Navigation.Interface
+﻿using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
+
+namespace EMAAR.ECM.Feature.Navigation.Interface
 {
     /// <summary>
     /// Getting Navigation menus
@@ -15,7 +17,7 @@
         /// Getting Footer navigation menu along with logo details/Contactinfo and LegalPages for the Footer 
         /// </summary>
         /// <returns>Footer details</returns>
-        IFooterViewModel GetFooter();
+        IFooter GetFooter();
         #endregion
     }
 }

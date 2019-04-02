@@ -1,4 +1,4 @@
-//Revision: c06900c1-8b82-4120-849b-cfa13a210314
+//Revision: b66a5a5c-6df3-45e9-a1fe-8abbca505791
 
 
 
@@ -14,27 +14,27 @@
 
 
 
-namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Community_Metrics
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Hero
 {
 
 
  	/// <summary>
-	/// ICommunity_Metric Interface
+	/// IStatistics Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/Community Metrics/Community Metric</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/Hero/Statistics</para>	
 	/// <para>ID: f37a4989-a6f5-40c9-b85f-921eb609bd74</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=ICommunity_MetricConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface ICommunity_Metric : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Community_Metrics.I_Community_Metric
+	[SitecoreType(TemplateId=IStatisticsConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IStatistics : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Hero_component.I_Statistics
 	{
 				}
 
 
-	public static partial class ICommunity_MetricConstants{
+	public static partial class IStatisticsConstants{
 
 			public const string TemplateIdString = "f37a4989-a6f5-40c9-b85f-921eb609bd74";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "Community Metric";
+			public const string TemplateName = "Statistics";
 
 					
 			public static readonly ID CountFieldId = new ID("31d6185a-e7e2-42ad-b4ab-d96bd72d218e");
@@ -50,14 +50,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 
 	
 	/// <summary>
-	/// Community_Metric
+	/// Statistics
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/Community Metrics/Community Metric</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/Hero/Statistics</para>	
 	/// <para>ID: f37a4989-a6f5-40c9-b85f-921eb609bd74</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=ICommunity_MetricConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(ICommunity_Metric))]
-	public partial class Community_Metric  : GlassBase, ICommunity_Metric 
+	[SitecoreType(TemplateId=IStatisticsConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IStatistics))]
+	public partial class Statistics  : GlassBase, IStatistics 
 	{
 	   
 						/// <summary>
@@ -68,7 +68,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(ICommunity_MetricConstants.CountFieldName)]
+				[SitecoreField(IStatisticsConstants.CountFieldName)]
 				public virtual string Count  {get; set;}
 					
 						/// <summary>
@@ -79,7 +79,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(ICommunity_MetricConstants.TitleFieldName)]
+				[SitecoreField(IStatisticsConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
 					
 			

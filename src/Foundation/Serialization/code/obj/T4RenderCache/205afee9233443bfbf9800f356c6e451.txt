@@ -1,4 +1,4 @@
-//Revision: 041eb0ca-d083-40b2-bb0e-8959783df10e
+//Revision: 13762cd9-365f-4aa5-b414-6e996a323a48
 
 
 
@@ -14,27 +14,27 @@
 
 
 
-namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.ContactInfo
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Footer_Contact
 {
 
 
  	/// <summary>
-	/// IContactInfoList Interface
+	/// IFooterContacts Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/ContactInfo/ContactInfoList</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/Footer Contact/FooterContacts</para>	
 	/// <para>ID: 205afee9-2334-43bf-bf98-00f356c6e451</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=IContactInfoListConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface IContactInfoList : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.ContactInfo.I_ContactInfoList
+	[SitecoreType(TemplateId=IFooterContactsConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IFooterContacts : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Footer_Contact.I_FooterContents
 	{
 				}
 
 
-	public static partial class IContactInfoListConstants{
+	public static partial class IFooterContactsConstants{
 
 			public const string TemplateIdString = "205afee9-2334-43bf-bf98-00f356c6e451";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "ContactInfoList";
+			public const string TemplateName = "FooterContacts";
 
 					
 			public static readonly ID Contact_InfosFieldId = new ID("09a37ddc-581d-4d28-a130-d4642cc5ce41");
@@ -50,14 +50,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 
 	
 	/// <summary>
-	/// ContactInfoList
+	/// FooterContacts
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/ContactInfo/ContactInfoList</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/Footer Contact/FooterContacts</para>	
 	/// <para>ID: 205afee9-2334-43bf-bf98-00f356c6e451</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=IContactInfoListConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(IContactInfoList))]
-	public partial class ContactInfoList  : GlassBase, IContactInfoList 
+	[SitecoreType(TemplateId=IFooterContactsConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IFooterContacts))]
+	public partial class FooterContacts  : GlassBase, IFooterContacts 
 	{
 	   
 						/// <summary>
@@ -65,11 +65,11 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 				/// <para></para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 09a37ddc-581d-4d28-a130-d4642cc5ce41</para>
-				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.ContactInfo.IContactInfo</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Footer_Contact.IFooterContact</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IContactInfoListConstants.Contact_InfosFieldName)]
-				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.ContactInfo.IContactInfo> Contact_Infos  {get; set;}
+				[SitecoreField(IFooterContactsConstants.Contact_InfosFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Footer_Contact.IFooterContact> Contact_Infos  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -79,7 +79,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IContactInfoListConstants.TitleFieldName)]
+				[SitecoreField(IFooterContactsConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
 					
 			

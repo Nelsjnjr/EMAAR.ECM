@@ -228,7 +228,7 @@
     <Content Include="css\fancybox\fancybox_overlay.png" />
     <Content Include="css\fancybox\fancybox_sprite%402x.png" />
     <Content Include="css\fancybox\fancybox_sprite.png" />
-    <Content Include="css\style.css" />
+    <Content Include="css\Downtowndubai-en.css" />
     <Content Include="css\vendors\select2.css" />
     <Content Include="css\vendors\swiper.css" />
     <Content Include="fonts\1069d95068cdf58f125fe7df3221f5f7.svg" />

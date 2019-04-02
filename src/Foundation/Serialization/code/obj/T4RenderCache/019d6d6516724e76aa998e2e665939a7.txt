@@ -1,4 +1,4 @@
-//Revision: 80cffd70-5b90-4de5-9b43-a996cba84104
+//Revision: 4c7b2ce8-e801-4b71-951b-c546d970447e
 
 
 
@@ -19,22 +19,22 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 
 
  	/// <summary>
-	/// IRelatedContentFolder Interface
+	/// IHomepage_Carousel_Folder Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/RelatedContentFolder</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/Homepage carousel Folder</para>	
 	/// <para>ID: 019d6d65-1672-4e76-aa99-8e2e665939a7</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=IRelatedContentFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface IRelatedContentFolder : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_RelatedContentFolder
+	[SitecoreType(TemplateId=IHomepage_Carousel_FolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IHomepage_Carousel_Folder : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_Homepage_Carousel_Folder
 	{
 				}
 
 
-	public static partial class IRelatedContentFolderConstants{
+	public static partial class IHomepage_Carousel_FolderConstants{
 
 			public const string TemplateIdString = "019d6d65-1672-4e76-aa99-8e2e665939a7";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "RelatedContentFolder";
+			public const string TemplateName = "Homepage carousel Folder";
 
 			
 
@@ -42,14 +42,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 
 	
 	/// <summary>
-	/// RelatedContentFolder
+	/// Homepage_Carousel_Folder
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/RelatedContentFolder</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/Homepage carousel Folder</para>	
 	/// <para>ID: 019d6d65-1672-4e76-aa99-8e2e665939a7</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=IRelatedContentFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(IRelatedContentFolder))]
-	public partial class RelatedContentFolder  : GlassBase, IRelatedContentFolder 
+	[SitecoreType(TemplateId=IHomepage_Carousel_FolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IHomepage_Carousel_Folder))]
+	public partial class Homepage_Carousel_Folder  : GlassBase, IHomepage_Carousel_Folder 
 	{
 	   
 			

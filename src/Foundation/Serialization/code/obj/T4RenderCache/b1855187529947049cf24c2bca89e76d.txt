@@ -25,7 +25,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Paramet
 	/// <para>ID: b1855187-5299-4704-9cf2-4c2bca89e76d</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IParametersTemplate_ImageAlignmentConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface IParametersTemplate_ImageAlignment : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Banner.Parameters_Templates.I_ImageAlignment
+	public partial interface IParametersTemplate_ImageAlignment : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.ImageText.Parameters_Templates.I_ImageAlignment
 	{
 				}
 

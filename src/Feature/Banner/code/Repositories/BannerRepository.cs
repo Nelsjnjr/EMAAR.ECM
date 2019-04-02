@@ -3,11 +3,9 @@ using System;
 using EMAAR.ECM.Feature.Banner.Interfaces;
 using EMAAR.ECM.Foundation.DependencyInjection;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Banner;
-using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Community_Metrics;
-using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Content_Slides;
-using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Parameters;
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Hero;
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Homepage_carousel;
 using Glass.Mapper.Sc.Web.Mvc;
-using static EMAAR.ECM.Foundation.Constants.CommonConstants;
 #endregion
 namespace EMAAR.ECM.Feature.Banner.Repositories
 {
@@ -20,66 +18,69 @@ namespace EMAAR.ECM.Feature.Banner.Repositories
         #region property
         private readonly Func<IMvcContext> _mvcContext;
         private readonly IImageText _imageText;
-        private readonly IRelated_Content_SlideList _related_Content_SlideList ;
-        private readonly ICommunity_MetricList _community_MetricList;
+        private readonly IParallax _parallax;
+        private readonly IHomepage_CarouselList _homepage_CarouselList;
+        private readonly IHero  _hero;
 
         #endregion
         #region construtor
-        public BannerRepository(Func<IMvcContext> mvcContext, IImageText imageText, IRelated_Content_SlideList related_Content_SlideList , ICommunity_MetricList community_MetricList )
+        public BannerRepository(Func<IMvcContext> mvcContext, IParallax parallax, IImageText imageText, IHomepage_CarouselList homepage_CarouselList, IHero hero)
         {
             _imageText = imageText;
+            _parallax = parallax;
             _mvcContext = mvcContext;
-            _related_Content_SlideList = related_Content_SlideList;
-            _community_MetricList = community_MetricList;
-        
+            _homepage_CarouselList = homepage_CarouselList;
+            _hero = hero;
+
         }
         #endregion
         #region public method
 
         /// <summary>
-        /// Getting 3 variants of ImageText components(Left,Right and Background)
-        /// <param name="alignment">Variant(Left/Right/Background)</param>
+        /// Getting 2 variants of ImageText components(Left,Right )
+        /// </summary>
         /// <returns>ImageText component variation based on parameter selected from Sitecore</returns>
 
-        public IImageText GetBannerVariants(out Alignment alignment)
+        public IImageText GetImageText()
         {
             IMvcContext mvcContext = _mvcContext();
-            alignment = Alignment.Left;//Assigning default varaiant to left unless if nothing selected in sitecore
             IImageText imageText = mvcContext.GetDataSourceItem<IImageText>();
-            if (imageText != null)
-            {
-                IParametersTemplate_ImageAlignment renderingParameter = mvcContext?.GetRenderingParameters<IParametersTemplate_ImageAlignment>();
-                if (renderingParameter?.Image_Alignment!=null)
-                {                    
-                    Enum.TryParse(renderingParameter.Image_Alignment.Key, out alignment);
-                }
-            }
             return imageText ?? _imageText;
+        }
+        /// <summary>
+        /// Getting 2 variants of Parallax components(background image )
+        /// </summary>
+        /// <returns>Parallax</returns>
+        public IParallax GetParallax()
+        {
+            IMvcContext mvcContext = _mvcContext();
+            IParallax parallax = mvcContext.GetDataSourceItem<IParallax>();
+            return parallax ?? _parallax;
         }
 
         /// <summary>
-        /// Getting all related component asigned in Sitecore with the Background CSS (eg:explore)
+        /// Getting all Home Carousel component asigned in Sitecore with the Background CSS (eg:explore)
         /// </summary>
-        /// <returns>Related content Slides details</returns>
-        public IRelated_Content_SlideList RelatedContentSlides()
+        /// <returns>Home Carousel content Slides details</returns>
+        public IHomepage_CarouselList HomePageCarousels()
         {
             IMvcContext mvcContext = _mvcContext();
-            IRelated_Content_SlideList relatedContentList = mvcContext.GetDataSourceItem<IRelated_Content_SlideList>();          
-            return relatedContentList ?? _related_Content_SlideList;
+            IHomepage_CarouselList homepage_CarouselList = mvcContext.GetDataSourceItem<IHomepage_CarouselList>();
+            return homepage_CarouselList ?? _homepage_CarouselList;
         }
         /// <summary>
-        /// Getting all CommunityMetric component asigned in Sitecore on field (Hero Community Metrics)
+        /// Getting all Hero component asigned in Sitecore on field (Hero Metrics)
         /// </summary>
         /// <returns>HeroBannerList</returns>
-        public ICommunity_MetricList GetCommunityMetrics()
-        {           
+        public IHero GetHero()
+        {
             IMvcContext mvcContext = _mvcContext();
-            ICommunity_MetricList heroBannerList = mvcContext.GetDataSourceItem<ICommunity_MetricList>();           
-            return heroBannerList ?? _community_MetricList;
+            IHero hero = mvcContext.GetDataSourceItem<IHero>();
+            return hero ?? _hero;
         }
         #endregion
         #region private method
- 
+
         #endregion
 
     }

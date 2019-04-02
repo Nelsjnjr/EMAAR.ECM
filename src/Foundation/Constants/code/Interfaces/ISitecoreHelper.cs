@@ -32,8 +32,15 @@ namespace EMAAR.ECM.Foundation.Constants.Interfaces
         ///  Getting Content page Close icon image url from Sitecore settings based on Site
         /// </summary>
         string ContentPageClose { get; }
-
-        ISiteRoot SiteRootItemContent { get; }
+      
+        /// <summary>
+        /// Getting Header Navigation details
+        /// </summary>
+        IHeader NavigationHeader { get; }
+        /// <summary>
+        /// Getting footer navigation details
+        /// </summary>
+        IFooter NavigationFooter { get; }
         #endregion
 
     }

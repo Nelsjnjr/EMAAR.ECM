@@ -1,4 +1,4 @@
-//Revision: ad4c2293-81c3-486e-9490-358348f33567
+//Revision: 78f7d107-dafa-449e-bc88-9f99e069438b
 
 
 
@@ -19,22 +19,22 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 
 
  	/// <summary>
-	/// I_CommunityMetricsListFolder Interface
+	/// I_HeroListFolder Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_CommunityMetricsListFolder</para>	
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_HeroListFolder</para>	
 	/// <para>ID: 7cd093d6-b0de-4e2d-8094-a52aea78755b</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_CommunityMetricsListFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_CommunityMetricsListFolder : IGlassBase 
+	[SitecoreType(TemplateId=I_HeroListFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_HeroListFolder : IGlassBase 
 	{
 				}
 
 
-	public static partial class I_CommunityMetricsListFolderConstants{
+	public static partial class I_HeroListFolderConstants{
 
 			public const string TemplateIdString = "7cd093d6-b0de-4e2d-8094-a52aea78755b";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "_CommunityMetricsListFolder";
+			public const string TemplateName = "_HeroListFolder";
 
 			
 
@@ -42,14 +42,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 
 	
 	/// <summary>
-	/// _CommunityMetricsListFolder
+	/// _HeroListFolder
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_CommunityMetricsListFolder</para>	
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_HeroListFolder</para>	
 	/// <para>ID: 7cd093d6-b0de-4e2d-8094-a52aea78755b</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_CommunityMetricsListFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(I_CommunityMetricsListFolder))]
-	public partial class _CommunityMetricsListFolder  : GlassBase, I_CommunityMetricsListFolder 
+	[SitecoreType(TemplateId=I_HeroListFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_HeroListFolder))]
+	public partial class _HeroListFolder  : GlassBase, I_HeroListFolder 
 	{
 	   
 			

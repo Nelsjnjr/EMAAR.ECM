@@ -12,7 +12,7 @@ namespace EMAAR.ECM.Foundation.Constants.Settings
         ///  Getting Root View location for controller to load view
         ///  Physical location of the view path for the action method
         /// </summary>
-        public static string ViewPath { get; set; } = GetSetting("EMAAR.ECM.Foundation.Constants.ViewPath");
+        public static string ViewPath { get; set; } = GetSetting("EMAAR.ECM.Foundation.Constants.FeatureViewPath");
         /// <summary>
         ///  Getting Home page search icon image url from Sitecore settings based on Site
         /// </summary>
@@ -37,6 +37,14 @@ namespace EMAAR.ECM.Foundation.Constants.Settings
         ///  Getting Srolldown icon image url from Sitecore settings based on Site
         /// </summary>
         public static string Scrolldown { get; set; } = GetSetting("EMAAR.ECM.Foundation.Constants.Scrolldown");
+        /// <summary>
+        /// Getting Header item path
+        /// </summary>
+        public static string NavigationHeaderPath { get; set; } = GetSetting("EMAAR.ECM.Foundation.Constants.NavigationHeaderPath");
+        /// <summary>
+        /// Getting footer item path
+        /// </summary>
+        public static string NavigationFooterPath { get; set; } = GetSetting("EMAAR.ECM.Foundation.Constants.NavigationFooterPath");
 
     }
 }

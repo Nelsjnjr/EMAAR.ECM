@@ -25,7 +25,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 	/// <para>ID: 86217b8b-d63d-48f5-932c-cc46442b8243</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IImageTextConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface IImageText : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Banner.I_ImageText
+	public partial interface IImageText : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.ImageText.I_ImageText
 	{
 				}
 
@@ -37,8 +37,12 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 			public const string TemplateName = "ImageText";
 
 					
-			public static readonly ID DescriptionFieldId = new ID("86ef63d0-7e10-4df7-80a7-28df2d6ba18f");
-			public const string DescriptionFieldName = "Description";
+			public static readonly ID Image_Text_AlignmentFieldId = new ID("31a2756e-9000-42e0-8f4c-d636c8b03849");
+			public const string Image_Text_AlignmentFieldName = "Image Text Alignment";
+			
+					
+			public static readonly ID SummaryFieldId = new ID("86ef63d0-7e10-4df7-80a7-28df2d6ba18f");
+			public const string SummaryFieldName = "Summary";
 			
 					
 			public static readonly ID TitleFieldId = new ID("cddd22f9-558a-4e98-a614-53c5e090fb96");
@@ -49,8 +53,8 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 			public const string ImageFieldName = "Image";
 			
 					
-			public static readonly ID CTAFieldId = new ID("f9401c09-1121-4bb5-abed-48bc2b29de71");
-			public const string CTAFieldName = "CTA";
+			public static readonly ID ButtonFieldId = new ID("cd52c386-4ebe-4916-85b9-7128d2028100");
+			public const string ButtonFieldName = "Button";
 			
 			
 
@@ -69,15 +73,26 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 	{
 	   
 						/// <summary>
-				/// The Description field.
+				/// The Image Text Alignment field.
+				/// <para></para>
+				/// <para>Field Type: Droplink</para>		
+				/// <para>Field ID: 31a2756e-9000-42e0-8f4c-d636c8b03849</para>
+				/// <para>Custom Data: Type=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.ISettings</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IImageTextConstants.Image_Text_AlignmentFieldName)]
+				public virtual EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.ISettings Image_Text_Alignment  {get; set;}
+					
+						/// <summary>
+				/// The Summary field.
 				/// <para></para>
 				/// <para>Field Type: Rich Text</para>		
 				/// <para>Field ID: 86ef63d0-7e10-4df7-80a7-28df2d6ba18f</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IImageTextConstants.DescriptionFieldName)]
-				public virtual string Description  {get; set;}
+				[SitecoreField(IImageTextConstants.SummaryFieldName)]
+				public virtual string Summary  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -102,15 +117,15 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 				public virtual Image Image  {get; set;}
 					
 						/// <summary>
-				/// The CTA field.
+				/// The Button field.
 				/// <para></para>
 				/// <para>Field Type: General Link</para>		
-				/// <para>Field ID: f9401c09-1121-4bb5-abed-48bc2b29de71</para>
+				/// <para>Field ID: cd52c386-4ebe-4916-85b9-7128d2028100</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IImageTextConstants.CTAFieldName)]
-				public virtual Link CTA  {get; set;}
+				[SitecoreField(IImageTextConstants.ButtonFieldName)]
+				public virtual Link Button  {get; set;}
 					
 			
 	}

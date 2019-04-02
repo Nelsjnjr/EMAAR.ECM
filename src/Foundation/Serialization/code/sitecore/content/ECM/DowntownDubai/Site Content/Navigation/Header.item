@@ -20,7 +20,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 03a74827-f5cf-43aa-8c46-43a152a40d87
+revision: f001697d-e3f6-4024-b1ee-0b3c1cf3ed3b
 
 ----field----
 field: {9C97A02A-585C-4A33-A821-92EF325D7CCD}
@@ -40,9 +40,9 @@ content-length: 155
 field: {C8825BF7-2E94-48AE-AFD0-B9B6B0A72BA5}
 name: Login Text
 key: login text
-content-length: 8
+content-length: 6
 
-Login in
+Log in
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -56,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-03a74827-f5cf-43aa-8c46-43a152a40d87
+f001697d-e3f6-4024-b1ee-0b3c1cf3ed3b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190328T115942Z
+20190402T055609Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

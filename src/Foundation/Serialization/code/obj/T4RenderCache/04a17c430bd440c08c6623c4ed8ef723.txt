@@ -14,14 +14,14 @@
 
 
 
-namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Banner.Parameters_Templates
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.ImageText.Parameters_Templates
 {
 
 
  	/// <summary>
 	/// I_ImageAlignment Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/Banner/Parameters Templates/_ImageAlignment</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/ImageText/Parameters Templates/_ImageAlignment</para>	
 	/// <para>ID: 04a17c43-0bd4-40c0-8c66-23c4ed8ef723</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=I_ImageAlignmentConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
@@ -58,7 +58,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Banner.
 	/// <summary>
 	/// _ImageAlignment
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/Banner/Parameters Templates/_ImageAlignment</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/ImageText/Parameters Templates/_ImageAlignment</para>	
 	/// <para>ID: 04a17c43-0bd4-40c0-8c66-23c4ed8ef723</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=I_ImageAlignmentConstants.TemplateIdString,AutoMap=true )] //, Cachable = true

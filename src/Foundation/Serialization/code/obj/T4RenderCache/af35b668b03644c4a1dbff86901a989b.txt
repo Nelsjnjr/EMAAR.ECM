@@ -32,10 +32,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Footer
 					/// <para>Datasource items from Site Content\ContactInfo</para>
 					/// <para>Field Type: Droplink</para>		
 					/// <para>Field ID: 4518387f-0fe0-451a-b417-9bcc524e3012</para>
-					/// <para>Custom Data: Type=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.ContactInfo.IContactInfoList</para>
+					/// <para>Custom Data: Type=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Footer_Contact.IFooterContacts</para>
 					/// </summary>
 					[SitecoreField(I_FooterConstants.Contact_InfoFieldName)]
-					EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.ContactInfo.IContactInfoList Contact_Info  {get; set;}
+					EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Footer_Contact.IFooterContacts Contact_Info  {get; set;}
 			
 				}
 
@@ -83,11 +83,11 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Footer
 				/// <para>Datasource items from Site Content\ContactInfo</para>
 				/// <para>Field Type: Droplink</para>		
 				/// <para>Field ID: 4518387f-0fe0-451a-b417-9bcc524e3012</para>
-				/// <para>Custom Data: Type=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.ContactInfo.IContactInfoList</para>
+				/// <para>Custom Data: Type=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Footer_Contact.IFooterContacts</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_FooterConstants.Contact_InfoFieldName)]
-				public virtual EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.ContactInfo.IContactInfoList Contact_Info  {get; set;}
+				public virtual EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Footer_Contact.IFooterContacts Contact_Info  {get; set;}
 					
 						/// <summary>
 				/// The Copyright field.

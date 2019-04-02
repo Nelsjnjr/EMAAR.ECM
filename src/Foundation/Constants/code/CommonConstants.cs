@@ -30,6 +30,7 @@
         /// Year Token for dynamically modify it
         /// </summary>
         public static string YearToken { get; } = "{year}";
+      
         #endregion;
 
     }

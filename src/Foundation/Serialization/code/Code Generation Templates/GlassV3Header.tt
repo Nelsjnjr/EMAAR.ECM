@@ -34,7 +34,7 @@ using Glass.Mapper.Sc.Fields;
 using Sitecore.Globalization;
 using Sitecore.Data;
 using EMAAR.ECM.Foundation.DependencyInjection;
-
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
 <#
 // Calculate the top leve namespace as configured in the target project and
 // base namespace as defined in the TDS project
@@ -81,6 +81,9 @@ namespace <#=fullNamespace #>
 
 		[SitecoreChildren(InferType = true)]
         IEnumerable<IGlassBase> Children { get; }
+
+		[SitecoreQuery("/sitecore/content//*[@@templateid='{407F6EA5-A542-4D83-9D03-B598E06D3422}']",IsRelative =true)]
+        ISiteRoot SiteRoot { get; }
 		
 	}
 
@@ -121,5 +124,8 @@ namespace <#=fullNamespace #>
 
 		[SitecoreChildren(InferType = true)]
         public virtual IEnumerable<IGlassBase> Children { get; private set; }
+
+	    [SitecoreQuery("/sitecore/content//*[@@templateid='{407F6EA5-A542-4D83-9D03-B598E06D3422}']",IsRelative =true)]
+        public virtual ISiteRoot SiteRoot { get;private set; }
 	}
 }

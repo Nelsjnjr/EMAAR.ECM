@@ -1,4 +1,4 @@
-//Revision: 32e709a8-7a67-48b9-af2d-48637e83d735
+//Revision: a68a4d84-3ce1-4c43-ad69-270f257443e5
 
 
 
@@ -19,22 +19,22 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 
 
  	/// <summary>
-	/// I_RelatedContentFolder Interface
+	/// I_Homepage_Carousel_Folder Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_RelatedContentFolder</para>	
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_Homepage carousel Folder</para>	
 	/// <para>ID: f02569fd-5078-4a74-8057-42f08b7ab0b0</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_RelatedContentFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_RelatedContentFolder : IGlassBase 
+	[SitecoreType(TemplateId=I_Homepage_Carousel_FolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Homepage_Carousel_Folder : IGlassBase 
 	{
 				}
 
 
-	public static partial class I_RelatedContentFolderConstants{
+	public static partial class I_Homepage_Carousel_FolderConstants{
 
 			public const string TemplateIdString = "f02569fd-5078-4a74-8057-42f08b7ab0b0";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "_RelatedContentFolder";
+			public const string TemplateName = "_Homepage carousel Folder";
 
 			
 
@@ -42,14 +42,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 
 	
 	/// <summary>
-	/// _RelatedContentFolder
+	/// _Homepage_Carousel_Folder
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_RelatedContentFolder</para>	
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_Homepage carousel Folder</para>	
 	/// <para>ID: f02569fd-5078-4a74-8057-42f08b7ab0b0</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_RelatedContentFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(I_RelatedContentFolder))]
-	public partial class _RelatedContentFolder  : GlassBase, I_RelatedContentFolder 
+	[SitecoreType(TemplateId=I_Homepage_Carousel_FolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Homepage_Carousel_Folder))]
+	public partial class _Homepage_Carousel_Folder  : GlassBase, I_Homepage_Carousel_Folder 
 	{
 	   
 			

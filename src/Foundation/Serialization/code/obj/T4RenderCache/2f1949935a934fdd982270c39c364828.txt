@@ -1,4 +1,4 @@
-//Revision: 515d8d86-36e7-43ae-a55e-aa7586434ed9
+//Revision: afbaa3f1-ecba-43c9-94b0-89f183a619f7
 
 
 
@@ -14,48 +14,48 @@
 
 
 
-namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Community_Metrics
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Hero_component
 {
 
 
  	/// <summary>
-	/// I_Community_MetricList Interface
+	/// I_Hero Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/Community Metrics/_Community MetricList</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/Hero component/_Hero</para>	
 	/// <para>ID: 2f194993-5a93-4fdd-9822-70c39c364828</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_Community_MetricListConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_Community_MetricList : IGlassBase 
+	[SitecoreType(TemplateId=I_HeroConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Hero : IGlassBase 
 	{
 								/// <summary>
-					/// The Community Metrics Image field.
+					/// The Hero Image field.
 					/// <para></para>
 					/// <para>Field Type: Image</para>		
 					/// <para>Field ID: 18aed467-a7bf-4e76-aa40-fae487b2308f</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_Community_MetricListConstants.Community_Metrics_ImageFieldName)]
-					Image Community_Metrics_Image  {get; set;}
+					[SitecoreField(I_HeroConstants.Hero_ImageFieldName)]
+					Image Hero_Image  {get; set;}
 			
 								/// <summary>
-					/// The Community Metrics field.
-					/// <para>Datasource items from Site Content\Community Metrics</para>
-					/// <para>Field Type: Multilist</para>		
-					/// <para>Field ID: 61256258-c337-4d5a-b150-6b765a10fbbf</para>
-					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Community_Metrics.ICommunity_Metric</para>
-					/// </summary>
-					[SitecoreField(I_Community_MetricListConstants.Community_MetricsFieldName)]
-					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Community_Metrics.ICommunity_Metric> Community_Metrics  {get; set;}
-			
-								/// <summary>
-					/// The Mobile Community Metrics Image field.
+					/// The Mobile Hero Image field.
 					/// <para></para>
 					/// <para>Field Type: Image</para>		
 					/// <para>Field ID: db9afe05-491a-4f77-be15-6e14c9ae15a4</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_Community_MetricListConstants.Mobile_Community_Metrics_ImageFieldName)]
-					Image Mobile_Community_Metrics_Image  {get; set;}
+					[SitecoreField(I_HeroConstants.Mobile_Hero_ImageFieldName)]
+					Image Mobile_Hero_Image  {get; set;}
+			
+								/// <summary>
+					/// The Statistics field.
+					/// <para>Datasource items from Site Content\Community Metrics</para>
+					/// <para>Field Type: Multilist</para>		
+					/// <para>Field ID: 61256258-c337-4d5a-b150-6b765a10fbbf</para>
+					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Hero.IStatistics</para>
+					/// </summary>
+					[SitecoreField(I_HeroConstants.StatisticsFieldName)]
+					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Hero.IStatistics> Statistics  {get; set;}
 			
 								/// <summary>
 					/// The Title field.
@@ -64,29 +64,29 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Communi
 					/// <para>Field ID: 3e63b712-d4ba-479b-943b-2589baf36631</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_Community_MetricListConstants.TitleFieldName)]
+					[SitecoreField(I_HeroConstants.TitleFieldName)]
 					string Title  {get; set;}
 			
 				}
 
 
-	public static partial class I_Community_MetricListConstants{
+	public static partial class I_HeroConstants{
 
 			public const string TemplateIdString = "2f194993-5a93-4fdd-9822-70c39c364828";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "_Community MetricList";
+			public const string TemplateName = "_Hero";
 
 					
-			public static readonly ID Community_Metrics_ImageFieldId = new ID("18aed467-a7bf-4e76-aa40-fae487b2308f");
-			public const string Community_Metrics_ImageFieldName = "Community Metrics Image";
+			public static readonly ID Hero_ImageFieldId = new ID("18aed467-a7bf-4e76-aa40-fae487b2308f");
+			public const string Hero_ImageFieldName = "Hero Image";
 			
 					
-			public static readonly ID Community_MetricsFieldId = new ID("61256258-c337-4d5a-b150-6b765a10fbbf");
-			public const string Community_MetricsFieldName = "Community Metrics";
+			public static readonly ID Mobile_Hero_ImageFieldId = new ID("db9afe05-491a-4f77-be15-6e14c9ae15a4");
+			public const string Mobile_Hero_ImageFieldName = "Mobile Hero Image";
 			
 					
-			public static readonly ID Mobile_Community_Metrics_ImageFieldId = new ID("db9afe05-491a-4f77-be15-6e14c9ae15a4");
-			public const string Mobile_Community_Metrics_ImageFieldName = "Mobile Community Metrics Image";
+			public static readonly ID StatisticsFieldId = new ID("61256258-c337-4d5a-b150-6b765a10fbbf");
+			public const string StatisticsFieldName = "Statistics";
 			
 					
 			public static readonly ID TitleFieldId = new ID("3e63b712-d4ba-479b-943b-2589baf36631");
@@ -98,48 +98,48 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Communi
 
 	
 	/// <summary>
-	/// _Community_MetricList
+	/// _Hero
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/Community Metrics/_Community MetricList</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/Hero component/_Hero</para>	
 	/// <para>ID: 2f194993-5a93-4fdd-9822-70c39c364828</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_Community_MetricListConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(I_Community_MetricList))]
-	public partial class _Community_MetricList  : GlassBase, I_Community_MetricList 
+	[SitecoreType(TemplateId=I_HeroConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Hero))]
+	public partial class _Hero  : GlassBase, I_Hero 
 	{
 	   
 						/// <summary>
-				/// The Community Metrics Image field.
+				/// The Hero Image field.
 				/// <para></para>
 				/// <para>Field Type: Image</para>		
 				/// <para>Field ID: 18aed467-a7bf-4e76-aa40-fae487b2308f</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_Community_MetricListConstants.Community_Metrics_ImageFieldName)]
-				public virtual Image Community_Metrics_Image  {get; set;}
+				[SitecoreField(I_HeroConstants.Hero_ImageFieldName)]
+				public virtual Image Hero_Image  {get; set;}
 					
 						/// <summary>
-				/// The Community Metrics field.
-				/// <para>Datasource items from Site Content\Community Metrics</para>
-				/// <para>Field Type: Multilist</para>		
-				/// <para>Field ID: 61256258-c337-4d5a-b150-6b765a10fbbf</para>
-				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Community_Metrics.ICommunity_Metric</para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_Community_MetricListConstants.Community_MetricsFieldName)]
-				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Community_Metrics.ICommunity_Metric> Community_Metrics  {get; set;}
-					
-						/// <summary>
-				/// The Mobile Community Metrics Image field.
+				/// The Mobile Hero Image field.
 				/// <para></para>
 				/// <para>Field Type: Image</para>		
 				/// <para>Field ID: db9afe05-491a-4f77-be15-6e14c9ae15a4</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_Community_MetricListConstants.Mobile_Community_Metrics_ImageFieldName)]
-				public virtual Image Mobile_Community_Metrics_Image  {get; set;}
+				[SitecoreField(I_HeroConstants.Mobile_Hero_ImageFieldName)]
+				public virtual Image Mobile_Hero_Image  {get; set;}
+					
+						/// <summary>
+				/// The Statistics field.
+				/// <para>Datasource items from Site Content\Community Metrics</para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: 61256258-c337-4d5a-b150-6b765a10fbbf</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Hero.IStatistics</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_HeroConstants.StatisticsFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Hero.IStatistics> Statistics  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -149,7 +149,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Communi
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_Community_MetricListConstants.TitleFieldName)]
+				[SitecoreField(I_HeroConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
 					
 			

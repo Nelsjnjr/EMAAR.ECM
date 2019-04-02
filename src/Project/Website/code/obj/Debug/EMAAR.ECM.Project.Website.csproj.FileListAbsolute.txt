@@ -219,8 +219,6 @@ D:\Projects\EMAAR\ECM\EMAAR ECM Solution\EMAAR.ECM\src\Project\Website\code\obj\
 D:\Projects\EMAAR\ECM\EMAAR ECM Solution\EMAAR.ECM\src\Project\Website\code\obj\Debug\Package\PackageTmp\bin\roslyn\vbc.rsp
 D:\Projects\EMAAR\ECM\EMAAR ECM Solution\EMAAR.ECM\src\Project\Website\code\obj\Debug\Package\PackageTmp\bin\roslyn\VBCSCompiler.exe
 D:\Projects\EMAAR\ECM\EMAAR ECM Solution\EMAAR.ECM\src\Project\Website\code\obj\Debug\Package\PackageTmp\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\obj\Debug\EMAAR.ECM.Project.Website.csprojAssemblyReference.cache
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\obj\Debug\EMAAR.ECM.Project.Website.csproj.CoreCompileInputs.cache
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\EMAAR.ECM.Project.Website.dll.config
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\EMAAR.ECM.Project.Website.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\EMAAR.ECM.Project.Website.pdb
@@ -360,6 +358,8 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\System.Web.R
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\System.Web.WebPages.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\System.Web.WebPages.Razor.xml
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\obj\Debug\EMAAR.ECM.Project.Website.csprojAssemblyReference.cache
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\obj\Debug\EMAAR.ECM.Project.Website.csproj.CoreCompileInputs.cache
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\obj\Debug\EMAAR.ECM.Project.Website.csproj.CopyComplete
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\obj\Debug\EMAAR.ECM.Project.Website.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\obj\Debug\EMAAR.ECM.Project.Website.pdb

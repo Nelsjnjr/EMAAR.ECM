@@ -1,4 +1,4 @@
-//Revision: d9983553-794e-4a95-8270-8f12c0c5a405
+//Revision: f4cd437b-478b-45f5-bbaf-9d36967abf4c
 
 
 
@@ -14,28 +14,28 @@
 
 
 
-namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interactive_Map_Location_Points
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interactive_Map
 {
 
 
  	/// <summary>
-	/// I_Interactive_Map_Location_PointList Interface
+	/// I_Interactive_Map Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/Interactive Map Location Points/_Interactive Map Location PointList</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/Interactive Map/_Interactive Map</para>	
 	/// <para>ID: 4df81879-4a85-4b61-a1ee-26ccd66e0a14</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_Interactive_Map_Location_PointListConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_Interactive_Map_Location_PointList : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Image
+	[SitecoreType(TemplateId=I_Interactive_MapConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Interactive_Map : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Image
 	{
 								/// <summary>
-					/// The Interactive Map Location Points field.
+					/// The Hot spots field.
 					/// <para>Datasource items from Site Content\Interactive Map Location Points</para>
 					/// <para>Field Type: Multilist</para>		
 					/// <para>Field ID: 661c5898-9da8-4a26-b33d-e8f7797209f4</para>
-					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Interactive_Map_Location_Points.IInteractive_Map_Location_Point</para>
+					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Interactive_Map.IHotspot</para>
 					/// </summary>
-					[SitecoreField(I_Interactive_Map_Location_PointListConstants.Interactive_Map_Location_PointsFieldName)]
-					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Interactive_Map_Location_Points.IInteractive_Map_Location_Point> Interactive_Map_Location_Points  {get; set;}
+					[SitecoreField(I_Interactive_MapConstants.Hot_SpotsFieldName)]
+					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Interactive_Map.IHotspot> Hot_Spots  {get; set;}
 			
 								/// <summary>
 					/// The Title field.
@@ -44,21 +44,21 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 					/// <para>Field ID: 6d5d0a92-1283-4c10-b057-7d40a1b88de6</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_Interactive_Map_Location_PointListConstants.TitleFieldName)]
+					[SitecoreField(I_Interactive_MapConstants.TitleFieldName)]
 					string Title  {get; set;}
 			
 				}
 
 
-	public static partial class I_Interactive_Map_Location_PointListConstants{
+	public static partial class I_Interactive_MapConstants{
 
 			public const string TemplateIdString = "4df81879-4a85-4b61-a1ee-26ccd66e0a14";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "_Interactive Map Location PointList";
+			public const string TemplateName = "_Interactive Map";
 
 					
-			public static readonly ID Interactive_Map_Location_PointsFieldId = new ID("661c5898-9da8-4a26-b33d-e8f7797209f4");
-			public const string Interactive_Map_Location_PointsFieldName = "Interactive Map Location Points";
+			public static readonly ID Hot_SpotsFieldId = new ID("661c5898-9da8-4a26-b33d-e8f7797209f4");
+			public const string Hot_SpotsFieldName = "Hot spots";
 			
 					
 			public static readonly ID TitleFieldId = new ID("6d5d0a92-1283-4c10-b057-7d40a1b88de6");
@@ -74,26 +74,26 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 
 	
 	/// <summary>
-	/// _Interactive_Map_Location_PointList
+	/// _Interactive_Map
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/Interactive Map Location Points/_Interactive Map Location PointList</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/Interactive Map/_Interactive Map</para>	
 	/// <para>ID: 4df81879-4a85-4b61-a1ee-26ccd66e0a14</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_Interactive_Map_Location_PointListConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(I_Interactive_Map_Location_PointList))]
-	public partial class _Interactive_Map_Location_PointList  : GlassBase, I_Interactive_Map_Location_PointList 
+	[SitecoreType(TemplateId=I_Interactive_MapConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Interactive_Map))]
+	public partial class _Interactive_Map  : GlassBase, I_Interactive_Map 
 	{
 	   
 						/// <summary>
-				/// The Interactive Map Location Points field.
+				/// The Hot spots field.
 				/// <para>Datasource items from Site Content\Interactive Map Location Points</para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 661c5898-9da8-4a26-b33d-e8f7797209f4</para>
-				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Interactive_Map_Location_Points.IInteractive_Map_Location_Point</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Interactive_Map.IHotspot</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_Interactive_Map_Location_PointListConstants.Interactive_Map_Location_PointsFieldName)]
-				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Interactive_Map_Location_Points.IInteractive_Map_Location_Point> Interactive_Map_Location_Points  {get; set;}
+				[SitecoreField(I_Interactive_MapConstants.Hot_SpotsFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Interactive_Map.IHotspot> Hot_Spots  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -103,7 +103,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_Interactive_Map_Location_PointListConstants.TitleFieldName)]
+				[SitecoreField(I_Interactive_MapConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
 					
 						/// <summary>
@@ -114,7 +114,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_Interactive_Map_Location_PointListConstants.ImageFieldName)]
+				[SitecoreField(I_Interactive_MapConstants.ImageFieldName)]
 				public virtual Image Image  {get; set;}
 					
 			

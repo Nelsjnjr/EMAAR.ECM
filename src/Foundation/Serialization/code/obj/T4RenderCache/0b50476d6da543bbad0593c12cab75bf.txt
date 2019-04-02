@@ -1,4 +1,4 @@
-//Revision: bb172315-db1e-4893-8f4d-25a384f3f2b8
+//Revision: 30d0a7f6-e311-412f-93a0-d20d616e7638
 
 
 
@@ -14,19 +14,29 @@
 
 
 
-namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Banner
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.ImageText
 {
 
 
  	/// <summary>
 	/// I_ImageText Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/Banner/_ImageText</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/ImageText/_ImageText</para>	
 	/// <para>ID: 0b50476d-6da5-43bb-ad05-93c12cab75bf</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=I_ImageTextConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_ImageText : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_TitleDesc, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Image, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_CTA
+	public partial interface I_ImageText : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_TitleDesc, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Image, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Button
 	{
+								/// <summary>
+					/// The Image Text Alignment field.
+					/// <para></para>
+					/// <para>Field Type: Droplink</para>		
+					/// <para>Field ID: 31a2756e-9000-42e0-8f4c-d636c8b03849</para>
+					/// <para>Custom Data: Type=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.ISettings</para>
+					/// </summary>
+					[SitecoreField(I_ImageTextConstants.Image_Text_AlignmentFieldName)]
+					EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.ISettings Image_Text_Alignment  {get; set;}
+			
 				}
 
 
@@ -37,8 +47,12 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Banner
 			public const string TemplateName = "_ImageText";
 
 					
-			public static readonly ID DescriptionFieldId = new ID("86ef63d0-7e10-4df7-80a7-28df2d6ba18f");
-			public const string DescriptionFieldName = "Description";
+			public static readonly ID Image_Text_AlignmentFieldId = new ID("31a2756e-9000-42e0-8f4c-d636c8b03849");
+			public const string Image_Text_AlignmentFieldName = "Image Text Alignment";
+			
+					
+			public static readonly ID SummaryFieldId = new ID("86ef63d0-7e10-4df7-80a7-28df2d6ba18f");
+			public const string SummaryFieldName = "Summary";
 			
 					
 			public static readonly ID TitleFieldId = new ID("cddd22f9-558a-4e98-a614-53c5e090fb96");
@@ -49,8 +63,8 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Banner
 			public const string ImageFieldName = "Image";
 			
 					
-			public static readonly ID CTAFieldId = new ID("f9401c09-1121-4bb5-abed-48bc2b29de71");
-			public const string CTAFieldName = "CTA";
+			public static readonly ID ButtonFieldId = new ID("cd52c386-4ebe-4916-85b9-7128d2028100");
+			public const string ButtonFieldName = "Button";
 			
 			
 
@@ -60,7 +74,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Banner
 	/// <summary>
 	/// _ImageText
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/Banner/_ImageText</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/ImageText/_ImageText</para>	
 	/// <para>ID: 0b50476d-6da5-43bb-ad05-93c12cab75bf</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=I_ImageTextConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
@@ -69,15 +83,26 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Banner
 	{
 	   
 						/// <summary>
-				/// The Description field.
+				/// The Image Text Alignment field.
+				/// <para></para>
+				/// <para>Field Type: Droplink</para>		
+				/// <para>Field ID: 31a2756e-9000-42e0-8f4c-d636c8b03849</para>
+				/// <para>Custom Data: Type=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.ISettings</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_ImageTextConstants.Image_Text_AlignmentFieldName)]
+				public virtual EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.ISettings Image_Text_Alignment  {get; set;}
+					
+						/// <summary>
+				/// The Summary field.
 				/// <para></para>
 				/// <para>Field Type: Rich Text</para>		
 				/// <para>Field ID: 86ef63d0-7e10-4df7-80a7-28df2d6ba18f</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_ImageTextConstants.DescriptionFieldName)]
-				public virtual string Description  {get; set;}
+				[SitecoreField(I_ImageTextConstants.SummaryFieldName)]
+				public virtual string Summary  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -102,15 +127,15 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Banner
 				public virtual Image Image  {get; set;}
 					
 						/// <summary>
-				/// The CTA field.
+				/// The Button field.
 				/// <para></para>
 				/// <para>Field Type: General Link</para>		
-				/// <para>Field ID: f9401c09-1121-4bb5-abed-48bc2b29de71</para>
+				/// <para>Field ID: cd52c386-4ebe-4916-85b9-7128d2028100</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_ImageTextConstants.CTAFieldName)]
-				public virtual Link CTA  {get; set;}
+				[SitecoreField(I_ImageTextConstants.ButtonFieldName)]
+				public virtual Link Button  {get; set;}
 					
 			
 	}

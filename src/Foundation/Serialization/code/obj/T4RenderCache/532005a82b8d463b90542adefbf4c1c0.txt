@@ -1,4 +1,4 @@
-//Revision: f4302f2a-1f0f-4254-8a47-d4c94ee30ae9
+//Revision: ce4f9403-d662-4907-bd9b-195868689874
 
 
 
@@ -14,18 +14,18 @@
 
 
 
-namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Community_Metrics
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Hero_component
 {
 
 
  	/// <summary>
-	/// I_Community_Metric Interface
+	/// I_Statistics Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/Community Metrics/_Community Metric</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/Hero component/_Statistics</para>	
 	/// <para>ID: 532005a8-2b8d-463b-9054-2adefbf4c1c0</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_Community_MetricConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_Community_Metric : IGlassBase 
+	[SitecoreType(TemplateId=I_StatisticsConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Statistics : IGlassBase 
 	{
 								/// <summary>
 					/// The Count field.
@@ -34,7 +34,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Communi
 					/// <para>Field ID: 31d6185a-e7e2-42ad-b4ab-d96bd72d218e</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_Community_MetricConstants.CountFieldName)]
+					[SitecoreField(I_StatisticsConstants.CountFieldName)]
 					string Count  {get; set;}
 			
 								/// <summary>
@@ -44,17 +44,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Communi
 					/// <para>Field ID: 574981a6-efd9-442e-ac0d-706f77d72115</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_Community_MetricConstants.TitleFieldName)]
+					[SitecoreField(I_StatisticsConstants.TitleFieldName)]
 					string Title  {get; set;}
 			
 				}
 
 
-	public static partial class I_Community_MetricConstants{
+	public static partial class I_StatisticsConstants{
 
 			public const string TemplateIdString = "532005a8-2b8d-463b-9054-2adefbf4c1c0";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "_Community Metric";
+			public const string TemplateName = "_Statistics";
 
 					
 			public static readonly ID CountFieldId = new ID("31d6185a-e7e2-42ad-b4ab-d96bd72d218e");
@@ -70,14 +70,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Communi
 
 	
 	/// <summary>
-	/// _Community_Metric
+	/// _Statistics
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/Community Metrics/_Community Metric</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/Hero component/_Statistics</para>	
 	/// <para>ID: 532005a8-2b8d-463b-9054-2adefbf4c1c0</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_Community_MetricConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(I_Community_Metric))]
-	public partial class _Community_Metric  : GlassBase, I_Community_Metric 
+	[SitecoreType(TemplateId=I_StatisticsConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Statistics))]
+	public partial class _Statistics  : GlassBase, I_Statistics 
 	{
 	   
 						/// <summary>
@@ -88,7 +88,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Communi
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_Community_MetricConstants.CountFieldName)]
+				[SitecoreField(I_StatisticsConstants.CountFieldName)]
 				public virtual string Count  {get; set;}
 					
 						/// <summary>
@@ -99,7 +99,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Communi
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_Community_MetricConstants.TitleFieldName)]
+				[SitecoreField(I_StatisticsConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
 					
 			

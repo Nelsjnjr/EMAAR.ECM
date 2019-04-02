@@ -1,4 +1,4 @@
-//Revision: 10e32f09-3cb8-4c77-b616-beca08f41835
+//Revision: 4bd5dcc9-9de0-4fad-8d00-6bf39bb74c60
 
 
 
@@ -14,28 +14,28 @@
 
 
 
-namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.ContactInfo
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Footer_Contact
 {
 
 
  	/// <summary>
-	/// I_ContactInfoList Interface
+	/// I_FooterContents Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/ContactInfo/_ContactInfoList</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/Footer Contact/_FooterContents</para>	
 	/// <para>ID: c282ab35-a6a2-4155-b8c6-6495d9465fe3</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_ContactInfoListConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_ContactInfoList : IGlassBase 
+	[SitecoreType(TemplateId=I_FooterContentsConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_FooterContents : IGlassBase 
 	{
 								/// <summary>
 					/// The Contact Infos field.
 					/// <para></para>
 					/// <para>Field Type: Multilist</para>		
 					/// <para>Field ID: 09a37ddc-581d-4d28-a130-d4642cc5ce41</para>
-					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.ContactInfo.IContactInfo</para>
+					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Footer_Contact.IFooterContact</para>
 					/// </summary>
-					[SitecoreField(I_ContactInfoListConstants.Contact_InfosFieldName)]
-					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.ContactInfo.IContactInfo> Contact_Infos  {get; set;}
+					[SitecoreField(I_FooterContentsConstants.Contact_InfosFieldName)]
+					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Footer_Contact.IFooterContact> Contact_Infos  {get; set;}
 			
 								/// <summary>
 					/// The Title field.
@@ -44,17 +44,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Contact
 					/// <para>Field ID: 0e6606bd-d4f4-499b-bc1a-6f43ce363beb</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_ContactInfoListConstants.TitleFieldName)]
+					[SitecoreField(I_FooterContentsConstants.TitleFieldName)]
 					string Title  {get; set;}
 			
 				}
 
 
-	public static partial class I_ContactInfoListConstants{
+	public static partial class I_FooterContentsConstants{
 
 			public const string TemplateIdString = "c282ab35-a6a2-4155-b8c6-6495d9465fe3";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "_ContactInfoList";
+			public const string TemplateName = "_FooterContents";
 
 					
 			public static readonly ID Contact_InfosFieldId = new ID("09a37ddc-581d-4d28-a130-d4642cc5ce41");
@@ -70,14 +70,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Contact
 
 	
 	/// <summary>
-	/// _ContactInfoList
+	/// _FooterContents
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/ContactInfo/_ContactInfoList</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/Footer Contact/_FooterContents</para>	
 	/// <para>ID: c282ab35-a6a2-4155-b8c6-6495d9465fe3</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_ContactInfoListConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(I_ContactInfoList))]
-	public partial class _ContactInfoList  : GlassBase, I_ContactInfoList 
+	[SitecoreType(TemplateId=I_FooterContentsConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_FooterContents))]
+	public partial class _FooterContents  : GlassBase, I_FooterContents 
 	{
 	   
 						/// <summary>
@@ -85,11 +85,11 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Contact
 				/// <para></para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 09a37ddc-581d-4d28-a130-d4642cc5ce41</para>
-				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.ContactInfo.IContactInfo</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Footer_Contact.IFooterContact</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_ContactInfoListConstants.Contact_InfosFieldName)]
-				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.ContactInfo.IContactInfo> Contact_Infos  {get; set;}
+				[SitecoreField(I_FooterContentsConstants.Contact_InfosFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Footer_Contact.IFooterContact> Contact_Infos  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -99,7 +99,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Contact
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_ContactInfoListConstants.TitleFieldName)]
+				[SitecoreField(I_FooterContentsConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
 					
 			
