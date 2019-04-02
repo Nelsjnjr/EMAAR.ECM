@@ -38,7 +38,7 @@
     <DisableFileDeployment>False</DisableFileDeployment>
     <LightningDeployMode>False</LightningDeployMode>
     <SitecoreDeployFolder>C:\inetpub\wwwroot\EMAAR.ECM.dev</SitecoreDeployFolder>
-    <SitecoreAccessGuid>212f81c0-a79c-48f2-a93f-eeb2fb9cacb7</SitecoreAccessGuid>
+    <SitecoreAccessGuid>c9f9a0d0-168b-49da-b286-e4474c2dd08b</SitecoreAccessGuid>
     <PackageName>EMAAR.ECM.Foundation.Serialization.Master</PackageName>
     <PackageAuthor />
     <PackagePublisher />

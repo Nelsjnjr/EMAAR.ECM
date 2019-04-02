@@ -219,8 +219,12 @@ D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Map\code\bin\Newtonsoft.Json
 D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Map\code\bin\System.Web.Mvc.xml
 D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Map\code\obj\Debug\EMAAR.ECM.Feature.Map.dll
 D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Map\code\obj\Debug\EMAAR.ECM.Feature.Map.pdb
-D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Map\code\bin\System.Linq.dll
-D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Map\code\bin\System.Linq.Expressions.dll
-D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Map\code\bin\System.Reflection.dll
-D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Map\code\bin\System.Runtime.Extensions.dll
-D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Map\code\obj\Debug\EMAAR.ECM.Feature.Map.csprojResolveAssemblyReference.cache
+D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Map\code\bin\EMAAR.ECM.Feature.Map.dll.config
+D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Map\code\bin\EMAAR.ECM.Feature.Map.dll.CodeAnalysisLog.xml
+D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Map\code\bin\EMAAR.ECM.Feature.Map.dll.lastcodeanalysissucceeded
+D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Map\code\bin\EMAAR.ECM.Foundation.Constants.dll.config
+D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Map\code\bin\EMAAR.ECM.Foundation.DependencyInjection.dll.config
+D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Map\code\bin\EMAAR.ECM.Foundation.ORM.dll.config
+D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Map\code\obj\Debug\EMAAR.ECM.Feature.Map.csprojAssemblyReference.cache
+D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Map\code\obj\Debug\EMAAR.ECM.Feature.Map.csproj.CoreCompileInputs.cache
+D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Map\code\obj\Debug\EMAAR.ECM.Feature.Map.csproj.CopyComplete

@@ -263,8 +263,12 @@ D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Banner\code\bin\Microsoft.As
 D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Banner\code\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Banner\code\obj\Debug\EMAAR.ECM.Feature.Banner.dll
 D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Banner\code\obj\Debug\EMAAR.ECM.Feature.Banner.pdb
-D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Banner\code\bin\System.Linq.dll
-D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Banner\code\bin\System.Linq.Expressions.dll
-D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Banner\code\bin\System.Reflection.dll
-D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Banner\code\bin\System.Runtime.Extensions.dll
-D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Banner\code\obj\Debug\EMAAR.ECM.Feature.Banner.csprojResolveAssemblyReference.cache
+D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Banner\code\bin\EMAAR.ECM.Feature.Banner.dll.config
+D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Banner\code\bin\EMAAR.ECM.Feature.Banner.dll.CodeAnalysisLog.xml
+D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Banner\code\bin\EMAAR.ECM.Feature.Banner.dll.lastcodeanalysissucceeded
+D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Banner\code\bin\EMAAR.ECM.Foundation.Constants.dll.config
+D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Banner\code\bin\EMAAR.ECM.Foundation.DependencyInjection.dll.config
+D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Banner\code\bin\EMAAR.ECM.Foundation.ORM.dll.config
+D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Banner\code\obj\Debug\EMAAR.ECM.Feature.Banner.csprojAssemblyReference.cache
+D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Banner\code\obj\Debug\EMAAR.ECM.Feature.Banner.csproj.CoreCompileInputs.cache
+D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Banner\code\obj\Debug\EMAAR.ECM.Feature.Banner.csproj.CopyComplete

@@ -261,8 +261,10 @@ D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Navigation\code\bin\Microsof
 D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Navigation\code\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Navigation\code\obj\Debug\EMAAR.ECM.Feature.Navigation.dll
 D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Navigation\code\obj\Debug\EMAAR.ECM.Feature.Navigation.pdb
-D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Navigation\code\bin\System.Linq.dll
-D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Navigation\code\bin\System.Linq.Expressions.dll
-D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Navigation\code\bin\System.Reflection.dll
-D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Navigation\code\bin\System.Runtime.Extensions.dll
-D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Navigation\code\obj\Debug\EMAAR.ECM.Feature.Navigation.csprojResolveAssemblyReference.cache
+D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Navigation\code\bin\EMAAR.ECM.Feature.Navigation.dll.config
+D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Navigation\code\bin\EMAAR.ECM.Foundation.Constants.dll.config
+D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Navigation\code\bin\EMAAR.ECM.Foundation.DependencyInjection.dll.config
+D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Navigation\code\bin\EMAAR.ECM.Foundation.ORM.dll.config
+D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Navigation\code\obj\Debug\EMAAR.ECM.Feature.Navigation.csprojAssemblyReference.cache
+D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Navigation\code\obj\Debug\EMAAR.ECM.Feature.Navigation.csproj.CoreCompileInputs.cache
+D:\Projects\EMAAR\ECM\Github\Repository\src\Feature\Navigation\code\obj\Debug\EMAAR.ECM.Feature.Navigation.csproj.CopyComplete

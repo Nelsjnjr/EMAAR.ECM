@@ -226,8 +226,7 @@ D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\ErrorHandling\code\bin\Sy
 D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\ErrorHandling\code\bin\System.Web.WebPages.Razor.xml
 D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\ErrorHandling\code\obj\Debug\EMAAR.ECM.Foundation.ErrorHandling.dll
 D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\ErrorHandling\code\obj\Debug\EMAAR.ECM.Foundation.ErrorHandling.pdb
-D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\ErrorHandling\code\bin\System.Linq.dll
-D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\ErrorHandling\code\bin\System.Linq.Expressions.dll
-D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\ErrorHandling\code\bin\System.Reflection.dll
-D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\ErrorHandling\code\bin\System.Runtime.Extensions.dll
-D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\ErrorHandling\code\obj\Debug\EMAAR.ECM.Foundation.ErrorHandling.csprojResolveAssemblyReference.cache
+D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\ErrorHandling\code\bin\EMAAR.ECM.Foundation.ErrorHandling.dll.config
+D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\ErrorHandling\code\obj\Debug\EMAAR.ECM.Foundation.ErrorHandling.csprojAssemblyReference.cache
+D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\ErrorHandling\code\obj\Debug\EMAAR.ECM.Foundation.ErrorHandling.csproj.CoreCompileInputs.cache
+D:\Projects\EMAAR\ECM\Github\Repository\src\Foundation\ErrorHandling\code\obj\Debug\EMAAR.ECM.Foundation.ErrorHandling.csproj.CopyComplete

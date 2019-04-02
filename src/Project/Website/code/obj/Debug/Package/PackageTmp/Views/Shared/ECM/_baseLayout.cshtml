@@ -1,0 +1,42 @@
+﻿@using System.Web.Optimization
+@using Glass.Mapper.Sc.Web.Mvc
+@using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title></title>
+
+    <link href="~/css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>    <![endif]-->
+    @{
+        //Getting Page Pre site scripts
+        var SiteRoot = Sitecore.Context.Database.GetItem(Sitecore.Context.Site.RootPath);
+        @Html.Raw(SiteRoot.Fields[I_SiteScriptsTagsConstants.Pre_Site_ScriptsFieldName].Value)
+    }
+</head>
+<body>
+
+    @Html.Sitecore().Placeholder("ecm_header")
+    @Html.Sitecore().Placeholder("ecm_content")
+    @Html.Sitecore().Placeholder("ecm_footer")
+
+    <!-- footer ends here -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    @Scripts.Render("/bundles/jquery")
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    @Scripts.Render("/bundles/vendor")
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    @Scripts.Render("/bundles/app")
+    @Scripts.Render("/bundles/main")
+    <!--Getting Page Post site scripts-->
+    @Html.Raw(SiteRoot.Fields[I_SiteScriptsTagsConstants.Post_Site_ScriptsFieldName].Value)
+
+</body>
+</html>
