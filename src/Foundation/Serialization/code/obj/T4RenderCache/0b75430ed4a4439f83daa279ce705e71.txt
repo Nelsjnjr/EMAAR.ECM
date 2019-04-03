@@ -1,4 +1,4 @@
-//Revision: 574ec479-681f-4c43-aab7-2c51fc1007a1
+//Revision: 4ec1b760-9b5e-4114-8438-85fda3bd7678
 
 
 
@@ -19,22 +19,22 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 
 
  	/// <summary>
-	/// I_BannerFolder Interface
+	/// I_ImageTextsFolder Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_BannerFolder</para>	
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_ImageTextsFolder</para>	
 	/// <para>ID: 0b75430e-d4a4-439f-83da-a279ce705e71</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_BannerFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_BannerFolder : IGlassBase 
+	[SitecoreType(TemplateId=I_ImageTextsFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_ImageTextsFolder : IGlassBase 
 	{
 				}
 
 
-	public static partial class I_BannerFolderConstants{
+	public static partial class I_ImageTextsFolderConstants{
 
 			public const string TemplateIdString = "0b75430e-d4a4-439f-83da-a279ce705e71";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "_BannerFolder";
+			public const string TemplateName = "_ImageTextsFolder";
 
 			
 
@@ -42,14 +42,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 
 	
 	/// <summary>
-	/// _BannerFolder
+	/// _ImageTextsFolder
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_BannerFolder</para>	
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_ImageTextsFolder</para>	
 	/// <para>ID: 0b75430e-d4a4-439f-83da-a279ce705e71</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_BannerFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(I_BannerFolder))]
-	public partial class _BannerFolder  : GlassBase, I_BannerFolder 
+	[SitecoreType(TemplateId=I_ImageTextsFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_ImageTextsFolder))]
+	public partial class _ImageTextsFolder  : GlassBase, I_ImageTextsFolder 
 	{
 	   
 			

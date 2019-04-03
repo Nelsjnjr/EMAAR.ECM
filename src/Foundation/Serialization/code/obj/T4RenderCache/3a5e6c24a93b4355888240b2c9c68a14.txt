@@ -1,4 +1,4 @@
-//Revision: 3db485ae-4431-4795-b85f-8bd6c5596c11
+//Revision: b9fbf743-7e16-43e4-b544-3c490858d0e3
 
 
 
@@ -19,22 +19,22 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 
 
  	/// <summary>
-	/// I_InteractiveMapListFolder Interface
+	/// I_InteractiveMapsFolder Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_InteractiveMapListFolder</para>	
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_InteractiveMapsFolder</para>	
 	/// <para>ID: 3a5e6c24-a93b-4355-8882-40b2c9c68a14</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_InteractiveMapListFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_InteractiveMapListFolder : IGlassBase 
+	[SitecoreType(TemplateId=I_InteractiveMapsFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_InteractiveMapsFolder : IGlassBase 
 	{
 				}
 
 
-	public static partial class I_InteractiveMapListFolderConstants{
+	public static partial class I_InteractiveMapsFolderConstants{
 
 			public const string TemplateIdString = "3a5e6c24-a93b-4355-8882-40b2c9c68a14";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "_InteractiveMapListFolder";
+			public const string TemplateName = "_InteractiveMapsFolder";
 
 			
 
@@ -42,14 +42,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 
 	
 	/// <summary>
-	/// _InteractiveMapListFolder
+	/// _InteractiveMapsFolder
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_InteractiveMapListFolder</para>	
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_InteractiveMapsFolder</para>	
 	/// <para>ID: 3a5e6c24-a93b-4355-8882-40b2c9c68a14</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_InteractiveMapListFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(I_InteractiveMapListFolder))]
-	public partial class _InteractiveMapListFolder  : GlassBase, I_InteractiveMapListFolder 
+	[SitecoreType(TemplateId=I_InteractiveMapsFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_InteractiveMapsFolder))]
+	public partial class _InteractiveMapsFolder  : GlassBase, I_InteractiveMapsFolder 
 	{
 	   
 			

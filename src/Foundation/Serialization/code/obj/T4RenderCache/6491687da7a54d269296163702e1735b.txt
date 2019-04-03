@@ -1,0 +1,58 @@
+//Revision: b2384054-8813-48ef-b7a3-5b8af46f7cc2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
+{
+
+
+ 	/// <summary>
+	/// I_ParallaxFolder Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_ParallaxFolder</para>	
+	/// <para>ID: 6491687d-a7a5-4d26-9296-163702e1735b</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_ParallaxFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_ParallaxFolder : IGlassBase 
+	{
+				}
+
+
+	public static partial class I_ParallaxFolderConstants{
+
+			public const string TemplateIdString = "6491687d-a7a5-4d26-9296-163702e1735b";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_ParallaxFolder";
+
+			
+
+	}
+
+	
+	/// <summary>
+	/// _ParallaxFolder
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_ParallaxFolder</para>	
+	/// <para>ID: 6491687d-a7a5-4d26-9296-163702e1735b</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_ParallaxFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_ParallaxFolder))]
+	public partial class _ParallaxFolder  : GlassBase, I_ParallaxFolder 
+	{
+	   
+			
+	}
+}
+

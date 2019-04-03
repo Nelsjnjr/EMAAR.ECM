@@ -7,7 +7,7 @@ parent: {189E5AD4-6645-4EEB-82C2-FF32165999FA}
 name: Burjpark
 master: {00000000-0000-0000-0000-000000000000}
 template: {2F161DAF-D0F4-4372-929E-C6FC5DC4FBDA}
-templatekey: Interactive Map Location Point
+templatekey: Hotspot
 created: 20190321T090724Z
 
 ----version----

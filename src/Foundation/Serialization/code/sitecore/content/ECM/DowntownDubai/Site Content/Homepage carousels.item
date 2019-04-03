@@ -7,7 +7,7 @@ parent: {8728ED7C-B96D-4098-985C-0E499161BD68}
 name: Homepage carousels
 master: {00000000-0000-0000-0000-000000000000}
 template: {019D6D65-1672-4E76-AA99-8E2E665939A7}
-templatekey: RelatedContentFolder
+templatekey: Homepage carousel Folder
 created: 20190314T115812Z
 
 ----field----

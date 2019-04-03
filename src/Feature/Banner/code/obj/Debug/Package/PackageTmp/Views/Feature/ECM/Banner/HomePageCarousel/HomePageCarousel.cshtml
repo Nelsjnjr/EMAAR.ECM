@@ -1,4 +1,4 @@
-﻿@model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Homepage_carousel.IHomepage_CarouselList
+﻿@model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Homepage_carousel.IHomepage_Carousels
 @using EMAAR.ECM.Foundation.Constants
 @using Glass.Mapper.Sc.Web.Mvc
 @{ string backgroundCss = String.Empty;
@@ -14,7 +14,7 @@
         <div class="exploreSlider wow fadeInUp" data-wow-delay=".5s">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    @foreach (var carousels in Model.Homepage_Carousels)
+                    @foreach (var carousels in Model.Carousels)
                     {
                         <div class="swiper-slide">
                             <div class="explore-item">

@@ -1,13 +1,16 @@
 ﻿@using System.Web.Optimization
 @using Glass.Mapper.Sc.Web.Mvc
+@using EMAAR.ECM.Foundation.Constants.Settings
 @using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types
 @model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.ISiteRoot
 <!DOCTYPE html>
-<html lang="en">
+<html lang="@Sitecore.Context.Language">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+   
+    @Html.Action("GetPageMetaData", "Seo")
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title></title>
     @{

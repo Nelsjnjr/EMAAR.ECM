@@ -42,6 +42,6 @@ namespace EMAAR.ECM.Foundation.Constants.Interfaces
         /// </summary>
         IFooter NavigationFooter { get; }
         #endregion
-
+      
     }
 }

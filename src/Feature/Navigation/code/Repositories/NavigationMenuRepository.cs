@@ -45,7 +45,7 @@ namespace EMAAR.ECM.Feature.Navigation.Repositories
             IHome contextItem = mvcContext.GetContextItem<IHome>();
             if (contextItem.TemplateId.ToString().Equals(SitecoreSettings.HomeTemplateID, StringComparison.InvariantCultureIgnoreCase))
             {
-                _headerViewModel.SearchIcon = _sitecoreHelper.HomePageSearch;
+                 _headerViewModel.SearchIcon = _sitecoreHelper.HomePageSearch;
                 _headerViewModel.CloseIcon = _sitecoreHelper.HomePageClose;
                 _headerViewModel.HeaderCss = CommonConstants.HomePageHeaderCss;
             }

@@ -275,8 +275,165 @@ sitecore\admin
 ----version----
 language: en
 version: 1
-revision: e0ce698e-2509-4789-8945-e39af577b6ed
+revision: c49e34c2-284b-4e9c-a3a3-15b50121e4a2
 
+----field----
+field: {4474613D-E594-4763-9C9A-38E8E069DD18}
+name: Title
+key: title
+content-length: 26
+
+Downtown dubai Properities
+----field----
+field: {8097066D-26C3-44B9-8527-551A2CBB5A84}
+name: Meta Title
+key: meta title
+content-length: 4
+
+Home
+----field----
+field: {DACE23AF-D8B3-48F1-94E7-9AE3EE07CB35}
+name: Meta Keywords
+key: meta keywords
+content-length: 28
+
+communities,properties,malls
+----field----
+field: {8453AF30-1477-46FB-8094-BD5FDE72C89A}
+name: Meta Description
+key: meta description
+content-length: 21
+
+Meta description test
+----field----
+field: {DD32DA75-5CC3-4961-B3C6-8EE0664BD31E}
+name: Custom Meta Tags
+key: custom meta tags
+content-length: 28
+
+country:UAE,
+Emirates:Dubai
+----field----
+field: {26C53039-4914-4EC5-BB84-AD910FAA4086}
+name: Hreflang Tags
+key: hreflang tags
+content-length: 80
+
+ar:https://www.armani.com/ar/armanicom,de-AT:https://www.armani.com/at/armanicom
+----field----
+field: {074B8D28-6F24-4DCC-812F-14E14F67F1E8}
+name: Canonical Tags
+key: canonical tags
+content-length: 113
+
+https://www.armani.com/at/armanicom,
+https://www.armani.com/at/armanicom,
+https://www.armani.com/at/armanicom111
+----field----
+field: {4F39872D-258B-45B8-926B-6297E2DC7CD4}
+name: og title
+key: og title
+content-length: 51
+
+Armani | Official Online Store | ‎United States ‎" 
+----field----
+field: {89F0FE3C-744E-416C-B216-340E05F86EAC}
+name: og description
+key: og description
+content-length: 132
+
+The official online Armani store for the finest Italian clothing, shoes, & many fashion and lifestyle items from the new collection.
+----field----
+field: {2F2F8274-9494-4FBD-936D-AC6D03A8CF9B}
+name: og type
+key: og type
+content-length: 7
+
+website
+----field----
+field: {B41E43E9-8AB5-4A00-B76B-1664C7161F82}
+name: og site_name
+key: og site_name
+content-length: 47
+
+Armani | Official Online Store | ‎United States
+----field----
+field: {CD25BC97-065E-4F79-B991-7C515DEDAB45}
+name: og url
+key: og url
+content-length: 35
+
+https://www.armani.com/us/armanicom
+----field----
+field: {ACE133E4-A79F-4ABA-AFA9-3B876082D908}
+name: og locale
+key: og locale
+content-length: 16
+
+localessssssssss
+----field----
+field: {4499FDB8-D0CD-4012-A7EA-B08003C96E26}
+name: og image
+key: og image
+content-length: 9
+
+image url
+----field----
+field: {7BC4F422-380E-4A89-A82A-74E5249E609C}
+name: og video
+key: og video
+content-length: 9
+
+video url
+----field----
+field: {E4395580-B216-41E6-AD1F-8EC542DE11D6}
+name: twiiter title
+key: twiiter title
+content-length: 47
+
+Armani | Official Online Store | ‎United States
+----field----
+field: {CE1BE2A8-5E5C-49D9-B9A9-63834309B252}
+name: twitter description
+key: twitter description
+content-length: 132
+
+The official online Armani store for the finest Italian clothing, shoes, & many fashion and lifestyle items from the new collection.
+----field----
+field: {1827467A-8817-4A16-B39C-53503B35D15E}
+name: twitter site
+key: twitter site
+content-length: 3
+
+ECM
+----field----
+field: {1078FF0C-7C59-4FD4-B4D1-1F693848928F}
+name: twitter creator
+key: twitter creator
+content-length: 7
+
+creator
+----field----
+field: {6466BDE7-35CF-4E65-BDA5-132E5CF0A9EB}
+name: twitter card
+key: twitter card
+content-length: 7
+
+product
+----field----
+field: {BEBB8543-E760-4BBE-9A9E-E7EAAEDD101E}
+name: twitter image
+key: twitter image
+content-length: 9
+
+image url
+----field----
+field: {DAAD817A-930F-4DAE-BE58-687BB95D6ED9}
+name: Robots Follow this page
+key: robots follow this page
+content-length: 1
+
+1
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
 name: __Display name
@@ -346,14 +503,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e0ce698e-2509-4789-8945-e39af577b6ed
+c49e34c2-284b-4e9c-a3a3-15b50121e4a2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190402T061644Z
+20190403T123721Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

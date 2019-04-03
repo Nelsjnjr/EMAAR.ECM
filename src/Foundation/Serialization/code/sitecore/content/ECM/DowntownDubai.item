@@ -13,7 +13,7 @@ created: 20190311T112008Z
 ----version----
 language: en
 version: 1
-revision: 12b431a5-9e7d-4965-87db-45e661ac772c
+revision: 7df28545-2b85-4ff1-a106-30ee9f856a71
 
 ----field----
 field: {45D89051-7992-4D9F-9979-85DD606CB56C}
@@ -50,6 +50,20 @@ key: site logo url
 content-length: 133
 
 <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{34853065-F482-4073-9AE0-73E2E2FBFEF3}" />
+----field----
+field: {AEC7285D-82C8-47B2-889E-64025A84C65B}
+name: Fav shortcut icon
+key: fav shortcut icon
+content-length: 32
+
+Applications/32x32/heart_new.png
+----field----
+field: {6D92CD31-4F15-4019-B16E-66A3BBB2B9A8}
+name: Fav icon
+key: fav icon
+content-length: 28
+
+office/32x32/chart_donut.png
 ----field----
 field: {1F0AD353-B94C-4B2E-B135-DD129E1A2509}
 name: Robots File content
@@ -112,14 +126,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-12b431a5-9e7d-4965-87db-45e661ac772c
+7df28545-2b85-4ff1-a106-30ee9f856a71
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190401T104052Z
+20190403T114313Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

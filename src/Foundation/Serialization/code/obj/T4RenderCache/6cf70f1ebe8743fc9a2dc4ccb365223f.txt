@@ -1,4 +1,4 @@
-//Revision: 25989fd2-cbe0-4b19-aea3-3c7b396e6bf5
+//Revision: 1c88f2c9-a34e-4806-a004-e3b618ab3838
 
 
 
@@ -19,22 +19,22 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 
 
  	/// <summary>
-	/// IBannerFolder Interface
+	/// IImageTextsFolder Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/BannerFolder</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/ImageTextsFolder</para>	
 	/// <para>ID: 6cf70f1e-be87-43fc-9a2d-c4ccb365223f</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=IBannerFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface IBannerFolder : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_BannerFolder
+	[SitecoreType(TemplateId=IImageTextsFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IImageTextsFolder : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_ImageTextsFolder
 	{
 				}
 
 
-	public static partial class IBannerFolderConstants{
+	public static partial class IImageTextsFolderConstants{
 
 			public const string TemplateIdString = "6cf70f1e-be87-43fc-9a2d-c4ccb365223f";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "BannerFolder";
+			public const string TemplateName = "ImageTextsFolder";
 
 			
 
@@ -42,14 +42,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 
 	
 	/// <summary>
-	/// BannerFolder
+	/// ImageTextsFolder
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/BannerFolder</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/ImageTextsFolder</para>	
 	/// <para>ID: 6cf70f1e-be87-43fc-9a2d-c4ccb365223f</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=IBannerFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(IBannerFolder))]
-	public partial class BannerFolder  : GlassBase, IBannerFolder 
+	[SitecoreType(TemplateId=IImageTextsFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IImageTextsFolder))]
+	public partial class ImageTextsFolder  : GlassBase, IImageTextsFolder 
 	{
 	   
 			

@@ -23,11 +23,11 @@ name: __Icon
 key: __icon
 content-length: 28
 
-multimedia/32x32/image_h.png
+Office/32x32/chart_donut.png
 ----version----
 language: en
 version: 1
-revision: 48485ee8-2420-4277-92b6-0bf49c35941c
+revision: 004008ce-37a9-46b7-a35e-a0e084f057a3
 
 ----field----
 field: {574981A6-EFD9-442E-AC0D-706F77D72115}
@@ -63,14 +63,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-48485ee8-2420-4277-92b6-0bf49c35941c
+004008ce-37a9-46b7-a35e-a0e084f057a3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190327T115729Z
+20190403T051102Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

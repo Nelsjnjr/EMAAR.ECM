@@ -68,6 +68,26 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 					Image ContentPage_SiteLogo  {get; set;}
 			
 								/// <summary>
+					/// The Fav icon field.
+					/// <para></para>
+					/// <para>Field Type: Image</para>		
+					/// <para>Field ID: 6d92cd31-4f15-4019-b16e-66a3bbb2b9a8</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_LogoConstants.Fav_IconFieldName)]
+					Image Fav_Icon  {get; set;}
+			
+								/// <summary>
+					/// The Fav shortcut icon field.
+					/// <para></para>
+					/// <para>Field Type: Image</para>		
+					/// <para>Field ID: aec7285d-82c8-47b2-889e-64025a84c65b</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_LogoConstants.Fav_Shortcut_IconFieldName)]
+					Image Fav_Shortcut_Icon  {get; set;}
+			
+								/// <summary>
 					/// The Site Logo Url field.
 					/// <para></para>
 					/// <para>Field Type: General Link</para>		
@@ -111,6 +131,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 					
 			public static readonly ID ContentPage_SiteLogoFieldId = new ID("761d2c09-0867-4684-9349-25edf255400e");
 			public const string ContentPage_SiteLogoFieldName = "ContentPage SiteLogo";
+			
+					
+			public static readonly ID Fav_IconFieldId = new ID("6d92cd31-4f15-4019-b16e-66a3bbb2b9a8");
+			public const string Fav_IconFieldName = "Fav icon";
+			
+					
+			public static readonly ID Fav_Shortcut_IconFieldId = new ID("aec7285d-82c8-47b2-889e-64025a84c65b");
+			public const string Fav_Shortcut_IconFieldName = "Fav shortcut icon";
 			
 					
 			public static readonly ID Site_Logo_UrlFieldId = new ID("a241368f-8cb5-46dc-b3e3-1e9c4b29b0a6");
@@ -179,6 +207,28 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_LogoConstants.ContentPage_SiteLogoFieldName)]
 				public virtual Image ContentPage_SiteLogo  {get; set;}
+					
+						/// <summary>
+				/// The Fav icon field.
+				/// <para></para>
+				/// <para>Field Type: Image</para>		
+				/// <para>Field ID: 6d92cd31-4f15-4019-b16e-66a3bbb2b9a8</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_LogoConstants.Fav_IconFieldName)]
+				public virtual Image Fav_Icon  {get; set;}
+					
+						/// <summary>
+				/// The Fav shortcut icon field.
+				/// <para></para>
+				/// <para>Field Type: Image</para>		
+				/// <para>Field ID: aec7285d-82c8-47b2-889e-64025a84c65b</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_LogoConstants.Fav_Shortcut_IconFieldName)]
+				public virtual Image Fav_Shortcut_Icon  {get; set;}
 					
 						/// <summary>
 				/// The Site Logo Url field.

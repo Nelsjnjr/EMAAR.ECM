@@ -1,0 +1,183 @@
+//Revision: e75c4bff-f2d3-43de-a202-d1936f43e7cc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
+{
+
+
+ 	/// <summary>
+	/// I_Smtp Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_Smtp</para>	
+	/// <para>ID: 5ef77854-4442-4f8f-aa66-6e1df7003567</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_SmtpConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Smtp : IGlassBase 
+	{
+								/// <summary>
+					/// The Smtp Password field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: b9374910-64a8-4f4f-a5cf-a0852291d02a</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_SmtpConstants.Smtp_PasswordFieldName)]
+					string Smtp_Password  {get; set;}
+			
+								/// <summary>
+					/// The Smtp Port field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: 17eec49a-ecb9-4803-8fb7-eaff9113dbfd</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_SmtpConstants.Smtp_PortFieldName)]
+					string Smtp_Port  {get; set;}
+			
+								/// <summary>
+					/// The Smtp Server field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: 09a43b13-e750-4335-9bd4-9f1ab7c31533</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_SmtpConstants.Smtp_ServerFieldName)]
+					string Smtp_Server  {get; set;}
+			
+								/// <summary>
+					/// The Smtp SSL Required field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: 28a79dfb-f15d-415a-a848-2a35c7a9919b</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_SmtpConstants.Smtp_SSL_RequiredFieldName)]
+					string Smtp_SSL_Required  {get; set;}
+			
+								/// <summary>
+					/// The Smtp UserName field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: 527d90ac-83f3-4d49-873f-142324d4fdb9</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_SmtpConstants.Smtp_UserNameFieldName)]
+					string Smtp_UserName  {get; set;}
+			
+				}
+
+
+	public static partial class I_SmtpConstants{
+
+			public const string TemplateIdString = "5ef77854-4442-4f8f-aa66-6e1df7003567";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_Smtp";
+
+					
+			public static readonly ID Smtp_PasswordFieldId = new ID("b9374910-64a8-4f4f-a5cf-a0852291d02a");
+			public const string Smtp_PasswordFieldName = "Smtp Password";
+			
+					
+			public static readonly ID Smtp_PortFieldId = new ID("17eec49a-ecb9-4803-8fb7-eaff9113dbfd");
+			public const string Smtp_PortFieldName = "Smtp Port";
+			
+					
+			public static readonly ID Smtp_ServerFieldId = new ID("09a43b13-e750-4335-9bd4-9f1ab7c31533");
+			public const string Smtp_ServerFieldName = "Smtp Server";
+			
+					
+			public static readonly ID Smtp_SSL_RequiredFieldId = new ID("28a79dfb-f15d-415a-a848-2a35c7a9919b");
+			public const string Smtp_SSL_RequiredFieldName = "Smtp SSL Required";
+			
+					
+			public static readonly ID Smtp_UserNameFieldId = new ID("527d90ac-83f3-4d49-873f-142324d4fdb9");
+			public const string Smtp_UserNameFieldName = "Smtp UserName";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _Smtp
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_Smtp</para>	
+	/// <para>ID: 5ef77854-4442-4f8f-aa66-6e1df7003567</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_SmtpConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Smtp))]
+	public partial class _Smtp  : GlassBase, I_Smtp 
+	{
+	   
+						/// <summary>
+				/// The Smtp Password field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: b9374910-64a8-4f4f-a5cf-a0852291d02a</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_SmtpConstants.Smtp_PasswordFieldName)]
+				public virtual string Smtp_Password  {get; set;}
+					
+						/// <summary>
+				/// The Smtp Port field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 17eec49a-ecb9-4803-8fb7-eaff9113dbfd</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_SmtpConstants.Smtp_PortFieldName)]
+				public virtual string Smtp_Port  {get; set;}
+					
+						/// <summary>
+				/// The Smtp Server field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 09a43b13-e750-4335-9bd4-9f1ab7c31533</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_SmtpConstants.Smtp_ServerFieldName)]
+				public virtual string Smtp_Server  {get; set;}
+					
+						/// <summary>
+				/// The Smtp SSL Required field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 28a79dfb-f15d-415a-a848-2a35c7a9919b</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_SmtpConstants.Smtp_SSL_RequiredFieldName)]
+				public virtual string Smtp_SSL_Required  {get; set;}
+					
+						/// <summary>
+				/// The Smtp UserName field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 527d90ac-83f3-4d49-873f-142324d4fdb9</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_SmtpConstants.Smtp_UserNameFieldName)]
+				public virtual string Smtp_UserName  {get; set;}
+					
+			
+	}
+}
+

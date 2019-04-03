@@ -19,17 +19,17 @@ namespace EMAAR.ECM.Feature.Banner.Repositories
         private readonly Func<IMvcContext> _mvcContext;
         private readonly IImageText _imageText;
         private readonly IParallax _parallax;
-        private readonly IHomepage_CarouselList _homepage_CarouselList;
+        private readonly IHomepage_Carousels _homepage_Carousels ;
         private readonly IHero  _hero;
 
         #endregion
         #region construtor
-        public BannerRepository(Func<IMvcContext> mvcContext, IParallax parallax, IImageText imageText, IHomepage_CarouselList homepage_CarouselList, IHero hero)
+        public BannerRepository(Func<IMvcContext> mvcContext, IParallax parallax, IImageText imageText, IHomepage_Carousels homepage_Carousels , IHero hero)
         {
             _imageText = imageText;
             _parallax = parallax;
             _mvcContext = mvcContext;
-            _homepage_CarouselList = homepage_CarouselList;
+            _homepage_Carousels = homepage_Carousels;
             _hero = hero;
 
         }
@@ -62,11 +62,11 @@ namespace EMAAR.ECM.Feature.Banner.Repositories
         /// Getting all Home Carousel component asigned in Sitecore with the Background CSS (eg:explore)
         /// </summary>
         /// <returns>Home Carousel content Slides details</returns>
-        public IHomepage_CarouselList HomePageCarousels()
+        public IHomepage_Carousels HomePageCarousels()
         {
             IMvcContext mvcContext = _mvcContext();
-            IHomepage_CarouselList homepage_CarouselList = mvcContext.GetDataSourceItem<IHomepage_CarouselList>();
-            return homepage_CarouselList ?? _homepage_CarouselList;
+            IHomepage_Carousels homepage_Carousels  = mvcContext.GetDataSourceItem<IHomepage_Carousels>();
+            return homepage_Carousels ?? _homepage_Carousels;
         }
         /// <summary>
         /// Getting all Hero component asigned in Sitecore on field (Hero Metrics)

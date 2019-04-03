@@ -7,7 +7,7 @@ parent: {8728ED7C-B96D-4098-985C-0E499161BD68}
 name: Hot spots
 master: {00000000-0000-0000-0000-000000000000}
 template: {078D45E0-2F1F-4FF6-9BFE-563820EF99AE}
-templatekey: InteractiveMapFolder
+templatekey: HotsppotsFolder
 created: 20190321T084121Z
 
 ----field----

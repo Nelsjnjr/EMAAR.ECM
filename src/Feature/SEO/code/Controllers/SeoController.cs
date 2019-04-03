@@ -1,25 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿#region namespace
 using System.Web.Mvc;
 using EMAAR.ECM.Feature.SEO.Interfaces;
+using static EMAAR.ECM.Foundation.Constants.Settings.SitecoreSettings;
+#endregion
 
-namespace code.Controllers
+namespace EMAAR.ECM.Feature.SEO.Controllers
 {
     public class SeoController : Controller
     {
+        #region Private property
         private readonly ISeoRepository _seoRepository;
-
-     
-        public SeoController(ISeoRepository seoRepository )
+        #endregion
+        #region construtor    
+        public SeoController(ISeoRepository seoRepository)
         {
             _seoRepository = seoRepository;
         }
-        // GET: Seo
-        //public ActionResult Index()
-        //{
-        //    return View(_seoRepository);
-        //}
+        #endregion
+        #region method
+        /// <summary>
+        /// Getting page metadata
+        /// </summary>
+        /// <returns>Metadata/OG/Twitter,Canonical and hreflang</returns>
+        public ActionResult GetPageMetaData()
+        {
+            return View($"{ViewPath}SEO/PageMetaData.cshtml", _seoRepository.GetPageMetaData());
+        }
+        #endregion
     }
 }

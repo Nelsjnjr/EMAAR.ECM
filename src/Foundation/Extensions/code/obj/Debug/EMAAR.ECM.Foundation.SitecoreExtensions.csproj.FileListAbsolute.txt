@@ -1,0 +1,2 @@
+C:\Users\Nelson\source\repos\EMAAR.ECM\src\Foundation\Extensions\code\obj\Debug\EMAAR.ECM.Foundation.SitecoreExtensions.csprojAssemblyReference.cache
+C:\Users\Nelson\source\repos\EMAAR.ECM\src\Foundation\Extensions\code\obj\Debug\EMAAR.ECM.Foundation.SitecoreExtensions.csproj.CoreCompileInputs.cache

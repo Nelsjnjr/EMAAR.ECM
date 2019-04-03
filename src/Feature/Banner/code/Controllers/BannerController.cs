@@ -52,7 +52,7 @@ namespace EMAAR.ECM.Feature.Banner.Controllers
         /// <returns>Relatedcontent list</returns>
         public ActionResult HomePageCarousels()
         {
-            IHomepage_CarouselList homepage_CarouselList = _bannerRepository.HomePageCarousels();
+            IHomepage_Carousels homepage_CarouselList = _bannerRepository.HomePageCarousels();
             return View($"{ViewPath}Banner/HomePageCarousel/HomePageCarousel.cshtml", homepage_CarouselList);
         }
         /// <summary>

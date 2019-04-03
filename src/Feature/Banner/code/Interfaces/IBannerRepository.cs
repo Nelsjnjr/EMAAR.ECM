@@ -2,7 +2,6 @@
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Banner;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Hero;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Homepage_carousel;
-using static EMAAR.ECM.Foundation.Constants.CommonConstants;
 #endregion
 namespace EMAAR.ECM.Feature.Banner.Interfaces
 {
@@ -22,7 +21,7 @@ namespace EMAAR.ECM.Feature.Banner.Interfaces
         /// Getting all related component asigned in Sitecore with the Background CSS (eg:explore)
         /// </summary>
         /// <returns>Related content details</returns>
-        IHomepage_CarouselList HomePageCarousels();
+        IHomepage_Carousels HomePageCarousels();
         /// <summary>
         /// Getting all HeroBanner component asigned in Sitecore on field (Hero Community Metrics)
         /// </summary>

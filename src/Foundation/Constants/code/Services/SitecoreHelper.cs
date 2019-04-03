@@ -69,6 +69,8 @@ namespace EMAAR.ECM.Foundation.Constants
         public IFooter NavigationFooter => _mvcContext()?.SitecoreService.GetItem<IFooter>
             ($"{Sitecore.Context.Site.RootPath}{SitecoreSettings.NavigationFooterPath}");
         #endregion
+        
+
     }
 
 }

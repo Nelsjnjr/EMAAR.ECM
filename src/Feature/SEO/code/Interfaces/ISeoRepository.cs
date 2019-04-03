@@ -1,14 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
+﻿using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base;
 
 namespace EMAAR.ECM.Feature.SEO.Interfaces
 {
+    /// <summary>
+    /// This is used to set SEO functionalities
+    /// </summary>
     public interface ISeoRepository
     {
-        ISiteRoot GetSEO();
+        #region method
+        /// <summary>
+        /// Getting page metadata
+        /// </summary>
+        /// <returns>Metadata/OG/Twitter,Canonical and hreflang</returns>
+        I_PageBase GetPageMetaData();
+        #endregion
     }
 }

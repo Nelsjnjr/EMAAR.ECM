@@ -7,16 +7,16 @@ parent: {8728ED7C-B96D-4098-985C-0E499161BD68}
 name: Statistics
 master: {00000000-0000-0000-0000-000000000000}
 template: {23592269-8841-4348-958F-DAE6AD16BE9A}
-templatekey: HeroFolder
+templatekey: StatisticsFolder
 created: 20190319T083341Z
 
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
-content-length: 28
+content-length: 29
 
-multimedia/16x16/image_h.png
+office/16x16/chart_bubble.png
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -34,7 +34,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 9b9cfaa2-f27f-4b0f-b35d-281dad35d1b2
+revision: 58511fab-af25-4b7f-b8cb-08cf9a50c68a
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -56,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9b9cfaa2-f27f-4b0f-b35d-281dad35d1b2
+58511fab-af25-4b7f-b8cb-08cf9a50c68a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190401T114128Z
+20190403T050847Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

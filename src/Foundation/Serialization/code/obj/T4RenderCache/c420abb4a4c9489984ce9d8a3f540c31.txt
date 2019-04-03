@@ -1,4 +1,4 @@
-//Revision: ffd619dd-28ab-4444-867e-4bd60e9cc073
+//Revision: c77abe84-b870-4c22-9849-be2e00339a42
 
 
 
@@ -19,22 +19,22 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 
 
  	/// <summary>
-	/// IInteractiveMapListFolder Interface
+	/// IInteractiveMapsFolder Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/InteractiveMapListFolder</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/InteractiveMapsFolder</para>	
 	/// <para>ID: c420abb4-a4c9-4899-84ce-9d8a3f540c31</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=IInteractiveMapListFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface IInteractiveMapListFolder : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_InteractiveMapListFolder
+	[SitecoreType(TemplateId=IInteractiveMapsFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IInteractiveMapsFolder : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_InteractiveMapsFolder
 	{
 				}
 
 
-	public static partial class IInteractiveMapListFolderConstants{
+	public static partial class IInteractiveMapsFolderConstants{
 
 			public const string TemplateIdString = "c420abb4-a4c9-4899-84ce-9d8a3f540c31";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "InteractiveMapListFolder";
+			public const string TemplateName = "InteractiveMapsFolder";
 
 			
 
@@ -42,14 +42,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 
 	
 	/// <summary>
-	/// InteractiveMapListFolder
+	/// InteractiveMapsFolder
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/InteractiveMapListFolder</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/InteractiveMapsFolder</para>	
 	/// <para>ID: c420abb4-a4c9-4899-84ce-9d8a3f540c31</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=IInteractiveMapListFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(IInteractiveMapListFolder))]
-	public partial class InteractiveMapListFolder  : GlassBase, IInteractiveMapListFolder 
+	[SitecoreType(TemplateId=IInteractiveMapsFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IInteractiveMapsFolder))]
+	public partial class InteractiveMapsFolder  : GlassBase, IInteractiveMapsFolder 
 	{
 	   
 			

@@ -1,4 +1,4 @@
-//Revision: 6e3a557c-8ee0-4cf3-9435-57ff2a90449c
+//Revision: d325c6e6-1791-4645-8090-eb4ab5a7e564
 
 
 
@@ -19,22 +19,22 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 
 
  	/// <summary>
-	/// IHeroFolderListFolder Interface
+	/// IHerosFolder Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/HeroFolderListFolder</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/HerosFolder</para>	
 	/// <para>ID: fa2c72f1-096b-4ec9-83be-65c1edcf3086</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=IHeroFolderListFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface IHeroFolderListFolder : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_HeroListFolder
+	[SitecoreType(TemplateId=IHerosFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IHerosFolder : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_HerosFolder
 	{
 				}
 
 
-	public static partial class IHeroFolderListFolderConstants{
+	public static partial class IHerosFolderConstants{
 
 			public const string TemplateIdString = "fa2c72f1-096b-4ec9-83be-65c1edcf3086";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "HeroFolderListFolder";
+			public const string TemplateName = "HerosFolder";
 
 			
 
@@ -42,14 +42,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 
 	
 	/// <summary>
-	/// HeroFolderListFolder
+	/// HerosFolder
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/HeroFolderListFolder</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/HerosFolder</para>	
 	/// <para>ID: fa2c72f1-096b-4ec9-83be-65c1edcf3086</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=IHeroFolderListFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(IHeroFolderListFolder))]
-	public partial class HeroFolderListFolder  : GlassBase, IHeroFolderListFolder 
+	[SitecoreType(TemplateId=IHerosFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IHerosFolder))]
+	public partial class HerosFolder  : GlassBase, IHerosFolder 
 	{
 	   
 			

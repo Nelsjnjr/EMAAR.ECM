@@ -7,7 +7,7 @@ parent: {382D2C02-4F44-4DBF-9D61-8CC2520BD12A}
 name: Phone
 master: {00000000-0000-0000-0000-000000000000}
 template: {29B114B8-EB5B-4E78-8DB7-FF419CEBE66D}
-templatekey: ContactInfo
+templatekey: FooterContact
 created: 20190326T132542Z
 
 ----version----

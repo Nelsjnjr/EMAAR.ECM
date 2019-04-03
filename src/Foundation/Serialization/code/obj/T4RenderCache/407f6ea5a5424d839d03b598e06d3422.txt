@@ -53,6 +53,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 			public const string ContentPage_SiteLogoFieldName = "ContentPage SiteLogo";
 			
 					
+			public static readonly ID Fav_IconFieldId = new ID("6d92cd31-4f15-4019-b16e-66a3bbb2b9a8");
+			public const string Fav_IconFieldName = "Fav icon";
+			
+					
+			public static readonly ID Fav_Shortcut_IconFieldId = new ID("aec7285d-82c8-47b2-889e-64025a84c65b");
+			public const string Fav_Shortcut_IconFieldName = "Fav shortcut icon";
+			
+					
 			public static readonly ID Site_Logo_UrlFieldId = new ID("a241368f-8cb5-46dc-b3e3-1e9c4b29b0a6");
 			public const string Site_Logo_UrlFieldName = "Site Logo Url";
 			
@@ -71,6 +79,26 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 					
 			public static readonly ID Robots_File_ContentFieldId = new ID("1f0ad353-b94c-4b2e-b135-dd129e1a2509");
 			public const string Robots_File_ContentFieldName = "Robots File content";
+			
+					
+			public static readonly ID Smtp_PasswordFieldId = new ID("b9374910-64a8-4f4f-a5cf-a0852291d02a");
+			public const string Smtp_PasswordFieldName = "Smtp Password";
+			
+					
+			public static readonly ID Smtp_PortFieldId = new ID("17eec49a-ecb9-4803-8fb7-eaff9113dbfd");
+			public const string Smtp_PortFieldName = "Smtp Port";
+			
+					
+			public static readonly ID Smtp_ServerFieldId = new ID("09a43b13-e750-4335-9bd4-9f1ab7c31533");
+			public const string Smtp_ServerFieldName = "Smtp Server";
+			
+					
+			public static readonly ID Smtp_SSL_RequiredFieldId = new ID("28a79dfb-f15d-415a-a848-2a35c7a9919b");
+			public const string Smtp_SSL_RequiredFieldName = "Smtp SSL Required";
+			
+					
+			public static readonly ID Smtp_UserNameFieldId = new ID("527d90ac-83f3-4d49-873f-142324d4fdb9");
+			public const string Smtp_UserNameFieldName = "Smtp UserName";
 			
 			
 
@@ -133,6 +161,28 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 				public virtual Image ContentPage_SiteLogo  {get; set;}
 					
 						/// <summary>
+				/// The Fav icon field.
+				/// <para></para>
+				/// <para>Field Type: Image</para>		
+				/// <para>Field ID: 6d92cd31-4f15-4019-b16e-66a3bbb2b9a8</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(ISiteRootConstants.Fav_IconFieldName)]
+				public virtual Image Fav_Icon  {get; set;}
+					
+						/// <summary>
+				/// The Fav shortcut icon field.
+				/// <para></para>
+				/// <para>Field Type: Image</para>		
+				/// <para>Field ID: aec7285d-82c8-47b2-889e-64025a84c65b</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(ISiteRootConstants.Fav_Shortcut_IconFieldName)]
+				public virtual Image Fav_Shortcut_Icon  {get; set;}
+					
+						/// <summary>
 				/// The Site Logo Url field.
 				/// <para></para>
 				/// <para>Field Type: General Link</para>		
@@ -186,6 +236,61 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(ISiteRootConstants.Robots_File_ContentFieldName)]
 				public virtual string Robots_File_Content  {get; set;}
+					
+						/// <summary>
+				/// The Smtp Password field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: b9374910-64a8-4f4f-a5cf-a0852291d02a</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(ISiteRootConstants.Smtp_PasswordFieldName)]
+				public virtual string Smtp_Password  {get; set;}
+					
+						/// <summary>
+				/// The Smtp Port field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 17eec49a-ecb9-4803-8fb7-eaff9113dbfd</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(ISiteRootConstants.Smtp_PortFieldName)]
+				public virtual string Smtp_Port  {get; set;}
+					
+						/// <summary>
+				/// The Smtp Server field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 09a43b13-e750-4335-9bd4-9f1ab7c31533</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(ISiteRootConstants.Smtp_ServerFieldName)]
+				public virtual string Smtp_Server  {get; set;}
+					
+						/// <summary>
+				/// The Smtp SSL Required field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 28a79dfb-f15d-415a-a848-2a35c7a9919b</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(ISiteRootConstants.Smtp_SSL_RequiredFieldName)]
+				public virtual string Smtp_SSL_Required  {get; set;}
+					
+						/// <summary>
+				/// The Smtp UserName field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 527d90ac-83f3-4d49-873f-142324d4fdb9</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(ISiteRootConstants.Smtp_UserNameFieldName)]
+				public virtual string Smtp_UserName  {get; set;}
 					
 			
 	}

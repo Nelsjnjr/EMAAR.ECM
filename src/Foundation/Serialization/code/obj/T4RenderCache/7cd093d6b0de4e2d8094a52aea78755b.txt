@@ -1,4 +1,4 @@
-//Revision: 78f7d107-dafa-449e-bc88-9f99e069438b
+//Revision: 8bfd841d-38c5-442c-aa42-b4a14ef43115
 
 
 
@@ -19,22 +19,22 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 
 
  	/// <summary>
-	/// I_HeroListFolder Interface
+	/// I_HerosFolder Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_HeroListFolder</para>	
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_HerosFolder</para>	
 	/// <para>ID: 7cd093d6-b0de-4e2d-8094-a52aea78755b</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_HeroListFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_HeroListFolder : IGlassBase 
+	[SitecoreType(TemplateId=I_HerosFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_HerosFolder : IGlassBase 
 	{
 				}
 
 
-	public static partial class I_HeroListFolderConstants{
+	public static partial class I_HerosFolderConstants{
 
 			public const string TemplateIdString = "7cd093d6-b0de-4e2d-8094-a52aea78755b";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "_HeroListFolder";
+			public const string TemplateName = "_HerosFolder";
 
 			
 
@@ -42,14 +42,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 
 	
 	/// <summary>
-	/// _HeroListFolder
+	/// _HerosFolder
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_HeroListFolder</para>	
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_HerosFolder</para>	
 	/// <para>ID: 7cd093d6-b0de-4e2d-8094-a52aea78755b</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_HeroListFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(I_HeroListFolder))]
-	public partial class _HeroListFolder  : GlassBase, I_HeroListFolder 
+	[SitecoreType(TemplateId=I_HerosFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_HerosFolder))]
+	public partial class _HerosFolder  : GlassBase, I_HerosFolder 
 	{
 	   
 			

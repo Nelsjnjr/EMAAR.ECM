@@ -30,7 +30,17 @@
         /// Year Token for dynamically modify it
         /// </summary>
         public static string YearToken { get; } = "{year}";
-      
+        #region method
+        /// <summary>
+        /// Getting name of the property
+        /// </summary>
+        /// <param name="value">name</param>
+        /// <returns></returns>
+        public static string GetPropertyName(string value)
+        {
+            return nameof(value).Replace('_', ':');
+        }
+        #endregion
         #endregion;
 
     }
