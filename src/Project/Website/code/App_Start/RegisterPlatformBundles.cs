@@ -1,47 +1,37 @@
 ﻿using System.Collections.Generic;
 using System.Web.Optimization;
-using Sitecore;
+using EMAAR.ECM.Foundation.Constants;
 using Sitecore.Pipelines;
 
 namespace EMAAR.ECM.Project.Website.App_Start
 {
+    /// <summary>
+    /// This class is used to bundle and minify the javacript to make only one HTTP request
+    /// </summary>
     public class RegisterPlatformBundles
     {
-        [UsedImplicitly]
         public virtual void Process(PipelineArgs args)
         {
             RegisterBundles(BundleTable.Bundles);
-
         }
-
+        /// <summary>
+        /// Registering the javascripts to bundle and minify
+        /// </summary>
+        /// <param name="bundles">javascript bundle</param>
         private void RegisterBundles(BundleCollection bundles)
         {
-            Bundle scriptBundle = new ScriptBundle("~/bundles/jquery")
-                .Include("~/js/modernizr.js")
-                        .Include("~/js/jquery.js")
-                        .Include("~/js/vendor/bootstrap.js")
-                        .Include("~/js/vendor/swiper.js")
-                        .Include("~/js/app.js")
-                        .Include("~/js/main.js");
-
-            scriptBundle.Orderer = new AsIsBundleOrderer();
-            bundles.Add(scriptBundle);
-            BundleTable.EnableOptimizations = true;
+            bundles.Add(new ScriptBundle(CommonConstants.JavascriptBundleName).Include(CommonConstants.AllSiteJavascriptsFilePaths));
+            #if DEBUG
+                //Developer can see individual javascripts
+                BundleTable.EnableOptimizations = false;
+            #else
+                //Minified and Bundled JAvascripts
+                BundleTable.EnableOptimizations = true;
+            #endif
         }
 
     }
-    public sealed class AsIsBundleOrderer : IBundleOrderer
-    {
-
-        public IEnumerable<BundleFile> OrderFiles(BundleContext context, IEnumerable<BundleFile> files)
-
-        {
-
-            return files;
-
-        }
-
-    }
+   
 }
 
 

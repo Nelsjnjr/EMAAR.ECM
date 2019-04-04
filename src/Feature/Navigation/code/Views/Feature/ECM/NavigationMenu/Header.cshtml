@@ -12,7 +12,7 @@
             {
                 using (Html.Glass().BeginRenderLink(Model.Header.SiteRoot, x => x.Site_Logo_Url, new { @class = "siteLogo" }, isEditable: true))
                 {
-                    @Html.Glass().RenderImage(Model.Header.SiteRoot, x => x.Site_Logo, new { alt = "image description" }, isEditable: true)
+                    @Html.Glass().RenderImage(Model.Header.SiteRoot, x => x.Site_Logo, new { alt = !String.IsNullOrEmpty(Model.Header.SiteRoot.Site_Logo.Alt) ? Model.Header.SiteRoot.Site_Logo.Alt : "image" }, isEditable: true)
                 }
             }
             <nav class="siteNavigation">

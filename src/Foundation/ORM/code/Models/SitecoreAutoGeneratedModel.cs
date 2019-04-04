@@ -525,6 +525,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.ImageTe
 			public const string ImageFieldName = "Image";
 			
 					
+			public static readonly ID Button_TextFieldId = new ID("15b53931-2b97-438a-9254-06f70a60f952");
+			public const string Button_TextFieldName = "Button Text";
+			
+					
 			public static readonly ID ButtonFieldId = new ID("cd52c386-4ebe-4916-85b9-7128d2028100");
 			public const string ButtonFieldName = "Button";
 			
@@ -587,6 +591,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.ImageTe
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_ImageTextConstants.ImageFieldName)]
 				public virtual Image Image  {get; set;}
+					
+						/// <summary>
+				/// The Button Text field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 15b53931-2b97-438a-9254-06f70a60f952</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_ImageTextConstants.Button_TextFieldName)]
+				public virtual string Button_Text  {get; set;}
 					
 						/// <summary>
 				/// The Button field.
@@ -2092,6 +2107,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Paralla
 			public const string ImageFieldName = "Image";
 			
 					
+			public static readonly ID Button_TextFieldId = new ID("15b53931-2b97-438a-9254-06f70a60f952");
+			public const string Button_TextFieldName = "Button Text";
+			
+					
 			public static readonly ID ButtonFieldId = new ID("cd52c386-4ebe-4916-85b9-7128d2028100");
 			public const string ButtonFieldName = "Button";
 			
@@ -2143,6 +2162,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Paralla
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_ParallaxConstants.ImageFieldName)]
 				public virtual Image Image  {get; set;}
+					
+						/// <summary>
+				/// The Button Text field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 15b53931-2b97-438a-9254-06f70a60f952</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_ParallaxConstants.Button_TextFieldName)]
+				public virtual string Button_Text  {get; set;}
 					
 						/// <summary>
 				/// The Button field.
@@ -2565,6 +2595,16 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 	public partial interface I_Button : IGlassBase 
 	{
 								/// <summary>
+					/// The Button Text field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: 15b53931-2b97-438a-9254-06f70a60f952</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_ButtonConstants.Button_TextFieldName)]
+					string Button_Text  {get; set;}
+			
+								/// <summary>
 					/// The Button field.
 					/// <para></para>
 					/// <para>Field Type: General Link</para>		
@@ -2583,6 +2623,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "_Button";
 
+					
+			public static readonly ID Button_TextFieldId = new ID("15b53931-2b97-438a-9254-06f70a60f952");
+			public const string Button_TextFieldName = "Button Text";
+			
 					
 			public static readonly ID ButtonFieldId = new ID("cd52c386-4ebe-4916-85b9-7128d2028100");
 			public const string ButtonFieldName = "Button";
@@ -2603,6 +2647,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 	public partial class _Button  : GlassBase, I_Button 
 	{
 	   
+						/// <summary>
+				/// The Button Text field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 15b53931-2b97-438a-9254-06f70a60f952</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_ButtonConstants.Button_TextFieldName)]
+				public virtual string Button_Text  {get; set;}
+					
 						/// <summary>
 				/// The Button field.
 				/// <para></para>
@@ -4456,6 +4511,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 			public const string ImageFieldName = "Image";
 			
 					
+			public static readonly ID Button_TextFieldId = new ID("15b53931-2b97-438a-9254-06f70a60f952");
+			public const string Button_TextFieldName = "Button Text";
+			
+					
 			public static readonly ID ButtonFieldId = new ID("cd52c386-4ebe-4916-85b9-7128d2028100");
 			public const string ButtonFieldName = "Button";
 			
@@ -4507,6 +4566,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IParallaxConstants.ImageFieldName)]
 				public virtual Image Image  {get; set;}
+					
+						/// <summary>
+				/// The Button Text field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 15b53931-2b97-438a-9254-06f70a60f952</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IParallaxConstants.Button_TextFieldName)]
+				public virtual string Button_Text  {get; set;}
 					
 						/// <summary>
 				/// The Button field.
@@ -5240,6 +5310,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 			public const string ImageFieldName = "Image";
 			
 					
+			public static readonly ID Button_TextFieldId = new ID("15b53931-2b97-438a-9254-06f70a60f952");
+			public const string Button_TextFieldName = "Button Text";
+			
+					
 			public static readonly ID ButtonFieldId = new ID("cd52c386-4ebe-4916-85b9-7128d2028100");
 			public const string ButtonFieldName = "Button";
 			
@@ -5302,6 +5376,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IImageTextConstants.ImageFieldName)]
 				public virtual Image Image  {get; set;}
+					
+						/// <summary>
+				/// The Button Text field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 15b53931-2b97-438a-9254-06f70a60f952</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IImageTextConstants.Button_TextFieldName)]
+				public virtual string Button_Text  {get; set;}
 					
 						/// <summary>
 				/// The Button field.

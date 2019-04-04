@@ -45,18 +45,9 @@
 
                 </div>
             </div>
-            @if (Model != null && Model.Homepage_Carousels != null && Model.Homepage_Carousels.Count() > 4)
-            {
-                <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            }
-            else if (Request.Browser.IsMobileDevice && Model.Homepage_Carousels.Count() > 1)
-            {
-                <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            }
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+           
 
         </div>
     </div>

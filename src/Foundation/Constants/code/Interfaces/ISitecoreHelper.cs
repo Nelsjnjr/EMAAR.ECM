@@ -41,6 +41,7 @@ namespace EMAAR.ECM.Foundation.Constants.Interfaces
         /// Getting footer navigation details
         /// </summary>
         IFooter NavigationFooter { get; }
+       
         #endregion
       
     }

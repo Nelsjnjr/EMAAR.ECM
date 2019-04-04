@@ -11,40 +11,50 @@ namespace EMAAR.ECM.Foundation.Constants.Settings
         /// <summary>
         ///  Getting Root View location for controller to load view
         ///  Physical location of the view path for the action method
+        ///  ~/Views/Feature/ECM/
         /// </summary>
         public static string ViewPath { get; set; } = GetSetting("EMAAR.ECM.Foundation.Constants.FeatureViewPath");
         /// <summary>
         ///  Getting Home page search icon image url from Sitecore settings based on Site
+        ///  /Site Settings/Site Specific Images/Home/HomePageSearch
         /// </summary>
         public static string HomePageSearch { get; set; } = GetSetting("EMAAR.ECM.Foundation.Constants.HomePageSearch");
         /// <summary>
         ///  Getting Home page Close icon image url from Sitecore settings based on Site
+        ///  /Site Settings/Site Specific Images/Home/HomePageClose
         /// </summary>
         public static string HomePageClose { get; set; } = GetSetting("EMAAR.ECM.Foundation.Constants.HomePageClose");
         /// <summary>
         ///  Getting Content page search icon image url from Sitecore settings based on Site
+        ///  /Site Settings/Site Specific Images/Content/ContentPageSearch
         /// </summary>
         public static string ContentPageSearch { get; set; } = GetSetting("EMAAR.ECM.Foundation.Constants.ContentPageSearch");
         /// <summary>
         ///  Getting Content page Close icon image url from Sitecore settings based on Site
+        ///  /Site Settings/Site Specific Images/Content/ContentPageClose
         /// </summary>
         public static string ContentPageClose { get; set; } = GetSetting("EMAAR.ECM.Foundation.Constants.ContentPageClose");
         /// <summary>
         ///  Getting Right Arrow icon image url from Sitecore settings based on Site
+        ///  /Site Settings/Site Specific Images/Common/RightArrow
         /// </summary>
         public static string RightArrow { get; set; } = GetSetting("EMAAR.ECM.Foundation.Constants.RightArrow");
         /// <summary>
         ///  Getting Srolldown icon image url from Sitecore settings based on Site
+        ///  /Site Settings/Site Specific Images/Common/scrolldown
         /// </summary>
         public static string Scrolldown { get; set; } = GetSetting("EMAAR.ECM.Foundation.Constants.Scrolldown");
         /// <summary>
-        /// Getting Header item path
+        /// Getting Header item path /Site Content/Navigation/Header
         /// </summary>
         public static string NavigationHeaderPath { get; set; } = GetSetting("EMAAR.ECM.Foundation.Constants.NavigationHeaderPath");
         /// <summary>
-        /// Getting footer item path
+        /// Getting footer item path Site Content/Navigation/Footer
         /// </summary>
         public static string NavigationFooterPath { get; set; } = GetSetting("EMAAR.ECM.Foundation.Constants.NavigationFooterPath");
-
+        /// <summary>
+        /// Getting Image location path "images/Project/ECM/"
+        /// </summary>
+        public static string ImageLocatation { get; set; } = GetSetting("EMAAR.ECM.Foundation.Constants.ImageLocation");
     }
 }

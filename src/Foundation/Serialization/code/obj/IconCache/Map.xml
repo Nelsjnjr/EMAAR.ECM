@@ -672,7 +672,6 @@
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_ParallaxFolder/__Standard Values" ItemIcon="/temp/IconCache/Applications/16x16/text_rich_colored.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_StatisticsFolder" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
-  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Button" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_CTA" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Footer" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Header" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
@@ -964,8 +963,6 @@
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_Smtp/__Standard Values" ItemIcon="/temp/iconcache/applications/32x32/form_blue.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Base/_Smtp/SMTP Setting/Smtp Server" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Button/__Standard Values" ItemIcon="/temp/iconcache/applications/32x32/form_blue.png" />
-  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Button/CTA" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
-  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Button/CTA/Button" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_CTA/CTA" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_CTA/CTA/CTA" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Footer/__Standard Values" ItemIcon="/temp/IconCache/Office/32x32/document_footer.png" />
@@ -1057,4 +1054,6 @@
   <Item ItemPath="/sitecore/templates/Project/ECM/Page Types/Home/__Standard Values" ItemIcon="/temp/iconcache/network/16x16/home.png" />
   <Item ItemPath="/sitecore/templates/Project/ECM/Parameters/ParametersTemplate_ImageAlignment" ItemIcon="/temp/iconcache/applications/16x16/form_blue.png" />
   <Item ItemPath="/sitecore/templates/Project/ECM/Parameters/ParametersTemplate_ImageAlignment/__Standard Values" ItemIcon="/temp/IconCache/Applications/16x16/form_red_edit.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Button/CTA/Button Text" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Button/CTA/Button" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
 </ItemIconCache>

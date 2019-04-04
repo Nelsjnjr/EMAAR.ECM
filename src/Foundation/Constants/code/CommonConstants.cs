@@ -17,7 +17,7 @@
         /// <summary>
         /// Getting Home page header CSS class name
         /// </summary>
-        public static string  HomePageHeaderCss { get; } = "siteHeader";
+        public static string HomePageHeaderCss { get; } = "siteHeader";
         /// <summary>
         /// Getting Content Page Css Class name
         /// </summary>
@@ -30,6 +30,24 @@
         /// Year Token for dynamically modify it
         /// </summary>
         public static string YearToken { get; } = "{year}";
+        /// <summary>
+        /// Registering the javascripts to bundle and minify with the name
+        /// </summary>
+        public static string JavascriptBundleName { get; } = "~/bundles/scripts";
+        /// <summary>
+        /// All Site javascripts files path
+        /// </summary>
+        public static string[] AllSiteJavascriptsFilePaths => new string[] {
+            "~/js/Project/ECM/vendor/jquery/jquery.js",
+            "~/js/Project/ECM/vendor/jquery/jquery.counterup.min.js",
+            "~/js/Project/ECM/vendor/jquery/jquery-ui.min.js",
+            "~/js/Project/ECM/vendor/jquery/jquery.scrollTo-1.4.2-min.js",
+            "~/js/Project/ECM/vendor/jquery/jquery.validate*",
+            "~/js/Project/ECM/vendor/bootstrap/bootstrap.js",
+            "~/js/Project/ECM/vendor/common/*.js",
+            "~/js/Project/ECM/application/app.js",
+            "~/js/Project/ECM/application/main.js"
+        };
         #region Search
         /// <summary>
         /// Index Language field
@@ -84,17 +102,7 @@
         public const string DefaultIndexNamePrefix = "sitecore";
 
         #endregion
-        #region method
-        /// <summary>
-        /// Getting name of the property
-        /// </summary>
-        /// <param name="value">name</param>
-        /// <returns></returns>
-        public static string GetPropertyName(string value)
-        {
-            return nameof(value).Replace('_', ':');
-        }
-        #endregion
+
         #endregion;
 
     }

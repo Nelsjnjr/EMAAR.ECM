@@ -11,7 +11,7 @@
     {
         <div class="map-section-inner">
             <div class="map-section-frame">
-                @Html.Glass().RenderImage(Model, x => x.Image, new { alt = "image description", @class = "mapMainimage" }, isEditable: true)
+                @Html.Glass().RenderImage(Model, x => x.Image, new { alt = !String.IsNullOrEmpty(Model.Image.Alt) ? Model.Image.Alt : "image description", @class = "mapMainimage" }, isEditable: true)
                 @{
                     float delay = 0.3f;
                 }
@@ -24,9 +24,11 @@
                             <a href="#" class="close-ico"></a>
                             <div class="map-item-popup-content">
                                 <div class="map-item-popup-content-img">
-                                    @Html.Glass().RenderImage(maps, x => x.Image, new { alt = "image description" }, isEditable: true)
-
-                                </div>
+                                    @if (maps.Image != null)
+                                    {
+                                        @Html.Glass().RenderImage(maps, x => x.Image, new { alt = !String.IsNullOrEmpty(maps.Image.Alt) ? maps.Image.Alt : "image" }, isEditable: true)
+                                    }
+                                    </div>
                                 <div class="map-item-popup-content-text">
                                     <h3> @Html.Glass().Editable(maps, x => x.Summary_Heading)</h3>
                                     <p>

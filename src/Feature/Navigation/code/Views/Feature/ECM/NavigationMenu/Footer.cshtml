@@ -8,7 +8,7 @@
         <div class="footer-logo">
             @if (Model.SiteRoot != null && Model.SiteRoot.Site_Logo != null)
             {
-                @Html.Glass().RenderImage(Model.SiteRoot, x => x.Site_Logo, new { alt = "image description" }, isEditable: true)
+                @Html.Glass().RenderImage(Model.SiteRoot, x => x.Site_Logo, new { alt = !String.IsNullOrEmpty(Model.SiteRoot.Site_Logo.Alt) ? Model.SiteRoot.Site_Logo.Alt : "image" }, isEditable: true)
             }
            
         </div>
@@ -57,7 +57,7 @@
                                             using (Html.Glass().BeginRenderLink(contactInfo, x => x.LinkUrl, isEditable: true))
                                             {
                                                 <i>
-                                                    @Html.Glass().RenderImage(contactInfo, x => x.Image, new { @class = "svg" }, isEditable: true)
+                                                    @Html.Glass().RenderImage(contactInfo, x => x.Image, new { @class = "svg",alt= !String.IsNullOrEmpty(contactInfo.Image.Alt) ? contactInfo.Image.Alt : "image" }, isEditable: true)
 
                                                 </i>
                                                 @Html.Glass().Editable(contactInfo, x => x.Title)

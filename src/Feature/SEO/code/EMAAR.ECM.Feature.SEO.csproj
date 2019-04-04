@@ -223,6 +223,10 @@
     </Content>
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="Views\Feature\ECM\SEO\PageMetaData.cshtml" />
+    <Content Include="Views\Feature\ECM\SEO\FavIcon.cshtml" />
+    <Content Include="Views\Feature\ECM\SEO\Robots.cshtml" />
+    <Content Include="Views\Feature\ECM\SEO\SocialTags.cshtml" />
+    <Content Include="Views\Feature\ECM\SEO\SeoTags.cshtml" />
     <None Include="Views\Web.config" />
     <None Include="Web.config" />
     <Content Include="Web.Debug.config">

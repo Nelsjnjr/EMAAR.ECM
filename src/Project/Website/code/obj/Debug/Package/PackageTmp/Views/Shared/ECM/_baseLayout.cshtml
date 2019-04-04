@@ -1,7 +1,4 @@
 ﻿@using System.Web.Optimization
-@using Glass.Mapper.Sc.Web.Mvc
-@using EMAAR.ECM.Foundation.Constants.Settings
-@using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types
 @model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.ISiteRoot
 <!DOCTYPE html>
 <html lang="@Sitecore.Context.Language">
@@ -9,38 +6,23 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-   
+    <!--Start Loading Seo tags-->
     @Html.Action("GetPageMetaData", "Seo")
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title></title>
+    <!--End Loading Seo tags -->
     @{
         @Styles.Render(String.Format("~/css/{0}-{1}.css", Sitecore.Context.Site.Name, Sitecore.Context.Language))
     }
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>    <![endif]-->
+    <!--End loading seo tags-->
     <!--Start Page Pre site scripts-->
     @Html.Raw(Model.SiteRoot.Pre_Site_Scripts)
     <!--Start Page Pre site scripts-->
 </head>
 <body>
-
     @Html.Sitecore().Placeholder("ecm_header")
     @Html.Sitecore().Placeholder("ecm_content")
     @Html.Sitecore().Placeholder("ecm_footer")
-
-    <!-- footer ends here -->
-    <script src="../js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="~/js/vendor/bootstrap/bootstrap.min.js"></script>
-    <script src="~/js/vendor/wow.min.js"></script>
-    <script src="~/js/vendor/map-popup.js"></script>
-    <script src="~/js/vendor/swiper.min.js"></script>
-    <script src="~/js/vendor/jquery.counterup.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-    <script src="~/js/app.js"></script>
-    <script src="~/js/main.js"></script>
-
+    
+    @Scripts.Render("~/bundles/scripts")   
     <!--Start Page Post site scripts-->
     @Html.Raw(Model.SiteRoot.Post_Site_Scripts)
     <!--End Page Post site scripts-->

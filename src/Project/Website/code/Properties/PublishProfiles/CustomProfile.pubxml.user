@@ -16,7 +16,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/10/2019 17:07:24</publishTime>
     </File>
     <File Include="App_Config/Include/Project/ECM/EMAAR.ECM.Project.Website.config">
-      <publishTime>04/01/2019 09:35:51</publishTime>
+      <publishTime>04/04/2019 13:10:59</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>02/22/2013 08:43:40</publishTime>
@@ -28,13 +28,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/10/2017 08:13:52</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.Constants.dll">
-      <publishTime>04/03/2019 14:28:39</publishTime>
+      <publishTime>04/04/2019 14:52:15</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.Constants.dll.config">
       <publishTime>03/26/2019 12:14:55</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.Constants.pdb">
-      <publishTime>04/03/2019 14:28:39</publishTime>
+      <publishTime>04/04/2019 14:52:15</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.dll">
       <publishTime>04/03/2019 11:01:31</publishTime>
@@ -46,19 +46,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/03/2019 11:01:31</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll">
-      <publishTime>04/03/2019 14:28:39</publishTime>
+      <publishTime>04/04/2019 11:22:07</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll.config">
       <publishTime>03/10/2019 14:42:45</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.pdb">
-      <publishTime>04/03/2019 14:28:39</publishTime>
+      <publishTime>04/04/2019 11:22:07</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Project.Website.dll">
-      <publishTime>04/03/2019 14:37:01</publishTime>
+      <publishTime>04/04/2019 14:54:04</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Project.Website.pdb">
-      <publishTime>04/03/2019 14:37:01</publishTime>
+      <publishTime>04/04/2019 14:54:04</publishTime>
     </File>
     <File Include="bin/Glass.Mapper.dll">
       <publishTime>02/25/2019 13:27:08</publishTime>
@@ -351,6 +351,15 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/bootstrap.min.css">
       <publishTime>03/10/2019 14:20:34</publishTime>
     </File>
+    <File Include="Content/Project/ECM/bootstrap.css">
+      <publishTime>03/10/2019 14:20:34</publishTime>
+    </File>
+    <File Include="Content/Project/ECM/bootstrap.min.css">
+      <publishTime>03/10/2019 14:20:34</publishTime>
+    </File>
+    <File Include="Content/Project/ECM/Site.css">
+      <publishTime>03/10/2019 14:20:34</publishTime>
+    </File>
     <File Include="Content/Site.css">
       <publishTime>03/10/2019 14:20:34</publishTime>
     </File>
@@ -380,6 +389,39 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="css/maps/style.css.map">
       <publishTime>04/02/2019 17:30:10</publishTime>
+    </File>
+    <File Include="css/Project/ECM/.DS_Store">
+      <publishTime>04/02/2019 17:30:13</publishTime>
+    </File>
+    <File Include="css/Project/ECM/Downtowndubai-en.css">
+      <publishTime>04/02/2019 17:30:31</publishTime>
+    </File>
+    <File Include="css/Project/ECM/fancybox/fancy.css">
+      <publishTime>04/01/2019 09:32:29</publishTime>
+    </File>
+    <File Include="css/Project/ECM/fancybox/fancybox_loading%402x.gif">
+      <publishTime>04/01/2019 09:32:29</publishTime>
+    </File>
+    <File Include="css/Project/ECM/fancybox/fancybox_loading.gif">
+      <publishTime>04/01/2019 09:32:29</publishTime>
+    </File>
+    <File Include="css/Project/ECM/fancybox/fancybox_overlay.png">
+      <publishTime>04/01/2019 09:32:29</publishTime>
+    </File>
+    <File Include="css/Project/ECM/fancybox/fancybox_sprite%402x.png">
+      <publishTime>04/01/2019 09:32:29</publishTime>
+    </File>
+    <File Include="css/Project/ECM/fancybox/fancybox_sprite.png">
+      <publishTime>04/01/2019 09:32:29</publishTime>
+    </File>
+    <File Include="css/Project/ECM/maps/style.css.map">
+      <publishTime>04/02/2019 17:30:10</publishTime>
+    </File>
+    <File Include="css/Project/ECM/vendors/select2.css">
+      <publishTime>04/02/2019 17:30:11</publishTime>
+    </File>
+    <File Include="css/Project/ECM/vendors/swiper.css">
+      <publishTime>04/02/2019 17:30:12</publishTime>
     </File>
     <File Include="css/style.css">
       <publishTime>04/01/2019 09:23:10</publishTime>
@@ -552,6 +594,219 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="images/Pop up image.png">
       <publishTime>03/11/2019 15:17:19</publishTime>
     </File>
+    <File Include="images/Project/ECM/Area Background Image.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Project/ECM/bk.jpg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Project/ECM/Boulevard Height.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Project/ECM/bp.jpg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Project/ECM/Downtown-Dubai_tcm223-49617.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/android-icon-144x144.png">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/android-icon-192x192.png">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/android-icon-36x36.png">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/android-icon-48x48.png">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/android-icon-72x72.png">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/android-icon-96x96.png">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/apple-icon-114x114.png">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/apple-icon-120x120.png">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/apple-icon-144x144.png">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/apple-icon-152x152.png">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/apple-icon-180x180.png">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/apple-icon-57x57.png">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/apple-icon-60x60.png">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/apple-icon-72x72.png">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/apple-icon-76x76.png">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/apple-icon-precomposed.png">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/apple-icon.png">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/browserconfig.xml">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/favicon-16x16.png">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/favicon-32x32.png">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/favicon-96x96.png">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/favicon.ico">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/manifest.json">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/ms-icon-144x144.png">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/ms-icon-150x150.png">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/ms-icon-310x310.png">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/DowntownDubai/ms-icon-70x70.png">
+      <publishTime>04/04/2019 11:28:28</publishTime>
+    </File>
+    <File Include="images/Project/ECM/icon/btn-arrow.svg">
+      <publishTime>03/25/2019 16:03:53</publishTime>
+    </File>
+    <File Include="images/Project/ECM/icon/chevron.svg">
+      <publishTime>03/25/2019 16:03:53</publishTime>
+    </File>
+    <File Include="images/Project/ECM/icon/chevronup.svg">
+      <publishTime>03/25/2019 16:03:53</publishTime>
+    </File>
+    <File Include="images/Project/ECM/icon/clsoe-gray.svg">
+      <publishTime>03/25/2019 16:03:53</publishTime>
+    </File>
+    <File Include="images/Project/ECM/icon/clsoe.svg">
+      <publishTime>03/25/2019 16:03:53</publishTime>
+    </File>
+    <File Include="images/Project/ECM/icon/download.svg">
+      <publishTime>03/25/2019 16:03:53</publishTime>
+    </File>
+    <File Include="images/Project/ECM/icon/external.svg">
+      <publishTime>03/25/2019 16:03:53</publishTime>
+    </File>
+    <File Include="images/Project/ECM/icon/icon-hand.svg">
+      <publishTime>03/25/2019 16:03:53</publishTime>
+    </File>
+    <File Include="images/Project/ECM/icon/login.svg">
+      <publishTime>03/25/2019 16:03:53</publishTime>
+    </File>
+    <File Include="images/Project/ECM/icon/mail.svg">
+      <publishTime>03/25/2019 16:03:53</publishTime>
+    </File>
+    <File Include="images/Project/ECM/icon/Pdf.svg">
+      <publishTime>03/25/2019 16:03:53</publishTime>
+    </File>
+    <File Include="images/Project/ECM/icon/phone.svg">
+      <publishTime>03/25/2019 16:03:53</publishTime>
+    </File>
+    <File Include="images/Project/ECM/icon/pin.svg">
+      <publishTime>03/25/2019 16:03:53</publishTime>
+    </File>
+    <File Include="images/Project/ECM/icon/play-button.svg">
+      <publishTime>03/25/2019 16:03:53</publishTime>
+    </File>
+    <File Include="images/Project/ECM/icon/right-arrow-sidebar.svg">
+      <publishTime>03/25/2019 16:03:50</publishTime>
+    </File>
+    <File Include="images/Project/ECM/icon/scroll-down.svg">
+      <publishTime>03/25/2019 16:03:51</publishTime>
+    </File>
+    <File Include="images/Project/ECM/icon/search-btn.svg">
+      <publishTime>03/25/2019 16:03:53</publishTime>
+    </File>
+    <File Include="images/Project/ECM/icon/search.svg">
+      <publishTime>03/25/2019 16:03:53</publishTime>
+    </File>
+    <File Include="images/Project/ECM/icon/select-arrow.svg">
+      <publishTime>03/25/2019 16:03:53</publishTime>
+    </File>
+    <File Include="images/Project/ECM/icon/swiper-left.svg">
+      <publishTime>03/25/2019 16:03:53</publishTime>
+    </File>
+    <File Include="images/Project/ECM/icon/swiper-right.svg">
+      <publishTime>03/25/2019 16:03:53</publishTime>
+    </File>
+    <File Include="images/Project/ECM/Image_Section1.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Project/ECM/Image_Section2.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Project/ECM/Image_Section3.jpg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Project/ECM/Image_Section4.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Project/ECM/img-map.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Project/ECM/Logo/emaar.svg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Project/ECM/Logo/logo-gray.svg">
+      <publishTime>03/25/2019 15:49:03</publishTime>
+    </File>
+    <File Include="images/Project/ECM/Logo/logo.svg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Project/ECM/Mobile_Area Background Image.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Project/ECM/Mobile_BackgroundImage.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Project/ECM/Mobile_Pop up image.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Project/ECM/Pop up image.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Project/ECM/slider1.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Project/ECM/slider2.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Project/ECM/slider3.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Project/ECM/slider4.png">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Project/ECM/sr.jpeg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
+    <File Include="images/Project/ECM/tdf.jpg">
+      <publishTime>03/11/2019 15:17:19</publishTime>
+    </File>
     <File Include="images/slider1.png">
       <publishTime>03/11/2019 15:17:19</publishTime>
     </File>
@@ -608,6 +863,93 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="js/modernizr.js">
       <publishTime>03/10/2019 14:20:34</publishTime>
+    </File>
+    <File Include="js/Project/ECM/.DS_Store">
+      <publishTime>04/02/2019 17:29:29</publishTime>
+    </File>
+    <File Include="js/Project/ECM/Application/ajax.js">
+      <publishTime>04/02/2019 17:29:29</publishTime>
+    </File>
+    <File Include="js/Project/ECM/Application/app.js">
+      <publishTime>04/02/2019 17:29:29</publishTime>
+    </File>
+    <File Include="js/Project/ECM/Application/app.min.js">
+      <publishTime>04/02/2019 17:29:29</publishTime>
+    </File>
+    <File Include="js/Project/ECM/Application/bundle.js">
+      <publishTime>04/02/2019 17:29:29</publishTime>
+    </File>
+    <File Include="js/Project/ECM/Application/main.js">
+      <publishTime>04/02/2019 17:29:29</publishTime>
+    </File>
+    <File Include="js/Project/ECM/Application/main.min.js">
+      <publishTime>04/02/2019 17:29:29</publishTime>
+    </File>
+    <File Include="js/Project/ECM/modernizr.js">
+      <publishTime>03/10/2019 14:20:34</publishTime>
+    </File>
+    <File Include="js/Project/ECM/vendor/.DS_Store">
+      <publishTime>04/02/2019 17:29:29</publishTime>
+    </File>
+    <File Include="js/Project/ECM/vendor/bootstrap/bootstrap.js">
+      <publishTime>04/04/2019 11:46:55</publishTime>
+    </File>
+    <File Include="js/Project/ECM/vendor/bootstrap/bootstrap.min.js">
+      <publishTime>04/02/2019 17:29:29</publishTime>
+    </File>
+    <File Include="js/Project/ECM/vendor/Common/handlebars-v4.1.1.js">
+      <publishTime>04/02/2019 17:29:29</publishTime>
+    </File>
+    <File Include="js/Project/ECM/vendor/Common/map-popup.js">
+      <publishTime>04/02/2019 17:29:29</publishTime>
+    </File>
+    <File Include="js/Project/ECM/vendor/Common/mobMenu.js">
+      <publishTime>04/02/2019 17:29:29</publishTime>
+    </File>
+    <File Include="js/Project/ECM/vendor/Common/select2.min.js">
+      <publishTime>04/02/2019 17:29:29</publishTime>
+    </File>
+    <File Include="js/Project/ECM/vendor/Common/smooth_anchor_links.js">
+      <publishTime>04/02/2019 17:29:29</publishTime>
+    </File>
+    <File Include="js/Project/ECM/vendor/Common/swiper.js">
+      <publishTime>04/04/2019 15:01:12</publishTime>
+    </File>
+    <File Include="js/Project/ECM/vendor/Common/swiper.min.js">
+      <publishTime>04/02/2019 17:29:29</publishTime>
+    </File>
+    <File Include="js/Project/ECM/vendor/Common/utils.js">
+      <publishTime>04/02/2019 17:29:29</publishTime>
+    </File>
+    <File Include="js/Project/ECM/vendor/Common/wow.js">
+      <publishTime>04/04/2019 15:00:45</publishTime>
+    </File>
+    <File Include="js/Project/ECM/vendor/Common/wow.min.js">
+      <publishTime>04/02/2019 17:29:29</publishTime>
+    </File>
+    <File Include="js/Project/ECM/vendor/jquery/jquery-ui.min.js">
+      <publishTime>04/02/2019 17:29:29</publishTime>
+    </File>
+    <File Include="js/Project/ECM/vendor/jquery/jquery.counterup.min.js">
+      <publishTime>04/02/2019 17:29:29</publishTime>
+    </File>
+    <File Include="js/Project/ECM/vendor/jquery/jquery.js">
+      <publishTime>04/04/2019 11:43:50</publishTime>
+    </File>
+    <File Include="js/Project/ECM/vendor/jquery/jquery.mask.min.js">
+      <publishTime>04/02/2019 17:29:29</publishTime>
+    </File>
+    <File Include="js/Project/ECM/vendor/jquery/jquery.min.js">
+      <publishTime>04/04/2019 11:44:13</publishTime>
+    </File>
+    <File Include="js/Project/ECM/vendor/jquery/jquery.scrollTo-1.4.2-min.js">
+      <publishTime>04/02/2019 17:29:29</publishTime>
+    </File>
+    <File Include="js/Project/ECM/vendor/jquery/jquery.validate.js">
+      <publishTime>04/02/2019 17:29:29</publishTime>
+    </File>
+    <File Include="js/Project/ECM/vendor/jquery/jquery.validate.unobtrusive.min.js">
+      <publishTime>04/02/2019 17:29:29</publishTime>
     </File>
     <File Include="js/vendor/.DS_Store">
       <publishTime>04/02/2019 17:29:29</publishTime>
@@ -703,13 +1045,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/10/2019 14:20:34</publishTime>
     </File>
     <File Include="Views/Shared/ECM/_baseLayout.cshtml">
-      <publishTime>04/03/2019 15:27:25</publishTime>
+      <publishTime>04/04/2019 13:57:56</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
       <publishTime>03/10/2019 14:20:34</publishTime>
     </File>
     <File Include="Views/web.config">
-      <publishTime>03/10/2019 14:20:34</publishTime>
+      <publishTime>03/31/2019 14:47:53</publishTime>
     </File>
     <File Include="Views/_ViewStart.cshtml">
       <publishTime>03/10/2019 14:20:34</publishTime>

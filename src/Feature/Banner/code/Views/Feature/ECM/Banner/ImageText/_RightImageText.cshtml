@@ -1,5 +1,4 @@
-﻿
-@using Glass.Mapper.Sc.Web.Mvc
+﻿@using Glass.Mapper.Sc.Web.Mvc
 @model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Banner.IImageText
 <!-- image with text starts -->
 <section class="text-img-box">
@@ -13,7 +12,7 @@
                     {
                         using (Html.Glass().BeginRenderLink(Model, x => x.Button, new { @class = "btn btn-primary mt-3 mt-md-5" }, isEditable: true))
                         {
-                            @Model.Button.Title
+                            @Model.Button_Text
                             <i>
 
                                 @if (!String.IsNullOrEmpty(ViewBag.RightArrow))
@@ -27,8 +26,10 @@
             </div>
             <div class="col-sm-6 d-none d-xl-block d-md-block">
                 <div class="imgWrap wow fadeInUp">
-                    @Html.Glass().RenderImage(Model, x => x.Image, new { alt = "image", @class = "img-fluid" }, isEditable: true)
-
+                    @if (Model.Image != null)
+                    {
+                        @Html.Glass().RenderImage(Model, x => x.Image, new { alt = !String.IsNullOrEmpty(Model.Image.Alt) ? Model.Image.Alt : "image", @class = "img-fluid" }, isEditable: true)
+                    }
                 </div>
             </div>
         </div>

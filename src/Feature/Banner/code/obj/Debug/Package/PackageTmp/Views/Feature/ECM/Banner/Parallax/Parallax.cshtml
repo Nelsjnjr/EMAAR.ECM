@@ -16,7 +16,7 @@
                 {
                     using (Html.Glass().BeginRenderLink(Model, x => x.Button, new { @class = "btn btn-primary mt-3 mt-md-5" }, isEditable: true))
                     {
-                        @Model.Button.Title
+                        @Model.Button_Text
                         <i>
 
                             @if (!String.IsNullOrEmpty(ViewBag.RightArrow))

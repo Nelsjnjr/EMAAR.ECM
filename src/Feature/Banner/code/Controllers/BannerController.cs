@@ -34,6 +34,7 @@ namespace EMAAR.ECM.Feature.Banner.Controllers
         public ActionResult ImageText()
         {
             IImageText imageText = _bannerRepository.GetImageText();
+            ViewBag.RightArrow = _sitecoreHelper.RightArrow;
             return View($"{ViewPath}Banner/ImageText/ImageText.cshtml", imageText);
         }
         /// <summary>
