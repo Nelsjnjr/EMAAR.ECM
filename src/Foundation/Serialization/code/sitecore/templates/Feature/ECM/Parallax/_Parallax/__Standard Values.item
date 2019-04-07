@@ -17,10 +17,17 @@ key: __enforce version presence
 content-length: 1
 
 1
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 35
+
+Office/16x16/painting_landscape.png
 ----version----
 language: en
 version: 1
-revision: 0235bb00-6398-44e1-b7f8-a4bd1ae2cf31
+revision: 47452782-9cc9-40ca-88e0-9484c5dc680f
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -49,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0235bb00-6398-44e1-b7f8-a4bd1ae2cf31
+47452782-9cc9-40ca-88e0-9484c5dc680f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190401T125203Z
+20190407T062701Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

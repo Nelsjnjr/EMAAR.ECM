@@ -1,0 +1,11 @@
+﻿@model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_PageBase
+@using EMAAR.ECM.Foundation.Constants
+@using System.Text.RegularExpressions
+@using EMAAR.ECM.Foundation.Constants.Settings
+
+@Html.Partial(String.Format("{0}SEO/SeoDetails/_PageMetaData.cshtml", SitecoreSettings.ViewPath), Model)
+@Html.Partial(String.Format("{0}SEO/SeoDetails/_SocialTags.cshtml", SitecoreSettings.ViewPath), Model)
+@Html.Partial(String.Format("{0}SEO/SeoDetails/_SeoTags.cshtml", SitecoreSettings.ViewPath), Model)
+@Html.Partial(String.Format("{0}SEO/SeoDetails/_Robots.cshtml", SitecoreSettings.ViewPath), Model)
+@Html.Partial(String.Format("{0}SEO/SeoDetails/_FavIcon.cshtml", SitecoreSettings.ViewPath))
+

@@ -222,12 +222,16 @@
       <SubType>Designer</SubType>
     </Content>
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
-    <Content Include="Views\Feature\ECM\SEO\PageMetaData.cshtml" />
-    <Content Include="Views\Feature\ECM\SEO\FavIcon.cshtml" />
-    <Content Include="Views\Feature\ECM\SEO\Robots.cshtml" />
-    <Content Include="Views\Feature\ECM\SEO\SocialTags.cshtml" />
-    <Content Include="Views\Feature\ECM\SEO\SeoTags.cshtml" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Views\Feature\ECM\SEO\SeoDetails\_PageMetaData.cshtml" />
+    <Content Include="Views\Feature\ECM\SEO\SeoDetails\_FavIcon.cshtml" />
+    <Content Include="Views\Feature\ECM\SEO\SeoDetails\_Robots.cshtml" />
+    <Content Include="Views\Feature\ECM\SEO\SeoDetails\_SocialTags.cshtml" />
+    <Content Include="Views\Feature\ECM\SEO\SeoDetails\_SeoTags.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Feature\ECM\SEO\Seo.cshtml" />
     <None Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
     <None Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -239,7 +243,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="App_Start\" />
-    <Folder Include="Content\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

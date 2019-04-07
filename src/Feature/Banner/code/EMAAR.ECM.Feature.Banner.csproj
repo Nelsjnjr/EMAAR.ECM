@@ -223,8 +223,8 @@
     <Content Include="Views\Feature\ECM\Banner\ImageText\ImageText.cshtml" />
     <Content Include="EMAAR.ECM.Feature.Banner.ruleset" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
-    <Content Include="Views\Feature\ECM\Banner\ImageText\_LeftImageText.cshtml" />
-    <Content Include="Views\Feature\ECM\Banner\ImageText\_RightImageText.cshtml" />
+    <Content Include="Views\Feature\ECM\Banner\ImageText\ImageTextVariants\_LeftImageText.cshtml" />
+    <Content Include="Views\Feature\ECM\Banner\ImageText\ImageTextVariants\_RightImageText.cshtml" />
     <Content Include="Views\Feature\ECM\Banner\HomePageCarousel\HomePageCarousel.cshtml" />
     <Content Include="Views\Feature\ECM\Banner\Hero\Hero.cshtml" />
     <Content Include="Views\Feature\ECM\Banner\Parallax\Parallax.cshtml" />

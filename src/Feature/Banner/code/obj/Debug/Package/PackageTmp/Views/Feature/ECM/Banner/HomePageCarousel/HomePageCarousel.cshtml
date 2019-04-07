@@ -7,6 +7,7 @@
         backgroundCss = CommonConstants.Explore;
     }
 }
+<!--Start HomePage carousels-->
 <section class="@backgroundCss">
     <div class="container">
         <h2 class="heading text-center wow fadeInUp">@Html.Glass().Editable(Model, x => x.Title)</h2>
@@ -28,7 +29,7 @@
                                         }
                                         else
                                         {
-                                            @Html.Glass().RenderImage(carousels, x => x.Image, new { alt = String.Empty, @class = "img-fluid" }, isEditable: true)
+                                            @Html.Glass().RenderImage(carousels, x => x.Image, new { alt = "image", @class = "img-fluid" }, isEditable: true)
 
                                         }
                                         <h3 class="title">@Html.Glass().Editable(carousels, x => x.Title)</h3>
@@ -47,8 +48,9 @@
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
-           
+
 
         </div>
     </div>
 </section>
+<!--End HomePage carousels-->

@@ -6,17 +6,10 @@ path: /sitecore/content/ECM/DowntownDubai/Home/Page Datasources/Parallaxs
 parent: {FD5AB8FD-2BCF-4FD7-8B20-246D1A1CA565}
 name: Parallaxs
 master: {00000000-0000-0000-0000-000000000000}
-template: {6CF70F1E-BE87-43FC-9A2D-C4CCB365223F}
-templatekey: ImageTextsFolder
+template: {2A21B49E-EED8-48B2-B782-F45A5F0F4B03}
+templatekey: ParallaxFolder
 created: 20190401T125828Z
 
-----field----
-field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
-name: __Icon
-key: __icon
-content-length: 40
-
-Applications/16x16/text_rich_colored.png
 ----field----
 field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
 name: __Masters
@@ -27,7 +20,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: efac0902-89b2-4244-a69b-2db9c366d5a9
+revision: 5c5f2824-96aa-4ad2-977d-0e1862e66623
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -49,14 +42,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-efac0902-89b2-4244-a69b-2db9c366d5a9
+5c5f2824-96aa-4ad2-977d-0e1862e66623
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190403T060146Z
+20190407T062859Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
