@@ -12,7 +12,7 @@ namespace EMAAR.ECM.Feature.SEO.Interfaces
         /// Getting page metadata
         /// </summary>
         /// <returns>Metadata/OG/Twitter,Canonical and hreflang</returns>
-        I_PageBase GetPageMetaData();
+        I_PageBase GetSeo();
         #endregion
     }
 }

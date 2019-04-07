@@ -13,7 +13,7 @@ created: 20190321T090417Z
 ----version----
 language: en
 version: 1
-revision: bdf4f891-0622-4eb7-8cce-f1088b3882dc
+revision: b42a2b29-3fa8-4e23-9c8b-97258e7228b4
 
 ----field----
 field: {6D5D0A92-1283-4C10-B057-7D40A1B88DE6}
@@ -28,7 +28,7 @@ name: Hot spots
 key: hot spots
 content-length: 155
 
-{75153B99-995A-4796-B6DD-9D9749327252}|{6200803F-5957-4704-BB88-7CC7B52DC00F}|{85A94395-C637-4B3C-9EBC-20228C0CCA13}|{E4153BAB-E86A-4D21-AD1D-78C2F031D279}
+{85A94395-C637-4B3C-9EBC-20228C0CCA13}|{75153B99-995A-4796-B6DD-9D9749327252}|{E4153BAB-E86A-4D21-AD1D-78C2F031D279}|{6200803F-5957-4704-BB88-7CC7B52DC00F}
 ----field----
 field: {F6BA7B09-176F-4BB1-A680-C070D4B92C65}
 name: Image
@@ -49,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bdf4f891-0622-4eb7-8cce-f1088b3882dc
+b42a2b29-3fa8-4e23-9c8b-97258e7228b4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190402T062639Z
+20190407T055420Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

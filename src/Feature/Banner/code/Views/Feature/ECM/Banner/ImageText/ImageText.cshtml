@@ -1,5 +1,6 @@
 ﻿@using EMAAR.ECM.Foundation.Constants.Settings
 @model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Banner.IImageText
+<!--Start ImageText-->
 @if (Model.Image_Text_Alignment != null)
 {
     @Html.Partial(String.Format("{0}Banner/ImageText/_{1}ImageText.cshtml", SitecoreSettings.ViewPath, Model.Image_Text_Alignment.Key), Model)
@@ -9,6 +10,4 @@ else
     @Html.Partial(String.Format("{0}Banner/ImageText/_LeftImageText.cshtml", SitecoreSettings.ViewPath), Model)
 
 }
-
-
-
+<!--End ImageText-->

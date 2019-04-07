@@ -7,7 +7,7 @@ parent: {FD5AB8FD-2BCF-4FD7-8B20-246D1A1CA565}
 name: InteractiveMaps
 master: {00000000-0000-0000-0000-000000000000}
 template: {C420ABB4-A4C9-4899-84CE-9D8A3F540C31}
-templatekey: InteractiveMapListFolder
+templatekey: InteractiveMapsFolder
 created: 20190321T090359Z
 
 ----version----

@@ -7,7 +7,7 @@ parent: {FD5AB8FD-2BCF-4FD7-8B20-246D1A1CA565}
 name: Parallaxs
 master: {00000000-0000-0000-0000-000000000000}
 template: {6CF70F1E-BE87-43FC-9A2D-C4CCB365223F}
-templatekey: ImageTextFolder
+templatekey: ImageTextsFolder
 created: 20190401T125828Z
 
 ----field----

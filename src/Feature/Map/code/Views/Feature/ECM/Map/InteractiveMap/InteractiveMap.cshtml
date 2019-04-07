@@ -1,6 +1,6 @@
 ﻿@model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Interactive_Map.IInteractive_Map
 @using Glass.Mapper.Sc.Web.Mvc
-<!-- map starts here -->
+<!-- Interactive map starts here -->
 <section id="map-section" class="map-section viewport-section">
     <div class="container">
         <div class="title-holder">
@@ -28,7 +28,7 @@
                                     {
                                         @Html.Glass().RenderImage(maps, x => x.Image, new { alt = !String.IsNullOrEmpty(maps.Image.Alt) ? maps.Image.Alt : "image" }, isEditable: true)
                                     }
-                                    </div>
+                                </div>
                                 <div class="map-item-popup-content-text">
                                     <h3> @Html.Glass().Editable(maps, x => x.Summary_Heading)</h3>
                                     <p>
@@ -48,4 +48,4 @@
     }
     <img src="~/images/icon/icon-hand.svg" class="map-section-swipe-icon" alt="ico">
 </section>
-<!-- map ends -->
+<!--Interactive map ends -->

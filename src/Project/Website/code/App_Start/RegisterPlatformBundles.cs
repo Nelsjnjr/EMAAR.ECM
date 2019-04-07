@@ -25,7 +25,7 @@ namespace EMAAR.ECM.Project.Website.App_Start
                 //Developer can see individual javascripts
                 BundleTable.EnableOptimizations = false;
             #else
-                //Minified and Bundled JAvascripts
+                //Minified and Bundled Javascripts
                 BundleTable.EnableOptimizations = true;
             #endif
         }

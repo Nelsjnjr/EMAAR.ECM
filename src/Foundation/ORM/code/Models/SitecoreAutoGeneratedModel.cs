@@ -240,7 +240,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 					
 						/// <summary>
 				/// The Statistics field.
-				/// <para>Datasource items from Site Content\Community Metrics</para>
+				/// <para>Datasource items from Site Content\Statistics</para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 61256258-c337-4d5a-b150-6b765a10fbbf</para>
 				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Hero.IStatistics</para>
@@ -1580,7 +1580,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Hero_co
 			
 								/// <summary>
 					/// The Statistics field.
-					/// <para>Datasource items from Site Content\Community Metrics</para>
+					/// <para>Datasource items from Site Content\Statistics</para>
 					/// <para>Field Type: Multilist</para>		
 					/// <para>Field ID: 61256258-c337-4d5a-b150-6b765a10fbbf</para>
 					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Hero.IStatistics</para>
@@ -1663,7 +1663,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Hero_co
 					
 						/// <summary>
 				/// The Statistics field.
-				/// <para>Datasource items from Site Content\Community Metrics</para>
+				/// <para>Datasource items from Site Content\Statistics</para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 61256258-c337-4d5a-b150-6b765a10fbbf</para>
 				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Hero.IStatistics</para>
@@ -3447,7 +3447,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 	{
 								/// <summary>
 					/// The Hot spots field.
-					/// <para>Datasource items from Site Content\Interactive Map Location Points</para>
+					/// <para>Datasource items from Site Content\Hot spots</para>
 					/// <para>Field Type: Multilist</para>		
 					/// <para>Field ID: 661c5898-9da8-4a26-b33d-e8f7797209f4</para>
 					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Interactive_Map.IHotspot</para>
@@ -3504,7 +3504,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 	   
 						/// <summary>
 				/// The Hot spots field.
-				/// <para>Datasource items from Site Content\Interactive Map Location Points</para>
+				/// <para>Datasource items from Site Content\Hot spots</para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 661c5898-9da8-4a26-b33d-e8f7797209f4</para>
 				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Interactive_Map.IHotspot</para>
@@ -4830,7 +4830,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Homepag
 	{
 								/// <summary>
 					/// The Carousels field.
-					/// <para>Datasource items from Site Content\Related content Slides</para>
+					/// <para>Datasource items from Site Content\Homepage Carousels</para>
 					/// <para>Field Type: Multilist</para>		
 					/// <para>Field ID: 96c03c76-a871-4acf-91f6-21a3e49a8e32</para>
 					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Homepage_carousel.IHomepage_Carousel</para>
@@ -4897,7 +4897,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Homepag
 	   
 						/// <summary>
 				/// The Carousels field.
-				/// <para>Datasource items from Site Content\Related content Slides</para>
+				/// <para>Datasource items from Site Content\Homepage Carousels</para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 96c03c76-a871-4acf-91f6-21a3e49a8e32</para>
 				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Homepage_carousel.IHomepage_Carousel</para>
@@ -5151,7 +5151,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 	   
 						/// <summary>
 				/// The Carousels field.
-				/// <para>Datasource items from Site Content\Related content Slides</para>
+				/// <para>Datasource items from Site Content\Homepage Carousels</para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 96c03c76-a871-4acf-91f6-21a3e49a8e32</para>
 				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Homepage_carousel.IHomepage_Carousel</para>
@@ -5237,7 +5237,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 	   
 						/// <summary>
 				/// The Hot spots field.
-				/// <para>Datasource items from Site Content\Interactive Map Location Points</para>
+				/// <para>Datasource items from Site Content\Hot spots</para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 661c5898-9da8-4a26-b33d-e8f7797209f4</para>
 				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Interactive_Map.IHotspot</para>

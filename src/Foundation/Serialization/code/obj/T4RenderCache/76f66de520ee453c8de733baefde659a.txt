@@ -29,7 +29,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Homepag
 	{
 								/// <summary>
 					/// The Carousels field.
-					/// <para>Datasource items from Site Content\Related content Slides</para>
+					/// <para>Datasource items from Site Content\Homepage Carousels</para>
 					/// <para>Field Type: Multilist</para>		
 					/// <para>Field ID: 96c03c76-a871-4acf-91f6-21a3e49a8e32</para>
 					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Homepage_carousel.IHomepage_Carousel</para>
@@ -96,7 +96,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Homepag
 	   
 						/// <summary>
 				/// The Carousels field.
-				/// <para>Datasource items from Site Content\Related content Slides</para>
+				/// <para>Datasource items from Site Content\Homepage Carousels</para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 96c03c76-a871-4acf-91f6-21a3e49a8e32</para>
 				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Homepage_carousel.IHomepage_Carousel</para>

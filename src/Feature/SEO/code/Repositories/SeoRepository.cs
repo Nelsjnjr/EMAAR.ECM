@@ -28,7 +28,7 @@ namespace EMAAR.ECM.Feature.SEO.Repositories
         /// Getting page metadata
         /// </summary>
         /// <returns>Metadata/OG/Twitter,Canonical and hreflang</returns>
-        public I_PageBase GetPageMetaData()
+        public I_PageBase GetSeo()
         {
             IMvcContext mvcContext = _mvcContext();
             return mvcContext.GetContextItem<I_PageBase>();

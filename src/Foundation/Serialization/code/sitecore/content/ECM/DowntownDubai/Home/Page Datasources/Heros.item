@@ -7,7 +7,7 @@ parent: {FD5AB8FD-2BCF-4FD7-8B20-246D1A1CA565}
 name: Heros
 master: {00000000-0000-0000-0000-000000000000}
 template: {FA2C72F1-096B-4EC9-83BE-65C1EDCF3086}
-templatekey: HeroFolderListFolder
+templatekey: HerosFolder
 created: 20190320T065704Z
 
 ----version----

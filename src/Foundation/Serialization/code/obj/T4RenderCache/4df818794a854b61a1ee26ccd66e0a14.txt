@@ -29,7 +29,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 	{
 								/// <summary>
 					/// The Hot spots field.
-					/// <para>Datasource items from Site Content\Interactive Map Location Points</para>
+					/// <para>Datasource items from Site Content\Hot spots</para>
 					/// <para>Field Type: Multilist</para>		
 					/// <para>Field ID: 661c5898-9da8-4a26-b33d-e8f7797209f4</para>
 					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Interactive_Map.IHotspot</para>
@@ -86,7 +86,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 	   
 						/// <summary>
 				/// The Hot spots field.
-				/// <para>Datasource items from Site Content\Interactive Map Location Points</para>
+				/// <para>Datasource items from Site Content\Hot spots</para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 661c5898-9da8-4a26-b33d-e8f7797209f4</para>
 				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Interactive_Map.IHotspot</para>

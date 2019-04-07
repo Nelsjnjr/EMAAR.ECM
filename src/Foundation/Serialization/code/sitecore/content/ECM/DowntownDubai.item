@@ -13,7 +13,7 @@ created: 20190311T112008Z
 ----version----
 language: en
 version: 1
-revision: 7df28545-2b85-4ff1-a106-30ee9f856a71
+revision: 7350cbe8-b3a2-4689-b6b3-5b0395daaf91
 
 ----field----
 field: {45D89051-7992-4D9F-9979-85DD606CB56C}
@@ -68,11 +68,11 @@ office/32x32/chart_donut.png
 field: {1F0AD353-B94C-4B2E-B135-DD129E1A2509}
 name: Robots File content
 key: robots file content
-content-length: 240
+content-length: 229
 
 User-agent: *
 Disallow: /sitecore
-Disallow: /Sitecore
+Disallow: /content
 Disallow: /sitecore_files/
 Disallow: /sitecore modules/
 Disallow: /App_Browsers/
@@ -85,19 +85,19 @@ Disallow: /xsl/
 field: {67C36A77-5A20-4FD3-AD59-54F50BE2D851}
 name: Pre Site scripts
 key: pre site scripts
-content-length: 45
+content-length: 133
 
 <script>
-//ssssssssssssssssssssss
+//This is the place to add all kind of scripts that needs to added in the page for analytics /tracking/ranking etc
 </script>
 ----field----
 field: {B0E24D12-34B3-4985-BE53-BDF2B3AD9711}
 name: Post Site scripts
 key: post site scripts
-content-length: 39
+content-length: 133
 
 <script>
-//dddddddddddddddd
+//This is the place to add all kind of scripts that needs to added in the page for analytics /tracking/ranking etc
 </script>
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -126,14 +126,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7df28545-2b85-4ff1-a106-30ee9f856a71
+7350cbe8-b3a2-4689-b6b3-5b0395daaf91
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190403T114313Z
+20190407T053442Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

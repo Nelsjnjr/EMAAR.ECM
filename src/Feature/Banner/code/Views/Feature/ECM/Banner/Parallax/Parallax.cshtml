@@ -2,6 +2,7 @@
 @model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Banner.IParallax
 @{ var image = Model.Image != null ? Model.Image.Src : String.Empty;
 }
+<!-- Start Parallax-->
 @using (Html.BeginEditFrame(Model.FullPath, "FullBannerImage", "Edit Background Image"))
 {
     <!-- background image with text starts(In Experience Editor mode) -->
@@ -36,3 +37,4 @@
 }
 
 <!-- background image with text ends -->
+<!-- End Parallax-->

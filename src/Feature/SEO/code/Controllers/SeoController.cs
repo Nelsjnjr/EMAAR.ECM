@@ -22,9 +22,9 @@ namespace EMAAR.ECM.Feature.SEO.Controllers
         /// Getting page metadata
         /// </summary>
         /// <returns>Metadata/OG/Twitter,Canonical and hreflang</returns>
-        public ActionResult GetPageMetaData()
+        public ActionResult GetSeo()
         {
-            return View($"{ViewPath}SEO/PageMetaData.cshtml", _seoRepository.GetPageMetaData());
+            return View($"{ViewPath}SEO/PageMetaData.cshtml", _seoRepository.GetSeo());
         }
         #endregion
     }
