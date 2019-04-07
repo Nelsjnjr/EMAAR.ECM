@@ -2,9 +2,9 @@
 version: 1
 id: {E019FF44-FCE6-4404-A77A-22B22852F6ED}
 database: master
-path: /sitecore/content/ECM/DowntownDubai/Site Content/Navigation/Header/Get in touch/Option1
-parent: {F9485CC9-1F8F-4710-BC6A-3FD52AA914DF}
-name: Option1
+path: /sitecore/content/ECM/DowntownDubai/Site Content/Navigation/Header/Lifestyle/Rules and regulations
+parent: {F468C5A4-EB52-4CF2-9989-C2D32F73E732}
+name: Rules and regulations
 master: {00000000-0000-0000-0000-000000000000}
 template: {D40F511D-B04A-45C9-84D5-5CA0EAE0CB5A}
 templatekey: Sub Navigation
@@ -13,22 +13,22 @@ created: 20190325T085823Z
 ----version----
 language: en
 version: 1
-revision: bec80ff8-5989-4faa-a1c0-321356d48cde
+revision: 4637c620-aa2c-4f01-87cb-f28ce1ebcf07
 
 ----field----
 field: {B66E4688-AB06-4FF0-A976-AA2492379CF5}
 name: Navigation Title
 key: navigation title
-content-length: 7
+content-length: 19
 
-Option1
+Rules & regulations
 ----field----
 field: {6C2D0631-17E6-4BBB-BEDF-CEA0939448C9}
 name: Navigation Link
 key: navigation link
-content-length: 133
+content-length: 140
 
-<link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{34853065-F482-4073-9AE0-73E2E2FBFEF3}" />
+<link text="" linktype="internal" url="" anchor="" title="" class="" querystring="" target="" id="{110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -42,14 +42,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bec80ff8-5989-4faa-a1c0-321356d48cde
+4637c620-aa2c-4f01-87cb-f28ce1ebcf07
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190325T085530Z
+20190407T061135Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

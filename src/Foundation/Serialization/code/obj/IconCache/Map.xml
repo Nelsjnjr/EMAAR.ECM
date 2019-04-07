@@ -697,23 +697,8 @@
   <Item ItemPath="/sitecore/content/ECM/Greens/Home/Page Datasources/HeroBanner/Reach the stars" ItemIcon="/temp/iconcache/multimedia/32x32/image_h.png" />
   <Item ItemPath="/sitecore/content/ECM/Greens/Home/Page Datasources/InteractiveMap/Click to discover the area" ItemIcon="/temp/iconcache/apps/32x32/map.png" />
   <Item ItemPath="/sitecore/content/ECM/Greens/Home/Page Datasources/Related Content/Exploring the neighborhood" ItemIcon="/temp/iconcache/control/16x16/splitter_ver_b_h.png" />
-  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Discovery" ItemIcon="/temp/iconcache/applications/32x32/nav_right_green.png" />
-  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Get in touch" ItemIcon="/temp/iconcache/applications/32x32/nav_right_green.png" />
-  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Lifestyle" ItemIcon="/temp/iconcache/applications/32x32/nav_right_green.png" />
-  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Discovery/Option 2" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
-  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Discovery/Option 3" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
-  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Discovery/Option 4" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
-  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Get in touch/Option 2" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
-  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Lifestyle/Option 2" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
-  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Media/Option 2" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
   <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/HeroBanner/Residents" ItemIcon="/temp/iconcache/office/32x32/chart_donut.png" />
   <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/InteractiveMaps/Lakeside" ItemIcon="/temp/iconcache/apps/32x32/medicine.png" />
-  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header" ItemIcon="/temp/iconcache/office/32x32/document_header.png" />
-  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Discovery/Option1" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
-  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Get in touch/Option1" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
-  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Lifestyle/Option1" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
-  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Media" ItemIcon="/temp/iconcache/applications/32x32/nav_right_green.png" />
-  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Media/Option1" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
   <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/RelatedContent/Boulevard heights" ItemIcon="/temp/iconcache/control/16x16/splitter_ver.png" />
   <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/RelatedContent/Zanzebeel features" ItemIcon="/temp/iconcache/control/16x16/splitter_ver.png" />
   <Item ItemPath="/sitecore/templates/Feature/ECM/Home" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
@@ -811,10 +796,6 @@
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/Navigation/Header/Discovery/Option 3" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/Navigation/Header/Discovery/Option 4" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/Navigation/Header/Discovery/Option1" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
-  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/Navigation/Header/Get in touch" ItemIcon="/temp/iconcache/applications/32x32/nav_right_green.png" />
-  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/Navigation/Header/Get in touch/Option 2" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
-  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/Navigation/Header/Get in touch/Option1" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
-  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/Navigation/Header/Lifestyle" ItemIcon="/temp/iconcache/applications/32x32/nav_right_green.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/Navigation/Header/Lifestyle/Option 2" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/Navigation/Header/Lifestyle/Option1" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
   <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/Navigation/Header/Media" ItemIcon="/temp/iconcache/applications/32x32/nav_right_green.png" />
@@ -1005,7 +986,6 @@
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Navigation/__Standard Values" ItemIcon="/temp/IconCache/Applications/32x32/nav_right_green.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Navigation/Navigation" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Navigation/Navigation/Navigation Link" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
-  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Navigation/Navigation/Navigation Title" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Navigation/Navigation/Sub Navigations" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Robots" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Robots/__Standard Values" ItemIcon="/temp/iconcache/applications/32x32/form_blue.png" />
@@ -1028,7 +1008,6 @@
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_SubNavigation/__Standard Values" ItemIcon="/temp/IconCache/Applications/32x32/nav_down_red.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_SubNavigation/Sub Navigation" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_SubNavigation/Sub Navigation/Navigation Link" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
-  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_SubNavigation/Sub Navigation/Navigation Title" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_TenantRoot" ItemIcon="/temp/IconCache/Applications/32x32/form_blue.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_TenantRoot/__Standard Values" ItemIcon="/temp/IconCache/Flags/32x32/flag_united_arab_emirates.png" />
   <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_TenantRoot/Data" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
@@ -1117,4 +1096,31 @@
   <Item ItemPath="/sitecore/templates/Project/ECM/Parameters/ParametersTemplate_ImageAlignment/__Standard Values" ItemIcon="/temp/IconCache/Applications/16x16/form_red_edit.png" />
   <Item ItemPath="/sitecore/templates/Branches/Generic Pages/$name" ItemIcon="/temp/IconCache/Office/32x32/windows.png" />
   <Item ItemPath="/sitecore/templates/Branches/Generic Pages/$name/Page Datasources" ItemIcon="/temp/iconcache/applications/32x32/folder_view.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/Navigation/Header/Get in touch/Option 2" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/Navigation/Header/Get in touch/Guidelines" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/Navigation/Header/Lifestyle/Guidelines" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/Navigation/Header/Lifestyle/Community service fee" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/Navigation/Header/Lifestyle" ItemIcon="/temp/iconcache/applications/32x32/nav_right_green.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/Navigation/Header/Lifestyle/All neighbourhoods" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/Navigation/Header/Get in touch" ItemIcon="/temp/iconcache/applications/32x32/nav_right_green.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_Navigation/Navigation/Navigation Title" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/templates/Foundation/ECM/Content Types/_SubNavigation/Sub Navigation/Navigation Title" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/Navigation/Header/Lifestyle/FAQs" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/Navigation/Header/Lifestyle/Rules and regulations" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
+  <Item ItemPath="/sitecore/content/ECM/DowntownDubai/Site Content/Navigation/Header/Lifestyle/Tips" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
+  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header" ItemIcon="/temp/iconcache/office/32x32/document_header.png" />
+  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Discovery" ItemIcon="/temp/iconcache/applications/32x32/nav_right_green.png" />
+  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Get in touch" ItemIcon="/temp/iconcache/applications/32x32/nav_right_green.png" />
+  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Lifestyle" ItemIcon="/temp/iconcache/applications/32x32/nav_right_green.png" />
+  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Media" ItemIcon="/temp/iconcache/applications/32x32/nav_right_green.png" />
+  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Discovery/Option 3" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
+  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Discovery/Option 4" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
+  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Discovery/Option1" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
+  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Get in touch/Option 2" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
+  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Get in touch/Option1" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
+  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Lifestyle/Option 2" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
+  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Lifestyle/Option1" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
+  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Media/Option 2" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
+  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Media/Option1" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
+  <Item ItemPath="/sitecore/content/ECM/Greens/Site Content/Navigation/Header/Discovery/Option 2" ItemIcon="/temp/iconcache/applications/32x32/nav_down_red.png" />
 </ItemIconCache>
