@@ -186,7 +186,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
-    <Content Include="App_Config\Include\ECM\Foundation\zzz.Sitecore.Foundation.DependencyInjection.config" />
+    <Content Include="App_Config\Include\Foundation\ECM\zzz.Sitecore.Foundation.DependencyInjection.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="Sitecore.Foundation.DependencyInjection.ruleset" />
     <None Include="Web.config" />

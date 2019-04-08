@@ -38,15 +38,15 @@
         /// All Site javascripts files path
         /// </summary>
         public static string[] AllSiteJavascriptsFilePaths => new string[] {
-            "~/js/Project/ECM/vendor/jquery/jquery.js",
-            "~/js/Project/ECM/vendor/jquery/jquery.counterup.min.js",
-            "~/js/Project/ECM/vendor/jquery/jquery-ui.min.js",
-            "~/js/Project/ECM/vendor/jquery/jquery.scrollTo-1.4.2-min.js",
-            "~/js/Project/ECM/vendor/jquery/jquery.validate*",
-            "~/js/Project/ECM/vendor/bootstrap/bootstrap.js",
-            "~/js/Project/ECM/vendor/common/*.js",
-            "~/js/Project/ECM/application/app.js",
-            "~/js/Project/ECM/application/main.js"
+            "~/Content/Project/ECM/js/vendor/jquery/jquery.js",
+            "~/Content/Project/ECM/js/vendor/jquery/jquery.counterup.min.js",
+            "~/Content/Project/ECM/js/vendor/jquery/jquery-ui.min.js",
+            "~/Content/Project/ECM/js/vendor/jquery/jquery.scrollTo-1.4.2-min.js",
+            "~/Content/Project/ECM/js/vendor/jquery/jquery.validate*",
+            "~/Content/Project/ECM/js/vendor/bootstrap/bootstrap.js",
+            "~/Content/Project/ECM/js/vendor/common/*.js",
+            "~/Content/Project/ECM/js/application/app.js",
+            "~/Content/Project/ECM/js/application/main.js"
         };
         #region Search
         /// <summary>

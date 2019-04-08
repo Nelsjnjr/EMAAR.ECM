@@ -199,13 +199,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\ECM\Foundation\Foundation.ORM.config">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="App_Config\Include\Glass\z.Glass.Mapper.Sc.ViewRender.config.exclude" />
     <Content Include="App_Config\Include\Glass\Glass.Mapper.Sc.Start.config" />
     <Content Include="App_Config\Include\Glass\Glass.Mapper.Sc.config" />
     <Content Include="EMAAR.ECM.Foundation.ORM.ruleset" />
+    <Content Include="App_Config\Include\Foundation\ECM\EMAAR.ECM.Foundation.ORM.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>

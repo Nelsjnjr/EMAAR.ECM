@@ -53,7 +53,7 @@ namespace EMAAR.ECM.Foundation.Constants.Settings
         /// </summary>
         public static string NavigationFooterPath { get; set; } = GetSetting("EMAAR.ECM.Foundation.Constants.NavigationFooterPath");
         /// <summary>
-        /// Getting Image location path "images/Project/ECM/"
+        /// Getting Image location path "Content/Project/ECM/images/"
         /// </summary>
         public static string ImageLocatation { get; set; } = GetSetting("EMAAR.ECM.Foundation.Constants.ImageLocation");
     }

@@ -8,10 +8,10 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <!--Start Loading Seo tags-->
-    @Html.Sitecore().Placeholder("ecm_seo")
+    @Html.Action("GetSeo", "Seo")
     <!--End Loading Seo tags -->
     @{
-        @Styles.Render(String.Format("~/css/{0}-{1}.css", Sitecore.Context.Site.Name, Sitecore.Context.Language))
+        @Styles.Render(String.Format("~/Content/Project/ECM/css/{0}-{1}.css", Sitecore.Context.Site.Name, Sitecore.Context.Language))
     }
     <!--End loading seo tags-->
     <!--Start Page Pre site scripts-->
