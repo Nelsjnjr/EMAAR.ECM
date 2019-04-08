@@ -14,9 +14,9 @@ created: 20190317T130339Z
 field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
 name: Controller
 key: controller
-content-length: 78
+content-length: 93
 
-EMAAR.ECM.Feature.Banner.Controllers.BannerController,EMAAR.ECM.Feature.Banner
+EMAAR.ECM.Feature.ImageBanner.Controllers.ImageBannerController,EMAAR.ECM.Feature.ImageBanner
 ----field----
 field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
 name: Controller Action
@@ -35,41 +35,41 @@ content-length: 1
 field: {3D08DB46-2267-41B0-BC52-BE69FD618633}
 name: Cacheable
 key: cacheable
-content-length: 1
+content-length: 0
 
-1
+
 ----field----
 field: {F3E7E552-D7C8-469B-A150-69E4E14AB35C}
 name: ClearOnIndexUpdate
 key: clearonindexupdate
-content-length: 1
+content-length: 0
 
-1
+
 ----field----
 field: {8B6D532B-6128-4486-A044-CA06D90948BA}
 name: VaryByData
 key: varybydata
-content-length: 1
+content-length: 0
 
-1
+
 ----field----
 field: {B5B27AF1-25EF-405C-87CE-369B3A004016}
 name: Datasource Location
 key: datasource location
-content-length: 36
+content-length: 37
 
-./Page Datasources/Homepage carousel
+./Page Datasources/Homepage carousels
 ----field----
 field: {1A7C85E5-DC0B-490D-9187-BB1DBCB4C72F}
 name: Datasource Template
 key: datasource template
-content-length: 85
+content-length: 82
 
-/sitecore/templates/Project/ECM/Content Types/Homepage carousel/Homepage carouselList
+/sitecore/templates/Project/ECM/Content Types/Homepage carousel/Homepage carousels
 ----version----
 language: en
 version: 1
-revision: ddfae086-78ad-40fb-b6bb-0891fffdd8cb
+revision: d31b5b8e-b259-4693-8968-af19e00ebd86
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -84,14 +84,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ddfae086-78ad-40fb-b6bb-0891fffdd8cb
+d31b5b8e-b259-4693-8968-af19e00ebd86
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190402T061942Z
+20190408T073602Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

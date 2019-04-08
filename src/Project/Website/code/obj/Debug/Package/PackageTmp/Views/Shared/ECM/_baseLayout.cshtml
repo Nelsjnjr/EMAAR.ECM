@@ -4,11 +4,11 @@
 <html lang="@Sitecore.Context.Language">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <!--Start Loading Seo tags-->
-    @Html.Action("GetSeo", "Seo")
+    @Html.Sitecore().Placeholder("ecm_seo")
     <!--End Loading Seo tags -->
     @{
         @Styles.Render(String.Format("~/css/{0}-{1}.css", Sitecore.Context.Site.Name, Sitecore.Context.Language))

@@ -210,7 +210,7 @@
     </ProjectReference>
     <ProjectReference Include="..\..\DependencyInjection\code\EMAAR.ECM.Foundation.DependencyInjection.csproj">
       <Project>{e7acc4fc-b18c-45a3-8871-d4ae93471623}</Project>
-      <Name>Sitecore.Foundation.DependencyInjection</Name>
+      <Name>EMAAR.ECM.Foundation.DependencyInjection</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

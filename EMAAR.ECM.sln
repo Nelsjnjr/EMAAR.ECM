@@ -41,7 +41,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Foundation.Depend
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Banner", "Banner", "{07EE97C3-856E-4BBF-BB14-C538E4C3B6A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Feature.Banner", "src\Feature\Banner\code\EMAAR.ECM.Feature.Banner.csproj", "{551879C4-C1D7-4BF1-997D-CB0C796430B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Feature.ImageBanner", "src\Feature\Banner\code\EMAAR.ECM.Feature.ImageBanner.csproj", "{551879C4-C1D7-4BF1-997D-CB0C796430B4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Constants", "Constants", "{F721D22A-FB5B-431A-A0AF-D36E37544DB9}"
 EndProject
@@ -58,7 +58,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SEO", "SEO", "{30556D28-564D-4EE5-A23C-56F25E6D5D22}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Feature.SEO", "src\Feature\SEO\code\EMAAR.ECM.Feature.SEO.csproj", "{8C92C840-ACD8-4247-AA08-F349A31A8A36}"
-EndProject 
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Search", "Search", "{D7E4DC08-1AE3-40A7-9CCE-B8C1769D94AF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Foundation.Search", "src\Foundation\Search\code\EMAAR.ECM.Foundation.Search.csproj", "{C42A1245-A6DC-409B-9BBE-6F9475C42AC6}"
@@ -157,7 +157,7 @@ Global
 		{5FD0445D-5C76-4CD1-A2AB-F6E7C71455A8} = {14104F60-09D3-4470-8E18-8B29E3A3EF92}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {19DFE5D1-44BF-4ED4-8BC4-548544D4F79B}
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {19DFE5D1-44BF-4ED4-8BC4-548544D4F79B}
 	EndGlobalSection
 EndGlobal
