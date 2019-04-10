@@ -1,4 +1,4 @@
-﻿using EMAAR.ECM.Foundation.Constants;
+﻿using EMAAR.ECM.Foundation.SitecoreExtensions;
 using EMAAR.ECM.Foundation.Search.Models;
 using Sitecore;
 using Sitecore.ContentSearch;

@@ -33,7 +33,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Foundation.ErrorH
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serialization", "Serialization", "{E4020F51-AE16-4CC8-8D88-03D1B993BBCF}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "EMAAR.ECM.Foundation.Serialization.Master", "src\Foundation\Serialization\code\EMAAR.ECM.Foundation.Serialization.Master.scproj", "{85175316-7AAE-4E6D-9303-2E616184CBA1}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "EMAAR.ECM.Foundation.Serialization.Master", "src\Foundation\Serialization\master\EMAAR.ECM.Foundation.Serialization.Master.scproj", "{85175316-7AAE-4E6D-9303-2E616184CBA1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInjection", "DependencyInjection", "{3C51C9B8-38C4-411D-B411-5EED260E8F1B}"
 EndProject
@@ -41,9 +41,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Foundation.Depend
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Banner", "Banner", "{07EE97C3-856E-4BBF-BB14-C538E4C3B6A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Feature.ImageBanner", "src\Feature\Banner\code\EMAAR.ECM.Feature.ImageBanner.csproj", "{551879C4-C1D7-4BF1-997D-CB0C796430B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Feature.Banner", "src\Feature\Banner\code\EMAAR.ECM.Feature.Banner.csproj", "{551879C4-C1D7-4BF1-997D-CB0C796430B4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Constants", "Constants", "{F721D22A-FB5B-431A-A0AF-D36E37544DB9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SitecoreExtensions", "SitecoreExtensions", "{F721D22A-FB5B-431A-A0AF-D36E37544DB9}"
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Emaar.ECM.Foundation.Serialization.Core", "src\Foundation\Serialization\Core\Emaar.ECM.Foundation.Serialization.Core.scproj", "{BB4A62B8-31DC-40DA-8B08-E1F4A8560059}"
 EndProject
@@ -53,7 +53,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Feature.Map", "sr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Feature.Navigation", "src\Feature\Navigation\code\EMAAR.ECM.Feature.Navigation.csproj", "{70787CF6-A67E-4DB3-868D-48230C93860C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Foundation.Constants", "src\Foundation\Constants\code\EMAAR.ECM.Foundation.Constants.csproj", "{5A9C69D0-C859-4DF1-AC9C-4EF90D684B2B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Foundation.SitecoreExtensions", "src\Foundation\SitecoreExtensions\code\EMAAR.ECM.Foundation.SitecoreExtensions.csproj", "{5A9C69D0-C859-4DF1-AC9C-4EF90D684B2B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SEO", "SEO", "{30556D28-564D-4EE5-A23C-56F25E6D5D22}"
 EndProject
@@ -66,6 +66,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Listing", "Listing", "{14104F60-09D3-4470-8E18-8B29E3A3EF92}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMAAR.ECM.Feature.Listing", "src\Feature\Listing\code\EMAAR.ECM.Feature.Listing.csproj", "{5FD0445D-5C76-4CD1-A2AB-F6E7C71455A8}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "EMAAR.ECM.Foundation.Serialization.Content", "src\Foundation\Serialization\content\code\EMAAR.ECM.Foundation.Serialization.Content.scproj", "{251C1FDF-978E-4F34-BDBB-9EAD54AB802F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -125,6 +127,12 @@ Global
 		{5FD0445D-5C76-4CD1-A2AB-F6E7C71455A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FD0445D-5C76-4CD1-A2AB-F6E7C71455A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FD0445D-5C76-4CD1-A2AB-F6E7C71455A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{251C1FDF-978E-4F34-BDBB-9EAD54AB802F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{251C1FDF-978E-4F34-BDBB-9EAD54AB802F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{251C1FDF-978E-4F34-BDBB-9EAD54AB802F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{251C1FDF-978E-4F34-BDBB-9EAD54AB802F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{251C1FDF-978E-4F34-BDBB-9EAD54AB802F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{251C1FDF-978E-4F34-BDBB-9EAD54AB802F}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -155,6 +163,7 @@ Global
 		{C42A1245-A6DC-409B-9BBE-6F9475C42AC6} = {D7E4DC08-1AE3-40A7-9CCE-B8C1769D94AF}
 		{14104F60-09D3-4470-8E18-8B29E3A3EF92} = {FFE7C731-AB9F-4B1A-981C-5024ABF419E4}
 		{5FD0445D-5C76-4CD1-A2AB-F6E7C71455A8} = {14104F60-09D3-4470-8E18-8B29E3A3EF92}
+		{251C1FDF-978E-4F34-BDBB-9EAD54AB802F} = {E4020F51-AE16-4CC8-8D88-03D1B993BBCF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45

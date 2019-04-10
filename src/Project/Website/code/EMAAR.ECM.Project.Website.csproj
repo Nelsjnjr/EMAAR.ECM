@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>EMAAR.ECM.Project.Website</RootNamespace>
     <AssemblyName>EMAAR.ECM.Project.Website</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
@@ -23,6 +23,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -134,6 +135,7 @@
       <HintPath>..\..\..\..\packages\Sitecore.Zip.9.0.171219\lib\NET462\Sitecore.Zip.dll</HintPath>
     </Reference>
     <Reference Include="sysglobl" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Design" />
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.IO.Compression.FileSystem" />
@@ -172,8 +174,6 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
@@ -199,13 +199,13 @@
     <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\WebActivatorEx.2.0.3\lib\net40\WebActivatorEx.dll</HintPath>
     </Reference>
@@ -333,7 +333,9 @@
     <Content Include="Content\Project\ECM\fonts\4f2bf8530c19ba6a7c0e161d71fc65a5.woff" />
     <Content Include="Content\Project\ECM\fonts\4f2bf8530c19ba6a7c0e161d71fc65a5.woff2" />
     <Content Include="Content\Project\ECM\images\.DS_Store" />
-    <Content Include="App_Config\Include\Project\ECM\EMAAR.ECM.Project.Website.config" />
+    <Content Include="App_Config\Include\Project\ECM\website\EMAAR.ECM.Project.Website.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="EMAAR.ECM.Project.Website.ruleset" />
     <Content Include="Content\Project\ECM\js\vendor\Common\swiper.js" />
     <Content Include="Content\Project\ECM\js\vendor\Common\wow.js" />
@@ -372,8 +374,7 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\RegisterPlatformBundles.cs" />
-    <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
+    <Compile Include="Pipelines\RegisterPlatformBundles.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -387,15 +388,15 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Interfaces\" />
+    <Folder Include="App_Start\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Foundation\Constants\code\EMAAR.ECM.Foundation.Constants.csproj">
+    <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\EMAAR.ECM.Foundation.SitecoreExtensions.csproj">
       <Project>{5a9c69d0-c859-4df1-ac9c-4ef90d684b2b}</Project>
-      <Name>EMAAR.ECM.Foundation.Constants</Name>
+      <Name>EMAAR.ECM.Foundation.SitecoreExtensions</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\DependencyInjection\code\EMAAR.ECM.Foundation.DependencyInjection.csproj">
       <Project>{e7acc4fc-b18c-45a3-8871-d4ae93471623}</Project>

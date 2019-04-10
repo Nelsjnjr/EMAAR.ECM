@@ -63,9 +63,12 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\b
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\Sitecore.DependencyInjection.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\Sitecore.Kernel.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\System.Linq.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\System.Linq.Expressions.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\System.Reflection.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\System.Runtime.Extensions.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\System.Web.Helpers.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\System.Web.Mvc.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\System.Web.Optimization.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\System.Web.Razor.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\System.Web.WebPages.Deployment.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\System.Web.WebPages.dll
@@ -84,14 +87,13 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\b
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\Glass.Mapper.Sc.WebForms.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\Microsoft.Extensions.DependencyInjection.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\Newtonsoft.Json.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\System.Web.Mvc.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\System.Web.Helpers.xml
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\System.Web.Optimization.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\System.Web.Razor.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\System.Web.WebPages.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\System.Web.WebPages.Razor.xml
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\Newtonsoft.Json.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\Antlr3.Runtime.pdb
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\System.Diagnostics.DiagnosticSource.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\bin\Microsoft.AspNet.TelemetryCorrelation.xml
@@ -100,4 +102,3 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\o
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\obj\Debug\EMAAR.ECM.Foundation.DependencyInjection.csproj.CopyComplete
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\obj\Debug\EMAAR.ECM.Foundation.DependencyInjection.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\obj\Debug\EMAAR.ECM.Foundation.DependencyInjection.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\obj\Debug\EMAAR.ECM.Foundation.DependencyInjection.csprojAssemblyReference.cache

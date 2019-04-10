@@ -1,7 +1,7 @@
 ﻿#region namespace
 using System.Web.Mvc;
 using EMAAR.ECM.Feature.Navigation.Interface;
-using static EMAAR.ECM.Foundation.Constants.Settings.SitecoreSettings;
+using static EMAAR.ECM.Foundation.SitecoreExtensions.Settings.SitecoreSettings;
 #endregion
 namespace EMAAR.ECM.Feature.Navigation.Controllers
 {

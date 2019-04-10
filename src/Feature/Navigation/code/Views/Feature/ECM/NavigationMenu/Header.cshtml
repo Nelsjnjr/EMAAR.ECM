@@ -1,14 +1,14 @@
 ﻿@using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
 @model EMAAR.ECM.Feature.Navigation.Interface.IHeaderViewModel
 @using Glass.Mapper.Sc.Web.Mvc
-@using EMAAR.ECM.Foundation.Constants
+@using EMAAR.ECM.Foundation.SitecoreExtensions
 
 
 <!-- Header starts here -->
 <header class="@Model.HeaderCss">
     <div class="container">
         <div class="flexBox">
-            @if (Model.Header!=null && Model.Header.SiteRoot != null && Model.Header.SiteRoot.Site_Logo != null)
+            @if (Model.Header != null && Model.Header.SiteRoot != null && Model.Header.SiteRoot.Site_Logo != null)
             {
                 using (Html.Glass().BeginRenderLink(Model.Header.SiteRoot, x => x.Site_Logo_Url, new { @class = "siteLogo" }, isEditable: true))
                 {
@@ -33,9 +33,9 @@
                                         if (count == 0)
                                         {
                                             <li class="nosub">
-                                                @using (Html.Glass().BeginRenderLink(rootNav, x => x.Navigation_Link,new {@class="active" }, isEditable: true))
+                                                @using (Html.Glass().BeginRenderLink(rootNav, x => x.Navigation_Link, new { @class = "active" }, isEditable: true))
                                                 {
-                                                   @Html.Glass().Editable(rootNav, x => x.Navigation_Title)
+                                                    @Html.Glass().Editable(rootNav, x => x.Navigation_Title)
                                                 }
                                             </li>
                                         }
@@ -87,7 +87,14 @@
                     }
                 </ul>
                 <aside class="siteSearch js-sOnTrigger">
-                    <form action="http://google.com">
+                    @{ 
+                        var searchPage = string.Empty;
+                        if ( Model.Header!=null && Model.Header.SiteRoot!=null && Model.Header.SiteRoot.Search_Page!=null)
+                        {
+                            searchPage = Model.Header.SiteRoot.Search_Page.Url;
+                        }
+                    }
+                    <form action="@searchPage">
                         <div class="swrap">
                             <button class="sbtn" type="submit">
                                 <img src="@Model.SearchIcon" alt="">
@@ -107,9 +114,23 @@
             </nav>
             <!-- siteNavigation ends here -->
             <div class="mobileWrapper">
-                <a href="javascript:;" class="loginmobile">
-                    <img src="~/Content/Project/ECM/images/icon/login.svg" alt="login">
-                </a>
+                @if (Model.Header != null && Model.Header.SiteRoot != null && Model.Header.SiteRoot.Login_Page != null)
+                {
+                    using (Html.Glass().BeginRenderLink(Model.Header.SiteRoot, x => x.Login_Page, new { @class = "loginmobile" }, isEditable: true))
+                    {
+                        <i class="ico">
+                            <img src="~/Content/Project/ECM/images/icon/login.svg" alt="login">
+                        </i>
+
+                    }
+                }
+                else
+                {
+                    <a href="javascript:;" class="loginmobile">
+                        <img src="~/Content/Project/ECM/images/icon/login.svg" alt="login">
+                    </a>
+                }
+
                 <a class="hamburgers hamburger--squeeze js-hamburger mobile-menu-trigger" href="javascript:;">
                     <div class="hamburger-box">
                         <div class="hamburger-inner"></div>
@@ -118,12 +139,26 @@
             </div>
         </div>
     </div>
-    <a href="javascript:;" class="siteLogin">
-        <i class="ico">
-            <img src="~/Content/Project/ECM/images/icon/login.svg" alt="login" class="svg">
-        </i>
-        <span>@Html.Glass().Editable(Model.Header, x => x.Login_Text)</span>
-    </a>
+    @if (Model.Header != null && Model.Header.SiteRoot != null && Model.Header.SiteRoot.Login_Page != null)
+    {
+        using (Html.Glass().BeginRenderLink(Model.Header.SiteRoot, x => x.Login_Page, new { @class = "siteLogin" }, isEditable: true))
+        {
+            <i class="ico">
+                <img src="~/Content/Project/ECM/images/icon/login.svg" alt="login" class="svg">
+            </i>
+            <span>@Html.Glass().Editable(Model.Header, x => x.Login_Text)</span>
+        }
+    }
+    else
+    {
+        <a href="javascript:;" class="siteLogin">
+            <i class="ico">
+                <img src="~/Content/Project/ECM/images/icon/login.svg" alt="login" class="svg">
+            </i>
+            <span>@Html.Glass().Editable(Model.Header, x => x.Login_Text)</span>
+        </a>
+    }
+
     <!-- siteLogin ends here -->
 </header>
 <!-- Header ends here -->

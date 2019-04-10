@@ -1,9 +1,9 @@
 ﻿#region namespace
 using System.Web.Mvc;
 using EMAAR.ECM.Feature.Map.Interfaces;
-using EMAAR.ECM.Foundation.Constants.Interfaces;
+using EMAAR.ECM.Foundation.SitecoreExtensions.Interfaces;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Interactive_Map;
-using static EMAAR.ECM.Foundation.Constants.Settings.SitecoreSettings;
+using static EMAAR.ECM.Foundation.SitecoreExtensions.Settings.SitecoreSettings;
 #endregion
 namespace EMAAR.ECM.Feature.Map.Controllers
 {

@@ -2,8 +2,8 @@
 using System;
 using EMAAR.ECM.Feature.Navigation.Interface;
 using EMAAR.ECM.Feature.Navigation.Settings;
-using EMAAR.ECM.Foundation.Constants;
-using EMAAR.ECM.Foundation.Constants.Interfaces;
+using EMAAR.ECM.Foundation.SitecoreExtensions;
+using EMAAR.ECM.Foundation.SitecoreExtensions.Interfaces;
 using EMAAR.ECM.Foundation.DependencyInjection;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types;
@@ -20,7 +20,6 @@ namespace EMAAR.ECM.Feature.Navigation.Repositories
         #region Property
         private readonly Func<IMvcContext> _mvcContext;
         private readonly IHeaderViewModel _headerViewModel;
-        private readonly IFooter _footer;
         private readonly ISitecoreHelper _sitecoreHelper;
 
         #endregion
@@ -28,8 +27,7 @@ namespace EMAAR.ECM.Feature.Navigation.Repositories
         public NavigationMenuRepository(Func<IMvcContext> mvcContext, IHeaderViewModel headerViewModel, IFooter footer, ISitecoreHelper sitecoreHelper)
         {
             _sitecoreHelper = sitecoreHelper;
-            _headerViewModel = headerViewModel;
-            _footer = footer;
+            _headerViewModel = headerViewModel;          
             _mvcContext = mvcContext;
         }
         #endregion

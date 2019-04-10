@@ -74,7 +74,11 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\bin\Sit
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\bin\Sitecore.NVelocity.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\bin\Sitecore.Web.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\bin\Sitecore.Zip.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\bin\System.Linq.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\bin\System.Linq.Expressions.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\bin\System.Net.Http.Formatting.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\bin\System.Reflection.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\bin\System.Runtime.Extensions.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\bin\System.Web.Helpers.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\bin\System.Web.Http.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\bin\System.Web.Mvc.dll

@@ -50,9 +50,9 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\roslyn\VBCSCompi
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Feature.Map.dll.CodeAnalysisLog.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Feature.Map.dll.lastcodeanalysissucceeded
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Castle.Core.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Foundation.Constants.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Foundation.DependencyInjection.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Foundation.ORM.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Foundation.SitecoreExtensions.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Glass.Mapper.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Glass.Mapper.Sc.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Glass.Mapper.Sc.Mvc.dll
@@ -76,9 +76,13 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Sitecore.Logging
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Sitecore.Logging.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Sitecore.NVelocity.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Sitecore.Zip.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\System.Linq.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\System.Linq.Expressions.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\System.Reflection.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\System.Runtime.Extensions.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\System.Web.Mvc.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Foundation.Constants.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Foundation.Constants.dll.config
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Foundation.SitecoreExtensions.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Foundation.SitecoreExtensions.dll.config
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Foundation.DependencyInjection.pdb
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Foundation.DependencyInjection.dll.config
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\EMAAR.ECM.Foundation.ORM.pdb

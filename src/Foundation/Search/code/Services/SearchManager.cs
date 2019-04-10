@@ -1,4 +1,4 @@
-﻿using EMAAR.ECM.Foundation.Constants;
+﻿using EMAAR.ECM.Foundation.SitecoreExtensions;
 using EMAAR.ECM.Foundation.DependencyInjection;
 using EMAAR.ECM.Foundation.Search.Helpers;
 using EMAAR.ECM.Foundation.Search.Interfaces;

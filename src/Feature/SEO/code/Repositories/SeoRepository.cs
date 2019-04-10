@@ -1,6 +1,6 @@
 ﻿using System;
 using EMAAR.ECM.Feature.SEO.Interfaces;
-using EMAAR.ECM.Foundation.Constants.Interfaces;
+using EMAAR.ECM.Foundation.SitecoreExtensions.Interfaces;
 using EMAAR.ECM.Foundation.DependencyInjection;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;

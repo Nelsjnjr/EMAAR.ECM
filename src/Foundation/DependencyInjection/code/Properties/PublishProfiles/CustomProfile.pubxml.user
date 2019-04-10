@@ -15,6 +15,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="App_Config/Include/ECM/Foundation/zzz.Sitecore.Foundation.DependencyInjection.config">
       <publishTime>04/08/2019 10:47:58</publishTime>
     </File>
+    <File Include="App_Config/Include/Foundation/ECM/DependencyInjection/zzz.Sitecore.Foundation.DependencyInjection.config">
+      <publishTime>04/01/2019 14:16:09</publishTime>
+    </File>
+    <File Include="App_Config/Include/Foundation/ECM/zzz.Sitecore.Foundation.DependencyInjection.config">
+      <publishTime>04/01/2019 14:16:09</publishTime>
+    </File>
     <File Include="App_Config/Include/zzz.Sitecore.DependencyInjection.config">
       <publishTime>03/11/2019 10:22:55</publishTime>
     </File>
@@ -31,10 +37,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/16/2013 15:38:08</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.dll">
-      <publishTime>04/08/2019 10:27:09</publishTime>
+      <publishTime>04/09/2019 09:07:19</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.pdb">
-      <publishTime>04/08/2019 10:27:09</publishTime>
+      <publishTime>04/09/2019 09:07:19</publishTime>
     </File>
     <File Include="bin/Glass.Mapper.dll">
       <publishTime>02/25/2019 13:27:08</publishTime>
@@ -67,16 +73,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/24/2018 13:38:22</publishTime>
     </File>
     <File Include="bin/Microsoft.Extensions.DependencyInjection.Abstractions.dll">
-      <publishTime>03/10/2019 14:20:21</publishTime>
+      <publishTime>06/22/2016 09:14:56</publishTime>
     </File>
     <File Include="bin/Microsoft.Extensions.DependencyInjection.dll">
-      <publishTime>03/10/2019 14:20:21</publishTime>
+      <publishTime>06/22/2016 09:14:56</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
-      <publishTime>03/10/2019 14:20:21</publishTime>
+      <publishTime>07/25/2012 11:48:56</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>02/18/2018 09:44:54</publishTime>
+      <publishTime>06/13/2016 23:06:14</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>05/24/2018 13:38:22</publishTime>
@@ -226,16 +232,28 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/26/2019 14:39:28</publishTime>
     </File>
     <File Include="bin/Sitecore.Kernel.dll">
-      <publishTime>03/10/2019 14:20:21</publishTime>
+      <publishTime>01/18/2018 16:27:30</publishTime>
     </File>
     <File Include="bin/System.Diagnostics.DiagnosticSource.dll">
       <publishTime>07/19/2017 10:01:30</publishTime>
+    </File>
+    <File Include="bin/System.Linq.dll">
+      <publishTime>06/11/2016 23:14:02</publishTime>
+    </File>
+    <File Include="bin/System.Linq.Expressions.dll">
+      <publishTime>06/11/2016 23:13:54</publishTime>
+    </File>
+    <File Include="bin/System.Reflection.dll">
+      <publishTime>06/11/2016 23:14:32</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.Extensions.dll">
+      <publishTime>06/11/2016 23:14:28</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
       <publishTime>02/01/2018 12:20:56</publishTime>
     </File>
     <File Include="bin/System.Web.Mvc.dll">
-      <publishTime>03/10/2019 14:20:19</publishTime>
+      <publishTime>01/28/2015 04:02:18</publishTime>
     </File>
     <File Include="bin/System.Web.Optimization.dll">
       <publishTime>02/11/2014 15:26:04</publishTime>

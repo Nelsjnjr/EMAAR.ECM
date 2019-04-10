@@ -11,8 +11,8 @@ namespace EMAAR.ECM.Foundation.ORM.App_Start
     {
 		public static IDependencyResolver CreateResolver(){
 			var config = new Glass.Mapper.Sc.Config();
-
-			var dependencyResolver = new DependencyResolver(config);
+            config.UseGlassHtmlLambdaCache = false;
+            var dependencyResolver = new DependencyResolver(config);
 			// add any changes to the standard resolver here
 			return dependencyResolver;
 		}
