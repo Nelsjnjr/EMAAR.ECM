@@ -1953,7 +1953,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 						/// <summary>
 				/// The Canonical Tags field.
-				/// <para>Add comma separated canonical tags. Ex:  (https//www.ecm.com/en/login, ar:https//www.ecm.com/en/loginpage)</para>
+				/// <para>Add comma separated canonical tags. Ex:  (https//www.ecm.com/en/login, https//www.ecm.com/ar/loginpage)</para>
 				/// <para>Field Type: Multi-Line Text</para>		
 				/// <para>Field ID: 074b8d28-6f24-4dcc-812f-14e14f67f1e8</para>
 				/// <para>Custom Data: </para>
@@ -2237,14 +2237,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 			public const string Smtp_UserNameFieldName = "Smtp UserName";
 			
 					
-			public static readonly ID _400PageFieldId = new ID("b6e26096-8fd8-4416-a9f4-6fd7f7f5216f");
-			public const string _400PageFieldName = "400Page";
-			
-					
-			public static readonly ID ErrorPageFieldId = new ID("2ee85b06-d022-4e69-9f01-1dd8e20b352a");
-			public const string ErrorPageFieldName = "ErrorPage";
-			
-					
 			public static readonly ID Login_PageFieldId = new ID("69daf79b-946f-4ecf-be15-6d6150080241");
 			public const string Login_PageFieldName = "Login Page";
 			
@@ -2421,28 +2413,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_SiteRootConstants.Smtp_UserNameFieldName)]
 				public virtual string Smtp_UserName  {get; set;}
-					
-						/// <summary>
-				/// The 400Page field.
-				/// <para></para>
-				/// <para>Field Type: General Link</para>		
-				/// <para>Field ID: b6e26096-8fd8-4416-a9f4-6fd7f7f5216f</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_SiteRootConstants._400PageFieldName)]
-				public virtual Link _400Page  {get; set;}
-					
-						/// <summary>
-				/// The ErrorPage field.
-				/// <para></para>
-				/// <para>Field Type: General Link</para>		
-				/// <para>Field ID: 2ee85b06-d022-4e69-9f01-1dd8e20b352a</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_SiteRootConstants.ErrorPageFieldName)]
-				public virtual Link ErrorPage  {get; set;}
 					
 						/// <summary>
 				/// The Login Page field.
@@ -2908,14 +2878,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 			public const string Smtp_UserNameFieldName = "Smtp UserName";
 			
 					
-			public static readonly ID _400PageFieldId = new ID("b6e26096-8fd8-4416-a9f4-6fd7f7f5216f");
-			public const string _400PageFieldName = "400Page";
-			
-					
-			public static readonly ID ErrorPageFieldId = new ID("2ee85b06-d022-4e69-9f01-1dd8e20b352a");
-			public const string ErrorPageFieldName = "ErrorPage";
-			
-					
 			public static readonly ID Login_PageFieldId = new ID("69daf79b-946f-4ecf-be15-6d6150080241");
 			public const string Login_PageFieldName = "Login Page";
 			
@@ -3092,28 +3054,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(ISiteRootConstants.Smtp_UserNameFieldName)]
 				public virtual string Smtp_UserName  {get; set;}
-					
-						/// <summary>
-				/// The 400Page field.
-				/// <para></para>
-				/// <para>Field Type: General Link</para>		
-				/// <para>Field ID: b6e26096-8fd8-4416-a9f4-6fd7f7f5216f</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(ISiteRootConstants._400PageFieldName)]
-				public virtual Link _400Page  {get; set;}
-					
-						/// <summary>
-				/// The ErrorPage field.
-				/// <para></para>
-				/// <para>Field Type: General Link</para>		
-				/// <para>Field ID: 2ee85b06-d022-4e69-9f01-1dd8e20b352a</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(ISiteRootConstants.ErrorPageFieldName)]
-				public virtual Link ErrorPage  {get; set;}
 					
 						/// <summary>
 				/// The Login Page field.
@@ -3301,14 +3241,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 			public const string Smtp_UserNameFieldName = "Smtp UserName";
 			
 					
-			public static readonly ID _400PageFieldId = new ID("b6e26096-8fd8-4416-a9f4-6fd7f7f5216f");
-			public const string _400PageFieldName = "400Page";
-			
-					
-			public static readonly ID ErrorPageFieldId = new ID("2ee85b06-d022-4e69-9f01-1dd8e20b352a");
-			public const string ErrorPageFieldName = "ErrorPage";
-			
-					
 			public static readonly ID Login_PageFieldId = new ID("69daf79b-946f-4ecf-be15-6d6150080241");
 			public const string Login_PageFieldName = "Login Page";
 			
@@ -3485,28 +3417,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_SiteBaseConstants.Smtp_UserNameFieldName)]
 				public virtual string Smtp_UserName  {get; set;}
-					
-						/// <summary>
-				/// The 400Page field.
-				/// <para></para>
-				/// <para>Field Type: General Link</para>		
-				/// <para>Field ID: b6e26096-8fd8-4416-a9f4-6fd7f7f5216f</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_SiteBaseConstants._400PageFieldName)]
-				public virtual Link _400Page  {get; set;}
-					
-						/// <summary>
-				/// The ErrorPage field.
-				/// <para></para>
-				/// <para>Field Type: General Link</para>		
-				/// <para>Field ID: 2ee85b06-d022-4e69-9f01-1dd8e20b352a</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_SiteBaseConstants.ErrorPageFieldName)]
-				public virtual Link ErrorPage  {get; set;}
 					
 						/// <summary>
 				/// The Login Page field.
@@ -4432,7 +4342,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Home
 					
 						/// <summary>
 				/// The Canonical Tags field.
-				/// <para>Add comma separated canonical tags. Ex:  (https//www.ecm.com/en/login, ar:https//www.ecm.com/en/loginpage)</para>
+				/// <para>Add comma separated canonical tags. Ex:  (https//www.ecm.com/en/login, https//www.ecm.com/ar/loginpage)</para>
 				/// <para>Field Type: Multi-Line Text</para>		
 				/// <para>Field ID: 074b8d28-6f24-4dcc-812f-14e14f67f1e8</para>
 				/// <para>Custom Data: </para>
@@ -7025,7 +6935,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 			
 								/// <summary>
 					/// The Canonical Tags field.
-					/// <para>Add comma separated canonical tags. Ex:  (https//www.ecm.com/en/login, ar:https//www.ecm.com/en/loginpage)</para>
+					/// <para>Add comma separated canonical tags. Ex:  (https//www.ecm.com/en/login, https//www.ecm.com/ar/loginpage)</para>
 					/// <para>Field Type: Multi-Line Text</para>		
 					/// <para>Field ID: 074b8d28-6f24-4dcc-812f-14e14f67f1e8</para>
 					/// <para>Custom Data: </para>
@@ -7387,7 +7297,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 					
 						/// <summary>
 				/// The Canonical Tags field.
-				/// <para>Add comma separated canonical tags. Ex:  (https//www.ecm.com/en/login, ar:https//www.ecm.com/en/loginpage)</para>
+				/// <para>Add comma separated canonical tags. Ex:  (https//www.ecm.com/en/login, https//www.ecm.com/ar/loginpage)</para>
 				/// <para>Field Type: Multi-Line Text</para>		
 				/// <para>Field ID: 074b8d28-6f24-4dcc-812f-14e14f67f1e8</para>
 				/// <para>Custom Data: </para>
@@ -8267,26 +8177,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 	public partial interface I_Pages : IGlassBase 
 	{
 								/// <summary>
-					/// The 400Page field.
-					/// <para></para>
-					/// <para>Field Type: General Link</para>		
-					/// <para>Field ID: b6e26096-8fd8-4416-a9f4-6fd7f7f5216f</para>
-					/// <para>Custom Data: </para>
-					/// </summary>
-					[SitecoreField(I_PagesConstants._400PageFieldName)]
-					Link _400Page  {get; set;}
-			
-								/// <summary>
-					/// The ErrorPage field.
-					/// <para></para>
-					/// <para>Field Type: General Link</para>		
-					/// <para>Field ID: 2ee85b06-d022-4e69-9f01-1dd8e20b352a</para>
-					/// <para>Custom Data: </para>
-					/// </summary>
-					[SitecoreField(I_PagesConstants.ErrorPageFieldName)]
-					Link ErrorPage  {get; set;}
-			
-								/// <summary>
 					/// The Login Page field.
 					/// <para></para>
 					/// <para>Field Type: General Link</para>		
@@ -8316,14 +8206,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 			public const string TemplateName = "_Pages";
 
 					
-			public static readonly ID _400PageFieldId = new ID("b6e26096-8fd8-4416-a9f4-6fd7f7f5216f");
-			public const string _400PageFieldName = "400Page";
-			
-					
-			public static readonly ID ErrorPageFieldId = new ID("2ee85b06-d022-4e69-9f01-1dd8e20b352a");
-			public const string ErrorPageFieldName = "ErrorPage";
-			
-					
 			public static readonly ID Login_PageFieldId = new ID("69daf79b-946f-4ecf-be15-6d6150080241");
 			public const string Login_PageFieldName = "Login Page";
 			
@@ -8347,28 +8229,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 	public partial class _Pages  : GlassBase, I_Pages 
 	{
 	   
-						/// <summary>
-				/// The 400Page field.
-				/// <para></para>
-				/// <para>Field Type: General Link</para>		
-				/// <para>Field ID: b6e26096-8fd8-4416-a9f4-6fd7f7f5216f</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_PagesConstants._400PageFieldName)]
-				public virtual Link _400Page  {get; set;}
-					
-						/// <summary>
-				/// The ErrorPage field.
-				/// <para></para>
-				/// <para>Field Type: General Link</para>		
-				/// <para>Field ID: 2ee85b06-d022-4e69-9f01-1dd8e20b352a</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_PagesConstants.ErrorPageFieldName)]
-				public virtual Link ErrorPage  {get; set;}
-					
 						/// <summary>
 				/// The Login Page field.
 				/// <para></para>

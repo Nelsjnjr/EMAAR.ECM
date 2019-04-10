@@ -13,7 +13,7 @@ created: 20190314T121450Z
 ----version----
 language: en
 version: 1
-revision: bce65b1b-0583-4535-9d05-7c4c2c00723a
+revision: ad268353-1566-4f16-89e1-7070a7e2fb55
 
 ----field----
 field: {43AE9FAF-4548-4DF9-B505-C6928EA48B3D}
@@ -26,9 +26,9 @@ Exploring the neighborhood
 field: {96C03C76-A871-4ACF-91F6-21A3E49A8E32}
 name: Carousels
 key: carousels
-content-length: 77
+content-length: 194
 
-{C23A1C62-693E-42E7-AB15-28F089D7F787}|{4B8D3F56-1CAE-4D76-8FEE-AD2CD4219472}
+{C23A1C62-693E-42E7-AB15-28F089D7F787}|{4B8D3F56-1CAE-4D76-8FEE-AD2CD4219472}|{FC5C34B0-7ADB-4476-AF69-96C1883EF937}|{393F7419-1028-48D8-878B-EB4C56677D2B}|{62199104-C6F7-4D73-862A-94B6656C1B53}
 ----field----
 field: {4A8BFF42-5E3B-4BB1-BA59-1DB2FDFAE5C5}
 name: IsBackgroundColorAvailable
@@ -49,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bce65b1b-0583-4535-9d05-7c4c2c00723a
+ad268353-1566-4f16-89e1-7070a7e2fb55
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190408T113539Z
+20190410T075035Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

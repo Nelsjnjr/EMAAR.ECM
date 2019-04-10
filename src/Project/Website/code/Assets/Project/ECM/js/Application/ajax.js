@@ -3,15 +3,16 @@ var winWidth = $(window).width(),
     mobileWidth = 767,
     tabletPWidth = 991,
     languageCode = $('body').attr("lang"),
-    totalCount = $('.loadmore').data('total-count'),
+    pagenumber = $('.loadmore').data('pagenumber'),
     dataPageSize = $('#templateInitializor').data('page-size'),
     total = dataPageSize,
     AjaxUrl = $('#templateInitializor').data('service-url');
-
+    // https://jahanzebsabir.com/service/search/GetImageGalleryJson?pageSize=1&pageNumber=0&filters=”Years:4bde1ee9d4f57a05071a9f343de64|Albums:4bde1ee6659d4f57a05071a9f343de64”
 // page init
 jQuery(function () {
     getImageGallery();
-   loadMore();
+    loadMore();
+    searchInput();
 });
 
 function isNullUndefinedOrWhiteSpace(str) {
@@ -20,38 +21,41 @@ function isNullUndefinedOrWhiteSpace(str) {
 
 function filterOnChange() {
     $('.js-example-basic-single').on('change', function(){
-        getImageGalleryOnChange();
+        $('.loadmore').attr('data-pagenumber', 0);
+        pagenumber = $('.loadmore').data('pagenumber');
+        getImageGalleryOnChange(0);
     });
 }
-
 
 function getImageGallery(pagination){
     var parameterlabel= [],
         n = 0;
-
-    $('.filters-support').each(function(){
-        var $this = $(this);
-        var $value = $this.val();
-        parameterlabel[n] = {Label: $this.data('label'), Value: $value};
-        n++;
-    });
-
-    if (parameterlabel.length) {
-        for(index in parameterlabel) {
-            AjaxUrl = AjaxUrl +"?" + parameterlabel[index].Label + "=" + parameterlabel[index].Value;
-        }
-    } else {
-        AjaxUrl = AjaxUrl + "?";
-    }
-
+        AjaxUrl = $('#templateInitializor').data('service-url');
+    
+    var dataParam = {pageNumber: pagenumber,pageSize:dataPageSize,filter:''};
+        
     // var JSONurl = AjaxUrl + "?" + yearLabel + "=" + year + "&" + albumLabel + "=" + albums;
-    getData.filter(AjaxUrl, pagination);
+    getData.filter(AjaxUrl, pagination, dataParam);
+
+}
+
+function searchInput() {
+    $('#searchBox').on('submit', function(e) {
+        e.preventDefault();
+        var searchValue = $(this).find('.input-field').val(),
+            AjaxUrl = $('#templateInitializor').data('service-url'),
+            pagination = 0,
+            dataParam = {pageNumber: pagenumber,pageSize:dataPageSize,filter:'', searchTerm: searchValue};
+        getData.results(AjaxUrl, pagination, dataParam);
+    })
 }
 
 function getImageGalleryOnChange(pagination){
     var parameterlabel= [],
-        n = 0;
-        
+        n = 0,
+        filterParam = '';
+        AjaxUrl = $('#templateInitializor').data('service-url');
+
     $('.filters-support').each(function(){
         var $this = $(this);
         var $value = $this.val();
@@ -59,21 +63,31 @@ function getImageGalleryOnChange(pagination){
         n++;
     });
 
+    // console.log(parameterlabel);
+    
     if (parameterlabel.length) {
         for(index in parameterlabel) {
-            AjaxUrl = AjaxUrl +"?" + parameterlabel[index].Label + "=" + parameterlabel[index].Value;
+            var sep = index == 0 ? '' : '|';
+            filterParam +=  sep+parameterlabel[index].Label + ':'+ parameterlabel[index].Value;
         }
     }
+    
+    var chkPagi = pagination ? pagination : pagenumber;
+    filterParam = {
+        pageNumber:chkPagi,
+        pageSize:dataPageSize,
+        filter: filterParam
+    };
 
-    // var JSONurl = AjaxUrl + "?" + yearLabel + "=" + year + "&" + albumLabel + "=" + albums;
-    getData.results(AjaxUrl, pagination);
+    getData.results(AjaxUrl, pagination, filterParam);
 }
 
 function loadMore() {
     $('.loadmore').on('click', function() {
-        if (total < totalCount) {
-            total += dataPageSize;
-            $('#templateInitializor').data('page-size', total);
+        var datatotalcount = $('.loadmore').data('count');
+        if ((total * (pagenumber+1)) < datatotalcount) {
+            pagenumber += 1;
+            $('.loadmore').attr('data-pagenumber', pagenumber);
             getImageGalleryOnChange(); 
         }
     });

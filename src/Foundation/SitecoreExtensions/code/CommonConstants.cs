@@ -38,15 +38,15 @@
         /// All Site javascripts files path
         /// </summary>
         public static string[] AllSiteJavascriptsFilePaths => new string[] {
-            "~/Content/Project/ECM/js/vendor/jquery/jquery.js",
-            "~/Content/Project/ECM/js/vendor/jquery/jquery.counterup.min.js",
-            "~/Content/Project/ECM/js/vendor/jquery/jquery-ui.min.js",
-            "~/Content/Project/ECM/js/vendor/jquery/jquery.scrollTo-1.4.2-min.js",
-            "~/Content/Project/ECM/js/vendor/jquery/jquery.validate*",
-            "~/Content/Project/ECM/js/vendor/bootstrap/bootstrap.js",
-            "~/Content/Project/ECM/js/vendor/common/*.js",
-            "~/Content/Project/ECM/js/application/app.js",
-            "~/Content/Project/ECM/js/application/main.js"
+            "~/Assets/Project/ECM/js/vendor/jquery/jquery.js",
+            "~/Assets/Project/ECM/js/vendor/jquery/jquery.counterup.min.js",
+            "~/Assets/Project/ECM/js/vendor/jquery/jquery-ui.min.js",
+            "~/Assets/Project/ECM/js/vendor/jquery/jquery.scrollTo-1.4.2-min.js",
+            "~/Assets/Project/ECM/js/vendor/jquery/jquery.validate*",
+            "~/Assets/Project/ECM/js/vendor/bootstrap/bootstrap.js",
+            "~/Assets/Project/ECM/js/vendor/common/*.js",
+            "~/Assets/Project/ECM/js/application/app.js",
+            "~/Assets/Project/ECM/js/application/main.js"
         };
         #region Search
         /// <summary>
