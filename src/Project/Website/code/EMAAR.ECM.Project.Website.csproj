@@ -349,7 +349,7 @@
     <Content Include="Assets\Project\ECM\js\vendor\jquery\jquery.validate.js" />
     <Content Include="Assets\Project\ECM\js\vendor\jquery\jquery.validate.unobtrusive.min.js" />
     <Content Include="Assets\Project\ECM\Site.css" />
-    <Content Include="App_Config\Include\Project\ECM\website\EMAAR.ECM.Project.Website.config">
+    <Content Include="App_Config\Include\Project\ECM\Website\EMAAR.ECM.Project.Website.config">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="EMAAR.ECM.Project.Website.ruleset" />

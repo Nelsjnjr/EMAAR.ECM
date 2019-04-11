@@ -1953,7 +1953,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 						/// <summary>
 				/// The Canonical Tags field.
-				/// <para>Add comma separated canonical tags. Ex:  (https//www.ecm.com/en/login, https//www.ecm.com/ar/loginpage)</para>
+				/// <para>Add comma separated canonical tags. Ex:  (https//www.ecm.com/en/login, https//www.ecm.com/en/loginpage)</para>
 				/// <para>Field Type: Multi-Line Text</para>		
 				/// <para>Field ID: 074b8d28-6f24-4dcc-812f-14e14f67f1e8</para>
 				/// <para>Custom Data: </para>
@@ -2244,6 +2244,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 			public static readonly ID Search_PageFieldId = new ID("e169167e-5f14-4f95-af16-92fbabe99ce2");
 			public const string Search_PageFieldName = "Search Page";
 			
+					
+			public static readonly ID CSSFileFieldId = new ID("59c63c85-d835-4828-908e-0397f2c405ae");
+			public const string CSSFileFieldName = "CSSFile";
+			
 			
 
 	}
@@ -2435,6 +2439,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_SiteRootConstants.Search_PageFieldName)]
 				public virtual Link Search_Page  {get; set;}
+					
+						/// <summary>
+				/// The CSSFile field.
+				/// <para></para>
+				/// <para>Field Type: General Link</para>		
+				/// <para>Field ID: 59c63c85-d835-4828-908e-0397f2c405ae</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_SiteRootConstants.CSSFileFieldName)]
+				public virtual Link CSSFile  {get; set;}
 					
 			
 	}
@@ -2885,6 +2900,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 			public static readonly ID Search_PageFieldId = new ID("e169167e-5f14-4f95-af16-92fbabe99ce2");
 			public const string Search_PageFieldName = "Search Page";
 			
+					
+			public static readonly ID CSSFileFieldId = new ID("59c63c85-d835-4828-908e-0397f2c405ae");
+			public const string CSSFileFieldName = "CSSFile";
+			
 			
 
 	}
@@ -3077,6 +3096,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 				[SitecoreField(ISiteRootConstants.Search_PageFieldName)]
 				public virtual Link Search_Page  {get; set;}
 					
+						/// <summary>
+				/// The CSSFile field.
+				/// <para></para>
+				/// <para>Field Type: General Link</para>		
+				/// <para>Field ID: 59c63c85-d835-4828-908e-0397f2c405ae</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(ISiteRootConstants.CSSFileFieldName)]
+				public virtual Link CSSFile  {get; set;}
+					
 			
 	}
 }
@@ -3173,7 +3203,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 	/// <para>ID: 483d6700-6e81-4847-9a0a-84eef85f86f7</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=I_SiteBaseConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_SiteBase : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Logo, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_SiteScriptsTags, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Robots, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_Smtp, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Pages
+	public partial interface I_SiteBase : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Logo, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_SiteScriptsTags, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Robots, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_Smtp, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Pages, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Css
 	{
 				}
 
@@ -3247,6 +3277,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 					
 			public static readonly ID Search_PageFieldId = new ID("e169167e-5f14-4f95-af16-92fbabe99ce2");
 			public const string Search_PageFieldName = "Search Page";
+			
+					
+			public static readonly ID CSSFileFieldId = new ID("59c63c85-d835-4828-908e-0397f2c405ae");
+			public const string CSSFileFieldName = "CSSFile";
 			
 			
 
@@ -3439,6 +3473,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_SiteBaseConstants.Search_PageFieldName)]
 				public virtual Link Search_Page  {get; set;}
+					
+						/// <summary>
+				/// The CSSFile field.
+				/// <para></para>
+				/// <para>Field Type: General Link</para>		
+				/// <para>Field ID: 59c63c85-d835-4828-908e-0397f2c405ae</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_SiteBaseConstants.CSSFileFieldName)]
+				public virtual Link CSSFile  {get; set;}
 					
 			
 	}
@@ -4342,7 +4387,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Home
 					
 						/// <summary>
 				/// The Canonical Tags field.
-				/// <para>Add comma separated canonical tags. Ex:  (https//www.ecm.com/en/login, https//www.ecm.com/ar/loginpage)</para>
+				/// <para>Add comma separated canonical tags. Ex:  (https//www.ecm.com/en/login, https//www.ecm.com/en/loginpage)</para>
 				/// <para>Field Type: Multi-Line Text</para>		
 				/// <para>Field ID: 074b8d28-6f24-4dcc-812f-14e14f67f1e8</para>
 				/// <para>Custom Data: </para>
@@ -4599,6 +4644,72 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IParallaxConstants.ButtonFieldName)]
 				public virtual Link Button  {get; set;}
+					
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types
+{
+
+
+ 	/// <summary>
+	/// I_Css Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Content Types/_Css</para>	
+	/// <para>ID: 6c5ec743-9315-4bc7-9c53-0272938d456b</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_CssConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Css : IGlassBase 
+	{
+								/// <summary>
+					/// The CSSFile field.
+					/// <para></para>
+					/// <para>Field Type: General Link</para>		
+					/// <para>Field ID: 59c63c85-d835-4828-908e-0397f2c405ae</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_CssConstants.CSSFileFieldName)]
+					Link CSSFile  {get; set;}
+			
+				}
+
+
+	public static partial class I_CssConstants{
+
+			public const string TemplateIdString = "6c5ec743-9315-4bc7-9c53-0272938d456b";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_Css";
+
+					
+			public static readonly ID CSSFileFieldId = new ID("59c63c85-d835-4828-908e-0397f2c405ae");
+			public const string CSSFileFieldName = "CSSFile";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _Css
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Content Types/_Css</para>	
+	/// <para>ID: 6c5ec743-9315-4bc7-9c53-0272938d456b</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_CssConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Css))]
+	public partial class _Css  : GlassBase, I_Css 
+	{
+	   
+						/// <summary>
+				/// The CSSFile field.
+				/// <para></para>
+				/// <para>Field Type: General Link</para>		
+				/// <para>Field ID: 59c63c85-d835-4828-908e-0397f2c405ae</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_CssConstants.CSSFileFieldName)]
+				public virtual Link CSSFile  {get; set;}
 					
 			
 	}
@@ -6935,7 +7046,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 			
 								/// <summary>
 					/// The Canonical Tags field.
-					/// <para>Add comma separated canonical tags. Ex:  (https//www.ecm.com/en/login, https//www.ecm.com/ar/loginpage)</para>
+					/// <para>Add comma separated canonical tags. Ex:  (https//www.ecm.com/en/login, https//www.ecm.com/en/loginpage)</para>
 					/// <para>Field Type: Multi-Line Text</para>		
 					/// <para>Field ID: 074b8d28-6f24-4dcc-812f-14e14f67f1e8</para>
 					/// <para>Custom Data: </para>
@@ -7297,7 +7408,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 					
 						/// <summary>
 				/// The Canonical Tags field.
-				/// <para>Add comma separated canonical tags. Ex:  (https//www.ecm.com/en/login, https//www.ecm.com/ar/loginpage)</para>
+				/// <para>Add comma separated canonical tags. Ex:  (https//www.ecm.com/en/login, https//www.ecm.com/en/loginpage)</para>
 				/// <para>Field Type: Multi-Line Text</para>		
 				/// <para>Field ID: 074b8d28-6f24-4dcc-812f-14e14f67f1e8</para>
 				/// <para>Custom Data: </para>

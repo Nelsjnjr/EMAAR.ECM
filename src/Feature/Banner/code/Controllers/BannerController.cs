@@ -34,7 +34,6 @@ namespace EMAAR.ECM.Feature.Banner.Controllers
         public ActionResult ImageText()
         {
             IImageText imageText = _bannerRepository.GetImageText();
-            ViewBag.RightArrow = _sitecoreHelper.RightArrow;
             return View($"{ViewPath}Banner/ImageText/ImageText.cshtml", imageText);
         }
         /// <summary>
@@ -44,7 +43,6 @@ namespace EMAAR.ECM.Feature.Banner.Controllers
         public ActionResult Parallax()
         {
             IParallax parallax = _bannerRepository.GetParallax();
-            ViewBag.RightArrow = _sitecoreHelper.RightArrow;
             return View($"{ViewPath}Banner/Parallax/Parallax.cshtml", parallax);
         }
         /// <summary>
@@ -63,7 +61,6 @@ namespace EMAAR.ECM.Feature.Banner.Controllers
         public ActionResult GetHero()
         {
             IHero hero = _bannerRepository.GetHero();
-            ViewBag.Scrolldown = _sitecoreHelper.Scrolldown;
             return View($"{ViewPath}Banner/Hero/Hero.cshtml", hero);
         }
         #endregion

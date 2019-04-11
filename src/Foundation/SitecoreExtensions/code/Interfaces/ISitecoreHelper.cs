@@ -8,17 +8,7 @@ namespace EMAAR.ECM.Foundation.SitecoreExtensions.Interfaces
     public interface ISitecoreHelper
     {
         #region property
-        /// <summary>
-        /// Getting RightArrow image url from Sitecore settings based on Site
-        /// </summary>
-        string RightArrow { get; }
-        /// <summary>
-        /// Getting Scrolldown image url from Sitecore settings based on Site
-        /// </summary>
-        string Scrolldown { get; }
-        /// <summary>
-        ///  Getting Home page search icon image url from Sitecore settings based on Site
-        /// </summary>
+      
         string HomePageSearch { get; }
         /// <summary>
         ///  Getting Home page search icon image url from Sitecore settings based on Site

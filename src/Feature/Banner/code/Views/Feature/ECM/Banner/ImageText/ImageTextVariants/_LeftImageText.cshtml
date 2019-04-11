@@ -1,4 +1,5 @@
 ﻿@using Glass.Mapper.Sc.Web.Mvc
+@using EMAAR.ECM.Foundation.SitecoreExtensions.Settings
 @model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Banner.IImageText
 
 <!-- image with text starts -->
@@ -23,11 +24,7 @@
                         {
                             @Model.Button_Text
                             <i>
-                                @if (!String.IsNullOrEmpty(ViewBag.RightArrow))
-                                {
-                                    <img src="@ViewBag.RightArrow.ToString()" alt="arrow" class="svg">
-                                }
-
+                                <img src="@String.Format("{0}{1}",SitecoreSettings.IconRootPath,"btn-arrow.svg")" alt="arrow" class="svg">
                             </i>
                         }
                     }

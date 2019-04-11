@@ -28,16 +28,6 @@ namespace EMAAR.ECM.Foundation.SitecoreExtensions
         #endregion
         #region property
         /// <summary>
-        /// Getting RightArrow image url from Sitecore settings based on Site
-        /// </summary>
-        public string RightArrow => _mvcContext()?.SitecoreService.GetItem<IIconImages>
-            ($"{Sitecore.Context.Site.RootPath}{SitecoreSettings.RightArrow}")?.Image?.Src ?? string.Empty;
-        /// <summary>
-        /// Getting Scrolldown image url from Sitecore settings based on Site
-        /// </summary>
-        public string Scrolldown => _mvcContext()?.SitecoreService.GetItem<IIconImages>
-            ($"{Sitecore.Context.Site.RootPath}{SitecoreSettings.Scrolldown}")?.Image?.Src ?? string.Empty;
-        /// <summary>
         ///  Getting Home page search icon image url from Sitecore settings based on Site
         /// </summary>
         public string HomePageSearch => _mvcContext()?.SitecoreService.GetItem<IIconImages>

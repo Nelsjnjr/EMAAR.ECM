@@ -1,7 +1,8 @@
 ﻿@model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Hero.IHero
 @using Glass.Mapper.Sc.Web.Mvc
+@using EMAAR.ECM.Foundation.SitecoreExtensions.Settings
 <!-- mainLayout starts here -->
-@{ 
+@{
     var heroimage = Model.Hero_Image != null ? Model.Hero_Image.Src : String.Empty;
     var mobheroimage = Model.Mobile_Hero_Image != null ? Model.Mobile_Hero_Image.Src : String.Empty;
 }
@@ -34,17 +35,12 @@
                         }
 
                     }
-
-
                 </ul>
                 <!-- siteStats ends here -->
             </div>
         </div>
         <a href="javascript:;" class="scrollIndicator">
-            @if (!String.IsNullOrEmpty(ViewBag.Scrolldown))
-            {
-                <img src="@ViewBag.Scrolldown.ToString()" alt="">
-            }
+            <img src="@String.Format("{0}{1}",SitecoreSettings.IconRootPath,"scroll-down.svg")" alt="scrolldown">
             @Sitecore.Globalization.Translate.Text("scrolldown")
 
         </a>
