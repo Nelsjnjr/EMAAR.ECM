@@ -204,7 +204,7 @@
     <Compile Include="Interface\IVideoListingRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ImageListingRepository.cs" />
-    <Compile Include="Repositories\IVideoListingRepository.cs" />
+    <Compile Include="Repositories\VideoListingRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Views\web.config" />

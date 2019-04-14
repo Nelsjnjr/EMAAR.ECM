@@ -169,73 +169,7 @@ namespace EMAAR.ECM.Feature.Listing.Repositories
         #endregion
 
 
-        #region Video Gallery
-
-        public IImage_Gallery_Page GetVideoGallery()
-        {
-            IMvcContext mvcContext = _mvcContext();
-            IImage_Gallery_Page imageGallery = mvcContext.GetContextItem<IImage_Gallery_Page>();
-            return imageGallery ?? _imageGallery;
-        }
-
-        /// <summary>
-        /// Method to get albums
-        /// </summary>
-        /// <param name="pageNumber">page number</param>
-        /// <param name="pageSize">page size</param>
-        /// <param name="filter">filter</param>           
-        /// <returns>SearchResultsGeneric<ListingSearchResultItem> </returns>   
-        public SearchResultsGeneric<ListingSearchResultItem> GetVideos(int pageNumber = -1, int pageSize = -1, string filter = "", string itemId = "")
-        {
-
-            List<SearchCondition> conditions = new List<SearchCondition>();
-            conditions.Add(new SearchCondition() { Name = CommonConstants.TemplateID, Value = SearchHelper.FormatGuid(CommonConstants.ImageAlbumPageTemplateID), CompareType = CompareType.ExactMatch });
-
-
-            conditions = SearchHelper.AddFilterConditions(filter, conditions);
-
-
-            List<Facet> facets = new List<Facet>();
-
-            //Facets not required From second request, 
-            if (pageNumber <= 0)
-            {
-                facets.Add(new Facet() { facetField = CommonConstants.YearFacetField, allLabel = Sitecore.Globalization.Translate.Text(CommonConstants.AllYearsKey), minCount = 1 });
-                facets.Add(new Facet() { facetField = CommonConstants.CategoriesFacetField, allLabel = Sitecore.Globalization.Translate.Text(CommonConstants.AllCategoriesKey), minCount = 1 });
-            }
-
-            // Add sort option
-            SortOption option = new SortOption() { SortFieldName = CommonConstants.YearFacetField, SortOrder = SortOrder.Descending };
-            SearchResultsGeneric<ListingSearchResultItem> resultsList = _searchManager.GetSearchResults<ListingSearchResultItem>(conditions, facets, option, pageNumber, pageSize);
-
-
-            //Get First image of each album as cover image
-            int count = 0;
-            while (count < resultsList.results.results.Count)
-            {
-                if (resultsList.results.results[count] != null && resultsList.results.results[count].images != null && resultsList.results.results[count].images.Count > 0)
-                {
-                    conditions = new List<SearchCondition>();
-                    conditions.Add(new SearchCondition() { Name = CommonConstants.TemplateID, Value = SearchHelper.FormatGuid(CommonConstants.ImageItemTemplateID), CompareType = CompareType.ExactMatch });
-                    conditions.Add(new SearchCondition() { Name = CommonConstants.IndexIdField, Value = resultsList.results.results[count].images[0].ToString(), CompareType = CompareType.ExactMatch });
-                    SearchResultsGeneric<ListingSearchResultItem> images = _searchManager.GetSearchResults<ListingSearchResultItem>(conditions, null, null, 0, 1);
-
-                    if (images != null && images.results.results != null && images.results.results.Count > 0)
-                    {
-                        resultsList.results.results[count].imageUrl = images.results.results[0].imageUrl;
-
-                    }
-                }
-
-                count++;
-            }
-
-
-            return resultsList;
-
-        }
-
-        #endregion
+    
 
         #endregion
 

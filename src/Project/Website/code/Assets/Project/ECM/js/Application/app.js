@@ -108,13 +108,13 @@ var getData = (function ($) {
                     for (var j = 0; dataPageSize > j && j <= data.results.Totalcount; j++){
                         $(resultDiv).append(template2(data.results.results[j]));
                     }
-                    _fancyboxImage();
+                    
                     if (data.results != null && (dataPageSize * (parseInt(pageNumber) + 1)) < data.results.Totalcount) {
                         $(".loadmore").css({'display': 'inline-block'});
                     } else {
                         $(".loadmore").hide();
                     }
-                
+                    _fancyboxImage();
                 } else {
                     $('.spinner').remove();
                     var source = $(tempDiv).html(),
@@ -151,7 +151,7 @@ var getData = (function ($) {
             pageNumber = $('.loadmore').attr('data-pagenumber');
         var dataPageSize = $('#templateInitializor').data('page-size');
         
-        $("#filter-template-result").html(spinner);
+        $("#filter-template-result").append(spinner);
         pageNumber = pagination ? pagination : pageNumber;
         $.ajax({
             type: "POST",
@@ -165,7 +165,7 @@ var getData = (function ($) {
                     template2 = Handlebars.compile(source2);
                     
                     $('.spinner').remove();
-                    console.log(dataPageSize * (parseInt(pageNumber)+1));
+                    
                     for (var j = 0; j < (dataPageSize * (parseInt(pageNumber)+1)) && j < data.results.Totalcount; j++){
                         $(resultDiv).append(template2(data.results.results[j]));
                     }
