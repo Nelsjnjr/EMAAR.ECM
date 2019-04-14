@@ -14318,14 +14318,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 @font-face {
     font-family: "Foundry Sans W04 Md";
-    src: url(../../ECM/fonts/4f2bf8530c19ba6a7c0e161d71fc65a5.eot);
-    src: url(../../ECM/fonts/4f2bf8530c19ba6a7c0e161d71fc65a5.eot?#iefix) format("embedded-opentype"),url(../../ECM/fonts/4f2bf8530c19ba6a7c0e161d71fc65a5.woff2) format("woff2"),url(../../ECM/fonts/4f2bf8530c19ba6a7c0e161d71fc65a5.woff) format("woff"),url(../../ECM/fonts/4f2bf8530c19ba6a7c0e161d71fc65a5.ttf) format("truetype"),url("../fonts/4f2bf8530c19ba6a7c0e161d71fc65a5.svg#Foundry Sans W04 Md") format("svg")
+    src: url(/Assets/Project/ECM/4f2bf8530c19ba6a7c0e161d71fc65a5.eot);
+    src: url(/Assets/Project/ECM/fonts/4f2bf8530c19ba6a7c0e161d71fc65a5.eot?#iefix) format("embedded-opentype"),url(/Assets/Project/ECM/fonts/4f2bf8530c19ba6a7c0e161d71fc65a5.woff2) format("woff2"),url(/Assets/Project/ECMfonts/4f2bf8530c19ba6a7c0e161d71fc65a5.woff) format("woff"),url(/Assets/Project/ECM/fonts/4f2bf8530c19ba6a7c0e161d71fc65a5.ttf) format("truetype"),url("/Assets/Project/ECM/fonts/4f2bf8530c19ba6a7c0e161d71fc65a5.svg#Foundry Sans W04 Md") format("svg")
 }
 
 @font-face {
     font-family: "Foundry Sans W04 Lt";
-    src: url(../../ECM/fonts/1069d95068cdf58f125fe7df3221f5f7.eot);
-    src: url(../../ECM/fonts/1069d95068cdf58f125fe7df3221f5f7.eot?#iefix) format("embedded-opentype"),url(../../ECM/fonts/1069d95068cdf58f125fe7df3221f5f7.woff2) format("woff2"),url(../../ECM/fonts/1069d95068cdf58f125fe7df3221f5f7.woff) format("woff"),url(../../ECM/fonts/1069d95068cdf58f125fe7df3221f5f7.ttf) format("truetype"),url("../fonts/1069d95068cdf58f125fe7df3221f5f7.svg#Foundry Sans W04 Lt") format("svg")
+    src: url(/Assets/Project/ECM/fonts/1069d95068cdf58f125fe7df3221f5f7.eot);
+    src: url(/Assets/Project/ECM/fonts/1069d95068cdf58f125fe7df3221f5f7.eot?#iefix) format("embedded-opentype"),url(/Assets/Project/ECM/fonts/1069d95068cdf58f125fe7df3221f5f7.woff2) format("woff2"),url(/Assets/Project/ECM/fonts/1069d95068cdf58f125fe7df3221f5f7.woff) format("woff"),url(/Assets/Project/ECM/fonts/1069d95068cdf58f125fe7df3221f5f7.ttf) format("truetype"),url("/Assets/Project/ECM/fonts/1069d95068cdf58f125fe7df3221f5f7.svg#Foundry Sans W04 Lt") format("svg")
 }
 
 body { /*!rtl:raw: direction: rtl; */
@@ -14471,7 +14471,7 @@ p {
     }
 
         .sideNavigation ul li a:after {
-            background: url(../../ECM/images/icon/right-arrow-sidebar.svg) no-repeat center;
+            background: url(/Assets/Project/ECM/images/icon/right-arrow-sidebar.svg) no-repeat center;
             -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -17868,6 +17868,14 @@ footer {
     .event-section {
         padding-top: 38px
     }
+}
+
+#filter-template-result {
+    min-height: 200px
+}
+
+#templateInitializor .btn-loadmore.loadmore {
+    display: none
 }
 
 .event-item {

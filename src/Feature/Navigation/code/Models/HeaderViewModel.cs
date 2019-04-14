@@ -31,5 +31,9 @@ namespace EMAAR.ECM.Feature.Navigation.Models
         /// Getting Header CSS Class name
         /// </summary>
         public string HeaderCss { get; set; }
+        /// <summary>
+        /// Check is this page is Home
+        /// </summary>
+        public bool IsHomePage { get; set; }
     }
 }

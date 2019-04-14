@@ -192,11 +192,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Views\Feature\ECM\Listing\Images\ImageAlbum.cshtml" />
+    <Content Include="Views\Feature\ECM\Listing\Images\ImageGallery.cshtml" />
+    <Content Include="Views\Feature\ECM\Listing\Videos\VideoAlbum.cshtml" />
+    <Content Include="Views\Feature\ECM\Listing\Videos\VideoGallery.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\ListingController.cs" />
+    <Compile Include="Interface\IImageListingRepository.cs" />
+    <Compile Include="Interface\IVideoListingRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ImageListingRepository.cs" />
+    <Compile Include="Repositories\IVideoListingRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Views\web.config" />
@@ -214,12 +222,23 @@
     <Folder Include="App_Data\" />
     <Folder Include="App_Start\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Listing\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\DependencyInjection\code\EMAAR.ECM.Foundation.DependencyInjection.csproj">
+      <Project>{e7acc4fc-b18c-45a3-8871-d4ae93471623}</Project>
+      <Name>EMAAR.ECM.Foundation.DependencyInjection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\ORM\code\EMAAR.ECM.Foundation.ORM.csproj">
+      <Project>{06009ba6-b14b-4018-9209-f483cb820555}</Project>
+      <Name>EMAAR.ECM.Foundation.ORM</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\Search\code\EMAAR.ECM.Foundation.Search.csproj">
       <Project>{c42a1245-a6dc-409b-9bbe-6f9475c42ac6}</Project>
       <Name>EMAAR.ECM.Foundation.Search</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\EMAAR.ECM.Foundation.SitecoreExtensions.csproj">
+      <Project>{5a9c69d0-c859-4df1-ac9c-4ef90d684b2b}</Project>
+      <Name>EMAAR.ECM.Foundation.SitecoreExtensions</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -6,9 +6,15 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\inetpub\wwwroot\EMAAR.ECM.dev</_PublishTargetUrl>
+    <_PublishTargetUrl>D:\Nelson\sc1.local</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
+    <File Include="App_Config/Include/Foundation/ECM/Search/EMAAR.ECM.Foundation.Search.config">
+      <publishTime>04/11/2019 15:56:09</publishTime>
+    </File>
+    <File Include="App_Config/Include/Foundation/ECM/Search/EMAAR.ECM.Foundation.Search.Master.Index.config">
+      <publishTime>04/11/2019 15:56:09</publishTime>
+    </File>
     <File Include="bin/Castle.Core.dll">
       <publishTime>10/10/2017 08:13:52</publishTime>
     </File>
@@ -22,28 +28,37 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/02/2019 14:46:54</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.dll">
-      <publishTime>04/02/2019 14:46:53</publishTime>
+      <publishTime>04/14/2019 09:58:40</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.dll.config">
-      <publishTime>04/01/2019 15:10:18</publishTime>
+      <publishTime>04/11/2019 09:27:16</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.pdb">
-      <publishTime>04/02/2019 14:46:53</publishTime>
+      <publishTime>04/14/2019 09:58:40</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll">
-      <publishTime>04/02/2019 14:46:54</publishTime>
+      <publishTime>04/14/2019 09:58:41</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll.config">
-      <publishTime>04/01/2019 15:03:00</publishTime>
+      <publishTime>04/11/2019 09:27:17</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.pdb">
-      <publishTime>04/02/2019 14:46:54</publishTime>
+      <publishTime>04/14/2019 09:58:41</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.Search.dll">
-      <publishTime>04/02/2019 14:46:54</publishTime>
+      <publishTime>04/14/2019 09:58:42</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.Search.pdb">
-      <publishTime>04/02/2019 14:46:54</publishTime>
+      <publishTime>04/14/2019 09:58:42</publishTime>
+    </File>
+    <File Include="bin/EMAAR.ECM.Foundation.SitecoreExtensions.dll">
+      <publishTime>04/14/2019 09:58:41</publishTime>
+    </File>
+    <File Include="bin/EMAAR.ECM.Foundation.SitecoreExtensions.dll.config">
+      <publishTime>04/11/2019 09:27:17</publishTime>
+    </File>
+    <File Include="bin/EMAAR.ECM.Foundation.SitecoreExtensions.pdb">
+      <publishTime>04/14/2019 09:58:41</publishTime>
     </File>
     <File Include="bin/Glass.Mapper.dll">
       <publishTime>02/25/2019 13:27:08</publishTime>
@@ -88,10 +103,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/24/2018 13:38:22</publishTime>
     </File>
     <File Include="bin/Microsoft.Extensions.DependencyInjection.Abstractions.dll">
-      <publishTime>06/22/2016 07:44:56</publishTime>
+      <publishTime>06/22/2016 09:14:56</publishTime>
     </File>
     <File Include="bin/Microsoft.Extensions.DependencyInjection.dll">
-      <publishTime>06/22/2016 07:44:56</publishTime>
+      <publishTime>06/22/2016 09:14:56</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll">
       <publishTime>04/25/2013 10:04:08</publishTime>
@@ -287,6 +302,18 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="bin/Sitecore.Zip.dll">
       <publishTime>01/18/2018 16:38:56</publishTime>
+    </File>
+    <File Include="bin/System.Linq.dll">
+      <publishTime>06/11/2016 23:14:02</publishTime>
+    </File>
+    <File Include="bin/System.Linq.Expressions.dll">
+      <publishTime>06/11/2016 23:13:54</publishTime>
+    </File>
+    <File Include="bin/System.Reflection.dll">
+      <publishTime>06/11/2016 23:14:32</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.Extensions.dll">
+      <publishTime>06/11/2016 23:14:28</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
       <publishTime>02/01/2018 12:20:56</publishTime>

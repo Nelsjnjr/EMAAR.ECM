@@ -206,7 +206,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\ECM\Foundation\Foundation.ErrorHandling.config">
+    <Content Include="App_Config\Include\Foundation\ECM\ErrorHandling\Foundation.ErrorHandling.config">
       <SubType>Designer</SubType>
     </Content>
     <None Include="packages.config">

@@ -46,12 +46,14 @@ namespace EMAAR.ECM.Feature.Navigation.Repositories
                  _headerViewModel.SearchIcon = _sitecoreHelper.HomePageSearch;
                 _headerViewModel.CloseIcon = _sitecoreHelper.HomePageClose;
                 _headerViewModel.HeaderCss = CommonConstants.HomePageHeaderCss;
+                _headerViewModel.IsHomePage = true;
             }
             else
             {
                 _headerViewModel.SearchIcon = _sitecoreHelper.ContentPageSearch;
                 _headerViewModel.CloseIcon = _sitecoreHelper.ContentPageClose;
                 _headerViewModel.HeaderCss = CommonConstants.ContentPageHeaderCss;
+                _headerViewModel.IsHomePage = false;
             }
             _headerViewModel.Header = _sitecoreHelper.NavigationHeader;
 

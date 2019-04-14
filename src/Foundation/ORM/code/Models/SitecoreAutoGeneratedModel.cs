@@ -334,6 +334,62 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 
 
  	/// <summary>
+	/// ICategory_Item Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/Category Item</para>	
+	/// <para>ID: 05185736-1180-445f-a35e-baa16580190c</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=ICategory_ItemConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface ICategory_Item : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category
+	{
+				}
+
+
+	public static partial class ICategory_ItemConstants{
+
+			public const string TemplateIdString = "05185736-1180-445f-a35e-baa16580190c";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "Category Item";
+
+					
+			public static readonly ID TitleFieldId = new ID("810cf7cd-8276-4fa9-9e91-379d4855edef");
+			public const string TitleFieldName = "Title";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// Category_Item
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/Category Item</para>	
+	/// <para>ID: 05185736-1180-445f-a35e-baa16580190c</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=ICategory_ItemConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(ICategory_Item))]
+	public partial class Category_Item  : GlassBase, ICategory_Item 
+	{
+	   
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 810cf7cd-8276-4fa9-9e91-379d4855edef</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(ICategory_ItemConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
+{
+
+
+ 	/// <summary>
 	/// IHotspotsFolder Interface
 	/// <para></para>
 	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/HotspotsFolder</para>	
@@ -921,6 +977,122 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 			
 	}
 }
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types
+{
+
+
+ 	/// <summary>
+	/// IVideo_Gallery_Page Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/Video Gallery Page</para>	
+	/// <para>ID: 19bf6d5d-cafc-4c5a-927f-0705a5cd4b61</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IVideo_Gallery_PageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IVideo_Gallery_Page : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_PageIntro, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing.I_List_Configuration
+	{
+				}
+
+
+	public static partial class IVideo_Gallery_PageConstants{
+
+			public const string TemplateIdString = "19bf6d5d-cafc-4c5a-927f-0705a5cd4b61";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "Video Gallery Page";
+
+					
+			public static readonly ID DescriptionFieldId = new ID("0cba5220-aa8b-4f75-bcd6-68000b38d8c1");
+			public const string DescriptionFieldName = "Description";
+			
+					
+			public static readonly ID TitleFieldId = new ID("e98bf0cb-57fb-4353-9c23-1ad8d5961f2d");
+			public const string TitleFieldName = "Title";
+			
+					
+			public static readonly ID Error_MessageFieldId = new ID("fd8d09c0-26c9-4c9b-ba05-8d4621a0f1f3");
+			public const string Error_MessageFieldName = "Error Message";
+			
+					
+			public static readonly ID Load_More_LabelFieldId = new ID("fe683723-d22f-4a7e-a074-7e3bab2817c4");
+			public const string Load_More_LabelFieldName = "Load More Label";
+			
+					
+			public static readonly ID No_Of_RecordsFieldId = new ID("44195a16-b523-44ef-b2fd-6304b28e16fb");
+			public const string No_Of_RecordsFieldName = "No of Records";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// Video_Gallery_Page
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/Video Gallery Page</para>	
+	/// <para>ID: 19bf6d5d-cafc-4c5a-927f-0705a5cd4b61</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IVideo_Gallery_PageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IVideo_Gallery_Page))]
+	public partial class Video_Gallery_Page  : GlassBase, IVideo_Gallery_Page 
+	{
+	   
+						/// <summary>
+				/// The Description field.
+				/// <para></para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: 0cba5220-aa8b-4f75-bcd6-68000b38d8c1</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_Gallery_PageConstants.DescriptionFieldName)]
+				public virtual string Description  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: e98bf0cb-57fb-4353-9c23-1ad8d5961f2d</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_Gallery_PageConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
+						/// <summary>
+				/// The Error Message field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: fd8d09c0-26c9-4c9b-ba05-8d4621a0f1f3</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_Gallery_PageConstants.Error_MessageFieldName)]
+				public virtual string Error_Message  {get; set;}
+					
+						/// <summary>
+				/// The Load More Label field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: fe683723-d22f-4a7e-a074-7e3bab2817c4</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_Gallery_PageConstants.Load_More_LabelFieldName)]
+				public virtual string Load_More_Label  {get; set;}
+					
+						/// <summary>
+				/// The No of Records field.
+				/// <para></para>
+				/// <para>Field Type: Integer</para>		
+				/// <para>Field ID: 44195a16-b523-44ef-b2fd-6304b28e16fb</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_Gallery_PageConstants.No_Of_RecordsFieldName)]
+				public virtual int No_Of_Records  {get; set;}
+					
+			
+	}
+}
 namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
 {
 
@@ -1000,6 +1172,97 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 	public partial class _ContactInfoFolder  : GlassBase, I_ContactInfoFolder 
 	{
 	   
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
+{
+
+
+ 	/// <summary>
+	/// I_PageIntro Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_PageIntro</para>	
+	/// <para>ID: 1ece4946-3ce5-4f9e-b7d3-71afe001cedc</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_PageIntroConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_PageIntro : IGlassBase 
+	{
+								/// <summary>
+					/// The Description field.
+					/// <para></para>
+					/// <para>Field Type: Multi-Line Text</para>		
+					/// <para>Field ID: 0cba5220-aa8b-4f75-bcd6-68000b38d8c1</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_PageIntroConstants.DescriptionFieldName)]
+					string Description  {get; set;}
+			
+								/// <summary>
+					/// The Title field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: e98bf0cb-57fb-4353-9c23-1ad8d5961f2d</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_PageIntroConstants.TitleFieldName)]
+					string Title  {get; set;}
+			
+				}
+
+
+	public static partial class I_PageIntroConstants{
+
+			public const string TemplateIdString = "1ece4946-3ce5-4f9e-b7d3-71afe001cedc";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_PageIntro";
+
+					
+			public static readonly ID DescriptionFieldId = new ID("0cba5220-aa8b-4f75-bcd6-68000b38d8c1");
+			public const string DescriptionFieldName = "Description";
+			
+					
+			public static readonly ID TitleFieldId = new ID("e98bf0cb-57fb-4353-9c23-1ad8d5961f2d");
+			public const string TitleFieldName = "Title";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _PageIntro
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_PageIntro</para>	
+	/// <para>ID: 1ece4946-3ce5-4f9e-b7d3-71afe001cedc</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_PageIntroConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_PageIntro))]
+	public partial class _PageIntro  : GlassBase, I_PageIntro 
+	{
+	   
+						/// <summary>
+				/// The Description field.
+				/// <para></para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: 0cba5220-aa8b-4f75-bcd6-68000b38d8c1</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_PageIntroConstants.DescriptionFieldName)]
+				public virtual string Description  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: e98bf0cb-57fb-4353-9c23-1ad8d5961f2d</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_PageIntroConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
 			
 	}
 }
@@ -1216,6 +1479,122 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 			
 	}
 }
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
+{
+
+
+ 	/// <summary>
+	/// I_List_Configuration Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Listing/_List Configuration</para>	
+	/// <para>ID: 25263d9d-ca73-4c46-9ac7-6dcaff60a0e3</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_List_ConfigurationConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_List_Configuration : IGlassBase 
+	{
+								/// <summary>
+					/// The Error Message field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: fd8d09c0-26c9-4c9b-ba05-8d4621a0f1f3</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_List_ConfigurationConstants.Error_MessageFieldName)]
+					string Error_Message  {get; set;}
+			
+								/// <summary>
+					/// The Load More Label field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: fe683723-d22f-4a7e-a074-7e3bab2817c4</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_List_ConfigurationConstants.Load_More_LabelFieldName)]
+					string Load_More_Label  {get; set;}
+			
+								/// <summary>
+					/// The No of Records field.
+					/// <para></para>
+					/// <para>Field Type: Integer</para>		
+					/// <para>Field ID: 44195a16-b523-44ef-b2fd-6304b28e16fb</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_List_ConfigurationConstants.No_Of_RecordsFieldName)]
+					int No_Of_Records  {get; set;}
+			
+				}
+
+
+	public static partial class I_List_ConfigurationConstants{
+
+			public const string TemplateIdString = "25263d9d-ca73-4c46-9ac7-6dcaff60a0e3";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_List Configuration";
+
+					
+			public static readonly ID Error_MessageFieldId = new ID("fd8d09c0-26c9-4c9b-ba05-8d4621a0f1f3");
+			public const string Error_MessageFieldName = "Error Message";
+			
+					
+			public static readonly ID Load_More_LabelFieldId = new ID("fe683723-d22f-4a7e-a074-7e3bab2817c4");
+			public const string Load_More_LabelFieldName = "Load More Label";
+			
+					
+			public static readonly ID No_Of_RecordsFieldId = new ID("44195a16-b523-44ef-b2fd-6304b28e16fb");
+			public const string No_Of_RecordsFieldName = "No of Records";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _List_Configuration
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Listing/_List Configuration</para>	
+	/// <para>ID: 25263d9d-ca73-4c46-9ac7-6dcaff60a0e3</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_List_ConfigurationConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_List_Configuration))]
+	public partial class _List_Configuration  : GlassBase, I_List_Configuration 
+	{
+	   
+						/// <summary>
+				/// The Error Message field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: fd8d09c0-26c9-4c9b-ba05-8d4621a0f1f3</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_List_ConfigurationConstants.Error_MessageFieldName)]
+				public virtual string Error_Message  {get; set;}
+					
+						/// <summary>
+				/// The Load More Label field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: fe683723-d22f-4a7e-a074-7e3bab2817c4</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_List_ConfigurationConstants.Load_More_LabelFieldName)]
+				public virtual string Load_More_Label  {get; set;}
+					
+						/// <summary>
+				/// The No of Records field.
+				/// <para></para>
+				/// <para>Field Type: Integer</para>		
+				/// <para>Field ID: 44195a16-b523-44ef-b2fd-6304b28e16fb</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_List_ConfigurationConstants.No_Of_RecordsFieldName)]
+				public virtual int No_Of_Records  {get; set;}
+					
+			
+	}
+}
 namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 {
 
@@ -1381,6 +1760,167 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 	public partial class ParallaxFolder  : GlassBase, IParallaxFolder 
 	{
 	   
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types
+{
+
+
+ 	/// <summary>
+	/// IVideo_Album Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/Video Album</para>	
+	/// <para>ID: 2c088140-3a80-4cb7-9e80-198afcb01574</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IVideo_AlbumConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IVideo_Album : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing.I_VideoAlbum, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing.I_List_Configuration
+	{
+				}
+
+
+	public static partial class IVideo_AlbumConstants{
+
+			public const string TemplateIdString = "2c088140-3a80-4cb7-9e80-198afcb01574";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "Video Album";
+
+					
+			public static readonly ID CategoriesFieldId = new ID("4b7178ea-4352-4d1f-a98f-81feb23895af");
+			public const string CategoriesFieldName = "Categories";
+			
+					
+			public static readonly ID VideosFieldId = new ID("3981764a-8ec5-44d2-8500-09086145aa97");
+			public const string VideosFieldName = "Videos";
+			
+					
+			public static readonly ID YearsFieldId = new ID("45f9a9b2-5213-41a8-954e-6b900355dec5");
+			public const string YearsFieldName = "Years";
+			
+					
+			public static readonly ID DescriptionFieldId = new ID("0cba5220-aa8b-4f75-bcd6-68000b38d8c1");
+			public const string DescriptionFieldName = "Description";
+			
+					
+			public static readonly ID TitleFieldId = new ID("e98bf0cb-57fb-4353-9c23-1ad8d5961f2d");
+			public const string TitleFieldName = "Title";
+			
+					
+			public static readonly ID Error_MessageFieldId = new ID("fd8d09c0-26c9-4c9b-ba05-8d4621a0f1f3");
+			public const string Error_MessageFieldName = "Error Message";
+			
+					
+			public static readonly ID Load_More_LabelFieldId = new ID("fe683723-d22f-4a7e-a074-7e3bab2817c4");
+			public const string Load_More_LabelFieldName = "Load More Label";
+			
+					
+			public static readonly ID No_Of_RecordsFieldId = new ID("44195a16-b523-44ef-b2fd-6304b28e16fb");
+			public const string No_Of_RecordsFieldName = "No of Records";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// Video_Album
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/Video Album</para>	
+	/// <para>ID: 2c088140-3a80-4cb7-9e80-198afcb01574</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IVideo_AlbumConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IVideo_Album))]
+	public partial class Video_Album  : GlassBase, IVideo_Album 
+	{
+	   
+						/// <summary>
+				/// The Categories field.
+				/// <para></para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: 4b7178ea-4352-4d1f-a98f-81feb23895af</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_AlbumConstants.CategoriesFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category> Categories  {get; set;}
+					
+						/// <summary>
+				/// The Videos field.
+				/// <para></para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: 3981764a-8ec5-44d2-8500-09086145aa97</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IVideo_Item</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_AlbumConstants.VideosFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IVideo_Item> Videos  {get; set;}
+					
+						/// <summary>
+				/// The Years field.
+				/// <para></para>
+				/// <para>Field Type: Droplist</para>		
+				/// <para>Field ID: 45f9a9b2-5213-41a8-954e-6b900355dec5</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.IYear_Item</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_AlbumConstants.YearsFieldName)]
+				public virtual string Years  {get; set;}
+					
+						/// <summary>
+				/// The Description field.
+				/// <para></para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: 0cba5220-aa8b-4f75-bcd6-68000b38d8c1</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_AlbumConstants.DescriptionFieldName)]
+				public virtual string Description  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: e98bf0cb-57fb-4353-9c23-1ad8d5961f2d</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_AlbumConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
+						/// <summary>
+				/// The Error Message field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: fd8d09c0-26c9-4c9b-ba05-8d4621a0f1f3</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_AlbumConstants.Error_MessageFieldName)]
+				public virtual string Error_Message  {get; set;}
+					
+						/// <summary>
+				/// The Load More Label field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: fe683723-d22f-4a7e-a074-7e3bab2817c4</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_AlbumConstants.Load_More_LabelFieldName)]
+				public virtual string Load_More_Label  {get; set;}
+					
+						/// <summary>
+				/// The No of Records field.
+				/// <para></para>
+				/// <para>Field Type: Integer</para>		
+				/// <para>Field ID: 44195a16-b523-44ef-b2fd-6304b28e16fb</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_AlbumConstants.No_Of_RecordsFieldName)]
+				public virtual int No_Of_Records  {get; set;}
+					
 			
 	}
 }
@@ -3842,6 +4382,223 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Hero_co
 			
 	}
 }
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
+{
+
+
+ 	/// <summary>
+	/// IYear_Item Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/Year Item</para>	
+	/// <para>ID: 53b143d6-b50e-4304-9620-bae0f90b290e</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IYear_ItemConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IYear_Item : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Year
+	{
+				}
+
+
+	public static partial class IYear_ItemConstants{
+
+			public const string TemplateIdString = "53b143d6-b50e-4304-9620-bae0f90b290e";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "Year Item";
+
+					
+			public static readonly ID YearFieldId = new ID("82745daf-1798-4b90-936b-966a373e6a50");
+			public const string YearFieldName = "Year";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// Year_Item
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/Year Item</para>	
+	/// <para>ID: 53b143d6-b50e-4304-9620-bae0f90b290e</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IYear_ItemConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IYear_Item))]
+	public partial class Year_Item  : GlassBase, IYear_Item 
+	{
+	   
+						/// <summary>
+				/// The Year field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 82745daf-1798-4b90-936b-966a373e6a50</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IYear_ItemConstants.YearFieldName)]
+				public virtual string Year  {get; set;}
+					
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types
+{
+
+
+ 	/// <summary>
+	/// IImage_Album Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/Image Album</para>	
+	/// <para>ID: 5e7f38ed-d38c-4ea8-8dbd-d3606f4e1e08</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IImage_AlbumConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IImage_Album : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing.I_Album, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing.I_List_Configuration
+	{
+				}
+
+
+	public static partial class IImage_AlbumConstants{
+
+			public const string TemplateIdString = "5e7f38ed-d38c-4ea8-8dbd-d3606f4e1e08";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "Image Album";
+
+					
+			public static readonly ID CategoriesFieldId = new ID("bfdb03bc-9cee-46ca-97d1-d69de8c617c7");
+			public const string CategoriesFieldName = "Categories";
+			
+					
+			public static readonly ID ImagesFieldId = new ID("97aa0dcc-10c4-473c-9ca9-39bd77a50ce9");
+			public const string ImagesFieldName = "Images";
+			
+					
+			public static readonly ID YearsFieldId = new ID("15e6fbe8-cdd0-4ccb-8295-3097ca4f3e71");
+			public const string YearsFieldName = "Years";
+			
+					
+			public static readonly ID DescriptionFieldId = new ID("0cba5220-aa8b-4f75-bcd6-68000b38d8c1");
+			public const string DescriptionFieldName = "Description";
+			
+					
+			public static readonly ID TitleFieldId = new ID("e98bf0cb-57fb-4353-9c23-1ad8d5961f2d");
+			public const string TitleFieldName = "Title";
+			
+					
+			public static readonly ID Error_MessageFieldId = new ID("fd8d09c0-26c9-4c9b-ba05-8d4621a0f1f3");
+			public const string Error_MessageFieldName = "Error Message";
+			
+					
+			public static readonly ID Load_More_LabelFieldId = new ID("fe683723-d22f-4a7e-a074-7e3bab2817c4");
+			public const string Load_More_LabelFieldName = "Load More Label";
+			
+					
+			public static readonly ID No_Of_RecordsFieldId = new ID("44195a16-b523-44ef-b2fd-6304b28e16fb");
+			public const string No_Of_RecordsFieldName = "No of Records";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// Image_Album
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/Image Album</para>	
+	/// <para>ID: 5e7f38ed-d38c-4ea8-8dbd-d3606f4e1e08</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IImage_AlbumConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IImage_Album))]
+	public partial class Image_Album  : GlassBase, IImage_Album 
+	{
+	   
+						/// <summary>
+				/// The Categories field.
+				/// <para></para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: bfdb03bc-9cee-46ca-97d1-d69de8c617c7</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IImage_AlbumConstants.CategoriesFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category> Categories  {get; set;}
+					
+						/// <summary>
+				/// The Images field.
+				/// <para></para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: 97aa0dcc-10c4-473c-9ca9-39bd77a50ce9</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IImage_Item</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IImage_AlbumConstants.ImagesFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IImage_Item> Images  {get; set;}
+					
+						/// <summary>
+				/// The Years field.
+				/// <para></para>
+				/// <para>Field Type: Droplist</para>		
+				/// <para>Field ID: 15e6fbe8-cdd0-4ccb-8295-3097ca4f3e71</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.IYear_Item</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IImage_AlbumConstants.YearsFieldName)]
+				public virtual string Years  {get; set;}
+					
+						/// <summary>
+				/// The Description field.
+				/// <para></para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: 0cba5220-aa8b-4f75-bcd6-68000b38d8c1</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IImage_AlbumConstants.DescriptionFieldName)]
+				public virtual string Description  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: e98bf0cb-57fb-4353-9c23-1ad8d5961f2d</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IImage_AlbumConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
+						/// <summary>
+				/// The Error Message field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: fd8d09c0-26c9-4c9b-ba05-8d4621a0f1f3</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IImage_AlbumConstants.Error_MessageFieldName)]
+				public virtual string Error_Message  {get; set;}
+					
+						/// <summary>
+				/// The Load More Label field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: fe683723-d22f-4a7e-a074-7e3bab2817c4</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IImage_AlbumConstants.Load_More_LabelFieldName)]
+				public virtual string Load_More_Label  {get; set;}
+					
+						/// <summary>
+				/// The No of Records field.
+				/// <para></para>
+				/// <para>Field Type: Integer</para>		
+				/// <para>Field ID: 44195a16-b523-44ef-b2fd-6304b28e16fb</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IImage_AlbumConstants.No_Of_RecordsFieldName)]
+				public virtual int No_Of_Records  {get; set;}
+					
+			
+	}
+}
 namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 {
 
@@ -4871,6 +5628,122 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 			
 	}
 }
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types
+{
+
+
+ 	/// <summary>
+	/// IImage_Gallery_Page Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/Image Gallery Page</para>	
+	/// <para>ID: 70422db2-25af-483f-a3f1-aaf7cd751d5d</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IImage_Gallery_PageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IImage_Gallery_Page : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_PageIntro, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing.I_List_Configuration
+	{
+				}
+
+
+	public static partial class IImage_Gallery_PageConstants{
+
+			public const string TemplateIdString = "70422db2-25af-483f-a3f1-aaf7cd751d5d";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "Image Gallery Page";
+
+					
+			public static readonly ID DescriptionFieldId = new ID("0cba5220-aa8b-4f75-bcd6-68000b38d8c1");
+			public const string DescriptionFieldName = "Description";
+			
+					
+			public static readonly ID TitleFieldId = new ID("e98bf0cb-57fb-4353-9c23-1ad8d5961f2d");
+			public const string TitleFieldName = "Title";
+			
+					
+			public static readonly ID Error_MessageFieldId = new ID("fd8d09c0-26c9-4c9b-ba05-8d4621a0f1f3");
+			public const string Error_MessageFieldName = "Error Message";
+			
+					
+			public static readonly ID Load_More_LabelFieldId = new ID("fe683723-d22f-4a7e-a074-7e3bab2817c4");
+			public const string Load_More_LabelFieldName = "Load More Label";
+			
+					
+			public static readonly ID No_Of_RecordsFieldId = new ID("44195a16-b523-44ef-b2fd-6304b28e16fb");
+			public const string No_Of_RecordsFieldName = "No of Records";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// Image_Gallery_Page
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/Image Gallery Page</para>	
+	/// <para>ID: 70422db2-25af-483f-a3f1-aaf7cd751d5d</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IImage_Gallery_PageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IImage_Gallery_Page))]
+	public partial class Image_Gallery_Page  : GlassBase, IImage_Gallery_Page 
+	{
+	   
+						/// <summary>
+				/// The Description field.
+				/// <para></para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: 0cba5220-aa8b-4f75-bcd6-68000b38d8c1</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IImage_Gallery_PageConstants.DescriptionFieldName)]
+				public virtual string Description  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: e98bf0cb-57fb-4353-9c23-1ad8d5961f2d</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IImage_Gallery_PageConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
+						/// <summary>
+				/// The Error Message field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: fd8d09c0-26c9-4c9b-ba05-8d4621a0f1f3</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IImage_Gallery_PageConstants.Error_MessageFieldName)]
+				public virtual string Error_Message  {get; set;}
+					
+						/// <summary>
+				/// The Load More Label field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: fe683723-d22f-4a7e-a074-7e3bab2817c4</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IImage_Gallery_PageConstants.Load_More_LabelFieldName)]
+				public virtual string Load_More_Label  {get; set;}
+					
+						/// <summary>
+				/// The No of Records field.
+				/// <para></para>
+				/// <para>Field Type: Integer</para>		
+				/// <para>Field ID: 44195a16-b523-44ef-b2fd-6304b28e16fb</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IImage_Gallery_PageConstants.No_Of_RecordsFieldName)]
+				public virtual int No_Of_Records  {get; set;}
+					
+			
+	}
+}
 namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types
 {
 
@@ -5048,6 +5921,97 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Homepag
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_Homepage_CarouselsConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
+{
+
+
+ 	/// <summary>
+	/// I_Image_Item Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Listing/_Image Item</para>	
+	/// <para>ID: 7b658f0b-5f25-43cf-8fe4-0e6ff7e7586c</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_Image_ItemConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Image_Item : IGlassBase 
+	{
+								/// <summary>
+					/// The Image field.
+					/// <para></para>
+					/// <para>Field Type: Image</para>		
+					/// <para>Field ID: 515bd529-7017-4402-a1a0-b8158722cf74</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_Image_ItemConstants.ImageFieldName)]
+					Image Image  {get; set;}
+			
+								/// <summary>
+					/// The Title field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: 068bccbe-353f-42a5-bf99-1b72c328dbc6</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_Image_ItemConstants.TitleFieldName)]
+					string Title  {get; set;}
+			
+				}
+
+
+	public static partial class I_Image_ItemConstants{
+
+			public const string TemplateIdString = "7b658f0b-5f25-43cf-8fe4-0e6ff7e7586c";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_Image Item";
+
+					
+			public static readonly ID ImageFieldId = new ID("515bd529-7017-4402-a1a0-b8158722cf74");
+			public const string ImageFieldName = "Image";
+			
+					
+			public static readonly ID TitleFieldId = new ID("068bccbe-353f-42a5-bf99-1b72c328dbc6");
+			public const string TitleFieldName = "Title";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _Image_Item
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Listing/_Image Item</para>	
+	/// <para>ID: 7b658f0b-5f25-43cf-8fe4-0e6ff7e7586c</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_Image_ItemConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Image_Item))]
+	public partial class _Image_Item  : GlassBase, I_Image_Item 
+	{
+	   
+						/// <summary>
+				/// The Image field.
+				/// <para></para>
+				/// <para>Field Type: Image</para>		
+				/// <para>Field ID: 515bd529-7017-4402-a1a0-b8158722cf74</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_Image_ItemConstants.ImageFieldName)]
+				public virtual Image Image  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 068bccbe-353f-42a5-bf99-1b72c328dbc6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_Image_ItemConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
 					
 			
@@ -5722,6 +6686,279 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 			
 	}
 }
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types
+{
+
+
+ 	/// <summary>
+	/// IGeneric_Page Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/Generic Page</para>	
+	/// <para>ID: 9c1cfb69-ba11-49d5-a489-d419a4bb69ce</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IGeneric_PageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IGeneric_Page : IGlassBase 
+	{
+				}
+
+
+	public static partial class IGeneric_PageConstants{
+
+			public const string TemplateIdString = "9c1cfb69-ba11-49d5-a489-d419a4bb69ce";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "Generic Page";
+
+			
+
+	}
+
+	
+	/// <summary>
+	/// Generic_Page
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/Generic Page</para>	
+	/// <para>ID: 9c1cfb69-ba11-49d5-a489-d419a4bb69ce</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IGeneric_PageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IGeneric_Page))]
+	public partial class Generic_Page  : GlassBase, IGeneric_Page 
+	{
+	   
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
+{
+
+
+ 	/// <summary>
+	/// I_Video_Item Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Listing/_Video Item</para>	
+	/// <para>ID: a3448c7d-cf21-4ebc-a0f9-4c73814528f1</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_Video_ItemConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Video_Item : IGlassBase 
+	{
+								/// <summary>
+					/// The Categories field.
+					/// <para></para>
+					/// <para>Field Type: Multilist</para>		
+					/// <para>Field ID: fba4c0e5-44e0-4e57-9611-4ab5dc370f9c</para>
+					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category</para>
+					/// </summary>
+					[SitecoreField(I_Video_ItemConstants.CategoriesFieldName)]
+					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category> Categories  {get; set;}
+			
+								/// <summary>
+					/// The Image field.
+					/// <para>Video Thumbnail Image</para>
+					/// <para>Field Type: Image</para>		
+					/// <para>Field ID: e6ae526a-fa8b-4b69-a0d1-277162d7fa7f</para>
+					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IImage_Item</para>
+					/// </summary>
+					[SitecoreField(I_Video_ItemConstants.ImageFieldName)]
+					Image Image  {get; set;}
+			
+								/// <summary>
+					/// The Title field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: 162b4dcb-8aeb-4385-b1ac-d8a9256b775e</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_Video_ItemConstants.TitleFieldName)]
+					string Title  {get; set;}
+			
+								/// <summary>
+					/// The Video field.
+					/// <para>Youtube Url</para>
+					/// <para>Field Type: General Link</para>		
+					/// <para>Field ID: f89f4f46-510b-4dfb-ae2e-f5c234e7aae2</para>
+					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IVideo_Item</para>
+					/// </summary>
+					[SitecoreField(I_Video_ItemConstants.VideoFieldName)]
+					Link Video  {get; set;}
+			
+								/// <summary>
+					/// The Years field.
+					/// <para></para>
+					/// <para>Field Type: Droplist</para>		
+					/// <para>Field ID: eb2d8d5b-6335-44d6-9237-6aa5ce248871</para>
+					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.IYear_Item</para>
+					/// </summary>
+					[SitecoreField(I_Video_ItemConstants.YearsFieldName)]
+					string Years  {get; set;}
+			
+				}
+
+
+	public static partial class I_Video_ItemConstants{
+
+			public const string TemplateIdString = "a3448c7d-cf21-4ebc-a0f9-4c73814528f1";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_Video Item";
+
+					
+			public static readonly ID CategoriesFieldId = new ID("fba4c0e5-44e0-4e57-9611-4ab5dc370f9c");
+			public const string CategoriesFieldName = "Categories";
+			
+					
+			public static readonly ID ImageFieldId = new ID("e6ae526a-fa8b-4b69-a0d1-277162d7fa7f");
+			public const string ImageFieldName = "Image";
+			
+					
+			public static readonly ID TitleFieldId = new ID("162b4dcb-8aeb-4385-b1ac-d8a9256b775e");
+			public const string TitleFieldName = "Title";
+			
+					
+			public static readonly ID VideoFieldId = new ID("f89f4f46-510b-4dfb-ae2e-f5c234e7aae2");
+			public const string VideoFieldName = "Video";
+			
+					
+			public static readonly ID YearsFieldId = new ID("eb2d8d5b-6335-44d6-9237-6aa5ce248871");
+			public const string YearsFieldName = "Years";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _Video_Item
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Listing/_Video Item</para>	
+	/// <para>ID: a3448c7d-cf21-4ebc-a0f9-4c73814528f1</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_Video_ItemConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Video_Item))]
+	public partial class _Video_Item  : GlassBase, I_Video_Item 
+	{
+	   
+						/// <summary>
+				/// The Categories field.
+				/// <para></para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: fba4c0e5-44e0-4e57-9611-4ab5dc370f9c</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_Video_ItemConstants.CategoriesFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category> Categories  {get; set;}
+					
+						/// <summary>
+				/// The Image field.
+				/// <para>Video Thumbnail Image</para>
+				/// <para>Field Type: Image</para>		
+				/// <para>Field ID: e6ae526a-fa8b-4b69-a0d1-277162d7fa7f</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IImage_Item</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_Video_ItemConstants.ImageFieldName)]
+				public virtual Image Image  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 162b4dcb-8aeb-4385-b1ac-d8a9256b775e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_Video_ItemConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
+						/// <summary>
+				/// The Video field.
+				/// <para>Youtube Url</para>
+				/// <para>Field Type: General Link</para>		
+				/// <para>Field ID: f89f4f46-510b-4dfb-ae2e-f5c234e7aae2</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IVideo_Item</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_Video_ItemConstants.VideoFieldName)]
+				public virtual Link Video  {get; set;}
+					
+						/// <summary>
+				/// The Years field.
+				/// <para></para>
+				/// <para>Field Type: Droplist</para>		
+				/// <para>Field ID: eb2d8d5b-6335-44d6-9237-6aa5ce248871</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.IYear_Item</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_Video_ItemConstants.YearsFieldName)]
+				public virtual string Years  {get; set;}
+					
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types
+{
+
+
+ 	/// <summary>
+	/// I_Category Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Content Types/_Category</para>	
+	/// <para>ID: a5a9d06f-3244-4ca1-a68a-c7f62197fb41</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_CategoryConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Category : IGlassBase 
+	{
+								/// <summary>
+					/// The Title field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: 810cf7cd-8276-4fa9-9e91-379d4855edef</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_CategoryConstants.TitleFieldName)]
+					string Title  {get; set;}
+			
+				}
+
+
+	public static partial class I_CategoryConstants{
+
+			public const string TemplateIdString = "a5a9d06f-3244-4ca1-a68a-c7f62197fb41";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_Category";
+
+					
+			public static readonly ID TitleFieldId = new ID("810cf7cd-8276-4fa9-9e91-379d4855edef");
+			public const string TitleFieldName = "Title";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _Category
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Content Types/_Category</para>	
+	/// <para>ID: a5a9d06f-3244-4ca1-a68a-c7f62197fb41</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_CategoryConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Category))]
+	public partial class _Category  : GlassBase, I_Category 
+	{
+	   
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 810cf7cd-8276-4fa9-9e91-379d4855edef</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_CategoryConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
+			
+	}
+}
 namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Footer
 {
 
@@ -5829,6 +7066,122 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Footer
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_FooterConstants.Root_NavigationsFieldName)]
 				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.INavigation> Root_Navigations  {get; set;}
+					
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing
+{
+
+
+ 	/// <summary>
+	/// IVideo_Item Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/Listing/Video Item</para>	
+	/// <para>ID: af5d11d7-f83a-4d16-8747-d92f6f873071</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IVideo_ItemConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IVideo_Item : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing.I_Video_Item
+	{
+				}
+
+
+	public static partial class IVideo_ItemConstants{
+
+			public const string TemplateIdString = "af5d11d7-f83a-4d16-8747-d92f6f873071";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "Video Item";
+
+					
+			public static readonly ID CategoriesFieldId = new ID("fba4c0e5-44e0-4e57-9611-4ab5dc370f9c");
+			public const string CategoriesFieldName = "Categories";
+			
+					
+			public static readonly ID ImageFieldId = new ID("e6ae526a-fa8b-4b69-a0d1-277162d7fa7f");
+			public const string ImageFieldName = "Image";
+			
+					
+			public static readonly ID TitleFieldId = new ID("162b4dcb-8aeb-4385-b1ac-d8a9256b775e");
+			public const string TitleFieldName = "Title";
+			
+					
+			public static readonly ID VideoFieldId = new ID("f89f4f46-510b-4dfb-ae2e-f5c234e7aae2");
+			public const string VideoFieldName = "Video";
+			
+					
+			public static readonly ID YearsFieldId = new ID("eb2d8d5b-6335-44d6-9237-6aa5ce248871");
+			public const string YearsFieldName = "Years";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// Video_Item
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/Listing/Video Item</para>	
+	/// <para>ID: af5d11d7-f83a-4d16-8747-d92f6f873071</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IVideo_ItemConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IVideo_Item))]
+	public partial class Video_Item  : GlassBase, IVideo_Item 
+	{
+	   
+						/// <summary>
+				/// The Categories field.
+				/// <para></para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: fba4c0e5-44e0-4e57-9611-4ab5dc370f9c</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_ItemConstants.CategoriesFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category> Categories  {get; set;}
+					
+						/// <summary>
+				/// The Image field.
+				/// <para>Video Thumbnail Image</para>
+				/// <para>Field Type: Image</para>		
+				/// <para>Field ID: e6ae526a-fa8b-4b69-a0d1-277162d7fa7f</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IImage_Item</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_ItemConstants.ImageFieldName)]
+				public virtual Image Image  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 162b4dcb-8aeb-4385-b1ac-d8a9256b775e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_ItemConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
+						/// <summary>
+				/// The Video field.
+				/// <para>Youtube Url</para>
+				/// <para>Field Type: General Link</para>		
+				/// <para>Field ID: f89f4f46-510b-4dfb-ae2e-f5c234e7aae2</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IVideo_Item</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_ItemConstants.VideoFieldName)]
+				public virtual Link Video  {get; set;}
+					
+						/// <summary>
+				/// The Years field.
+				/// <para></para>
+				/// <para>Field Type: Droplist</para>		
+				/// <para>Field ID: eb2d8d5b-6335-44d6-9237-6aa5ce248871</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.IYear_Item</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_ItemConstants.YearsFieldName)]
+				public virtual string Years  {get; set;}
 					
 			
 	}
@@ -6380,6 +7733,152 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 	public partial class _StatisticsFolder  : GlassBase, I_StatisticsFolder 
 	{
 	   
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
+{
+
+
+ 	/// <summary>
+	/// I_Album Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Listing/_Album</para>	
+	/// <para>ID: c251d853-d87d-4d4f-a4de-7f49bf6aa059</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_AlbumConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Album : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_PageIntro
+	{
+								/// <summary>
+					/// The Categories field.
+					/// <para></para>
+					/// <para>Field Type: Multilist</para>		
+					/// <para>Field ID: bfdb03bc-9cee-46ca-97d1-d69de8c617c7</para>
+					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category</para>
+					/// </summary>
+					[SitecoreField(I_AlbumConstants.CategoriesFieldName)]
+					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category> Categories  {get; set;}
+			
+								/// <summary>
+					/// The Images field.
+					/// <para></para>
+					/// <para>Field Type: Multilist</para>		
+					/// <para>Field ID: 97aa0dcc-10c4-473c-9ca9-39bd77a50ce9</para>
+					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IImage_Item</para>
+					/// </summary>
+					[SitecoreField(I_AlbumConstants.ImagesFieldName)]
+					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IImage_Item> Images  {get; set;}
+			
+								/// <summary>
+					/// The Years field.
+					/// <para></para>
+					/// <para>Field Type: Droplist</para>		
+					/// <para>Field ID: 15e6fbe8-cdd0-4ccb-8295-3097ca4f3e71</para>
+					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.IYear_Item</para>
+					/// </summary>
+					[SitecoreField(I_AlbumConstants.YearsFieldName)]
+					string Years  {get; set;}
+			
+				}
+
+
+	public static partial class I_AlbumConstants{
+
+			public const string TemplateIdString = "c251d853-d87d-4d4f-a4de-7f49bf6aa059";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_Album";
+
+					
+			public static readonly ID CategoriesFieldId = new ID("bfdb03bc-9cee-46ca-97d1-d69de8c617c7");
+			public const string CategoriesFieldName = "Categories";
+			
+					
+			public static readonly ID ImagesFieldId = new ID("97aa0dcc-10c4-473c-9ca9-39bd77a50ce9");
+			public const string ImagesFieldName = "Images";
+			
+					
+			public static readonly ID YearsFieldId = new ID("15e6fbe8-cdd0-4ccb-8295-3097ca4f3e71");
+			public const string YearsFieldName = "Years";
+			
+					
+			public static readonly ID DescriptionFieldId = new ID("0cba5220-aa8b-4f75-bcd6-68000b38d8c1");
+			public const string DescriptionFieldName = "Description";
+			
+					
+			public static readonly ID TitleFieldId = new ID("e98bf0cb-57fb-4353-9c23-1ad8d5961f2d");
+			public const string TitleFieldName = "Title";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _Album
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Listing/_Album</para>	
+	/// <para>ID: c251d853-d87d-4d4f-a4de-7f49bf6aa059</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_AlbumConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Album))]
+	public partial class _Album  : GlassBase, I_Album 
+	{
+	   
+						/// <summary>
+				/// The Categories field.
+				/// <para></para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: bfdb03bc-9cee-46ca-97d1-d69de8c617c7</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_AlbumConstants.CategoriesFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category> Categories  {get; set;}
+					
+						/// <summary>
+				/// The Images field.
+				/// <para></para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: 97aa0dcc-10c4-473c-9ca9-39bd77a50ce9</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IImage_Item</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_AlbumConstants.ImagesFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IImage_Item> Images  {get; set;}
+					
+						/// <summary>
+				/// The Years field.
+				/// <para></para>
+				/// <para>Field Type: Droplist</para>		
+				/// <para>Field ID: 15e6fbe8-cdd0-4ccb-8295-3097ca4f3e71</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.IYear_Item</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_AlbumConstants.YearsFieldName)]
+				public virtual string Years  {get; set;}
+					
+						/// <summary>
+				/// The Description field.
+				/// <para></para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: 0cba5220-aa8b-4f75-bcd6-68000b38d8c1</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_AlbumConstants.DescriptionFieldName)]
+				public virtual string Description  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: e98bf0cb-57fb-4353-9c23-1ad8d5961f2d</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_AlbumConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
 			
 	}
 }
@@ -7604,6 +9103,152 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 			
 	}
 }
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
+{
+
+
+ 	/// <summary>
+	/// I_VideoAlbum Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Listing/_VideoAlbum</para>	
+	/// <para>ID: e478e750-db99-4c05-b03d-8046fd11f5a6</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_VideoAlbumConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_VideoAlbum : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_PageIntro
+	{
+								/// <summary>
+					/// The Categories field.
+					/// <para></para>
+					/// <para>Field Type: Multilist</para>		
+					/// <para>Field ID: 4b7178ea-4352-4d1f-a98f-81feb23895af</para>
+					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category</para>
+					/// </summary>
+					[SitecoreField(I_VideoAlbumConstants.CategoriesFieldName)]
+					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category> Categories  {get; set;}
+			
+								/// <summary>
+					/// The Videos field.
+					/// <para></para>
+					/// <para>Field Type: Multilist</para>		
+					/// <para>Field ID: 3981764a-8ec5-44d2-8500-09086145aa97</para>
+					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IVideo_Item</para>
+					/// </summary>
+					[SitecoreField(I_VideoAlbumConstants.VideosFieldName)]
+					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IVideo_Item> Videos  {get; set;}
+			
+								/// <summary>
+					/// The Years field.
+					/// <para></para>
+					/// <para>Field Type: Droplist</para>		
+					/// <para>Field ID: 45f9a9b2-5213-41a8-954e-6b900355dec5</para>
+					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.IYear_Item</para>
+					/// </summary>
+					[SitecoreField(I_VideoAlbumConstants.YearsFieldName)]
+					string Years  {get; set;}
+			
+				}
+
+
+	public static partial class I_VideoAlbumConstants{
+
+			public const string TemplateIdString = "e478e750-db99-4c05-b03d-8046fd11f5a6";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_VideoAlbum";
+
+					
+			public static readonly ID CategoriesFieldId = new ID("4b7178ea-4352-4d1f-a98f-81feb23895af");
+			public const string CategoriesFieldName = "Categories";
+			
+					
+			public static readonly ID VideosFieldId = new ID("3981764a-8ec5-44d2-8500-09086145aa97");
+			public const string VideosFieldName = "Videos";
+			
+					
+			public static readonly ID YearsFieldId = new ID("45f9a9b2-5213-41a8-954e-6b900355dec5");
+			public const string YearsFieldName = "Years";
+			
+					
+			public static readonly ID DescriptionFieldId = new ID("0cba5220-aa8b-4f75-bcd6-68000b38d8c1");
+			public const string DescriptionFieldName = "Description";
+			
+					
+			public static readonly ID TitleFieldId = new ID("e98bf0cb-57fb-4353-9c23-1ad8d5961f2d");
+			public const string TitleFieldName = "Title";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _VideoAlbum
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Listing/_VideoAlbum</para>	
+	/// <para>ID: e478e750-db99-4c05-b03d-8046fd11f5a6</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_VideoAlbumConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_VideoAlbum))]
+	public partial class _VideoAlbum  : GlassBase, I_VideoAlbum 
+	{
+	   
+						/// <summary>
+				/// The Categories field.
+				/// <para></para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: 4b7178ea-4352-4d1f-a98f-81feb23895af</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_VideoAlbumConstants.CategoriesFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category> Categories  {get; set;}
+					
+						/// <summary>
+				/// The Videos field.
+				/// <para></para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: 3981764a-8ec5-44d2-8500-09086145aa97</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IVideo_Item</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_VideoAlbumConstants.VideosFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IVideo_Item> Videos  {get; set;}
+					
+						/// <summary>
+				/// The Years field.
+				/// <para></para>
+				/// <para>Field Type: Droplist</para>		
+				/// <para>Field ID: 45f9a9b2-5213-41a8-954e-6b900355dec5</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.IYear_Item</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_VideoAlbumConstants.YearsFieldName)]
+				public virtual string Years  {get; set;}
+					
+						/// <summary>
+				/// The Description field.
+				/// <para></para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: 0cba5220-aa8b-4f75-bcd6-68000b38d8c1</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_VideoAlbumConstants.DescriptionFieldName)]
+				public virtual string Description  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: e98bf0cb-57fb-4353-9c23-1ad8d5961f2d</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_VideoAlbumConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
+			
+	}
+}
 namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types
 {
 
@@ -7756,6 +9401,77 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_TitleDescConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing
+{
+
+
+ 	/// <summary>
+	/// IImage_Item Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/Listing/Image Item</para>	
+	/// <para>ID: e669e6de-8064-4126-bdb7-1a12757a1a90</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IImage_ItemConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IImage_Item : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing.I_Image_Item
+	{
+				}
+
+
+	public static partial class IImage_ItemConstants{
+
+			public const string TemplateIdString = "e669e6de-8064-4126-bdb7-1a12757a1a90";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "Image Item";
+
+					
+			public static readonly ID ImageFieldId = new ID("515bd529-7017-4402-a1a0-b8158722cf74");
+			public const string ImageFieldName = "Image";
+			
+					
+			public static readonly ID TitleFieldId = new ID("068bccbe-353f-42a5-bf99-1b72c328dbc6");
+			public const string TitleFieldName = "Title";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// Image_Item
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/Listing/Image Item</para>	
+	/// <para>ID: e669e6de-8064-4126-bdb7-1a12757a1a90</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IImage_ItemConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IImage_Item))]
+	public partial class Image_Item  : GlassBase, IImage_Item 
+	{
+	   
+						/// <summary>
+				/// The Image field.
+				/// <para></para>
+				/// <para>Field Type: Image</para>		
+				/// <para>Field ID: 515bd529-7017-4402-a1a0-b8158722cf74</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IImage_ItemConstants.ImageFieldName)]
+				public virtual Image Image  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 068bccbe-353f-42a5-bf99-1b72c328dbc6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IImage_ItemConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
 					
 			
@@ -8128,6 +9844,72 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IStatisticsConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
+					
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types
+{
+
+
+ 	/// <summary>
+	/// I_Year Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Content Types/_Year</para>	
+	/// <para>ID: f7e84cee-848c-4f51-9155-d744e57d7cf9</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_YearConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Year : IGlassBase 
+	{
+								/// <summary>
+					/// The Year field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: 82745daf-1798-4b90-936b-966a373e6a50</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_YearConstants.YearFieldName)]
+					string Year  {get; set;}
+			
+				}
+
+
+	public static partial class I_YearConstants{
+
+			public const string TemplateIdString = "f7e84cee-848c-4f51-9155-d744e57d7cf9";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_Year";
+
+					
+			public static readonly ID YearFieldId = new ID("82745daf-1798-4b90-936b-966a373e6a50");
+			public const string YearFieldName = "Year";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _Year
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Content Types/_Year</para>	
+	/// <para>ID: f7e84cee-848c-4f51-9155-d744e57d7cf9</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_YearConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Year))]
+	public partial class _Year  : GlassBase, I_Year 
+	{
+	   
+						/// <summary>
+				/// The Year field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 82745daf-1798-4b90-936b-966a373e6a50</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_YearConstants.YearFieldName)]
+				public virtual string Year  {get; set;}
 					
 			
 	}

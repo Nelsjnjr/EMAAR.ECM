@@ -1,16 +1,19 @@
 ﻿using Newtonsoft.Json;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.SearchTypes;
+using System;
+using System.Collections.Generic;
 
 namespace EMAAR.ECM.Foundation.Search.Models
 {
     /// <summary>
     /// ListingSearchResultItem class definition
     /// </summary>
+    [Serializable]
     public class ListingSearchResultItem : SearchResultItem
     {
         [JsonProperty]
-        [IndexField("Title")]
+        [IndexField("title")]
         public string title { get; set; }
 
         [JsonProperty]
@@ -22,7 +25,7 @@ namespace EMAAR.ECM.Foundation.Search.Models
         public string date { get; set; }
 
         [JsonProperty]
-        [IndexField("PageURL")]
+        [IndexField("pageurl")]
         public string pageUrl { get; set; }
 
         [JsonProperty]
@@ -30,19 +33,31 @@ namespace EMAAR.ECM.Foundation.Search.Models
         public string imageUrl { get; set; }
 
         [JsonProperty]
-        [IndexField("ImageAltText")]
+        [IndexField("imagealttext")]
         public string imageAlttext { get; set; }
 
         [JsonProperty]
-        [IndexField("externalURL")]
+        [IndexField("externalurl")]
         public string externalURL { get; set; }
 
         [JsonProperty]
-        [IndexField("showPlayIcon")]
+        [IndexField("showplayicon")]
         public bool showPlayIcon { get; set; }
 
 
         [IndexField("Value")]
         public string value { get; set; }
+
+        [JsonProperty]
+        [IndexField("_indexname")]
+        public string IndexName { get; set; }
+
+        
+        [IndexField("images_sm")]
+        public List<string> images { get; set; }
+
+        [IndexField("videos_sm")]
+        public List<string> videos { get; set; }
+
     }
 }

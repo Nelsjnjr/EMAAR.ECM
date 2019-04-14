@@ -5,6 +5,7 @@ var winWidth = $(window).width(),
     languageCode = $('body').attr("lang"),
     pagenumber = $('.loadmore').data('pagenumber'),
     dataPageSize = $('#templateInitializor').data('page-size'),
+	itemId=$('#templateInitializor').data('item-id'),
     total = dataPageSize,
     AjaxUrl = $('#templateInitializor').data('service-url');
     // https://jahanzebsabir.com/service/search/GetImageGalleryJson?pageSize=1&pageNumber=0&filters=”Years:4bde1ee9d4f57a05071a9f343de64|Albums:4bde1ee6659d4f57a05071a9f343de64”
@@ -32,7 +33,7 @@ function getImageGallery(pagination){
         n = 0;
         AjaxUrl = $('#templateInitializor').data('service-url');
     
-    var dataParam = {pageNumber: pagenumber,pageSize:dataPageSize,filter:''};
+    var dataParam = {pageNumber: pagenumber,pageSize:dataPageSize,filter:'',itemId:itemId};
         
     // var JSONurl = AjaxUrl + "?" + yearLabel + "=" + year + "&" + albumLabel + "=" + albums;
     getData.filter(AjaxUrl, pagination, dataParam);
@@ -76,10 +77,43 @@ function getImageGalleryOnChange(pagination){
     filterParam = {
         pageNumber:chkPagi,
         pageSize:dataPageSize,
-        filter: filterParam
+        filter: filterParam,
+		itemId:itemId
     };
 
     getData.results(AjaxUrl, pagination, filterParam);
+}
+
+function getImageGalleryOnLoad(pagination){
+    var parameterlabel= [],
+        n = 0,
+        filterParam = '';
+        AjaxUrl = $('#templateInitializor').data('service-url');
+
+    $('.filters-support').each(function(){
+        var $this = $(this);
+        var $value = $this.val();
+        parameterlabel[n] = {Label: $this.data('label'), Value: $value};
+        n++;
+    });
+
+    // console.log(parameterlabel);
+    
+    if (parameterlabel.length) {
+        for(index in parameterlabel) {
+            var sep = index == 0 ? '' : '|';
+            filterParam +=  sep+parameterlabel[index].Label + ':'+ parameterlabel[index].Value;
+        }
+    }
+    
+    var chkPagi = pagination ? pagination : pagenumber;
+    filterParam = {
+        pageNumber:chkPagi,
+        pageSize:dataPageSize,
+        filter: filterParam
+    };
+
+    getData.resultsLoad(AjaxUrl, pagination, filterParam);
 }
 
 function loadMore() {
@@ -88,7 +122,7 @@ function loadMore() {
         if ((total * (pagenumber+1)) < datatotalcount) {
             pagenumber += 1;
             $('.loadmore').attr('data-pagenumber', pagenumber);
-            getImageGalleryOnChange(); 
+            getImageGalleryOnLoad(); 
         }
     });
 }

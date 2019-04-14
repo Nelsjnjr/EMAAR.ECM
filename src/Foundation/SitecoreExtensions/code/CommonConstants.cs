@@ -38,21 +38,21 @@
         /// All Site javascripts files path
         /// </summary>
         public static string[] AllSiteJavascriptsFilePaths => new string[] {
-            "~/Assets/Project/ECM/js/vendor/jquery/jquery.js",
-            "~/Assets/Project/ECM/js/vendor/jquery/jquery.counterup.min.js",
-            "~/Assets/Project/ECM/js/vendor/jquery/jquery-ui.min.js",
-            "~/Assets/Project/ECM/js/vendor/jquery/jquery.scrollTo-1.4.2-min.js",
-            "~/Assets/Project/ECM/js/vendor/jquery/jquery.validate*",
+            "~/Assets/Project/ECM/js/vendor/jquery/*.js",
             "~/Assets/Project/ECM/js/vendor/bootstrap/bootstrap.js",
             "~/Assets/Project/ECM/js/vendor/common/*.js",
-            "~/Assets/Project/ECM/js/application/app.js",
-            "~/Assets/Project/ECM/js/application/main.js"
+            "~/Assets/Project/ECM/js/application/*.js",           
         };
         #region Search
         /// <summary>
         /// Index Language field
         /// </summary>
         public static string Language { get; } = "_language";
+
+        /// <summary>
+        /// Index Template ID field
+        /// </summary>
+        public static string TemplateID { get; } = "_template";
 
         /// <summary>
         /// Index Latest version field
@@ -101,6 +101,47 @@
         /// </summary>
         public const string DefaultIndexNamePrefix = "sitecore";
 
+        /// <summary>
+        /// Year Facet Field
+        /// </summary>
+        public const string YearFacetField = "years";
+
+        /// <summary>
+        /// Categories Facet Field
+        /// </summary>
+        public const string CategoriesFacetField = "categories";
+
+
+        /// <summary>
+        /// Image Album Page Template ID
+        /// </summary>
+        public const string ImageAlbumPageTemplateID = "{5E7F38ED-D38C-4EA8-8DBD-D3606F4E1E08}";
+
+        /// <summary>
+        /// Video Album Page Template ID
+        /// </summary>
+        public const string VideoAlbumPageTemplateID = "{2C088140-3A80-4CB7-9E80-198AFCB01574}";
+
+        /// <summary>
+        /// Image Item Template ID
+        /// </summary>
+        public const string ImageItemTemplateID = "{E669E6DE-8064-4126-BDB7-1A12757A1A90}";
+
+        /// <summary>
+        /// Video Item Template ID
+        /// </summary>
+        public const string VideoItemTemplateID = "{AF5D11D7-F83A-4D16-8747-D92F6F873071}";
+
+        /// <summary>
+        /// All Years dictionary key
+        /// </summary>
+        public const string AllYearsKey = "AllYears";
+
+
+        /// <summary>
+        /// All Categories dictionary key
+        /// </summary>
+        public const string AllCategoriesKey = "AllCategories";
         #endregion
 
         #endregion;

@@ -13,6 +13,9 @@ using System.Linq.Expressions;
 
 namespace EMAAR.ECM.Foundation.Search.Services
 {
+    /// <summary>
+    /// SearchManager class definition.
+    /// </summary>
 
     [Service(typeof(ISearchManager))]
     public class SearchManager : ISearchManager
@@ -59,10 +62,10 @@ namespace EMAAR.ECM.Foundation.Search.Services
             SearchResultsGeneric<T> searchResults = new SearchResultsGeneric<T>();
 
             if (pageNo == -1 && pageSize == -1)
-                searchResults.results = new Results<T>() { results = searchQuery.ToList(), totalcount = searchQuery.GetResults().Count() };
+                searchResults.results = new Results<T>() { results = searchQuery.ToList(), Totalcount = searchQuery.GetResults().Count() };
             else
             {
-                searchResults.results = new Results<T>() { results = searchQuery.Page(pageNo,pageSize).ToList(), totalcount = searchQuery.GetResults().Count() };
+                searchResults.results = new Results<T>() { results = searchQuery.Page(pageNo,pageSize).ToList(), Totalcount = searchQuery.GetResults().Count() };
             }
             List<string> itemIdsList = new List<string>();
             if (facets != null && facets.Categories != null && facets.Categories.Any())
@@ -83,11 +86,7 @@ namespace EMAAR.ECM.Foundation.Search.Services
                         filterValuesList.Add(new FilterValues() { id = val.Name, label = val.Name });
                     }
 
-                    if (facetFields.Any(x => (x.facetField.Equals(category.Name) &&  !string.IsNullOrEmpty(x.allLabel))))
-                    {
-                        var label = facetFields.SingleOrDefault(x => (x.facetField.Equals(category.Name))).allLabel;
-                        filterValuesList.Insert(0, new FilterValues() { id = CommonConstants.AllValue, label = label });
-                    }
+                 
                     filters.Add(new Filters() { filterLabel = category.Name, filterValues = filterValuesList });
                 }
 
@@ -104,7 +103,24 @@ namespace EMAAR.ECM.Foundation.Search.Services
                         }
                     }
 
-                }
+                    if (filter.filterLabel.Equals("year"))
+                    {
+                        filter.filterValues = filter.filterValues.OrderByDescending(x => Convert.ToInt32(x.label)).ToList();
+                    }
+                    else
+                    {
+                        filter.filterValues = filter.filterValues.OrderBy(x=>x.label).ToList();
+                    }
+
+
+                    if (facets.Categories.Any(x=>x.Name.ToLower().Equals(filter.filterLabel.ToLower())))
+                    {
+                        var label = facetFields.SingleOrDefault(x => (x.facetField.Equals(facets.Categories.SingleOrDefault(y => y.Name.ToLower().Equals(filter.filterLabel.ToLower())).Name))).allLabel;
+                        filter.filterValues.Insert(0, new FilterValues() { id = CommonConstants.AllValue, label = label });
+                    }
+
+               }
+
                 searchResults.filters = filters;
             }
 
@@ -141,7 +157,7 @@ namespace EMAAR.ECM.Foundation.Search.Services
 
                 SearchResultsGeneric<ListingSearchResultItem> resultsPayload = GetSearchResults<ListingSearchResultItem>(searchFilters);
 
-                if (resultsPayload != null && resultsPayload.results.totalcount > 0)
+                if (resultsPayload != null && resultsPayload.results.Totalcount > 0)
                 {
                     foreach (ListingSearchResultItem result in resultsPayload.results.results)
                     {

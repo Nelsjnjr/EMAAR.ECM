@@ -1,34 +1,41 @@
 ----item----
 version: 1
-id: {9E85171E-6DF1-4E6A-830F-485CA5D53E05}
+id: {02DA552B-5E65-4CDC-9F6C-1834B65DF820}
 database: master
-path: /sitecore/media library/Foundation/ECM/DowntownDubai
-parent: {2C7DF383-5D7E-4CD5-8A6B-42975FF6EF78}
-name: DowntownDubai
+path: /sitecore/templates/Feature/ECM/Listing/_Album/__Standard Values
+parent: {C251D853-D87D-4D4F-A4DE-7F49BF6AA059}
+name: __Standard Values
 master: {00000000-0000-0000-0000-000000000000}
-template: {FE5DD826-48C6-436D-B87A-7C4210C7413B}
-templatekey: Media folder
-created: 20190325T132704Z
+template: {C251D853-D87D-4D4F-A4DE-7F49BF6AA059}
+templatekey: _Album
+created: 20190407T072028Z
 
-----field----
-field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
-name: __Icon
-key: __icon
-content-length: 23
-
-network/16x16/earth.png
 ----version----
 language: en
 version: 1
-revision: abfff01f-e28a-4926-9f04-73f788c3398b
+revision: 7aaf83d2-e670-48c8-93e5-a21868eea711
 
+----field----
+field: {E98BF0CB-57FB-4353-9C23-1AD8D5961F2D}
+name: Title
+key: title
+content-length: 5
+
+$name
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20190325T132704Z
+20190407T072028Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -42,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-abfff01f-e28a-4926-9f04-73f788c3398b
+7aaf83d2-e670-48c8-93e5-a21868eea711
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190325T132726Z
+20190407T072034Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

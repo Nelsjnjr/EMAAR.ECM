@@ -177,12 +177,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Config\Include\Foundation\ECM\Search\EMAAR.ECM.Foundation.Search.config" />
+    <Content Include="App_Config\Include\Foundation\ECM\Search\EMAAR.ECM.Foundation.Search.Master.Index.config" />
+    <None Include="App_Config\Include\Foundation\ECM\Search\EMAAR.ECM.Foundation.Search.Web.Index.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComputedFields\ImageUrl.cs" />
+    <Compile Include="ComputedFields\PageUrl.cs" />
     <Compile Include="Helpers\SearchHelper.cs" />
-    <Compile Include="Interfaces\ISearchManager.cs" />
+    <Compile Include="Interface\ISearchManager.cs" />
     <Compile Include="Models\Facet.cs" />
     <Compile Include="Models\ListingSearchResultItem.cs" />
     <Compile Include="Models\SearchCondition.cs" />

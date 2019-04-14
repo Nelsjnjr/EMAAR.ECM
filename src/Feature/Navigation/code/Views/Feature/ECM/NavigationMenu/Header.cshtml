@@ -8,13 +8,28 @@
 <header class="@Model.HeaderCss">
     <div class="container">
         <div class="flexBox">
-            @if (Model.Header != null && Model.Header.SiteRoot != null && Model.Header.SiteRoot.Site_Logo != null)
-            {
-                using (Html.Glass().BeginRenderLink(Model.Header.SiteRoot, x => x.Site_Logo_Url, new { @class = "siteLogo" }, isEditable: true))
+            @{ if (Model.IsHomePage)
                 {
-                    @Html.Glass().RenderImage(Model.Header.SiteRoot, x => x.Site_Logo, new { alt = !String.IsNullOrEmpty(Model.Header.SiteRoot.Site_Logo.Alt) ? Model.Header.SiteRoot.Site_Logo.Alt : "image" }, isEditable: true)
+                    if (Model.Header != null && Model.Header.SiteRoot != null && Model.Header.SiteRoot.Site_Logo != null)
+                    {
+                        using (Html.Glass().BeginRenderLink(Model.Header.SiteRoot, x => x.Site_Logo_Url, new { @class = "siteLogo" }, isEditable: true))
+                        {
+                            @Html.Glass().RenderImage(Model.Header.SiteRoot, x => x.Site_Logo, new { alt = !String.IsNullOrEmpty(Model.Header.SiteRoot.Site_Logo.Alt) ? Model.Header.SiteRoot.Site_Logo.Alt : "image" }, isEditable: true)
+                        }
+                    }
+                }
+                else
+                {
+                    if (Model.Header != null && Model.Header.SiteRoot != null && Model.Header.SiteRoot.ContentPage_SiteLogo != null)
+                    {
+                        using (Html.Glass().BeginRenderLink(Model.Header.SiteRoot, x => x.Site_Logo_Url, new { @class = "siteLogo" }, isEditable: true))
+                        {
+                            @Html.Glass().RenderImage(Model.Header.SiteRoot, x => x.ContentPage_SiteLogo, new { alt = !String.IsNullOrEmpty(Model.Header.SiteRoot.ContentPage_SiteLogo.Alt) ? Model.Header.SiteRoot.ContentPage_SiteLogo.Alt : "image" }, isEditable: true)
+                        }
+                    }
                 }
             }
+
             <nav class="siteNavigation">
                 <ul>
                     @{
@@ -87,9 +102,9 @@
                     }
                 </ul>
                 <aside class="siteSearch js-sOnTrigger">
-                    @{ 
+                    @{
                         var searchPage = string.Empty;
-                        if ( Model.Header!=null && Model.Header.SiteRoot!=null && Model.Header.SiteRoot.Search_Page!=null)
+                        if (Model.Header != null && Model.Header.SiteRoot != null && Model.Header.SiteRoot.Search_Page != null)
                         {
                             searchPage = Model.Header.SiteRoot.Search_Page.Url;
                         }
@@ -162,3 +177,8 @@
     <!-- siteLogin ends here -->
 </header>
 <!-- Header ends here -->
+@{ if (!Model.IsHomePage)
+    {
+        <div class="headerSpace"></div>
+    }
+}

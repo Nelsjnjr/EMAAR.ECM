@@ -8,6 +8,7 @@ namespace EMAAR.ECM.Foundation.Search.Models
     public class SearchResultsGeneric<T>
     {
         #region properties
+        
         public List<Filters> filters { get; set; }
         public Results<T> results { get; set; }
         #endregion
@@ -19,7 +20,7 @@ namespace EMAAR.ECM.Foundation.Search.Models
     public class Results<T>
     {
         #region properties
-        public int totalcount { get; set; }
+        public int Totalcount { get; set; }
         public List<T> results { get; set; }
         #endregion
     }

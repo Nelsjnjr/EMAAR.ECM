@@ -1,0 +1,87 @@
+----item----
+version: 1
+id: {E0B23F14-9445-4143-A17B-7EDF8B6D5365}
+database: master
+path: /sitecore/templates/Project/ECM/Page Types/Image Album/__Standard Values
+parent: {5E7F38ED-D38C-4EA8-8DBD-D3606F4E1E08}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {5E7F38ED-D38C-4EA8-8DBD-D3606F4E1E08}
+templatekey: Image Album
+created: 20190403T124758Z
+
+----field----
+field: {44195A16-B523-44EF-B2FD-6304B28E16FB}
+name: No of Records
+key: no of records
+content-length: 1
+
+9
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 32
+
+Multimedia/32x32/new_image_h.png
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{E669E6DE-8064-4126-BDB7-1A12757A1A90}
+----version----
+language: en
+version: 1
+revision: e669ef11-b9ba-4cca-8e6d-090263bd4e8f
+
+----field----
+field: {E98BF0CB-57FB-4353-9C23-1AD8D5961F2D}
+name: Title
+key: title
+content-length: 5
+
+$name
+----field----
+field: {FE683723-D22F-4A7E-A074-7E3BAB2817C4}
+name: Load More Label
+key: load more label
+content-length: 9
+
+Load More
+----field----
+field: {FD8D09C0-26C9-4C9B-BA05-8D4621A0F1F3}
+name: Error Message
+key: error message
+content-length: 24
+
+Images are not available
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190403T124758Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e669ef11-b9ba-4cca-8e6d-090263bd4e8f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190409T140553Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
