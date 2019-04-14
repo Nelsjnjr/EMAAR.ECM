@@ -20,6 +20,9 @@ namespace EMAAR.ECM.Project.Website.Pipelines
         /// <param name="bundles">javascript bundle</param>
         private void RegisterBundles(BundleCollection bundles)
         {
+            bundles.UseCdn = true;
+
+            bundles.Add(new ScriptBundle(CommonConstants.JqueryBundleName).Include(CommonConstants.AllJqueryPaths));
             bundles.Add(new ScriptBundle(CommonConstants.JavascriptBundleName).Include(CommonConstants.AllSiteJavascriptsFilePaths));
             #if DEBUG
                 //Developer can see individual javascripts

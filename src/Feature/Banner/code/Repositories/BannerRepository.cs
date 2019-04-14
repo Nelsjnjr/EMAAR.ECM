@@ -68,6 +68,17 @@ namespace EMAAR.ECM.Feature.Banner.Repositories
             IHomepage_Carousels homepage_Carousels  = mvcContext.GetDataSourceItem<IHomepage_Carousels>();
             return homepage_Carousels ?? _homepage_Carousels;
         }
+
+        /// <summary>
+        /// Getting all Home Carousel component asigned in Sitecore with the Background CSS (eg:explore)
+        /// </summary>
+        /// <returns>Related Pages content Slides details</returns>
+        public IHomepage_Carousels RelatedPages()
+        {
+            IMvcContext mvcContext = _mvcContext();
+            IHomepage_Carousels homepage_Carousels = mvcContext.GetDataSourceItem<IHomepage_Carousels>();
+            return homepage_Carousels ?? _homepage_Carousels;
+        }
         /// <summary>
         /// Getting all Hero component asigned in Sitecore on field (Hero Metrics)
         /// </summary>

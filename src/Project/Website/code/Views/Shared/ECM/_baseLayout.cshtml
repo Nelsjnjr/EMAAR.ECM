@@ -16,8 +16,10 @@
     @Html.Sitecore().Placeholder("ecm_header")
     @Html.Sitecore().Placeholder("ecm_content")
     @Html.Sitecore().Placeholder("ecm_footer")
-    
-    @Scripts.Render("~/bundles/scripts")   
+
+    @Scripts.Render("~/bundles/jquery")
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    @Scripts.Render("~/bundles/scripts")
     <!--Start Page Post site scripts-->
     @Html.Raw(Model.SiteRoot.Post_Site_Scripts)
     <!--End Page Post site scripts-->

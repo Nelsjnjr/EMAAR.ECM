@@ -18,10 +18,15 @@ namespace EMAAR.ECM.Feature.Banner.Interfaces
         IImageText GetImageText();
         IParallax GetParallax();
         /// <summary>
-        /// Getting all related component asigned in Sitecore with the Background CSS (eg:explore)
+        /// Getting all related component asigned in Sitecore 
         /// </summary>
         /// <returns>Related content details</returns>
         IHomepage_Carousels HomePageCarousels();
+        /// <summary>
+        /// Getting all related component asigned in Sitecore 
+        /// </summary>
+        /// <returns>Related content details</returns>
+        IHomepage_Carousels RelatedPages();
         /// <summary>
         /// Getting all HeroBanner component asigned in Sitecore on field (Hero Community Metrics)
         /// </summary>

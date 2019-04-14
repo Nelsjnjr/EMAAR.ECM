@@ -55,6 +55,15 @@ namespace EMAAR.ECM.Feature.Banner.Controllers
             return View($"{ViewPath}Banner/HomePageCarousel/HomePageCarousel.cshtml", homepage_CarouselList);
         }
         /// <summary>
+        /// Getting all related component asigned in Sitecore with the Background CSS (eg:explore)
+        /// </summary>  
+        /// <returns>Relatedcontent list</returns>
+        public ActionResult RelatedPages()
+        {
+            IHomepage_Carousels homepage_CarouselList = _bannerRepository.RelatedPages();
+            return View($"{ViewPath}Banner/RelatedPages/RelatedPages.cshtml", homepage_CarouselList);
+        }
+        /// <summary>
         ///  Getting all Hero Banner asigned in Sitecore 
         /// </summary>
         /// <returns>HeroBannerList</returns>
