@@ -18079,7 +18079,7 @@ footer {
     right: 0 !important;
     left: 0 !important;
     bottom: 0 !important;
-    position: absolute !important;
+    position: fixed !important;
     background-color: #000 !important;
     width: 100% !important;
     height: 100% !important;
