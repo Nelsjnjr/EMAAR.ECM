@@ -105,16 +105,16 @@ var getData = (function ($) {
                     template2 = Handlebars.compile(source2);
                     
                     $('.spinner').remove();
-                    for (var j = 0; dataPageSize > j && j <= data.results.Totalcount; j++){
+                    for (var j = 0; dataPageSize > j && j <= data.results.Totalcount && j < data.results.results.length; j++){
                         $(resultDiv).append(template2(data.results.results[j]));
                     }
-                    _fancyboxImage();
+                    
                     if (data.results != null && (dataPageSize * (parseInt(pageNumber) + 1)) < data.results.Totalcount) {
                         $(".loadmore").css({'display': 'inline-block'});
                     } else {
                         $(".loadmore").hide();
                     }
-                
+                    _fancyboxImage();
                 } else {
                     $('.spinner').remove();
                     var source = $(tempDiv).html(),
@@ -151,7 +151,7 @@ var getData = (function ($) {
             pageNumber = $('.loadmore').attr('data-pagenumber');
         var dataPageSize = $('#templateInitializor').data('page-size');
         
-        $("#filter-template-result").html(spinner);
+        $("#filter-template-result").append(spinner);
         pageNumber = pagination ? pagination : pageNumber;
         $.ajax({
             type: "POST",
@@ -165,8 +165,8 @@ var getData = (function ($) {
                     template2 = Handlebars.compile(source2);
                     
                     $('.spinner').remove();
-                    console.log(dataPageSize * (parseInt(pageNumber)+1));
-                    for (var j = 0; j < (dataPageSize * (parseInt(pageNumber)+1)) && j < data.results.Totalcount; j++){
+                    
+                    for (var j = 0; j < data.results.Totalcount && j < data.results.results.length; j++){
                         $(resultDiv).append(template2(data.results.results[j]));
                     }
                     _fancyboxImage();
@@ -239,9 +239,11 @@ var getData = (function ($) {
                         var source2 = $(galleryTemp).html(),
                             template2 = Handlebars.compile(source2);
                             $('.spinner').remove();
-                            for (var j = 0; j < data.results.Totalcount && j < dataPageSize; j++){
+                            
+                            for (var j = 0; j < data.results.Totalcount && j < dataPageSize && j < data.results.results.length; j++){
                                 $(resultDiv).append(template2(data.results.results[j]));
                             }
+                            
                             if (data.results != null && (dataPageSize * (pageNumber + 1)) < data.results.Totalcount) {
                                 $(".loadmore").css({'display': 'inline-block'});
                                 // $(".loadmore").attr({ "data-pagenumber": 1 });

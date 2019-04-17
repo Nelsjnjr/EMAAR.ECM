@@ -1352,7 +1352,7 @@ button.swiper-pagination-bullet {
 }
 
 #fancybox-loading, .fancybox-close, .fancybox-next span, .fancybox-prev span {
-    background-image: url(../css/fancybox/fancybox_sprite.png)
+    background-image: url(/Assets/Project/ECM/css/fancybox/fancybox_sprite.png)
 }
 
 #fancybox-loading {
@@ -1370,7 +1370,7 @@ button.swiper-pagination-bullet {
     #fancybox-loading div {
         width: 44px;
         height: 44px;
-        background: url(../css/fancybox/fancybox_loading.gif) center center no-repeat
+        background: url(/Assets/Project/ECM/css/fancybox/fancybox_loading.gif) center center no-repeat
     }
 
 .fancybox-close {
@@ -1390,7 +1390,7 @@ button.swiper-pagination-bullet {
     height: 100%;
     cursor: pointer;
     text-decoration: none;
-    background: transparent url(../css/fancybox/blank.gif);
+    background: transparent url(/Assets/Project/ECM/css/fancybox/blank.gif);
     -webkit-tap-highlight-color: transparent;
     z-index: 8040
 }
@@ -1458,7 +1458,7 @@ button.swiper-pagination-bullet {
     overflow: hidden;
     display: none;
     z-index: 8010;
-    background: url(../css/fancybox/fancybox_overlay.png)
+    background: url(/Assets/Project/ECM/css/fancybox/fancybox_overlay.png)
 }
 
 .fancybox-overlay-fixed {
@@ -1531,12 +1531,12 @@ button.swiper-pagination-bullet {
 
 @media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5) {
     #fancybox-loading, .fancybox-close, .fancybox-next span, .fancybox-prev span {
-        background-image: url(../css/fancybox/fancybox_sprite@2x.png);
+        background-image: url(/Assets/Project/ECM/css/fancybox/fancybox_sprite@2x.png);
         background-size: 44px 152px
     }
 
         #fancybox-loading div {
-            background-image: url(../css/fancybox/fancybox_loading@2x.gif);
+            background-image: url(/Assets/Project/ECM/css/fancybox/fancybox_loading@2x.gif);
             background-size: 24px 24px
         }
 }
@@ -14318,8 +14318,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 @font-face {
     font-family: "Foundry Sans W04 Md";
-    src: url(/Assets/Project/ECM/4f2bf8530c19ba6a7c0e161d71fc65a5.eot);
-    src: url(/Assets/Project/ECM/fonts/4f2bf8530c19ba6a7c0e161d71fc65a5.eot?#iefix) format("embedded-opentype"),url(/Assets/Project/ECM/fonts/4f2bf8530c19ba6a7c0e161d71fc65a5.woff2) format("woff2"),url(/Assets/Project/ECMfonts/4f2bf8530c19ba6a7c0e161d71fc65a5.woff) format("woff"),url(/Assets/Project/ECM/fonts/4f2bf8530c19ba6a7c0e161d71fc65a5.ttf) format("truetype"),url("/Assets/Project/ECM/fonts/4f2bf8530c19ba6a7c0e161d71fc65a5.svg#Foundry Sans W04 Md") format("svg")
+    src: url(/Assets/Project/ECM/fonts/4f2bf8530c19ba6a7c0e161d71fc65a5.eot);
+    src: url(/Assets/Project/ECM/fonts/4f2bf8530c19ba6a7c0e161d71fc65a5.eot?#iefix) format("embedded-opentype"),url(/Assets/Project/ECM/fonts/4f2bf8530c19ba6a7c0e161d71fc65a5.woff2) format("woff2"),url(/Assets/Project/ECM/fonts/4f2bf8530c19ba6a7c0e161d71fc65a5.woff) format("woff"),url(/Assets/Project/ECM/fonts/4f2bf8530c19ba6a7c0e161d71fc65a5.ttf) format("truetype"),url("/Assets/Project/ECM/fonts/4f2bf8530c19ba6a7c0e161d71fc65a5.svg#Foundry Sans W04 Md") format("svg")
 }
 
 @font-face {
@@ -14657,7 +14657,7 @@ p {
         -webkit-transition: .3s all ease-in-out;
         -o-transition: .3s all ease-in-out;
         transition: .3s all ease-in-out;
-        background: url(../../ECM/images/icon/select-arrow.svg) no-repeat center;
+        background: url(/Assets/Project/ECM/images/icon/select-arrow.svg) no-repeat center;
         background-size: 8px 15px
     }
 
@@ -15025,7 +15025,7 @@ p {
                 }
 
                 .siteNavigation.mobileMenu ul li.active a:after {
-                    background: url(../../ECM/images/icon/chevronup.svg) no-repeat right top;
+                    background: url(/Assets/Project/ECM/images/icon/chevronup.svg) no-repeat right top;
                     background-size: 100%
                 }
 
@@ -15036,7 +15036,7 @@ p {
                 }
 
                     .siteNavigation.mobileMenu ul li a:after {
-                        background: url(../../ECM/images/icon/chevron.svg) no-repeat right top;
+                        background: url(/Assets/Project/ECM/images/icon/chevron.svg) no-repeat right top;
                         background-size: 100%;
                         content: '';
                         width: 22px;
@@ -16128,7 +16128,7 @@ button:focus, input:focus {
     }
 
 .exploreSlider .swiper-button-next, .exploreSlider .swiper-container-rtl .swiper-button-prev {
-    background-image: url(../../ECM/images/icon/swiper-right.svg);
+    background-image: url(/Assets/Project/ECM/images/icon/swiper-right.svg);
     right: -50px
 }
 
@@ -16149,7 +16149,7 @@ button:focus, input:focus {
 }
 
 .exploreSlider .swiper-button-prev, .exploreSlider .swiper-container-rtl .swiper-button-next {
-    background-image: url(../../ECM/images/icon/swiper-left.svg);
+    background-image: url(/Assets/Project/ECM/images/icon/swiper-left.svg);
     left: -50px
 }
 
@@ -17983,7 +17983,7 @@ footer {
     }
 
     .search-field-box .submit {
-        background: url(../../ECM/images/icon/search-btn.svg);
+        background: url(/Assets/Project/ECM/images/icon/search-btn.svg);
         background-position-x: 20px;
         background-position-y: 17px;
         background-repeat: no-repeat;
@@ -18079,7 +18079,7 @@ footer {
     right: 0 !important;
     left: 0 !important;
     bottom: 0 !important;
-    position: absolute !important;
+    position: fixed !important;
     background-color: #000 !important;
     width: 100% !important;
     height: 100% !important;
