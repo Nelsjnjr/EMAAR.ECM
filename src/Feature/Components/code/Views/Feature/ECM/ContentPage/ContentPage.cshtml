@@ -26,10 +26,10 @@
                     {
                         <h1 class="heading"> @Html.Glass().Editable(Model, x => x.Title)</h1>
                     }
-                    @if (!String.IsNullOrEmpty(Model.Description))
+                    @if (!String.IsNullOrEmpty(Model.Introduction))
                     {
                         <p>
-                            @Html.Glass().Editable(Model, x => x.Description)
+                            @Html.Glass().Editable(Model, x => x.Introduction)
                         </p>
                     }
                 </div>
@@ -41,75 +41,13 @@
                     </div>
                 }
 
-                <!--Content from RTE-->
-                @if (Sitecore.Context.PageMode.IsExperienceEditor)
+                <!--Start Content from RTE-->
+                @Html.Glass().Editable(Model, x => x.Content)
+                <!--End Content from RTE-->
+                @if (Model.Amenities != null)
                 {
-                    @Html.Glass().Editable(Model, x => x.Content)
+                    @Html.Partial(String.Format("{0}Banner/Amenities/Amenities.cshtml", SitecoreSettings.ViewPath), Model.Amenities)
                 }
-                else
-                {
-                    @Html.Raw(Model.Content.RemoveBreakTags())
-                }
-                <div class="amenitiesBox">
-                    <h2>Amenities</h2>
-                    <ul class="icons-lists">
-                        <li>
-                            <div class="icon">
-                                <img src="../images/icon/amenities/shopping-cart.svg" alt="icon" class="svg">
-                            </div>
-                            <div class="title">Supermarket</div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <img src="../images/icon/amenities/cutlery.svg" alt="icon" class="svg">
-                            </div>
-                            <div class="title">Restaurants</div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <img src="../images/icon/amenities/coffee-cup.svg" alt="icon" class="svg">
-                            </div>
-                            <div class="title">Coffee shops</div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <img src="../images/icon/amenities/Shape.svg" alt="icon" class="svg">
-                            </div>
-                            <div class="title">Dry cleaner</div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <img src="../images/icon/amenities/Pharmacy.svg" alt="icon" class="svg">
-                            </div>
-                            <div class="title">Pharmacy</div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <img src="../images/icon/amenities/book.svg" alt="icon" class="svg">
-                            </div>
-                            <div class="title">Bookstore</div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <img src="../images/icon/amenities/camera-shutter.svg" alt="icon" class="svg">
-                            </div>
-                            <div class="title">Photo studio</div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <img src="../images/icon/amenities/hot-stones.svg" alt="icon" class="svg">
-                            </div>
-                            <div class="title">Beauty salon </div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <img src="../images/icon/amenities/bank.svg" alt="icon" class="svg">
-                            </div>
-                            <div class="title">Banking</div>
-                        </li>
-
-                    </ul>
-                </div>
 
                 <div class="accordion custom-style" id="accordionExample">
                     <div class="accordionWrap">

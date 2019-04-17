@@ -1,0 +1,28 @@
+﻿@model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenities
+@using EMAAR.ECM.Foundation.SitecoreExtensions
+@using Glass.Mapper.Sc.Web.Mvc
+@if (Model != null)
+{
+    <!--Start Amenities-->
+    <div class="amenitiesBox">
+        <h2>   @Sitecore.Globalization.Translate.Text("amenities")</h2>
+        <ul class="icons-lists">
+            @foreach (var amenity in Model.Page_Amenities)
+            {
+                <li>
+                    <div class="icon">
+                        @if (amenity.Image != null)
+                        {
+                            @Html.Glass().RenderImage(amenity, x => x.Image, new { alt = !String.IsNullOrEmpty(amenity.Image.Alt) ? amenity.Image.Alt : "icon", @class = "svg" }, isEditable: true)
+                        }
+
+                    </div>
+                    <div class="title"> @Html.Raw(Html.Glass().Editable(amenity, x => x.Title))</div>
+                </li>
+            }
+
+        </ul>
+    </div>
+    <!--End Amenities -->
+}
+

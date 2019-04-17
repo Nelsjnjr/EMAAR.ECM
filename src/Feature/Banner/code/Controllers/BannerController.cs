@@ -6,6 +6,7 @@ using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Typ
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Hero;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Homepage_carousel;
 using static EMAAR.ECM.Foundation.SitecoreExtensions.Settings.SitecoreSettings;
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity;
 #endregion
 namespace EMAAR.ECM.Feature.Banner.Controllers
 {
@@ -58,11 +59,11 @@ namespace EMAAR.ECM.Feature.Banner.Controllers
         /// Getting all related component asigned in Sitecore with the Background CSS (eg:explore)
         /// </summary>  
         /// <returns>Relatedcontent list</returns>
-        public ActionResult RelatedPages()
-        {
-            IHomepage_Carousels homepage_CarouselList = _bannerRepository.RelatedPages();
-            return View($"{ViewPath}Banner/RelatedPages/RelatedPages.cshtml", homepage_CarouselList);
-        }
+        //public ActionResult RelatedPages()
+        //{
+        //    IHomepage_Carousels homepage_CarouselList = _bannerRepository.RelatedPages();
+        //    return View($"{ViewPath}Banner/RelatedPages/RelatedPages.cshtml", homepage_CarouselList);
+        //}
         /// <summary>
         ///  Getting all Hero Banner asigned in Sitecore 
         /// </summary>
@@ -71,6 +72,15 @@ namespace EMAAR.ECM.Feature.Banner.Controllers
         {
             IHero hero = _bannerRepository.GetHero();
             return View($"{ViewPath}Banner/Hero/Hero.cshtml", hero);
+        }
+        /// <summary>
+        /// Getting all Ammenities selected for the page
+        /// </summary>
+        /// <returns>Amenities</returns>
+        public ActionResult GetAmenities()
+        {
+            IAmenities amenities  = _bannerRepository.GetAmenities();
+            return View($"{ViewPath}Banner/Amenities/Amenities.cshtml", amenities);
         }
         #endregion
     }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using EMAAR.ECM.Feature.ContentComponents.Settings;
 using HtmlAgilityPack;
 using Sitecore.Data;
@@ -6,6 +7,8 @@ using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Events;
 using Sitecore.SecurityModel;
+using System.Linq;
+using EMAAR.ECM.Foundation.SitecoreExtensions;
 namespace EMAAR.ECM.Feature.ContentComponents.Pipelines
 {
     public class RichTextEditorSaveEvent
@@ -15,7 +18,11 @@ namespace EMAAR.ECM.Feature.ContentComponents.Pipelines
             get;
             set;
         }
-
+        /// <summary>
+        /// This method is used when RTE is save to do formatting HTML
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="args"></param>
         public void OnItemSaving(object sender, EventArgs args)
         {
 
@@ -24,7 +31,7 @@ namespace EMAAR.ECM.Feature.ContentComponents.Pipelines
             {
                 return;
             }
-            if (item.TemplateID == ID.Parse(SitecoreSettings.GenericTemplateID))
+            if (item.TemplateID != ID.Parse(SitecoreSettings.GenericTemplateID))
             {
                 return;
             }
@@ -77,51 +84,78 @@ namespace EMAAR.ECM.Feature.ContentComponents.Pipelines
             }
 
         }
-
+        /// <summary>
+        /// Format HTML properly by removing unwanted nodes 
+        /// </summary>
+        /// <param name="content"></param>
         private void FormatProperHTML(HtmlDocument content)
         {
-            HtmlNodeCollection imgNodes = content.DocumentNode.SelectNodes("//text()");
-            if (imgNodes != null && imgNodes.Count > 0)
+            //Removes Span tag for Text content because it should be with P tag(this usually happens when copying content from browser and paste it RTE)
+            HtmlNodeCollection spanNodes = content.DocumentNode.SelectNodes("//span");
+            if (spanNodes != null)
             {
-                foreach (HtmlNode divTag in imgNodes)
+                foreach (HtmlNode node in spanNodes)
                 {
-                    if (divTag.ParentNode != null && divTag.ParentNode.Name == "div")
+                    HtmlNode text = HtmlNode.CreateNode(node.InnerHtml);
+                    node.ParentNode.ReplaceChild(text, node);
+                }
+            }
+            //Getting all Text node without P tag , and add wrapping P tag around it
+            HtmlNodeCollection textNodes = content.DocumentNode.SelectNodes("//text()");
+            if (textNodes != null && textNodes.Count > 0)
+            {
+                foreach (HtmlNode node in textNodes)
+                {
+                    if (node.ParentNode != null && node.ParentNode.Name == "div")
                     {
-                        HtmlNode title = HtmlNode.CreateNode("<p>" + divTag.InnerHtml.Replace("<br />", "<p/><p>") + "</p>");
-                        divTag.InnerHtml = title.OuterHtml;
+                        HtmlNode title = HtmlNode.CreateNode("<p>" + node.InnerHtml.Replace("<br />", "<p/><p>") + "</p>");
+                        node.InnerHtml = title.OuterHtml;
                     }
                 }
 
             }
-            HtmlNodeCollection nodes = content.DocumentNode.SelectNodes("//p");
-            if (nodes == null)
+            //Remove P tag wrapped on comments and remove class attribute
+            HtmlNodeCollection pNodes = content.DocumentNode.SelectNodes("//p");
+            if (pNodes != null)
             {
-                return;
-            }
 
-            foreach (HtmlNode node in nodes)
-            {
-                node.InnerHtml = node.InnerHtml.Trim();
-                if (node.InnerHtml.StartsWith("<!"))
+                foreach (HtmlNode node in pNodes)
                 {
-                    HtmlNode title = HtmlNode.CreateNode(node.InnerHtml);
-                    node.ParentNode.ReplaceChild(title, node);
+                    node.InnerHtml = node.InnerHtml.Trim();
+                    if (node.InnerHtml.StartsWith("<!"))
+                    {
+                        HtmlNode title = HtmlNode.CreateNode(node.InnerHtml);
+                        node.ParentNode.ReplaceChild(title, node);
 
+                    }
+                    node.Attributes.Remove("class");
                 }
-                node.Attributes.Remove("class");
             }
-            HtmlNodeCollection brnodes = content.DocumentNode.SelectNodes("//br");
-            if (brnodes == null)
+            //Remove unneccessary BR tag
+            HtmlNodeCollection brNodes = content.DocumentNode.SelectNodes("//br");
+            if (brNodes != null)
             {
-                return;
-            }
 
-            foreach (HtmlNode node in brnodes)
-            {
-                node.ParentNode.RemoveChild(node);
+                foreach (HtmlNode node in brNodes)
+                {
+                    node.ParentNode.RemoveChild(node);
+                }
             }
+            //Getting all Class used in RTE(as some times it is appeared in different nodes apart from expected, so removing the assigned class
+            var result = content.DocumentNode.Descendants()
+             .Where(x => x.Attributes.Contains("class") && CommonConstants.RteClassNames.Contains(x.Attributes["class"].Value)).ToList();
+            foreach (var node in result)
+            {
+                if(node.Name!="div")
+                {
+                    node.Attributes.Remove("class");
+                }
+            }      
         }
-
+        /// <summary>
+        /// Removes Empty Ptags
+        /// </summary>
+        /// <param name="content"></param>
         private void RemoveEmptyPTags(HtmlDocument content)
         {
             HtmlNodeCollection pNodes = content.DocumentNode.SelectNodes("//p");
@@ -136,6 +170,10 @@ namespace EMAAR.ECM.Feature.ContentComponents.Pipelines
                 }
             }
         }
+        /// <summary>
+        /// REmoves Empty Div tags
+        /// </summary>
+        /// <param name="content"></param>
         private void RemoveEmptyDivTags(HtmlDocument content)
         {
             HtmlNodeCollection pNodes = content.DocumentNode.SelectNodes("//div");

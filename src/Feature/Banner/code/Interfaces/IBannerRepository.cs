@@ -1,4 +1,5 @@
 ﻿#region namespace
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Banner;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Hero;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Homepage_carousel;
@@ -22,16 +23,21 @@ namespace EMAAR.ECM.Feature.Banner.Interfaces
         /// </summary>
         /// <returns>Related content details</returns>
         IHomepage_Carousels HomePageCarousels();
-        /// <summary>
-        /// Getting all related component asigned in Sitecore 
-        /// </summary>
-        /// <returns>Related content details</returns>
-        IHomepage_Carousels RelatedPages();
+        ///// <summary>
+        ///// Getting all related component asigned in Sitecore 
+        ///// </summary>
+        ///// <returns>Related content details</returns>
+        //IHomepage_Carousels RelatedPages();
         /// <summary>
         /// Getting all HeroBanner component asigned in Sitecore on field (Hero Community Metrics)
         /// </summary>
         /// <returns>HeroBannerList</returns>
         IHero GetHero();
+        /// <summary>
+        /// Getting all Amenities
+        /// </summary>
+        /// <returns>Amenities</returns>
+        IAmenities GetAmenities();
         #endregion
     }
 }

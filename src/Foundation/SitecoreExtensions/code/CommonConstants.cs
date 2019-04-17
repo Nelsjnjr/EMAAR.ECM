@@ -30,26 +30,10 @@
         /// Year Token for dynamically modify it
         /// </summary>
         public static string YearToken { get; } = "{year}";
-        ///// <summary>
-        ///// Registering the javascripts to bundle and minify with the name
-        ///// </summary>
-        //public static string JavascriptBundleName { get; } = "~/bundles/scripts";
         /// <summary>
         /// Registering the all javascripts to bundle and minify with the name
         /// </summary>
-        public static string ScriptsBundleName { get; } = "~/bundles/scripts";
-        ///// <summary>
-        ///// Registering Fancy box jquery
-        ///// </summary>
-        //public static string JqueryFancyBundleName { get; } = "~/bundles/fancy";
-        ///// <summary>
-        ///// All javascript Application files path
-        ///// </summary>
-        //public static string[] AllSiteJavascriptsFilePaths => new string[] {
-
-
-           
-        //};
+        public static string ScriptsBundleName { get; } = "~/bundles/scripts"; 
         /// <summary>
         /// All jquery /common javascript Application files path
         /// </summary>
@@ -67,12 +51,11 @@
             "~/Assets/Project/ECM/js/application/main.js",
 
         };
-        ///// <summary>
-        ///// Get fancy box jquery
-        ///// </summary>
-        //public static string[] FancyBoxJquery => new string[] {
-        //    "~/Assets/Project/ECM/js/CDN/jquery.fancybox.js",
-        //};
+        /// <summary>
+        /// RTE Class names
+        /// </summary>
+        public static string[] RteClassNames=>new string[] { "image-right-section", "image-left-section", "table-responsive" };
+       
         #region Search
         /// <summary>
         /// Index Language field
