@@ -1,14 +1,9 @@
 ﻿@model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Homepage_carousel.IHomepage_Carousels
 @using EMAAR.ECM.Foundation.SitecoreExtensions
 @using Glass.Mapper.Sc.Web.Mvc
-@{ string backgroundCss = String.Empty;
-    if (Model.IsBackgroundColorAvailable)
-    {
-        backgroundCss = CommonConstants.Explore;
-    }
-}
+
 <!--Start HomePage carousels-->
-<section class="@backgroundCss">
+<section class="explore">
     <div class="container">
         <h2 class="heading text-center wow fadeInUp">@Html.Glass().Editable(Model, x => x.Title)</h2>
 

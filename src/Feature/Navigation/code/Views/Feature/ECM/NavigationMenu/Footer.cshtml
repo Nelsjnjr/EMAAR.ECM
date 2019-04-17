@@ -10,7 +10,7 @@
             {
                 @Html.Glass().RenderImage(Model.SiteRoot, x => x.Site_Logo, new { alt = !String.IsNullOrEmpty(Model.SiteRoot.Site_Logo.Alt) ? Model.SiteRoot.Site_Logo.Alt : "image" }, isEditable: true)
             }
-           
+
         </div>
         <div class="row">
             @{
@@ -27,13 +27,17 @@
                                 {
                                     <ul>
                                         @foreach (var subNav in rootNav.Sub_Navigations)
+
                                         {
-                                            <li>
-                                                @using (Html.Glass().BeginRenderLink(subNav, x => x.Navigation_Link, isEditable: true))
-                                                {
-                                                    @Html.Glass().Editable(subNav, x => x.Navigation_Title)
-                                                }
-                                            </li>
+                                            if (subNav.Navigation_Link != null)
+                                            {
+                                                <li>
+                                                    @using (Html.Glass().BeginRenderLink(subNav, x => x.Navigation_Link, isEditable: true))
+                                                    {
+                                                        @Html.Glass().Editable(subNav, x => x.Navigation_Title)
+                                                    }
+                                                </li>
+                                            }
                                         }
                                     </ul>
                                 }
@@ -57,14 +61,14 @@
                                             using (Html.Glass().BeginRenderLink(contactInfo, x => x.LinkUrl, isEditable: true))
                                             {
                                                 <i>
-                                                    @Html.Glass().RenderImage(contactInfo, x => x.Image, new { @class = "svg",alt= !String.IsNullOrEmpty(contactInfo.Image.Alt) ? contactInfo.Image.Alt : "image" }, isEditable: true)
+                                                    @Html.Glass().RenderImage(contactInfo, x => x.Image, new { @class = "svg", alt = !String.IsNullOrEmpty(contactInfo.Image.Alt) ? contactInfo.Image.Alt : "image" }, isEditable: true)
 
                                                 </i>
                                                 @Html.Glass().Editable(contactInfo, x => x.Title)
 
                                             }
-                                        }    
-                                        </li>
+                                        }
+                                    </li>
                                 </ul>
                             }
                         }
@@ -78,21 +82,24 @@
                 <!--Loading Legal pages-->
                 @foreach (var legalPages in Model.Legal_Pages)
                 {
-                    <li>
-                        @using (Html.Glass().BeginRenderLink(legalPages, x => x.Navigation_Link, isEditable: true))
-                        {
-                            @Html.Glass().Editable(legalPages, x => x.Navigation_Title)
-                        }
+                    if (legalPages.Navigation_Link != null)
+                    {
+                        <li>
+                            @using (Html.Glass().BeginRenderLink(legalPages, x => x.Navigation_Link, isEditable: true))
+                            {
+                                @Html.Glass().Editable(legalPages, x => x.Navigation_Title)
+                            }
 
-                    </li>
+                        </li>
+                    }
 
                 }
             </ul>
             <p class="rights">  @Model.Copyright.ToString().Replace(CommonConstants.YearToken, System.DateTime.Now.Year.ToString())</p>
         </div>
         <div class="emaar-logo">
-          
-            @if (Model.SiteRoot !=null && Model.SiteRoot.Brand_Logo != null)
+
+            @if (Model.SiteRoot != null && Model.SiteRoot.Brand_Logo != null)
             {
                 using (Html.Glass().BeginRenderLink(Model.SiteRoot, x => x.Brand_Logo_Url, isEditable: true))
                 {

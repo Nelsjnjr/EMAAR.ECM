@@ -327,6 +327,7 @@
     <Content Include="Assets\Project\ECM\js\Application\bundle.js" />
     <Content Include="Assets\Project\ECM\js\Application\main.js" />
     <Content Include="Assets\Project\ECM\js\Application\main.min.js" />
+    <Content Include="Assets\Project\ECM\js\CDN\jquery.fancybox.js" />
     <Content Include="Assets\Project\ECM\js\modernizr.js" />
     <Content Include="Assets\Project\ECM\js\vendor\bootstrap\bootstrap.js" />
     <Content Include="Assets\Project\ECM\js\vendor\bootstrap\bootstrap.min.js" />
@@ -396,9 +397,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Start\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>

@@ -6,4 +6,109 @@
   <Item ItemPath="/sitecore/content/Applications/WebEdit/Edit Frame Buttons" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
   <Item ItemPath="/sitecore/content/Applications/WebEdit/Edit Frame Buttons/FullBannerImage" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
   <Item ItemPath="/sitecore/content/Applications/WebEdit/Edit Frame Buttons/FullBannerImage/EditBackGroundImage" ItemIcon="/temp/iconcache/people/16x16/cube_blue_preferences.png" />
+  <Item ItemPath="/sitecore/system" ItemIcon="/temp/IconCache/People/16x16/workstation1.png" />
+  <Item ItemPath="/sitecore/system/Settings" ItemIcon="/temp/IconCache/Applications/16x16/preferences.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/Rich Text Full" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/Rich Text Full/Snippets" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/Rich Text Full/Snippets/Left Image" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Toolbar 1/Insert Link" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Toolbar 1/Insert Sitecore Link" ItemIcon="/temp/IconCache/network/16x16/link.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Toolbar 1/Insert Sitecore Media" ItemIcon="/temp/IconCache/applications/16x16/photo_scenery.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Toolbar 1/Unlink" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Buttons" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Class Translation" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Font Names" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Font Sizes" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Images" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Inline Styles" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Links" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Paragraphs" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/WebEdit Buttons" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Zoom" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Configuration Type" ItemIcon="/temp/iconcache/software/32x32/text_code_csharp.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Toolbar 1" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Toolbar 2" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Toolbar 3" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Toolbar 1/Insert Snippet" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Toolbar 1/Insert Symbol" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Toolbar 1/Paragraph" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Snippets" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Toolbar 3/Format Block" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Buttons/HTML View" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Class Translation/Head1" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Class Translation/Head2" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Class Translation/Head3" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Class Translation/MsoBodytext" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Class Translation/MsoHead1" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Class Translation/MsoHead2" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Class Translation/MsoHead3" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Font Names/Arial" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Font Names/Tahoma" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Font Names/Times New Roman" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Font Names/Verdana" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Font Sizes/1" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Font Sizes/2" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Font Sizes/3" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Font Sizes/4" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Font Sizes/5" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Font Sizes/6" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Font Sizes/7" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Images/Help" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Inline Styles/Bordered" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Inline Styles/Clipped" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Inline Styles/Float Left" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Inline Styles/Float Right" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Inline Styles/No Wraping" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Inline Styles/Scrollbox" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Links/Google" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Links/Sitecore" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Paragraphs/Address" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Paragraphs/Definition Term" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Paragraphs/Formatted" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Paragraphs/Heading 1" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Paragraphs/Heading 2" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Paragraphs/Heading 3" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Paragraphs/Heading 4" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Paragraphs/Heading 5" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Paragraphs/Heading 6" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Paragraphs/Menu" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Paragraphs/Normal" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Snippets/Banner" ItemIcon="/temp/IconCache/Office/16x16/keyboard_key_p.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Snippets/Left Image" ItemIcon="/temp/IconCache/Office/16x16/keyboard_key_l.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Snippets/Paragraph" ItemIcon="/temp/IconCache/Office/16x16/keyboard_key_p.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Snippets/Right Image" ItemIcon="/temp/IconCache/Office/16x16/keyboard_key_r.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Snippets/Table" ItemIcon="/temp/IconCache/Office/16x16/keyboard_key_t.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/WebEdit Buttons/Bold" ItemIcon="/temp/IconCache/Office/16x16/font_style_bold.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/WebEdit Buttons/Edit html" ItemIcon="/temp/IconCache/Office/16x16/Pencil.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/WebEdit Buttons/Insert External Link" ItemIcon="/temp/IconCache/Office/16x16/link.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/WebEdit Buttons/Insert Image" ItemIcon="/temp/IconCache/Office/16x16/photo_landscape.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/WebEdit Buttons/Insert Link" ItemIcon="/temp/IconCache/Office/16x16/link.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/WebEdit Buttons/Italic" ItemIcon="/temp/IconCache/Office/16x16/font_style_italics.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/WebEdit Buttons/Remove link" ItemIcon="/temp/IconCache/Office/16x16/link.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/WebEdit Buttons/Underline" ItemIcon="/temp/IconCache/Office/16x16/font_style_underline.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Zoom/10" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Zoom/100" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Zoom/20" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Zoom/200" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Zoom/30" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Zoom/300" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Zoom/40" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Zoom/400" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Zoom/50" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Zoom/66" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Zoom/80" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Toolbar 2/Backcolor" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Toolbar 2/Bold" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Toolbar 2/Forecolor" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Toolbar 2/Indent" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Toolbar 2/Insert Ordered List" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Toolbar 2/Insert Unordered List" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Toolbar 2/Italic" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Toolbar 2/Outdent" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Toolbar 2/StrikeThrough" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Toolbar 2/Subscript" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Toolbar 2/Superscript" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Toolbar 2/Underline" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
 </ItemIconCache>

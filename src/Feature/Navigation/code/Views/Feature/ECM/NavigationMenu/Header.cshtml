@@ -47,21 +47,28 @@
                                     {
                                         if (count == 0)
                                         {
-                                            <li class="nosub">
-                                                @using (Html.Glass().BeginRenderLink(rootNav, x => x.Navigation_Link, new { @class = "active" }, isEditable: true))
-                                                {
-                                                    @Html.Glass().Editable(rootNav, x => x.Navigation_Title)
-                                                }
-                                            </li>
+                                            if (rootNav.Navigation_Link != null)
+                                            {
+                                                <li class="nosub">
+                                                    @using (Html.Glass().BeginRenderLink(rootNav, x => x.Navigation_Link, new { @class = "active" }, isEditable: true))
+                                                    {
+                                                        @Html.Glass().Editable(rootNav, x => x.Navigation_Title)
+                                                    }
+                                                </li>
+                                            }
                                         }
                                         else
                                         {
-                                            <li class="nosub">
-                                                @using (Html.Glass().BeginRenderLink(rootNav, x => x.Navigation_Link, isEditable: true))
-                                                {
-                                                    @Html.Glass().Editable(rootNav, x => x.Navigation_Title)
-                                                }
-                                            </li>
+
+                                            if (rootNav.Navigation_Link != null)
+                                            {
+                                                <li class="nosub">
+                                                    @using (Html.Glass().BeginRenderLink(rootNav, x => x.Navigation_Link, isEditable: true))
+                                                    {
+                                                        @Html.Glass().Editable(rootNav, x => x.Navigation_Title)
+                                                    }
+                                                </li>
+                                            }
                                         }
                                         count++;
                                         continue;
@@ -83,12 +90,15 @@
                                                 {
                                                     foreach (var subNav in rootNav.Sub_Navigations)
                                                     {
-                                                        <li>
-                                                            @using (Html.Glass().BeginRenderLink(subNav, x => x.Navigation_Link, isEditable: true))
-                                                            {
-                                                                @Html.Glass().Editable(subNav, x => x.Navigation_Title)
-                                                            }
-                                                        </li>
+                                                        if (subNav.Navigation_Link != null)
+                                                        {
+                                                            <li>
+                                                                @using (Html.Glass().BeginRenderLink(subNav, x => x.Navigation_Link, isEditable: true))
+                                                                {
+                                                                    @Html.Glass().Editable(subNav, x => x.Navigation_Title)
+                                                                }
+                                                            </li>
+                                                        }
                                                     }
                                                 }
                                             </ul>

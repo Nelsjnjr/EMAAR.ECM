@@ -30,13 +30,6 @@ content-length: 5
 
 $name
 ----field----
-field: {4A8BFF42-5E3B-4BB1-BA59-1DB2FDFAE5C5}
-name: IsBackgroundColorAvailable
-key: isbackgroundcoloravailable
-content-length: 1
-
-1
-----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
 key: __owner

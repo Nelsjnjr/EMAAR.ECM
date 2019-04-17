@@ -30,28 +30,30 @@
         /// Year Token for dynamically modify it
         /// </summary>
         public static string YearToken { get; } = "{year}";
+        ///// <summary>
+        ///// Registering the javascripts to bundle and minify with the name
+        ///// </summary>
+        //public static string JavascriptBundleName { get; } = "~/bundles/scripts";
         /// <summary>
-        /// Registering the javascripts to bundle and minify with the name
+        /// Registering the all javascripts to bundle and minify with the name
         /// </summary>
-        public static string JavascriptBundleName { get; } = "~/bundles/scripts";
-        /// <summary>
-        /// Registering the jquery javascripts to bundle and minify with the name
-        /// </summary>
-        public static string JqueryBundleName { get; } = "~/bundles/jquery";
-        /// <summary>
-        /// All javascript Application files path
-        /// </summary>
-        public static string[] AllSiteJavascriptsFilePaths => new string[] {
+        public static string ScriptsBundleName { get; } = "~/bundles/scripts";
+        ///// <summary>
+        ///// Registering Fancy box jquery
+        ///// </summary>
+        //public static string JqueryFancyBundleName { get; } = "~/bundles/fancy";
+        ///// <summary>
+        ///// All javascript Application files path
+        ///// </summary>
+        //public static string[] AllSiteJavascriptsFilePaths => new string[] {
 
 
-            "~/Assets/Project/ECM/js/application/app.js",
-            "~/Assets/Project/ECM/js/application/ajax.js",
-            "~/Assets/Project/ECM/js/application/main.js",
-        };
+           
+        //};
         /// <summary>
         /// All jquery /common javascript Application files path
         /// </summary>
-        public static string[] AllJqueryPaths => new string[] {
+        public static string[] AllScriptsPaths => new string[] {
             "~/Assets/Project/ECM/js/vendor/jquery/*.js",
             "~/Assets/Project/ECM/js/vendor/bootstrap/bootstrap.js",
             "~/Assets/Project/ECM/js/vendor/common/wow.js",
@@ -59,8 +61,18 @@
             "~/Assets/Project/ECM/js/vendor/common/swiper.js",
             "~/Assets/Project/ECM/js/vendor/common/select2.js",
             "~/Assets/Project/ECM/js/vendor/common/handlebars-v4.1.1.js",
+            "~/Assets/Project/ECM/js/CDN/jquery.fancybox.js",
+            "~/Assets/Project/ECM/js/application/app.js",
+            "~/Assets/Project/ECM/js/application/ajax.js",
+            "~/Assets/Project/ECM/js/application/main.js",
 
         };
+        ///// <summary>
+        ///// Get fancy box jquery
+        ///// </summary>
+        //public static string[] FancyBoxJquery => new string[] {
+        //    "~/Assets/Project/ECM/js/CDN/jquery.fancybox.js",
+        //};
         #region Search
         /// <summary>
         /// Index Language field

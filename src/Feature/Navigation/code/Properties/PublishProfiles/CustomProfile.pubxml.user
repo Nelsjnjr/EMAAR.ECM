@@ -364,10 +364,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/26/2019 15:26:15</publishTime>
     </File>
     <File Include="Views/Feature/ECM/NavigationMenu/Footer.cshtml">
-      <publishTime>04/09/2019 12:52:15</publishTime>
+      <publishTime>04/15/2019 09:59:34</publishTime>
     </File>
     <File Include="Views/Feature/ECM/NavigationMenu/Header.cshtml">
-      <publishTime>04/11/2019 17:15:56</publishTime>
+      <publishTime>04/15/2019 09:10:43</publishTime>
     </File>
     <File Include="Views/Project/ECM/DowntownDubai/NavigationMenu/GetHeader.cshtml">
       <publishTime>03/25/2019 12:25:58</publishTime>
