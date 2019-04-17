@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {82677F75-244E-42A8-BCB4-48993767346E}
+id: {AF055E82-A161-43EF-BC60-523C7EF01A81}
 database: master
-path: /sitecore/templates/Feature/ECM/Generic/_Generic/Data/Banner
+path: /sitecore/templates/Feature/ECM/Generic Content/_GenericContentPage/Data/Title
 parent: {82B2662C-D561-4EAC-8666-85E17DFE58F5}
-name: Banner
+name: Title
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -14,20 +14,20 @@ created: 20190414T093508Z
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 5
+content-length: 16
 
-Image
+Single-Line Text
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 3
 
-300
+100
 ----version----
 language: en
 version: 1
-revision: b443815f-e024-45a9-81d7-c008aa78f002
+revision: 6c8f4b87-24fd-4e58-8ba8-a7487353bebb
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -42,7 +42,7 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b443815f-e024-45a9-81d7-c008aa78f002
+6c8f4b87-24fd-4e58-8ba8-a7487353bebb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated

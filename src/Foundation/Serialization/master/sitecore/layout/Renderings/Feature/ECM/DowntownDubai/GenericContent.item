@@ -24,10 +24,31 @@ key: controller action
 content-length: 14
 
 GetContentPage
+----field----
+field: {3D08DB46-2267-41B0-BC52-BE69FD618633}
+name: Cacheable
+key: cacheable
+content-length: 1
+
+1
+----field----
+field: {F3E7E552-D7C8-469B-A150-69E4E14AB35C}
+name: ClearOnIndexUpdate
+key: clearonindexupdate
+content-length: 1
+
+1
+----field----
+field: {8B6D532B-6128-4486-A044-CA06D90948BA}
+name: VaryByData
+key: varybydata
+content-length: 1
+
+1
 ----version----
 language: en
 version: 1
-revision: 02a1859b-7c54-4ebc-9d84-8918ba72c0f0
+revision: 8c8cbe20-d123-4d14-9554-308ce7602149
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -42,14 +63,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-02a1859b-7c54-4ebc-9d84-8918ba72c0f0
+8c8cbe20-d123-4d14-9554-308ce7602149
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190414T110459Z
+20190417T111143Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

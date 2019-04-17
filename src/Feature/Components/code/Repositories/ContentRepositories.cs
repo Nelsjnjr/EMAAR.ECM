@@ -12,21 +12,21 @@ namespace EMAAR.ECM.Feature.ContentComponents.Repositories
         #region property
         private readonly Func<IMvcContext> _mvcContext;
 
-        private readonly IGeneric _generic ;
+        private readonly IGeneric_ContentPage _generic ;
 
         #endregion
         #region construtor
-        public ContentRepositories(Func<IMvcContext> mvcContext, IGeneric generic)
+        public ContentRepositories(Func<IMvcContext> mvcContext, IGeneric_ContentPage generic)
         {
             _generic = generic;
             _mvcContext = mvcContext;
         }
         #endregion
         #region method
-        public IGeneric GetContentPage()
+        public IGeneric_ContentPage GetContentPage()
         {
             IMvcContext mvcContext = _mvcContext();
-            IGeneric generic = mvcContext.GetContextItem<IGeneric>();
+            IGeneric_ContentPage generic = mvcContext.GetContextItem<IGeneric_ContentPage>();
             return generic ?? _generic;
 
         }

@@ -1,19 +1,19 @@
 ----item----
 version: 1
-id: {82B2662C-D561-4EAC-8666-85E17DFE58F5}
+id: {0AA8C472-6C3F-4290-BC30-FA8E73714530}
 database: master
-path: /sitecore/templates/Feature/ECM/RTE/_RTE/Data
-parent: {54457159-9409-4FA3-B2C6-69C6EC48DB22}
-name: Data
+path: /sitecore/templates/Feature/ECM/Generic Content
+parent: {D0370D5B-428B-4930-BB34-AC6630D2720F}
+name: Generic Content
 master: {00000000-0000-0000-0000-000000000000}
-template: {E269FBB5-3750-427A-9149-7AA950B49301}
-templatekey: Template section
-created: 20190414T093508Z
+template: {0437FEE2-44C9-46A6-ABE9-28858D9FEE8C}
+templatekey: Template Folder
+created: 20190414T091508Z
 
 ----version----
 language: en
 version: 1
-revision: 3ad496bc-003d-4d6b-bbf9-441803f248ff
+revision: 4e725cb2-c041-4431-81eb-56f752e880db
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -21,7 +21,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20190414T093508Z
+20190414T091508Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -35,14 +35,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3ad496bc-003d-4d6b-bbf9-441803f248ff
+4e725cb2-c041-4431-81eb-56f752e880db
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190414T093508Z
+20190417T110514Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -23,7 +23,7 @@ namespace EMAAR.ECM.Feature.ContentComponents.Controllers
         // GET: ContentComponents
         public ActionResult GetContentPage()
         {
-            IGeneric generic = _contentRepositories.GetContentPage();
+            IGeneric_ContentPage generic = _contentRepositories.GetContentPage();
             return View($"{ViewPath}ContentPage/ContentPage.cshtml", generic);
         }
         #endregion

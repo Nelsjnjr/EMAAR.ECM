@@ -2,9 +2,9 @@
 version: 1
 id: {54457159-9409-4FA3-B2C6-69C6EC48DB22}
 database: master
-path: /sitecore/templates/Feature/ECM/Generic/_Generic
+path: /sitecore/templates/Feature/ECM/Generic Content/_GenericContentPage
 parent: {0AA8C472-6C3F-4290-BC30-FA8E73714530}
-name: _Generic
+name: _GenericContentPage
 master: {00000000-0000-0000-0000-000000000000}
 template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
 templatekey: Template
@@ -34,7 +34,7 @@ Applications/32x32/form_blue.png
 ----version----
 language: en
 version: 1
-revision: 8c04f5c7-525c-48dc-8fa1-672d0677f979
+revision: f15fec17-6077-4d5c-95ea-973891d01f11
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -56,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8c04f5c7-525c-48dc-8fa1-672d0677f979
+f15fec17-6077-4d5c-95ea-973891d01f11
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190414T103803Z
+20190417T110530Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -4408,22 +4408,22 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 
 
  	/// <summary>
-	/// IGeneric Interface
+	/// IGeneric_ContentPage Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/Generic</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/Generic ContentPage</para>	
 	/// <para>ID: 4fb05ec1-985e-46d3-a95b-a851ff0be873</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=IGenericConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface IGeneric : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic.I_Generic
+	[SitecoreType(TemplateId=IGeneric_ContentPageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IGeneric_ContentPage : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic_Content.I_GenericContentPage
 	{
 				}
 
 
-	public static partial class IGenericConstants{
+	public static partial class IGeneric_ContentPageConstants{
 
 			public const string TemplateIdString = "4fb05ec1-985e-46d3-a95b-a851ff0be873";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "Generic";
+			public const string TemplateName = "Generic ContentPage";
 
 					
 			public static readonly ID AmenitiesFieldId = new ID("6d0a86ef-d757-4860-80f8-a79f4ecfdcc9");
@@ -4451,14 +4451,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 
 	
 	/// <summary>
-	/// Generic
+	/// Generic_ContentPage
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/Generic</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/Generic ContentPage</para>	
 	/// <para>ID: 4fb05ec1-985e-46d3-a95b-a851ff0be873</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=IGenericConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(IGeneric))]
-	public partial class Generic  : GlassBase, IGeneric 
+	[SitecoreType(TemplateId=IGeneric_ContentPageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IGeneric_ContentPage))]
+	public partial class Generic_ContentPage  : GlassBase, IGeneric_ContentPage 
 	{
 	   
 						/// <summary>
@@ -4469,7 +4469,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				/// <para>Custom Data: Type=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenities</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IGenericConstants.AmenitiesFieldName)]
+				[SitecoreField(IGeneric_ContentPageConstants.AmenitiesFieldName)]
 				public virtual EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenities Amenities  {get; set;}
 					
 						/// <summary>
@@ -4480,7 +4480,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IGenericConstants.BannerFieldName)]
+				[SitecoreField(IGeneric_ContentPageConstants.BannerFieldName)]
 				public virtual Image Banner  {get; set;}
 					
 						/// <summary>
@@ -4491,7 +4491,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IGenericConstants.ContentFieldName)]
+				[SitecoreField(IGeneric_ContentPageConstants.ContentFieldName)]
 				public virtual string Content  {get; set;}
 					
 						/// <summary>
@@ -4502,7 +4502,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IGenericConstants.IntroductionFieldName)]
+				[SitecoreField(IGeneric_ContentPageConstants.IntroductionFieldName)]
 				public virtual string Introduction  {get; set;}
 					
 						/// <summary>
@@ -4513,7 +4513,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IGenericConstants.TitleFieldName)]
+				[SitecoreField(IGeneric_ContentPageConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
 					
 			
@@ -4707,18 +4707,18 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 			
 	}
 }
-namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic_Content
 {
 
 
  	/// <summary>
-	/// I_Generic Interface
+	/// I_GenericContentPage Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/Generic/_Generic</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/Generic Content/_GenericContentPage</para>	
 	/// <para>ID: 54457159-9409-4fa3-b2c6-69c6ec48db22</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_GenericConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_Generic : IGlassBase 
+	[SitecoreType(TemplateId=I_GenericContentPageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_GenericContentPage : IGlassBase 
 	{
 								/// <summary>
 					/// The Amenities field.
@@ -4727,7 +4727,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic
 					/// <para>Field ID: 6d0a86ef-d757-4860-80f8-a79f4ecfdcc9</para>
 					/// <para>Custom Data: Type=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenities</para>
 					/// </summary>
-					[SitecoreField(I_GenericConstants.AmenitiesFieldName)]
+					[SitecoreField(I_GenericContentPageConstants.AmenitiesFieldName)]
 					EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenities Amenities  {get; set;}
 			
 								/// <summary>
@@ -4737,7 +4737,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic
 					/// <para>Field ID: 82677f75-244e-42a8-bcb4-48993767346e</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_GenericConstants.BannerFieldName)]
+					[SitecoreField(I_GenericContentPageConstants.BannerFieldName)]
 					Image Banner  {get; set;}
 			
 								/// <summary>
@@ -4747,7 +4747,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic
 					/// <para>Field ID: 0bc802f1-146c-454e-a508-e72e5a1cf61d</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_GenericConstants.ContentFieldName)]
+					[SitecoreField(I_GenericContentPageConstants.ContentFieldName)]
 					string Content  {get; set;}
 			
 								/// <summary>
@@ -4757,7 +4757,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic
 					/// <para>Field ID: 55768ebd-52c4-4340-9471-2c948d429bcf</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_GenericConstants.IntroductionFieldName)]
+					[SitecoreField(I_GenericContentPageConstants.IntroductionFieldName)]
 					string Introduction  {get; set;}
 			
 								/// <summary>
@@ -4767,17 +4767,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic
 					/// <para>Field ID: af055e82-a161-43ef-bc60-523c7ef01a81</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_GenericConstants.TitleFieldName)]
+					[SitecoreField(I_GenericContentPageConstants.TitleFieldName)]
 					string Title  {get; set;}
 			
 				}
 
 
-	public static partial class I_GenericConstants{
+	public static partial class I_GenericContentPageConstants{
 
 			public const string TemplateIdString = "54457159-9409-4fa3-b2c6-69c6ec48db22";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "_Generic";
+			public const string TemplateName = "_GenericContentPage";
 
 					
 			public static readonly ID AmenitiesFieldId = new ID("6d0a86ef-d757-4860-80f8-a79f4ecfdcc9");
@@ -4805,14 +4805,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic
 
 	
 	/// <summary>
-	/// _Generic
+	/// _GenericContentPage
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/Generic/_Generic</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/Generic Content/_GenericContentPage</para>	
 	/// <para>ID: 54457159-9409-4fa3-b2c6-69c6ec48db22</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_GenericConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(I_Generic))]
-	public partial class _Generic  : GlassBase, I_Generic 
+	[SitecoreType(TemplateId=I_GenericContentPageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_GenericContentPage))]
+	public partial class _GenericContentPage  : GlassBase, I_GenericContentPage 
 	{
 	   
 						/// <summary>
@@ -4823,7 +4823,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic
 				/// <para>Custom Data: Type=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenities</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_GenericConstants.AmenitiesFieldName)]
+				[SitecoreField(I_GenericContentPageConstants.AmenitiesFieldName)]
 				public virtual EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenities Amenities  {get; set;}
 					
 						/// <summary>
@@ -4834,7 +4834,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_GenericConstants.BannerFieldName)]
+				[SitecoreField(I_GenericContentPageConstants.BannerFieldName)]
 				public virtual Image Banner  {get; set;}
 					
 						/// <summary>
@@ -4845,7 +4845,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_GenericConstants.ContentFieldName)]
+				[SitecoreField(I_GenericContentPageConstants.ContentFieldName)]
 				public virtual string Content  {get; set;}
 					
 						/// <summary>
@@ -4856,7 +4856,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_GenericConstants.IntroductionFieldName)]
+				[SitecoreField(I_GenericContentPageConstants.IntroductionFieldName)]
 				public virtual string Introduction  {get; set;}
 					
 						/// <summary>
@@ -4867,7 +4867,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_GenericConstants.TitleFieldName)]
+				[SitecoreField(I_GenericContentPageConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
 					
 			

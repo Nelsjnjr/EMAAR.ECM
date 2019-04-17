@@ -2,12 +2,12 @@
 version: 1
 id: {0E7AE394-3FB0-4108-9BA3-4752F56554E5}
 database: master
-path: /sitecore/templates/Project/ECM/Page Types/Generic/__Standard Values
+path: /sitecore/templates/Project/ECM/Page Types/Generic ContentPage/__Standard Values
 parent: {4FB05EC1-985E-46D3-A95B-A851FF0BE873}
 name: __Standard Values
 master: {00000000-0000-0000-0000-000000000000}
 template: {4FB05EC1-985E-46D3-A95B-A851FF0BE873}
-templatekey: Generic
+templatekey: Generic ContentPage
 created: 20190414T093558Z
 
 ----field----

@@ -15,7 +15,7 @@ namespace EMAAR.ECM.Feature.ContentComponents.Interfaces
         /// Getting Content Page details
         /// </summary>
         /// <returns></returns>
-        IGeneric GetContentPage();
+        IGeneric_ContentPage GetContentPage();
         #endregion
 
     }

@@ -11,7 +11,7 @@ namespace EMAAR.ECM.Feature.ContentComponents.Settings
         /// <summary>
         /// Generic Template ID
         /// </summary>
-        public static string GenericTemplateID { get; set; } = IGenericConstants.TemplateIdString;
+        public static string GenericTemplateID { get; set; } = IGeneric_ContentPageConstants.TemplateIdString;
         /// <summary>
         /// CSS Field Name from Siteroot template
         /// </summary>
