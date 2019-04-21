@@ -19,97 +19,44 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-8">
-            <div class="content-section">
-                <div class="section-header">
-                    @if (!String.IsNullOrEmpty(Model.Title))
+        @if (Model != null)
+        {
+            <div class="col-md-8">
+                <div class="content-section">
+                    <div class="section-header">
+                        @if (!String.IsNullOrEmpty(Model.Title))
+                        {
+                            <h1 class="heading"> @Html.Glass().Editable(Model, x => x.Title)</h1>
+                        }
+                        @if (!String.IsNullOrEmpty(Model.Introduction))
+                        {
+                            <p>
+                                @Html.Glass().Editable(Model, x => x.Introduction)
+                            </p>
+                        }
+                    </div>
+
+                    @if (Model.Banner != null)
                     {
-                        <h1 class="heading"> @Html.Glass().Editable(Model, x => x.Title)</h1>
+                        <div>
+                            @Html.Glass().RenderImage(Model, x => x.Banner, new { alt = !String.IsNullOrEmpty(Model.Banner.Alt) ? Model.Banner.Alt : "image", @class = "full-image" }, isEditable: true)
+                        </div>
                     }
-                    @if (!String.IsNullOrEmpty(Model.Introduction))
+
+                    <!--Start Content from RTE-->
+                    @Html.Glass().Editable(Model, x => x.Content)
+                    <!--End Content from RTE-->
+                    @if (Model.Amenities != null)
                     {
-                        <p>
-                            @Html.Glass().Editable(Model, x => x.Introduction)
-                        </p>
+                        @Html.Partial(String.Format("{0}ContentPage/Amenities/Amenities.cshtml", SitecoreSettings.ViewPath), Model.Amenities)
+                    }
+                    @if (Model.Faqs != null)
+                    {
+                        @Html.Partial(String.Format("{0}ContentPage/Faqs/Faqs.cshtml", SitecoreSettings.ViewPath), Model.Faqs)
                     }
                 </div>
-
-                @if (Model.Banner != null)
-                {
-                    <div>
-                        @Html.Glass().RenderImage(Model, x => x.Banner, new { alt = !String.IsNullOrEmpty(Model.Banner.Alt) ? Model.Banner.Alt : "image", @class = "full-image" }, isEditable: true)
-                    </div>
-                }
-
-                <!--Start Content from RTE-->
-                @Html.Glass().Editable(Model, x => x.Content)
-                <!--End Content from RTE-->
-                @if (Model.Amenities != null)
-                {
-                    @Html.Partial(String.Format("{0}Banner/Amenities/Amenities.cshtml", SitecoreSettings.ViewPath), Model.Amenities)
-                }
-
-                <div class="accordion custom-style" id="accordionExample">
-                    <div class="accordionWrap">
-                        <div class="accordionHeading" id="headingOne">
-                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> Cras ultricies ligula sed magna dictum porta.</button>
-                        </div>
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                             data-parent="#accordionExample">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                                aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
-                                ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
-                                accusamus labore sustainable VHS.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordionWrap">
-                        <div class="accordionHeading" id="headingTwo">
-                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Quisque velit nisi, pretium ut lacinia in, elementum id enim.</button>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                             data-parent="#accordionExample">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                                aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
-                                ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
-                                accusamus labore sustainable VHS.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordionWrap">
-                        <div class="accordionHeading" id="headingTwo">
-                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Sed porttitor lectus nibh.</button>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingTwo"
-                             data-parent="#accordionExample">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                                aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
-                                ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
-                                accusamus labore sustainable VHS.
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
             </div>
-        </div>
+        }
     </div>
 </div>
 <!-- content ends here -->

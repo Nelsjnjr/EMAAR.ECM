@@ -3,6 +3,8 @@ using System.Web.Mvc;
 using EMAAR.ECM.Feature.ContentComponents.Interfaces;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types;
 using static EMAAR.ECM.Foundation.SitecoreExtensions.Settings.SitecoreSettings;
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity;
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Faq;
 #endregion
 
 namespace EMAAR.ECM.Feature.ContentComponents.Controllers
@@ -20,11 +22,33 @@ namespace EMAAR.ECM.Feature.ContentComponents.Controllers
         }
         #endregion
         #region method
-        // GET: ContentComponents
-        public ActionResult GetContentPage()
+        /// <summary>
+        /// Getting Content Page details Discovery-->Al alka
+        /// </summary>
+        /// <returns>Content Page </returns>
+        public ActionResult GetGenericContentPage()
         {
-            IGeneric_ContentPage generic = _contentRepositories.GetContentPage();
+            IGeneric_ContentPage generic = _contentRepositories.GetGenericContentPage();
             return View($"{ViewPath}ContentPage/ContentPage.cshtml", generic);
+        }
+        /// <summary>
+        /// Getting all Ammenities selected for the page
+        /// </summary>
+        /// <returns>Amenities</returns>
+        public ActionResult GetAmenities()
+        {
+            IAmenities amenities = _contentRepositories.GetAmenities();
+            
+            return View($"{ViewPath}ContentPage/Amenities/_Amenities.cshtml", amenities?.Page_Amenities??null);
+        }
+        /// <summary>
+        /// Getting all Faqs selected for the page
+        /// </summary>
+        /// <returns>Faqs</returns>
+        public ActionResult GetFaqs()
+        {
+            IFaqs faqs  = _contentRepositories.GetFaqs();
+            return View($"{ViewPath}ContentPage/Faqs/_Faqs.cshtml", faqs?.Page_Faqs??null);
         }
         #endregion
     }

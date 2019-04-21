@@ -231,7 +231,6 @@
     <Content Include="Views\Feature\ECM\Banner\Hero\Hero.cshtml" />
     <Content Include="Views\Feature\ECM\Banner\Parallax\Parallax.cshtml" />
     <Content Include="Views\Feature\ECM\Banner\Relatedpages\Related pages.cshtml" />
-    <Content Include="Views\Feature\ECM\Banner\Amenities\Amenities.cshtml" />
     <None Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

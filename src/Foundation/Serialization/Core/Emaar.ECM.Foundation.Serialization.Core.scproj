@@ -45,7 +45,7 @@
     <PackageVersion />
     <PackageReadme />
     <SitecoreAssemblyPath>D:\Nelson\sc1.local\bin</SitecoreAssemblyPath>
-    <GeneratePackage>False</GeneratePackage>
+    <GeneratePackage>True</GeneratePackage>
     <SeperateFilesAndItems>False</SeperateFilesAndItems>
     <PackageExcludeCode>False</PackageExcludeCode>
     <AddDateTimeToPackageName>True</AddDateTimeToPackageName>

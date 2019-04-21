@@ -14,9 +14,9 @@ created: 20190417T085457Z
 field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
 name: Controller
 key: controller
-content-length: 78
+content-length: 111
 
-EMAAR.ECM.Feature.Banner.Controllers.BannerController,EMAAR.ECM.Feature.Banner
+EMAAR.ECM.Feature.ContentComponents.Controllers.ContentComponentsController,EMAAR.ECM.Feature.ContentComponents
 ----field----
 field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
 name: Controller Action
@@ -66,10 +66,17 @@ key: datasource template
 content-length: 63
 
 /sitecore/templates/Project/ECM/Content Types/Amenity/Amenities
+----field----
+field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
+name: __Thumbnail
+key: __thumbnail
+content-length: 165
+
+<image mediapath="" alt="amenities" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{169660AE-F04C-4BCC-B3B7-D3C784ACDC4D}" />
 ----version----
 language: en
 version: 1
-revision: b1934adf-513e-43c8-8e12-9f4493bf7c99
+revision: 096b44cc-34f6-4a1f-b0e2-4912dd7fa136
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -84,14 +91,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b1934adf-513e-43c8-8e12-9f4493bf7c99
+096b44cc-34f6-4a1f-b0e2-4912dd7fa136
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190417T111212Z
+20190421T055022Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

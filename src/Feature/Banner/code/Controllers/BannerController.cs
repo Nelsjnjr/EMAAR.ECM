@@ -73,15 +73,7 @@ namespace EMAAR.ECM.Feature.Banner.Controllers
             IHero hero = _bannerRepository.GetHero();
             return View($"{ViewPath}Banner/Hero/Hero.cshtml", hero);
         }
-        /// <summary>
-        /// Getting all Ammenities selected for the page
-        /// </summary>
-        /// <returns>Amenities</returns>
-        public ActionResult GetAmenities()
-        {
-            IAmenities amenities  = _bannerRepository.GetAmenities();
-            return View($"{ViewPath}Banner/Amenities/Amenities.cshtml", amenities);
-        }
+       
         #endregion
     }
 }

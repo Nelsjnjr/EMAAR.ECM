@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity;
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Faq;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types;
 
 
@@ -15,7 +12,17 @@ namespace EMAAR.ECM.Feature.ContentComponents.Interfaces
         /// Getting Content Page details
         /// </summary>
         /// <returns></returns>
-        IGeneric_ContentPage GetContentPage();
+        IGeneric_ContentPage GetGenericContentPage();
+        /// <summary>
+        /// Getting all Amenities
+        /// </summary>
+        /// <returns>Amenities</returns>
+        IAmenities GetAmenities();
+        /// <summary>
+        /// Getting all Faqs
+        /// </summary>
+        /// <returns>Faqs</returns>
+        IFaqs GetFaqs();
         #endregion
 
     }

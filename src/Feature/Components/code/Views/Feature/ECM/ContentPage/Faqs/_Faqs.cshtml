@@ -1,0 +1,30 @@
+﻿@model IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Faq.IFaq>
+@using EMAAR.ECM.Foundation.SitecoreExtensions
+@using Glass.Mapper.Sc.Web.Mvc
+@if (Model != null && Model.Count() > 0)
+{
+    int count = 1;
+    string faqId = String.Empty;
+    string faqCollapseId = String.Empty;
+    <div class="accordion custom-style" id="accordionExample">
+        @foreach (var faq in Model)
+        {
+            faqId = string.Format("heading{0}", count.ToString());
+            faqCollapseId = string.Format("collapse{0}", count.ToString());
+            <div class="accordionWrap">
+                <div class="accordionHeading" id="@faqId">
+                    <button class="collapsed" type="button" data-toggle="collapse" data-target="#@faqCollapseId" aria-expanded="false" aria-controls="@faqCollapseId">
+                        @Html.Glass().Editable(faq, x => x.Title))
+                    </button>
+                </div>
+                <div id="@faqCollapseId" class="collapse" aria-labelledby="@faqId"
+                     data-parent="#accordionExample">
+                    <div class="card-body">
+                        @Html.Glass().Editable(faq, x => x.Summary))
+                    </div>
+                </div>
+            </div>
+            count++;
+        }
+    </div>
+}

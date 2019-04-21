@@ -6,8 +6,8 @@ path: /sitecore/templates/Branches/Feature/ECM
 parent: {AD71FACC-3C23-4DF8-A427-672020DB5612}
 name: ECM
 master: {00000000-0000-0000-0000-000000000000}
-template: {0437FEE2-44C9-46A6-ABE9-28858D9FEE8C}
-templatekey: Template Folder
+template: {85ADBF5B-E836-4932-A333-FE0F9FA1ED1E}
+templatekey: Branch Folder
 created: 20190410T063413Z
 
 ----field----
@@ -20,7 +20,7 @@ network/16x16/environment_network.png
 ----version----
 language: en
 version: 1
-revision: 44f5d816-7205-4ef7-8a02-cc372d26d9bb
+revision: da4dfff4-baf4-47ef-acf8-6f2f2bbc93fb
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -42,14 +42,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-44f5d816-7205-4ef7-8a02-cc372d26d9bb
+da4dfff4-baf4-47ef-acf8-6f2f2bbc93fb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190410T063422Z
+20190418T061632Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

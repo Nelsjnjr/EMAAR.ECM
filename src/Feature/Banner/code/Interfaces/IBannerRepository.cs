@@ -33,11 +33,7 @@ namespace EMAAR.ECM.Feature.Banner.Interfaces
         /// </summary>
         /// <returns>HeroBannerList</returns>
         IHero GetHero();
-        /// <summary>
-        /// Getting all Amenities
-        /// </summary>
-        /// <returns>Amenities</returns>
-        IAmenities GetAmenities();
+      
         #endregion
     }
 }

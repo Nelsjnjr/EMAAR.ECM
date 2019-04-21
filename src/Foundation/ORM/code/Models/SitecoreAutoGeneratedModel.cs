@@ -3,6 +3,12 @@
 
 
 
+
+
+
+
+
+
 #pragma warning disable 1591
 #pragma warning disable 0108
 //------------------------------------------------------------------------------
@@ -379,6 +385,72 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 			
 	}
 }
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.FAQS
+{
+
+
+ 	/// <summary>
+	/// I_Faqs Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/FAQS/_Faqs</para>	
+	/// <para>ID: 058e2fb0-8f2b-4c37-933e-5a741579b55d</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_FaqsConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Faqs : IGlassBase 
+	{
+								/// <summary>
+					/// The Page Faqs field.
+					/// <para>Datasource items from Site Content/Faqs/</para>
+					/// <para>Field Type: Multilist</para>		
+					/// <para>Field ID: 0725c346-59e6-4236-bd3b-e646b6acd5ae</para>
+					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Faq.IFaq</para>
+					/// </summary>
+					[SitecoreField(I_FaqsConstants.Page_FaqsFieldName)]
+					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Faq.IFaq> Page_Faqs  {get; set;}
+			
+				}
+
+
+	public static partial class I_FaqsConstants{
+
+			public const string TemplateIdString = "058e2fb0-8f2b-4c37-933e-5a741579b55d";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_Faqs";
+
+					
+			public static readonly ID Page_FaqsFieldId = new ID("0725c346-59e6-4236-bd3b-e646b6acd5ae");
+			public const string Page_FaqsFieldName = "Page Faqs";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _Faqs
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/FAQS/_Faqs</para>	
+	/// <para>ID: 058e2fb0-8f2b-4c37-933e-5a741579b55d</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_FaqsConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Faqs))]
+	public partial class _Faqs  : GlassBase, I_Faqs 
+	{
+	   
+						/// <summary>
+				/// The Page Faqs field.
+				/// <para>Datasource items from Site Content/Faqs/</para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: 0725c346-59e6-4236-bd3b-e646b6acd5ae</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Faq.IFaq</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_FaqsConstants.Page_FaqsFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Faq.IFaq> Page_Faqs  {get; set;}
+					
+			
+	}
+}
 namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
 {
 
@@ -612,7 +684,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.ImageTe
 						/// <summary>
 				/// The Summary field.
 				/// <para></para>
-				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field Type: Multi-Line Text</para>		
 				/// <para>Field ID: 86ef63d0-7e10-4df7-80a7-28df2d6ba18f</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
@@ -1328,7 +1400,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 						/// <summary>
 				/// The Summary field.
 				/// <para></para>
-				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field Type: Multi-Line Text</para>		
 				/// <para>Field ID: 86ef63d0-7e10-4df7-80a7-28df2d6ba18f</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
@@ -1974,6 +2046,88 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			
 	}
 }
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
+{
+
+
+ 	/// <summary>
+	/// I_FaqFolder Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_FaqFolder</para>	
+	/// <para>ID: 2d2dfa4a-d290-4577-9aef-c5b799c538b9</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_FaqFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_FaqFolder : IGlassBase 
+	{
+				}
+
+
+	public static partial class I_FaqFolderConstants{
+
+			public const string TemplateIdString = "2d2dfa4a-d290-4577-9aef-c5b799c538b9";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_FaqFolder";
+
+			
+
+	}
+
+	
+	/// <summary>
+	/// _FaqFolder
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_FaqFolder</para>	
+	/// <para>ID: 2d2dfa4a-d290-4577-9aef-c5b799c538b9</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_FaqFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_FaqFolder))]
+	public partial class _FaqFolder  : GlassBase, I_FaqFolder 
+	{
+	   
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
+{
+
+
+ 	/// <summary>
+	/// IFaqsFolder Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/FaqsFolder</para>	
+	/// <para>ID: 2e9ae107-bf0b-4ce3-8d7d-e882b54b25e4</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IFaqsFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IFaqsFolder : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_FaqsFolder
+	{
+				}
+
+
+	public static partial class IFaqsFolderConstants{
+
+			public const string TemplateIdString = "2e9ae107-bf0b-4ce3-8d7d-e882b54b25e4";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "FaqsFolder";
+
+			
+
+	}
+
+	
+	/// <summary>
+	/// FaqsFolder
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/FaqsFolder</para>	
+	/// <para>ID: 2e9ae107-bf0b-4ce3-8d7d-e882b54b25e4</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IFaqsFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IFaqsFolder))]
+	public partial class FaqsFolder  : GlassBase, IFaqsFolder 
+	{
+	   
+			
+	}
+}
 namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Interactive_Map
 {
 
@@ -2072,7 +2226,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 						/// <summary>
 				/// The Summary field.
 				/// <para></para>
-				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field Type: Multi-Line Text</para>		
 				/// <para>Field ID: 86ef63d0-7e10-4df7-80a7-28df2d6ba18f</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
@@ -2693,7 +2847,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Paralla
 						/// <summary>
 				/// The Summary field.
 				/// <para></para>
-				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field Type: Multi-Line Text</para>		
 				/// <para>Field ID: 86ef63d0-7e10-4df7-80a7-28df2d6ba18f</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
@@ -3797,6 +3951,77 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 			
 	}
 }
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Faq
+{
+
+
+ 	/// <summary>
+	/// IFaq Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/Faq/Faq</para>	
+	/// <para>ID: 4596fb2c-ce09-4eb7-8210-fab33d7f84b3</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IFaqConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IFaq : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.FAQS.I_Faq
+	{
+				}
+
+
+	public static partial class IFaqConstants{
+
+			public const string TemplateIdString = "4596fb2c-ce09-4eb7-8210-fab33d7f84b3";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "Faq";
+
+					
+			public static readonly ID SummaryFieldId = new ID("86ef63d0-7e10-4df7-80a7-28df2d6ba18f");
+			public const string SummaryFieldName = "Summary";
+			
+					
+			public static readonly ID TitleFieldId = new ID("cddd22f9-558a-4e98-a614-53c5e090fb96");
+			public const string TitleFieldName = "Title";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// Faq
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/Faq/Faq</para>	
+	/// <para>ID: 4596fb2c-ce09-4eb7-8210-fab33d7f84b3</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IFaqConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IFaq))]
+	public partial class Faq  : GlassBase, IFaq 
+	{
+	   
+						/// <summary>
+				/// The Summary field.
+				/// <para></para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: 86ef63d0-7e10-4df7-80a7-28df2d6ba18f</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IFaqConstants.SummaryFieldName)]
+				public virtual string Summary  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: cddd22f9-558a-4e98-a614-53c5e090fb96</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IFaqConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
+			
+	}
+}
 namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 {
 
@@ -4432,6 +4657,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string ContentFieldName = "Content";
 			
 					
+			public static readonly ID FaqsFieldId = new ID("fa9b731e-69db-454a-86db-e1aac4df739c");
+			public const string FaqsFieldName = "Faqs";
+			
+					
 			public static readonly ID IntroductionFieldId = new ID("55768ebd-52c4-4340-9471-2c948d429bcf");
 			public const string IntroductionFieldName = "Introduction";
 			
@@ -4457,14 +4686,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 	   
 						/// <summary>
 				/// The Amenities field.
-				/// <para>Datasource items from /Site Content/Page Datasources/Amenities</para>
-				/// <para>Field Type: Droplink</para>		
+				/// <para>Datasource items from ./Site content/Amenities</para>
+				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 6d0a86ef-d757-4860-80f8-a79f4ecfdcc9</para>
-				/// <para>Custom Data: Type=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenities</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenity</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IGeneric_ContentPageConstants.AmenitiesFieldName)]
-				public virtual EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenities Amenities  {get; set;}
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenity> Amenities  {get; set;}
 					
 						/// <summary>
 				/// The Banner field.
@@ -4487,6 +4716,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IGeneric_ContentPageConstants.ContentFieldName)]
 				public virtual string Content  {get; set;}
+					
+						/// <summary>
+				/// The Faqs field.
+				/// <para>Datasource items from ./Site content/Faqs</para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: fa9b731e-69db-454a-86db-e1aac4df739c</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Faq.IFaq</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGeneric_ContentPageConstants.FaqsFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Faq.IFaq> Faqs  {get; set;}
 					
 						/// <summary>
 				/// The Introduction field.
@@ -4716,13 +4956,13 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic
 	{
 								/// <summary>
 					/// The Amenities field.
-					/// <para>Datasource items from /Site Content/Page Datasources/Amenities</para>
-					/// <para>Field Type: Droplink</para>		
+					/// <para>Datasource items from ./Site content/Amenities</para>
+					/// <para>Field Type: Multilist</para>		
 					/// <para>Field ID: 6d0a86ef-d757-4860-80f8-a79f4ecfdcc9</para>
-					/// <para>Custom Data: Type=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenities</para>
+					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenity</para>
 					/// </summary>
 					[SitecoreField(I_GenericContentPageConstants.AmenitiesFieldName)]
-					EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenities Amenities  {get; set;}
+					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenity> Amenities  {get; set;}
 			
 								/// <summary>
 					/// The Banner field.
@@ -4743,6 +4983,16 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic
 					/// </summary>
 					[SitecoreField(I_GenericContentPageConstants.ContentFieldName)]
 					string Content  {get; set;}
+			
+								/// <summary>
+					/// The Faqs field.
+					/// <para>Datasource items from ./Site content/Faqs</para>
+					/// <para>Field Type: Multilist</para>		
+					/// <para>Field ID: fa9b731e-69db-454a-86db-e1aac4df739c</para>
+					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Faq.IFaq</para>
+					/// </summary>
+					[SitecoreField(I_GenericContentPageConstants.FaqsFieldName)]
+					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Faq.IFaq> Faqs  {get; set;}
 			
 								/// <summary>
 					/// The Introduction field.
@@ -4786,6 +5036,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic
 			public const string ContentFieldName = "Content";
 			
 					
+			public static readonly ID FaqsFieldId = new ID("fa9b731e-69db-454a-86db-e1aac4df739c");
+			public const string FaqsFieldName = "Faqs";
+			
+					
 			public static readonly ID IntroductionFieldId = new ID("55768ebd-52c4-4340-9471-2c948d429bcf");
 			public const string IntroductionFieldName = "Introduction";
 			
@@ -4811,14 +5065,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic
 	   
 						/// <summary>
 				/// The Amenities field.
-				/// <para>Datasource items from /Site Content/Page Datasources/Amenities</para>
-				/// <para>Field Type: Droplink</para>		
+				/// <para>Datasource items from ./Site content/Amenities</para>
+				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 6d0a86ef-d757-4860-80f8-a79f4ecfdcc9</para>
-				/// <para>Custom Data: Type=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenities</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenity</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_GenericContentPageConstants.AmenitiesFieldName)]
-				public virtual EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenities Amenities  {get; set;}
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenity> Amenities  {get; set;}
 					
 						/// <summary>
 				/// The Banner field.
@@ -4841,6 +5095,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_GenericContentPageConstants.ContentFieldName)]
 				public virtual string Content  {get; set;}
+					
+						/// <summary>
+				/// The Faqs field.
+				/// <para>Datasource items from ./Site content/Faqs</para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: fa9b731e-69db-454a-86db-e1aac4df739c</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Faq.IFaq</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentPageConstants.FaqsFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Faq.IFaq> Faqs  {get; set;}
 					
 						/// <summary>
 				/// The Introduction field.
@@ -5273,6 +5538,77 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 	public partial class _NavigationFolder  : GlassBase, I_NavigationFolder 
 	{
 	   
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.FAQS
+{
+
+
+ 	/// <summary>
+	/// I_Faq Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/FAQS/_Faq</para>	
+	/// <para>ID: 640cdde7-5034-4b33-b861-0f878d0f490f</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_FaqConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Faq : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_TitleDesc
+	{
+				}
+
+
+	public static partial class I_FaqConstants{
+
+			public const string TemplateIdString = "640cdde7-5034-4b33-b861-0f878d0f490f";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_Faq";
+
+					
+			public static readonly ID SummaryFieldId = new ID("86ef63d0-7e10-4df7-80a7-28df2d6ba18f");
+			public const string SummaryFieldName = "Summary";
+			
+					
+			public static readonly ID TitleFieldId = new ID("cddd22f9-558a-4e98-a614-53c5e090fb96");
+			public const string TitleFieldName = "Title";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _Faq
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/FAQS/_Faq</para>	
+	/// <para>ID: 640cdde7-5034-4b33-b861-0f878d0f490f</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_FaqConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Faq))]
+	public partial class _Faq  : GlassBase, I_Faq 
+	{
+	   
+						/// <summary>
+				/// The Summary field.
+				/// <para></para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: 86ef63d0-7e10-4df7-80a7-28df2d6ba18f</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_FaqConstants.SummaryFieldName)]
+				public virtual string Summary  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: cddd22f9-558a-4e98-a614-53c5e090fb96</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_FaqConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
 			
 	}
 }
@@ -5901,7 +6237,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 						/// <summary>
 				/// The Summary field.
 				/// <para></para>
-				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field Type: Multi-Line Text</para>		
 				/// <para>Field ID: 86ef63d0-7e10-4df7-80a7-28df2d6ba18f</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
@@ -6985,7 +7321,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 						/// <summary>
 				/// The Summary field.
 				/// <para></para>
-				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field Type: Multi-Line Text</para>		
 				/// <para>Field ID: 86ef63d0-7e10-4df7-80a7-28df2d6ba18f</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
@@ -7603,6 +7939,62 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_CategoryConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
+					
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Faq
+{
+
+
+ 	/// <summary>
+	/// IFaqs Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/Faq/Faqs</para>	
+	/// <para>ID: af2c2263-3460-483a-96c9-f32f9b026d5e</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IFaqsConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IFaqs : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.FAQS.I_Faqs
+	{
+				}
+
+
+	public static partial class IFaqsConstants{
+
+			public const string TemplateIdString = "af2c2263-3460-483a-96c9-f32f9b026d5e";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "Faqs";
+
+					
+			public static readonly ID Page_FaqsFieldId = new ID("0725c346-59e6-4236-bd3b-e646b6acd5ae");
+			public const string Page_FaqsFieldName = "Page Faqs";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// Faqs
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/Faq/Faqs</para>	
+	/// <para>ID: af2c2263-3460-483a-96c9-f32f9b026d5e</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IFaqsConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IFaqs))]
+	public partial class Faqs  : GlassBase, IFaqs 
+	{
+	   
+						/// <summary>
+				/// The Page Faqs field.
+				/// <para>Datasource items from Site Content/Faqs/</para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: 0725c346-59e6-4236-bd3b-e646b6acd5ae</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Faq.IFaq</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IFaqsConstants.Page_FaqsFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Faq.IFaq> Page_Faqs  {get; set;}
 					
 			
 	}
@@ -8351,7 +8743,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 						/// <summary>
 				/// The Summary field.
 				/// <para></para>
-				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field Type: Multi-Line Text</para>		
 				/// <para>Field ID: 86ef63d0-7e10-4df7-80a7-28df2d6ba18f</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
@@ -8771,7 +9163,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Homepag
 						/// <summary>
 				/// The Summary field.
 				/// <para></para>
-				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field Type: Multi-Line Text</para>		
 				/// <para>Field ID: 86ef63d0-7e10-4df7-80a7-28df2d6ba18f</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
@@ -8911,6 +9303,47 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 	[SitecoreType(TemplateId=IBranchPageContentConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
 	 [Service(typeof(IBranchPageContent))]
 	public partial class BranchPageContent  : GlassBase, IBranchPageContent 
+	{
+	   
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
+{
+
+
+ 	/// <summary>
+	/// I_FaqsFolder Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_FaqsFolder</para>	
+	/// <para>ID: d223dda8-9f4c-4fc7-a70b-62c9c5e0d51c</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_FaqsFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_FaqsFolder : IGlassBase 
+	{
+				}
+
+
+	public static partial class I_FaqsFolderConstants{
+
+			public const string TemplateIdString = "d223dda8-9f4c-4fc7-a70b-62c9c5e0d51c";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_FaqsFolder";
+
+			
+
+	}
+
+	
+	/// <summary>
+	/// _FaqsFolder
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_FaqsFolder</para>	
+	/// <para>ID: d223dda8-9f4c-4fc7-a70b-62c9c5e0d51c</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_FaqsFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_FaqsFolder))]
+	public partial class _FaqsFolder  : GlassBase, I_FaqsFolder 
 	{
 	   
 			
@@ -10086,7 +10519,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 								/// <summary>
 					/// The Summary field.
 					/// <para></para>
-					/// <para>Field Type: Rich Text</para>		
+					/// <para>Field Type: Multi-Line Text</para>		
 					/// <para>Field ID: 86ef63d0-7e10-4df7-80a7-28df2d6ba18f</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
@@ -10139,7 +10572,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 						/// <summary>
 				/// The Summary field.
 				/// <para></para>
-				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field Type: Multi-Line Text</para>		
 				/// <para>Field ID: 86ef63d0-7e10-4df7-80a7-28df2d6ba18f</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
@@ -10486,6 +10919,47 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 	[SitecoreType(TemplateId=I_Homepage_Carousel_FolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
 	 [Service(typeof(I_Homepage_Carousel_Folder))]
 	public partial class _Homepage_Carousel_Folder  : GlassBase, I_Homepage_Carousel_Folder 
+	{
+	   
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
+{
+
+
+ 	/// <summary>
+	/// IFaqFolder Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/FaqFolder</para>	
+	/// <para>ID: f0e81f3b-a1f2-4566-95c4-5a9278bdd199</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IFaqFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IFaqFolder : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_FaqFolder
+	{
+				}
+
+
+	public static partial class IFaqFolderConstants{
+
+			public const string TemplateIdString = "f0e81f3b-a1f2-4566-95c4-5a9278bdd199";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "FaqFolder";
+
+			
+
+	}
+
+	
+	/// <summary>
+	/// FaqFolder
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/FaqFolder</para>	
+	/// <para>ID: f0e81f3b-a1f2-4566-95c4-5a9278bdd199</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IFaqFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IFaqFolder))]
+	public partial class FaqFolder  : GlassBase, IFaqFolder 
 	{
 	   
 			

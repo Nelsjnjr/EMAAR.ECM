@@ -30,13 +30,6 @@ content-length: 194
 
 {C23A1C62-693E-42E7-AB15-28F089D7F787}|{4B8D3F56-1CAE-4D76-8FEE-AD2CD4219472}|{FC5C34B0-7ADB-4476-AF69-96C1883EF937}|{393F7419-1028-48D8-878B-EB4C56677D2B}|{62199104-C6F7-4D73-862A-94B6656C1B53}
 ----field----
-field: {4A8BFF42-5E3B-4BB1-BA59-1DB2FDFAE5C5}
-name: IsBackgroundColorAvailable
-key: isbackgroundcoloravailable
-content-length: 1
-
-1
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created

@@ -234,6 +234,9 @@
       <SubType>Designer</SubType>
     </Content>
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <Content Include="Views\Feature\ECM\ContentPage\Amenities\_Amenities.cshtml" />
+    <Content Include="Views\Feature\ECM\ContentPage\Faqs\_Faqs.cshtml" />
+    <Content Include="Views\Feature\ECM\ContentPage\Relatedpages\_Related pages.cshtml" />
     <None Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

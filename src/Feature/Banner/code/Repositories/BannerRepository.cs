@@ -23,19 +23,18 @@ namespace EMAAR.ECM.Feature.Banner.Repositories
         private readonly IParallax _parallax;
         private readonly IHomepage_Carousels _homepage_Carousels ;
         private readonly IHero  _hero;
-        private readonly IAmenities _amenities;
+       
 
         #endregion
         #region construtor
-        public BannerRepository(Func<IMvcContext> mvcContext, IParallax parallax, IImageText imageText, IHomepage_Carousels homepage_Carousels , IHero hero,IAmenities  amenities)
+        public BannerRepository(Func<IMvcContext> mvcContext, IParallax parallax, IImageText imageText, IHomepage_Carousels homepage_Carousels , IHero hero)
         {
             _imageText = imageText;
             _parallax = parallax;
             _mvcContext = mvcContext;
             _homepage_Carousels = homepage_Carousels;
             _hero = hero;
-            _amenities = amenities;
-
+         
         }
         #endregion
         #region public method
@@ -93,16 +92,7 @@ namespace EMAAR.ECM.Feature.Banner.Repositories
             IHero hero = mvcContext.GetDataSourceItem<IHero>();
             return hero ?? _hero;
         }
-        /// <summary>
-        /// Getting all amenities
-        /// </summary>
-        /// <returns>Amenities</returns>
-        public IAmenities GetAmenities()
-        {
-            IMvcContext mvcContext = _mvcContext();
-            IAmenities amenities   = mvcContext.GetDataSourceItem<IAmenities>();
-            return amenities ?? _amenities;
-        }
+       
         #endregion
         #region private method
 

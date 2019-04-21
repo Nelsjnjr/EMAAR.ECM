@@ -1,13 +1,13 @@
-﻿@model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenities
+﻿@model IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenity>
 @using EMAAR.ECM.Foundation.SitecoreExtensions
 @using Glass.Mapper.Sc.Web.Mvc
-@if (Model!=null &&Model.Page_Amenities != null)
+@if (Model !=null && Model.Count()>0)
 {
     <!--Start Amenities-->
     <div class="amenitiesBox">
         <h2>   @Sitecore.Globalization.Translate.Text("amenities")</h2>
         <ul class="icons-lists">
-            @foreach (var amenity in Model.Page_Amenities)
+            @foreach (var amenity in Model)
             {
                 <li>
                     <div class="icon">

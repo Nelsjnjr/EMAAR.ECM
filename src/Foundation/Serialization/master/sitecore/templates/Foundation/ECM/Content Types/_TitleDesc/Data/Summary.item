@@ -14,9 +14,16 @@ created: 20190311T105801Z
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 9
+content-length: 15
 
-Rich Text
+Multi-Line Text
+----field----
+field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
+name: Source
+key: source
+content-length: 68
+
+/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Default
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -27,7 +34,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: c3f35d1c-fa30-4d67-9124-d270c0f7c004
+revision: 47ab2171-bbcb-4948-b8eb-69d1a3e316be
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -42,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c3f35d1c-fa30-4d67-9124-d270c0f7c004
+47ab2171-bbcb-4948-b8eb-69d1a3e316be
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190401T120023Z
+20190418T071355Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
