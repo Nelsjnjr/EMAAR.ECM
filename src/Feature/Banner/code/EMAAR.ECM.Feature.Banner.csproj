@@ -222,15 +222,14 @@
     <Compile Include="Settings\SitecoreSettings.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Feature\ECM\Banner\ImageText\ImageText.cshtml" />
+    <Content Include="Views\Feature\ECM\Banner\ImageText\_ImageText.cshtml" />
     <Content Include="EMAAR.ECM.Feature.Banner.ruleset" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="Views\Feature\ECM\Banner\ImageText\ImageTextVariants\_LeftImageText.cshtml" />
     <Content Include="Views\Feature\ECM\Banner\ImageText\ImageTextVariants\_RightImageText.cshtml" />
-    <Content Include="Views\Feature\ECM\Banner\HomePageCarousel\HomePageCarousel.cshtml" />
-    <Content Include="Views\Feature\ECM\Banner\Hero\Hero.cshtml" />
-    <Content Include="Views\Feature\ECM\Banner\Parallax\Parallax.cshtml" />
-    <Content Include="Views\Feature\ECM\Banner\Relatedpages\Related pages.cshtml" />
+    <Content Include="Views\Feature\ECM\Banner\HomePageCarousel\_HomePageCarousel.cshtml" />
+    <Content Include="Views\Feature\ECM\Banner\Hero\_Hero.cshtml" />
+    <Content Include="Views\Feature\ECM\Banner\Parallax\_Parallax.cshtml" />
     <None Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

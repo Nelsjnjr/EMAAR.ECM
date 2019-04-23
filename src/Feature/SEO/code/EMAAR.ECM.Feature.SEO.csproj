@@ -228,7 +228,7 @@
     <Content Include="Views\Feature\ECM\SEO\SeoDetails\_Robots.cshtml" />
     <Content Include="Views\Feature\ECM\SEO\SeoDetails\_SocialTags.cshtml" />
     <Content Include="Views\Feature\ECM\SEO\SeoDetails\_SeoTags.cshtml" />
-    <Content Include="Views\Feature\ECM\SEO\Seo.cshtml" />
+    <Content Include="Views\Feature\ECM\SEO\_Seo.cshtml" />
     <None Include="Views\Web.config" />
     <None Include="Web.config" />
     <Content Include="Web.Debug.config">

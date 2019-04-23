@@ -213,7 +213,9 @@
   <ItemGroup>
     <Compile Include="Controllers\NavigationMenuController.cs" />
     <Compile Include="Interface\IHeaderViewModel.cs" />
+    <Compile Include="Interface\ILeftNavigation.cs" />
     <Compile Include="Interface\INavigationMenuRepository.cs" />
+    <Compile Include="Models\LeftNavigation.cs" />
     <Compile Include="Models\HeaderViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\NavigationMenuRepository.cs" />
@@ -221,7 +223,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
-    <Content Include="Views\Feature\ECM\NavigationMenu\Footer.cshtml" />
+    <Content Include="Views\Feature\ECM\NavigationMenu\_Footer.cshtml" />
+    <Content Include="Views\Feature\ECM\NavigationMenu\_LeftNavigation.cshtml" />
     <None Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -234,7 +237,7 @@
   <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Views\Feature\ECM\NavigationMenu\Header.cshtml" />
+    <Content Include="Views\Feature\ECM\NavigationMenu\_Header.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\EMAAR.ECM.Foundation.SitecoreExtensions.csproj">

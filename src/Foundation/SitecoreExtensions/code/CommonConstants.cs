@@ -1,4 +1,7 @@
-﻿namespace EMAAR.ECM.Foundation.SitecoreExtensions
+﻿using System;
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types;
+
+namespace EMAAR.ECM.Foundation.SitecoreExtensions
 {
     /// <summary>
     /// Common constants
@@ -55,7 +58,7 @@
         /// RTE Class names
         /// </summary>
         public static string[] RteClassNames=>new string[] { "image-right-section", "image-left-section", "table-responsive" };
-       
+     
         #region Search
         /// <summary>
         /// Index Language field

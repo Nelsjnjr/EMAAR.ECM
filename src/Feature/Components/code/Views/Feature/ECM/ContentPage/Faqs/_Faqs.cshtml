@@ -5,12 +5,14 @@
 {
     int count = 1;
     string faqId = String.Empty;
+    string randomId = String.Empty;
     string faqCollapseId = String.Empty;
     <div class="accordion custom-style" id="accordionExample">
         @foreach (var faq in Model)
         {
-            faqId = string.Format("heading{0}", count.ToString());
-            faqCollapseId = string.Format("collapse{0}", count.ToString());
+            randomId = new Random().Next().ToString();
+            faqId = string.Format("heading{0}", randomId + count.ToString());
+            faqCollapseId = string.Format("collapse{0}", randomId + count.ToString());
             <div class="accordionWrap">
                 <div class="accordionHeading" id="@faqId">
                     <button class="collapsed" type="button" data-toggle="collapse" data-target="#@faqCollapseId" aria-expanded="false" aria-controls="@faqCollapseId">

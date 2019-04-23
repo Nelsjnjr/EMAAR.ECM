@@ -1,23 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
+﻿#region namespace
+using System;
+using System.Linq;
 using EMAAR.ECM.Feature.ContentComponents.Settings;
+using EMAAR.ECM.Foundation.SitecoreExtensions;
 using HtmlAgilityPack;
 using Sitecore.Data;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Events;
 using Sitecore.SecurityModel;
-using System.Linq;
-using EMAAR.ECM.Foundation.SitecoreExtensions;
+#endregion
 namespace EMAAR.ECM.Feature.ContentComponents.Pipelines
 {
+    /// <summary>
+    /// This class is used to Format the Richtext html content on item saving event, that useful for our snippets
+    /// </summary>
     public class RichTextEditorSaveEvent
     {
+        #region property
         public string Database
         {
             get;
             set;
         }
+        #endregion
+        #region method
         /// <summary>
         /// This method is used when RTE is save to do formatting HTML
         /// </summary>
@@ -41,6 +48,7 @@ namespace EMAAR.ECM.Feature.ContentComponents.Pipelines
             }
             try
             {
+                //Target only on richtext field
                 foreach (Field field in item.Fields)
                 {
                     if (!field.TypeKey.Equals("rich text", StringComparison.InvariantCultureIgnoreCase))
@@ -171,7 +179,7 @@ namespace EMAAR.ECM.Feature.ContentComponents.Pipelines
             }
         }
         /// <summary>
-        /// REmoves Empty Div tags
+        /// Removes Empty Div tags
         /// </summary>
         /// <param name="content"></param>
         private void RemoveEmptyDivTags(HtmlDocument content)
@@ -188,6 +196,7 @@ namespace EMAAR.ECM.Feature.ContentComponents.Pipelines
                 }
             }
         }
+        #endregion
     }
 }
 

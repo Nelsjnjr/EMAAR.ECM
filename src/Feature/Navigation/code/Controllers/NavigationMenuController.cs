@@ -23,7 +23,7 @@ namespace EMAAR.ECM.Feature.Navigation.Controllers
         /// <returns>Header</returns>
         public ActionResult GetHeader()
         {
-            return View($"{ViewPath}NavigationMenu/Header.cshtml", _navigationMenuRepository.GetHeader());
+            return View($"{ViewPath}NavigationMenu/_Header.cshtml", _navigationMenuRepository.GetHeader());
         }
         /// <summary>
         ///  Getting Footer with all necessary details like(Menus,Logo,Contact Info and Legalpages etc)
@@ -31,7 +31,16 @@ namespace EMAAR.ECM.Feature.Navigation.Controllers
         /// <returns>Footer</returns>
         public ActionResult GetFooter()
         {
-            return View($"{ViewPath}NavigationMenu/Footer.cshtml", _navigationMenuRepository.GetFooter());
+            return View($"{ViewPath}NavigationMenu/_Footer.cshtml", _navigationMenuRepository.GetFooter());
+        }
+        /// <summary>
+        /// Getting left navigation menu from Sitecore content tree based on context item's parent with its childs
+        /// Also displays only the items which has the options "Include in Left navigation" selected in sitecore
+        /// </summary>
+        /// <returns>Left navigation</returns>
+        public ActionResult GetLeftNavigation()
+        {
+            return View($"{ViewPath}NavigationMenu/_LeftNavigation.cshtml", _navigationMenuRepository.GetLeftNavigation());
         }
         #endregion
     }

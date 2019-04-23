@@ -3,143 +3,41 @@
 @using EMAAR.ECM.Foundation.SitecoreExtensions
 @using EMAAR.ECM.Foundation.SitecoreExtensions.Settings
 <!-- content starts here -->
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="mobileAccordionHolder">
-                <span class="placehold"></span>
-            </div>
-            <div class="sideNavigation">
-                <ul>
-                    <li><a href="javascript:;">Communities</a></li>
-                    <li><a href="javascript:;">Panorama</a></li>
-                    <li class="active"><a href="javascript:;">Al Alka</a></li>
-                    <li><a href="javascript:;">Al Arta</a></li>
-                    <li><a href="javascript:;">Al Dhafrah</a></li>
-                </ul>
-            </div>
+
+@if (Model != null)
+{
+    <div class="content-section">
+        <div class="section-header">
+            @if (!String.IsNullOrEmpty(Model.Title))
+            {
+                <h1 class="heading"> @Html.Glass().Editable(Model, x => x.Title)</h1>
+            }
+            @if (!String.IsNullOrEmpty(Model.Introduction))
+            {
+                <p>
+                    @Html.Glass().Editable(Model, x => x.Introduction)
+                </p>
+            }
         </div>
-        @if (Model != null)
+        @if (Model.Banner != null)
         {
-            <div class="col-md-8">
-                <div class="content-section">
-                    <div class="section-header">
-                        @if (!String.IsNullOrEmpty(Model.Title))
-                        {
-                            <h1 class="heading"> @Html.Glass().Editable(Model, x => x.Title)</h1>
-                        }
-                        @if (!String.IsNullOrEmpty(Model.Introduction))
-                        {
-                            <p>
-                                @Html.Glass().Editable(Model, x => x.Introduction)
-                            </p>
-                        }
-                    </div>
-
-                    @if (Model.Banner != null)
-                    {
-                        <div>
-                            @Html.Glass().RenderImage(Model, x => x.Banner, new { alt = !String.IsNullOrEmpty(Model.Banner.Alt) ? Model.Banner.Alt : "image", @class = "full-image" }, isEditable: true)
-                        </div>
-                    }
-
-                    <!--Start Content from RTE-->
-                    @Html.Glass().Editable(Model, x => x.Content)
-                    <!--End Content from RTE-->
-                    @if (Model.Amenities != null)
-                    {
-                        @Html.Partial(String.Format("{0}ContentPage/Amenities/Amenities.cshtml", SitecoreSettings.ViewPath), Model.Amenities)
-                    }
-                    @if (Model.Faqs != null)
-                    {
-                        @Html.Partial(String.Format("{0}ContentPage/Faqs/Faqs.cshtml", SitecoreSettings.ViewPath), Model.Faqs)
-                    }
-                </div>
+            <div>
+                @Html.Glass().RenderImage(Model, x => x.Banner, new { alt = !String.IsNullOrEmpty(Model.Banner.Alt) ? Model.Banner.Alt : "image", @class = "full-image" }, isEditable: true)
             </div>
         }
-    </div>
-</div>
-<!-- content ends here -->
-<div class="exploreBoxes">
-    <div class="container">
-        <div class="row">
+        <!--Start Content from RTE-->
+        @Html.Glass().Editable(Model, x => x.Content)
+        <!--End Content from RTE-->
+        @if (Model.Amenities != null)
+        {
+            @Html.Partial(String.Format("{0}ContentPage/Amenities/_Amenities.cshtml", SitecoreSettings.ViewPath), Model.Amenities)
+        }
+        @if (Model.Faqs != null)
+        {
+            @Html.Partial(String.Format("{0}ContentPage/Faqs/_Faqs.cshtml", SitecoreSettings.ViewPath), Model.Faqs)
+        }
 
-            <div class="col-md-6 col-lg-3">
-                <div class="explore-item">
-                    <a href="javascript:;" class="link">
-                        <div class="explore-item-img">
-                            <img src="../images//slider2.png" alt="slider1" class="img-fluid">
-                            <h3 class="title">Reehan</h3>
-                        </div>
-                        <div class="explore-item-text">
-                            <h3 class="title">Reehan</h3>
-                            <ul>
-                                <li>Panoramic views of the dubai Fountain & Burj Khalifa</li>
-                                <li>Next door to the Dubai Opera, Burj Park, The Dubai Mall</li>
-                                <li>Only steps away from the vibrant Sheikh Mohammed boulevard</li>
-                                <li>Infinity Pool</li>
-                            </ul>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="explore-item">
-                    <a href="javascript:;" class="link">
-                        <div class="explore-item-img">
-                            <img src="../images//slider1.png" alt="slider1" class="img-fluid">
-                            <h3 class="title">Yansoon</h3>
-                        </div>
-                        <div class="explore-item-text">
-                            <h3 class="title">Yansoon</h3>
-                            <ul>
-                                <li>Panoramic views of the dubai Fountain & Burj Khalifa</li>
-                                <li>Next door to the Dubai Opera, Burj Park, The Dubai Mall</li>
-                                <li>Only steps away from the vibrant Sheikh Mohammed boulevard</li>
-                                <li>Infinity Pool</li>
-                            </ul>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="explore-item">
-                    <a href="javascript:;" class="link">
-                        <div class="explore-item-img">
-                            <img src="../images//slider3.png" alt="slider1" class="img-fluid">
-                            <h3 class="title">Zanzebeel features</h3>
-                        </div>
-                        <div class="explore-item-text">
-                            <h3 class="title">Zanzebeel features</h3>
-                            <ul>
-                                <li>Panoramic views of the dubai Fountain & Burj Khalifa</li>
-                                <li>Next door to the Dubai Opera, Burj Park, The Dubai Mall</li>
-                                <li>Only steps away from the vibrant Sheikh Mohammed boulevard</li>
-                                <li>Infinity Pool</li>
-                            </ul>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="explore-item">
-                    <a href="javascript:;" class="link">
-                        <div class="explore-item-img">
-                            <img src="../images//slider4.png" alt="slider1" class="img-fluid">
-                            <h3 class="title">Boulevard heights</h3>
-                        </div>
-                        <div class="explore-item-text">
-                            <h3 class="title">Boulevard heights</h3>
-                            <ul>
-                                <li>Panoramic views of the dubai Fountain & Burj Khalifa</li>
-                                <li>Next door to the Dubai Opera, Burj Park, The Dubai Mall</li>
-                                <li>Only steps away from the vibrant Sheikh Mohammed boulevard</li>
-                                <li>Infinity Pool</li>
-                            </ul>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
     </div>
-</div>
+
+}
+<!-- content ends here -->

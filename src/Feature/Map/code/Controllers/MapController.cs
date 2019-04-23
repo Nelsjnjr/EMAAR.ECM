@@ -27,7 +27,7 @@ namespace EMAAR.ECM.Feature.Map.Controllers
         public ActionResult InteractiveMaps()
         {
             IInteractive_Map interactive_Map   = _mapRepository.InteractiveMaps();
-            return View($"{ViewPath}Map/InteractiveMap/InteractiveMap.cshtml", interactive_Map);
+            return View($"{ViewPath}Map/InteractiveMap/_InteractiveMap.cshtml", interactive_Map);
         }
         #endregion
     }

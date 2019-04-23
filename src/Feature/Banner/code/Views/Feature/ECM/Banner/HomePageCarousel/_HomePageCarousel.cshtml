@@ -1,0 +1,54 @@
+﻿@model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Homepage_carousel.IHomepage_Carousels
+@using EMAAR.ECM.Foundation.SitecoreExtensions
+@using Glass.Mapper.Sc.Web.Mvc
+
+<!--Start HomePage carousels-->
+<section class="explore">
+    <div class="container">
+        <h2 class="heading text-center wow fadeInUp">@Html.Glass().Editable(Model, x => x.Title)</h2>
+
+        <div class="exploreSlider wow fadeInUp" data-wow-delay=".5s">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    @foreach (var carousels in Model.Carousels)
+                    {
+                        <div class="swiper-slide">
+                            <div class="explore-item">
+                                @if (carousels.CTA != null)
+                                {
+                                    using (Html.Glass().BeginRenderLink(carousels, x => x.CTA, new { @class = "link" }, isEditable: true))
+                                    {
+                                        <div class="explore-item-img">
+                                            @if (carousels != null && carousels.Image != null && !String.IsNullOrEmpty(carousels.Image.Alt))
+                                            {
+                                                @Html.Glass().RenderImage(carousels, x => x.Image, new { alt = carousels.Image.Alt, @class = "img-fluid" }, isEditable: true)
+
+                                            }
+                                            else
+                                            {
+                                                @Html.Glass().RenderImage(carousels, x => x.Image, new { alt = "image", @class = "img-fluid" }, isEditable: true)
+
+                                            }
+                                            <h3 class="title">@Html.Glass().Editable(carousels, x => x.Title)</h3>
+                                        </div>
+                                        <div class="explore-item-text">
+                                            <h3 class="title">@Html.Glass().Editable(carousels, x => x.Title)</h3>
+                                            @Html.Raw(Html.Glass().Editable(carousels, x => x.Summary))
+                                        </div>
+
+                                    }
+                                }
+                                </div>
+                        </div>
+                    }
+
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+
+        </div>
+    </div>
+</section>
+<!--End HomePage carousels-->

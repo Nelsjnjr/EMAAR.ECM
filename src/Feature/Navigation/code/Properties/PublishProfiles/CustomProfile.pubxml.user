@@ -22,10 +22,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Feature.Navigation.dll">
-      <publishTime>04/17/2019 16:59:06</publishTime>
+      <publishTime>04/23/2019 16:00:50</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Feature.Navigation.pdb">
-      <publishTime>04/17/2019 16:59:06</publishTime>
+      <publishTime>04/23/2019 16:00:50</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundatation.Constants.dll">
       <publishTime>03/26/2019 12:23:47</publishTime>
@@ -46,31 +46,31 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/09/2019 09:07:21</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.dll">
-      <publishTime>04/17/2019 16:59:04</publishTime>
+      <publishTime>04/23/2019 15:44:35</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.dll.config">
       <publishTime>04/11/2019 09:27:16</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.pdb">
-      <publishTime>04/17/2019 16:59:04</publishTime>
+      <publishTime>04/23/2019 15:44:35</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll">
-      <publishTime>04/17/2019 16:59:05</publishTime>
+      <publishTime>04/23/2019 15:44:35</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll.config">
       <publishTime>04/11/2019 09:27:17</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.pdb">
-      <publishTime>04/17/2019 16:59:05</publishTime>
+      <publishTime>04/23/2019 15:44:35</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.SitecoreExtensions.dll">
-      <publishTime>04/17/2019 16:59:05</publishTime>
+      <publishTime>04/23/2019 15:44:36</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.SitecoreExtensions.dll.config">
       <publishTime>04/11/2019 09:27:17</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.SitecoreExtensions.pdb">
-      <publishTime>04/17/2019 16:59:05</publishTime>
+      <publishTime>04/23/2019 15:44:36</publishTime>
     </File>
     <File Include="bin/Glass.Mapper.dll">
       <publishTime>04/17/2019 16:19:54</publishTime>
@@ -355,7 +355,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/17/2019 16:19:53</publishTime>
     </File>
     <File Include="Content/Site.css">
-      <publishTime>03/27/2019 11:45:03</publishTime>
+      <publishTime>04/21/2019 17:11:38</publishTime>
     </File>
     <File Include="Views/Feature/ECM/DowntownDubai/NavigationMenu/Footer.cshtml">
       <publishTime>03/27/2019 12:32:11</publishTime>
@@ -369,6 +369,18 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/Feature/ECM/NavigationMenu/Header.cshtml">
       <publishTime>04/15/2019 09:10:43</publishTime>
     </File>
+    <File Include="Views/Feature/ECM/NavigationMenu/LeftNavigation.cshtml">
+      <publishTime>04/23/2019 12:17:26</publishTime>
+    </File>
+    <File Include="Views/Feature/ECM/NavigationMenu/_Footer.cshtml">
+      <publishTime>04/15/2019 09:59:34</publishTime>
+    </File>
+    <File Include="Views/Feature/ECM/NavigationMenu/_Header.cshtml">
+      <publishTime>04/23/2019 16:00:12</publishTime>
+    </File>
+    <File Include="Views/Feature/ECM/NavigationMenu/_LeftNavigation.cshtml">
+      <publishTime>04/23/2019 12:17:26</publishTime>
+    </File>
     <File Include="Views/Project/ECM/DowntownDubai/NavigationMenu/GetHeader.cshtml">
       <publishTime>03/25/2019 12:25:58</publishTime>
     </File>
@@ -376,13 +388,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/26/2019 11:54:46</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>03/27/2019 11:45:03</publishTime>
+      <publishTime>04/21/2019 17:11:38</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>03/26/2019 12:54:36</publishTime>
     </File>
     <File Include="Views/_ViewStart.cshtml">
-      <publishTime>03/27/2019 11:45:02</publishTime>
+      <publishTime>04/21/2019 17:11:37</publishTime>
     </File>
     <File Include="Web.Debug.config">
       <publishTime>03/25/2019 12:15:00</publishTime>

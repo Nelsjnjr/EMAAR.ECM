@@ -1,9 +1,12 @@
-﻿using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
+﻿#region namespace
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types;
+#endregion
 namespace EMAAR.ECM.Feature.ContentComponents.Settings
 {
     public static class SitecoreSettings
     {
+        #region property
         /// <summary>
         /// SiteRoot Template ID
         /// </summary>
@@ -16,6 +19,6 @@ namespace EMAAR.ECM.Feature.ContentComponents.Settings
         /// CSS Field Name from Siteroot template
         /// </summary>
         public static string SiteRootCSSFieldName { get; set; } = ISiteRootConstants.CSSFileFieldName;
-
+        #endregion
     }
 }

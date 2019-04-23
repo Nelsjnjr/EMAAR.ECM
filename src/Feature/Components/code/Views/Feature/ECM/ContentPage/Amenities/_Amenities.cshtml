@@ -15,7 +15,6 @@
                         {
                             @Html.Glass().RenderImage(amenity, x => x.Image, new { alt = !String.IsNullOrEmpty(amenity.Image.Alt) ? amenity.Image.Alt : "icon", @class = "svg" }, isEditable: true)
                         }
-
                     </div>
                     <div class="title"> @Html.Raw(Html.Glass().Editable(amenity, x => x.Title))</div>
                 </li>

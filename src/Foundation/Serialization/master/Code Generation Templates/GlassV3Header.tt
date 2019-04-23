@@ -33,6 +33,7 @@ using Glass.Mapper.Sc.Configuration;
 using Glass.Mapper.Sc.Fields;
 using Sitecore.Globalization;
 using Sitecore.Data;
+using Sitecore.Data.Items;
 using EMAAR.ECM.Foundation.DependencyInjection;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
 <#
@@ -48,6 +49,12 @@ namespace <#=fullNamespace #>
 		
 		[SitecoreId]
 		Guid Id{ get; }
+
+		[SitecoreInfo(SitecoreInfoType.BaseTemplateIds)]
+        IEnumerable<Guid> BaseTemplateId { get; }
+
+	    [SitecoreItem]
+        Item ContextItem { get; }
 
 		[SitecoreInfo(SitecoreInfoType.Language)]
         Language Language{ get; }
@@ -80,7 +87,7 @@ namespace <#=fullNamespace #>
         IGlassBase Parent { get; }
 
 		[SitecoreChildren(InferType = true)]
-        IEnumerable<IGlassBase> Children { get; }
+        IEnumerable<INavigable> Children { get; }
 
 		[SitecoreQuery("/sitecore/content//*[@@templateid='{407F6EA5-A542-4D83-9D03-B598E06D3422}']",IsRelative =true)]
         ISiteRoot SiteRoot { get; }
@@ -91,6 +98,12 @@ namespace <#=fullNamespace #>
 		
 		[SitecoreId]
 		public virtual Guid Id{ get; private set;}
+
+		[SitecoreItem]
+        public virtual Item ContextItem { get; private set; }
+
+		[SitecoreInfo(SitecoreInfoType.BaseTemplateIds)]
+        public virtual IEnumerable<Guid> BaseTemplateId { get; private set;}
 
 		[SitecoreInfo(SitecoreInfoType.Language)]
         public virtual Language Language{ get; private set; }
@@ -123,7 +136,7 @@ namespace <#=fullNamespace #>
         public virtual IGlassBase Parent { get;private set; }
 
 		[SitecoreChildren(InferType = true)]
-        public virtual IEnumerable<IGlassBase> Children { get; private set; }
+        public virtual IEnumerable<INavigable> Children { get; private set; }
 
 	    [SitecoreQuery("/sitecore/content//*[@@templateid='{407F6EA5-A542-4D83-9D03-B598E06D3422}']",IsRelative =true)]
         public virtual ISiteRoot SiteRoot { get;private set; }

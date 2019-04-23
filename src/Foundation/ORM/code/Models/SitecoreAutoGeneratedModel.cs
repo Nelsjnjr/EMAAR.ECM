@@ -29,6 +29,7 @@ using Glass.Mapper.Sc.Configuration;
 using Glass.Mapper.Sc.Fields;
 using Sitecore.Globalization;
 using Sitecore.Data;
+using Sitecore.Data.Items;
 using EMAAR.ECM.Foundation.DependencyInjection;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
 
@@ -39,6 +40,12 @@ namespace EMAAR.ECM.Foundation.ORM.Models
 		
 		[SitecoreId]
 		Guid Id{ get; }
+
+		[SitecoreInfo(SitecoreInfoType.BaseTemplateIds)]
+        IEnumerable<Guid> BaseTemplateId { get; }
+
+	    [SitecoreItem]
+        Item ContextItem { get; }
 
 		[SitecoreInfo(SitecoreInfoType.Language)]
         Language Language{ get; }
@@ -71,7 +78,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models
         IGlassBase Parent { get; }
 
 		[SitecoreChildren(InferType = true)]
-        IEnumerable<IGlassBase> Children { get; }
+        IEnumerable<INavigable> Children { get; }
 
 		[SitecoreQuery("/sitecore/content//*[@@templateid='{407F6EA5-A542-4D83-9D03-B598E06D3422}']",IsRelative =true)]
         ISiteRoot SiteRoot { get; }
@@ -82,6 +89,12 @@ namespace EMAAR.ECM.Foundation.ORM.Models
 		
 		[SitecoreId]
 		public virtual Guid Id{ get; private set;}
+
+		[SitecoreItem]
+        public virtual Item ContextItem { get; private set; }
+
+		[SitecoreInfo(SitecoreInfoType.BaseTemplateIds)]
+        public virtual IEnumerable<Guid> BaseTemplateId { get; private set;}
 
 		[SitecoreInfo(SitecoreInfoType.Language)]
         public virtual Language Language{ get; private set; }
@@ -114,7 +127,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models
         public virtual IGlassBase Parent { get;private set; }
 
 		[SitecoreChildren(InferType = true)]
-        public virtual IEnumerable<IGlassBase> Children { get; private set; }
+        public virtual IEnumerable<INavigable> Children { get; private set; }
 
 	    [SitecoreQuery("/sitecore/content//*[@@templateid='{407F6EA5-A542-4D83-9D03-B598E06D3422}']",IsRelative =true)]
         public virtual ISiteRoot SiteRoot { get;private set; }
@@ -1666,26 +1679,34 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 
 
  	/// <summary>
-	/// IContentPage Interface
+	/// IGenericContentRootPage Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/ContentPage</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/GenericContentRootPage</para>	
 	/// <para>ID: 27b693ef-6229-4377-8fe9-fcf75d786007</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=IContentPageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface IContentPage : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.ContentPages.I_ContentPages
+	[SitecoreType(TemplateId=IGenericContentRootPageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IGenericContentRootPage : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.ContentPages.I_GenericContentRootPage
 	{
 				}
 
 
-	public static partial class IContentPageConstants{
+	public static partial class IGenericContentRootPageConstants{
 
 			public const string TemplateIdString = "27b693ef-6229-4377-8fe9-fcf75d786007";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "ContentPage";
+			public const string TemplateName = "GenericContentRootPage";
 
 					
 			public static readonly ID TitleFieldId = new ID("523933ea-645c-4879-a1ed-9757573716b2");
 			public const string TitleFieldName = "Title";
+			
+					
+			public static readonly ID Include_In_Left_NavigationFieldId = new ID("36cfaa10-f10c-40dd-9bbc-a8f7160dd389");
+			public const string Include_In_Left_NavigationFieldName = "Include in Left Navigation";
+			
+					
+			public static readonly ID Navigation_TitleFieldId = new ID("d9d30585-793d-4fc2-b6d1-7a47315dcbe9");
+			public const string Navigation_TitleFieldName = "Navigation Title";
 			
 			
 
@@ -1693,14 +1714,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 
 	
 	/// <summary>
-	/// ContentPage
+	/// GenericContentRootPage
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/ContentPage</para>	
+	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/GenericContentRootPage</para>	
 	/// <para>ID: 27b693ef-6229-4377-8fe9-fcf75d786007</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=IContentPageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(IContentPage))]
-	public partial class ContentPage  : GlassBase, IContentPage 
+	[SitecoreType(TemplateId=IGenericContentRootPageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IGenericContentRootPage))]
+	public partial class GenericContentRootPage  : GlassBase, IGenericContentRootPage 
 	{
 	   
 						/// <summary>
@@ -1711,8 +1732,30 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IContentPageConstants.TitleFieldName)]
+				[SitecoreField(IGenericContentRootPageConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
+					
+						/// <summary>
+				/// The Include in Left Navigation field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 36cfaa10-f10c-40dd-9bbc-a8f7160dd389</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGenericContentRootPageConstants.Include_In_Left_NavigationFieldName)]
+				public virtual bool Include_In_Left_Navigation  {get; set;}
+					
+						/// <summary>
+				/// The Navigation Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: d9d30585-793d-4fc2-b6d1-7a47315dcbe9</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGenericContentRootPageConstants.Navigation_TitleFieldName)]
+				public virtual string Navigation_Title  {get; set;}
 					
 			
 	}
@@ -4022,6 +4065,107 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 			
 	}
 }
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Pages
+{
+
+
+ 	/// <summary>
+	/// IRelated_Page Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/Related Pages/Related Page</para>	
+	/// <para>ID: 4619311d-5e83-43b6-9dea-b807687651f5</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IRelated_PageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IRelated_Page : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related_Pages.I_Related_Page
+	{
+				}
+
+
+	public static partial class IRelated_PageConstants{
+
+			public const string TemplateIdString = "4619311d-5e83-43b6-9dea-b807687651f5";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "Related Page";
+
+					
+			public static readonly ID ImageFieldId = new ID("f6ba7b09-176f-4bb1-a680-c070d4b92c65");
+			public const string ImageFieldName = "Image";
+			
+					
+			public static readonly ID SummaryFieldId = new ID("86ef63d0-7e10-4df7-80a7-28df2d6ba18f");
+			public const string SummaryFieldName = "Summary";
+			
+					
+			public static readonly ID TitleFieldId = new ID("cddd22f9-558a-4e98-a614-53c5e090fb96");
+			public const string TitleFieldName = "Title";
+			
+					
+			public static readonly ID CTAFieldId = new ID("f9401c09-1121-4bb5-abed-48bc2b29de71");
+			public const string CTAFieldName = "CTA";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// Related_Page
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/Related Pages/Related Page</para>	
+	/// <para>ID: 4619311d-5e83-43b6-9dea-b807687651f5</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IRelated_PageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IRelated_Page))]
+	public partial class Related_Page  : GlassBase, IRelated_Page 
+	{
+	   
+						/// <summary>
+				/// The Image field.
+				/// <para></para>
+				/// <para>Field Type: Image</para>		
+				/// <para>Field ID: f6ba7b09-176f-4bb1-a680-c070d4b92c65</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IRelated_PageConstants.ImageFieldName)]
+				public virtual Image Image  {get; set;}
+					
+						/// <summary>
+				/// The Summary field.
+				/// <para></para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: 86ef63d0-7e10-4df7-80a7-28df2d6ba18f</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IRelated_PageConstants.SummaryFieldName)]
+				public virtual string Summary  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: cddd22f9-558a-4e98-a614-53c5e090fb96</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IRelated_PageConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
+						/// <summary>
+				/// The CTA field.
+				/// <para></para>
+				/// <para>Field Type: General Link</para>		
+				/// <para>Field ID: f9401c09-1121-4bb5-abed-48bc2b29de71</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IRelated_PageConstants.CTAFieldName)]
+				public virtual Link CTA  {get; set;}
+					
+			
+	}
+}
 namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 {
 
@@ -4400,6 +4544,47 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 			
 	}
 }
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
+{
+
+
+ 	/// <summary>
+	/// IRelated_PageFolder Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/Related PageFolder</para>	
+	/// <para>ID: 4b72f491-3363-4799-a010-5f787ce9e5fd</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IRelated_PageFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IRelated_PageFolder : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_Related_Page_Folder
+	{
+				}
+
+
+	public static partial class IRelated_PageFolderConstants{
+
+			public const string TemplateIdString = "4b72f491-3363-4799-a010-5f787ce9e5fd";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "Related PageFolder";
+
+			
+
+	}
+
+	
+	/// <summary>
+	/// Related_PageFolder
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/Related PageFolder</para>	
+	/// <para>ID: 4b72f491-3363-4799-a010-5f787ce9e5fd</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IRelated_PageFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IRelated_PageFolder))]
+	public partial class Related_PageFolder  : GlassBase, IRelated_PageFolder 
+	{
+	   
+			
+	}
+}
 namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interactive_Map
 {
 
@@ -4633,7 +4818,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 	/// <para>ID: 4fb05ec1-985e-46d3-a95b-a851ff0be873</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IGeneric_ContentPageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface IGeneric_ContentPage : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic_Content.I_GenericContentPage
+	public partial interface IGeneric_ContentPage : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.ContentPages.I_GenericContentPage
 	{
 				}
 
@@ -4665,8 +4850,20 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string IntroductionFieldName = "Introduction";
 			
 					
+			public static readonly ID Related_PagesFieldId = new ID("9e0362e2-325d-4dd1-8559-188ded2f6380");
+			public const string Related_PagesFieldName = "Related Pages";
+			
+					
 			public static readonly ID TitleFieldId = new ID("af055e82-a161-43ef-bc60-523c7ef01a81");
 			public const string TitleFieldName = "Title";
+			
+					
+			public static readonly ID Include_In_Left_NavigationFieldId = new ID("36cfaa10-f10c-40dd-9bbc-a8f7160dd389");
+			public const string Include_In_Left_NavigationFieldName = "Include in Left Navigation";
+			
+					
+			public static readonly ID Navigation_TitleFieldId = new ID("d9d30585-793d-4fc2-b6d1-7a47315dcbe9");
+			public const string Navigation_TitleFieldName = "Navigation Title";
 			
 			
 
@@ -4740,6 +4937,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				public virtual string Introduction  {get; set;}
 					
 						/// <summary>
+				/// The Related Pages field.
+				/// <para>Datasource items from ./Site content/Related Pages</para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: 9e0362e2-325d-4dd1-8559-188ded2f6380</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Pages.IRelated_Page</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGeneric_ContentPageConstants.Related_PagesFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Pages.IRelated_Page> Related_Pages  {get; set;}
+					
+						/// <summary>
 				/// The Title field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -4749,6 +4957,129 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IGeneric_ContentPageConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
+					
+						/// <summary>
+				/// The Include in Left Navigation field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 36cfaa10-f10c-40dd-9bbc-a8f7160dd389</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGeneric_ContentPageConstants.Include_In_Left_NavigationFieldName)]
+				public virtual bool Include_In_Left_Navigation  {get; set;}
+					
+						/// <summary>
+				/// The Navigation Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: d9d30585-793d-4fc2-b6d1-7a47315dcbe9</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGeneric_ContentPageConstants.Navigation_TitleFieldName)]
+				public virtual string Navigation_Title  {get; set;}
+					
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related_Pages
+{
+
+
+ 	/// <summary>
+	/// I_Related_Page Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Related Pages/_Related page</para>	
+	/// <para>ID: 506931f0-dd1e-42cc-abcf-5e7ac1c25147</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_Related_PageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Related_Page : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Image, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_TitleDesc, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_CTA
+	{
+				}
+
+
+	public static partial class I_Related_PageConstants{
+
+			public const string TemplateIdString = "506931f0-dd1e-42cc-abcf-5e7ac1c25147";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_Related page";
+
+					
+			public static readonly ID ImageFieldId = new ID("f6ba7b09-176f-4bb1-a680-c070d4b92c65");
+			public const string ImageFieldName = "Image";
+			
+					
+			public static readonly ID SummaryFieldId = new ID("86ef63d0-7e10-4df7-80a7-28df2d6ba18f");
+			public const string SummaryFieldName = "Summary";
+			
+					
+			public static readonly ID TitleFieldId = new ID("cddd22f9-558a-4e98-a614-53c5e090fb96");
+			public const string TitleFieldName = "Title";
+			
+					
+			public static readonly ID CTAFieldId = new ID("f9401c09-1121-4bb5-abed-48bc2b29de71");
+			public const string CTAFieldName = "CTA";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _Related_Page
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Related Pages/_Related page</para>	
+	/// <para>ID: 506931f0-dd1e-42cc-abcf-5e7ac1c25147</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_Related_PageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Related_Page))]
+	public partial class _Related_Page  : GlassBase, I_Related_Page 
+	{
+	   
+						/// <summary>
+				/// The Image field.
+				/// <para></para>
+				/// <para>Field Type: Image</para>		
+				/// <para>Field ID: f6ba7b09-176f-4bb1-a680-c070d4b92c65</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_Related_PageConstants.ImageFieldName)]
+				public virtual Image Image  {get; set;}
+					
+						/// <summary>
+				/// The Summary field.
+				/// <para></para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: 86ef63d0-7e10-4df7-80a7-28df2d6ba18f</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_Related_PageConstants.SummaryFieldName)]
+				public virtual string Summary  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: cddd22f9-558a-4e98-a614-53c5e090fb96</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_Related_PageConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
+						/// <summary>
+				/// The CTA field.
+				/// <para></para>
+				/// <para>Field Type: General Link</para>		
+				/// <para>Field ID: f9401c09-1121-4bb5-abed-48bc2b29de71</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_Related_PageConstants.CTAFieldName)]
+				public virtual Link CTA  {get; set;}
 					
 			
 	}
@@ -4941,18 +5272,18 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 			
 	}
 }
-namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic_Content
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.ContentPages
 {
 
 
  	/// <summary>
 	/// I_GenericContentPage Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/Generic Content/_GenericContentPage</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/ContentPages/_GenericContentPage</para>	
 	/// <para>ID: 54457159-9409-4fa3-b2c6-69c6ec48db22</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=I_GenericContentPageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_GenericContentPage : IGlassBase 
+	public partial interface I_GenericContentPage : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_Navigable
 	{
 								/// <summary>
 					/// The Amenities field.
@@ -5005,6 +5336,16 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic
 					string Introduction  {get; set;}
 			
 								/// <summary>
+					/// The Related Pages field.
+					/// <para>Datasource items from ./Site content/Related Pages</para>
+					/// <para>Field Type: Multilist</para>		
+					/// <para>Field ID: 9e0362e2-325d-4dd1-8559-188ded2f6380</para>
+					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Pages.IRelated_Page</para>
+					/// </summary>
+					[SitecoreField(I_GenericContentPageConstants.Related_PagesFieldName)]
+					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Pages.IRelated_Page> Related_Pages  {get; set;}
+			
+								/// <summary>
 					/// The Title field.
 					/// <para></para>
 					/// <para>Field Type: Single-Line Text</para>		
@@ -5044,8 +5385,20 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic
 			public const string IntroductionFieldName = "Introduction";
 			
 					
+			public static readonly ID Related_PagesFieldId = new ID("9e0362e2-325d-4dd1-8559-188ded2f6380");
+			public const string Related_PagesFieldName = "Related Pages";
+			
+					
 			public static readonly ID TitleFieldId = new ID("af055e82-a161-43ef-bc60-523c7ef01a81");
 			public const string TitleFieldName = "Title";
+			
+					
+			public static readonly ID Include_In_Left_NavigationFieldId = new ID("36cfaa10-f10c-40dd-9bbc-a8f7160dd389");
+			public const string Include_In_Left_NavigationFieldName = "Include in Left Navigation";
+			
+					
+			public static readonly ID Navigation_TitleFieldId = new ID("d9d30585-793d-4fc2-b6d1-7a47315dcbe9");
+			public const string Navigation_TitleFieldName = "Navigation Title";
 			
 			
 
@@ -5055,7 +5408,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic
 	/// <summary>
 	/// _GenericContentPage
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/Generic Content/_GenericContentPage</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/ContentPages/_GenericContentPage</para>	
 	/// <para>ID: 54457159-9409-4fa3-b2c6-69c6ec48db22</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=I_GenericContentPageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
@@ -5119,6 +5472,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic
 				public virtual string Introduction  {get; set;}
 					
 						/// <summary>
+				/// The Related Pages field.
+				/// <para>Datasource items from ./Site content/Related Pages</para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: 9e0362e2-325d-4dd1-8559-188ded2f6380</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Pages.IRelated_Page</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentPageConstants.Related_PagesFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Pages.IRelated_Page> Related_Pages  {get; set;}
+					
+						/// <summary>
 				/// The Title field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -5128,6 +5492,119 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Generic
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_GenericContentPageConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
+					
+						/// <summary>
+				/// The Include in Left Navigation field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 36cfaa10-f10c-40dd-9bbc-a8f7160dd389</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentPageConstants.Include_In_Left_NavigationFieldName)]
+				public virtual bool Include_In_Left_Navigation  {get; set;}
+					
+						/// <summary>
+				/// The Navigation Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: d9d30585-793d-4fc2-b6d1-7a47315dcbe9</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentPageConstants.Navigation_TitleFieldName)]
+				public virtual string Navigation_Title  {get; set;}
+					
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
+{
+
+
+ 	/// <summary>
+	/// I_Navigable Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_Navigable</para>	
+	/// <para>ID: 57d9aad2-b948-4544-996d-1bf3c7221a28</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_NavigableConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Navigable : IGlassBase 
+	{
+								/// <summary>
+					/// The Include in Left Navigation field.
+					/// <para></para>
+					/// <para>Field Type: Checkbox</para>		
+					/// <para>Field ID: 36cfaa10-f10c-40dd-9bbc-a8f7160dd389</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_NavigableConstants.Include_In_Left_NavigationFieldName)]
+					bool Include_In_Left_Navigation  {get; set;}
+			
+								/// <summary>
+					/// The Navigation Title field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: d9d30585-793d-4fc2-b6d1-7a47315dcbe9</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_NavigableConstants.Navigation_TitleFieldName)]
+					string Navigation_Title  {get; set;}
+			
+				}
+
+
+	public static partial class I_NavigableConstants{
+
+			public const string TemplateIdString = "57d9aad2-b948-4544-996d-1bf3c7221a28";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_Navigable";
+
+					
+			public static readonly ID Include_In_Left_NavigationFieldId = new ID("36cfaa10-f10c-40dd-9bbc-a8f7160dd389");
+			public const string Include_In_Left_NavigationFieldName = "Include in Left Navigation";
+			
+					
+			public static readonly ID Navigation_TitleFieldId = new ID("d9d30585-793d-4fc2-b6d1-7a47315dcbe9");
+			public const string Navigation_TitleFieldName = "Navigation Title";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _Navigable
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_Navigable</para>	
+	/// <para>ID: 57d9aad2-b948-4544-996d-1bf3c7221a28</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_NavigableConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Navigable))]
+	public partial class _Navigable  : GlassBase, I_Navigable 
+	{
+	   
+						/// <summary>
+				/// The Include in Left Navigation field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 36cfaa10-f10c-40dd-9bbc-a8f7160dd389</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_NavigableConstants.Include_In_Left_NavigationFieldName)]
+				public virtual bool Include_In_Left_Navigation  {get; set;}
+					
+						/// <summary>
+				/// The Navigation Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: d9d30585-793d-4fc2-b6d1-7a47315dcbe9</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_NavigableConstants.Navigation_TitleFieldName)]
+				public virtual string Navigation_Title  {get; set;}
 					
 			
 	}
@@ -6526,7 +7003,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 	/// <para>ID: 70422db2-25af-483f-a3f1-aaf7cd751d5d</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IImage_Gallery_PageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface IImage_Gallery_Page : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_PageIntro, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing.I_List_Configuration
+	public partial interface IImage_Gallery_Page : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_PageIntro, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing.I_List_Configuration, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_Navigable
 	{
 				}
 
@@ -6556,6 +7033,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 			public static readonly ID No_Of_RecordsFieldId = new ID("44195a16-b523-44ef-b2fd-6304b28e16fb");
 			public const string No_Of_RecordsFieldName = "No of Records";
+			
+					
+			public static readonly ID Include_In_Left_NavigationFieldId = new ID("36cfaa10-f10c-40dd-9bbc-a8f7160dd389");
+			public const string Include_In_Left_NavigationFieldName = "Include in Left Navigation";
+			
+					
+			public static readonly ID Navigation_TitleFieldId = new ID("d9d30585-793d-4fc2-b6d1-7a47315dcbe9");
+			public const string Navigation_TitleFieldName = "Navigation Title";
 			
 			
 
@@ -6627,6 +7112,28 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IImage_Gallery_PageConstants.No_Of_RecordsFieldName)]
 				public virtual int No_Of_Records  {get; set;}
+					
+						/// <summary>
+				/// The Include in Left Navigation field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 36cfaa10-f10c-40dd-9bbc-a8f7160dd389</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IImage_Gallery_PageConstants.Include_In_Left_NavigationFieldName)]
+				public virtual bool Include_In_Left_Navigation  {get; set;}
+					
+						/// <summary>
+				/// The Navigation Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: d9d30585-793d-4fc2-b6d1-7a47315dcbe9</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IImage_Gallery_PageConstants.Navigation_TitleFieldName)]
+				public virtual string Navigation_Title  {get; set;}
 					
 			
 	}
@@ -6785,6 +7292,47 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Homepag
 				[SitecoreField(I_Homepage_CarouselsConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
 					
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
+{
+
+
+ 	/// <summary>
+	/// I_Related_Pages_Folder Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_Related Pages Folder</para>	
+	/// <para>ID: 77156a0f-29ff-460c-9eec-e001e8371112</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_Related_Pages_FolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Related_Pages_Folder : IGlassBase 
+	{
+				}
+
+
+	public static partial class I_Related_Pages_FolderConstants{
+
+			public const string TemplateIdString = "77156a0f-29ff-460c-9eec-e001e8371112";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_Related Pages Folder";
+
+			
+
+	}
+
+	
+	/// <summary>
+	/// _Related_Pages_Folder
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_Related Pages Folder</para>	
+	/// <para>ID: 77156a0f-29ff-460c-9eec-e001e8371112</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_Related_Pages_FolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Related_Pages_Folder))]
+	public partial class _Related_Pages_Folder  : GlassBase, I_Related_Pages_Folder 
+	{
+	   
 			
 	}
 }
@@ -7483,6 +8031,47 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 			
 	}
 }
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
+{
+
+
+ 	/// <summary>
+	/// I_Related_Page_Folder Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_Related Page Folder</para>	
+	/// <para>ID: 8ee25329-5c6a-46f9-a2fc-aa340ed96b58</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_Related_Page_FolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Related_Page_Folder : IGlassBase 
+	{
+				}
+
+
+	public static partial class I_Related_Page_FolderConstants{
+
+			public const string TemplateIdString = "8ee25329-5c6a-46f9-a2fc-aa340ed96b58";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_Related Page Folder";
+
+			
+
+	}
+
+	
+	/// <summary>
+	/// _Related_Page_Folder
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_Related Page Folder</para>	
+	/// <para>ID: 8ee25329-5c6a-46f9-a2fc-aa340ed96b58</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_Related_Page_FolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Related_Page_Folder))]
+	public partial class _Related_Page_Folder  : GlassBase, I_Related_Page_Folder 
+	{
+	   
+			
+	}
+}
 namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types
 {
 
@@ -7636,6 +8225,77 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Ameniti
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_AmenitiesConstants.Page_AmenitiesFieldName)]
 				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenity> Page_Amenities  {get; set;}
+					
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
+{
+
+
+ 	/// <summary>
+	/// INavigable Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/Navigable</para>	
+	/// <para>ID: 96caaf6e-a8e4-4b31-986f-90d7d7a5b7e4</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=INavigableConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface INavigable : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_Navigable
+	{
+				}
+
+
+	public static partial class INavigableConstants{
+
+			public const string TemplateIdString = "96caaf6e-a8e4-4b31-986f-90d7d7a5b7e4";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "Navigable";
+
+					
+			public static readonly ID Include_In_Left_NavigationFieldId = new ID("36cfaa10-f10c-40dd-9bbc-a8f7160dd389");
+			public const string Include_In_Left_NavigationFieldName = "Include in Left Navigation";
+			
+					
+			public static readonly ID Navigation_TitleFieldId = new ID("d9d30585-793d-4fc2-b6d1-7a47315dcbe9");
+			public const string Navigation_TitleFieldName = "Navigation Title";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// Navigable
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/Navigable</para>	
+	/// <para>ID: 96caaf6e-a8e4-4b31-986f-90d7d7a5b7e4</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=INavigableConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(INavigable))]
+	public partial class Navigable  : GlassBase, INavigable 
+	{
+	   
+						/// <summary>
+				/// The Include in Left Navigation field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 36cfaa10-f10c-40dd-9bbc-a8f7160dd389</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(INavigableConstants.Include_In_Left_NavigationFieldName)]
+				public virtual bool Include_In_Left_Navigation  {get; set;}
+					
+						/// <summary>
+				/// The Navigation Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: d9d30585-793d-4fc2-b6d1-7a47315dcbe9</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(INavigableConstants.Navigation_TitleFieldName)]
+				public virtual string Navigation_Title  {get; set;}
 					
 			
 	}
@@ -7939,6 +8599,92 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_CategoryConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
+					
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types.Mediacenter
+{
+
+
+ 	/// <summary>
+	/// IMediacenter Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/Mediacenter/Mediacenter</para>	
+	/// <para>ID: ab4f05b9-0538-4014-835a-545ded4920c1</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IMediacenterConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IMediacenter : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Mediacenter.I_Mediacenter
+	{
+				}
+
+
+	public static partial class IMediacenterConstants{
+
+			public const string TemplateIdString = "ab4f05b9-0538-4014-835a-545ded4920c1";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "Mediacenter";
+
+					
+			public static readonly ID TitleFieldId = new ID("523933ea-645c-4879-a1ed-9757573716b2");
+			public const string TitleFieldName = "Title";
+			
+					
+			public static readonly ID Include_In_Left_NavigationFieldId = new ID("36cfaa10-f10c-40dd-9bbc-a8f7160dd389");
+			public const string Include_In_Left_NavigationFieldName = "Include in Left Navigation";
+			
+					
+			public static readonly ID Navigation_TitleFieldId = new ID("d9d30585-793d-4fc2-b6d1-7a47315dcbe9");
+			public const string Navigation_TitleFieldName = "Navigation Title";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// Mediacenter
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/Mediacenter/Mediacenter</para>	
+	/// <para>ID: ab4f05b9-0538-4014-835a-545ded4920c1</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IMediacenterConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IMediacenter))]
+	public partial class Mediacenter  : GlassBase, IMediacenter 
+	{
+	   
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 523933ea-645c-4879-a1ed-9757573716b2</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
+						/// <summary>
+				/// The Include in Left Navigation field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 36cfaa10-f10c-40dd-9bbc-a8f7160dd389</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.Include_In_Left_NavigationFieldName)]
+				public virtual bool Include_In_Left_Navigation  {get; set;}
+					
+						/// <summary>
+				/// The Navigation Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: d9d30585-793d-4fc2-b6d1-7a47315dcbe9</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.Navigation_TitleFieldName)]
+				public virtual string Navigation_Title  {get; set;}
 					
 			
 	}
@@ -8615,6 +9361,92 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Cont
 			
 	}
 }
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Mediacenter
+{
+
+
+ 	/// <summary>
+	/// I_Mediacenter Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Mediacenter/_Mediacenter</para>	
+	/// <para>ID: b8fea45b-d869-4d60-bbfc-fdf441a3212a</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_MediacenterConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Mediacenter : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.ContentPages.I_GenericContentRootPage
+	{
+				}
+
+
+	public static partial class I_MediacenterConstants{
+
+			public const string TemplateIdString = "b8fea45b-d869-4d60-bbfc-fdf441a3212a";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_Mediacenter";
+
+					
+			public static readonly ID TitleFieldId = new ID("523933ea-645c-4879-a1ed-9757573716b2");
+			public const string TitleFieldName = "Title";
+			
+					
+			public static readonly ID Include_In_Left_NavigationFieldId = new ID("36cfaa10-f10c-40dd-9bbc-a8f7160dd389");
+			public const string Include_In_Left_NavigationFieldName = "Include in Left Navigation";
+			
+					
+			public static readonly ID Navigation_TitleFieldId = new ID("d9d30585-793d-4fc2-b6d1-7a47315dcbe9");
+			public const string Navigation_TitleFieldName = "Navigation Title";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _Mediacenter
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Mediacenter/_Mediacenter</para>	
+	/// <para>ID: b8fea45b-d869-4d60-bbfc-fdf441a3212a</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_MediacenterConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Mediacenter))]
+	public partial class _Mediacenter  : GlassBase, I_Mediacenter 
+	{
+	   
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 523933ea-645c-4879-a1ed-9757573716b2</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
+						/// <summary>
+				/// The Include in Left Navigation field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 36cfaa10-f10c-40dd-9bbc-a8f7160dd389</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.Include_In_Left_NavigationFieldName)]
+				public virtual bool Include_In_Left_Navigation  {get; set;}
+					
+						/// <summary>
+				/// The Navigation Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: d9d30585-793d-4fc2-b6d1-7a47315dcbe9</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.Navigation_TitleFieldName)]
+				public virtual string Navigation_Title  {get; set;}
+					
+			
+	}
+}
 namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interactive_Map
 {
 
@@ -9267,6 +10099,77 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 			
 	}
 }
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Pages
+{
+
+
+ 	/// <summary>
+	/// IRelated_Pages Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/Related Pages/Related Pages</para>	
+	/// <para>ID: cefc1b77-9a5b-4392-b048-43cab547abb4</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IRelated_PagesConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IRelated_Pages : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related_Pages.I_Related_Pages
+	{
+				}
+
+
+	public static partial class IRelated_PagesConstants{
+
+			public const string TemplateIdString = "cefc1b77-9a5b-4392-b048-43cab547abb4";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "Related Pages";
+
+					
+			public static readonly ID PagesFieldId = new ID("3a754c56-5d9d-44ae-8d50-8394f9f55e5a");
+			public const string PagesFieldName = "Pages";
+			
+					
+			public static readonly ID TitleFieldId = new ID("da0f8e41-b029-4caa-ac34-3ffd4bd3a5a7");
+			public const string TitleFieldName = "Title";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// Related_Pages
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Content Types/Related Pages/Related Pages</para>	
+	/// <para>ID: cefc1b77-9a5b-4392-b048-43cab547abb4</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IRelated_PagesConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IRelated_Pages))]
+	public partial class Related_Pages  : GlassBase, IRelated_Pages 
+	{
+	   
+						/// <summary>
+				/// The Pages field.
+				/// <para>Datasource items from Site Content\Homepage Carousels</para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: 3a754c56-5d9d-44ae-8d50-8394f9f55e5a</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Pages.IRelated_Page</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IRelated_PagesConstants.PagesFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Pages.IRelated_Page> Pages  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: da0f8e41-b029-4caa-ac34-3ffd4bd3a5a7</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IRelated_PagesConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
+			
+	}
+}
 namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Page_Types
 {
 
@@ -9354,13 +10257,13 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Content
 
 
  	/// <summary>
-	/// I_ContentPages Interface
+	/// I_GenericContentRootPage Interface
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/ContentPages/_ContentPages</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/ContentPages/_GenericContentRootPage</para>	
 	/// <para>ID: d22da0d6-8dcc-4956-99ef-0cb617c1b0b0</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_ContentPagesConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_ContentPages : IGlassBase 
+	[SitecoreType(TemplateId=I_GenericContentRootPageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_GenericContentRootPage : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_Navigable
 	{
 								/// <summary>
 					/// The Title field.
@@ -9369,21 +10272,29 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Content
 					/// <para>Field ID: 523933ea-645c-4879-a1ed-9757573716b2</para>
 					/// <para>Custom Data: </para>
 					/// </summary>
-					[SitecoreField(I_ContentPagesConstants.TitleFieldName)]
+					[SitecoreField(I_GenericContentRootPageConstants.TitleFieldName)]
 					string Title  {get; set;}
 			
 				}
 
 
-	public static partial class I_ContentPagesConstants{
+	public static partial class I_GenericContentRootPageConstants{
 
 			public const string TemplateIdString = "d22da0d6-8dcc-4956-99ef-0cb617c1b0b0";
 			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "_ContentPages";
+			public const string TemplateName = "_GenericContentRootPage";
 
 					
 			public static readonly ID TitleFieldId = new ID("523933ea-645c-4879-a1ed-9757573716b2");
 			public const string TitleFieldName = "Title";
+			
+					
+			public static readonly ID Include_In_Left_NavigationFieldId = new ID("36cfaa10-f10c-40dd-9bbc-a8f7160dd389");
+			public const string Include_In_Left_NavigationFieldName = "Include in Left Navigation";
+			
+					
+			public static readonly ID Navigation_TitleFieldId = new ID("d9d30585-793d-4fc2-b6d1-7a47315dcbe9");
+			public const string Navigation_TitleFieldName = "Navigation Title";
 			
 			
 
@@ -9391,14 +10302,14 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Content
 
 	
 	/// <summary>
-	/// _ContentPages
+	/// _GenericContentRootPage
 	/// <para></para>
-	/// <para>Path: /sitecore/templates/Feature/ECM/ContentPages/_ContentPages</para>	
+	/// <para>Path: /sitecore/templates/Feature/ECM/ContentPages/_GenericContentRootPage</para>	
 	/// <para>ID: d22da0d6-8dcc-4956-99ef-0cb617c1b0b0</para>	
 	/// </summary>
-	[SitecoreType(TemplateId=I_ContentPagesConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	 [Service(typeof(I_ContentPages))]
-	public partial class _ContentPages  : GlassBase, I_ContentPages 
+	[SitecoreType(TemplateId=I_GenericContentRootPageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_GenericContentRootPage))]
+	public partial class _GenericContentRootPage  : GlassBase, I_GenericContentRootPage 
 	{
 	   
 						/// <summary>
@@ -9409,8 +10320,30 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Content
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_ContentPagesConstants.TitleFieldName)]
+				[SitecoreField(I_GenericContentRootPageConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
+					
+						/// <summary>
+				/// The Include in Left Navigation field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 36cfaa10-f10c-40dd-9bbc-a8f7160dd389</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentRootPageConstants.Include_In_Left_NavigationFieldName)]
+				public virtual bool Include_In_Left_Navigation  {get; set;}
+					
+						/// <summary>
+				/// The Navigation Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: d9d30585-793d-4fc2-b6d1-7a47315dcbe9</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentRootPageConstants.Navigation_TitleFieldName)]
+				public virtual string Navigation_Title  {get; set;}
 					
 			
 	}
@@ -10880,6 +11813,138 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 				[SitecoreField(INavigationConstants.Sub_NavigationsFieldName)]
 				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.ISub_Navigation> Sub_Navigations  {get; set;}
 					
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related_Pages
+{
+
+
+ 	/// <summary>
+	/// I_Related_Pages Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Related Pages/_Related Pages</para>	
+	/// <para>ID: ef70ffce-c9e3-46d6-8719-b39997f9e6b9</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_Related_PagesConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Related_Pages : IGlassBase 
+	{
+								/// <summary>
+					/// The Pages field.
+					/// <para>Datasource items from Site Content\Homepage Carousels</para>
+					/// <para>Field Type: Multilist</para>		
+					/// <para>Field ID: 3a754c56-5d9d-44ae-8d50-8394f9f55e5a</para>
+					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Pages.IRelated_Page</para>
+					/// </summary>
+					[SitecoreField(I_Related_PagesConstants.PagesFieldName)]
+					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Pages.IRelated_Page> Pages  {get; set;}
+			
+								/// <summary>
+					/// The Title field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: da0f8e41-b029-4caa-ac34-3ffd4bd3a5a7</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_Related_PagesConstants.TitleFieldName)]
+					string Title  {get; set;}
+			
+				}
+
+
+	public static partial class I_Related_PagesConstants{
+
+			public const string TemplateIdString = "ef70ffce-c9e3-46d6-8719-b39997f9e6b9";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_Related Pages";
+
+					
+			public static readonly ID PagesFieldId = new ID("3a754c56-5d9d-44ae-8d50-8394f9f55e5a");
+			public const string PagesFieldName = "Pages";
+			
+					
+			public static readonly ID TitleFieldId = new ID("da0f8e41-b029-4caa-ac34-3ffd4bd3a5a7");
+			public const string TitleFieldName = "Title";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _Related_Pages
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Related Pages/_Related Pages</para>	
+	/// <para>ID: ef70ffce-c9e3-46d6-8719-b39997f9e6b9</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_Related_PagesConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Related_Pages))]
+	public partial class _Related_Pages  : GlassBase, I_Related_Pages 
+	{
+	   
+						/// <summary>
+				/// The Pages field.
+				/// <para>Datasource items from Site Content\Homepage Carousels</para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: 3a754c56-5d9d-44ae-8d50-8394f9f55e5a</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Pages.IRelated_Page</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_Related_PagesConstants.PagesFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Pages.IRelated_Page> Pages  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: da0f8e41-b029-4caa-ac34-3ffd4bd3a5a7</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_Related_PagesConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
+{
+
+
+ 	/// <summary>
+	/// IRelated_PagesFolder Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/Related PagesFolder</para>	
+	/// <para>ID: f0088ee8-0851-47e8-8b54-065d78222b80</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IRelated_PagesFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IRelated_PagesFolder : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_Related_Pages_Folder
+	{
+				}
+
+
+	public static partial class IRelated_PagesFolderConstants{
+
+			public const string TemplateIdString = "f0088ee8-0851-47e8-8b54-065d78222b80";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "Related PagesFolder";
+
+			
+
+	}
+
+	
+	/// <summary>
+	/// Related_PagesFolder
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/Related PagesFolder</para>	
+	/// <para>ID: f0088ee8-0851-47e8-8b54-065d78222b80</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IRelated_PagesFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IRelated_PagesFolder))]
+	public partial class Related_PagesFolder  : GlassBase, IRelated_PagesFolder 
+	{
+	   
 			
 	}
 }

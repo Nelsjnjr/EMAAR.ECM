@@ -5,6 +5,7 @@ using EMAAR.ECM.Foundation.SitecoreExtensions.Settings;
 using EMAAR.ECM.Foundation.DependencyInjection;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
 using Glass.Mapper.Sc.Web.Mvc;
+using Sitecore.Data.Items;
 #endregion
 
 namespace EMAAR.ECM.Foundation.SitecoreExtensions
@@ -58,7 +59,7 @@ namespace EMAAR.ECM.Foundation.SitecoreExtensions
         /// </summary>
         public IFooter NavigationFooter => _mvcContext()?.SitecoreService.GetItem<IFooter>
             ($"{Sitecore.Context.Site.RootPath}{SitecoreSettings.NavigationFooterPath}");
-       
+
         #endregion
 
 

@@ -34,6 +34,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -236,7 +237,7 @@
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="Views\Feature\ECM\ContentPage\Amenities\_Amenities.cshtml" />
     <Content Include="Views\Feature\ECM\ContentPage\Faqs\_Faqs.cshtml" />
-    <Content Include="Views\Feature\ECM\ContentPage\Relatedpages\_Related pages.cshtml" />
+    <Content Include="Views\Feature\ECM\ContentPage\Relatedpages\_Relatedpages.cshtml" />
     <None Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -246,9 +247,7 @@
     </Content>
     <None Include="Views\Web.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

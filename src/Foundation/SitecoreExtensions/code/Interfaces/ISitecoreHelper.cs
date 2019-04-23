@@ -1,4 +1,5 @@
-﻿using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
+﻿using System;
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
 
 namespace EMAAR.ECM.Foundation.SitecoreExtensions.Interfaces
 {
@@ -8,7 +9,7 @@ namespace EMAAR.ECM.Foundation.SitecoreExtensions.Interfaces
     public interface ISitecoreHelper
     {
         #region property
-      
+
         string HomePageSearch { get; }
         /// <summary>
         ///  Getting Home page search icon image url from Sitecore settings based on Site
@@ -22,7 +23,7 @@ namespace EMAAR.ECM.Foundation.SitecoreExtensions.Interfaces
         ///  Getting Content page Close icon image url from Sitecore settings based on Site
         /// </summary>
         string ContentPageClose { get; }
-      
+
         /// <summary>
         /// Getting Header Navigation details
         /// </summary>
@@ -31,8 +32,10 @@ namespace EMAAR.ECM.Foundation.SitecoreExtensions.Interfaces
         /// Getting footer navigation details
         /// </summary>
         IFooter NavigationFooter { get; }
-       
+     
+
+
         #endregion
-      
+
     }
 }

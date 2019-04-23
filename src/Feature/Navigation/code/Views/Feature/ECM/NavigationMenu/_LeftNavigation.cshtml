@@ -1,0 +1,31 @@
+﻿@model  EMAAR.ECM.Feature.Navigation.Interface.ILeftNavigation
+@if (Model != null && Model.CurrentNavigationItem != null && Model.ParentNavigationItem != null)
+{
+    <div class="mobileAccordionHolder">
+        <span class="placehold"></span>
+    </div>
+    <div class="sideNavigation">
+        <ul>
+            @if (Model.ParentNavigationItem.Children.Count() > 0 && Model.CurrentNavigationItem.Include_In_Left_Navigation)
+            {
+                <li><a href="javascript:;">@Model.ParentNavigationItem.Navigation_Title</a></li>
+                foreach (var nav in Model.ParentNavigationItem.Children.ToList())
+                {
+                    var options = Sitecore.Links.LinkManager.GetDefaultUrlOptions();
+                    options.AlwaysIncludeServerUrl = true;
+                    options.SiteResolving = true;
+                    if (Model.CurrentNavigationItem.Id == nav.Id)
+                    {
+                        <li class="active"><a href="@Sitecore.Links.LinkManager.GetItemUrl(nav.ContextItem,options)">@nav.Navigation_Title</a></li>
+                    }
+                    else 
+                    {
+                       
+                        <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(nav.ContextItem,options)">@nav.Navigation_Title</a></li>
+                    }
+                }
+            }
+        </ul>
+    </div>
+
+}

@@ -340,7 +340,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/11/2019 15:54:42</publishTime>
     </File>
     <File Include="Views/Feature/ECM/Listing/Images/ImageGallery.cshtml">
-      <publishTime>04/11/2019 15:54:42</publishTime>
+      <publishTime>04/22/2019 16:53:28</publishTime>
     </File>
     <File Include="Views/Feature/ECM/Listing/Videos/VideoAlbum.cshtml">
       <publishTime>04/11/2019 15:54:42</publishTime>

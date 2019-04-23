@@ -28,19 +28,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/09/2019 17:02:04</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
-      <publishTime>09/10/2013 16:29:20</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.pdb">
       <publishTime>09/10/2013 16:29:20</publishTime>
     </File>
     <File Include="bin/Castle.Core.dll">
-      <publishTime>10/10/2017 08:13:52</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Feature.SEO.dll">
-      <publishTime>04/11/2019 12:26:46</publishTime>
+      <publishTime>04/23/2019 14:26:52</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Feature.SEO.pdb">
-      <publishTime>04/11/2019 12:26:46</publishTime>
+      <publishTime>04/23/2019 14:26:52</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.Constants.dll">
       <publishTime>04/09/2019 09:07:21</publishTime>
@@ -52,43 +52,43 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/09/2019 09:07:21</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.dll">
-      <publishTime>04/11/2019 12:26:40</publishTime>
+      <publishTime>04/23/2019 14:26:50</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.dll.config">
       <publishTime>04/11/2019 09:27:16</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.pdb">
-      <publishTime>04/11/2019 12:26:40</publishTime>
+      <publishTime>04/23/2019 14:26:50</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll">
-      <publishTime>04/10/2019 14:52:42</publishTime>
+      <publishTime>04/23/2019 14:26:51</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll.config">
       <publishTime>04/11/2019 09:27:17</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.pdb">
-      <publishTime>04/10/2019 14:52:42</publishTime>
+      <publishTime>04/23/2019 14:26:51</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.SitecoreExtensions.dll">
-      <publishTime>04/10/2019 14:52:43</publishTime>
+      <publishTime>04/23/2019 14:26:51</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.SitecoreExtensions.dll.config">
       <publishTime>04/11/2019 09:27:17</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.SitecoreExtensions.pdb">
-      <publishTime>04/10/2019 14:52:43</publishTime>
+      <publishTime>04/23/2019 14:26:51</publishTime>
     </File>
     <File Include="bin/Glass.Mapper.dll">
-      <publishTime>02/25/2019 13:27:08</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/Glass.Mapper.pdb">
       <publishTime>02/25/2019 13:27:08</publishTime>
     </File>
     <File Include="bin/Glass.Mapper.Sc.dll">
-      <publishTime>02/25/2019 13:27:08</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/Glass.Mapper.Sc.Mvc.dll">
-      <publishTime>02/25/2019 13:27:10</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/Glass.Mapper.Sc.Mvc.pdb">
       <publishTime>02/25/2019 13:27:10</publishTime>
@@ -97,19 +97,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/25/2019 13:27:08</publishTime>
     </File>
     <File Include="bin/Glass.Mapper.Sc.WebForms.dll">
-      <publishTime>02/25/2019 13:27:14</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/Glass.Mapper.Sc.WebForms.pdb">
       <publishTime>02/25/2019 13:27:14</publishTime>
     </File>
     <File Include="bin/HtmlAgilityPack.dll">
-      <publishTime>07/14/2016 11:01:16</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/HtmlAgilityPack.pdb">
       <publishTime>07/14/2016 11:01:16</publishTime>
     </File>
     <File Include="bin/ICSharpCode.SharpZipLib.dll">
-      <publishTime>01/03/2011 14:16:38</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/Lucene.Net.Contrib.Highlighter.dll">
       <publishTime>12/19/2017 19:40:34</publishTime>
@@ -127,16 +127,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/26/2012 00:52:54</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.TelemetryCorrelation.dll">
-      <publishTime>06/28/2017 15:05:26</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
-      <publishTime>05/24/2018 13:38:22</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/Microsoft.Extensions.DependencyInjection.Abstractions.dll">
-      <publishTime>06/22/2016 09:14:56</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/Microsoft.Extensions.DependencyInjection.dll">
-      <publishTime>06/22/2016 09:14:56</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/Microsoft.OData.Core.dll">
       <publishTime>12/19/2017 19:40:34</publishTime>
@@ -145,37 +145,37 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/19/2017 19:40:34</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll">
-      <publishTime>04/25/2013 10:04:08</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Caching.dll">
-      <publishTime>04/25/2013 10:04:02</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Configuration.dll">
-      <publishTime>04/25/2013 10:04:06</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Data.dll">
-      <publishTime>05/21/2013 12:20:56</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.dll">
-      <publishTime>04/25/2013 10:04:00</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.ServiceBus.dll">
-      <publishTime>04/25/2013 10:04:04</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.dll">
-      <publishTime>04/25/2013 10:04:04</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/Microsoft.Spatial.dll">
       <publishTime>12/19/2017 19:40:34</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
-      <publishTime>07/25/2012 11:48:56</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/Mvp.Xml.dll">
-      <publishTime>07/24/2012 12:45:38</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>06/13/2016 23:06:14</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/RazorGenerator.Mvc.dll">
       <publishTime>12/19/2017 19:40:34</publishTime>
@@ -199,31 +199,31 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/24/2018 13:38:22</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
-      <publishTime>05/24/2018 13:38:22</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
       <publishTime>05/24/2018 13:38:24</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
       <publishTime>05/24/2018 13:38:24</publishTime>
@@ -232,76 +232,76 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/24/2018 13:38:24</publishTime>
     </File>
     <File Include="bin/roslyn/System.AppContext.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/System.Collections.Immutable.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/System.Console.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/System.IO.Compression.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/System.IO.FileSystem.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/System.IO.Pipes.AccessControl.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/System.IO.Pipes.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/System.Reflection.Metadata.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/System.Security.AccessControl.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/System.Security.Claims.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/System.Security.Principal.Windows.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/System.ValueTuple.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/System.Xml.XPath.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
-      <publishTime>05/24/2018 13:38:24</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/vbc.exe">
       <publishTime>05/24/2018 13:38:24</publishTime>
@@ -337,19 +337,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/19/2017 19:40:34</publishTime>
     </File>
     <File Include="bin/Sitecore.Kernel.dll">
-      <publishTime>01/18/2018 16:27:30</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/Sitecore.Logging.Client.dll">
-      <publishTime>01/18/2018 16:28:14</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/Sitecore.Logging.dll">
-      <publishTime>01/18/2018 16:28:20</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/Sitecore.Mvc.dll">
       <publishTime>12/19/2017 19:40:34</publishTime>
     </File>
     <File Include="bin/Sitecore.NVelocity.dll">
-      <publishTime>01/18/2018 16:31:32</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/Sitecore.Services.Core.dll">
       <publishTime>12/19/2017 19:40:34</publishTime>
@@ -364,34 +364,34 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/18/2018 16:35:00</publishTime>
     </File>
     <File Include="bin/Sitecore.Zip.dll">
-      <publishTime>01/18/2018 16:38:56</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/System.Diagnostics.DiagnosticSource.dll">
-      <publishTime>07/19/2017 10:01:30</publishTime>
+      <publishTime>04/17/2019 16:19:53</publishTime>
     </File>
     <File Include="bin/System.IdentityModel.Tokens.Jwt.dll">
       <publishTime>12/19/2017 19:40:36</publishTime>
     </File>
     <File Include="bin/System.Linq.dll">
-      <publishTime>06/11/2016 23:14:02</publishTime>
+      <publishTime>04/17/2019 16:19:53</publishTime>
     </File>
     <File Include="bin/System.Linq.Expressions.dll">
-      <publishTime>06/11/2016 23:13:54</publishTime>
+      <publishTime>04/17/2019 16:19:53</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
       <publishTime>01/28/2015 04:02:42</publishTime>
     </File>
     <File Include="bin/System.Reflection.dll">
-      <publishTime>06/11/2016 23:14:32</publishTime>
+      <publishTime>04/17/2019 16:19:53</publishTime>
     </File>
     <File Include="bin/System.Runtime.Extensions.dll">
-      <publishTime>06/11/2016 23:14:28</publishTime>
+      <publishTime>04/17/2019 16:19:53</publishTime>
     </File>
     <File Include="bin/System.Web.Cors.dll">
       <publishTime>12/19/2017 19:40:36</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
-      <publishTime>02/01/2018 12:20:56</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/System.Web.Http.Cors.dll">
       <publishTime>12/19/2017 19:40:36</publishTime>
@@ -403,28 +403,28 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/19/2017 19:40:36</publishTime>
     </File>
     <File Include="bin/System.Web.Mvc.dll">
-      <publishTime>01/28/2015 04:02:18</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/System.Web.OData.dll">
       <publishTime>12/19/2017 19:40:36</publishTime>
     </File>
     <File Include="bin/System.Web.Optimization.dll">
-      <publishTime>02/11/2014 15:26:04</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/System.Web.Razor.dll">
-      <publishTime>02/01/2018 12:16:56</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Deployment.dll">
-      <publishTime>02/01/2018 12:20:56</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.dll">
-      <publishTime>02/01/2018 12:20:56</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Razor.dll">
-      <publishTime>02/01/2018 12:20:56</publishTime>
+      <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
-      <publishTime>01/23/2014 13:57:34</publishTime>
+      <publishTime>04/17/2019 16:19:53</publishTime>
     </File>
     <File Include="Content/Site.css">
       <publishTime>04/07/2019 10:46:15</publishTime>
@@ -461,6 +461,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Views/Feature/ECM/SEO/SocialTags.cshtml">
       <publishTime>04/04/2019 11:00:49</publishTime>
+    </File>
+    <File Include="Views/Feature/ECM/SEO/_Seo.cshtml">
+      <publishTime>04/11/2019 14:49:21</publishTime>
     </File>
     <File Include="Views/PreAndPostScripts.cshtml">
       <publishTime>04/01/2019 10:18:15</publishTime>

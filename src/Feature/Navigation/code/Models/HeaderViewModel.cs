@@ -11,6 +11,7 @@ namespace EMAAR.ECM.Feature.Navigation.Models
     [Service(typeof(IHeaderViewModel))]
     public class HeaderViewModel : IHeaderViewModel
     {
+        #region property
         /// <summary>
         /// Getting Header Menu details from Sitecore
         /// </summary>
@@ -35,5 +36,6 @@ namespace EMAAR.ECM.Feature.Navigation.Models
         /// Check is this page is Home
         /// </summary>
         public bool IsHomePage { get; set; }
+        #endregion
     }
 }

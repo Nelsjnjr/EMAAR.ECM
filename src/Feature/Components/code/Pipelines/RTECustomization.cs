@@ -1,9 +1,11 @@
-﻿using System.Collections.Generic;
+﻿#region namespace
+using System.Collections.Generic;
 using EMAAR.ECM.Feature.ContentComponents.Settings;
 using Sitecore.Data.Items;
 using Sitecore.Shell.Controls.RichTextEditor;
 using Sitecore.Web;
 using Telerik.Web.UI;
+#endregion
 
 namespace EMAAR.ECM.Feature.ContentComponents.Pipelines
 {
@@ -12,9 +14,12 @@ namespace EMAAR.ECM.Feature.ContentComponents.Pipelines
     /// </summary>
     public class RteCustomization : EditorConfiguration
     {
+        #region constructor
         public RteCustomization(Item profile) : base(profile)
         {
         }
+        #endregion
+        #region method
         /// <summary>
         /// Setting Style sheet file dynamically
         /// </summary>
@@ -59,5 +64,6 @@ namespace EMAAR.ECM.Feature.ContentComponents.Pipelines
             Editor.EnableFilter(EditorFilters.FixEnclosingP);
            
         }
+        #endregion
     }
 }

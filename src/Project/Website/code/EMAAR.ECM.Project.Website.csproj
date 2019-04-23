@@ -381,6 +381,7 @@
     <Content Include="Assets\Project\ECM\js\vendor\.DS_Store" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="Views\Shared\ECM\_baseLayout.cshtml" />
+    <Content Include="Views\Shared\ECM\_twoColumn.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

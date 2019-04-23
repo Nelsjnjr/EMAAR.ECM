@@ -31,10 +31,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Feature.Banner.dll">
-      <publishTime>04/17/2019 16:58:12</publishTime>
+      <publishTime>04/23/2019 14:24:51</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Feature.Banner.pdb">
-      <publishTime>04/17/2019 16:58:12</publishTime>
+      <publishTime>04/23/2019 14:24:51</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Feature.ImageBanner.dll">
       <publishTime>04/09/2019 09:07:23</publishTime>
@@ -52,31 +52,31 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/09/2019 09:07:21</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.dll">
-      <publishTime>04/17/2019 16:58:10</publishTime>
+      <publishTime>04/23/2019 14:24:48</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.dll.config">
       <publishTime>04/11/2019 09:27:16</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.pdb">
-      <publishTime>04/17/2019 16:58:10</publishTime>
+      <publishTime>04/23/2019 14:24:48</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll">
-      <publishTime>04/17/2019 16:58:11</publishTime>
+      <publishTime>04/23/2019 14:24:50</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll.config">
       <publishTime>04/11/2019 09:27:17</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.pdb">
-      <publishTime>04/17/2019 16:58:11</publishTime>
+      <publishTime>04/23/2019 14:24:50</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.SitecoreExtensions.dll">
-      <publishTime>04/17/2019 16:58:12</publishTime>
+      <publishTime>04/23/2019 14:24:51</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.SitecoreExtensions.dll.config">
       <publishTime>04/11/2019 09:27:17</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.SitecoreExtensions.pdb">
-      <publishTime>04/17/2019 16:58:12</publishTime>
+      <publishTime>04/23/2019 14:24:51</publishTime>
     </File>
     <File Include="bin/Glass.Mapper.dll">
       <publishTime>04/17/2019 16:19:54</publishTime>
@@ -408,8 +408,14 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/Feature/ECM/Banner/Hero/Hero.cshtml">
       <publishTime>04/11/2019 14:11:04</publishTime>
     </File>
+    <File Include="Views/Feature/ECM/Banner/Hero/_Hero.cshtml">
+      <publishTime>04/11/2019 14:11:04</publishTime>
+    </File>
     <File Include="Views/Feature/ECM/Banner/HomePageCarousel/HomePageCarousel.cshtml">
       <publishTime>04/15/2019 10:59:59</publishTime>
+    </File>
+    <File Include="Views/Feature/ECM/Banner/HomePageCarousel/_HomePageCarousel.cshtml">
+      <publishTime>04/23/2019 15:57:13</publishTime>
     </File>
     <File Include="Views/Feature/ECM/Banner/ImageText/ImageText.cshtml">
       <publishTime>04/09/2019 12:52:15</publishTime>
@@ -423,6 +429,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/Feature/ECM/Banner/ImageText/_BackgroundImageText.cshtml">
       <publishTime>03/21/2019 15:08:57</publishTime>
     </File>
+    <File Include="Views/Feature/ECM/Banner/ImageText/_ImageText.cshtml">
+      <publishTime>04/09/2019 12:52:15</publishTime>
+    </File>
     <File Include="Views/Feature/ECM/Banner/ImageText/_LeftImageText.cshtml">
       <publishTime>04/04/2019 17:05:34</publishTime>
     </File>
@@ -430,6 +439,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/04/2019 17:07:05</publishTime>
     </File>
     <File Include="Views/Feature/ECM/Banner/Parallax/Parallax.cshtml">
+      <publishTime>04/11/2019 14:09:31</publishTime>
+    </File>
+    <File Include="Views/Feature/ECM/Banner/Parallax/_Parallax.cshtml">
       <publishTime>04/11/2019 14:09:31</publishTime>
     </File>
     <File Include="Views/Feature/ECM/Banner/RelatedContentSlides/RelatedContentSlide.cshtml">

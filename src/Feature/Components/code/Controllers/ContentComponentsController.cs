@@ -1,10 +1,11 @@
 ﻿#region namespace
 using System.Web.Mvc;
 using EMAAR.ECM.Feature.ContentComponents.Interfaces;
-using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types;
-using static EMAAR.ECM.Foundation.SitecoreExtensions.Settings.SitecoreSettings;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Faq;
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Pages;
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types;
+using static EMAAR.ECM.Foundation.SitecoreExtensions.Settings.SitecoreSettings;
 #endregion
 
 namespace EMAAR.ECM.Feature.ContentComponents.Controllers
@@ -49,6 +50,15 @@ namespace EMAAR.ECM.Feature.ContentComponents.Controllers
         {
             IFaqs faqs  = _contentRepositories.GetFaqs();
             return View($"{ViewPath}ContentPage/Faqs/_Faqs.cshtml", faqs?.Page_Faqs??null);
+        }
+        /// <summary>
+        /// Getting all related pages asigned in Sitecore
+        /// </summary>  
+        /// <returns>Relatedpages</returns>
+        public ActionResult RelatedPages()
+        {
+            IRelated_Pages related_Pages  = _contentRepositories.RelatedPages();
+            return View($"{ViewPath}ContentPage/RelatedPages/_RelatedPages.cshtml", related_Pages);
         }
         #endregion
     }

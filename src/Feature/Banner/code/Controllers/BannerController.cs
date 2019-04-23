@@ -17,14 +17,14 @@ namespace EMAAR.ECM.Feature.Banner.Controllers
     {
         #region Private property
         private readonly IBannerRepository _bannerRepository;
-        private readonly ISitecoreHelper _sitecoreHelper;
+      
         #endregion
 
         #region construtor
         public BannerController(IBannerRepository bannerRepository, ISitecoreHelper sitecoreHelper)
         {
             _bannerRepository = bannerRepository;
-            _sitecoreHelper = sitecoreHelper;
+        
         }
         #endregion
         #region method
@@ -35,7 +35,7 @@ namespace EMAAR.ECM.Feature.Banner.Controllers
         public ActionResult ImageText()
         {
             IImageText imageText = _bannerRepository.GetImageText();
-            return View($"{ViewPath}Banner/ImageText/ImageText.cshtml", imageText);
+            return View($"{ViewPath}Banner/ImageText/_ImageText.cshtml", imageText);
         }
         /// <summary>
         /// Getting 2 variants of Parallax components(background image )
@@ -44,7 +44,7 @@ namespace EMAAR.ECM.Feature.Banner.Controllers
         public ActionResult Parallax()
         {
             IParallax parallax = _bannerRepository.GetParallax();
-            return View($"{ViewPath}Banner/Parallax/Parallax.cshtml", parallax);
+            return View($"{ViewPath}Banner/Parallax/_Parallax.cshtml", parallax);
         }
         /// <summary>
         /// Getting all related component asigned in Sitecore with the Background CSS (eg:explore)
@@ -53,17 +53,9 @@ namespace EMAAR.ECM.Feature.Banner.Controllers
         public ActionResult HomePageCarousels()
         {
             IHomepage_Carousels homepage_CarouselList = _bannerRepository.HomePageCarousels();
-            return View($"{ViewPath}Banner/HomePageCarousel/HomePageCarousel.cshtml", homepage_CarouselList);
+            return View($"{ViewPath}Banner/HomePageCarousel/_HomePageCarousel.cshtml", homepage_CarouselList);
         }
-        /// <summary>
-        /// Getting all related component asigned in Sitecore with the Background CSS (eg:explore)
-        /// </summary>  
-        /// <returns>Relatedcontent list</returns>
-        //public ActionResult RelatedPages()
-        //{
-        //    IHomepage_Carousels homepage_CarouselList = _bannerRepository.RelatedPages();
-        //    return View($"{ViewPath}Banner/RelatedPages/RelatedPages.cshtml", homepage_CarouselList);
-        //}
+       
         /// <summary>
         ///  Getting all Hero Banner asigned in Sitecore 
         /// </summary>
@@ -71,7 +63,7 @@ namespace EMAAR.ECM.Feature.Banner.Controllers
         public ActionResult GetHero()
         {
             IHero hero = _bannerRepository.GetHero();
-            return View($"{ViewPath}Banner/Hero/Hero.cshtml", hero);
+            return View($"{ViewPath}Banner/Hero/_Hero.cshtml", hero);
         }
        
         #endregion
