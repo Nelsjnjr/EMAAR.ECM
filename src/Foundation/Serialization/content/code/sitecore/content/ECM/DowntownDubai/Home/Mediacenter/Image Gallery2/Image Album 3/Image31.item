@@ -1,55 +1,55 @@
 ----item----
 version: 1
-id: {963AA9D0-6720-4671-8AC8-91D158577724}
+id: {060D2F16-3BE1-494E-B533-E0DFFF2EB7F4}
 database: master
-path: /sitecore/content/ECM/DowntownDubai/Home/Discovery
-parent: {110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}
-name: Discovery
+path: /sitecore/content/ECM/DowntownDubai/Home/Mediacenter/Image Gallery2/Image Album 3/Image31
+parent: {9A2746CF-E420-43F1-8D3B-BB4E1163EE8F}
+name: Image31
 master: {00000000-0000-0000-0000-000000000000}
-template: {27B693EF-6229-4377-8FE9-FCF75D786007}
-templatekey: GenericContentRootPage
-created: 20190417T055142Z
+template: {E669E6DE-8064-4126-BDB7-1A12757A1A90}
+templatekey: Image Item
+created: 20190423T063521Z
 
 ----version----
 language: en
 version: 1
-revision: 98d2d96a-6f1c-4df6-aa90-c7f9991ba5e7
+revision: 904dfb86-21cf-4f0d-bd0d-21f2e5870494
 
 ----field----
-field: {523933EA-645C-4879-A1ED-9757573716B2}
+field: {068BCCBE-353F-42A5-BF99-1B72C328DBC6}
 name: Title
 key: title
-content-length: 9
+content-length: 6
 
-Discovery
+Image1
 ----field----
-field: {D9D30585-793D-4FC2-B6D1-7A47315DCBE9}
-name: Navigation Title
-key: navigation title
-content-length: 9
+field: {515BD529-7017-4402-A1A0-B8158722CF74}
+name: Image
+key: image
+content-length: 58
 
-Discovery
+<image mediaid="{4A8CEA77-AFE9-432C-8837-A698DBE8D941}" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20190417T055142Z
+20190403T125916Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-98d2d96a-6f1c-4df6-aa90-c7f9991ba5e7
+904dfb86-21cf-4f0d-bd0d-21f2e5870494
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190422T123641Z
+20190407T100652Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

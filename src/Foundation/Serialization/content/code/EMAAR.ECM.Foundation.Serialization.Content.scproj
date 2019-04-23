@@ -147,55 +147,263 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery.item">
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery\Image Album 1.item">
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\gallery1.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery\Image Album 1\Image1.item">
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\gallery1\gallery2.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery\Image Album 1\Image2.item">
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\gallery1\gallery2\Image Album 1.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery\Image Album 1\Image3.item">
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\gallery1\gallery2\Image Album 1\Image1.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery\Image Album 2.item">
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\gallery1\gallery2\Image Album 1\Image2.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery\Image Album 2\Image2.item">
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\gallery1\gallery2\Image Album 1\Image3.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery\Image Album 2\Image21.item">
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\gallery1\gallery2\Image Album 2.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery\Image Album 2\Image3.item">
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\gallery1\gallery2\Image Album 2\Image2.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery\Image Album 3.item">
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\gallery1\gallery2\Image Album 2\Image21.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery\Image Album 3\Image2.item">
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\gallery1\gallery2\Image Album 2\Image3.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery\Image Album 3\Image3.item">
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\gallery1\gallery2\Image Album 3.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery\Image Album 3\Image31.item">
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\gallery1\gallery2\Image Album 3\Image2.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\gallery1\gallery2\Image Album 3\Image3.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\gallery1\gallery2\Image Album 3\Image31.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\gallery1\Image Album 1.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\gallery1\Image Album 1\Image1.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\gallery1\Image Album 1\Image2.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\gallery1\Image Album 1\Image3.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\gallery1\Image Album 2.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\gallery1\Image Album 2\Image2.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\gallery1\Image Album 2\Image21.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\gallery1\Image Album 2\Image3.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\gallery1\Image Album 3.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\gallery1\Image Album 3\Image2.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\gallery1\Image Album 3\Image3.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\gallery1\Image Album 3\Image31.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\Image Album 1.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\Image Album 1\Image1.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\Image Album 1\Image2.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\Image Album 1\Image3.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\Image Album 2.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\Image Album 2\Image2.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\Image Album 2\Image21.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\Image Album 2\Image3.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\Image Album 3.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\Image Album 3\Image2.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\Image Album 3\Image3.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery1\Image Album 3\Image31.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery2.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery2\Image Album 1.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery2\Image Album 1\Image1.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery2\Image Album 1\Image2.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery2\Image Album 1\Image3.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery2\Image Album 2.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery2\Image Album 2\Image2.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery2\Image Album 2\Image21.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery2\Image Album 2\Image3.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery2\Image Album 3.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery2\Image Album 3\Image2.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery2\Image Album 3\Image3.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery2\Image Album 3\Image31.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery2\Image Gallery3.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery2\Image Gallery3\Image Album 1.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery2\Image Gallery3\Image Album 1\Image1.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery2\Image Gallery3\Image Album 1\Image2.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery2\Image Gallery3\Image Album 1\Image3.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery2\Image Gallery3\Image Album 2.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery2\Image Gallery3\Image Album 2\Image2.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery2\Image Gallery3\Image Album 2\Image21.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery2\Image Gallery3\Image Album 2\Image3.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery2\Image Gallery3\Image Album 3.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery2\Image Gallery3\Image Album 3\Image2.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery2\Image Gallery3\Image Album 3\Image3.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\ECM\DowntownDubai\Home\Mediacenter\Image Gallery2\Image Gallery3\Image Album 3\Image31.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>

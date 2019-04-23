@@ -14,9 +14,9 @@ created: 20190417T070230Z
 field: {6D0A86EF-D757-4860-80F8-A79F4ECFDCC9}
 name: Amenities
 key: amenities
-content-length: 233
+content-length: 0
 
-{FBFC2647-BC5B-4A93-ABA9-4F5EA10CF58C}|{714A65EB-C76A-44E2-AF05-BDD6FCEF04BE}|{BB4FDB23-404C-4980-99F3-1634D662270D}|{9C33B1D1-CEEA-454D-ADCC-45E7F31AC535}|{C4ED3C56-2EEB-4C35-B925-5805C4230687}|{595FB246-4D11-43C8-88BA-ADC6AF81CF7B}
+
 ----field----
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
@@ -27,7 +27,7 @@ content-length: 186
 ----version----
 language: en
 version: 1
-revision: 05dea5db-3798-4190-a86b-ce11ea480773
+revision: 8c85882d-bb3b-41a6-b802-4262bd4a8c84
 
 ----field----
 field: {AF055E82-A161-43EF-BC60-523C7EF01A81}
@@ -68,9 +68,9 @@ content-length: 77
 field: {9E0362E2-325D-4DD1-8559-188DED2F6380}
 name: Related Pages
 key: related pages
-content-length: 0
+content-length: 155
 
-
+{B4212038-CA0C-4E79-871B-04498C5CC2CF}|{65F76CB1-A28C-41C0-94C2-E4D2584356C1}|{566D1178-7612-494A-AA11-42809C97C406}|{6D90E52D-0B8E-4893-8D1A-E9822E9941F2}
 ----field----
 field: {D9D30585-793D-4FC2-B6D1-7A47315DCBE9}
 name: Navigation Title
@@ -82,9 +82,9 @@ Al alka
 field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
 name: __Final Renderings
 key: __final renderings
-content-length: 430
+content-length: 148
 
-<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{56FF7B45-D362-4349-B016-866C4980A411}" p:after="r[@uid='{BFD473BD-9D1D-46A0-BC35-D8E07599FF25}']" s:ds="" s:id="{EAB0D044-4837-4DF1-B98E-D93D580877AF}" s:par="" s:ph="ecm_content" /><r uid="{9F398F68-9A38-47DA-B8D6-999E821D521C}" p:after="*[1=2]" s:ds="" s:id="{EAB0D044-4837-4DF1-B98E-D93D580877AF}" s:par="" s:ph="ecm_content" /></d></r>
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{BC3E57FA-D4A0-4141-AB59-6D6DF839927E}" s:ds="" /></d></r>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -98,14 +98,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-05dea5db-3798-4190-a86b-ce11ea480773
+8c85882d-bb3b-41a6-b802-4262bd4a8c84
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190422T123540Z
+20190423T112141Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

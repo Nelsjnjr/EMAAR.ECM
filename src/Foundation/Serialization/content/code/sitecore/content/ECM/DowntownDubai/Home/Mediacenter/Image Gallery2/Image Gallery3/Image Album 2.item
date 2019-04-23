@@ -1,0 +1,87 @@
+----item----
+version: 1
+id: {AF59CA74-9531-43B1-9DB0-3D6ED943C607}
+database: master
+path: /sitecore/content/ECM/DowntownDubai/Home/Mediacenter/Image Gallery2/Image Gallery3/Image Album 2
+parent: {864BEAF3-4A9C-46FA-8C02-19D1D68C3B23}
+name: Image Album 2
+master: {00000000-0000-0000-0000-000000000000}
+template: {5E7F38ED-D38C-4EA8-8DBD-D3606F4E1E08}
+templatekey: Image Album
+created: 20190423T063530Z
+
+----field----
+field: {15E6FBE8-CDD0-4CCB-8295-3097CA4F3E71}
+name: Years
+key: years
+content-length: 4
+
+2017
+----field----
+field: {97AA0DCC-10C4-473C-9CA9-39BD77A50CE9}
+name: Images
+key: images
+content-length: 77
+
+{AB08BB62-0FAF-4E6C-8959-48B56C7EEAB2}|{0356653C-AFDA-45E6-B073-FAAD82AEC367}
+----field----
+field: {BFDB03BC-9CEE-46CA-97D1-D69DE8C617C7}
+name: Categories
+key: categories
+content-length: 38
+
+{AEC4A95E-9308-432C-A3B8-56A7A5F0B2B0}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 258
+
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{B255404C-4183-4E11-BC30-74E4D4595BEC}"><r id="{DD1E2906-0E7F-4887-B6FF-5F4EA43FBA1B}" ph="ecm_content" uid="{A34D1D02-755B-40C4-B980-455F4E97482A}" /></d></r>
+----version----
+language: en
+version: 1
+revision: 015a257a-8164-4b8e-97b8-633c54c44597
+
+----field----
+field: {E98BF0CB-57FB-4353-9C23-1AD8D5961F2D}
+name: Title
+key: title
+content-length: 15
+
+Image Album-222
+----field----
+field: {0CBA5220-AA8B-4F75-BCD6-68000B38D8C1}
+name: Description
+key: description
+content-length: 21
+
+Intro of Image Album2
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190403T125857Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+015a257a-8164-4b8e-97b8-633c54c44597
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190409T145818Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
