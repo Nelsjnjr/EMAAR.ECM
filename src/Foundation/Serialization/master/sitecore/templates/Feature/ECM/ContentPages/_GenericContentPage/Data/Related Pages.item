@@ -14,16 +14,16 @@ created: 20190421T081218Z
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 9
+content-length: 20
 
-Multilist
+ECM QuerableTreelist
 ----field----
 field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
 name: Source
 key: source
-content-length: 109
+content-length: 162
 
-query:ancestor-or-self::*[@@templateid='{407F6EA5-A542-4D83-9D03-B598E06D3422}']/Site Content/Related Pages/*
+Datasource=query:./ancestor-or-self::*[@@templateid='{407F6EA5-A542-4D83-9D03-B598E06D3422}']/Site Content/Related Pages&IncludeTemplatesForSelection=Related Page
 ----field----
 field: {074F44CA-359A-4C13-B3AA-4A6BE2A675B1}
 name: Validation
@@ -41,7 +41,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 7417062d-a74d-43f4-9f28-70648a06d12c
+revision: e5c375a0-a8d4-46f8-ab0a-814fd7c811e2
 
 ----field----
 field: {B12E4906-B96B-495E-B343-CD2E92DC6347}
@@ -70,14 +70,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7417062d-a74d-43f4-9f28-70648a06d12c
+e5c375a0-a8d4-46f8-ab0a-814fd7c811e2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190421T114534Z
+20190424T092405Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

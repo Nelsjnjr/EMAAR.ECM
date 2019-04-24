@@ -379,7 +379,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/23/2019 16:00:12</publishTime>
     </File>
     <File Include="Views/Feature/ECM/NavigationMenu/_LeftNavigation.cshtml">
-      <publishTime>04/23/2019 12:17:26</publishTime>
+      <publishTime>04/24/2019 10:10:38</publishTime>
     </File>
     <File Include="Views/Project/ECM/DowntownDubai/NavigationMenu/GetHeader.cshtml">
       <publishTime>03/25/2019 12:25:58</publishTime>

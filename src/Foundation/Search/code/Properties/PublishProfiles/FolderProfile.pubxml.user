@@ -15,6 +15,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="App_Config/Include/Foundation/ECM/Search/EMAAR.ECM.Foundation.Search.Master.Index.config">
       <publishTime>04/11/2019 15:56:09</publishTime>
     </File>
+    <File Include="App_Config/Include/Foundation/ECM/Search/EMAAR.ECM.Foundation.Search.Web.Index.config">
+      <publishTime>04/11/2019 15:56:09</publishTime>
+    </File>
     <File Include="bin/Castle.Core.dll">
       <publishTime>10/10/2017 08:13:52</publishTime>
     </File>

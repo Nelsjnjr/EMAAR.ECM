@@ -31,19 +31,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.dll">
-      <publishTime>04/23/2019 14:59:01</publishTime>
+      <publishTime>04/24/2019 09:16:28</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.dll.config">
       <publishTime>04/11/2019 09:27:16</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.pdb">
-      <publishTime>04/23/2019 14:59:01</publishTime>
+      <publishTime>04/24/2019 09:16:28</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll">
-      <publishTime>04/23/2019 14:59:02</publishTime>
+      <publishTime>04/24/2019 10:04:14</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.pdb">
-      <publishTime>04/23/2019 14:59:02</publishTime>
+      <publishTime>04/24/2019 10:04:14</publishTime>
     </File>
     <File Include="bin/Glass.Mapper.dll">
       <publishTime>04/17/2019 16:19:54</publishTime>

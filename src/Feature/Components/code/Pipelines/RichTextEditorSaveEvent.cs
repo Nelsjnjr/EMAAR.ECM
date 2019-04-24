@@ -51,6 +51,17 @@ namespace EMAAR.ECM.Feature.ContentComponents.Pipelines
                 //Target only on richtext field
                 foreach (Field field in item.Fields)
                 {
+                    //if (field.TypeKey.Equals("tree list", StringComparison.InvariantCultureIgnoreCase))
+                    ////{
+                    ////    MultilistField Tags = Sitecore.Context.Item.Fields[field.Name];
+
+                    ////   bool isrestrictedTemplate= Tags.GetItems().Any(p => p.TemplateName == "");
+                    ////    if(isrestrictedTemplate)
+                    ////    {
+                    ////        args.
+                    ////    }
+                    ////}
+
                     if (!field.TypeKey.Equals("rich text", StringComparison.InvariantCultureIgnoreCase))
                     {
                         continue;

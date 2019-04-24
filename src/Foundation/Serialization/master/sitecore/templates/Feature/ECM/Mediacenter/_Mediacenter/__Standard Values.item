@@ -13,8 +13,15 @@ created: 20190422T102615Z
 ----version----
 language: en
 version: 1
-revision: 456587fa-ab5c-47e5-a9bf-cfbbcf0aa4fd
+revision: a4b94760-793e-42ef-8a21-b6ea4c5a2aa1
 
+----field----
+field: {6B80F5A4-7B14-4CE7-A140-187E88FD8E82}
+name: Is Left Navigation Root Clickable
+key: is left navigation root clickable
+content-length: 1
+
+1
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -28,14 +35,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-456587fa-ab5c-47e5-a9bf-cfbbcf0aa4fd
+a4b94760-793e-42ef-8a21-b6ea4c5a2aa1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190422T102615Z
+20190424T120652Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

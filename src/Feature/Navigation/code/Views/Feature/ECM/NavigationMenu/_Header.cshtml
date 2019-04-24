@@ -41,9 +41,10 @@
                                 {
                                     int count = 0;
                                     var subNavigation = new List<ISub_Navigation>(rootNav.Sub_Navigations).Count;
-                                    //No Subnavigation
+                                    //If no Subnavigation (childs) then make this item as clickable
                                     if (subNavigation <= 0)
                                     {
+                                        //On initial menu loading always select first item as active(example: Discovery)
                                         if (count == 0)
                                         {
                                             if (rootNav.Navigation_Link != null)
@@ -74,6 +75,7 @@
                                     }
                                     <li>
                                         <!--Link with Sub navigation-->
+                                        <!--Setting top level item assign class to it if it has child items -->
                                         @if (count == 0)
                                         {
                                             <a href="javascript:;" class="active"> @Html.Glass().Editable(rootNav, x => x.Navigation_Title)</a>
@@ -83,6 +85,7 @@
                                             <a href="javascript:;"> @Html.Glass().Editable(rootNav, x => x.Navigation_Title)</a>
 
                                         }
+                                        <!--Add sub menu items-->
                                         <div class="sub-menu">
                                             <ul>
                                                 @if (subNavigation > 0)
@@ -145,7 +148,6 @@
                         <i class="ico">
                             <img src="~/Assets/Project/ECM/images/icon/login.svg" alt="login">
                         </i>
-
                     }
                 }
                 else
@@ -154,7 +156,6 @@
                         <img src="~/Assets/Project/ECM/images/icon/login.svg" alt="login">
                     </a>
                 }
-
                 <a class="hamburgers hamburger--squeeze js-hamburger mobile-menu-trigger" href="javascript:;">
                     <div class="hamburger-box">
                         <div class="hamburger-inner"></div>
@@ -182,7 +183,6 @@
             <span>@Html.Glass().Editable(Model.Header, x => x.Login_Text)</span>
         </a>
     }
-
     <!-- siteLogin ends here -->
 </header>
 <!-- Header ends here -->

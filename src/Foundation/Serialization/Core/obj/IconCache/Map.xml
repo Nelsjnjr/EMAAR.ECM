@@ -111,4 +111,58 @@
   <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Toolbar 2/Subscript" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Toolbar 2/Superscript" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Rich Text Full/Toolbar 2/Underline" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Buttons" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Class Translation" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Font Names" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Font Sizes" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Images" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Inline Styles" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Links" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Paragraphs" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Snippets" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Toolbar 2" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/WebEdit Buttons" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Class Translation/Head1" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Class Translation/Head2" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Class Translation/Head3" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Class Translation/MsoBodytext" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Class Translation/MsoHead1" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Class Translation/MsoHead2" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Font Names/Arial" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Font Names/Tahoma" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Font Names/Times New Roman" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Font Sizes/1" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Font Sizes/2" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Font Sizes/3" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Font Sizes/4" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Font Sizes/5" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Font Sizes/6" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Inline Styles/Bordered" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Inline Styles/No Wraping" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Inline Styles/Float Left" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Inline Styles/Float Right" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Links/Google" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Paragraphs/Normal" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Paragraphs/Heading 1" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Paragraphs/Heading 2" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Paragraphs/Heading 3" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Paragraphs/Heading 4" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Paragraphs/Heading 5" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Paragraphs/Address" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Paragraphs/Heading 6" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Paragraphs/Formatted" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Toolbar 2/Insert Ordered List" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/WebEdit Buttons/Edit html" ItemIcon="/temp/IconCache/Office/16x16/Pencil.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/WebEdit Buttons/Bold" ItemIcon="/temp/IconCache/Office/16x16/font_style_bold.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/WebEdit Buttons/Italic" ItemIcon="/temp/IconCache/Office/16x16/font_style_italics.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/WebEdit Buttons/Insert External Link" ItemIcon="/temp/IconCache/Office/16x16/link.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/WebEdit Buttons/Insert Link" ItemIcon="/temp/IconCache/Office/16x16/link.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/WebEdit Buttons/Underline" ItemIcon="/temp/IconCache/Office/16x16/font_style_underline.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Zoom/400" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Zoom/300" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Zoom/200" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Zoom/100" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Zoom/80" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Zoom/66" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Zoom/10" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
 </ItemIconCache>

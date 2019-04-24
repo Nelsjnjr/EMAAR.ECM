@@ -213,6 +213,7 @@
   <ItemGroup>
     <Compile Include="CommonConstants.cs" />
     <Compile Include="CommonUtility.cs" />
+    <Compile Include="Controls\QuerableTreelist.cs" />
     <Compile Include="Interfaces\ISitecoreHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\SitecoreHelper.cs" />

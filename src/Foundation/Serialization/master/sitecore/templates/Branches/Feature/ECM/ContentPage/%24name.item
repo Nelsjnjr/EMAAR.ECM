@@ -7,7 +7,7 @@ parent: {EBD509A6-4194-48E8-8CFC-213BC34BD59A}
 name: $name
 master: {00000000-0000-0000-0000-000000000000}
 template: {27B693EF-6229-4377-8FE9-FCF75D786007}
-templatekey: ContentPage
+templatekey: GenericContentRootPage
 created: 20190418T062033Z
 
 ----version----

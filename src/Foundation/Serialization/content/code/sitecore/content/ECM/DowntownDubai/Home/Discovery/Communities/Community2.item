@@ -20,22 +20,29 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 87cad882-16f0-4e62-955e-cb57aa35fd5d
+revision: 29a8673d-8a22-4bc3-adee-553cc33a4d31
 
 ----field----
 field: {AF055E82-A161-43EF-BC60-523C7EF01A81}
 name: Title
 key: title
-content-length: 19
+content-length: 31
 
-Generic ContentPage
+I'm in Communities-->Community2
+----field----
+field: {36CFAA10-F10C-40DD-9BBC-A8F7160DD389}
+name: Include in Left Navigation
+key: include in left navigation
+content-length: 1
+
+1
 ----field----
 field: {D9D30585-793D-4FC2-B6D1-7A47315DCBE9}
 name: Navigation Title
 key: navigation title
-content-length: 20
+content-length: 10
 
-Generic content page
+Community2
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -49,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-87cad882-16f0-4e62-955e-cb57aa35fd5d
+29a8673d-8a22-4bc3-adee-553cc33a4d31
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190423T111104Z
+20190424T061504Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -267,8 +267,8 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\SEO\code\bin\Antlr3.Runtime.p
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\SEO\code\bin\System.Diagnostics.DiagnosticSource.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\SEO\code\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\SEO\code\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\SEO\code\obj\Debug\EMAAR.ECM.Feature.SEO.csprojAssemblyReference.cache
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\SEO\code\obj\Debug\EMAAR.ECM.Feature.SEO.csproj.CoreCompileInputs.cache
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\SEO\code\obj\Debug\EMAAR.ECM.Feature.SEO.csproj.CopyComplete
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\SEO\code\obj\Debug\EMAAR.ECM.Feature.SEO.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\SEO\code\obj\Debug\EMAAR.ECM.Feature.SEO.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\SEO\code\obj\Debug\EMAAR.ECM.Feature.SEO.csprojAssemblyReference.cache

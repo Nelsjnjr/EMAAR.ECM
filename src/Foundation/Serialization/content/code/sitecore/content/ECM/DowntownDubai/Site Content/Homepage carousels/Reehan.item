@@ -20,7 +20,7 @@ content-length: 1
 ----version----
 language: en
 version: 1
-revision: d1e14c06-4f4a-4108-8f32-ec751eb96289
+revision: 7f219885-fac2-4998-807f-5d2122ff510d
 
 ----field----
 field: {F9401C09-1121-4BB5-ABED-48BC2B29DE71}
@@ -30,23 +30,22 @@ content-length: 158
 
 <link id="{D19DCEB9-BE03-491E-9A68-B8A3B5944A3A}" querystring="" linktype="internal" text="" anchor="" url="/ECM/DowntownDubai" title="" class="" target="" />
 ----field----
-field: {CDDD22F9-558A-4E98-A614-53C5E090FB96}
+field: {87F46FB3-8FF4-4318-BCC2-C4EBBB0C4963}
 name: Title
 key: title
 content-length: 6
 
 Reehan
 ----field----
-field: {86EF63D0-7E10-4DF7-80A7-28DF2D6BA18F}
+field: {9DE3E904-B947-4547-BBF2-7983FF99FF1A}
 name: Summary
 key: summary
-content-length: 249
+content-length: 221
 
 <ul>
     <li>Panoramic views of the dubai Fountain &amp; Burj Khalifa</li>
     <li>Next door to the Dubai Opera, Burj Park, The Dubai Mall</li>
     <li>Only steps away from the vibrant Sheikh Mohammed boulevard</li>
-    <li>Infinity Pool1</li>
 </ul>
 ----field----
 field: {F6BA7B09-176F-4BB1-A680-C070D4B92C65}
@@ -68,14 +67,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d1e14c06-4f4a-4108-8f32-ec751eb96289
+7f219885-fac2-4998-807f-5d2122ff510d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190319T111902Z
+20190424T085813Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -16,13 +16,13 @@
             <div class="accordionWrap">
                 <div class="accordionHeading" id="@faqId">
                     <button class="collapsed" type="button" data-toggle="collapse" data-target="#@faqCollapseId" aria-expanded="false" aria-controls="@faqCollapseId">
-                        @Html.Glass().Editable(faq, x => x.Title))
+                        @Html.Glass().Editable(faq, x => x.Title)
                     </button>
                 </div>
                 <div id="@faqCollapseId" class="collapse" aria-labelledby="@faqId"
                      data-parent="#accordionExample">
                     <div class="card-body">
-                        @Html.Glass().Editable(faq, x => x.Summary))
+                        @Html.Glass().Editable(faq, x => x.Summary)
                     </div>
                 </div>
             </div>

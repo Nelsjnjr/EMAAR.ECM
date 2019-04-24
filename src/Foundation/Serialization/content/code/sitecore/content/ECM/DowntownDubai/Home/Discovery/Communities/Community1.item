@@ -27,15 +27,15 @@ content-length: 186
 ----version----
 language: en
 version: 1
-revision: 7e6c8609-843c-4962-8a1f-845e66ea3142
+revision: 2175b811-1282-4cb4-848e-a274e0825ef2
 
 ----field----
 field: {AF055E82-A161-43EF-BC60-523C7EF01A81}
 name: Title
 key: title
-content-length: 7
+content-length: 31
 
-Al Alka
+I'm in Communities-->Community1
 ----field----
 field: {55768EBD-52C4-4340-9471-2C948D429BCF}
 name: Introduction
@@ -72,19 +72,19 @@ content-length: 0
 
 
 ----field----
+field: {36CFAA10-F10C-40DD-9BBC-A8F7160DD389}
+name: Include in Left Navigation
+key: include in left navigation
+content-length: 1
+
+1
+----field----
 field: {D9D30585-793D-4FC2-B6D1-7A47315DCBE9}
 name: Navigation Title
 key: navigation title
-content-length: 7
+content-length: 10
 
-Al alka
-----field----
-field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
-name: __Final Renderings
-key: __final renderings
-content-length: 430
-
-<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{56FF7B45-D362-4349-B016-866C4980A411}" p:after="r[@uid='{BFD473BD-9D1D-46A0-BC35-D8E07599FF25}']" s:ds="" s:id="{EAB0D044-4837-4DF1-B98E-D93D580877AF}" s:par="" s:ph="ecm_content" /><r uid="{9F398F68-9A38-47DA-B8D6-999E821D521C}" p:after="*[1=2]" s:ds="" s:id="{EAB0D044-4837-4DF1-B98E-D93D580877AF}" s:par="" s:ph="ecm_content" /></d></r>
+Community1
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -98,14 +98,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7e6c8609-843c-4962-8a1f-845e66ea3142
+2175b811-1282-4cb4-848e-a274e0825ef2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190423T111057Z
+20190424T061459Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
