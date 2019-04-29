@@ -45,6 +45,42 @@ namespace EMAAR.ECM.Foundation.Search.ComputedFields
                     return null;
                 }
 
+
+                // Events - Get URL from Navigation URL field if available
+                if (SearchHelper.FormatGuid(item.TemplateID.ToString()).Equals(SearchHelper.FormatGuid(CommonConstants.EventsTemplateID)) 
+                    && item.Fields["Navigation URL"] != null && !string.IsNullOrWhiteSpace(item.Fields["Navigation URL"].Value))
+                {
+                    LinkField navigationUrl = item.Fields["Navigation URL"];
+                    if (navigationUrl != null )
+                    {
+                        if (!string.IsNullOrEmpty(navigationUrl.Url))
+                        {
+                            return navigationUrl.Url;
+                        }
+                        else if (navigationUrl.TargetItem!=null)
+                        {
+                            return SearchHelper.GetURL(navigationUrl.TargetItem);
+                        }
+                    }
+                }
+                // Downloads - Get URL from Download Link field if available
+                if (SearchHelper.FormatGuid(item.TemplateID.ToString()).Equals(SearchHelper.FormatGuid(CommonConstants.DownloadItemTemplateID))
+                    && item.Fields["Download Link"] != null && !string.IsNullOrWhiteSpace(item.Fields["Download Link"].Value))
+                {
+                    LinkField downloadLink = item.Fields["Download Link"];
+                    if (downloadLink != null)
+                    {
+                        if (!string.IsNullOrEmpty(downloadLink.Url))
+                        {
+                            return downloadLink.Url;
+                        }
+                        else if (downloadLink.TargetItem != null)
+                        {
+                            return SearchHelper.GetURL(downloadLink.TargetItem);
+                        }
+                    }
+                }
+                // Video - Get Youtube URL
                 if (SearchHelper.FormatGuid(item.TemplateID.ToString()).Equals(SearchHelper.FormatGuid(CommonConstants.VideoItemTemplateID)) && item.Fields["Video"]!=null)
                 {
                     LinkField videoField = item.Fields["Video"];
@@ -55,26 +91,7 @@ namespace EMAAR.ECM.Foundation.Search.ComputedFields
                     }
                 }
 
-                UrlOptions urlOption = new UrlOptions();
-                urlOption.Language = item.Language;
-
-                string link = LinkManager.GetItemUrl(item, urlOption);
-                SiteInfo siteInfo = SearchHelper.GetSiteInfo(item);
-                string currentSiteStartItemPath = siteInfo.RootPath + siteInfo.StartItem;
-                if (!string.IsNullOrWhiteSpace(link))
-                {
-                    if (link.Contains("/content/"))
-                    {
-                        return link.Replace("/shell", string.Empty).Replace(currentSiteStartItemPath, string.Empty);
-                    }
-                    else
-                    {
-                        currentSiteStartItemPath = currentSiteStartItemPath.Replace("/content", string.Empty);
-                        return link.Replace("/shell", string.Empty).Replace(currentSiteStartItemPath, string.Empty);
-                    }
-                    
-                }
-                return link;
+                return SearchHelper.GetURL(item);
 
             }
 
@@ -91,6 +108,8 @@ namespace EMAAR.ECM.Foundation.Search.ComputedFields
 
             return null;
         }
+
+   
 
         #endregion
 

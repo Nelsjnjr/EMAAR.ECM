@@ -16,11 +16,13 @@ namespace EMAAR.ECM.Feature.SEO.Repositories
     {
         #region Property
         private readonly Func<IMvcContext> _mvcContext;
+        private readonly ISeoViewModel _seoViewModel ;
         #endregion
         #region constructor
-        public SeoRepository(Func<IMvcContext> mvcContext)
+        public SeoRepository(Func<IMvcContext> mvcContext,ISeoViewModel seoViewModel)
         {
             _mvcContext = mvcContext;
+            _seoViewModel = seoViewModel;
         }
         #endregion
         #region method
@@ -28,10 +30,12 @@ namespace EMAAR.ECM.Feature.SEO.Repositories
         /// Getting page metadata
         /// </summary>
         /// <returns>Metadata/OG/Twitter,Canonical and hreflang</returns>
-        public I_PageBase GetSeo()
+        public ISeoViewModel GetSeo()
         {
             IMvcContext mvcContext = _mvcContext();
-            return mvcContext.GetContextItem<I_PageBase>();
+            _seoViewModel.Pagebase= mvcContext.GetContextItem<I_PageBase>();
+            _seoViewModel.SiteRoot = mvcContext.GetRootItem<ISiteRoot>(); 
+            return _seoViewModel;
         }
         #endregion
     }

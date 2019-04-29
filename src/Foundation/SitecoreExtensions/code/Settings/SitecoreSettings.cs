@@ -50,5 +50,10 @@ namespace EMAAR.ECM.Foundation.SitecoreExtensions.Settings
         /// Getting Image location path "~/Assets/Project/ECM/images/icon/"
         /// </summary>
         public static string IconRootPath { get; set; } = GetSetting("EMAAR.ECM.Foundation.SitecoreExtensions.IconRootPath");
+
+        /// <summary>
+        /// Getting date format
+        /// </summary>
+        public static string DateFormat { get; set; } = GetSetting("EMAAR.ECM.Foundation.SitecoreExtensions.DateFormat");
     }
 }

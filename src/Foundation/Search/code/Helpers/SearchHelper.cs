@@ -15,6 +15,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text.RegularExpressions;
+using Sitecore.Links;
 
 namespace EMAAR.ECM.Foundation.Search.Helpers
 {
@@ -180,7 +181,7 @@ namespace EMAAR.ECM.Foundation.Search.Helpers
         /// Method to get current site info
         /// </summary>
         /// <param name="unformattedGuid"></param>
-        /// <returns></returns>
+        /// <returns>SiteInfo</returns>
         public static SiteInfo GetSiteInfo(this Item item)
         {           
 
@@ -223,6 +224,48 @@ namespace EMAAR.ECM.Foundation.Search.Helpers
             return conditions;
         }
 
+        /// <summary>
+        /// Method to get url from item
+        /// </summary>
+        /// <param name="unformattedGuid"></param>
+        /// <returns></returns>
+        public static string GetURL(Item item)
+        {
+            if (item.Paths.IsMediaItem)
+            {
+                MediaUrlOptions mediaUrlOption = new MediaUrlOptions();
+                mediaUrlOption.Language = item.Language;
+                string mediaURL = MediaManager.GetMediaUrl(item, mediaUrlOption);
+                if (!string.IsNullOrEmpty(mediaURL))
+                {
+                    return mediaURL.Replace("/sitecore/shell", "");
+                }
+            }
+
+            UrlOptions urlOption = new UrlOptions();
+            urlOption.Language = item.Language;
+
+            string link = LinkManager.GetItemUrl(item, urlOption);
+            SiteInfo siteInfo = SearchHelper.GetSiteInfo(item);
+                        
+            if (siteInfo == null)
+                return link;
+            string currentSiteStartItemPath = siteInfo.RootPath + siteInfo.StartItem;
+            if (!string.IsNullOrWhiteSpace(link))
+            {
+                if (link.Contains("/content/"))
+                {
+                    return link.Replace("/shell", string.Empty).Replace(currentSiteStartItemPath, string.Empty);
+                }
+                else
+                {
+                    currentSiteStartItemPath = currentSiteStartItemPath.Replace("/content", string.Empty);
+                    return link.Replace("/shell", string.Empty).Replace(currentSiteStartItemPath, string.Empty);
+                }
+
+            }
+            return null;
+        }
 
     }
 }

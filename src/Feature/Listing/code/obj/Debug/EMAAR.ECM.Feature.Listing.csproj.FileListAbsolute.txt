@@ -268,6 +268,8 @@ D:\Projects\EMAAR\ECM\Github\Latest\src\Feature\Listing\code\obj\Debug\EMAAR.ECM
 D:\Projects\EMAAR\ECM\Github\Latest\src\Feature\Listing\code\obj\Debug\EMAAR.ECM.Feature.Listing.csproj.CopyComplete
 D:\Projects\EMAAR\ECM\Github\Latest\src\Feature\Listing\code\obj\Debug\EMAAR.ECM.Feature.Listing.dll
 D:\Projects\EMAAR\ECM\Github\Latest\src\Feature\Listing\code\obj\Debug\EMAAR.ECM.Feature.Listing.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Listing\code\obj\Debug\EMAAR.ECM.Feature.Listing.csprojAssemblyReference.cache
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Listing\code\obj\Debug\EMAAR.ECM.Feature.Listing.csproj.CoreCompileInputs.cache
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Listing\code\bin\EMAAR.ECM.Feature.Listing.dll.config
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Listing\code\bin\EMAAR.ECM.Feature.Listing.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Listing\code\bin\EMAAR.ECM.Feature.Listing.pdb
@@ -400,8 +402,6 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Listing\code\bin\System.Web.W
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Listing\code\bin\System.Web.Webpages.Razor.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Listing\code\bin\System.Web.Helpers.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Listing\code\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Listing\code\obj\Debug\EMAAR.ECM.Feature.Listing.csprojAssemblyReference.cache
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Listing\code\obj\Debug\EMAAR.ECM.Feature.Listing.csproj.CoreCompileInputs.cache
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Listing\code\obj\Debug\EMAAR.ECM.Feature.Listing.csproj.CopyComplete
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Listing\code\obj\Debug\EMAAR.ECM.Feature.Listing.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Listing\code\obj\Debug\EMAAR.ECM.Feature.Listing.pdb

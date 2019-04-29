@@ -1,5 +1,5 @@
-﻿using System;
-using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
+﻿using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
+using Sitecore.Data.Items;
 
 namespace EMAAR.ECM.Foundation.SitecoreExtensions.Interfaces
 {
@@ -32,8 +32,39 @@ namespace EMAAR.ECM.Foundation.SitecoreExtensions.Interfaces
         /// Getting footer navigation details
         /// </summary>
         IFooter NavigationFooter { get; }
-     
 
+        /// <summary>
+        ///Image Gallery Item in Mediacenter 
+        /// </summary>
+        Item ImageGalleryItem { get; }
+        /// <summary>
+        /// Image Album Item in Mediacenter 
+        /// </summary>
+        Item ImageAlbumItem { get; }
+        /// <summary>
+        /// Video Gallery Item in Mediacenter 
+        /// </summary>
+        Item VideoGalleryItem { get; }
+        /// <summary>
+        /// Video Album Item in Mediacenter 
+        /// </summary>
+        Item VideoAlbumItem { get; }
+        /// <summary>
+        /// Video Item in Mediacenter 
+        /// </summary>
+        Item VideoItem { get; }
+        /// <summary>
+        /// News in Mediacenter 
+        /// </summary>
+        Item NewsListingPageItem { get; }
+        /// <summary>
+        /// Downloads Item in Mediacenter 
+        /// </summary>
+        Item DownloadPageItem { get; }
+        /// <summary>
+        /// Events Item in Mediacenter 
+        /// </summary>
+        Item EventsListingPageItem { get; }
 
         #endregion
 

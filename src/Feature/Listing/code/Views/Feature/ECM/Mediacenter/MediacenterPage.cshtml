@@ -1,0 +1,189 @@
+﻿@model  EMAAR.ECM.Feature.Listing.Models.MediacenterViewmodel
+@using Glass.Mapper.Sc.Web.Mvc
+@using EMAAR.ECM.Foundation.SitecoreExtensions
+@using EMAAR.ECM.Foundation.SitecoreExtensions.Settings
+@using EMAAR.ECM.Foundation.Search.Helpers
+
+ @{var options = Sitecore.Links.LinkManager.GetDefaultUrlOptions();
+     options.AlwaysIncludeServerUrl = true;
+     options.SiteResolving = true;
+ }
+<div class="media-section">
+    <div class="section-header">
+        <h1 class="heading"> @Html.Glass().Editable(Model.Mediacenter, x => x.Title)</h1>
+        <p> @Html.Glass().Editable(Model.Mediacenter, x => x.Summary)</p>
+    </div>
+
+    <div class="media-header">
+        <h3 class="heading">     @Sitecore.Globalization.Translate.Text("news")</h3>
+        <a href="@(Model.NewsListingPageItem !=null?Sitecore.Links.LinkManager.GetItemUrl(Model.NewsListingPageItem, options):String.Empty)" class="link">
+            @Sitecore.Globalization.Translate.Text("viewall")
+            <i>
+                <img src="~/Assets/Project/ECM/images/icon/btn-arrow.svg" alt="arrow">
+            </i>
+        </a>
+    </div>
+    <div class="row listingygrid">
+        @if (Model.NewsItems != null && Model.NewsItems.results != null &&
+          Model.NewsItems.results.results != null && Model.NewsItems.results.results.Any())
+        {
+            foreach (var albumDetails in Model.NewsItems.results.results)
+            {
+                <div class="col-lg-4 col-sm-6">
+                    <div class="news-item">
+                        <a href="@albumDetails.pageUrl" class="news-item-link">
+                            <div class="imgholder">
+                                <span class="date">@albumDetails.date</span>
+                                <img src="@(!String.IsNullOrEmpty(albumDetails.imageUrl)?albumDetails.imageUrl:Model.Mediacenter.No_Image.Src)" alt="Downloads-thumbnail" class="img">
+                            </div>
+                            <div class="title">@albumDetails.title</div>
+                        </a>
+                    </div>
+                </div>
+
+            }
+        }
+    </div>
+    <div class="media-header">
+        <h3 class="heading">@Sitecore.Globalization.Translate.Text("events")</h3>
+        <a href="@(Model.EventsListingPageItem !=null?Sitecore.Links.LinkManager.GetItemUrl(Model.EventsListingPageItem, options):String.Empty)" class="link">
+            @Sitecore.Globalization.Translate.Text("viewall")
+            <i>
+                <img src="~/Assets/Project/ECM/images/icon/btn-arrow.svg" alt="arrow">
+            </i>
+        </a>
+    </div>
+    <div class="media-event">
+        @if (Model.EventsItems != null && Model.EventsItems.results != null &&
+          Model.EventsItems.results.results != null && Model.EventsItems.results.results.Any())
+        {
+            foreach (var albumDetails in Model.EventsItems.results.results)
+            {
+                <div class="event">
+                    <a href="@albumDetails.pageUrl" class="event-item">
+                        <div class="datesec">
+                            <span class="date">@albumDetails.date</span>
+                            <span class="day">@albumDetails.month</span>
+                        </div>
+
+                        <div class="descSec">
+                            <p class="title">@albumDetails.title</p>
+                        </div>
+                    </a>
+                </div>
+            }
+        }
+
+    </div>
+    <div class="media-header">
+        <h3 class="heading">@Sitecore.Globalization.Translate.Text("downloads")</h3>
+        <a href="@(Model.DownloadPageItem !=null?Sitecore.Links.LinkManager.GetItemUrl(Model.DownloadPageItem, options):String.Empty)" class="link">
+            @Sitecore.Globalization.Translate.Text("viewall")
+            <i>
+                <img src="~/Assets/Project/ECM/images/icon/btn-arrow.svg" alt="arrow">
+            </i>
+        </a>
+    </div>
+    <div class="row listingygrid">
+        @if (Model.DownloadsItems != null && Model.DownloadsItems.results != null &&
+        Model.DownloadsItems.results.results != null && Model.DownloadsItems.results.results.Any())
+        {
+            foreach (var albumDetails in Model.DownloadsItems.results.results)
+            {
+                <div class="col-lg-4 col-sm-6">
+                    <div class="download-item">
+                        <div class="imgholder">
+                            <span class="pdf"><img src="~/Assets/Project/ECM/images/icon/Pdf.svg" alt="pdf icon"></span>
+                            <img src="@(!String.IsNullOrEmpty(albumDetails.imageUrl)?albumDetails.imageUrl:Model.Mediacenter.No_Image.Src)" alt="Downloads-thumbnail"
+                                 class="img">
+                            <div class="hoverHolder">
+                                <a href="@albumDetails.pageUrl" class="link">
+                                    <i class="icon">
+                                        <img src="~/Assets/Project/ECM/images/icon/download.svg" class="svg"
+                                             alt="download icon">
+                                    </i>
+                                    <div>@Sitecore.Globalization.Translate.Text("download")</div>
+                                </a>
+                                <a href="@albumDetails.externalURL" target="_blank" class="link">
+                                    <i class="icon">
+                                        <img src="~/Assets/Project/ECM/images/icon/external.svg" class="svg"
+                                             alt="external icon">
+                                    </i>
+                                    <div>@Sitecore.Globalization.Translate.Text("ReadOnline")</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="title">@albumDetails.title</div>
+                    </div>
+                </div>
+            }
+        }
+
+    </div>
+    <div class="media-header">
+        <h3 class="heading">@Sitecore.Globalization.Translate.Text("imagegallery")</h3>
+        <a href="@(Model.ImageAlbumItem !=null?Sitecore.Links.LinkManager.GetItemUrl(Model.ImageAlbumItem, options):String.Empty)" class="link">
+            @Sitecore.Globalization.Translate.Text("viewall")
+            <i>
+                <img src="~/Assets/Project/ECM/images/icon/btn-arrow.svg" alt="arrow">
+            </i>
+        </a>
+    </div>
+    <div class="row listingygrid">
+        @if (Model.ImageAlbumItems != null && Model.ImageAlbumItems.results != null &&
+            Model.ImageAlbumItems.results.results != null && Model.ImageAlbumItems.results.results.Any())
+        {
+            foreach (var albumDetails in Model.ImageAlbumItems.results.results)
+            {
+                <div class="col-lg-4 col-sm-6">
+                    <div class="gallery-item">
+                       
+                        <!--Todo: Advanced image field-->
+                        <a href="@(Model.IsImageAlbum == true ? albumDetails.imageUrl : albumDetails.pageUrl)" rel="1" 
+                           class="@(Model.IsImageAlbum == true ? "fancyimages gallery-item-link" : String.Empty)"
+                           title="@albumDetails.title">
+                            <img src="@(!String.IsNullOrEmpty(albumDetails.imageUrl)?albumDetails.imageUrl:Model.Mediacenter.No_Image.Src)" alt="gallery1" class="img">
+                            <div class="title">@albumDetails.title</div>
+                        </a>
+
+                    </div>
+                </div>
+
+            }
+
+        }
+    </div>
+    <div class="media-header">
+        <h3 class="heading">@Sitecore.Globalization.Translate.Text("videogallery")</h3>
+        <a href="@(Model.VideoAlbumItem !=null?Sitecore.Links.LinkManager.GetItemUrl(Model.VideoAlbumItem, options):String.Empty)" class="link">
+            @Sitecore.Globalization.Translate.Text("viewall")
+            <i>
+                <img src="~/Assets/Project/ECM/images/icon/btn-arrow.svg" alt="arrow">
+            </i>
+        </a>
+    </div>
+    <div class="row listingygrid">
+
+        @if (Model.VideoAlbumItems != null && Model.VideoAlbumItems.results != null &&
+         Model.VideoAlbumItems.results.results != null && Model.VideoAlbumItems.results.results.Any())
+        {
+            foreach (var albumDetails in Model.VideoAlbumItems.results.results)
+            {
+                <div class="col-lg-4 col-sm-6">
+                    <div class="gallery-item">                        
+                        <a href="@albumDetails.pageUrl"
+                           class="@( Model.IsVideoAlbum == true ? "fancybox.iframe gallery-item-link various" : String.Empty)">
+                            <img src="@(!String.IsNullOrEmpty(albumDetails.imageUrl)?albumDetails.imageUrl:Model.Mediacenter.No_Image.Src)" alt="video" class="img">
+                            <img src="~/Assets/Project/ECM/images/icon/play-button.svg" alt="playicon" class="playicon">
+                            <div class="title">@albumDetails.title</div>
+                        </a>
+
+                    </div>
+                </div>
+            }
+        }
+
+
+    </div>
+</div>
+

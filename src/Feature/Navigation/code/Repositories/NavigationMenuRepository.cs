@@ -25,15 +25,16 @@ namespace EMAAR.ECM.Feature.Navigation.Repositories
         private readonly IHeaderViewModel _headerViewModel;
         private readonly ISitecoreHelper _sitecoreHelper;
         private readonly ILeftNavigation _leftNavigation;
-
+        private readonly IFooterViewModel _footerViewModel;
         #endregion
         #region constructor
-        public NavigationMenuRepository(Func<IMvcContext> mvcContext, ILeftNavigation leftNavigation, IHeaderViewModel headerViewModel, IFooter footer, ISitecoreHelper sitecoreHelper)
+        public NavigationMenuRepository(Func<IMvcContext> mvcContext, ILeftNavigation leftNavigation,IFooterViewModel footerViewModel, IHeaderViewModel headerViewModel, IFooter footer, ISitecoreHelper sitecoreHelper)
         {
             _sitecoreHelper = sitecoreHelper;
             _headerViewModel = headerViewModel;
             _mvcContext = mvcContext;
             _leftNavigation = leftNavigation;
+            _footerViewModel = footerViewModel;
         }
         #endregion
         #region method
@@ -46,6 +47,7 @@ namespace EMAAR.ECM.Feature.Navigation.Repositories
             IMvcContext mvcContext = _mvcContext();
             //Checking the current item is the home item to display the Header based on this
             IHome contextItem = mvcContext.GetContextItem<IHome>();
+            _headerViewModel.SiteRoot= mvcContext.GetRootItem<ISiteRoot>();
             if (contextItem.TemplateId.ToString().Equals(SitecoreSettings.HomeTemplateID, StringComparison.InvariantCultureIgnoreCase))
             {
                 _headerViewModel.SearchIcon = _sitecoreHelper.HomePageSearch;
@@ -68,9 +70,12 @@ namespace EMAAR.ECM.Feature.Navigation.Repositories
         /// Getting Footer navigation menu along with logo/legal pages and contact info details for the footer
         /// </summary>
         /// <returns>Footer details</returns>
-        public IFooter GetFooter()
+        public IFooterViewModel GetFooter()
         {
-            return _sitecoreHelper.NavigationFooter;
+            IMvcContext mvcContext = _mvcContext();
+            _footerViewModel.Footer=_sitecoreHelper.NavigationFooter;
+            _footerViewModel.SiteRoot = mvcContext.GetRootItem<ISiteRoot>(); 
+            return _footerViewModel;
         }
         /// <summary>
         /// Getting left navigation menu from Sitecore content tree based on context item's parent with its childs

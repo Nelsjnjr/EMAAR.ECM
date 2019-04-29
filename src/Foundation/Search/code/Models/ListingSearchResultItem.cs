@@ -17,12 +17,16 @@ namespace EMAAR.ECM.Foundation.Search.Models
         public string title { get; set; }
 
         [JsonProperty]
-        [IndexField("description")]
+        [IndexField("introduction")]
         public string description { get; set; }
 
         [JsonProperty]
-        [IndexField("date")]
+        [IndexField("customdate")]
         public string date { get; set; }
+
+        [JsonProperty]
+        [IndexField("custommonth")]
+        public string month { get; set; }
 
         [JsonProperty]
         [IndexField("pageurl")]
@@ -40,17 +44,9 @@ namespace EMAAR.ECM.Foundation.Search.Models
         [IndexField("externalurl")]
         public string externalURL { get; set; }
 
-        [JsonProperty]
-        [IndexField("showplayicon")]
-        public bool showPlayIcon { get; set; }
-
-
+ 
         [IndexField("Value")]
         public string value { get; set; }
-
-        [JsonProperty]
-        [IndexField("_indexname")]
-        public string IndexName { get; set; }
 
         
         [IndexField("images_sm")]
@@ -59,5 +55,12 @@ namespace EMAAR.ECM.Foundation.Search.Models
         [IndexField("videos_sm")]
         public List<string> videos { get; set; }
 
+       
+        //[IndexField("customsortorder_l")]
+        //public long downloadText { get; set; }
+
+        
+        //[IndexField("customyear_i")]
+        //public int readText { get; set; }
     }
 }

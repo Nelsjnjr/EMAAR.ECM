@@ -1,0 +1,80 @@
+----item----
+version: 1
+id: {F1B8700A-1431-42A0-AA04-37D24837046E}
+database: master
+path: /sitecore/content/ECM/DowntownDubai/Home/Mediacenter/News/2019/News 3
+parent: {16B269A1-3EE7-42EC-81C0-40174379F334}
+name: News 3
+master: {00000000-0000-0000-0000-000000000000}
+template: {835DCB81-BBC5-4CB7-970D-4BE80A2D39D8}
+templatekey: News Page
+created: 20190426T115135Z
+
+----field----
+field: {4589BF11-0DAA-49BB-A5CA-4161FF9BDB79}
+name: Categories
+key: categories
+content-length: 38
+
+{3CAE0FB3-FEBA-4729-AD7C-4036882ACD50}
+----field----
+field: {CF42E222-73D6-460B-81EE-02DD95643CC0}
+name: Date
+key: date
+content-length: 16
+
+20190420T000000Z
+----version----
+language: en
+version: 1
+revision: dd1b3da6-9ce5-4a2b-9b70-eab2db768be6
+
+----field----
+field: {AF055E82-A161-43EF-BC60-523C7EF01A81}
+name: Title
+key: title
+content-length: 6
+
+News 3
+----field----
+field: {55768EBD-52C4-4340-9471-2C948D429BCF}
+name: Introduction
+key: introduction
+content-length: 18
+
+News3 Introduction
+----field----
+field: {82677F75-244E-42A8-BCB4-48993767346E}
+name: Banner
+key: banner
+content-length: 58
+
+<image mediaid="{4A8CEA77-AFE9-432C-8837-A698DBE8D941}" />
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190426T111502Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+dd1b3da6-9ce5-4a2b-9b70-eab2db768be6
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190427T093842Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

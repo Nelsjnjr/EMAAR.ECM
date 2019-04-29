@@ -6,6 +6,7 @@ using EMAAR.ECM.Foundation.DependencyInjection;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
 using Glass.Mapper.Sc.Web.Mvc;
 using Sitecore.Data.Items;
+using Sitecore;
 #endregion
 
 namespace EMAAR.ECM.Foundation.SitecoreExtensions
@@ -59,6 +60,44 @@ namespace EMAAR.ECM.Foundation.SitecoreExtensions
         /// </summary>
         public IFooter NavigationFooter => _mvcContext()?.SitecoreService.GetItem<IFooter>
             ($"{Sitecore.Context.Site.RootPath}{SitecoreSettings.NavigationFooterPath}");
+
+        /// <summary>
+        ///Image Gallery Item in Mediacenter 
+        /// </summary>
+        public Item ImageGalleryItem => Sitecore.Context.Database.SelectSingleItem($"{Sitecore.Context.Site.RootPath}/Home/mediacenter/*[@@templatename='{CommonConstants.ImageGalleryPageTemplateName}']");
+        /// <summary>
+        ///Image Album Item in Mediacenter 
+        /// </summary>
+        public Item ImageAlbumItem => Sitecore.Context.Database.SelectSingleItem($"{Sitecore.Context.Site.RootPath}/Home/mediacenter/*[@@templatename='{CommonConstants.ImageAlbumPageTemplateName}']");
+        /// <summary>
+        ///Image  Item in Mediacenter 
+        /// </summary>
+        public Item ImageItem => Sitecore.Context.Database.SelectSingleItem($"{Sitecore.Context.Site.RootPath}/Home/mediacenter/*[@@templatename='{CommonConstants.ImageItemPageTemplateName}']");
+        /// <summary>
+        ///Video Gallery Item in Mediacenter 
+        /// </summary>
+        public Item VideoGalleryItem => Sitecore.Context.Database.SelectSingleItem($"{Sitecore.Context.Site.RootPath}/Home/mediacenter/*[@@templatename='{CommonConstants.VideoGalleryPageTemplateName}']");
+        /// <summary>
+        ///Video Album Item in Mediacenter 
+        /// </summary>
+        public Item VideoAlbumItem => Sitecore.Context.Database.SelectSingleItem($"{Sitecore.Context.Site.RootPath}/Home/mediacenter/*[@@templatename='{CommonConstants.VideoAlbumPageTemplateName}']");
+        /// <summary>
+        ///Video Album Item in Mediacenter 
+        /// </summary>
+        public Item VideoItem => Sitecore.Context.Database.SelectSingleItem($"{Sitecore.Context.Site.RootPath}/Home/mediacenter/*[@@templatename='{CommonConstants.VideoItemPageTemplateName}']");
+        /// <summary>
+        ///News Item in Mediacenter 
+        /// </summary>
+        public Item NewsListingPageItem => Sitecore.Context.Database.SelectSingleItem($"{Sitecore.Context.Site.RootPath}/Home/mediacenter/*[@@templatename='{CommonConstants.NewsPageTemplateName}']");
+        /// <summary>
+        ///Downloads Item in Mediacenter 
+        /// </summary>
+        public Item DownloadPageItem => Sitecore.Context.Database.SelectSingleItem($"{Sitecore.Context.Site.RootPath}/Home/mediacenter/*[@@templatename='{CommonConstants.DownloadsPageTemplateName}']");
+
+        /// <summary>
+        ///Events Item from Mediacenter 
+        /// </summary>
+        public Item EventsListingPageItem => Sitecore.Context.Database.SelectSingleItem($"{Sitecore.Context.Site.RootPath}/Home/mediacenter/*[@@templatename='{CommonConstants.EventsPageTemplateName}']");
 
         #endregion
 

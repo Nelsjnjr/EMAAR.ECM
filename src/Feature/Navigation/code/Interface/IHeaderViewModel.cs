@@ -13,6 +13,7 @@ namespace EMAAR.ECM.Feature.Navigation.Interface
         /// Getting Header Menu details from Sitecore
         /// </summary>
         IHeader Header { get; set; }
+        ISiteRoot SiteRoot { get; set; }
         /// <summary>
         /// Getting Logo details from Sitecore SiteRoot item
         /// </summary>

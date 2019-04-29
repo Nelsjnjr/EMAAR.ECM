@@ -213,6 +213,8 @@
   <ItemGroup>
     <Compile Include="Controllers\SeoController.cs" />
     <Compile Include="Interfaces\ISeoRepository.cs" />
+    <Compile Include="Interfaces\ISeoViewModel.cs" />
+    <Compile Include="Models\SeoViewModel.cs" />
     <Compile Include="Pipelines\RobotsTxtProcessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\SeoRepository.cs" />

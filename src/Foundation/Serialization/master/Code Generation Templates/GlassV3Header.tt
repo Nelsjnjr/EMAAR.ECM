@@ -89,8 +89,7 @@ namespace <#=fullNamespace #>
 		[SitecoreChildren(InferType = true)]
         IEnumerable<INavigable> Children { get; }
 
-		[SitecoreQuery("/sitecore/content//*[@@templateid='{407F6EA5-A542-4D83-9D03-B598E06D3422}']",IsRelative =true)]
-        ISiteRoot SiteRoot { get; }
+
 		
 	}
 
@@ -138,7 +137,5 @@ namespace <#=fullNamespace #>
 		[SitecoreChildren(InferType = true)]
         public virtual IEnumerable<INavigable> Children { get; private set; }
 
-	    [SitecoreQuery("/sitecore/content//*[@@templateid='{407F6EA5-A542-4D83-9D03-B598E06D3422}']",IsRelative =true)]
-        public virtual ISiteRoot SiteRoot { get;private set; }
 	}
 }

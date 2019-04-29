@@ -27,15 +27,27 @@ namespace EMAAR.ECM.Foundation.Search.Services
         /// <param name="pageNo">Page Number.</param>
         /// <param name="pageSize">Page Size.</param>
         /// <returns>Search Results of Generic Type</returns>        
-        public SearchResultsGeneric<T> GetSearchResults<T>(List<SearchCondition> searchConditions,List<Facet> facetFields=null,  SortOption sortOption = null, int pageNo = -1, int pageSize = -1) where T : SearchResultItem
+        public SearchResultsGeneric<T> GetSearchResults<T>(List<SearchCondition> searchConditions,List<Facet> facetFields=null,  SortOption sortOption= null, int pageNo = -1, int pageSize = -1, bool sortByYearAndOrder=false, bool sortByDateAndOrder = false, bool sortByDateAscAndOrder = false) where T : SearchResultItem
         {
             searchConditions = SearchHelper.AddBasicSearchConditions(searchConditions);
             IProviderSearchContext searchContext = SearchHelper.GetIndex().CreateSearchContext();
             Expression<Func<T, bool>> predicate = SearchHelper.BuildPredicate<T>(searchConditions);
             IQueryable<T> searchQuery = null;
 
+            if (sortByYearAndOrder)
+            {
+                searchQuery = searchContext.GetQueryable<T>(new CultureExecutionContext(Sitecore.Context.Language.CultureInfo)).Where(predicate).OrderBy(x => x[CommonConstants.CustomSortorder]).ThenByDescending(x => x[CommonConstants.YearFacetField]);
+            }
+            else if (sortByDateAscAndOrder)
+            {
+                searchQuery = searchContext.GetQueryable<T>(new CultureExecutionContext(Sitecore.Context.Language.CultureInfo)).Where(predicate).OrderBy(x => x[CommonConstants.CustomSortorder]).ThenBy(x => x[CommonConstants.DateField]);
+            }
+            else if (sortByDateAndOrder)
+            {
+                searchQuery = searchContext.GetQueryable<T>(new CultureExecutionContext(Sitecore.Context.Language.CultureInfo)).Where(predicate).OrderBy(x => x[CommonConstants.CustomSortorder]).ThenByDescending(x => x[CommonConstants.DateField]);
+            }
 
-            if (sortOption != null)
+            else if (sortOption != null)
             {
                 // Pass CultureExecutionContext object to pick index analyzer for query
                 if (sortOption.SortOrder.Equals(SortOrder.Descending))
@@ -47,11 +59,9 @@ namespace EMAAR.ECM.Foundation.Search.Services
             else
                 searchQuery = searchContext.GetQueryable<T>(new CultureExecutionContext(Sitecore.Context.Language.CultureInfo)).Where(predicate);
 
-
-
             if (facetFields != null && facetFields.Any())
             {                
-                // Add the facets to the search query
+                // Add facets to the search query
                 foreach (var facet in facetFields)
                 {
                     searchQuery = searchQuery.FacetOn(f => f[facet.facetField], facet.minCount);
@@ -103,7 +113,7 @@ namespace EMAAR.ECM.Foundation.Search.Services
                         }
                     }
 
-                    if (filter.filterLabel.Equals("year"))
+                    if (filter.filterLabel.Equals(CommonConstants.YearFacetField))
                     {
                         filter.filterValues = filter.filterValues.OrderByDescending(x => Convert.ToInt32(x.label)).ToList();
                     }

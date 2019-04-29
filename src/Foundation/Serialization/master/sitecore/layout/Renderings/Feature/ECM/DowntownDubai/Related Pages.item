@@ -53,6 +53,20 @@ content-length: 1
 
 1
 ----field----
+field: {3AD2506A-DC39-4B1E-959F-9D524ADDBF50}
+name: VaryByParm
+key: varybyparm
+content-length: 1
+
+1
+----field----
+field: {1084D3D2-0457-456A-ABBC-EB4CC0966072}
+name: VaryByQueryString
+key: varybyquerystring
+content-length: 0
+
+
+----field----
 field: {B5B27AF1-25EF-405C-87CE-369B3A004016}
 name: Datasource Location
 key: datasource location
@@ -70,13 +84,13 @@ content-length: 73
 field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
 name: __Thumbnail
 key: __thumbnail
-content-length: 165
+content-length: 58
 
-<image mediapath="" alt="amenities" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{169660AE-F04C-4BCC-B3B7-D3C784ACDC4D}" />
+<image mediaid="{010C17CD-C385-4870-BEEB-D910123270E7}" />
 ----version----
 language: en
 version: 1
-revision: d55effd3-0e46-4841-b7cf-7c2712bbc8a1
+revision: f9d8d783-ba18-4f0b-966b-38d473a32d0a
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -91,14 +105,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d55effd3-0e46-4841-b7cf-7c2712bbc8a1
+f9d8d783-ba18-4f0b-966b-38d473a32d0a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190421T101633Z
+20190422T061854Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -190,6 +190,7 @@ public static string GetGlassFieldType(SitecoreField field)
 			case "checklist":
 			case "multilist with search":
 			case "multilist":
+			case "ecm querabletreelist":
 	            return string.Format("IEnumerable<{0}>",  generic);
 
 			case "grouped droplink":

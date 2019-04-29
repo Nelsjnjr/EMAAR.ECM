@@ -16,6 +16,8 @@ namespace EMAAR.ECM.Feature.Navigation.Models
         /// Getting Header Menu details from Sitecore
         /// </summary>
         public IHeader Header { get; set; }
+
+        public ISiteRoot SiteRoot  { get; set; }
         /// <summary>
         /// Getting Logo details from Sitecore SiteRoot item
         /// </summary>

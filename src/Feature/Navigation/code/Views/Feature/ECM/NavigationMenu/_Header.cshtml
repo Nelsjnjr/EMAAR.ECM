@@ -10,21 +10,21 @@
                 //Switching the HEader component by verifying whether is home page or not
                 if (Model.IsHomePage)
                 {
-                    if (Model.Header != null && Model.Header.SiteRoot != null && Model.Header.SiteRoot.Site_Logo != null)
+                    if (Model != null && Model.SiteRoot != null && Model.SiteRoot.Site_Logo != null)
                     {
-                        using (Html.Glass().BeginRenderLink(Model.Header.SiteRoot, x => x.Site_Logo_Url, new { @class = "siteLogo" }, isEditable: true))
+                        using (Html.Glass().BeginRenderLink(Model.SiteRoot, x => x.Site_Logo_Url, new { @class = "siteLogo" }, isEditable: true))
                         {
-                            @Html.Glass().RenderImage(Model.Header.SiteRoot, x => x.Site_Logo, new { alt = !String.IsNullOrEmpty(Model.Header.SiteRoot.Site_Logo.Alt) ? Model.Header.SiteRoot.Site_Logo.Alt : "image" }, isEditable: true)
+                            @Html.Glass().RenderImage(Model.SiteRoot, x => x.Site_Logo, new { alt = !String.IsNullOrEmpty(Model.SiteRoot.Site_Logo.Alt) ? Model.SiteRoot.Site_Logo.Alt : "image" }, isEditable: true)
                         }
                     }
                 }
                 else
                 {
-                    if (Model.Header != null && Model.Header.SiteRoot != null && Model.Header.SiteRoot.ContentPage_SiteLogo != null)
+                    if (Model != null && Model.SiteRoot != null && Model.SiteRoot.ContentPage_SiteLogo != null)
                     {
-                        using (Html.Glass().BeginRenderLink(Model.Header.SiteRoot, x => x.Site_Logo_Url, new { @class = "siteLogo" }, isEditable: true))
+                        using (Html.Glass().BeginRenderLink(Model.SiteRoot, x => x.Site_Logo_Url, new { @class = "siteLogo" }, isEditable: true))
                         {
-                            @Html.Glass().RenderImage(Model.Header.SiteRoot, x => x.ContentPage_SiteLogo, new { alt = !String.IsNullOrEmpty(Model.Header.SiteRoot.ContentPage_SiteLogo.Alt) ? Model.Header.SiteRoot.ContentPage_SiteLogo.Alt : "image" }, isEditable: true)
+                            @Html.Glass().RenderImage(Model.SiteRoot, x => x.ContentPage_SiteLogo, new { alt = !String.IsNullOrEmpty(Model.SiteRoot.ContentPage_SiteLogo.Alt) ? Model.SiteRoot.ContentPage_SiteLogo.Alt : "image" }, isEditable: true)
                         }
                     }
                 }
@@ -116,9 +116,9 @@
                 <aside class="siteSearch js-sOnTrigger">
                     @{
                         var searchPage = string.Empty;
-                        if (Model.Header != null && Model.Header.SiteRoot != null && Model.Header.SiteRoot.Search_Page != null)
+                        if (Model != null && Model.SiteRoot != null && Model.SiteRoot.Search_Page != null)
                         {
-                            searchPage = Model.Header.SiteRoot.Search_Page.Url;
+                            searchPage = Model.SiteRoot.Search_Page.Url;
                         }
                     }
                     <form action="@searchPage">
@@ -141,9 +141,9 @@
             </nav>
             <!-- siteNavigation ends here -->
             <div class="mobileWrapper">
-                @if (Model.Header != null && Model.Header.SiteRoot != null && Model.Header.SiteRoot.Login_Page != null)
+                @if (Model != null && Model.SiteRoot != null && Model.SiteRoot.Login_Page != null)
                 {
-                    using (Html.Glass().BeginRenderLink(Model.Header.SiteRoot, x => x.Login_Page, new { @class = "loginmobile" }, isEditable: true))
+                    using (Html.Glass().BeginRenderLink(Model.SiteRoot, x => x.Login_Page, new { @class = "loginmobile" }, isEditable: true))
                     {
                         <i class="ico">
                             <img src="~/Assets/Project/ECM/images/icon/login.svg" alt="login">
@@ -164,9 +164,9 @@
             </div>
         </div>
     </div>
-    @if (Model.Header != null && Model.Header.SiteRoot != null && Model.Header.SiteRoot.Login_Page != null)
+    @if (Model != null && Model.SiteRoot != null && Model.SiteRoot.Login_Page != null)
     {
-        using (Html.Glass().BeginRenderLink(Model.Header.SiteRoot, x => x.Login_Page, new { @class = "siteLogin" }, isEditable: true))
+        using (Html.Glass().BeginRenderLink(Model.SiteRoot, x => x.Login_Page, new { @class = "siteLogin" }, isEditable: true))
         {
             <i class="ico">
                 <img src="~/Assets/Project/ECM/images/icon/login.svg" alt="login" class="svg">

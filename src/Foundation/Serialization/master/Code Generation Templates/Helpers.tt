@@ -103,7 +103,8 @@ public static bool IsFieldPlural(SitecoreField field)
 			"treelistex",
 			"treelist descriptive",
 			"checklist",
-			"multilist"
+			"multilist",
+			"ecm querabletreelist"
 	};
 	
 	return multipleValueFields.Contains(field.Type.ToLower());

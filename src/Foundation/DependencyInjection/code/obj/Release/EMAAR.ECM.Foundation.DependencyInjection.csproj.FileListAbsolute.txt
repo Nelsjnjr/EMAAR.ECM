@@ -205,7 +205,6 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\o
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\obj\Release\EMAAR.ECM.Foundation.DependencyInjection.csproj.CopyComplete
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\obj\Release\EMAAR.ECM.Foundation.DependencyInjection.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\obj\Release\EMAAR.ECM.Foundation.DependencyInjection.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\obj\Release\EMAAR.ECM.Foundation.DependencyInjection.csprojAssemblyReference.cache
 D:\Projects\EMAAR\ECM\Github\Latest\src\Foundation\DependencyInjection\code\bin\EMAAR.ECM.Foundation.DependencyInjection.dll.config
 D:\Projects\EMAAR\ECM\Github\Latest\src\Foundation\DependencyInjection\code\bin\EMAAR.ECM.Foundation.DependencyInjection.dll
 D:\Projects\EMAAR\ECM\Github\Latest\src\Foundation\DependencyInjection\code\bin\EMAAR.ECM.Foundation.DependencyInjection.pdb
@@ -311,3 +310,4 @@ D:\Projects\EMAAR\ECM\Github\Latest\src\Foundation\DependencyInjection\code\obj\
 D:\Projects\EMAAR\ECM\Github\Latest\src\Foundation\DependencyInjection\code\obj\Release\EMAAR.ECM.Foundation.DependencyInjection.dll
 D:\Projects\EMAAR\ECM\Github\Latest\src\Foundation\DependencyInjection\code\obj\Release\EMAAR.ECM.Foundation.DependencyInjection.pdb
 D:\Projects\EMAAR\ECM\Github\Latest\src\Foundation\DependencyInjection\code\obj\Release\EMAAR.ECM.Foundation.DependencyInjection.csprojAssemblyReference.cache
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\DependencyInjection\code\obj\Release\EMAAR.ECM.Foundation.DependencyInjection.csprojAssemblyReference.cache

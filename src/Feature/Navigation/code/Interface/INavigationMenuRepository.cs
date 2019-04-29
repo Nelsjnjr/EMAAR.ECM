@@ -18,7 +18,7 @@ namespace EMAAR.ECM.Feature.Navigation.Interface
         /// Getting Footer navigation menu along with logo details/Contactinfo and LegalPages for the Footer 
         /// </summary>
         /// <returns>Footer details</returns>
-        IFooter GetFooter();
+        IFooterViewModel GetFooter();
         /// <summary>
         /// Getting left navigation menu from Sitecore content tree based on context item's parent with its childs
         /// Also displays only the items which has the options "Include in Left navigation" selected in sitecore

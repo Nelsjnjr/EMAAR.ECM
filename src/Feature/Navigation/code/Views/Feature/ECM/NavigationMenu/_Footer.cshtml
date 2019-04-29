@@ -1,5 +1,5 @@
 ﻿@using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
-@model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.IFooter
+@model EMAAR.ECM.Feature.Navigation.Interface.IFooterViewModel
 @using Glass.Mapper.Sc.Web.Mvc
 @using EMAAR.ECM.Foundation.SitecoreExtensions
 <!-- footer starts here -->
@@ -15,7 +15,7 @@
         <div class="row">
             @{
                 <!--Link with Navigation-->
-                foreach (var rootNav in Model.Root_Navigations)
+                foreach (var rootNav in Model.Footer.Root_Navigations)
                 {
                     <div class="col-6 col-md-3">
                         <div class="footer-ul">
@@ -48,11 +48,11 @@
                 }
                 <div class="col-6 col-md-3">
                     <div class="footer-ul icons">
-                        <h2 class="footer-title upperCase">@Html.Glass().Editable(Model.Contact_Info, x => x.Title)</h2>
+                        <h2 class="footer-title upperCase">@Html.Glass().Editable(Model.Footer.Contact_Info, x => x.Title)</h2>
                         @{
                             //Loading Contact Types
 
-                            foreach (var contactInfo in Model.Contact_Info.Contact_Infos)
+                            foreach (var contactInfo in Model.Footer.Contact_Info.Contact_Infos)
                             {
                                 <ul>
                                     <li>
@@ -80,7 +80,7 @@
         <div class="footer-copy">
             <ul>
                 <!--Loading Legal pages-->
-                @foreach (var legalPages in Model.Legal_Pages)
+                @foreach (var legalPages in Model.Footer.Legal_Pages)
                 {
                     if (legalPages.Navigation_Link != null)
                     {
@@ -95,7 +95,7 @@
 
                 }
             </ul>
-            <p class="rights">  @Model.Copyright.ToString().Replace(CommonConstants.YearToken, System.DateTime.Now.Year.ToString())</p>
+            <p class="rights">  @Model.Footer.Copyright.ToString().Replace(CommonConstants.YearToken, System.DateTime.Now.Year.ToString())</p>
         </div>
         <div class="emaar-logo">
 

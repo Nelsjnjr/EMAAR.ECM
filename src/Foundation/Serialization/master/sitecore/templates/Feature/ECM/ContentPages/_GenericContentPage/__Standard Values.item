@@ -20,7 +20,7 @@ Office/16x16/edit_in_workflow.png
 ----version----
 language: en
 version: 1
-revision: d636f135-8dac-448c-a0dc-b0843d9d0636
+revision: e298c0d4-cb3d-4ffe-bad9-6bafabd8f94f
 
 ----field----
 field: {AF055E82-A161-43EF-BC60-523C7EF01A81}
@@ -29,13 +29,6 @@ key: title
 content-length: 5
 
 $name
-----field----
-field: {6B80F5A4-7B14-4CE7-A140-187E88FD8E82}
-name: Is Left Navigation Root Clickable
-key: is left navigation root clickable
-content-length: 0
-
-
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -63,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d636f135-8dac-448c-a0dc-b0843d9d0636
+e298c0d4-cb3d-4ffe-bad9-6bafabd8f94f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190424T055836Z
+20190429T081039Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

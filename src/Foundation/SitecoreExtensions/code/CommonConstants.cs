@@ -1,7 +1,4 @@
-﻿using System;
-using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types;
-
-namespace EMAAR.ECM.Foundation.SitecoreExtensions
+﻿namespace EMAAR.ECM.Foundation.SitecoreExtensions
 {
     /// <summary>
     /// Common constants
@@ -36,7 +33,7 @@ namespace EMAAR.ECM.Foundation.SitecoreExtensions
         /// <summary>
         /// Registering the all javascripts to bundle and minify with the name
         /// </summary>
-        public static string ScriptsBundleName { get; } = "~/bundles/scripts"; 
+        public static string ScriptsBundleName { get; } = "~/bundles/scripts";
         /// <summary>
         /// All jquery /common javascript Application files path
         /// </summary>
@@ -57,9 +54,60 @@ namespace EMAAR.ECM.Foundation.SitecoreExtensions
         /// <summary>
         /// RTE Class names
         /// </summary>
-        public static string[] RteClassNames=>new string[] { "image-right-section", "image-left-section", "table-responsive" };
-     
+        public static string[] RteClassNames => new string[] { "image-right-section", "image-left-section", "table-responsive" };
+        /// <summary>
+        /// Updated date index field
+        /// </summary>
+        public static string Updated { get; } = "__updated";
+        /// <summary>
+        /// Template name for Image Album
+        /// </summary>
+        public const string ImageAlbumPageTemplateName = "Image Album";
+        /// <summary>
+        /// Template name for Image Item
+        /// </summary>
+        public const string ImageItemPageTemplateName = "Image Item";
+        /// <summary>
+        /// Template name for Video Album
+        /// </summary>
+        public const string VideoAlbumPageTemplateName = "Video Album";
+        /// <summary>
+        /// Template name for Image Gallery Page
+        /// </summary>
+        public const string ImageGalleryPageTemplateName = "Image Gallery Page";
+        /// <summary>
+        /// Template name for Video Gallery Page
+        /// </summary>
+        public const string VideoGalleryPageTemplateName = "Video Gallery Page";
+        /// <summary>
+        /// Template name for Video Item
+        /// </summary>
+        public const string VideoItemPageTemplateName = "Video Item";
+        /// <summary>
+        /// Template name for Events Listing Page
+        /// </summary>
+        public const string EventsPageTemplateName = "Events Listing Page";
+        /// <summary>
+        /// Template name for Downloads Page
+        /// </summary>
+        public const string DownloadsPageTemplateName = "Downloads Page";
+        /// <summary>
+        /// Template name for News Listing Page
+        /// </summary>
+        public const string NewsPageTemplateName = "News Listing Page";
+        
         #region Search
+
+        /// <summary>
+        /// Index Sortorder field
+        /// </summary>
+        public static string Sortorder { get; } = "__Sortorder";
+
+        /// <summary>
+        /// Index custom Sortorder field
+        /// </summary>
+        public static string CustomSortorder { get; } = "customsortorder";
+
         /// <summary>
         /// Index Language field
         /// </summary>
@@ -120,7 +168,12 @@ namespace EMAAR.ECM.Foundation.SitecoreExtensions
         /// <summary>
         /// Year Facet Field
         /// </summary>
-        public const string YearFacetField = "years";
+        public const string YearFacetField = "customyear";
+
+        /// <summary>
+        /// Date Field
+        /// </summary>
+        public const string DateField = "date";
 
         /// <summary>
         /// Categories Facet Field
@@ -147,6 +200,29 @@ namespace EMAAR.ECM.Foundation.SitecoreExtensions
         /// Video Item Template ID
         /// </summary>
         public const string VideoItemTemplateID = "{AF5D11D7-F83A-4D16-8747-D92F6F873071}";
+        /// <summary>
+        /// Video gallery Template ID
+        /// </summary>
+        public const string VideoGalleryTemplateID = "{19BF6D5D-CAFC-4C5A-927F-0705A5CD4B61}";
+        /// <summary>
+        /// News Template ID
+        /// </summary>
+        public const string NewsTemplateID = "{835DCB81-BBC5-4CB7-970D-4BE80A2D39D8}";
+
+        /// <summary>
+        /// Events Template ID
+        /// </summary>
+        public const string EventsTemplateID = "{AA1DC073-7B89-4945-A520-D5313AC3BC6C}";
+
+        /// <summary>
+        /// Download Item Template ID
+        /// </summary>
+        public const string DownloadItemTemplateID = "{C2001609-2857-447B-BA2A-DDE4F9DFCB9C}";
+
+        /// <summary>
+        /// Video Item Template ID
+        /// </summary>
+        public const string YearFolderTemplateID = "{75D66F86-B219-4070-9820-AB948FD107A4}";
 
         /// <summary>
         /// All Years dictionary key
@@ -158,6 +234,16 @@ namespace EMAAR.ECM.Foundation.SitecoreExtensions
         /// All Categories dictionary key
         /// </summary>
         public const string AllCategoriesKey = "AllCategories";
+
+        /// <summary>
+        /// Download dictionary key
+        /// </summary>
+        public const string DownloadKey = "Download";
+
+        /// <summary>
+        /// Read Online dictionary key
+        /// </summary>
+        public const string ReadOnlineKey = "ReadOnline";
         #endregion
 
         #endregion;
