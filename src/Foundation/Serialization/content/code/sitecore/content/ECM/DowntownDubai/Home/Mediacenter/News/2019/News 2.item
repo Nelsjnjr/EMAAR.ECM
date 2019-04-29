@@ -27,15 +27,15 @@ content-length: 16
 ----version----
 language: en
 version: 1
-revision: 590dd3de-c336-46aa-b254-c29914b9bc29
+revision: 3b90542f-3521-40fc-ba6a-2b25bca3b622
 
 ----field----
 field: {AF055E82-A161-43EF-BC60-523C7EF01A81}
 name: Title
 key: title
-content-length: 6
+content-length: 68
 
-News 2
+Curabitur arcu erat, accumsan haujiloyt aust, aclositer 2019-->News2
 ----field----
 field: {55768EBD-52C4-4340-9471-2C948D429BCF}
 name: Introduction
@@ -47,9 +47,9 @@ News2 Introduction
 field: {82677F75-244E-42A8-BCB4-48993767346E}
 name: Banner
 key: banner
-content-length: 58
+content-length: 166
 
-<image mediaid="{4A8CEA77-AFE9-432C-8837-A698DBE8D941}" />
+<image mediapath="" alt="news-thumb" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{A158FD6B-D92C-4DE6-ABBA-A9E16BBDF3CF}" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -63,14 +63,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-590dd3de-c336-46aa-b254-c29914b9bc29
+3b90542f-3521-40fc-ba6a-2b25bca3b622
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190427T093832Z
+20190429T115534Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

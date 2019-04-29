@@ -165,4 +165,5 @@
   <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Zoom/80" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Zoom/66" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Zoom/10" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
+  <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
 </ItemIconCache>

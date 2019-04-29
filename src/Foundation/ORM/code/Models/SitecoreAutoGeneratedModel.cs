@@ -2201,6 +2201,47 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 			
 	}
 }
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
+{
+
+
+ 	/// <summary>
+	/// IMediaFolder Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/MediaFolder</para>	
+	/// <para>ID: 2b7920b0-e96a-4d03-88a1-4c4cfad6a6b7</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IMediaFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IMediaFolder : IGlassBase 
+	{
+				}
+
+
+	public static partial class IMediaFolderConstants{
+
+			public const string TemplateIdString = "2b7920b0-e96a-4d03-88a1-4c4cfad6a6b7";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "MediaFolder";
+
+			
+
+	}
+
+	
+	/// <summary>
+	/// MediaFolder
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/MediaFolder</para>	
+	/// <para>ID: 2b7920b0-e96a-4d03-88a1-4c4cfad6a6b7</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IMediaFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IMediaFolder))]
+	public partial class MediaFolder  : GlassBase, IMediaFolder 
+	{
+	   
+			
+	}
+}
 namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types
 {
 

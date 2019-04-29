@@ -2,7 +2,7 @@
 version: 1
 id: {4A8CEA77-AFE9-432C-8837-A698DBE8D941}
 database: master
-path: /sitecore/media library/Project/ECM/DowntownDubai/Image Gallery/gallery
+path: /sitecore/media library/Project/ECM/DowntownDubai/Listing/Image Gallery/gallery
 parent: {70135E55-1308-4295-8EC9-D7BCE798406D}
 name: gallery
 master: {00000000-0000-0000-0000-000000000000}

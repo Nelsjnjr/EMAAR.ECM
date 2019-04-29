@@ -24,10 +24,45 @@ key: controller action
 content-length: 18
 
 GetMediacenterPage
+----field----
+field: {3D08DB46-2267-41B0-BC52-BE69FD618633}
+name: Cacheable
+key: cacheable
+content-length: 1
+
+1
+----field----
+field: {F3E7E552-D7C8-469B-A150-69E4E14AB35C}
+name: ClearOnIndexUpdate
+key: clearonindexupdate
+content-length: 1
+
+1
+----field----
+field: {8B6D532B-6128-4486-A044-CA06D90948BA}
+name: VaryByData
+key: varybydata
+content-length: 1
+
+1
+----field----
+field: {3AD2506A-DC39-4B1E-959F-9D524ADDBF50}
+name: VaryByParm
+key: varybyparm
+content-length: 1
+
+1
+----field----
+field: {1084D3D2-0457-456A-ABBC-EB4CC0966072}
+name: VaryByQueryString
+key: varybyquerystring
+content-length: 1
+
+1
 ----version----
 language: en
 version: 1
-revision: 63c03770-db7e-4a46-b502-66f694f979ad
+revision: e4318263-3b07-4770-9329-b0f8923005e7
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -42,14 +77,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-63c03770-db7e-4a46-b502-66f694f979ad
+e4318263-3b07-4770-9329-b0f8923005e7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190425T093458Z
+20190429T120948Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
