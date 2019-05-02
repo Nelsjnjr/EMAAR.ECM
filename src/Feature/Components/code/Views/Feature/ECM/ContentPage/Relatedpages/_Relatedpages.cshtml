@@ -1,6 +1,7 @@
 ﻿@model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Pages.IRelated_Pages
 @using EMAAR.ECM.Foundation.SitecoreExtensions
 @using Glass.Mapper.Sc.Web.Mvc
+@using Sitecore.Framework.Fields.Extensions
 @if (Model != null && Model.Pages != null && Model.Pages.Count() > 0)
 {
     <div class="exploreBoxes">
@@ -14,19 +15,14 @@
                             {
                                 using (Html.Glass().BeginRenderLink(relatedPages, x => x.CTA, new { @class = "link" }, isEditable: true))
                                 {
-                                    <div class="explore-item-img">
-                                        @if (relatedPages != null && relatedPages.Image != null && !String.IsNullOrEmpty(relatedPages.Image.Alt))
-                                        {
-                                            @Html.Glass().RenderImage(relatedPages, x => x.Image, new { alt = relatedPages.Image.Alt, @class = "img-fluid" }, isEditable: true)
+                            <div class="explore-item-img">
+                                @if (relatedPages != null && relatedPages.Image != null)
+                                {
+                                    @Html.Sitecore().AdvancedImageField("Image", relatedPages.ContextItem, 255, 350, "image", "img-fluid", false)                                
 
-                                        }
-                                        else
-                                        {
-                                            @Html.Glass().RenderImage(relatedPages, x => x.Image, new { alt = "image", @class = "img-fluid" }, isEditable: true)
-
-                                        }
-                                        <h3 class="title">@Html.Glass().Editable(relatedPages, x => x.Title)</h3>
-                                    </div>
+                                }
+                                <h3 class="title">@Html.Glass().Editable(relatedPages, x => x.Title)</h3>
+                            </div>
                                     <div class="explore-item-text">
                                         <h3 class="title">@Html.Glass().Editable(relatedPages, x => x.Title)</h3>
                                         @Html.Raw(Html.Glass().Editable(relatedPages, x => x.Summary))

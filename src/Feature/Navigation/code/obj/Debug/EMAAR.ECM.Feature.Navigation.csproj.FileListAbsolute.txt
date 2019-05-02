@@ -137,6 +137,8 @@ D:\Projects\EMAAR\ECM\Github\Latest\src\Feature\Navigation\code\obj\Debug\EMAAR.
 D:\Projects\EMAAR\ECM\Github\Latest\src\Feature\Navigation\code\obj\Debug\EMAAR.ECM.Feature.Navigation.csproj.CopyComplete
 D:\Projects\EMAAR\ECM\Github\Latest\src\Feature\Navigation\code\obj\Debug\EMAAR.ECM.Feature.Navigation.dll
 D:\Projects\EMAAR\ECM\Github\Latest\src\Feature\Navigation\code\obj\Debug\EMAAR.ECM.Feature.Navigation.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\obj\Debug\EMAAR.ECM.Feature.Navigation.csprojAssemblyReference.cache
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\obj\Debug\EMAAR.ECM.Feature.Navigation.csproj.CoreCompileInputs.cache
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\EMAAR.ECM.Feature.Navigation.dll.config
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\EMAAR.ECM.Feature.Navigation.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\EMAAR.ECM.Feature.Navigation.pdb
@@ -271,8 +273,11 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\Antlr3.Ru
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\System.Diagnostics.DiagnosticSource.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\obj\Debug\EMAAR.ECM.Feature.Navigation.csprojAssemblyReference.cache
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\obj\Debug\EMAAR.ECM.Feature.Navigation.csproj.CoreCompileInputs.cache
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\obj\Debug\EMAAR.ECM.Feature.Navigation.csproj.CopyComplete
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\obj\Debug\EMAAR.ECM.Feature.Navigation.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\obj\Debug\EMAAR.ECM.Feature.Navigation.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\Sitecore.Framework.Fields.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\ImageProcessor.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\Sitecore.Framework.Fields.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\Sitecore.Framework.Fields.dll.config
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\ImageProcessor.xml

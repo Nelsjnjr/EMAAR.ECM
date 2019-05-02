@@ -1,4 +1,5 @@
 ﻿#region namespace
+using System;
 using System.Web.Mvc;
 using EMAAR.ECM.Feature.ContentComponents.Interfaces;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity;
@@ -29,7 +30,11 @@ namespace EMAAR.ECM.Feature.ContentComponents.Controllers
         /// <returns>Content Page </returns>
         public ActionResult GetGenericContentPage()
         {
-            IGeneric_ContentPage generic = _contentRepositories.GetGenericContentPage();
+            IGeneric_ContentPage generic = _contentRepositories.GetGenericContentPage(out string date);
+            if(!String.IsNullOrEmpty(date))
+            {
+                ViewBag.Date = date;
+            }
             return View($"{ViewPath}ContentPage/ContentPage.cshtml", generic);
         }
         /// <summary>

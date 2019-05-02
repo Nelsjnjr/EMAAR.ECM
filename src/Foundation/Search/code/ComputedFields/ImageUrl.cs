@@ -1,4 +1,5 @@
 ﻿using System;
+using EMAAR.ECM.Foundation.Customcontrols.Helper;
 using EMAAR.ECM.Foundation.Search.Helpers;
 using EMAAR.ECM.Foundation.SitecoreExtensions;
 using Sitecore.ContentSearch;
@@ -7,6 +8,7 @@ using Sitecore.Data;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Resources.Media;
+using Sitecore.Shell.Applications.ContentEditor;
 
 namespace EMAAR.ECM.Foundation.Search.ComputedFields
 {
@@ -54,22 +56,12 @@ namespace EMAAR.ECM.Foundation.Search.ComputedFields
                     ImageField imageField = item.Fields["Image"];
                     if (SearchHelper.FormatGuid(item.TemplateID.ToString()).Equals(SearchHelper.FormatGuid(CommonConstants.NewsTemplateID)))
                     {
+                        
                         imageField = item.Fields["Banner"];
                     }
 
-                    if (imageField != null && imageField.MediaItem != null)
-                    {
-                        MediaUrlOptions mediaUrlOption = new MediaUrlOptions
-                        {
-                            Language = item.Language
-                        };
-                        imageUrl = MediaManager.GetMediaUrl(imageField.MediaItem, mediaUrlOption);
-                        if (!string.IsNullOrEmpty(imageUrl))
-                        {
-                            imageUrl = imageUrl.Replace("/sitecore/shell", "");
-                        }
-                    }                  
-                    return imageUrl;
+                                    
+                    return AdvancedImageHelper.GetImageFieldUrl(imageField, 0, 0);
                 }
             }
 

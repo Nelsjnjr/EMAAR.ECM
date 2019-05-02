@@ -113,6 +113,11 @@
     <Reference Include="Sitecore.Logging.Client, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Logging.Client.9.0.171219\lib\NET462\Sitecore.Logging.Client.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Mvc, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Sitecore.Mvc.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Sitecore.NVelocity, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.NVelocity.9.0.171219\lib\NET462\Sitecore.NVelocity.dll</HintPath>
     </Reference>

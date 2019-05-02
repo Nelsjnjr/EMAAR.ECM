@@ -1,7 +1,12 @@
 ﻿@using Glass.Mapper.Sc.Web.Mvc
 @using EMAAR.ECM.Foundation.SitecoreExtensions.Settings
+@using Sitecore.Framework.Fields.Extensions
 @model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Banner.IParallax
-@{ var image = Model.Image != null ? Model.Image.Src : String.Empty;
+@using EMAAR.ECM.Foundation.Search.Helpers
+@using Sitecore.Framework.Helper
+@{
+
+    var image = AdvancedImageHelper.GetImageFieldUrl(Model.ContextItem, "Image", 1920, 900);
 }
 <!-- Start Parallax-->
 @using (Html.BeginEditFrame(Model.FullPath, "FullBannerImage", "Edit Background Image"))

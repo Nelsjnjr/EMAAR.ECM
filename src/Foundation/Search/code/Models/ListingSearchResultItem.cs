@@ -37,6 +37,10 @@ namespace EMAAR.ECM.Foundation.Search.Models
         public string imageUrl { get; set; }
 
         [JsonProperty]
+        [IndexField("thumbnailurl")]
+        public string thumbnailurl { get; set; }
+
+        [JsonProperty]
         [IndexField("imagealttext")]
         public string imageAlttext { get; set; }
 
@@ -55,12 +59,6 @@ namespace EMAAR.ECM.Foundation.Search.Models
         [IndexField("videos_sm")]
         public List<string> videos { get; set; }
 
-       
-        //[IndexField("customsortorder_l")]
-        //public long downloadText { get; set; }
 
-        
-        //[IndexField("customyear_i")]
-        //public int readText { get; set; }
     }
 }

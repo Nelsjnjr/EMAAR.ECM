@@ -367,6 +367,8 @@ D:\Projects\EMAAR\ECM\Github\Latest\src\Project\Website\code\obj\Debug\EMAAR.ECM
 D:\Projects\EMAAR\ECM\Github\Latest\src\Project\Website\code\obj\Debug\EMAAR.ECM.Project.Website.csproj.CopyComplete
 D:\Projects\EMAAR\ECM\Github\Latest\src\Project\Website\code\obj\Debug\EMAAR.ECM.Project.Website.dll
 D:\Projects\EMAAR\ECM\Github\Latest\src\Project\Website\code\obj\Debug\EMAAR.ECM.Project.Website.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\obj\Debug\EMAAR.ECM.Project.Website.csprojAssemblyReference.cache
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\obj\Debug\EMAAR.ECM.Project.Website.csproj.CoreCompileInputs.cache
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\EMAAR.ECM.Project.Website.dll.config
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\EMAAR.ECM.Project.Website.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\EMAAR.ECM.Project.Website.pdb
@@ -448,7 +450,6 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\RazorGenerat
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\Sitecore.Kernel.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\Sitecore.Logging.Client.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\Sitecore.Logging.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\Sitecore.Mvc.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\Sitecore.NVelocity.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\Sitecore.Web.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\Sitecore.Zip.dll
@@ -510,8 +511,12 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\System.Web.R
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\System.Web.WebPages.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\System.Web.WebPages.Razor.xml
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\obj\Debug\EMAAR.ECM.Project.Website.csprojAssemblyReference.cache
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\obj\Debug\EMAAR.ECM.Project.Website.csproj.CoreCompileInputs.cache
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\obj\Debug\EMAAR.ECM.Project.Website.csproj.CopyComplete
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\obj\Debug\EMAAR.ECM.Project.Website.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\obj\Debug\EMAAR.ECM.Project.Website.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\Sitecore.Mvc.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\Sitecore.Framework.Fields.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\ImageProcessor.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\Sitecore.Framework.Fields.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\Sitecore.Framework.Fields.dll.config
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\ImageProcessor.xml

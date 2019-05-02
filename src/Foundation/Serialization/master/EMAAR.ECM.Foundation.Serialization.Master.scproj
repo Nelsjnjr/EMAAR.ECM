@@ -360,6 +360,7 @@
     <SitecoreItem Include="sitecore\templates\Feature\ECM\ContentPages\_GenericContentPage\Data\Banner.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <CodeGenData>Type=Glass.Mapper.Sc.Fields.AdvanceImageField</CodeGenData>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Feature\ECM\ContentPages\_GenericContentPage\Data\Content.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
@@ -543,6 +544,7 @@
     <SitecoreItem Include="sitecore\templates\Feature\ECM\Hero component\_Hero\Data\Hero Image.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <CodeGenData>Type=Glass.Mapper.Sc.Fields.AdvanceImageField</CodeGenData>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Feature\ECM\Hero component\_Hero\Data\Mobile Hero Image.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
@@ -605,6 +607,11 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Feature\ECM\Homepage carousel\_Homepage carousel\Data\Image.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <CodeGenData>Type=Glass.Mapper.Sc.Fields.AdvanceImageField</CodeGenData>
+    </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Feature\ECM\Homepage carousel\_Homepage carousel\Data\Summary.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -654,6 +661,15 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <CodeGenData>Type=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.ISettings</CodeGenData>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Feature\ECM\ImageText\_ImageText\Image.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Feature\ECM\ImageText\_ImageText\Image\Image.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <CodeGenData>Type=Glass.Mapper.Sc.Fields.AdvanceImageField</CodeGenData>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Feature\ECM\ImageText\Parameters Templates.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
@@ -725,6 +741,15 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Feature\ECM\Interactive Map\_Interactive Map\Image.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Feature\ECM\Interactive Map\_Interactive Map\Image\Image.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <CodeGenData>Type=Glass.Mapper.Sc.Fields.AdvanceImageField</CodeGenData>
+    </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Feature\ECM\Listing.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -750,11 +775,6 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <CodeGenData>generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IImage_Item</CodeGenData>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Feature\ECM\Listing\_Album\Data\Years.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-      <CodeGenData>generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.IYear_Item</CodeGenData>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Feature\ECM\Listing\_Download Item.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
@@ -792,6 +812,7 @@
       <ExcludeItemFrom>
       </ExcludeItemFrom>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <CodeGenData>Type=Glass.Mapper.Sc.Fields.AdvanceImageField</CodeGenData>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Feature\ECM\Listing\_Download Item\Data\Title.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
@@ -841,6 +862,7 @@
     <SitecoreItem Include="sitecore\templates\Feature\ECM\Listing\_Image Item\Image Details\Image.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <CodeGenData>Type=Glass.Mapper.Sc.Fields.AdvanceImageField</CodeGenData>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Feature\ECM\Listing\_Image Item\Image Details\Title.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
@@ -915,7 +937,7 @@
     <SitecoreItem Include="sitecore\templates\Feature\ECM\Listing\_Video Item\Video Details\Image.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
-      <CodeGenData>generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IImage_Item</CodeGenData>
+      <CodeGenData>Type=Glass.Mapper.Sc.Fields.AdvanceImageField</CodeGenData>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Feature\ECM\Listing\_Video Item\Video Details\Title.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
@@ -925,11 +947,6 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <CodeGenData>generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IVideo_Item</CodeGenData>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Feature\ECM\Listing\_Video Item\Video Details\Years.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-      <CodeGenData>generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.IYear_Item</CodeGenData>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Feature\ECM\Listing\_VideoAlbum.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
@@ -952,11 +969,6 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <CodeGenData>generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IVideo_Item</CodeGenData>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Feature\ECM\Listing\_VideoAlbum\Data\Years.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-      <CodeGenData>generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.IYear_Item</CodeGenData>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Feature\ECM\Listing\_YearFolder.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
@@ -1018,6 +1030,15 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Feature\ECM\Parallax\_Parallax\Image.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Feature\ECM\Parallax\_Parallax\Image\Image.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <CodeGenData>Type=Glass.Mapper.Sc.Fields.AdvanceImageField</CodeGenData>
+    </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Feature\ECM\Related Pages.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -1041,6 +1062,15 @@
     <SitecoreItem Include="sitecore\templates\Feature\ECM\Related Pages\_Related page\Data\Title.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Feature\ECM\Related Pages\_Related page\Image.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Feature\ECM\Related Pages\_Related page\Image\Image.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <CodeGenData>Type=Glass.Mapper.Sc.Fields.AdvanceImageField</CodeGenData>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Feature\ECM\Related Pages\_Related Pages.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
@@ -1587,6 +1617,8 @@
     <SitecoreItem Include="sitecore\templates\Foundation\ECM\Content Types\_Image\Image\Image.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <CodeGenData>
+      </CodeGenData>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Foundation\ECM\Content Types\_LegalPages.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>

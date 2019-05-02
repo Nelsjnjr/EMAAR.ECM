@@ -14,9 +14,9 @@ created: 20190421T081317Z
 field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
 name: __Base template
 key: __base template
-content-length: 116
+content-length: 77
 
-{1930BBEB-7805-471A-A3BE-4858AC7CF696}|{E0997CAB-BE49-4773-A33F-22530AFBD812}|{75180707-35BB-4854-8B48-B8882EB6C359}
+{1930BBEB-7805-471A-A3BE-4858AC7CF696}|{75180707-35BB-4854-8B48-B8882EB6C359}
 ----field----
 field: {F7D48A55-2158-4F02-9356-756654404F73}
 name: __Standard values
@@ -34,7 +34,7 @@ Applications/32x32/form_blue.png
 ----version----
 language: en
 version: 1
-revision: e187dfea-f8d2-4090-a821-6edf06978a1d
+revision: bf32f483-ce5b-4c71-b9de-c8597c0902bb
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -56,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e187dfea-f8d2-4090-a821-6edf06978a1d
+bf32f483-ce5b-4c71-b9de-c8597c0902bb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190424T051151Z
+20190501T073734Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

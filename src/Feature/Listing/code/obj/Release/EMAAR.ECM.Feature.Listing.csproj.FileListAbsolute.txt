@@ -405,3 +405,13 @@ D:\Projects\EMAAR\ECM\Github\Latest\src\Feature\Listing\code\obj\Release\EMAAR.E
 D:\Projects\EMAAR\ECM\Github\Latest\src\Feature\Listing\code\obj\Release\EMAAR.ECM.Feature.Listing.csproj.CopyComplete
 D:\Projects\EMAAR\ECM\Github\Latest\src\Feature\Listing\code\obj\Release\EMAAR.ECM.Feature.Listing.dll
 D:\Projects\EMAAR\ECM\Github\Latest\src\Feature\Listing\code\obj\Release\EMAAR.ECM.Feature.Listing.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Listing\code\bin\EMAAR.ECM.Foundation.Customcontrols.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Listing\code\bin\Sitecore.Mvc.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Listing\code\bin\RazorGenerator.Mvc.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Listing\code\bin\Sitecore.Web.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Listing\code\bin\System.Web.Http.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Listing\code\bin\System.Net.Http.Formatting.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Listing\code\bin\EMAAR.ECM.Foundation.Customcontrols.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Listing\code\bin\EMAAR.ECM.Foundation.Customcontrols.dll.config
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Listing\code\bin\System.Web.Http.xml
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Listing\code\bin\System.Net.Http.Formatting.xml

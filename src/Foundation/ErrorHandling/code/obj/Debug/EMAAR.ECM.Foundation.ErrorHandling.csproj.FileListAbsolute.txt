@@ -117,6 +117,8 @@ D:\Projects\EMAAR\ECM\Github\Latest\src\Foundation\ErrorHandling\code\obj\Debug\
 D:\Projects\EMAAR\ECM\Github\Latest\src\Foundation\ErrorHandling\code\obj\Debug\EMAAR.ECM.Foundation.ErrorHandling.csproj.CopyComplete
 D:\Projects\EMAAR\ECM\Github\Latest\src\Foundation\ErrorHandling\code\obj\Debug\EMAAR.ECM.Foundation.ErrorHandling.dll
 D:\Projects\EMAAR\ECM\Github\Latest\src\Foundation\ErrorHandling\code\obj\Debug\EMAAR.ECM.Foundation.ErrorHandling.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\obj\Debug\EMAAR.ECM.Foundation.ErrorHandling.csprojAssemblyReference.cache
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\obj\Debug\EMAAR.ECM.Foundation.ErrorHandling.csproj.CoreCompileInputs.cache
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\bin\EMAAR.ECM.Foundation.ErrorHandling.dll.config
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\bin\EMAAR.ECM.Foundation.ErrorHandling.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\bin\EMAAR.ECM.Foundation.ErrorHandling.pdb
@@ -232,8 +234,6 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\bin\Sys
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\bin\System.Web.WebPages.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\bin\System.Web.WebPages.Razor.xml
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\obj\Debug\EMAAR.ECM.Foundation.ErrorHandling.csprojAssemblyReference.cache
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\obj\Debug\EMAAR.ECM.Foundation.ErrorHandling.csproj.CoreCompileInputs.cache
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\obj\Debug\EMAAR.ECM.Foundation.ErrorHandling.csproj.CopyComplete
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\obj\Debug\EMAAR.ECM.Foundation.ErrorHandling.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ErrorHandling\code\obj\Debug\EMAAR.ECM.Foundation.ErrorHandling.pdb

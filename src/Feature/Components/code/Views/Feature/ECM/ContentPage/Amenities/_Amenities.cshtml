@@ -13,6 +13,7 @@
                     <div class="icon">
                         @if (amenity.Image != null)
                         {
+
                             @Html.Glass().RenderImage(amenity, x => x.Image, new { alt = !String.IsNullOrEmpty(amenity.Image.Alt) ? amenity.Image.Alt : "icon", @class = "svg" }, isEditable: true)
                         }
                     </div>

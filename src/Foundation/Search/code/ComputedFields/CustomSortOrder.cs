@@ -42,7 +42,7 @@ namespace EMAAR.ECM.Foundation.Search.ComputedFields
                 }
 
                  var sortOrderField = item.Fields["__Sortorder"];
-                if (sortOrderField != null && sortOrderField.Value != null)
+                if (sortOrderField != null && !String.IsNullOrEmpty(sortOrderField.Value))
                 {
                     return Convert.ToInt64(sortOrderField.Value);
                 }

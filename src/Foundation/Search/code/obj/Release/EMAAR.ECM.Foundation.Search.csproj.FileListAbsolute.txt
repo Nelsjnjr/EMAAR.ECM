@@ -396,3 +396,15 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\Search\code\obj\Release\EM
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\Search\code\obj\Release\EMAAR.ECM.Foundation.Search.csproj.CopyComplete
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\Search\code\obj\Release\EMAAR.ECM.Foundation.Search.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\Search\code\obj\Release\EMAAR.ECM.Foundation.Search.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\Search\code\bin\EMAAR.ECM.Feature.ContentComponents.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\Search\code\bin\EMAAR.ECM.Foundation.Customcontrols.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\Search\code\bin\ImageProcessor.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\Search\code\bin\Sitecore.Framework.Fields.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\Search\code\bin\Sitecore.Client.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\Search\code\bin\Telerik.Web.UI.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\Search\code\bin\Sitecore.Mvc.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\Search\code\bin\EMAAR.ECM.Feature.ContentComponents.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\Search\code\bin\EMAAR.ECM.Feature.ContentComponents.dll.config
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\Search\code\bin\EMAAR.ECM.Foundation.Customcontrols.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\Search\code\bin\EMAAR.ECM.Foundation.Customcontrols.dll.config
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\Search\code\bin\ImageProcessor.xml

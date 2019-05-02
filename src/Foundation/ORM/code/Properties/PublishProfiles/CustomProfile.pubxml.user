@@ -30,20 +30,29 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/Castle.Core.dll">
       <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
+    <File Include="bin/EMAAR.ECM.Foundation.Customcontrols.dll">
+      <publishTime>05/02/2019 09:53:38</publishTime>
+    </File>
+    <File Include="bin/EMAAR.ECM.Foundation.Customcontrols.dll.config">
+      <publishTime>05/01/2019 15:26:00</publishTime>
+    </File>
+    <File Include="bin/EMAAR.ECM.Foundation.Customcontrols.pdb">
+      <publishTime>05/02/2019 09:53:38</publishTime>
+    </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.dll">
-      <publishTime>04/29/2019 14:30:59</publishTime>
+      <publishTime>05/02/2019 16:30:02</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.dll.config">
       <publishTime>04/11/2019 09:27:16</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.pdb">
-      <publishTime>04/29/2019 14:30:59</publishTime>
+      <publishTime>05/02/2019 16:30:02</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll">
-      <publishTime>04/29/2019 14:31:00</publishTime>
+      <publishTime>05/02/2019 16:30:03</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.pdb">
-      <publishTime>04/29/2019 14:31:00</publishTime>
+      <publishTime>05/02/2019 16:30:03</publishTime>
     </File>
     <File Include="bin/Glass.Mapper.dll">
       <publishTime>04/17/2019 16:19:54</publishTime>
@@ -77,6 +86,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="bin/ICSharpCode.SharpZipLib.dll">
       <publishTime>04/17/2019 16:19:54</publishTime>
+    </File>
+    <File Include="bin/ImageProcessor.dll">
+      <publishTime>02/11/2019 12:04:58</publishTime>
     </File>
     <File Include="bin/Lucene.Net.dll">
       <publishTime>10/26/2012 00:52:54</publishTime>
@@ -281,6 +293,15 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="bin/Sitecore.Foundation.DependencyInjection.pdb">
       <publishTime>03/26/2019 14:39:28</publishTime>
+    </File>
+    <File Include="bin/Sitecore.Framework.Fields.dll">
+      <publishTime>05/02/2019 16:30:03</publishTime>
+    </File>
+    <File Include="bin/Sitecore.Framework.Fields.dll.config">
+      <publishTime>05/01/2019 15:26:00</publishTime>
+    </File>
+    <File Include="bin/Sitecore.Framework.Fields.pdb">
+      <publishTime>05/02/2019 16:30:03</publishTime>
     </File>
     <File Include="bin/Sitecore.Kernel.dll">
       <publishTime>04/17/2019 16:19:54</publishTime>

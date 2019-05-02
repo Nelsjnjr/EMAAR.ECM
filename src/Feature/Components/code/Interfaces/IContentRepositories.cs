@@ -14,7 +14,7 @@ namespace EMAAR.ECM.Feature.ContentComponents.Interfaces
         /// Getting Content Page details
         /// </summary>
         /// <returns></returns>
-        IGeneric_ContentPage GetGenericContentPage();
+        IGeneric_ContentPage GetGenericContentPage(out string date);
         /// <summary>
         /// Getting all Amenities
         /// </summary>

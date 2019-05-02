@@ -239,6 +239,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\AdvancedImage\code\Sitecore.Framework.Fields.csproj">
+      <Project>{bfe0455b-9e43-4468-8a1a-dcf617edbe76}</Project>
+      <Name>Sitecore.Framework.Fields</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\EMAAR.ECM.Foundation.SitecoreExtensions.csproj">
       <Project>{5a9c69d0-c859-4df1-ac9c-4ef90d684b2b}</Project>
       <Name>EMAAR.ECM.Foundation.SitecoreExtensions</Name>

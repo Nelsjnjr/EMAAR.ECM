@@ -4,8 +4,8 @@
     return;
 }
 @{
-    string imagePath = String.Format("{0}{1}", SitecoreSettings.ImageLocatation, Sitecore.Context.Site.Name);
-    string fallbackImagePath = String.Format("{0}Global", SitecoreSettings.ImageLocatation);
+    string imagePath = String.Format("~{0}{1}", SitecoreSettings.ImageLocatation, Sitecore.Context.Site.Name);
+    string fallbackImagePath = String.Format("~{0}Global", SitecoreSettings.ImageLocatation);
     <!-- Fav Icon -->
     if (System.IO.Directory.Exists(Server.MapPath(imagePath)) &&
 System.IO.Directory.GetFiles(Server.MapPath(imagePath)).Length > 0)

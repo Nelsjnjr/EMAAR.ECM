@@ -1,7 +1,8 @@
 ﻿@model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Homepage_carousel.IHomepage_Carousels
 @using EMAAR.ECM.Foundation.SitecoreExtensions
 @using Glass.Mapper.Sc.Web.Mvc
-
+@using Sitecore.Framework.Fields.Extensions
+@using Glass.Mapper.Sc
 <!--Start HomePage carousels-->
 <section class="explore">
     <div class="container">
@@ -19,16 +20,9 @@
                                     using (Html.Glass().BeginRenderLink(carousels, x => x.CTA, new { @class = "link" }, isEditable: true))
                                     {
                                         <div class="explore-item-img">
-                                            @if (carousels != null && carousels.Image != null && !String.IsNullOrEmpty(carousels.Image.Alt))
-                                            {
-                                                @Html.Glass().RenderImage(carousels, x => x.Image, new { alt = carousels.Image.Alt, @class = "img-fluid" }, isEditable: true)
+                                          
+                                                @Html.Sitecore().AdvancedImageField("Image", carousels.ContextItem, 255, 350, "image", "img-fluid", false)
 
-                                            }
-                                            else
-                                            {
-                                                @Html.Glass().RenderImage(carousels, x => x.Image, new { alt = "image", @class = "img-fluid" }, isEditable: true)
-
-                                            }
                                             <h3 class="title">@Html.Glass().Editable(carousels, x => x.Title)</h3>
                                         </div>
                                         <div class="explore-item-text">
@@ -38,7 +32,7 @@
 
                                     }
                                 }
-                                </div>
+                            </div>
                         </div>
                     }
 

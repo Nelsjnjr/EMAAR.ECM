@@ -2,12 +2,15 @@
 using System;
 using System.Linq;
 using EMAAR.ECM.Feature.ContentComponents.Interfaces;
+using EMAAR.ECM.Feature.ContentComponents.Settings;
 using EMAAR.ECM.Foundation.DependencyInjection;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Faq;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Pages;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types;
 using Glass.Mapper.Sc.Web.Mvc;
+using Sitecore.Data;
+using Sitecore.Data.Fields;
 #endregion
 namespace EMAAR.ECM.Feature.ContentComponents.Repositories
 {
@@ -38,9 +41,16 @@ namespace EMAAR.ECM.Feature.ContentComponents.Repositories
         /// Getting Content Page details
         /// </summary>
         /// <returns>Content page </returns>
-        public IGeneric_ContentPage GetGenericContentPage()
+        public IGeneric_ContentPage GetGenericContentPage(out string date)
         {
             IMvcContext mvcContext = _mvcContext();
+            date = String.Empty;
+            if (mvcContext.ContextItem.TemplateID.Equals(ID.Parse(SitecoreSettings.NewsPageTemplateID))||
+                mvcContext.ContextItem.TemplateID.Equals(ID.Parse(SitecoreSettings.EventsPageTemplateID)))
+            {
+                DateField dt = mvcContext.ContextItem.Fields["Date"];
+                date =  Sitecore.DateUtil.FormatDateTime(dt.DateTime, EMAAR.ECM.Foundation.SitecoreExtensions.Settings.SitecoreSettings.DateFormat, mvcContext.ContextItem.Language.CultureInfo); 
+            }
             IGeneric_ContentPage generic = mvcContext.GetContextItem<IGeneric_ContentPage>();
             return generic ?? _generic;
 

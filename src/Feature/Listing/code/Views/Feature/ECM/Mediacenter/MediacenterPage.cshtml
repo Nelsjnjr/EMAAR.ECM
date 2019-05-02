@@ -34,7 +34,7 @@
                         <a href="@albumDetails.pageUrl" class="news-item-link">
                             <div class="imgholder">
                                 <span class="date">@albumDetails.date</span>
-                                <img src="@(!String.IsNullOrEmpty(albumDetails.imageUrl)?albumDetails.imageUrl:Model.Mediacenter.No_Image.Src)" alt="Downloads-thumbnail" class="img">
+                                <img src="@(!String.IsNullOrEmpty(albumDetails.thumbnailurl)?albumDetails.thumbnailurl:Model.Mediacenter.No_Image.Src)" alt="Downloads-thumbnail" class="img">
                             </div>
                             <div class="title">@albumDetails.title</div>
                         </a>
@@ -98,7 +98,7 @@
                     <div class="download-item">
                         <div class="imgholder">
                             <span class="pdf"><img src="~/Assets/Project/ECM/images/icon/Pdf.svg" alt="pdf icon"></span>
-                            <img src="@(!String.IsNullOrEmpty(albumDetails.imageUrl) ? albumDetails.imageUrl : Model.Mediacenter.No_Image.Src)" alt="Downloads-thumbnail"
+                            <img src="@(!String.IsNullOrEmpty(albumDetails.thumbnailurl) ? albumDetails.thumbnailurl : Model.Mediacenter.No_Image.Src)" alt="Downloads-thumbnail"
                                  class="img">
                             <div class="hoverHolder">
                                 <a href="@albumDetails.pageUrl" class="link">
@@ -148,7 +148,7 @@
                         <a href="@(Model.IsImageAlbum == true ? albumDetails.imageUrl : albumDetails.pageUrl)" rel="1"
                            class="fancyimages gallery-item-link"
                            title="@albumDetails.title">
-                            <img src="@(!String.IsNullOrEmpty(albumDetails.imageUrl) ? albumDetails.imageUrl : Model.Mediacenter.No_Image.Src)" alt="gallery1" class="img">
+                            <img src="@(!String.IsNullOrEmpty(albumDetails.thumbnailurl) ? albumDetails.thumbnailurl : Model.Mediacenter.No_Image.Src)" alt="gallery1" class="img">
                             <div class="title">@albumDetails.title</div>
                         </a>
 
@@ -181,7 +181,7 @@
                     <div class="gallery-item">
                         <a href="@albumDetails.pageUrl"
                            class="@( Model.IsVideoAlbum == true ? "fancybox.iframe gallery-item-link various" : String.Empty)">
-                            <img src="@(!String.IsNullOrEmpty(albumDetails.imageUrl) ? albumDetails.imageUrl : Model.Mediacenter.No_Image.Src)" alt="video" class="img">
+                            <img src="@(!String.IsNullOrEmpty(albumDetails.thumbnailurl) ? albumDetails.thumbnailurl : Model.Mediacenter.No_Image.Src)" alt="video" class="img">
                             <img src="~/Assets/Project/ECM/images/icon/play-button.svg" alt="playicon" class="playicon">
                             <div class="title">@albumDetails.title</div>
                         </a>
@@ -189,9 +189,6 @@
                     </div>
                 </div>
             }
-
-
-
         </div>
     }
 </div>

@@ -16,10 +16,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Feature.Listing.dll">
-      <publishTime>04/29/2019 14:30:38</publishTime>
+      <publishTime>05/02/2019 16:26:46</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Feature.Listing.pdb">
-      <publishTime>04/29/2019 14:30:38</publishTime>
+      <publishTime>05/02/2019 16:26:46</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.Constants.dll">
       <publishTime>04/02/2019 14:47:44</publishTime>
@@ -30,41 +30,50 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/EMAAR.ECM.Foundation.Constants.pdb">
       <publishTime>04/02/2019 14:47:44</publishTime>
     </File>
+    <File Include="bin/EMAAR.ECM.Foundation.Customcontrols.dll">
+      <publishTime>05/02/2019 16:26:22</publishTime>
+    </File>
+    <File Include="bin/EMAAR.ECM.Foundation.Customcontrols.dll.config">
+      <publishTime>05/01/2019 15:26:00</publishTime>
+    </File>
+    <File Include="bin/EMAAR.ECM.Foundation.Customcontrols.pdb">
+      <publishTime>05/02/2019 16:26:22</publishTime>
+    </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.dll">
-      <publishTime>04/29/2019 14:30:36</publishTime>
+      <publishTime>05/02/2019 16:26:20</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.dll.config">
       <publishTime>04/11/2019 09:27:16</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.pdb">
-      <publishTime>04/29/2019 14:30:36</publishTime>
+      <publishTime>05/02/2019 16:26:20</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll">
-      <publishTime>04/29/2019 14:30:37</publishTime>
+      <publishTime>05/02/2019 11:05:23</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll.config">
       <publishTime>04/11/2019 09:27:17</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.pdb">
-      <publishTime>04/29/2019 14:30:37</publishTime>
+      <publishTime>05/02/2019 11:05:23</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.Search.dll">
-      <publishTime>04/29/2019 14:30:38</publishTime>
+      <publishTime>05/02/2019 16:26:45</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.Search.dll.config">
-      <publishTime>04/11/2019 09:27:16</publishTime>
+      <publishTime>05/01/2019 12:17:48</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.Search.pdb">
-      <publishTime>04/29/2019 14:30:38</publishTime>
+      <publishTime>05/02/2019 16:26:45</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.SitecoreExtensions.dll">
-      <publishTime>04/29/2019 14:30:37</publishTime>
+      <publishTime>05/02/2019 16:26:24</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.SitecoreExtensions.dll.config">
-      <publishTime>04/11/2019 09:27:17</publishTime>
+      <publishTime>04/30/2019 17:02:58</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.SitecoreExtensions.pdb">
-      <publishTime>04/29/2019 14:30:37</publishTime>
+      <publishTime>05/02/2019 16:26:24</publishTime>
     </File>
     <File Include="bin/Glass.Mapper.dll">
       <publishTime>04/17/2019 16:19:54</publishTime>
@@ -98,6 +107,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="bin/ICSharpCode.SharpZipLib.dll">
       <publishTime>04/17/2019 16:19:54</publishTime>
+    </File>
+    <File Include="bin/ImageProcessor.dll">
+      <publishTime>02/11/2019 12:04:58</publishTime>
     </File>
     <File Include="bin/Lucene.Net.dll">
       <publishTime>10/26/2012 00:52:54</publishTime>
@@ -142,6 +154,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/17/2019 16:19:54</publishTime>
+    </File>
+    <File Include="bin/RazorGenerator.Mvc.dll">
       <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
@@ -294,6 +309,15 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/Sitecore.ContentSearch.Linq.dll">
       <publishTime>01/18/2018 16:21:18</publishTime>
     </File>
+    <File Include="bin/Sitecore.Framework.Fields.dll">
+      <publishTime>05/02/2019 16:26:21</publishTime>
+    </File>
+    <File Include="bin/Sitecore.Framework.Fields.dll.config">
+      <publishTime>05/01/2019 15:26:00</publishTime>
+    </File>
+    <File Include="bin/Sitecore.Framework.Fields.pdb">
+      <publishTime>05/02/2019 16:26:21</publishTime>
+    </File>
     <File Include="bin/Sitecore.Kernel.dll">
       <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
@@ -303,7 +327,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/Sitecore.Logging.dll">
       <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
+    <File Include="bin/Sitecore.Mvc.dll">
+      <publishTime>04/17/2019 16:19:54</publishTime>
+    </File>
     <File Include="bin/Sitecore.NVelocity.dll">
+      <publishTime>04/17/2019 16:19:54</publishTime>
+    </File>
+    <File Include="bin/Sitecore.Web.dll">
       <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/Sitecore.Zip.dll">
@@ -315,6 +345,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/System.Linq.Expressions.dll">
       <publishTime>04/17/2019 16:19:53</publishTime>
     </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>04/17/2019 16:19:54</publishTime>
+    </File>
     <File Include="bin/System.Reflection.dll">
       <publishTime>04/17/2019 16:19:53</publishTime>
     </File>
@@ -322,6 +355,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/17/2019 16:19:53</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>04/17/2019 16:19:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
       <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/System.Web.Mvc.dll">
@@ -352,28 +388,28 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/28/2019 09:31:01</publishTime>
     </File>
     <File Include="Views/Feature/ECM/Listing/Downloads/DownloadsListing.cshtml">
-      <publishTime>04/29/2019 11:45:34</publishTime>
+      <publishTime>05/02/2019 11:08:42</publishTime>
     </File>
     <File Include="Views/Feature/ECM/Listing/Events/EventsListing.cshtml">
       <publishTime>04/29/2019 11:46:28</publishTime>
     </File>
     <File Include="Views/Feature/ECM/Listing/Images/ImageAlbum.cshtml">
-      <publishTime>04/29/2019 11:46:52</publishTime>
+      <publishTime>05/02/2019 11:08:53</publishTime>
     </File>
     <File Include="Views/Feature/ECM/Listing/Images/ImageGallery.cshtml">
-      <publishTime>04/28/2019 17:44:30</publishTime>
+      <publishTime>05/02/2019 11:08:58</publishTime>
     </File>
     <File Include="Views/Feature/ECM/Listing/News/NewsListing.cshtml">
-      <publishTime>04/29/2019 11:47:12</publishTime>
+      <publishTime>05/02/2019 11:09:03</publishTime>
     </File>
     <File Include="Views/Feature/ECM/Listing/Videos/VideoAlbum.cshtml">
-      <publishTime>04/29/2019 11:47:36</publishTime>
+      <publishTime>05/02/2019 11:09:09</publishTime>
     </File>
     <File Include="Views/Feature/ECM/Listing/Videos/VideoGallery.cshtml">
-      <publishTime>04/29/2019 11:47:51</publishTime>
+      <publishTime>05/02/2019 11:09:13</publishTime>
     </File>
     <File Include="Views/Feature/ECM/Mediacenter/MediacenterPage.cshtml">
-      <publishTime>04/29/2019 11:23:45</publishTime>
+      <publishTime>05/02/2019 11:09:35</publishTime>
     </File>
     <File Include="Views/Feature/ECM/News/NewsListing.cshtml">
       <publishTime>04/28/2019 09:31:01</publishTime>

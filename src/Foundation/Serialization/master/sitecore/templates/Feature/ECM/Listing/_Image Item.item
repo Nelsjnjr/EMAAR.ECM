@@ -17,10 +17,17 @@ key: __base template
 content-length: 38
 
 {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 32
+
+Applications/32x32/form_blue.png
 ----version----
 language: en
 version: 1
-revision: 7c31b432-696b-4ee5-8040-c5fb4ee7244e
+revision: 3f26f3a7-d407-4968-8778-d653afedce0c
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -42,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7c31b432-696b-4ee5-8040-c5fb4ee7244e
+3f26f3a7-d407-4968-8778-d653afedce0c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190403T123410Z
+20190502T054831Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

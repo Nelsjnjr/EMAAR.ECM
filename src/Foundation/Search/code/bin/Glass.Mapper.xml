@@ -229,6 +229,13 @@
             Sliding time in seconds
             </summary>
         </member>
+        <member name="P:Glass.Mapper.Caching.ICacheManager.Item(System.String)">
+            <summary>
+            Retrieves an object from the default cache.
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
         <member name="P:Glass.Mapper.Caching.NetMemoryCacheManager.SlidingExpiry">
             <summary>
             Sliding time in seconds
@@ -264,6 +271,11 @@
             <summary>
             Indicates that OnDemand Mapping is supported. Disable to force all mapping to be performed during the application
             start.
+            </summary>
+        </member>
+        <member name="P:Glass.Mapper.Config.CacheSettings.AlwaysOn">
+            <summary>
+            Indicates that Glass's internal caching mechanism will also be used.
             </summary>
         </member>
         <member name="P:Glass.Mapper.Config.DebugSettings.SlowModelThreshold">

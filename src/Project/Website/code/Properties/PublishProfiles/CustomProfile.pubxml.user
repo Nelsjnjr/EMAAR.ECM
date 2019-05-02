@@ -30,8 +30,14 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Assets/Project/ECM/css/.DS_Store">
       <publishTime>04/08/2019 10:08:51</publishTime>
     </File>
+    <File Include="Assets/Project/ECM/css/advancedimage/focuspoint.css">
+      <publishTime>05/02/2019 15:02:07</publishTime>
+    </File>
+    <File Include="Assets/Project/ECM/css/advancedimage/helper-tool.css">
+      <publishTime>05/02/2019 14:59:48</publishTime>
+    </File>
     <File Include="Assets/Project/ECM/css/Downtowndubai-en.css">
-      <publishTime>04/17/2019 15:52:01</publishTime>
+      <publishTime>05/02/2019 15:03:00</publishTime>
     </File>
     <File Include="Assets/Project/ECM/css/fancybox/fancy.css">
       <publishTime>04/08/2019 15:03:34</publishTime>
@@ -59,6 +65,39 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Assets/Project/ECM/css/vendors/swiper.css">
       <publishTime>04/08/2019 15:03:49</publishTime>
+    </File>
+    <File Include="Assets/Project/ECM/Fields/AdvanceImage.cs">
+      <publishTime>05/02/2019 15:30:26</publishTime>
+    </File>
+    <File Include="Assets/Project/ECM/Fields/AdvanceImage/css/focuspoint.css">
+      <publishTime>05/02/2019 15:30:26</publishTime>
+    </File>
+    <File Include="Assets/Project/ECM/Fields/AdvanceImage/css/helper-tool.css">
+      <publishTime>05/02/2019 15:30:26</publishTime>
+    </File>
+    <File Include="Assets/Project/ECM/Fields/AdvanceImage/detail.html">
+      <publishTime>05/02/2019 15:30:26</publishTime>
+    </File>
+    <File Include="Assets/Project/ECM/Fields/AdvanceImage/js/jquery.focuspoint.js">
+      <publishTime>05/02/2019 15:30:26</publishTime>
+    </File>
+    <File Include="Assets/Project/ECM/Fields/AdvanceImage/js/jquery.focuspoint.min.js">
+      <publishTime>05/02/2019 15:30:26</publishTime>
+    </File>
+    <File Include="Assets/Project/ECM/Fields/AdvanceImage/template.html">
+      <publishTime>05/02/2019 15:30:26</publishTime>
+    </File>
+    <File Include="Assets/Project/ECM/Fields/Slider.cs">
+      <publishTime>05/02/2019 15:30:26</publishTime>
+    </File>
+    <File Include="Assets/Project/ECM/Fields/Slider/css/jquery-ui.min.css">
+      <publishTime>05/02/2019 15:30:26</publishTime>
+    </File>
+    <File Include="Assets/Project/ECM/Fields/Slider/js/jquery-ui.min.js">
+      <publishTime>05/02/2019 15:30:26</publishTime>
+    </File>
+    <File Include="Assets/Project/ECM/Fields/Slider/template.html">
+      <publishTime>05/02/2019 15:30:26</publishTime>
     </File>
     <File Include="Assets/Project/ECM/fonts/1069d95068cdf58f125fe7df3221f5f7.eot">
       <publishTime>04/08/2019 10:08:51</publishTime>
@@ -369,11 +408,17 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Assets/Project/ECM/images/sr.jpeg">
       <publishTime>04/08/2019 15:04:28</publishTime>
     </File>
+    <File Include="Assets/Project/ECM/images/target-selector.png">
+      <publishTime>05/02/2019 15:21:37</publishTime>
+    </File>
     <File Include="Assets/Project/ECM/images/tdf.jpg">
       <publishTime>04/08/2019 15:04:28</publishTime>
     </File>
     <File Include="Assets/Project/ECM/js/Application/ajax.js">
       <publishTime>04/28/2019 10:32:34</publishTime>
+    </File>
+    <File Include="Assets/Project/ECM/js/Application/ajax.min.js">
+      <publishTime>05/02/2019 15:45:11</publishTime>
     </File>
     <File Include="Assets/Project/ECM/js/Application/app.js">
       <publishTime>04/29/2019 12:37:08</publishTime>
@@ -385,10 +430,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/11/2019 16:38:32</publishTime>
     </File>
     <File Include="Assets/Project/ECM/js/Application/main.js">
-      <publishTime>04/29/2019 12:37:10</publishTime>
+      <publishTime>05/02/2019 15:44:27</publishTime>
     </File>
     <File Include="Assets/Project/ECM/js/Application/main.min.js">
-      <publishTime>04/29/2019 12:37:07</publishTime>
+      <publishTime>05/02/2019 15:45:44</publishTime>
     </File>
     <File Include="Assets/Project/ECM/js/CDN/jquery.fancybox.js">
       <publishTime>04/16/2019 09:18:42</publishTime>
@@ -456,6 +501,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Assets/Project/ECM/js/vendor/jquery/jquery.counterup.min.js">
       <publishTime>04/11/2019 16:36:21</publishTime>
     </File>
+    <File Include="Assets/Project/ECM/js/vendor/jquery/jquery.focuspoint.js">
+      <publishTime>05/02/2019 14:57:29</publishTime>
+    </File>
+    <File Include="Assets/Project/ECM/js/vendor/jquery/jquery.focuspoint.min.js">
+      <publishTime>05/02/2019 14:57:10</publishTime>
+    </File>
     <File Include="Assets/Project/ECM/js/vendor/jquery/jquery.js">
       <publishTime>04/08/2019 10:08:51</publishTime>
     </File>
@@ -522,38 +573,47 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/EMAAR.ECM.Foundation.Constants.pdb">
       <publishTime>04/09/2019 09:07:21</publishTime>
     </File>
+    <File Include="bin/EMAAR.ECM.Foundation.Customcontrols.dll">
+      <publishTime>05/01/2019 14:31:09</publishTime>
+    </File>
+    <File Include="bin/EMAAR.ECM.Foundation.Customcontrols.dll.config">
+      <publishTime>05/01/2019 15:26:00</publishTime>
+    </File>
+    <File Include="bin/EMAAR.ECM.Foundation.Customcontrols.pdb">
+      <publishTime>05/01/2019 14:31:09</publishTime>
+    </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.dll">
-      <publishTime>04/29/2019 12:38:22</publishTime>
+      <publishTime>05/01/2019 14:31:08</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.dll.config">
       <publishTime>04/11/2019 09:27:16</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.pdb">
-      <publishTime>04/29/2019 12:38:22</publishTime>
+      <publishTime>05/01/2019 14:31:08</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll">
-      <publishTime>04/29/2019 12:38:23</publishTime>
+      <publishTime>05/02/2019 15:35:09</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll.config">
       <publishTime>04/11/2019 09:27:17</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.pdb">
-      <publishTime>04/29/2019 12:38:23</publishTime>
+      <publishTime>05/02/2019 15:35:09</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.SitecoreExtensions.dll">
-      <publishTime>04/29/2019 12:38:23</publishTime>
+      <publishTime>05/01/2019 14:31:10</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.SitecoreExtensions.dll.config">
-      <publishTime>04/11/2019 09:27:17</publishTime>
+      <publishTime>04/30/2019 17:02:58</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.SitecoreExtensions.pdb">
-      <publishTime>04/29/2019 12:38:23</publishTime>
+      <publishTime>05/01/2019 14:31:10</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Project.Website.dll">
-      <publishTime>04/29/2019 12:38:23</publishTime>
+      <publishTime>05/02/2019 15:47:00</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Project.Website.pdb">
-      <publishTime>04/29/2019 12:38:23</publishTime>
+      <publishTime>05/02/2019 15:47:00</publishTime>
     </File>
     <File Include="bin/Glass.Mapper.dll">
       <publishTime>04/17/2019 16:19:54</publishTime>
@@ -590,6 +650,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="bin/ICSharpCode.SharpZipLib.pdb">
       <publishTime>12/22/2018 15:21:38</publishTime>
+    </File>
+    <File Include="bin/ImageProcessor.dll">
+      <publishTime>02/11/2019 12:04:58</publishTime>
     </File>
     <File Include="bin/Lucene.Net.dll">
       <publishTime>10/26/2012 00:52:54</publishTime>
@@ -2199,6 +2262,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/Shared/ECM/_twoColumn.cshtml">
       <publishTime>04/21/2019 17:32:00</publishTime>
     </File>
+    <File Include="Views/Shared/Projects/ECM/_baseLayout.cshtml">
+      <publishTime>05/02/2019 15:44:21</publishTime>
+    </File>
+    <File Include="Views/Shared/Projects/ECM/_twoColumn.cshtml">
+      <publishTime>04/21/2019 17:32:00</publishTime>
+    </File>
     <File Include="Views/Shared/_Layout.cshtml">
       <publishTime>03/10/2019 14:20:34</publishTime>
     </File>
@@ -2209,7 +2278,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/10/2019 14:20:34</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>03/31/2019 14:40:05</publishTime>
+      <publishTime>05/01/2019 17:35:08</publishTime>
     </File>
   </ItemGroup>
 </Project>

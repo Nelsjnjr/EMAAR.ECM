@@ -344,7 +344,6 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\RazorGenerato
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Sitecore.Kernel.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Sitecore.Logging.Client.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Sitecore.Logging.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Sitecore.Mvc.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Sitecore.NVelocity.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Sitecore.Web.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Sitecore.Zip.dll
@@ -399,3 +398,9 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\System.Web.We
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\obj\Release\EMAAR.ECM.Foundation.ORM.csproj.CopyComplete
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\obj\Release\EMAAR.ECM.Foundation.ORM.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\obj\Release\EMAAR.ECM.Foundation.ORM.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Sitecore.Mvc.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Sitecore.Framework.Fields.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\ImageProcessor.dll
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Sitecore.Framework.Fields.pdb
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Sitecore.Framework.Fields.dll.config
+C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\ImageProcessor.xml

@@ -4472,7 +4472,7 @@
             <param name="name">The name of the attribute in the collection</param>
             <param name="defaultValue">The default value for the attribute</param>
         </member>
-        <member name="M:Glass.Mapper.Sc.GlassHtml.RenderLink``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object,System.Boolean,System.String,System.Boolean)">
+        <member name="M:Glass.Mapper.Sc.GlassHtml.RenderLink``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object,System.Boolean,System.String,System.Boolean,System.String)">
             <summary>
             Render HTML for a link
             </summary>
@@ -4490,7 +4490,7 @@
             </summary>
             <value><c>true</c> if this instance is in editing mode; otherwise, <c>false</c>.</value>
         </member>
-        <member name="M:Glass.Mapper.Sc.GlassHtml.BeginRenderLink(Glass.Mapper.Sc.Fields.Link,Sitecore.Collections.SafeDictionary{System.String},System.String,System.IO.TextWriter,System.Boolean)">
+        <member name="M:Glass.Mapper.Sc.GlassHtml.BeginRenderLink(Glass.Mapper.Sc.Fields.Link,Sitecore.Collections.SafeDictionary{System.String},System.String,System.IO.TextWriter,System.Boolean,System.String)">
             <summary>
             Render HTML for a link
             </summary>
@@ -4532,7 +4532,7 @@
             <param name="dictionary"></param>
             <returns></returns>
         </member>
-        <member name="M:Glass.Mapper.Sc.GlassHtml.RenderImage``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object,System.Boolean,System.Boolean)">
+        <member name="M:Glass.Mapper.Sc.GlassHtml.RenderImage``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object,System.Boolean,System.Boolean,System.String)">
             <summary>
             Renders an image allowing simple page editor support
             </summary>
@@ -4669,7 +4669,7 @@
         </member>
         <!-- Badly formed XML comment ignored for member "M:Glass.Mapper.Sc.IGlassHtml.EditableIf``1(``0,System.Func{System.Boolean},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object)" -->
         <!-- Badly formed XML comment ignored for member "M:Glass.Mapper.Sc.IGlassHtml.EditableIf``1(``0,System.Func{System.Boolean},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Linq.Expressions.Expression{System.Func{``0,System.String}},System.Object)" -->
-        <member name="M:Glass.Mapper.Sc.IGlassHtml.RenderImage``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object,System.Boolean,System.Boolean)">
+        <member name="M:Glass.Mapper.Sc.IGlassHtml.RenderImage``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object,System.Boolean,System.Boolean,System.String)">
             <summary>
             Renders HTML for an image
             </summary>
@@ -4679,7 +4679,7 @@
             <param name="alwaysRender">Renders an A element even if the link is null</param>
             <returns>An img HTML element</returns>
         </member>
-        <member name="M:Glass.Mapper.Sc.IGlassHtml.RenderLink``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object,System.Boolean,System.String,System.Boolean)">
+        <member name="M:Glass.Mapper.Sc.IGlassHtml.RenderLink``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object,System.Boolean,System.String,System.Boolean,System.String)">
             <summary>
             Render HTML for a link
             </summary>
@@ -4792,7 +4792,7 @@
             <typeparam name="T"></typeparam>
             <param name="target"></param>
         </member>
-        <member name="M:Glass.Mapper.Sc.ISitecoreService.Populate``1(``0,Glass.Mapper.GetOptions)">
+        <member name="M:Glass.Mapper.Sc.ISitecoreService.Populate``1(``0,Glass.Mapper.Sc.GetKnownOptions)">
             <summary>
             Populate a model with data from Sitecore. The model must already have an ID property or ItemUri property with 
             a value already set.
@@ -4893,7 +4893,7 @@
             Disables the itemhandler serializations
             </summary>
         </member>
-        <member name="M:Glass.Mapper.Sc.IUrlOptionsResolver.CreateUrlOptions(Glass.Mapper.Sc.Configuration.SitecoreInfoUrlOptions)">
+        <member name="M:Glass.Mapper.Sc.IUrlOptionsResolver.CreateUrlOptions(Glass.Mapper.Sc.Configuration.SitecoreInfoUrlOptions,Glass.Mapper.Sc.GetOptionsSc)">
             <summary>
             Creates the URL options.
             </summary>
@@ -5372,7 +5372,7 @@
             Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
             </summary>
         </member>
-        <member name="M:Glass.Mapper.Sc.UrlOptionsResolver.CreateUrlOptions(Glass.Mapper.Sc.Configuration.SitecoreInfoUrlOptions)">
+        <member name="M:Glass.Mapper.Sc.UrlOptionsResolver.CreateUrlOptions(Glass.Mapper.Sc.Configuration.SitecoreInfoUrlOptions,Glass.Mapper.Sc.GetOptionsSc)">
             <summary>
             Creates the URL options.
             </summary>

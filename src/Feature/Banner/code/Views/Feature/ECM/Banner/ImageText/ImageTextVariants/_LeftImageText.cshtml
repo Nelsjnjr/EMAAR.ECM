@@ -1,5 +1,7 @@
 ﻿@using Glass.Mapper.Sc.Web.Mvc
+@using Glass.Mapper.Sc
 @using EMAAR.ECM.Foundation.SitecoreExtensions.Settings
+@using Sitecore.Framework.Fields.Extensions
 @model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Banner.IImageText
 
 <!-- image with text starts -->
@@ -8,10 +10,9 @@
         <div class="row">
             <div class="col-sm-6 d-none d-xl-block d-md-block">
                 <div class="imgWrap wow fadeInUp">
-                    @if (Model.Image != null)
-                    {
-                        @Html.Glass().RenderImage(Model, x => x.Image, new { alt = !String.IsNullOrEmpty(Model.Image.Alt) ? Model.Image.Alt : "image", @class = "img-fluid" }, isEditable: true)
-                    }
+                  
+                        @Html.Sitecore().AdvancedImageField("Image", Model.ContextItem, 540, 550, "image", "img-fluid", false)
+                   
                 </div>
             </div>
             <div class="col-md-6 align-self-center">

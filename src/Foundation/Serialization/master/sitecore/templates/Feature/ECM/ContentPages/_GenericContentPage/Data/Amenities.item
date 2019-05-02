@@ -14,16 +14,16 @@ created: 20190417T065921Z
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 21
+content-length: 9
 
-Multilist with Search
+Multilist
 ----field----
 field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
 name: Source
 key: source
-content-length: 104
+content-length: 105
 
-query:ancestor-or-self::*[@@templateid='{407F6EA5-A542-4D83-9D03-B598E06D3422}']/Site Content/Amenities/
+query:ancestor-or-self::*[@@templateid='{407F6EA5-A542-4D83-9D03-B598E06D3422}']/Site Content/Amenities/*
 ----field----
 field: {BE351A73-FCB0-4213-93FA-C302D8AB4F51}
 name: Shared
@@ -41,7 +41,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 3850055d-4a88-4f59-9515-020963498d89
+revision: 4da8ddcf-6b9c-4204-8196-2bd6b1ec71d0
 
 ----field----
 field: {9541E67D-CE8C-4225-803D-33F7F29F09EF}
@@ -63,14 +63,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3850055d-4a88-4f59-9515-020963498d89
+4da8ddcf-6b9c-4204-8196-2bd6b1ec71d0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190429T111541Z
+20190502T084745Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -229,13 +229,13 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 						/// <summary>
 				/// The Hero Image field.
 				/// <para></para>
-				/// <para>Field Type: Image</para>		
+				/// <para>Field Type: Advance Image</para>		
 				/// <para>Field ID: 18aed467-a7bf-4e76-aa40-fae487b2308f</para>
-				/// <para>Custom Data: </para>
+				/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IHeroConstants.Hero_ImageFieldName)]
-				public virtual Image Hero_Image  {get; set;}
+				public virtual Glass.Mapper.Sc.Fields.AdvanceImageField Hero_Image  {get; set;}
 					
 						/// <summary>
 				/// The Mobile Hero Image field.
@@ -619,7 +619,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.ImageTe
 	/// <para>ID: 0b50476d-6da5-43bb-ad05-93c12cab75bf</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=I_ImageTextConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_ImageText : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_TitleDesc, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Image, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Button
+	public partial interface I_ImageText : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_TitleDesc, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Button
 	{
 								/// <summary>
 					/// The Image Text Alignment field.
@@ -630,6 +630,16 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.ImageTe
 					/// </summary>
 					[SitecoreField(I_ImageTextConstants.Image_Text_AlignmentFieldName)]
 					EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.ISettings Image_Text_Alignment  {get; set;}
+			
+								/// <summary>
+					/// The Image field.
+					/// <para></para>
+					/// <para>Field Type: Advance Image</para>		
+					/// <para>Field ID: f4ed4c87-ec37-4dbf-8bc6-3771286d2646</para>
+					/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
+					/// </summary>
+					[SitecoreField(I_ImageTextConstants.ImageFieldName)]
+					Glass.Mapper.Sc.Fields.AdvanceImageField Image  {get; set;}
 			
 				}
 
@@ -645,16 +655,16 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.ImageTe
 			public const string Image_Text_AlignmentFieldName = "Image Text Alignment";
 			
 					
+			public static readonly ID ImageFieldId = new ID("f4ed4c87-ec37-4dbf-8bc6-3771286d2646");
+			public const string ImageFieldName = "Image";
+			
+					
 			public static readonly ID SummaryFieldId = new ID("86ef63d0-7e10-4df7-80a7-28df2d6ba18f");
 			public const string SummaryFieldName = "Summary";
 			
 					
 			public static readonly ID TitleFieldId = new ID("cddd22f9-558a-4e98-a614-53c5e090fb96");
 			public const string TitleFieldName = "Title";
-			
-					
-			public static readonly ID ImageFieldId = new ID("f6ba7b09-176f-4bb1-a680-c070d4b92c65");
-			public const string ImageFieldName = "Image";
 			
 					
 			public static readonly ID Button_TextFieldId = new ID("15b53931-2b97-438a-9254-06f70a60f952");
@@ -692,6 +702,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.ImageTe
 				public virtual EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.ISettings Image_Text_Alignment  {get; set;}
 					
 						/// <summary>
+				/// The Image field.
+				/// <para></para>
+				/// <para>Field Type: Advance Image</para>		
+				/// <para>Field ID: f4ed4c87-ec37-4dbf-8bc6-3771286d2646</para>
+				/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_ImageTextConstants.ImageFieldName)]
+				public virtual Glass.Mapper.Sc.Fields.AdvanceImageField Image  {get; set;}
+					
+						/// <summary>
 				/// The Summary field.
 				/// <para></para>
 				/// <para>Field Type: Multi-Line Text</para>		
@@ -712,17 +733,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.ImageTe
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_ImageTextConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
-					
-						/// <summary>
-				/// The Image field.
-				/// <para></para>
-				/// <para>Field Type: Image</para>		
-				/// <para>Field ID: f6ba7b09-176f-4bb1-a680-c070d4b92c65</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_ImageTextConstants.ImageFieldName)]
-				public virtual Image Image  {get; set;}
 					
 						/// <summary>
 				/// The Button Text field.
@@ -1425,16 +1435,16 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 			public const string TemplateName = "Homepage carousel";
 
 					
+			public static readonly ID ImageFieldId = new ID("51caea04-68f7-4e4c-a49e-2ac097006c96");
+			public const string ImageFieldName = "Image";
+			
+					
 			public static readonly ID SummaryFieldId = new ID("9de3e904-b947-4547-bbf2-7983ff99ff1a");
 			public const string SummaryFieldName = "Summary";
 			
 					
 			public static readonly ID TitleFieldId = new ID("87f46fb3-8ff4-4318-bcc2-c4ebbb0c4963");
 			public const string TitleFieldName = "Title";
-			
-					
-			public static readonly ID ImageFieldId = new ID("f6ba7b09-176f-4bb1-a680-c070d4b92c65");
-			public const string ImageFieldName = "Image";
 			
 					
 			public static readonly ID CTAFieldId = new ID("f9401c09-1121-4bb5-abed-48bc2b29de71");
@@ -1457,6 +1467,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 	{
 	   
 						/// <summary>
+				/// The Image field.
+				/// <para></para>
+				/// <para>Field Type: Advance Image</para>		
+				/// <para>Field ID: 51caea04-68f7-4e4c-a49e-2ac097006c96</para>
+				/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IHomepage_CarouselConstants.ImageFieldName)]
+				public virtual Glass.Mapper.Sc.Fields.AdvanceImageField Image  {get; set;}
+					
+						/// <summary>
 				/// The Summary field.
 				/// <para>This field only supports Bullet List</para>
 				/// <para>Field Type: Rich Text</para>		
@@ -1477,17 +1498,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IHomepage_CarouselConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
-					
-						/// <summary>
-				/// The Image field.
-				/// <para></para>
-				/// <para>Field Type: Image</para>		
-				/// <para>Field ID: f6ba7b09-176f-4bb1-a680-c070d4b92c65</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IHomepage_CarouselConstants.ImageFieldName)]
-				public virtual Image Image  {get; set;}
 					
 						/// <summary>
 				/// The CTA field.
@@ -2273,10 +2283,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string VideosFieldName = "Videos";
 			
 					
-			public static readonly ID YearsFieldId = new ID("45f9a9b2-5213-41a8-954e-6b900355dec5");
-			public const string YearsFieldName = "Years";
-			
-					
 			public static readonly ID IntroductionFieldId = new ID("0cba5220-aa8b-4f75-bcd6-68000b38d8c1");
 			public const string IntroductionFieldName = "Introduction";
 			
@@ -2349,17 +2355,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IVideo_AlbumConstants.VideosFieldName)]
 				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IVideo_Item> Videos  {get; set;}
-					
-						/// <summary>
-				/// The Years field.
-				/// <para></para>
-				/// <para>Field Type: Droplist</para>		
-				/// <para>Field ID: 45f9a9b2-5213-41a8-954e-6b900355dec5</para>
-				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.IYear_Item</para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IVideo_AlbumConstants.YearsFieldName)]
-				public virtual string Years  {get; set;}
 					
 						/// <summary>
 				/// The Introduction field.
@@ -2692,12 +2687,12 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Hero_co
 								/// <summary>
 					/// The Hero Image field.
 					/// <para></para>
-					/// <para>Field Type: Image</para>		
+					/// <para>Field Type: Advance Image</para>		
 					/// <para>Field ID: 18aed467-a7bf-4e76-aa40-fae487b2308f</para>
-					/// <para>Custom Data: </para>
+					/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
 					/// </summary>
 					[SitecoreField(I_HeroConstants.Hero_ImageFieldName)]
-					Image Hero_Image  {get; set;}
+					Glass.Mapper.Sc.Fields.AdvanceImageField Hero_Image  {get; set;}
 			
 								/// <summary>
 					/// The Mobile Hero Image field.
@@ -2773,13 +2768,13 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Hero_co
 						/// <summary>
 				/// The Hero Image field.
 				/// <para></para>
-				/// <para>Field Type: Image</para>		
+				/// <para>Field Type: Advance Image</para>		
 				/// <para>Field ID: 18aed467-a7bf-4e76-aa40-fae487b2308f</para>
-				/// <para>Custom Data: </para>
+				/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_HeroConstants.Hero_ImageFieldName)]
-				public virtual Image Hero_Image  {get; set;}
+				public virtual Glass.Mapper.Sc.Fields.AdvanceImageField Hero_Image  {get; set;}
 					
 						/// <summary>
 				/// The Mobile Hero Image field.
@@ -3214,8 +3209,18 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Paralla
 	/// <para>ID: 34e19df1-a03b-4acd-8a31-d6a5615cfb86</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=I_ParallaxConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_Parallax : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_TitleDesc, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Image, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Button
+	public partial interface I_Parallax : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_TitleDesc, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Button
 	{
+								/// <summary>
+					/// The Image field.
+					/// <para></para>
+					/// <para>Field Type: Advance Image</para>		
+					/// <para>Field ID: 0a89d639-4f0a-4f6d-999f-69b13c1a8275</para>
+					/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
+					/// </summary>
+					[SitecoreField(I_ParallaxConstants.ImageFieldName)]
+					Glass.Mapper.Sc.Fields.AdvanceImageField Image  {get; set;}
+			
 				}
 
 
@@ -3226,16 +3231,16 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Paralla
 			public const string TemplateName = "_Parallax";
 
 					
+			public static readonly ID ImageFieldId = new ID("0a89d639-4f0a-4f6d-999f-69b13c1a8275");
+			public const string ImageFieldName = "Image";
+			
+					
 			public static readonly ID SummaryFieldId = new ID("86ef63d0-7e10-4df7-80a7-28df2d6ba18f");
 			public const string SummaryFieldName = "Summary";
 			
 					
 			public static readonly ID TitleFieldId = new ID("cddd22f9-558a-4e98-a614-53c5e090fb96");
 			public const string TitleFieldName = "Title";
-			
-					
-			public static readonly ID ImageFieldId = new ID("f6ba7b09-176f-4bb1-a680-c070d4b92c65");
-			public const string ImageFieldName = "Image";
 			
 					
 			public static readonly ID Button_TextFieldId = new ID("15b53931-2b97-438a-9254-06f70a60f952");
@@ -3262,6 +3267,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Paralla
 	{
 	   
 						/// <summary>
+				/// The Image field.
+				/// <para></para>
+				/// <para>Field Type: Advance Image</para>		
+				/// <para>Field ID: 0a89d639-4f0a-4f6d-999f-69b13c1a8275</para>
+				/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_ParallaxConstants.ImageFieldName)]
+				public virtual Glass.Mapper.Sc.Fields.AdvanceImageField Image  {get; set;}
+					
+						/// <summary>
 				/// The Summary field.
 				/// <para></para>
 				/// <para>Field Type: Multi-Line Text</para>		
@@ -3282,17 +3298,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Paralla
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_ParallaxConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
-					
-						/// <summary>
-				/// The Image field.
-				/// <para></para>
-				/// <para>Field Type: Image</para>		
-				/// <para>Field ID: f6ba7b09-176f-4bb1-a680-c070d4b92c65</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_ParallaxConstants.ImageFieldName)]
-				public virtual Image Image  {get; set;}
 					
 						/// <summary>
 				/// The Button Text field.
@@ -4470,7 +4475,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 			public const string TitleFieldName = "Title";
 			
 					
-			public static readonly ID ImageFieldId = new ID("f6ba7b09-176f-4bb1-a680-c070d4b92c65");
+			public static readonly ID ImageFieldId = new ID("3c15668e-ecd3-4a28-ae10-4a71ba83ae05");
 			public const string ImageFieldName = "Image";
 			
 					
@@ -4518,13 +4523,13 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 						/// <summary>
 				/// The Image field.
 				/// <para></para>
-				/// <para>Field Type: Image</para>		
-				/// <para>Field ID: f6ba7b09-176f-4bb1-a680-c070d4b92c65</para>
-				/// <para>Custom Data: </para>
+				/// <para>Field Type: Advance Image</para>		
+				/// <para>Field ID: 3c15668e-ecd3-4a28-ae10-4a71ba83ae05</para>
+				/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IRelated_PageConstants.ImageFieldName)]
-				public virtual Image Image  {get; set;}
+				public virtual Glass.Mapper.Sc.Fields.AdvanceImageField Image  {get; set;}
 					
 						/// <summary>
 				/// The CTA field.
@@ -4970,7 +4975,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 	/// <para>ID: 4df81879-4a85-4b61-a1ee-26ccd66e0a14</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=I_Interactive_MapConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_Interactive_Map : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Image
+	public partial interface I_Interactive_Map : IGlassBase 
 	{
 								/// <summary>
 					/// The Hot spots field.
@@ -4992,6 +4997,16 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 					[SitecoreField(I_Interactive_MapConstants.TitleFieldName)]
 					string Title  {get; set;}
 			
+								/// <summary>
+					/// The Image field.
+					/// <para></para>
+					/// <para>Field Type: Advance Image</para>		
+					/// <para>Field ID: dda2f71d-c746-4a27-aeff-208e39626bb9</para>
+					/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
+					/// </summary>
+					[SitecoreField(I_Interactive_MapConstants.ImageFieldName)]
+					Glass.Mapper.Sc.Fields.AdvanceImageField Image  {get; set;}
+			
 				}
 
 
@@ -5010,7 +5025,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 			public const string TitleFieldName = "Title";
 			
 					
-			public static readonly ID ImageFieldId = new ID("f6ba7b09-176f-4bb1-a680-c070d4b92c65");
+			public static readonly ID ImageFieldId = new ID("dda2f71d-c746-4a27-aeff-208e39626bb9");
 			public const string ImageFieldName = "Image";
 			
 			
@@ -5054,13 +5069,13 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Interac
 						/// <summary>
 				/// The Image field.
 				/// <para></para>
-				/// <para>Field Type: Image</para>		
-				/// <para>Field ID: f6ba7b09-176f-4bb1-a680-c070d4b92c65</para>
-				/// <para>Custom Data: </para>
+				/// <para>Field Type: Advance Image</para>		
+				/// <para>Field ID: dda2f71d-c746-4a27-aeff-208e39626bb9</para>
+				/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_Interactive_MapConstants.ImageFieldName)]
-				public virtual Image Image  {get; set;}
+				public virtual Glass.Mapper.Sc.Fields.AdvanceImageField Image  {get; set;}
 					
 			
 	}
@@ -5262,7 +5277,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 						/// <summary>
 				/// The Amenities field.
 				/// <para>Datasource items from ./Site content/Amenities</para>
-				/// <para>Field Type: Multilist with Search</para>		
+				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 6d0a86ef-d757-4860-80f8-a79f4ecfdcc9</para>
 				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenity</para>
 				/// </summary>
@@ -5273,13 +5288,13 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 						/// <summary>
 				/// The Banner field.
 				/// <para></para>
-				/// <para>Field Type: Image</para>		
+				/// <para>Field Type: Advance Image</para>		
 				/// <para>Field ID: 82677f75-244e-42a8-bcb4-48993767346e</para>
-				/// <para>Custom Data: </para>
+				/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IGeneric_ContentPageConstants.BannerFieldName)]
-				public virtual Image Banner  {get; set;}
+				public virtual Glass.Mapper.Sc.Fields.AdvanceImageField Banner  {get; set;}
 					
 						/// <summary>
 				/// The Content field.
@@ -5383,7 +5398,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related
 	/// <para>ID: 506931f0-dd1e-42cc-abcf-5e7ac1c25147</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=I_Related_PageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_Related_Page : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Image, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_CTA
+	public partial interface I_Related_Page : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_CTA
 	{
 								/// <summary>
 					/// The Summary field.
@@ -5405,6 +5420,16 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related
 					[SitecoreField(I_Related_PageConstants.TitleFieldName)]
 					string Title  {get; set;}
 			
+								/// <summary>
+					/// The Image field.
+					/// <para></para>
+					/// <para>Field Type: Advance Image</para>		
+					/// <para>Field ID: 3c15668e-ecd3-4a28-ae10-4a71ba83ae05</para>
+					/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
+					/// </summary>
+					[SitecoreField(I_Related_PageConstants.ImageFieldName)]
+					Glass.Mapper.Sc.Fields.AdvanceImageField Image  {get; set;}
+			
 				}
 
 
@@ -5423,7 +5448,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related
 			public const string TitleFieldName = "Title";
 			
 					
-			public static readonly ID ImageFieldId = new ID("f6ba7b09-176f-4bb1-a680-c070d4b92c65");
+			public static readonly ID ImageFieldId = new ID("3c15668e-ecd3-4a28-ae10-4a71ba83ae05");
 			public const string ImageFieldName = "Image";
 			
 					
@@ -5471,13 +5496,13 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Related
 						/// <summary>
 				/// The Image field.
 				/// <para></para>
-				/// <para>Field Type: Image</para>		
-				/// <para>Field ID: f6ba7b09-176f-4bb1-a680-c070d4b92c65</para>
-				/// <para>Custom Data: </para>
+				/// <para>Field Type: Advance Image</para>		
+				/// <para>Field ID: 3c15668e-ecd3-4a28-ae10-4a71ba83ae05</para>
+				/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_Related_PageConstants.ImageFieldName)]
-				public virtual Image Image  {get; set;}
+				public virtual Glass.Mapper.Sc.Fields.AdvanceImageField Image  {get; set;}
 					
 						/// <summary>
 				/// The CTA field.
@@ -5697,7 +5722,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Content
 								/// <summary>
 					/// The Amenities field.
 					/// <para>Datasource items from ./Site content/Amenities</para>
-					/// <para>Field Type: Multilist with Search</para>		
+					/// <para>Field Type: Multilist</para>		
 					/// <para>Field ID: 6d0a86ef-d757-4860-80f8-a79f4ecfdcc9</para>
 					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenity</para>
 					/// </summary>
@@ -5707,12 +5732,12 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Content
 								/// <summary>
 					/// The Banner field.
 					/// <para></para>
-					/// <para>Field Type: Image</para>		
+					/// <para>Field Type: Advance Image</para>		
 					/// <para>Field ID: 82677f75-244e-42a8-bcb4-48993767346e</para>
-					/// <para>Custom Data: </para>
+					/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
 					/// </summary>
 					[SitecoreField(I_GenericContentPageConstants.BannerFieldName)]
-					Image Banner  {get; set;}
+					Glass.Mapper.Sc.Fields.AdvanceImageField Banner  {get; set;}
 			
 								/// <summary>
 					/// The Content field.
@@ -5820,7 +5845,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Content
 						/// <summary>
 				/// The Amenities field.
 				/// <para>Datasource items from ./Site content/Amenities</para>
-				/// <para>Field Type: Multilist with Search</para>		
+				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 6d0a86ef-d757-4860-80f8-a79f4ecfdcc9</para>
 				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenity</para>
 				/// </summary>
@@ -5831,13 +5856,13 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Content
 						/// <summary>
 				/// The Banner field.
 				/// <para></para>
-				/// <para>Field Type: Image</para>		
+				/// <para>Field Type: Advance Image</para>		
 				/// <para>Field ID: 82677f75-244e-42a8-bcb4-48993767346e</para>
-				/// <para>Custom Data: </para>
+				/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_GenericContentPageConstants.BannerFieldName)]
-				public virtual Image Banner  {get; set;}
+				public virtual Glass.Mapper.Sc.Fields.AdvanceImageField Banner  {get; set;}
 					
 						/// <summary>
 				/// The Content field.
@@ -6044,10 +6069,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string ImagesFieldName = "Images";
 			
 					
-			public static readonly ID YearsFieldId = new ID("15e6fbe8-cdd0-4ccb-8295-3097ca4f3e71");
-			public const string YearsFieldName = "Years";
-			
-					
 			public static readonly ID IntroductionFieldId = new ID("0cba5220-aa8b-4f75-bcd6-68000b38d8c1");
 			public const string IntroductionFieldName = "Introduction";
 			
@@ -6120,17 +6141,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IImage_AlbumConstants.ImagesFieldName)]
 				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IImage_Item> Images  {get; set;}
-					
-						/// <summary>
-				/// The Years field.
-				/// <para></para>
-				/// <para>Field Type: Droplist</para>		
-				/// <para>Field ID: 15e6fbe8-cdd0-4ccb-8295-3097ca4f3e71</para>
-				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.IYear_Item</para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IImage_AlbumConstants.YearsFieldName)]
-				public virtual string Years  {get; set;}
 					
 						/// <summary>
 				/// The Introduction field.
@@ -7140,16 +7150,16 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 			public const string TemplateName = "Parallax";
 
 					
+			public static readonly ID ImageFieldId = new ID("0a89d639-4f0a-4f6d-999f-69b13c1a8275");
+			public const string ImageFieldName = "Image";
+			
+					
 			public static readonly ID SummaryFieldId = new ID("86ef63d0-7e10-4df7-80a7-28df2d6ba18f");
 			public const string SummaryFieldName = "Summary";
 			
 					
 			public static readonly ID TitleFieldId = new ID("cddd22f9-558a-4e98-a614-53c5e090fb96");
 			public const string TitleFieldName = "Title";
-			
-					
-			public static readonly ID ImageFieldId = new ID("f6ba7b09-176f-4bb1-a680-c070d4b92c65");
-			public const string ImageFieldName = "Image";
 			
 					
 			public static readonly ID Button_TextFieldId = new ID("15b53931-2b97-438a-9254-06f70a60f952");
@@ -7176,6 +7186,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 	{
 	   
 						/// <summary>
+				/// The Image field.
+				/// <para></para>
+				/// <para>Field Type: Advance Image</para>		
+				/// <para>Field ID: 0a89d639-4f0a-4f6d-999f-69b13c1a8275</para>
+				/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IParallaxConstants.ImageFieldName)]
+				public virtual Glass.Mapper.Sc.Fields.AdvanceImageField Image  {get; set;}
+					
+						/// <summary>
 				/// The Summary field.
 				/// <para></para>
 				/// <para>Field Type: Multi-Line Text</para>		
@@ -7196,17 +7217,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IParallaxConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
-					
-						/// <summary>
-				/// The Image field.
-				/// <para></para>
-				/// <para>Field Type: Image</para>		
-				/// <para>Field ID: f6ba7b09-176f-4bb1-a680-c070d4b92c65</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IParallaxConstants.ImageFieldName)]
-				public virtual Image Image  {get; set;}
 					
 						/// <summary>
 				/// The Button Text field.
@@ -8184,12 +8194,12 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 								/// <summary>
 					/// The Image field.
 					/// <para></para>
-					/// <para>Field Type: Image</para>		
+					/// <para>Field Type: Advance Image</para>		
 					/// <para>Field ID: 515bd529-7017-4402-a1a0-b8158722cf74</para>
-					/// <para>Custom Data: </para>
+					/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
 					/// </summary>
 					[SitecoreField(I_Image_ItemConstants.ImageFieldName)]
-					Image Image  {get; set;}
+					Glass.Mapper.Sc.Fields.AdvanceImageField Image  {get; set;}
 			
 								/// <summary>
 					/// The Title field.
@@ -8237,13 +8247,13 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 						/// <summary>
 				/// The Image field.
 				/// <para></para>
-				/// <para>Field Type: Image</para>		
+				/// <para>Field Type: Advance Image</para>		
 				/// <para>Field ID: 515bd529-7017-4402-a1a0-b8158722cf74</para>
-				/// <para>Custom Data: </para>
+				/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_Image_ItemConstants.ImageFieldName)]
-				public virtual Image Image  {get; set;}
+				public virtual Glass.Mapper.Sc.Fields.AdvanceImageField Image  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -8473,12 +8483,12 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 								/// <summary>
 					/// The Image field.
 					/// <para></para>
-					/// <para>Field Type: Image</para>		
+					/// <para>Field Type: Advance Image</para>		
 					/// <para>Field ID: 37ccf782-1e13-48bb-8f05-1fa66d86d614</para>
-					/// <para>Custom Data: </para>
+					/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
 					/// </summary>
 					[SitecoreField(I_Download_ItemConstants.ImageFieldName)]
-					Image Image  {get; set;}
+					Glass.Mapper.Sc.Fields.AdvanceImageField Image  {get; set;}
 			
 								/// <summary>
 					/// The Title field.
@@ -8571,13 +8581,13 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 						/// <summary>
 				/// The Image field.
 				/// <para></para>
-				/// <para>Field Type: Image</para>		
+				/// <para>Field Type: Advance Image</para>		
 				/// <para>Field ID: 37ccf782-1e13-48bb-8f05-1fa66d86d614</para>
-				/// <para>Custom Data: </para>
+				/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_Download_ItemConstants.ImageFieldName)]
-				public virtual Image Image  {get; set;}
+				public virtual Glass.Mapper.Sc.Fields.AdvanceImageField Image  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -8804,7 +8814,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 						/// <summary>
 				/// The Amenities field.
 				/// <para>Datasource items from ./Site content/Amenities</para>
-				/// <para>Field Type: Multilist with Search</para>		
+				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 6d0a86ef-d757-4860-80f8-a79f4ecfdcc9</para>
 				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenity</para>
 				/// </summary>
@@ -8815,13 +8825,13 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 						/// <summary>
 				/// The Banner field.
 				/// <para></para>
-				/// <para>Field Type: Image</para>		
+				/// <para>Field Type: Advance Image</para>		
 				/// <para>Field ID: 82677f75-244e-42a8-bcb4-48993767346e</para>
-				/// <para>Custom Data: </para>
+				/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(INews_PageConstants.BannerFieldName)]
-				public virtual Image Banner  {get; set;}
+				public virtual Glass.Mapper.Sc.Fields.AdvanceImageField Banner  {get; set;}
 					
 						/// <summary>
 				/// The Content field.
@@ -8912,7 +8922,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 			public const string TitleFieldName = "Title";
 			
 					
-			public static readonly ID ImageFieldId = new ID("f6ba7b09-176f-4bb1-a680-c070d4b92c65");
+			public static readonly ID ImageFieldId = new ID("dda2f71d-c746-4a27-aeff-208e39626bb9");
 			public const string ImageFieldName = "Image";
 			
 			
@@ -8956,13 +8966,13 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 						/// <summary>
 				/// The Image field.
 				/// <para></para>
-				/// <para>Field Type: Image</para>		
-				/// <para>Field ID: f6ba7b09-176f-4bb1-a680-c070d4b92c65</para>
-				/// <para>Custom Data: </para>
+				/// <para>Field Type: Advance Image</para>		
+				/// <para>Field ID: dda2f71d-c746-4a27-aeff-208e39626bb9</para>
+				/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IInteractive_MapConstants.ImageFieldName)]
-				public virtual Image Image  {get; set;}
+				public virtual Glass.Mapper.Sc.Fields.AdvanceImageField Image  {get; set;}
 					
 			
 	}
@@ -8994,16 +9004,16 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 			public const string Image_Text_AlignmentFieldName = "Image Text Alignment";
 			
 					
+			public static readonly ID ImageFieldId = new ID("f4ed4c87-ec37-4dbf-8bc6-3771286d2646");
+			public const string ImageFieldName = "Image";
+			
+					
 			public static readonly ID SummaryFieldId = new ID("86ef63d0-7e10-4df7-80a7-28df2d6ba18f");
 			public const string SummaryFieldName = "Summary";
 			
 					
 			public static readonly ID TitleFieldId = new ID("cddd22f9-558a-4e98-a614-53c5e090fb96");
 			public const string TitleFieldName = "Title";
-			
-					
-			public static readonly ID ImageFieldId = new ID("f6ba7b09-176f-4bb1-a680-c070d4b92c65");
-			public const string ImageFieldName = "Image";
 			
 					
 			public static readonly ID Button_TextFieldId = new ID("15b53931-2b97-438a-9254-06f70a60f952");
@@ -9041,6 +9051,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 				public virtual EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.ISettings Image_Text_Alignment  {get; set;}
 					
 						/// <summary>
+				/// The Image field.
+				/// <para></para>
+				/// <para>Field Type: Advance Image</para>		
+				/// <para>Field ID: f4ed4c87-ec37-4dbf-8bc6-3771286d2646</para>
+				/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IImageTextConstants.ImageFieldName)]
+				public virtual Glass.Mapper.Sc.Fields.AdvanceImageField Image  {get; set;}
+					
+						/// <summary>
 				/// The Summary field.
 				/// <para></para>
 				/// <para>Field Type: Multi-Line Text</para>		
@@ -9061,17 +9082,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IImageTextConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
-					
-						/// <summary>
-				/// The Image field.
-				/// <para></para>
-				/// <para>Field Type: Image</para>		
-				/// <para>Field ID: f6ba7b09-176f-4bb1-a680-c070d4b92c65</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IImageTextConstants.ImageFieldName)]
-				public virtual Image Image  {get; set;}
 					
 						/// <summary>
 				/// The Button Text field.
@@ -9691,12 +9701,12 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 								/// <summary>
 					/// The Image field.
 					/// <para>Video Thumbnail Image</para>
-					/// <para>Field Type: Image</para>		
+					/// <para>Field Type: Advance Image</para>		
 					/// <para>Field ID: e6ae526a-fa8b-4b69-a0d1-277162d7fa7f</para>
-					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IImage_Item</para>
+					/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
 					/// </summary>
 					[SitecoreField(I_Video_ItemConstants.ImageFieldName)]
-					Image Image  {get; set;}
+					Glass.Mapper.Sc.Fields.AdvanceImageField Image  {get; set;}
 			
 								/// <summary>
 					/// The Title field.
@@ -9717,16 +9727,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 					/// </summary>
 					[SitecoreField(I_Video_ItemConstants.VideoFieldName)]
 					Link Video  {get; set;}
-			
-								/// <summary>
-					/// The Years field.
-					/// <para></para>
-					/// <para>Field Type: Droplist</para>		
-					/// <para>Field ID: eb2d8d5b-6335-44d6-9237-6aa5ce248871</para>
-					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.IYear_Item</para>
-					/// </summary>
-					[SitecoreField(I_Video_ItemConstants.YearsFieldName)]
-					string Years  {get; set;}
 			
 				}
 
@@ -9752,10 +9752,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 					
 			public static readonly ID VideoFieldId = new ID("f89f4f46-510b-4dfb-ae2e-f5c234e7aae2");
 			public const string VideoFieldName = "Video";
-			
-					
-			public static readonly ID YearsFieldId = new ID("eb2d8d5b-6335-44d6-9237-6aa5ce248871");
-			public const string YearsFieldName = "Years";
 			
 			
 
@@ -9787,13 +9783,13 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 						/// <summary>
 				/// The Image field.
 				/// <para>Video Thumbnail Image</para>
-				/// <para>Field Type: Image</para>		
+				/// <para>Field Type: Advance Image</para>		
 				/// <para>Field ID: e6ae526a-fa8b-4b69-a0d1-277162d7fa7f</para>
-				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IImage_Item</para>
+				/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_Video_ItemConstants.ImageFieldName)]
-				public virtual Image Image  {get; set;}
+				public virtual Glass.Mapper.Sc.Fields.AdvanceImageField Image  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -9816,17 +9812,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_Video_ItemConstants.VideoFieldName)]
 				public virtual Link Video  {get; set;}
-					
-						/// <summary>
-				/// The Years field.
-				/// <para></para>
-				/// <para>Field Type: Droplist</para>		
-				/// <para>Field ID: eb2d8d5b-6335-44d6-9237-6aa5ce248871</para>
-				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.IYear_Item</para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_Video_ItemConstants.YearsFieldName)]
-				public virtual string Years  {get; set;}
 					
 			
 	}
@@ -10082,7 +10067,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 						/// <summary>
 				/// The Amenities field.
 				/// <para>Datasource items from ./Site content/Amenities</para>
-				/// <para>Field Type: Multilist with Search</para>		
+				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 6d0a86ef-d757-4860-80f8-a79f4ecfdcc9</para>
 				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Amenity.IAmenity</para>
 				/// </summary>
@@ -10093,13 +10078,13 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 						/// <summary>
 				/// The Banner field.
 				/// <para></para>
-				/// <para>Field Type: Image</para>		
+				/// <para>Field Type: Advance Image</para>		
 				/// <para>Field ID: 82677f75-244e-42a8-bcb4-48993767346e</para>
-				/// <para>Custom Data: </para>
+				/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IEvent_PageConstants.BannerFieldName)]
-				public virtual Image Banner  {get; set;}
+				public virtual Glass.Mapper.Sc.Fields.AdvanceImageField Banner  {get; set;}
 					
 						/// <summary>
 				/// The Content field.
@@ -10576,10 +10561,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 			public static readonly ID VideoFieldId = new ID("f89f4f46-510b-4dfb-ae2e-f5c234e7aae2");
 			public const string VideoFieldName = "Video";
 			
-					
-			public static readonly ID YearsFieldId = new ID("eb2d8d5b-6335-44d6-9237-6aa5ce248871");
-			public const string YearsFieldName = "Years";
-			
 			
 
 	}
@@ -10610,13 +10591,13 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 						/// <summary>
 				/// The Image field.
 				/// <para>Video Thumbnail Image</para>
-				/// <para>Field Type: Image</para>		
+				/// <para>Field Type: Advance Image</para>		
 				/// <para>Field ID: e6ae526a-fa8b-4b69-a0d1-277162d7fa7f</para>
-				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IImage_Item</para>
+				/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IVideo_ItemConstants.ImageFieldName)]
-				public virtual Image Image  {get; set;}
+				public virtual Glass.Mapper.Sc.Fields.AdvanceImageField Image  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -10639,17 +10620,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IVideo_ItemConstants.VideoFieldName)]
 				public virtual Link Video  {get; set;}
-					
-						/// <summary>
-				/// The Years field.
-				/// <para></para>
-				/// <para>Field Type: Droplist</para>		
-				/// <para>Field ID: eb2d8d5b-6335-44d6-9237-6aa5ce248871</para>
-				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.IYear_Item</para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IVideo_ItemConstants.YearsFieldName)]
-				public virtual string Years  {get; set;}
 					
 			
 	}
@@ -11490,13 +11460,13 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 						/// <summary>
 				/// The Image field.
 				/// <para></para>
-				/// <para>Field Type: Image</para>		
+				/// <para>Field Type: Advance Image</para>		
 				/// <para>Field ID: 37ccf782-1e13-48bb-8f05-1fa66d86d614</para>
-				/// <para>Custom Data: </para>
+				/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IDownload_ItemConstants.ImageFieldName)]
-				public virtual Image Image  {get; set;}
+				public virtual Glass.Mapper.Sc.Fields.AdvanceImageField Image  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -11545,16 +11515,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 					[SitecoreField(I_AlbumConstants.ImagesFieldName)]
 					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IImage_Item> Images  {get; set;}
 			
-								/// <summary>
-					/// The Years field.
-					/// <para></para>
-					/// <para>Field Type: Droplist</para>		
-					/// <para>Field ID: 15e6fbe8-cdd0-4ccb-8295-3097ca4f3e71</para>
-					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.IYear_Item</para>
-					/// </summary>
-					[SitecoreField(I_AlbumConstants.YearsFieldName)]
-					string Years  {get; set;}
-			
 				}
 
 
@@ -11571,10 +11531,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 					
 			public static readonly ID ImagesFieldId = new ID("97aa0dcc-10c4-473c-9ca9-39bd77a50ce9");
 			public const string ImagesFieldName = "Images";
-			
-					
-			public static readonly ID YearsFieldId = new ID("15e6fbe8-cdd0-4ccb-8295-3097ca4f3e71");
-			public const string YearsFieldName = "Years";
 			
 					
 			public static readonly ID IntroductionFieldId = new ID("0cba5220-aa8b-4f75-bcd6-68000b38d8c1");
@@ -11621,17 +11577,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_AlbumConstants.ImagesFieldName)]
 				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IImage_Item> Images  {get; set;}
-					
-						/// <summary>
-				/// The Years field.
-				/// <para></para>
-				/// <para>Field Type: Droplist</para>		
-				/// <para>Field ID: 15e6fbe8-cdd0-4ccb-8295-3097ca4f3e71</para>
-				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.IYear_Item</para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_AlbumConstants.YearsFieldName)]
-				public virtual string Years  {get; set;}
 					
 						/// <summary>
 				/// The Introduction field.
@@ -11801,8 +11746,18 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Homepag
 	/// <para>ID: c9cd874a-7fcb-4eb3-802b-acc23bb25198</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=I_Homepage_CarouselConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_Homepage_Carousel : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Image, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_CTA
+	public partial interface I_Homepage_Carousel : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_CTA
 	{
+								/// <summary>
+					/// The Image field.
+					/// <para></para>
+					/// <para>Field Type: Advance Image</para>		
+					/// <para>Field ID: 51caea04-68f7-4e4c-a49e-2ac097006c96</para>
+					/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
+					/// </summary>
+					[SitecoreField(I_Homepage_CarouselConstants.ImageFieldName)]
+					Glass.Mapper.Sc.Fields.AdvanceImageField Image  {get; set;}
+			
 								/// <summary>
 					/// The Summary field.
 					/// <para>This field only supports Bullet List</para>
@@ -11833,16 +11788,16 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Homepag
 			public const string TemplateName = "_Homepage carousel";
 
 					
+			public static readonly ID ImageFieldId = new ID("51caea04-68f7-4e4c-a49e-2ac097006c96");
+			public const string ImageFieldName = "Image";
+			
+					
 			public static readonly ID SummaryFieldId = new ID("9de3e904-b947-4547-bbf2-7983ff99ff1a");
 			public const string SummaryFieldName = "Summary";
 			
 					
 			public static readonly ID TitleFieldId = new ID("87f46fb3-8ff4-4318-bcc2-c4ebbb0c4963");
 			public const string TitleFieldName = "Title";
-			
-					
-			public static readonly ID ImageFieldId = new ID("f6ba7b09-176f-4bb1-a680-c070d4b92c65");
-			public const string ImageFieldName = "Image";
 			
 					
 			public static readonly ID CTAFieldId = new ID("f9401c09-1121-4bb5-abed-48bc2b29de71");
@@ -11865,6 +11820,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Homepag
 	{
 	   
 						/// <summary>
+				/// The Image field.
+				/// <para></para>
+				/// <para>Field Type: Advance Image</para>		
+				/// <para>Field ID: 51caea04-68f7-4e4c-a49e-2ac097006c96</para>
+				/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_Homepage_CarouselConstants.ImageFieldName)]
+				public virtual Glass.Mapper.Sc.Fields.AdvanceImageField Image  {get; set;}
+					
+						/// <summary>
 				/// The Summary field.
 				/// <para>This field only supports Bullet List</para>
 				/// <para>Field Type: Rich Text</para>		
@@ -11885,17 +11851,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Homepag
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_Homepage_CarouselConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
-					
-						/// <summary>
-				/// The Image field.
-				/// <para></para>
-				/// <para>Field Type: Image</para>		
-				/// <para>Field ID: f6ba7b09-176f-4bb1-a680-c070d4b92c65</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_Homepage_CarouselConstants.ImageFieldName)]
-				public virtual Image Image  {get; set;}
 					
 						/// <summary>
 				/// The CTA field.
@@ -13221,16 +13176,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 					[SitecoreField(I_VideoAlbumConstants.VideosFieldName)]
 					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IVideo_Item> Videos  {get; set;}
 			
-								/// <summary>
-					/// The Years field.
-					/// <para></para>
-					/// <para>Field Type: Droplist</para>		
-					/// <para>Field ID: 45f9a9b2-5213-41a8-954e-6b900355dec5</para>
-					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.IYear_Item</para>
-					/// </summary>
-					[SitecoreField(I_VideoAlbumConstants.YearsFieldName)]
-					string Years  {get; set;}
-			
 				}
 
 
@@ -13247,10 +13192,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 					
 			public static readonly ID VideosFieldId = new ID("3981764a-8ec5-44d2-8500-09086145aa97");
 			public const string VideosFieldName = "Videos";
-			
-					
-			public static readonly ID YearsFieldId = new ID("45f9a9b2-5213-41a8-954e-6b900355dec5");
-			public const string YearsFieldName = "Years";
 			
 					
 			public static readonly ID IntroductionFieldId = new ID("0cba5220-aa8b-4f75-bcd6-68000b38d8c1");
@@ -13297,17 +13238,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_VideoAlbumConstants.VideosFieldName)]
 				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IVideo_Item> Videos  {get; set;}
-					
-						/// <summary>
-				/// The Years field.
-				/// <para></para>
-				/// <para>Field Type: Droplist</para>		
-				/// <para>Field ID: 45f9a9b2-5213-41a8-954e-6b900355dec5</para>
-				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types.IYear_Item</para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_VideoAlbumConstants.YearsFieldName)]
-				public virtual string Years  {get; set;}
 					
 						/// <summary>
 				/// The Introduction field.
@@ -13540,13 +13470,13 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content
 						/// <summary>
 				/// The Image field.
 				/// <para></para>
-				/// <para>Field Type: Image</para>		
+				/// <para>Field Type: Advance Image</para>		
 				/// <para>Field ID: 515bd529-7017-4402-a1a0-b8158722cf74</para>
-				/// <para>Custom Data: </para>
+				/// <para>Custom Data: Type=Glass.Mapper.Sc.Fields.AdvanceImageField</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IImage_ItemConstants.ImageFieldName)]
-				public virtual Image Image  {get; set;}
+				public virtual Glass.Mapper.Sc.Fields.AdvanceImageField Image  {get; set;}
 					
 						/// <summary>
 				/// The Title field.

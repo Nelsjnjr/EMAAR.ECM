@@ -2,12 +2,14 @@
 @using Glass.Mapper.Sc.Web.Mvc
 @using EMAAR.ECM.Foundation.SitecoreExtensions
 @using EMAAR.ECM.Foundation.SitecoreExtensions.Settings
+@using Sitecore.Framework.Fields.Extensions
 <!-- content starts here -->
 
 @if (Model != null)
 { 
     <div class="content-section">
         <div class="section-header">
+
             @if (!String.IsNullOrEmpty(Model.Title))
             {
                 <h1 class="heading"> @Html.Glass().Editable(Model, x => x.Title)</h1>
@@ -18,13 +20,17 @@
                     @Html.Glass().Editable(Model, x => x.Introduction)
                 </p>
             }
+            @if (!String.IsNullOrEmpty(ViewBag.Date))
+            {
+                // Date field only displayed for News and Events pages items
+                <p>@ViewBag.Date</p>
+            }
         </div>
-        @if (Model.Banner != null)
-        {
-            <div>
-                @Html.Glass().RenderImage(Model, x => x.Banner, new { alt = !String.IsNullOrEmpty(Model.Banner.Alt) ? Model.Banner.Alt : "image", @class = "full-image" }, isEditable: true)
-            </div>
-        }
+    
+        <div>
+            @Html.Sitecore().AdvancedImageField("Banner", Model.ContextItem, 860, 400,"image","full-image",false)         
+        </div>
+        
         <!--Start Content from RTE-->
         @Html.Glass().Editable(Model, x => x.Content)
         <!--End Content from RTE-->

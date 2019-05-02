@@ -14,16 +14,16 @@ created: 20190414T093508Z
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 5
+content-length: 13
 
-Image
+Advance Image
 ----field----
 field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
 name: Source
 key: source
-content-length: 35
+content-length: 56
 
-/sitecore/media library/Project/ECM
+ThumbnailFolderID={316B9FFC-7B83-450D-AFF6-5003EEC47BEA}
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -34,7 +34,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 077728ab-fe62-4c0e-b8b9-0a91c3fdd5c7
+revision: c20b0c83-e247-46c5-b6aa-d6e317cb8b4b
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -49,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-077728ab-fe62-4c0e-b8b9-0a91c3fdd5c7
+c20b0c83-e247-46c5-b6aa-d6e317cb8b4b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190429T111541Z
+20190502T084745Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

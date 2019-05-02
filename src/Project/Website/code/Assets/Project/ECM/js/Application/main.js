@@ -337,3 +337,12 @@ function validatecontactUs(tb) {
         });
     }
 }
+//Loop through all page anchor tag and set target=_blank if the domain is not same as current domain.
+$('a').each(function () {
+    //comparing the site domain with anchor tag url domain.
+    if (this.host.toString() != location.host.toString()) {
+        $(this).attr('target', '_blank');
+    }
+});
+//setting mailto link to be in target "_self"
+$('a[href^=mailto]').attr('target', '_self');

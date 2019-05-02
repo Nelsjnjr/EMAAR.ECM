@@ -137,7 +137,7 @@ namespace EMAAR.ECM.Feature.Listing.Repositories
                         if (list != null && list.results.results != null && list.results.results.Count > 0)
                         {
                             resultsList.results.results[count].imageUrl = list.results.results[0].imageUrl;
-
+                            resultsList.results.results[count].thumbnailurl = list.results.results[0].thumbnailurl;
                         }
                     }
 

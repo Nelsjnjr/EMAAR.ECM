@@ -1,9 +1,12 @@
 ﻿@model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Hero.IHero
 @using Glass.Mapper.Sc.Web.Mvc
 @using EMAAR.ECM.Foundation.SitecoreExtensions.Settings
+@using Glass.Mapper.Sc
+@using Sitecore.Framework.Helper
 <!-- mainLayout starts here -->
 @{
-    var heroimage = Model.Hero_Image != null ? Model.Hero_Image.Src : String.Empty;
+    var heroimage = AdvancedImageHelper.GetImageFieldUrl(Model.ContextItem,"Hero Image", 1920, 900) ;
+    //TODO:Mobile in HEro
     var mobheroimage = Model.Mobile_Hero_Image != null ? Model.Mobile_Hero_Image.Src : String.Empty;
 }
 

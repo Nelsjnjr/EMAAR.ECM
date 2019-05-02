@@ -1,4 +1,5 @@
 ﻿@model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Interactive_Map.IInteractive_Map
+@using Sitecore.Framework.Fields.Extensions
 @using Glass.Mapper.Sc.Web.Mvc
 <!-- Interactive map starts here -->
 <section id="map-section" class="map-section viewport-section">
@@ -11,7 +12,9 @@
     {
         <div class="map-section-inner">
             <div class="map-section-frame">
-                @Html.Glass().RenderImage(Model, x => x.Image, new { alt = !String.IsNullOrEmpty(Model.Image.Alt) ? Model.Image.Alt : "image description", @class = "mapMainimage" }, isEditable: true)
+             
+                    @Html.Sitecore().AdvancedImageField("Image", Model.ContextItem, 0,0, "image description", "mapMainimage", false)
+             
                 @{
                     float delay = 0.3f;
                 }
@@ -27,6 +30,7 @@
                                     @if (maps.Image != null)
                                     {
                                         @Html.Glass().RenderImage(maps, x => x.Image, new { alt = !String.IsNullOrEmpty(maps.Image.Alt) ? maps.Image.Alt : "image" }, isEditable: true)
+
                                     }
                                 </div>
                                 <div class="map-item-popup-content-text">

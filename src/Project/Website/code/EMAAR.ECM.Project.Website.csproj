@@ -122,9 +122,6 @@
     <Reference Include="Sitecore.Logging.Client, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Logging.Client.9.0.171219\lib\NET462\Sitecore.Logging.Client.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Mvc, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Mvc.9.0.171219\lib\NET462\Sitecore.Mvc.dll</HintPath>
-    </Reference>
     <Reference Include="Sitecore.NVelocity, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.NVelocity.9.0.171219\lib\NET462\Sitecore.NVelocity.dll</HintPath>
     </Reference>
@@ -221,6 +218,8 @@
   <ItemGroup>
     <Content Include="Assets\Project\ECM\bootstrap.css" />
     <Content Include="Assets\Project\ECM\bootstrap.min.css" />
+    <Content Include="Assets\Project\ECM\css\advancedimage\focuspoint.css" />
+    <Content Include="Assets\Project\ECM\css\advancedimage\helper-tool.css" />
     <Content Include="Assets\Project\ECM\css\Downtowndubai-en.css" />
     <Content Include="Assets\Project\ECM\css\fancybox\fancy.css" />
     <Content Include="Assets\Project\ECM\css\fancybox\fancybox_loading%402x.gif" />
@@ -230,6 +229,15 @@
     <Content Include="Assets\Project\ECM\css\fancybox\fancybox_sprite.png" />
     <Content Include="Assets\Project\ECM\css\vendors\select2.css" />
     <Content Include="Assets\Project\ECM\css\vendors\swiper.css" />
+    <Content Include="Assets\Project\ECM\Fields\AdvanceImage\css\focuspoint.css" />
+    <Content Include="Assets\Project\ECM\Fields\AdvanceImage\css\helper-tool.css" />
+    <Content Include="Assets\Project\ECM\Fields\AdvanceImage\detail.html" />
+    <Content Include="Assets\Project\ECM\Fields\AdvanceImage\js\jquery.focuspoint.js" />
+    <Content Include="Assets\Project\ECM\Fields\AdvanceImage\js\jquery.focuspoint.min.js" />
+    <Content Include="Assets\Project\ECM\Fields\AdvanceImage\template.html" />
+    <Content Include="Assets\Project\ECM\Fields\Slider\css\jquery-ui.min.css" />
+    <Content Include="Assets\Project\ECM\Fields\Slider\js\jquery-ui.min.js" />
+    <Content Include="Assets\Project\ECM\Fields\Slider\template.html" />
     <Content Include="Assets\Project\ECM\fonts\1069d95068cdf58f125fe7df3221f5f7.svg" />
     <Content Include="Assets\Project\ECM\fonts\4f2bf8530c19ba6a7c0e161d71fc65a5.svg" />
     <Content Include="Assets\Project\ECM\fonts\glyphicons-halflings-regular.svg" />
@@ -320,11 +328,15 @@
     <Content Include="Assets\Project\ECM\images\slider3.png" />
     <Content Include="Assets\Project\ECM\images\slider4.png" />
     <Content Include="Assets\Project\ECM\images\sr.jpeg" />
+    <Content Include="Assets\Project\ECM\images\target-selector.png" />
     <Content Include="Assets\Project\ECM\images\tdf.jpg" />
+    <Content Include="Assets\Project\ECM\js\Application\ajax.min.js" />
     <Content Include="Assets\Project\ECM\js\Application\ajax.js" />
     <Content Include="Assets\Project\ECM\js\Application\app.js" />
     <Content Include="Assets\Project\ECM\js\Application\app.min.js" />
     <Content Include="Assets\Project\ECM\js\Application\bundle.js" />
+    <Content Include="Assets\Project\ECM\js\vendor\jquery\jquery.focuspoint.js" />
+    <Content Include="Assets\Project\ECM\js\vendor\jquery\jquery.focuspoint.min.js" />
     <Content Include="Assets\Project\ECM\js\Application\main.js" />
     <Content Include="Assets\Project\ECM\js\Application\main.min.js" />
     <Content Include="Assets\Project\ECM\js\CDN\jquery.fancybox.js" />
@@ -380,11 +392,13 @@
     <Content Include="Assets\Project\ECM\images\DowntownDubai\manifest.json" />
     <Content Include="Assets\Project\ECM\js\vendor\.DS_Store" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
-    <Content Include="Views\Shared\ECM\_baseLayout.cshtml" />
-    <Content Include="Views\Shared\ECM\_twoColumn.cshtml" />
+    <Content Include="Views\Shared\Projects\ECM\_baseLayout.cshtml" />
+    <Content Include="Views\Shared\Projects\ECM\_twoColumn.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Project\ECM\Fields\AdvanceImage.cs" />
+    <Compile Include="Assets\Project\ECM\Fields\Slider.cs" />
     <Compile Include="Pipelines\RegisterPlatformBundles.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -398,7 +412,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Assets\Project\ECM\Fields\AdvanceImage\img\" />
+  </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
