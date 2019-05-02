@@ -1,14 +1,11 @@
 ﻿using System;
-using EMAAR.ECM.Foundation.Customcontrols.Helper;
 using EMAAR.ECM.Foundation.Search.Helpers;
 using EMAAR.ECM.Foundation.SitecoreExtensions;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.ComputedFields;
-using Sitecore.Data;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
-using Sitecore.Resources.Media;
-using Sitecore.Shell.Applications.ContentEditor;
+using Sitecore.Framework.Helper;
 
 namespace EMAAR.ECM.Foundation.Search.ComputedFields
 {

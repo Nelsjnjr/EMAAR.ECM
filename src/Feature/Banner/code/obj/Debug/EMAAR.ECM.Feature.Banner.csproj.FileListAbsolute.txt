@@ -280,10 +280,7 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Microsoft.Cod
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\obj\Debug\EMAAR.ECM.Feature.Banner.csproj.CopyComplete
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\obj\Debug\EMAAR.ECM.Feature.Banner.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\obj\Debug\EMAAR.ECM.Feature.Banner.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Foundation.Customcontrols.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Sitecore.Mvc.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Foundation.Customcontrols.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Foundation.Customcontrols.dll.config
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Foundation.Search.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Sitecore.ContentSearch.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Sitecore.ContentSearch.Linq.dll
@@ -292,7 +289,3 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Sitecore.Cont
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Foundation.Search.pdb
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\EMAAR.ECM.Foundation.Search.dll.config
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Sitecore.Framework.Fields.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\ImageProcessor.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Sitecore.Framework.Fields.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\Sitecore.Framework.Fields.dll.config
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Banner\code\bin\ImageProcessor.xml

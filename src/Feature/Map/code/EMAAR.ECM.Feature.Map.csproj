@@ -105,6 +105,10 @@
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Framework.Fields, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Sitecore.Framework.Fields.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.9.0.171219\lib\NET462\Sitecore.Kernel.dll</HintPath>
     </Reference>
@@ -239,10 +243,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Foundation\AdvancedImage\code\Sitecore.Framework.Fields.csproj">
-      <Project>{bfe0455b-9e43-4468-8a1a-dcf617edbe76}</Project>
-      <Name>Sitecore.Framework.Fields</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\EMAAR.ECM.Foundation.SitecoreExtensions.csproj">
       <Project>{5a9c69d0-c859-4df1-ac9c-4ef90d684b2b}</Project>
       <Name>EMAAR.ECM.Foundation.SitecoreExtensions</Name>

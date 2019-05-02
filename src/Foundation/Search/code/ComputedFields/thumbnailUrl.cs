@@ -1,11 +1,12 @@
 ﻿using System;
-using EMAAR.ECM.Foundation.Customcontrols.Helper;
 using EMAAR.ECM.Foundation.Search.Helpers;
 using EMAAR.ECM.Foundation.SitecoreExtensions;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.ComputedFields;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
+using Sitecore.Framework.Helper;
+
 namespace EMAAR.ECM.Foundation.Search.ComputedFields
 {
     public class ThumbnailUrl : IComputedIndexField

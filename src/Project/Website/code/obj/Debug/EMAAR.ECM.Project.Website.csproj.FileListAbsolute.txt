@@ -516,7 +516,3 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\obj\Debug\EMAAR.
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\obj\Debug\EMAAR.ECM.Project.Website.pdb
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\Sitecore.Mvc.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\Sitecore.Framework.Fields.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\ImageProcessor.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\Sitecore.Framework.Fields.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\Sitecore.Framework.Fields.dll.config
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Project\Website\code\bin\ImageProcessor.xml

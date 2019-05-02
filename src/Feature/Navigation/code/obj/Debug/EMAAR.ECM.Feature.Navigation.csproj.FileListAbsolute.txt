@@ -277,7 +277,3 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\obj\Debug\EMA
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\obj\Debug\EMAAR.ECM.Feature.Navigation.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\obj\Debug\EMAAR.ECM.Feature.Navigation.pdb
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\Sitecore.Framework.Fields.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\ImageProcessor.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\Sitecore.Framework.Fields.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\Sitecore.Framework.Fields.dll.config
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Navigation\code\bin\ImageProcessor.xml

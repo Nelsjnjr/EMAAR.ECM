@@ -2222,7 +2222,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 	/// <para>ID: 2b7920b0-e96a-4d03-88a1-4c4cfad6a6b7</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IMediaFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface IMediaFolder : IGlassBase 
+	public partial interface IMediaFolder : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_MediaFolder
 	{
 				}
 
@@ -4959,6 +4959,47 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 	[SitecoreType(TemplateId=IRelated_PageFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
 	 [Service(typeof(IRelated_PageFolder))]
 	public partial class Related_PageFolder  : GlassBase, IRelated_PageFolder 
+	{
+	   
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
+{
+
+
+ 	/// <summary>
+	/// I_MediaFolder Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_MediaFolder</para>	
+	/// <para>ID: 4d6c2283-769a-4e16-8e4d-5435f5da45cc</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_MediaFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_MediaFolder : IGlassBase 
+	{
+				}
+
+
+	public static partial class I_MediaFolderConstants{
+
+			public const string TemplateIdString = "4d6c2283-769a-4e16-8e4d-5435f5da45cc";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_MediaFolder";
+
+			
+
+	}
+
+	
+	/// <summary>
+	/// _MediaFolder
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Base/_MediaFolder</para>	
+	/// <para>ID: 4d6c2283-769a-4e16-8e4d-5435f5da45cc</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_MediaFolderConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_MediaFolder))]
+	public partial class _MediaFolder  : GlassBase, I_MediaFolder 
 	{
 	   
 			

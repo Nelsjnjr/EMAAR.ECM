@@ -113,6 +113,10 @@
     <Reference Include="Sitecore.DependencyInjection, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.DependencyInjection.1.0.4.0\lib\Sitecore.DependencyInjection.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Framework.Fields, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Sitecore.Framework.Fields.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.9.0.171219\lib\NET462\Sitecore.Kernel.dll</HintPath>
     </Reference>
@@ -252,10 +256,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Foundation\AdvancedImage\code\Sitecore.Framework.Fields.csproj">
-      <Project>{bfe0455b-9e43-4468-8a1a-dcf617edbe76}</Project>
-      <Name>Sitecore.Framework.Fields</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\DependencyInjection\code\EMAAR.ECM.Foundation.DependencyInjection.csproj">
       <Project>{E7ACC4FC-B18C-45A3-8871-D4AE93471623}</Project>
       <Name>EMAAR.ECM.Foundation.DependencyInjection</Name>

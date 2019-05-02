@@ -1,5 +1,10 @@
-﻿using EMAAR.ECM.Foundation.SitecoreExtensions;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Text.RegularExpressions;
 using EMAAR.ECM.Foundation.Search.Models;
+using EMAAR.ECM.Foundation.SitecoreExtensions;
 using Sitecore;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.Linq.Utilities;
@@ -7,20 +12,10 @@ using Sitecore.ContentSearch.SearchTypes;
 using Sitecore.Data;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
+using Sitecore.Links;
 using Sitecore.Resources.Media;
 using Sitecore.Sites;
 using Sitecore.Web;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text.RegularExpressions;
-using Sitecore.Links;
-using EMAAR.ECM.Foundation.Customcontrols.Fields;
-using System.Xml;
-using EMAAR.ECM.Foundation.Customcontrols.Fields.Extensions;
-using Glass.Mapper.Sc.Configuration;
-using Glass.Mapper.Sc;
 
 namespace EMAAR.ECM.Foundation.Search.Helpers
 {

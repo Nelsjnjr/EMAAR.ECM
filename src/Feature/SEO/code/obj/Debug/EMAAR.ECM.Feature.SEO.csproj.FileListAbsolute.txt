@@ -272,15 +272,11 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\SEO\code\bin\Microsoft.CodeDo
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\SEO\code\obj\Debug\EMAAR.ECM.Feature.SEO.csproj.CopyComplete
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\SEO\code\obj\Debug\EMAAR.ECM.Feature.SEO.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\SEO\code\obj\Debug\EMAAR.ECM.Feature.SEO.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\SEO\code\bin\ImageProcessor.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\SEO\code\bin\Sitecore.Mvc.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\SEO\code\bin\RazorGenerator.Mvc.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\SEO\code\bin\Sitecore.Web.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\SEO\code\bin\System.Web.Http.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\SEO\code\bin\System.Net.Http.Formatting.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\SEO\code\bin\ImageProcessor.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\SEO\code\bin\System.Web.Http.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\SEO\code\bin\System.Net.Http.Formatting.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\SEO\code\bin\Sitecore.Framework.Fields.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\SEO\code\bin\Sitecore.Framework.Fields.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\SEO\code\bin\Sitecore.Framework.Fields.dll.config

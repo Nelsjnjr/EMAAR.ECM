@@ -236,9 +236,5 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\System.Web.Mvc.x
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\obj\Debug\EMAAR.ECM.Feature.Map.csproj.CopyComplete
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\obj\Debug\EMAAR.ECM.Feature.Map.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\obj\Debug\EMAAR.ECM.Feature.Map.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\ImageProcessor.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Sitecore.Mvc.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\ImageProcessor.xml
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Sitecore.Framework.Fields.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Sitecore.Framework.Fields.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Feature\Map\code\bin\Sitecore.Framework.Fields.dll.config

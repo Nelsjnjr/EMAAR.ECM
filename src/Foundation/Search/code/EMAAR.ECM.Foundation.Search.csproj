@@ -118,7 +118,7 @@
       <HintPath>..\..\..\..\packages\Sitecore.ContentSearch.Linq.9.0.171219\lib\NET462\Sitecore.ContentSearch.Linq.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Framework.Fields">
-      <HintPath>D:\Nelson\sc1.local\bin\Sitecore.Framework.Fields.dll</HintPath>
+      <HintPath>..\..\..\..\lib\Sitecore.Framework.Fields.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.9.0.171219\lib\NET462\Sitecore.Kernel.dll</HintPath>
@@ -241,10 +241,6 @@
     <ProjectReference Include="..\..\..\Feature\Components\code\EMAAR.ECM.Feature.ContentComponents.csproj">
       <Project>{c30bfe45-7425-4716-968e-ccab88dfe6d1}</Project>
       <Name>EMAAR.ECM.Feature.ContentComponents</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Customcontrols\code\EMAAR.ECM.Foundation.Customcontrols.csproj">
-      <Project>{49F682AF-8F0E-4031-BC1F-4AA2733C2F4B}</Project>
-      <Name>EMAAR.ECM.Foundation.Customcontrols</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\SitecoreExtensions\code\EMAAR.ECM.Foundation.SitecoreExtensions.csproj">
       <Project>{5a9c69d0-c859-4df1-ac9c-4ef90d684b2b}</Project>

@@ -104,6 +104,10 @@
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Framework.Fields, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Sitecore.Framework.Fields.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.9.0.171219\lib\NET462\Sitecore.Kernel.dll</HintPath>
     </Reference>
@@ -214,6 +218,8 @@
     <Compile Include="CommonConstants.cs" />
     <Compile Include="CommonUtility.cs" />
     <Compile Include="Controls\QuerableTreelist.cs" />
+    <Compile Include="Fields\AdvanceImage.cs" />
+    <Compile Include="Fields\Slider.cs" />
     <Compile Include="Interfaces\ISitecoreHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\SitecoreHelper.cs" />
@@ -226,6 +232,16 @@
     </Content>
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Web.config" />
+    <Content Include="Fields\AdvanceImage\css\focuspoint.css" />
+    <Content Include="Fields\AdvanceImage\css\helper-tool.css" />
+    <Content Include="Fields\AdvanceImage\detail.html" />
+    <Content Include="Fields\AdvanceImage\img\target-selector.png" />
+    <Content Include="Fields\AdvanceImage\js\jquery.focuspoint.js" />
+    <Content Include="Fields\AdvanceImage\js\jquery.focuspoint.min.js" />
+    <Content Include="Fields\AdvanceImage\template.html" />
+    <Content Include="Fields\Slider\css\jquery-ui.min.css" />
+    <Content Include="Fields\Slider\js\jquery-ui.min.js" />
+    <Content Include="Fields\Slider\template.html" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

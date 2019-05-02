@@ -113,6 +113,10 @@
     <Reference Include="RazorGenerator.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\RazorGenerator.Mvc.2.4.9\lib\net40\RazorGenerator.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Framework.Fields, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Sitecore.Framework.Fields.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.9.0.171219\lib\NET462\Sitecore.Kernel.dll</HintPath>
     </Reference>
@@ -223,10 +227,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\AdvancedImage\code\Sitecore.Framework.Fields.csproj">
-      <Project>{bfe0455b-9e43-4468-8a1a-dcf617edbe76}</Project>
-      <Name>Sitecore.Framework.Fields</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\DependencyInjection\code\EMAAR.ECM.Foundation.DependencyInjection.csproj">
       <Project>{e7acc4fc-b18c-45a3-8871-d4ae93471623}</Project>
       <Name>EMAAR.ECM.Foundation.DependencyInjection</Name>
