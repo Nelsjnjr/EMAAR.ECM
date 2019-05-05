@@ -205,17 +205,13 @@
   <ItemGroup>
     <Compile Include="Controllers\ListingController.cs" />
     <Compile Include="Controllers\MediacenterController.cs" />
-    <Compile Include="Interface\IImageListingRepository.cs" />
     <Compile Include="Interface\IListingRepository.cs" />
     <Compile Include="Interface\IMediacenterViewmodel.cs" />
     <Compile Include="Interface\IMediacenterRepositories.cs" />
-    <Compile Include="Interface\IVideoListingRepository.cs" />
     <Compile Include="Models\MediacenterViewmodel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\ImageListingRepository.cs" />
     <Compile Include="Repositories\ListingRepository.cs" />
     <Compile Include="Repositories\MediacenterRepositories.cs" />
-    <Compile Include="Repositories\VideoListingRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Views\web.config" />

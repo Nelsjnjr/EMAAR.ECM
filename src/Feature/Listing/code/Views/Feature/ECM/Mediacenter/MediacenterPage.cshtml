@@ -62,7 +62,8 @@
             @foreach (var albumDetails in Model.EventsItems.results.results)
             {
                 <div class="event">
-                    <a href="@albumDetails.pageUrl" class="event-item">
+
+                    <a href="@(!String.IsNullOrEmpty(albumDetails.pageUrl)?albumDetails.pageUrl:"javascript:;")" class="event-item">
                         <div class="datesec">
                             <span class="date">@albumDetails.date</span>
                             <span class="day">@albumDetails.month</span>

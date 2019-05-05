@@ -11,13 +11,6 @@ templatekey: News Listing Page
 created: 20190426T105106Z
 
 ----field----
-field: {2A92BE65-8FF2-46E3-898A-8577502D5D53}
-name: Show Filters
-key: show filters
-content-length: 1
-
-1
-----field----
 field: {44195A16-B523-44EF-B2FD-6304B28E16FB}
 name: No of Records
 key: no of records

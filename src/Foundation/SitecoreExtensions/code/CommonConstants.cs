@@ -244,6 +244,30 @@
         /// Read Online dictionary key
         /// </summary>
         public const string ReadOnlineKey = "ReadOnline";
+        /// <summary>
+        /// PastEvents Dictionary Key
+        /// </summary>
+        public const string PastEvents = "PastEvents";
+        /// <summary>
+        /// UpcomingEvents dictionary key
+        /// </summary>
+        public const string UpcomingEvents = "UpcomingEvents";
+        /// <summary>
+        /// Past Events Key
+        /// </summary>
+        public const string Past = "Past";
+        /// <summary>
+        /// Upcoming  Events Key
+        /// </summary>
+        public const string Upcoming = "Upcoming";
+        /// <summary>
+        /// Event Type
+        /// </summary>
+        public const string EventType = "EventType";
+        /// <summary>
+        /// Sitecore date field for Events template
+        /// </summary>
+        public const string Date = "date_dt";
         #endregion
 
         #endregion;

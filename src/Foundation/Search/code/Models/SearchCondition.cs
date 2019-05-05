@@ -18,7 +18,21 @@
     /// </summary>
     public enum CompareType
     {
+        /// <summary>
+        /// Exact match
+        /// </summary>
         ExactMatch,
-        PartialMatch
+        /// <summary>
+        /// Partail match
+        /// </summary>
+        PartialMatch,
+        /// <summary>
+        /// Date greater than or equal to
+        /// </summary>
+        GreaterOrEqual,
+        /// <summary>
+        /// Date Less than 
+        /// </summary>
+        LessThan
     }
 }

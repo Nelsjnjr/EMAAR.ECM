@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text.RegularExpressions;
+using EMAAR.ECM.Feature.ContentComponents.Settings;
 using EMAAR.ECM.Foundation.Search.Models;
 using EMAAR.ECM.Foundation.SitecoreExtensions;
 using Sitecore;
@@ -16,7 +17,7 @@ using Sitecore.Links;
 using Sitecore.Resources.Media;
 using Sitecore.Sites;
 using Sitecore.Web;
-
+using EMAAR.ECM.Foundation.SitecoreExtensions.Settings;
 namespace EMAAR.ECM.Foundation.Search.Helpers
 {
     /// <summary>
@@ -30,7 +31,7 @@ namespace EMAAR.ECM.Foundation.Search.Helpers
         /// </summary>
         /// <param name="searchFields">List of Search Fields.</param>
         /// <returns>predicate.</returns>        
-        public static Expression<Func<T, bool>> BuildPredicate<T>(List<SearchCondition> searchFields) where T : SearchResultItem
+        public static Expression<Func<T, bool>> BuildPredicate<T>(List<SearchCondition> searchFields) where T : ListingSearchResultItem
         {
             Expression<Func<T, bool>> predicate = PredicateBuilder.True<T>();
             if (searchFields != null && searchFields.Any())
@@ -43,10 +44,23 @@ namespace EMAAR.ECM.Foundation.Search.Helpers
                         foreach (string val in searchField.Value.ToString().Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
                         {
                             if (searchField.CompareType == CompareType.ExactMatch)
+                            {
                                 innerPredicate = innerPredicate.Or(item => item[searchField.Name].Equals(val));
-                            else
-                                innerPredicate = innerPredicate.Or(item => item[searchField.Name].Contains(val));
+                            }
 
+                            else if (searchField.CompareType == CompareType.GreaterOrEqual)
+                            {
+                                innerPredicate = innerPredicate.Or(item => item.date_dt >= DateTime.Parse(val));
+                                                          
+                            }
+                            else if (searchField.CompareType == CompareType.LessThan)
+                            {
+                                innerPredicate = innerPredicate.Or(item => item.date_dt < DateTime.Parse(val));
+                            }
+                            else
+                            {
+                                innerPredicate = innerPredicate.Or(item => item[searchField.Name].Contains(val));
+                            }
                         }
 
                         predicate = predicate.And<T>(innerPredicate);
@@ -82,7 +96,7 @@ namespace EMAAR.ECM.Foundation.Search.Helpers
             if (Context.Site != null && Context.Database != null && Context.Site.ContentStartPath.ToLower().Contains("/ecm"))
             {
 
-                return ContentSearchManager.GetIndex(string.Format(CommonConstants.IndexNamePrefix+ "_{0}_index", Context.Database.Name).ToLower());
+                return ContentSearchManager.GetIndex(string.Format(CommonConstants.IndexNamePrefix + "_{0}_index", Context.Database.Name).ToLower());
             }
             else
             {
@@ -90,7 +104,7 @@ namespace EMAAR.ECM.Foundation.Search.Helpers
             }
         }
 
-       
+
 
 
         /// <summary>
@@ -104,7 +118,7 @@ namespace EMAAR.ECM.Foundation.Search.Helpers
             string[] charactersTobeRemoved = { "-", "{", "}" };
             if (!string.IsNullOrWhiteSpace(unformattedGuid))
             {
-                foreach (var character in charactersTobeRemoved)
+                foreach (string character in charactersTobeRemoved)
                 {
                     unformattedGuid = unformattedGuid.Replace(character, "");
                 }
@@ -121,8 +135,8 @@ namespace EMAAR.ECM.Foundation.Search.Helpers
         /// <returns>embed url</returns>
         public static string GetYoutubeEmbedUrl(string linkUrl)
         {
-            var youtubeId = string.Empty;
-            var youtubeUrl = string.Empty;
+            string youtubeId = string.Empty;
+            string youtubeUrl = string.Empty;
 
             if (!string.IsNullOrWhiteSpace(linkUrl))
             {
@@ -143,7 +157,7 @@ namespace EMAAR.ECM.Foundation.Search.Helpers
         /// <returns>embed url</returns>
         public static string GetYoutubeId(string youTubeUrl)
         {
-            var youtubeMatch =
+            Match youtubeMatch =
            new Regex(@"youtu(?:\.be|be\.com)/(?:.*v(?:/|=)|(?:.*/)?)([a-zA-Z0-9-_]+)")
            .Match(youTubeUrl);
             return youtubeMatch.Success ? youtubeMatch.Groups[1].Value : string.Empty;
@@ -162,8 +176,10 @@ namespace EMAAR.ECM.Foundation.Search.Helpers
                 ImageField imageField = item.Fields[imageFieldId];
                 if (imageField != null && imageField.MediaItem != null)
                 {
-                    MediaUrlOptions mediaUrlOption = new MediaUrlOptions();
-                    mediaUrlOption.Language = item.Language;
+                    MediaUrlOptions mediaUrlOption = new MediaUrlOptions
+                    {
+                        Language = item.Language
+                    };
                     string imageUrl = MediaManager.GetMediaUrl(imageField.MediaItem, mediaUrlOption);
                     if (!string.IsNullOrEmpty(imageUrl))
                     {
@@ -183,7 +199,7 @@ namespace EMAAR.ECM.Foundation.Search.Helpers
         /// <param name="unformattedGuid"></param>
         /// <returns>SiteInfo</returns>
         public static SiteInfo GetSiteInfo(this Item item)
-        {           
+        {
 
             string itemPath = item.Paths.FullPath;
             SiteInfo site = SiteContextFactory.Sites
@@ -214,8 +230,21 @@ namespace EMAAR.ECM.Foundation.Search.Helpers
                         if (filterParam != null && filterParam.Any())
                         {
                             if (filterParam[1].Equals(CommonConstants.AllValue))
+                            {
                                 continue;
-                            conditions.Add(new SearchCondition() { Name = filterParam[0], Value = filterParam[1], CompareType = CompareType.ExactMatch });
+                            }
+                            else if (filterParam[0].ToLower() == CommonConstants.EventType.ToLower() && filterParam[1].ToLower() == CommonConstants.Past.ToLower())
+                            {
+                                conditions.Add(new SearchCondition() { Name = CommonConstants.Date, Value = DateTime.UtcNow.ToString(), CompareType = CompareType.LessThan });
+                            }
+                            else if (filterParam[0].ToLower() == CommonConstants.EventType.ToLower() && filterParam[1].ToLower() == CommonConstants.Upcoming.ToLower())
+                            {
+                                conditions.Add(new SearchCondition() { Name = CommonConstants.Date, Value = DateTime.UtcNow.ToString(), CompareType = CompareType.GreaterOrEqual });
+                            }
+                            else
+                            {
+                                conditions.Add(new SearchCondition() { Name = filterParam[0], Value = filterParam[1], CompareType = CompareType.ExactMatch });
+                            }
                         }
                     }
 
@@ -233,8 +262,10 @@ namespace EMAAR.ECM.Foundation.Search.Helpers
         {
             if (item.Paths.IsMediaItem)
             {
-                MediaUrlOptions mediaUrlOption = new MediaUrlOptions();
-                mediaUrlOption.Language = item.Language;
+                MediaUrlOptions mediaUrlOption = new MediaUrlOptions
+                {
+                    Language = item.Language
+                };
                 string mediaURL = MediaManager.GetMediaUrl(item, mediaUrlOption);
                 if (!string.IsNullOrEmpty(mediaURL))
                 {
@@ -242,14 +273,19 @@ namespace EMAAR.ECM.Foundation.Search.Helpers
                 }
             }
 
-            UrlOptions urlOption = new UrlOptions();
-            urlOption.Language = item.Language;
+            UrlOptions urlOption = new UrlOptions
+            {
+                Language = item.Language
+            };
 
             string link = LinkManager.GetItemUrl(item, urlOption);
             SiteInfo siteInfo = SearchHelper.GetSiteInfo(item);
-                        
+
             if (siteInfo == null)
+            {
                 return link;
+            }
+
             string currentSiteStartItemPath = siteInfo.RootPath + siteInfo.StartItem;
             if (!string.IsNullOrWhiteSpace(link))
             {
@@ -266,6 +302,6 @@ namespace EMAAR.ECM.Foundation.Search.Helpers
             }
             return null;
         }
-      
+
     }
 }

@@ -45,23 +45,37 @@ namespace EMAAR.ECM.Foundation.Search.ComputedFields
                     return null;
                 }
 
-
+               
                 // Events - Get URL from Navigation URL field if available
-                if (SearchHelper.FormatGuid(item.TemplateID.ToString()).Equals(SearchHelper.FormatGuid(CommonConstants.EventsTemplateID)) 
-                    && item.Fields["Navigation URL"] != null && !string.IsNullOrWhiteSpace(item.Fields["Navigation URL"].Value))
+                
+                if ((CheckboxField)item.Fields["Is Events Page"] != null && 
+                    !((CheckboxField)item.Fields["Is Events Page"]).Checked)
                 {
-                    LinkField navigationUrl = item.Fields["Navigation URL"];
-                    if (navigationUrl != null )
+                    if (SearchHelper.FormatGuid(item.TemplateID.ToString()).Equals(SearchHelper.FormatGuid(CommonConstants.EventsTemplateID))
+                    && item.Fields["Navigation URL"] != null && !string.IsNullOrWhiteSpace(item.Fields["Navigation URL"].Value))
                     {
-                        if (!string.IsNullOrEmpty(navigationUrl.Url))
+                        LinkField navigationUrl = item.Fields["Navigation URL"];
+                        if (navigationUrl != null)
                         {
-                            return navigationUrl.Url;
+                            if (!string.IsNullOrEmpty(navigationUrl.Url))
+                            {
+                                return navigationUrl.Url;
+                            }
+                            else if (navigationUrl.TargetItem != null)
+                            {
+                                return SearchHelper.GetURL(navigationUrl.TargetItem);
+                            }
                         }
-                        else if (navigationUrl.TargetItem!=null)
-                        {
-                            return SearchHelper.GetURL(navigationUrl.TargetItem);
-                        }
+
                     }
+                    else
+                    {
+                        return null;
+                    }
+                }
+                else
+                {
+                    SearchHelper.GetURL(item);
                 }
                 // Downloads - Get URL from Download Link field if available
                 if (SearchHelper.FormatGuid(item.TemplateID.ToString()).Equals(SearchHelper.FormatGuid(CommonConstants.DownloadItemTemplateID))

@@ -27,7 +27,7 @@ namespace EMAAR.ECM.Foundation.Search.Services
         /// <param name="pageNo">Page Number.</param>
         /// <param name="pageSize">Page Size.</param>
         /// <returns>Search Results of Generic Type</returns>        
-        public SearchResultsGeneric<T> GetSearchResults<T>(List<SearchCondition> searchConditions,List<Facet> facetFields=null,  SortOption sortOption= null, int pageNo = -1, int pageSize = -1, bool sortByYearAndOrder=false, bool sortByDateAndOrder = false, bool sortByDateAscAndOrder = false) where T : SearchResultItem
+        public SearchResultsGeneric<T> GetSearchResults<T>(List<SearchCondition> searchConditions,List<Facet> facetFields=null,  SortOption sortOption= null, int pageNo = -1, int pageSize = -1, bool sortByYearAndOrder=false, bool sortByDateAndOrder = false, bool sortByDateAscAndOrder = false) where T : ListingSearchResultItem
         {
             searchConditions = SearchHelper.AddBasicSearchConditions(searchConditions);
             IProviderSearchContext searchContext = SearchHelper.GetIndex().CreateSearchContext();
@@ -99,6 +99,7 @@ namespace EMAAR.ECM.Foundation.Search.Services
                  
                     filters.Add(new Filters() { filterLabel = category.Name, filterValues = filterValuesList });
                 }
+
 
 
                 Dictionary<string, string> itemIdsWithValues = GetItemIdValues(itemIdsList);               

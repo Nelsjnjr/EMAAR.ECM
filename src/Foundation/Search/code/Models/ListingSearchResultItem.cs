@@ -58,7 +58,8 @@ namespace EMAAR.ECM.Foundation.Search.Models
 
         [IndexField("videos_sm")]
         public List<string> videos { get; set; }
-
+        [IndexField("date_dt")]
+        public DateTime date_dt { get; set; }
 
     }
 }

@@ -1106,10 +1106,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string No_Of_RecordsFieldName = "No of Records";
 			
 					
-			public static readonly ID Show_FiltersFieldId = new ID("2a92be65-8ff2-46e3-898a-8577502d5d53");
-			public const string Show_FiltersFieldName = "Show Filters";
-			
-					
 			public static readonly ID Include_In_Left_NavigationFieldId = new ID("36cfaa10-f10c-40dd-9bbc-a8f7160dd389");
 			public const string Include_In_Left_NavigationFieldName = "Include in Left Navigation";
 			
@@ -1191,17 +1187,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IVideo_Gallery_PageConstants.No_Of_RecordsFieldName)]
 				public virtual int No_Of_Records  {get; set;}
-					
-						/// <summary>
-				/// The Show Filters field.
-				/// <para></para>
-				/// <para>Field Type: Checkbox</para>		
-				/// <para>Field ID: 2a92be65-8ff2-46e3-898a-8577502d5d53</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IVideo_Gallery_PageConstants.Show_FiltersFieldName)]
-				public virtual bool Show_Filters  {get; set;}
 					
 						/// <summary>
 				/// The Include in Left Navigation field.
@@ -1627,10 +1612,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string No_Of_RecordsFieldName = "No of Records";
 			
 					
-			public static readonly ID Show_FiltersFieldId = new ID("2a92be65-8ff2-46e3-898a-8577502d5d53");
-			public const string Show_FiltersFieldName = "Show Filters";
-			
-					
 			public static readonly ID Include_In_Left_NavigationFieldId = new ID("36cfaa10-f10c-40dd-9bbc-a8f7160dd389");
 			public const string Include_In_Left_NavigationFieldName = "Include in Left Navigation";
 			
@@ -1712,17 +1693,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(INews_Listing_PageConstants.No_Of_RecordsFieldName)]
 				public virtual int No_Of_Records  {get; set;}
-					
-						/// <summary>
-				/// The Show Filters field.
-				/// <para></para>
-				/// <para>Field Type: Checkbox</para>		
-				/// <para>Field ID: 2a92be65-8ff2-46e3-898a-8577502d5d53</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(INews_Listing_PageConstants.Show_FiltersFieldName)]
-				public virtual bool Show_Filters  {get; set;}
 					
 						/// <summary>
 				/// The Include in Left Navigation field.
@@ -1844,16 +1814,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 					[SitecoreField(I_List_ConfigurationConstants.No_Of_RecordsFieldName)]
 					int No_Of_Records  {get; set;}
 			
-								/// <summary>
-					/// The Show Filters field.
-					/// <para></para>
-					/// <para>Field Type: Checkbox</para>		
-					/// <para>Field ID: 2a92be65-8ff2-46e3-898a-8577502d5d53</para>
-					/// <para>Custom Data: </para>
-					/// </summary>
-					[SitecoreField(I_List_ConfigurationConstants.Show_FiltersFieldName)]
-					bool Show_Filters  {get; set;}
-			
 				}
 
 
@@ -1874,10 +1834,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 					
 			public static readonly ID No_Of_RecordsFieldId = new ID("44195a16-b523-44ef-b2fd-6304b28e16fb");
 			public const string No_Of_RecordsFieldName = "No of Records";
-			
-					
-			public static readonly ID Show_FiltersFieldId = new ID("2a92be65-8ff2-46e3-898a-8577502d5d53");
-			public const string Show_FiltersFieldName = "Show Filters";
 			
 			
 
@@ -1927,17 +1883,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_List_ConfigurationConstants.No_Of_RecordsFieldName)]
 				public virtual int No_Of_Records  {get; set;}
-					
-						/// <summary>
-				/// The Show Filters field.
-				/// <para></para>
-				/// <para>Field Type: Checkbox</para>		
-				/// <para>Field ID: 2a92be65-8ff2-46e3-898a-8577502d5d53</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_List_ConfigurationConstants.Show_FiltersFieldName)]
-				public virtual bool Show_Filters  {get; set;}
 					
 			
 	}
@@ -2279,10 +2224,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string CategoriesFieldName = "Categories";
 			
 					
-			public static readonly ID VideosFieldId = new ID("3981764a-8ec5-44d2-8500-09086145aa97");
-			public const string VideosFieldName = "Videos";
-			
-					
 			public static readonly ID IntroductionFieldId = new ID("0cba5220-aa8b-4f75-bcd6-68000b38d8c1");
 			public const string IntroductionFieldName = "Introduction";
 			
@@ -2301,10 +2242,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 			public static readonly ID No_Of_RecordsFieldId = new ID("44195a16-b523-44ef-b2fd-6304b28e16fb");
 			public const string No_Of_RecordsFieldName = "No of Records";
-			
-					
-			public static readonly ID Show_FiltersFieldId = new ID("2a92be65-8ff2-46e3-898a-8577502d5d53");
-			public const string Show_FiltersFieldName = "Show Filters";
 			
 					
 			public static readonly ID Include_In_Left_NavigationFieldId = new ID("36cfaa10-f10c-40dd-9bbc-a8f7160dd389");
@@ -2344,17 +2281,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IVideo_AlbumConstants.CategoriesFieldName)]
 				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category> Categories  {get; set;}
-					
-						/// <summary>
-				/// The Videos field.
-				/// <para></para>
-				/// <para>Field Type: Multilist</para>		
-				/// <para>Field ID: 3981764a-8ec5-44d2-8500-09086145aa97</para>
-				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IVideo_Item</para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IVideo_AlbumConstants.VideosFieldName)]
-				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IVideo_Item> Videos  {get; set;}
 					
 						/// <summary>
 				/// The Introduction field.
@@ -2410,17 +2336,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IVideo_AlbumConstants.No_Of_RecordsFieldName)]
 				public virtual int No_Of_Records  {get; set;}
-					
-						/// <summary>
-				/// The Show Filters field.
-				/// <para></para>
-				/// <para>Field Type: Checkbox</para>		
-				/// <para>Field ID: 2a92be65-8ff2-46e3-898a-8577502d5d53</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IVideo_AlbumConstants.Show_FiltersFieldName)]
-				public virtual bool Show_Filters  {get; set;}
 					
 						/// <summary>
 				/// The Include in Left Navigation field.
@@ -4373,6 +4288,72 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 			
 	}
 }
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing.Parameters_Templates
+{
+
+
+ 	/// <summary>
+	/// I_Showfilters Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Listing/Parameters Templates/_Showfilters</para>	
+	/// <para>ID: 4433c5a0-3a2b-4d14-9652-2f4ea1033e13</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_ShowfiltersConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Showfilters : IGlassBase 
+	{
+								/// <summary>
+					/// The Show filters field.
+					/// <para></para>
+					/// <para>Field Type: Checkbox</para>		
+					/// <para>Field ID: 9bda1b69-e95d-4e4a-a7a9-950b7729b165</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_ShowfiltersConstants.Show_FiltersFieldName)]
+					bool Show_Filters  {get; set;}
+			
+				}
+
+
+	public static partial class I_ShowfiltersConstants{
+
+			public const string TemplateIdString = "4433c5a0-3a2b-4d14-9652-2f4ea1033e13";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_Showfilters";
+
+					
+			public static readonly ID Show_FiltersFieldId = new ID("9bda1b69-e95d-4e4a-a7a9-950b7729b165");
+			public const string Show_FiltersFieldName = "Show filters";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _Showfilters
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Feature/ECM/Listing/Parameters Templates/_Showfilters</para>	
+	/// <para>ID: 4433c5a0-3a2b-4d14-9652-2f4ea1033e13</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_ShowfiltersConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Showfilters))]
+	public partial class _Showfilters  : GlassBase, I_Showfilters 
+	{
+	   
+						/// <summary>
+				/// The Show filters field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 9bda1b69-e95d-4e4a-a7a9-950b7729b165</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_ShowfiltersConstants.Show_FiltersFieldName)]
+				public virtual bool Show_Filters  {get; set;}
+					
+			
+	}
+}
 namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Faq
 {
 
@@ -6106,10 +6087,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string CategoriesFieldName = "Categories";
 			
 					
-			public static readonly ID ImagesFieldId = new ID("97aa0dcc-10c4-473c-9ca9-39bd77a50ce9");
-			public const string ImagesFieldName = "Images";
-			
-					
 			public static readonly ID IntroductionFieldId = new ID("0cba5220-aa8b-4f75-bcd6-68000b38d8c1");
 			public const string IntroductionFieldName = "Introduction";
 			
@@ -6128,10 +6105,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 			public static readonly ID No_Of_RecordsFieldId = new ID("44195a16-b523-44ef-b2fd-6304b28e16fb");
 			public const string No_Of_RecordsFieldName = "No of Records";
-			
-					
-			public static readonly ID Show_FiltersFieldId = new ID("2a92be65-8ff2-46e3-898a-8577502d5d53");
-			public const string Show_FiltersFieldName = "Show Filters";
 			
 					
 			public static readonly ID Include_In_Left_NavigationFieldId = new ID("36cfaa10-f10c-40dd-9bbc-a8f7160dd389");
@@ -6171,17 +6144,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IImage_AlbumConstants.CategoriesFieldName)]
 				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category> Categories  {get; set;}
-					
-						/// <summary>
-				/// The Images field.
-				/// <para></para>
-				/// <para>Field Type: Multilist</para>		
-				/// <para>Field ID: 97aa0dcc-10c4-473c-9ca9-39bd77a50ce9</para>
-				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IImage_Item</para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IImage_AlbumConstants.ImagesFieldName)]
-				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IImage_Item> Images  {get; set;}
 					
 						/// <summary>
 				/// The Introduction field.
@@ -6237,17 +6199,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IImage_AlbumConstants.No_Of_RecordsFieldName)]
 				public virtual int No_Of_Records  {get; set;}
-					
-						/// <summary>
-				/// The Show Filters field.
-				/// <para></para>
-				/// <para>Field Type: Checkbox</para>		
-				/// <para>Field ID: 2a92be65-8ff2-46e3-898a-8577502d5d53</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IImage_AlbumConstants.Show_FiltersFieldName)]
-				public virtual bool Show_Filters  {get; set;}
 					
 						/// <summary>
 				/// The Include in Left Navigation field.
@@ -7374,6 +7325,16 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category> Categories  {get; set;}
 			
 								/// <summary>
+					/// The Is Events Page field.
+					/// <para></para>
+					/// <para>Field Type: Checkbox</para>		
+					/// <para>Field ID: 7f64f128-d1b2-46f4-961a-72cfe71a0084</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_Event_ItemConstants.Is_Events_PageFieldName)]
+					bool Is_Events_Page  {get; set;}
+			
+								/// <summary>
 					/// The Navigation URL field.
 					/// <para></para>
 					/// <para>Field Type: General Link</para>		
@@ -7395,6 +7356,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 					
 			public static readonly ID CategoriesFieldId = new ID("8e7f0abd-113a-4653-b769-00518de8283d");
 			public const string CategoriesFieldName = "Categories";
+			
+					
+			public static readonly ID Is_Events_PageFieldId = new ID("7f64f128-d1b2-46f4-961a-72cfe71a0084");
+			public const string Is_Events_PageFieldName = "Is Events Page";
 			
 					
 			public static readonly ID Navigation_URLFieldId = new ID("2f142564-a4bb-4fa4-a366-9b78d128d9b5");
@@ -7430,6 +7395,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_Event_ItemConstants.CategoriesFieldName)]
 				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category> Categories  {get; set;}
+					
+						/// <summary>
+				/// The Is Events Page field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 7f64f128-d1b2-46f4-961a-72cfe71a0084</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_Event_ItemConstants.Is_Events_PageFieldName)]
+				public virtual bool Is_Events_Page  {get; set;}
 					
 						/// <summary>
 				/// The Navigation URL field.
@@ -7540,10 +7516,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string No_Of_RecordsFieldName = "No of Records";
 			
 					
-			public static readonly ID Show_FiltersFieldId = new ID("2a92be65-8ff2-46e3-898a-8577502d5d53");
-			public const string Show_FiltersFieldName = "Show Filters";
-			
-					
 			public static readonly ID Include_In_Left_NavigationFieldId = new ID("36cfaa10-f10c-40dd-9bbc-a8f7160dd389");
 			public const string Include_In_Left_NavigationFieldName = "Include in Left Navigation";
 			
@@ -7625,17 +7597,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IDownloads_PageConstants.No_Of_RecordsFieldName)]
 				public virtual int No_Of_Records  {get; set;}
-					
-						/// <summary>
-				/// The Show Filters field.
-				/// <para></para>
-				/// <para>Field Type: Checkbox</para>		
-				/// <para>Field ID: 2a92be65-8ff2-46e3-898a-8577502d5d53</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IDownloads_PageConstants.Show_FiltersFieldName)]
-				public virtual bool Show_Filters  {get; set;}
 					
 						/// <summary>
 				/// The Include in Left Navigation field.
@@ -7832,10 +7793,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string No_Of_RecordsFieldName = "No of Records";
 			
 					
-			public static readonly ID Show_FiltersFieldId = new ID("2a92be65-8ff2-46e3-898a-8577502d5d53");
-			public const string Show_FiltersFieldName = "Show Filters";
-			
-					
 			public static readonly ID Include_In_Left_NavigationFieldId = new ID("36cfaa10-f10c-40dd-9bbc-a8f7160dd389");
 			public const string Include_In_Left_NavigationFieldName = "Include in Left Navigation";
 			
@@ -7917,17 +7874,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IImage_Gallery_PageConstants.No_Of_RecordsFieldName)]
 				public virtual int No_Of_Records  {get; set;}
-					
-						/// <summary>
-				/// The Show Filters field.
-				/// <para></para>
-				/// <para>Field Type: Checkbox</para>		
-				/// <para>Field ID: 2a92be65-8ff2-46e3-898a-8577502d5d53</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IImage_Gallery_PageConstants.Show_FiltersFieldName)]
-				public virtual bool Show_Filters  {get; set;}
 					
 						/// <summary>
 				/// The Include in Left Navigation field.
@@ -9431,10 +9377,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string No_Of_RecordsFieldName = "No of Records";
 			
 					
-			public static readonly ID Show_FiltersFieldId = new ID("2a92be65-8ff2-46e3-898a-8577502d5d53");
-			public const string Show_FiltersFieldName = "Show Filters";
-			
-					
 			public static readonly ID Include_In_Left_NavigationFieldId = new ID("36cfaa10-f10c-40dd-9bbc-a8f7160dd389");
 			public const string Include_In_Left_NavigationFieldName = "Include in Left Navigation";
 			
@@ -9516,17 +9458,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IEvents_Listing_PageConstants.No_Of_RecordsFieldName)]
 				public virtual int No_Of_Records  {get; set;}
-					
-						/// <summary>
-				/// The Show Filters field.
-				/// <para></para>
-				/// <para>Field Type: Checkbox</para>		
-				/// <para>Field ID: 2a92be65-8ff2-46e3-898a-8577502d5d53</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IEvents_Listing_PageConstants.Show_FiltersFieldName)]
-				public virtual bool Show_Filters  {get; set;}
 					
 						/// <summary>
 				/// The Include in Left Navigation field.
@@ -10021,6 +9952,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string CategoriesFieldName = "Categories";
 			
 					
+			public static readonly ID Is_Events_PageFieldId = new ID("7f64f128-d1b2-46f4-961a-72cfe71a0084");
+			public const string Is_Events_PageFieldName = "Is Events Page";
+			
+					
 			public static readonly ID Navigation_URLFieldId = new ID("2f142564-a4bb-4fa4-a366-9b78d128d9b5");
 			public const string Navigation_URLFieldName = "Navigation URL";
 			
@@ -10082,6 +10017,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IEvent_PageConstants.CategoriesFieldName)]
 				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category> Categories  {get; set;}
+					
+						/// <summary>
+				/// The Is Events Page field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 7f64f128-d1b2-46f4-961a-72cfe71a0084</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IEvent_PageConstants.Is_Events_PageFieldName)]
+				public virtual bool Is_Events_Page  {get; set;}
 					
 						/// <summary>
 				/// The Navigation URL field.
@@ -11407,6 +11353,182 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 			
 	}
 }
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types
+{
+
+
+ 	/// <summary>
+	/// IVideo_Gallery_With_Filters Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/Video Gallery With Filters</para>	
+	/// <para>ID: c14d3c3f-2ca3-4ac1-9fcb-f8bb6d27dd04</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IVideo_Gallery_With_FiltersConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IVideo_Gallery_With_Filters : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing.I_VideoAlbum, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing.I_List_Configuration, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_Navigable
+	{
+				}
+
+
+	public static partial class IVideo_Gallery_With_FiltersConstants{
+
+			public const string TemplateIdString = "c14d3c3f-2ca3-4ac1-9fcb-f8bb6d27dd04";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "Video Gallery With Filters";
+
+					
+			public static readonly ID CategoriesFieldId = new ID("4b7178ea-4352-4d1f-a98f-81feb23895af");
+			public const string CategoriesFieldName = "Categories";
+			
+					
+			public static readonly ID IntroductionFieldId = new ID("0cba5220-aa8b-4f75-bcd6-68000b38d8c1");
+			public const string IntroductionFieldName = "Introduction";
+			
+					
+			public static readonly ID TitleFieldId = new ID("e98bf0cb-57fb-4353-9c23-1ad8d5961f2d");
+			public const string TitleFieldName = "Title";
+			
+					
+			public static readonly ID Error_MessageFieldId = new ID("fd8d09c0-26c9-4c9b-ba05-8d4621a0f1f3");
+			public const string Error_MessageFieldName = "Error Message";
+			
+					
+			public static readonly ID Load_More_LabelFieldId = new ID("fe683723-d22f-4a7e-a074-7e3bab2817c4");
+			public const string Load_More_LabelFieldName = "Load More Label";
+			
+					
+			public static readonly ID No_Of_RecordsFieldId = new ID("44195a16-b523-44ef-b2fd-6304b28e16fb");
+			public const string No_Of_RecordsFieldName = "No of Records";
+			
+					
+			public static readonly ID Include_In_Left_NavigationFieldId = new ID("36cfaa10-f10c-40dd-9bbc-a8f7160dd389");
+			public const string Include_In_Left_NavigationFieldName = "Include in Left Navigation";
+			
+					
+			public static readonly ID Is_Left_Navigation_Root_ClickableFieldId = new ID("6b80f5a4-7b14-4ce7-a140-187e88fd8e82");
+			public const string Is_Left_Navigation_Root_ClickableFieldName = "Is Left Navigation Root Clickable";
+			
+					
+			public static readonly ID Navigation_TitleFieldId = new ID("d9d30585-793d-4fc2-b6d1-7a47315dcbe9");
+			public const string Navigation_TitleFieldName = "Navigation Title";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// Video_Gallery_With_Filters
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Page Types/Video Gallery With Filters</para>	
+	/// <para>ID: c14d3c3f-2ca3-4ac1-9fcb-f8bb6d27dd04</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IVideo_Gallery_With_FiltersConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IVideo_Gallery_With_Filters))]
+	public partial class Video_Gallery_With_Filters  : GlassBase, IVideo_Gallery_With_Filters 
+	{
+	   
+						/// <summary>
+				/// The Categories field.
+				/// <para></para>
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: 4b7178ea-4352-4d1f-a98f-81feb23895af</para>
+				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category</para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_Gallery_With_FiltersConstants.CategoriesFieldName)]
+				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category> Categories  {get; set;}
+					
+						/// <summary>
+				/// The Introduction field.
+				/// <para></para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: 0cba5220-aa8b-4f75-bcd6-68000b38d8c1</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_Gallery_With_FiltersConstants.IntroductionFieldName)]
+				public virtual string Introduction  {get; set;}
+					
+						/// <summary>
+				/// The Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: e98bf0cb-57fb-4353-9c23-1ad8d5961f2d</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_Gallery_With_FiltersConstants.TitleFieldName)]
+				public virtual string Title  {get; set;}
+					
+						/// <summary>
+				/// The Error Message field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: fd8d09c0-26c9-4c9b-ba05-8d4621a0f1f3</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_Gallery_With_FiltersConstants.Error_MessageFieldName)]
+				public virtual string Error_Message  {get; set;}
+					
+						/// <summary>
+				/// The Load More Label field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: fe683723-d22f-4a7e-a074-7e3bab2817c4</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_Gallery_With_FiltersConstants.Load_More_LabelFieldName)]
+				public virtual string Load_More_Label  {get; set;}
+					
+						/// <summary>
+				/// The No of Records field.
+				/// <para></para>
+				/// <para>Field Type: Integer</para>		
+				/// <para>Field ID: 44195a16-b523-44ef-b2fd-6304b28e16fb</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_Gallery_With_FiltersConstants.No_Of_RecordsFieldName)]
+				public virtual int No_Of_Records  {get; set;}
+					
+						/// <summary>
+				/// The Include in Left Navigation field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 36cfaa10-f10c-40dd-9bbc-a8f7160dd389</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_Gallery_With_FiltersConstants.Include_In_Left_NavigationFieldName)]
+				public virtual bool Include_In_Left_Navigation  {get; set;}
+					
+						/// <summary>
+				/// The Is Left Navigation Root Clickable field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 6b80f5a4-7b14-4ce7-a140-187e88fd8e82</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_Gallery_With_FiltersConstants.Is_Left_Navigation_Root_ClickableFieldName)]
+				public virtual bool Is_Left_Navigation_Root_Clickable  {get; set;}
+					
+						/// <summary>
+				/// The Navigation Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: d9d30585-793d-4fc2-b6d1-7a47315dcbe9</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_Gallery_With_FiltersConstants.Navigation_TitleFieldName)]
+				public virtual string Navigation_Title  {get; set;}
+					
+			
+	}
+}
 namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing
 {
 
@@ -11546,16 +11668,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 					[SitecoreField(I_AlbumConstants.CategoriesFieldName)]
 					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category> Categories  {get; set;}
 			
-								/// <summary>
-					/// The Images field.
-					/// <para></para>
-					/// <para>Field Type: Multilist</para>		
-					/// <para>Field ID: 97aa0dcc-10c4-473c-9ca9-39bd77a50ce9</para>
-					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IImage_Item</para>
-					/// </summary>
-					[SitecoreField(I_AlbumConstants.ImagesFieldName)]
-					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IImage_Item> Images  {get; set;}
-			
 				}
 
 
@@ -11568,10 +11680,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 					
 			public static readonly ID CategoriesFieldId = new ID("bfdb03bc-9cee-46ca-97d1-d69de8c617c7");
 			public const string CategoriesFieldName = "Categories";
-			
-					
-			public static readonly ID ImagesFieldId = new ID("97aa0dcc-10c4-473c-9ca9-39bd77a50ce9");
-			public const string ImagesFieldName = "Images";
 			
 					
 			public static readonly ID IntroductionFieldId = new ID("0cba5220-aa8b-4f75-bcd6-68000b38d8c1");
@@ -11607,17 +11715,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_AlbumConstants.CategoriesFieldName)]
 				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category> Categories  {get; set;}
-					
-						/// <summary>
-				/// The Images field.
-				/// <para></para>
-				/// <para>Field Type: Multilist</para>		
-				/// <para>Field ID: 97aa0dcc-10c4-473c-9ca9-39bd77a50ce9</para>
-				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IImage_Item</para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_AlbumConstants.ImagesFieldName)]
-				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IImage_Item> Images  {get; set;}
 					
 						/// <summary>
 				/// The Introduction field.
@@ -13077,6 +13174,62 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 			
 	}
 }
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Parameters
+{
+
+
+ 	/// <summary>
+	/// IShowfilters Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Parameters/Showfilters</para>	
+	/// <para>ID: dc744333-43df-45b4-a783-14fef159f798</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IShowfiltersConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface IShowfilters : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing.Parameters_Templates.I_Showfilters
+	{
+				}
+
+
+	public static partial class IShowfiltersConstants{
+
+			public const string TemplateIdString = "dc744333-43df-45b4-a783-14fef159f798";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "Showfilters";
+
+					
+			public static readonly ID Show_FiltersFieldId = new ID("9bda1b69-e95d-4e4a-a7a9-950b7729b165");
+			public const string Show_FiltersFieldName = "Show filters";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// Showfilters
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Parameters/Showfilters</para>	
+	/// <para>ID: dc744333-43df-45b4-a783-14fef159f798</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IShowfiltersConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(IShowfilters))]
+	public partial class Showfilters  : GlassBase, IShowfilters 
+	{
+	   
+						/// <summary>
+				/// The Show filters field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 9bda1b69-e95d-4e4a-a7a9-950b7729b165</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IShowfiltersConstants.Show_FiltersFieldName)]
+				public virtual bool Show_Filters  {get; set;}
+					
+			
+	}
+}
 namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 {
 
@@ -13207,16 +13360,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 					[SitecoreField(I_VideoAlbumConstants.CategoriesFieldName)]
 					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category> Categories  {get; set;}
 			
-								/// <summary>
-					/// The Videos field.
-					/// <para></para>
-					/// <para>Field Type: Multilist</para>		
-					/// <para>Field ID: 3981764a-8ec5-44d2-8500-09086145aa97</para>
-					/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IVideo_Item</para>
-					/// </summary>
-					[SitecoreField(I_VideoAlbumConstants.VideosFieldName)]
-					IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IVideo_Item> Videos  {get; set;}
-			
 				}
 
 
@@ -13229,10 +13372,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 					
 			public static readonly ID CategoriesFieldId = new ID("4b7178ea-4352-4d1f-a98f-81feb23895af");
 			public const string CategoriesFieldName = "Categories";
-			
-					
-			public static readonly ID VideosFieldId = new ID("3981764a-8ec5-44d2-8500-09086145aa97");
-			public const string VideosFieldName = "Videos";
 			
 					
 			public static readonly ID IntroductionFieldId = new ID("0cba5220-aa8b-4f75-bcd6-68000b38d8c1");
@@ -13268,17 +13407,6 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_VideoAlbumConstants.CategoriesFieldName)]
 				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_Category> Categories  {get; set;}
-					
-						/// <summary>
-				/// The Videos field.
-				/// <para></para>
-				/// <para>Field Type: Multilist</para>		
-				/// <para>Field ID: 3981764a-8ec5-44d2-8500-09086145aa97</para>
-				/// <para>Custom Data: generic=EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IVideo_Item</para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(I_VideoAlbumConstants.VideosFieldName)]
-				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Listing.IVideo_Item> Videos  {get; set;}
 					
 						/// <summary>
 				/// The Introduction field.

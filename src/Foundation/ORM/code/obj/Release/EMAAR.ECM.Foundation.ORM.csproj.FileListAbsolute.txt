@@ -400,7 +400,3 @@ C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\obj\Release\EMAAR
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\obj\Release\EMAAR.ECM.Foundation.ORM.pdb
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Sitecore.Mvc.dll
 C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Sitecore.Framework.Fields.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\ImageProcessor.dll
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Sitecore.Framework.Fields.pdb
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\Sitecore.Framework.Fields.dll.config
-C:\Users\Nelson\Source\Repos\EMAAR.ECM\src\Foundation\ORM\code\bin\ImageProcessor.xml

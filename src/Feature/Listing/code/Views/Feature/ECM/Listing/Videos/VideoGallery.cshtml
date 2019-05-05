@@ -7,7 +7,7 @@
         <h1 class="heading"> @Html.Glass().Editable(Model, x => x.Title)</h1>
         <p>@Html.Glass().Editable(Model, x => x.Introduction)</p>
     </div>
-    <div id="templateInitializor" data-service-url="/api/sitecore/listing/GetListingJSON" data-page-size="@Model.No_Of_Records" data-item-id="@Model.Id" data-listItemTemplateId="@SearchHelper.FormatGuid(CommonConstants.VideoAlbumPageTemplateID)" data-error-message="@Model.Error_Message" data-show-filters=@Model.Show_Filters>
+    <div id="templateInitializor" data-service-url="/api/sitecore/listing/GetListingJSON" data-page-size="@Model.No_Of_Records" data-item-id="@Model.Id" data-listItemTemplateId="@SearchHelper.FormatGuid(CommonConstants.VideoAlbumPageTemplateID)" data-error-message="@Model.Error_Message" data-show-filters="true">
         <div class="selectFilters"></div>
         <script id="filter-template" type="text/x-handlebars-template">
             <div class="row">

@@ -24,10 +24,17 @@ key: controller action
 content-length: 11
 
 VideosAlbum
+----field----
+field: {13F89250-AD6B-4548-882E-118A12C18094}
+name: Parameters Template
+key: parameters template
+content-length: 38
+
+{DC744333-43DF-45B4-A783-14FEF159F798}
 ----version----
 language: en
 version: 1
-revision: 3e243f82-70d9-4500-8333-5775fdab6778
+revision: 926a7e7e-da1b-4c27-a165-ef0905c2c774
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -42,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3e243f82-70d9-4500-8333-5775fdab6778
+926a7e7e-da1b-4c27-a165-ef0905c2c774
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190411T065825Z
+20190505T072304Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
