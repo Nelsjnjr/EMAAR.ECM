@@ -108,7 +108,7 @@ namespace EMAAR.ECM.Feature.Listing.Controllers
         [HttpGet]
         public ActionResult VideosAlbum()
         {
-            IVideo_Album videoAlbum = _repo.GetVideoAlbumsModel(out bool ShowFilters);
+            IVideo_Album_Without_Filters videoAlbum = _repo.GetVideoAlbumsModel(out bool ShowFilters);
             ViewBag.Showfilter = ShowFilters;
             return View($"{ViewPath}Listing/Videos/VideoAlbum.cshtml", videoAlbum);
         }

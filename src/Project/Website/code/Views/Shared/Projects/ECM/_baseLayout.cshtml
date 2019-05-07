@@ -10,6 +10,7 @@
     @{
         var SiteRoot = Sitecore.Context.Site.Database.GetItem(Sitecore.Context.Site.ContentStartPath);
     }
+
     <!--Start Page Pre site scripts-->
     @Html.Raw(SiteRoot.Fields["Pre Site Scripts"].Value)
     <!--End Page Pre site scripts-->

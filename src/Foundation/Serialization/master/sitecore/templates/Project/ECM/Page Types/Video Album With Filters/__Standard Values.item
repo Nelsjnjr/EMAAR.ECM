@@ -2,12 +2,12 @@
 version: 1
 id: {A661D548-D0DA-42F6-AC3E-AE8DF5F6B0DF}
 database: master
-path: /sitecore/templates/Project/ECM/Page Types/Video Gallery With Filters/__Standard Values
+path: /sitecore/templates/Project/ECM/Page Types/Video Album With Filters/__Standard Values
 parent: {C14D3C3F-2CA3-4AC1-9FCB-F8BB6D27DD04}
 name: __Standard Values
 master: {00000000-0000-0000-0000-000000000000}
 template: {C14D3C3F-2CA3-4AC1-9FCB-F8BB6D27DD04}
-templatekey: Video Gallery With Filters
+templatekey: Video Album With Filters
 created: 20190505T063656Z
 
 ----field----
@@ -30,7 +30,7 @@ name: __Masters
 key: __masters
 content-length: 38
 
-{AF5D11D7-F83A-4D16-8747-D92F6F873071}
+{F3F807F7-01D0-419F-B0FD-11A9C4E66A7B}
 ----field----
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
@@ -41,7 +41,7 @@ content-length: 858
 ----version----
 language: en
 version: 1
-revision: cf646823-e7ce-484d-941b-89a66f0de386
+revision: e974ac86-67b9-4925-8772-92b032c51055
 
 ----field----
 field: {E98BF0CB-57FB-4353-9C23-1AD8D5961F2D}
@@ -77,14 +77,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cf646823-e7ce-484d-941b-89a66f0de386
+e974ac86-67b9-4925-8772-92b032c51055
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190505T072614Z
+20190506T112913Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

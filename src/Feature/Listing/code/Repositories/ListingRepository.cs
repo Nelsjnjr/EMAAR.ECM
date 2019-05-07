@@ -22,7 +22,7 @@ namespace EMAAR.ECM.Feature.Listing.Repositories
         private readonly IImage_Gallery_Page _imageGallery;
         private readonly IImage_Album _imageAlbum;
         private readonly IVideo_Gallery_Page _videoGallery;
-        private readonly IVideo_Album _videoAlbum;
+        private readonly IVideo_Album_Without_Filters _videoAlbum;
         private readonly INews_Listing_Page _newsModel;
         private readonly IEvents_Listing_Page _eventsModel;
         private readonly IDownloads_Page _downloadsModel;
@@ -31,7 +31,7 @@ namespace EMAAR.ECM.Feature.Listing.Repositories
 
         #region constructor
         public ListingRepository(Func<IMvcContext> mvcContext, ISearchManager searchManager, IImage_Gallery_Page imageGallery, IImage_Album imageAlbum,
-            IVideo_Gallery_Page videoGallery, IVideo_Album videoAlbum, INews_Listing_Page newsModel, IEvents_Listing_Page eventsModel, IDownloads_Page downloadsModel)
+            IVideo_Gallery_Page videoGallery, IVideo_Album_Without_Filters videoAlbum, INews_Listing_Page newsModel, IEvents_Listing_Page eventsModel, IDownloads_Page downloadsModel)
         {
             _mvcContext = mvcContext;
             _searchManager = searchManager;
@@ -77,7 +77,7 @@ namespace EMAAR.ECM.Feature.Listing.Repositories
                 conditions.Add(new SearchCondition() { Name = CommonConstants.YearFacetField, Value = DateTime.UtcNow.Year.ToString(), CompareType = CompareType.ExactMatch });
             }
             //Adding filter condition for Event type
-            if (listItemTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.EventsTemplateID)) && !filter.ToLower().Contains("eventtype"))
+            if (listItemTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.EventsTemplateID)) && filter!=null && !filter.ToLower().Contains(CommonConstants.EventType.ToLower()))
             {
                 conditions.Add(new SearchCondition() { Name = CommonConstants.EventType, Value = DateTime.UtcNow.ToString(), CompareType = CompareType.GreaterOrEqual });
             }
@@ -139,10 +139,17 @@ namespace EMAAR.ECM.Feature.Listing.Repositories
 
             }
             if (listItemTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.ImageAlbumPageTemplateID)) ||
-            listItemTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.VideoAlbumPageTemplateID)))
+            listItemTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.VideoAlbumWithoutFiltersTemplateID))||
+            listItemTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.VideoAlbumWithFiltersTemplateID)))
             {
-
-                string contentItemTemplateId = listItemTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.VideoAlbumPageTemplateID)) ? CommonConstants.VideoItemTemplateID : CommonConstants.ImageItemTemplateID;
+                string contentItemTemplateId = String.Empty;
+                if (listItemTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.VideoAlbumWithoutFiltersTemplateID)) ||
+                    listItemTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.VideoAlbumWithFiltersTemplateID)))
+                {
+                    contentItemTemplateId = CommonConstants.VideoItemTemplateID;
+                }
+                else
+                    contentItemTemplateId=CommonConstants.ImageItemTemplateID;                   
                 //Get First item's image of each album as cover image
                 int count = 0;
                 while (count < resultsList.results.results.Count)
@@ -218,10 +225,10 @@ namespace EMAAR.ECM.Feature.Listing.Repositories
 
         #region Video Album
 
-        public IVideo_Album GetVideoAlbumsModel(out bool ShowFilters)
+        public IVideo_Album_Without_Filters GetVideoAlbumsModel(out bool ShowFilters)
         {
             IMvcContext mvcContext = _mvcContext();
-            IVideo_Album VideoAlbum = mvcContext.GetContextItem<IVideo_Album>();
+            IVideo_Album_Without_Filters VideoAlbum = mvcContext.GetContextItem<IVideo_Album_Without_Filters>();
             ShowFilters = mvcContext.GetRenderingParameters<IShowfilters>().Show_Filters;
             return VideoAlbum ?? _videoAlbum;
         }

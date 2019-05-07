@@ -49,23 +49,31 @@ namespace EMAAR.ECM.Feature.Listing.Models
         /// </summary>
         public Item ImageGalleryItem { get; set; }
         /// <summary>
-        /// Image Gallery Item in Mediacenter 
+        /// Image Album Item in Mediacenter 
         /// </summary>
         public Item ImageAlbumItem { get; set; }
         /// <summary>
-        /// Image Album Item in Mediacenter 
+        /// Video Gallery Item in Mediacenter 
         /// </summary>
         public Item VideoGalleryItem { get; set; }
         /// <summary>
-        /// Video Gallery Item in Mediacenter 
+        /// Video Album Without Filters/ Video Album With Filters Item in Mediacenter 
         /// </summary>
         public Item VideoAlbumItem { get; set; }
         /// <summary>
-        /// Video Album Item in Mediacenter 
+        /// Video Album Without Filters Item in Mediacenter 
+        /// </summary>
+        public Item VideoAlbumWithoutFiltersItem { get; set; }
+        /// <summary>
+        /// Video Album With Filters Item in Mediacenter 
+        /// </summary>
+        public Item VideoAlbumWithFiltersItem { get; set; }
+        /// <summary>
+        /// Video  Item in Mediacenter 
         /// </summary>
         public Item VideoItem { get; set; }
         /// <summary>
-        /// Video Item in Mediacenter 
+        /// News in Mediacenter 
         /// </summary>
         public Item NewsListingPageItem { get; set; }
         /// <summary>

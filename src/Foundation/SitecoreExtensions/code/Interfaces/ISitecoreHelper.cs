@@ -46,9 +46,13 @@ namespace EMAAR.ECM.Foundation.SitecoreExtensions.Interfaces
         /// </summary>
         Item VideoGalleryItem { get; }
         /// <summary>
-        /// Video Album Item in Mediacenter 
+        /// Video Album Without Filter Item in Mediacenter 
         /// </summary>
-        Item VideoAlbumItem { get; }
+        Item VideoAlbumWithoutFilterItem { get; }
+        /// <summary>
+        ///  Video Album With Filter Item in Mediacenter 
+        /// </summary>
+        Item VideoAlbumWithFilterItem { get; }
         /// <summary>
         /// Video Item in Mediacenter 
         /// </summary>

@@ -80,7 +80,11 @@ namespace EMAAR.ECM.Foundation.SitecoreExtensions
         /// <summary>
         ///Video Album Item in Mediacenter 
         /// </summary>
-        public Item VideoAlbumItem => Sitecore.Context.Database.SelectSingleItem($"{Sitecore.Context.Site.RootPath}/Home/mediacenter/*[@@templatename='{CommonConstants.VideoAlbumPageTemplateName}']");
+        public Item VideoAlbumWithoutFilterItem => Sitecore.Context.Database.SelectSingleItem($"{Sitecore.Context.Site.RootPath}/Home/mediacenter/*[@@templatename='{CommonConstants.VideoAlbumWithoutFilterPageTemplateName}']");
+        /// <summary>
+        ///Video Album Item in Mediacenter 
+        /// </summary>
+        public Item VideoAlbumWithFilterItem => Sitecore.Context.Database.SelectSingleItem($"{Sitecore.Context.Site.RootPath}/Home/mediacenter/*[@@templatename='{CommonConstants.VideoAlbumWithFilterPageTemplateName}']");
         /// <summary>
         ///Video Album Item in Mediacenter 
         /// </summary>

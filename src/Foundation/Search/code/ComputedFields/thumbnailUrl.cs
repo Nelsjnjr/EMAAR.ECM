@@ -68,7 +68,7 @@ namespace EMAAR.ECM.Foundation.Search.ComputedFields
                         width = 236;
                         height = 148;
                     }                                   
-                    return AdvancedImageHelper.GetImageFieldUrl(imageField, width,height);
+                    return AdvancedImageHelper.GetImageFieldUrl(imageField, width,height).Replace("/sitecore/shell", "") ;
                 }
             }
 

@@ -454,7 +454,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/11/2019 14:49:21</publishTime>
     </File>
     <File Include="Views/Feature/ECM/SEO/SeoDetails/_FavIcon.cshtml">
-      <publishTime>05/01/2019 12:54:32</publishTime>
+      <publishTime>05/06/2019 17:35:45</publishTime>
     </File>
     <File Include="Views/Feature/ECM/SEO/SeoDetails/_PageMetaData.cshtml">
       <publishTime>04/09/2019 12:52:15</publishTime>

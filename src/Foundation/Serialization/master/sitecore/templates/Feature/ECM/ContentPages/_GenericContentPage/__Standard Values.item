@@ -23,13 +23,6 @@ version: 1
 revision: e298c0d4-cb3d-4ffe-bad9-6bafabd8f94f
 
 ----field----
-field: {AF055E82-A161-43EF-BC60-523C7EF01A81}
-name: Title
-key: title
-content-length: 5
-
-$name
-----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
 key: __owner

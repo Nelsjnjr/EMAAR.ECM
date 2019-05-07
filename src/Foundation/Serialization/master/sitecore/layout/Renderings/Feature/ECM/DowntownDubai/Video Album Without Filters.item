@@ -2,9 +2,9 @@
 version: 1
 id: {B3A6593B-E8DE-42C9-AD86-37C6C014DC76}
 database: master
-path: /sitecore/layout/Renderings/Feature/ECM/DowntownDubai/Video Album
+path: /sitecore/layout/Renderings/Feature/ECM/DowntownDubai/Video Album Without Filters
 parent: {D20AAFA5-E333-4877-BDD9-50C2EF5D5108}
-name: Video Album
+name: Video Album Without Filters
 master: {00000000-0000-0000-0000-000000000000}
 template: {2A3E91A0-7987-44B5-AB34-35C2D9DE83B9}
 templatekey: Controller rendering
@@ -34,7 +34,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 926a7e7e-da1b-4c27-a165-ef0905c2c774
+revision: 72cf53ce-1c50-46b5-ba0a-ec1ed477489f
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -49,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-926a7e7e-da1b-4c27-a165-ef0905c2c774
+72cf53ce-1c50-46b5-ba0a-ec1ed477489f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190505T072304Z
+20190506T122945Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -47,7 +47,8 @@ namespace EMAAR.ECM.Feature.Listing.Repositories
             _mediacenterViewmodel.ImageGalleryItem = _sitecoreHelper.ImageGalleryItem;
             _mediacenterViewmodel.ImageAlbumItem = _sitecoreHelper.ImageAlbumItem;
             _mediacenterViewmodel.VideoGalleryItem = _sitecoreHelper.VideoGalleryItem;
-            _mediacenterViewmodel.VideoAlbumItem = _sitecoreHelper.VideoAlbumItem;
+            _mediacenterViewmodel.VideoAlbumWithoutFiltersItem = _sitecoreHelper.VideoAlbumWithoutFilterItem;
+            _mediacenterViewmodel.VideoAlbumWithFiltersItem = _sitecoreHelper.VideoAlbumWithFilterItem;
             _mediacenterViewmodel.VideoItem = _sitecoreHelper.VideoItem;
             _mediacenterViewmodel.NewsListingPageItem = _sitecoreHelper.NewsListingPageItem;
             _mediacenterViewmodel.DownloadPageItem = _sitecoreHelper.DownloadPageItem;
@@ -56,27 +57,43 @@ namespace EMAAR.ECM.Feature.Listing.Repositories
             if (_sitecoreHelper.ImageGalleryItem != null)
             {
                 //Getting Image Albums from Image Gallery in Media Center
-                _mediacenterViewmodel.IsImageAlbum = false;
+                _mediacenterViewmodel.IsImageAlbum = false;                
                 _mediacenterViewmodel.ImageAlbumItems = _listingRepository.GetListingModel(0, 3, null, _sitecoreHelper.ImageGalleryItem.ID.ToGuid().ToString(), CommonConstants.ImageAlbumPageTemplateID, false);
             }
             else if(_sitecoreHelper.ImageAlbumItem !=null)
             {
-                //Getting Image Items from Image Albums in Media Center
+                //Getting Image Items from Image Albums in Media Center         
                 _mediacenterViewmodel.IsImageAlbum = true;
                 _mediacenterViewmodel.ImageAlbumItems = _listingRepository.GetListingModel(0, 3, null, _sitecoreHelper.ImageAlbumItem.ID.ToGuid().ToString(), CommonConstants.ImageItemTemplateID, false);
+                //Setting this to get the gallery page url for "ViewAll"(If image gallery page missing)
+                _mediacenterViewmodel.ImageGalleryItem = _sitecoreHelper.ImageAlbumItem;
             }
             if (_sitecoreHelper.VideoGalleryItem != null)
             {  
                 //Getting Video Albums from Video Gallery in Media Center
                 _mediacenterViewmodel.IsVideoAlbum = false;
-                _mediacenterViewmodel.VideoAlbumItems = _listingRepository.GetListingModel(0, 3, null, _sitecoreHelper.VideoGalleryItem.ID.ToGuid().ToString(), CommonConstants.VideoAlbumPageTemplateID, false);
+                _mediacenterViewmodel.VideoAlbumItem = _sitecoreHelper.VideoAlbumWithoutFilterItem !=null? _sitecoreHelper.VideoAlbumWithoutFilterItem: _sitecoreHelper.VideoAlbumWithFilterItem;
+                _mediacenterViewmodel.VideoAlbumItems = _listingRepository.GetListingModel(0, 3, null, _sitecoreHelper.VideoGalleryItem.ID.ToGuid().ToString(), CommonConstants.VideoAlbumWithoutFiltersTemplateID, false);
             }
-            else if(_sitecoreHelper.VideoAlbumItem != null)
+            else if(_sitecoreHelper.VideoAlbumWithoutFilterItem != null)
             {
-                //Getting Video Items from Video Albums in Media Center
+                //Getting Video Items from Video Albums without Filter template items in Media Center
+                _mediacenterViewmodel.VideoAlbumItem = _sitecoreHelper.VideoAlbumWithoutFilterItem;
                 _mediacenterViewmodel.IsVideoAlbum = true;
-                _mediacenterViewmodel.VideoAlbumItems = _listingRepository.GetListingModel(0, 3, null, _sitecoreHelper.VideoAlbumItem.ID.ToGuid().ToString(), CommonConstants.VideoItemTemplateID, false);
+                _mediacenterViewmodel.VideoAlbumItems = _listingRepository.GetListingModel(0, 3, null, _sitecoreHelper.VideoAlbumWithoutFilterItem.ID.ToGuid().ToString(), CommonConstants.VideoItemTemplateID, false);
+                //Setting this to get the gallery page url for "ViewAll"(If Video gallery page missing)
+                _mediacenterViewmodel.VideoGalleryItem = _sitecoreHelper.VideoAlbumWithoutFilterItem;
             }
+            else if (_sitecoreHelper.VideoAlbumWithFilterItem != null)
+            {
+                //Getting Video Items from Video Albums with Filter Template items in Media Center
+                _mediacenterViewmodel.VideoAlbumItem = _sitecoreHelper.VideoAlbumWithFilterItem;
+                _mediacenterViewmodel.IsVideoAlbum = true;
+                _mediacenterViewmodel.VideoAlbumItems = _listingRepository.GetListingModel(0, 3, null, _sitecoreHelper.VideoAlbumWithFilterItem.ID.ToGuid().ToString(), CommonConstants.VideoItemTemplateID, false);
+                //Setting this to get the gallery page url for "ViewAll"(If Video gallery page missing)
+                _mediacenterViewmodel.VideoGalleryItem = _sitecoreHelper.VideoAlbumWithFilterItem;
+            }
+
             if (_sitecoreHelper.NewsListingPageItem != null)
             {
                 //Getting News from Media Center

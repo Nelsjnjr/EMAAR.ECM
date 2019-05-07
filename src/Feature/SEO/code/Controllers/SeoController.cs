@@ -24,6 +24,7 @@ namespace EMAAR.ECM.Feature.SEO.Controllers
         /// <returns>Metadata/OG/Twitter,Canonical and hreflang</returns>
         public ActionResult GetSeo()
         {
+           
             return View($"{ViewPath}SEO/_Seo.cshtml", _seoRepository.GetSeo());
         }
         #endregion

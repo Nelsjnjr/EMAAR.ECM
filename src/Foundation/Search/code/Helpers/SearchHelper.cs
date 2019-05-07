@@ -47,7 +47,6 @@ namespace EMAAR.ECM.Foundation.Search.Helpers
                             {
                                 innerPredicate = innerPredicate.Or(item => item[searchField.Name].Equals(val));
                             }
-
                             else if (searchField.CompareType == CompareType.GreaterOrEqual)
                             {
                                 innerPredicate = innerPredicate.Or(item => item.date_dt >= DateTime.Parse(val));

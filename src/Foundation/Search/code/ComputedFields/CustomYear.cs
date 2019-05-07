@@ -1,13 +1,10 @@
-﻿using EMAAR.ECM.Foundation.SitecoreExtensions;
+﻿using System;
+using EMAAR.ECM.Foundation.Search.Helpers;
+using EMAAR.ECM.Foundation.SitecoreExtensions;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.ComputedFields;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
-using Sitecore.Resources.Media;
-using System;
-using System.Linq;
-using System.Collections;
-using EMAAR.ECM.Foundation.Search.Helpers;
 
 namespace EMAAR.ECM.Foundation.Search.ComputedFields
 {
@@ -49,14 +46,28 @@ namespace EMAAR.ECM.Foundation.Search.ComputedFields
 
                 if (formattedTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.ImageAlbumPageTemplateID)) ||
                     formattedTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.ImageItemTemplateID)) ||
-                    formattedTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.VideoAlbumPageTemplateID)) ||
+                    formattedTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.VideoAlbumWithoutFiltersTemplateID)) ||
                     formattedTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.VideoItemTemplateID)))
                 {
-                    string query = item.Paths.FullPath + "/ancestor-or-self::*[@@templateid='" + CommonConstants.YearFolderTemplateID + "']";
-                    Item yearFolder = item.Database.SelectSingleItem(query);
-                    if (yearFolder != null && yearFolder.Fields["Year"] != null)
+                    string query = string.Empty;
+                    switch (formattedTemplateId)
                     {
-                        return Convert.ToInt32(yearFolder.Fields["Year"].Value);
+                        case var imageTemplateId when imageTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.ImageAlbumPageTemplateID)) ||
+                        imageTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.ImageItemTemplateID)):
+                            query = item.Paths.FullPath + "/ancestor-or-self::*[@@templateid='" + CommonConstants.ImageAlbumYearFolderTemplateID + "']";
+                            break;
+                        case var videoTemplateId when videoTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.VideoAlbumWithoutFiltersTemplateID)) ||
+                        videoTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.VideoItemTemplateID)):
+                            query = item.Paths.FullPath + "/ancestor-or-self::*[@@templateid='" + CommonConstants.VideoAlbumYearFolderTemplateID + "']";
+                            break;
+
+                        default:
+                            break;
+                    }                 
+                    Item yearFolder = item.Database.SelectSingleItem(query);
+                    if (yearFolder != null && int.TryParse(yearFolder.Name, out int year))
+                    {
+                         return year;
                     }
                 }
                 else if (formattedTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.NewsTemplateID)) ||
@@ -66,16 +77,25 @@ namespace EMAAR.ECM.Foundation.Search.ComputedFields
                     {
                         DateField dt = item.Fields["Date"];
                         return dt.DateTime.Year;
-
                     }
                     else
                     {
-
-                        string query = item.Paths.FullPath + "/ancestor-or-self::*[@@templateid='" + CommonConstants.YearFolderTemplateID + "']";
-                        Item yearFolder = item.Database.SelectSingleItem(query);
-                        if (yearFolder != null && yearFolder.Fields["Year"] != null)
+                        string query = string.Empty;
+                        switch (formattedTemplateId)
                         {
-                            return Convert.ToInt32(yearFolder.Fields["Year"].Value);
+                            case var newsTemplateId when newsTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.NewsTemplateID)):
+                                query = item.Paths.FullPath + "/ancestor-or-self::*[@@templateid='" + CommonConstants.NewsYearFolderTemplateID + "']";
+                                break;
+                            case var eventsTemplateId when eventsTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.EventsTemplateID)):
+                                query = item.Paths.FullPath + "/ancestor-or-self::*[@@templateid='" + CommonConstants.EventsYearFolderTemplateID + "']";
+                                break;
+                            default:
+                                break;
+                        }                      
+                        Item yearFolder = item.Database.SelectSingleItem(query);
+                        if (yearFolder != null && int.TryParse(yearFolder.Name, out int year))
+                        {
+                            return year;
                         }
                     }
                 }
@@ -85,8 +105,11 @@ namespace EMAAR.ECM.Foundation.Search.ComputedFields
             {
                 string itemId = string.Empty;
                 if (item != null)
+                {
                     itemId = item.ID.ToString();
-                Sitecore.Diagnostics.Log.Error(this.GetType().Name + " - Item ID: " + itemId, ex, this);
+                }
+
+                Sitecore.Diagnostics.Log.Error(GetType().Name + " - Item ID: " + itemId, ex, this);
 
             }
 
@@ -95,6 +118,6 @@ namespace EMAAR.ECM.Foundation.Search.ComputedFields
 
         #endregion
 
-      
+
     }
 }

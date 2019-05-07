@@ -225,6 +225,7 @@
     <Compile Include="Services\SitecoreHelper.cs" />
     <Compile Include="Settings\SitecoreSettings.cs" />
     <Compile Include="SitecoreGuids.cs" />
+    <Compile Include="Tokens\CustomToken.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Foundation\ECM\SitecoreExtensions\EMAAR.ECM.Foundation.SitecoreExtensions.config">

@@ -16,7 +16,7 @@ namespace EMAAR.ECM.Feature.Listing.Interfaces
         
         IVideo_Gallery_Page GetVideoGalleryModel();
 
-        IVideo_Album GetVideoAlbumsModel(out bool ShowFilters);
+        IVideo_Album_Without_Filters GetVideoAlbumsModel(out bool ShowFilters);
 
         INews_Listing_Page GetNewsListingPageModel();
 

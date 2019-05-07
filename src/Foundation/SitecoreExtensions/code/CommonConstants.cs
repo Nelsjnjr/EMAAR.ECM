@@ -23,6 +23,14 @@
         /// </summary>
         public static string ContentPageHeaderCss { get; } = "siteHeader innerHeader";
         /// <summary>
+        /// Title Field Name
+        /// </summary>
+        public static string Title { get; } = "Title";
+        /// <summary>
+        /// Introduction Field Name
+        /// </summary>
+        public static string Introduction { get; } = "Introduction";
+        /// <summary>
         /// Getting Contact Types
         /// </summary>
         public enum ContactTypes { Email, Phone, Map };
@@ -68,9 +76,13 @@
         /// </summary>
         public const string ImageItemPageTemplateName = "Image Item";
         /// <summary>
-        /// Template name for Video Album
+        /// Template name for Video Album Without Filters
         /// </summary>
-        public const string VideoAlbumPageTemplateName = "Video Album";
+        public const string VideoAlbumWithoutFilterPageTemplateName = "Video Album Without Filters";
+        /// <summary>
+        /// Template name for Video Album With Filters
+        /// </summary>
+        public const string VideoAlbumWithFilterPageTemplateName = "Video Album With Filters";
         /// <summary>
         /// Template name for Image Gallery Page
         /// </summary>
@@ -187,9 +199,13 @@
         public const string ImageAlbumPageTemplateID = "{5E7F38ED-D38C-4EA8-8DBD-D3606F4E1E08}";
 
         /// <summary>
-        /// Video Album Page Template ID
+        /// Video Album with out Filter Template ID
         /// </summary>
-        public const string VideoAlbumPageTemplateID = "{2C088140-3A80-4CB7-9E80-198AFCB01574}";
+        public const string VideoAlbumWithoutFiltersTemplateID = "{2C088140-3A80-4CB7-9E80-198AFCB01574}";
+        /// <summary>
+        /// Video Album with  Filter Template ID
+        /// </summary>
+        public const string VideoAlbumWithFiltersTemplateID = "{C14D3C3F-2CA3-4AC1-9FCB-F8BB6D27DD04}";
 
         /// <summary>
         /// Image Item Template ID
@@ -223,6 +239,26 @@
         /// Video Item Template ID
         /// </summary>
         public const string YearFolderTemplateID = "{75D66F86-B219-4070-9820-AB948FD107A4}";
+        /// <summary>
+        /// Image Album Folder Template ID
+        /// </summary>
+        public const string ImageAlbumYearFolderTemplateID = "{6D64A541-EA75-4422-BE92-02541C818115}";
+        /// <summary>
+        /// Video Album Folder Template ID
+        /// </summary>
+        public const string VideoAlbumYearFolderTemplateID = "{F3F807F7-01D0-419F-B0FD-11A9C4E66A7B}";
+        /// <summary>
+        /// News Folder Template ID
+        /// </summary>
+        public const string NewsYearFolderTemplateID = "{C8761BF7-FA60-4FED-9CE7-55899C8A45D7}";
+        /// <summary>
+        /// Downloads Folder Template ID
+        /// </summary>
+        public const string DownloadsYearFolderTemplateID = "{0BA80BCD-E9AA-4D18-B97F-B2EF67191A8B}";
+        /// <summary>
+        /// Events Folder Template ID
+        /// </summary>
+        public const string EventsYearFolderTemplateID = "{01E451AA-9122-4601-A53F-98557F85FE79}";     
 
         /// <summary>
         /// All Years dictionary key

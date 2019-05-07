@@ -46,23 +46,31 @@ namespace EMAAR.ECM.Feature.Listing.Interface
         /// </summary>
          Item ImageGalleryItem { get; set; }
         /// <summary>
-        /// Image Gallery Item in Mediacenter 
+        /// Image Album Item in Mediacenter 
         /// </summary>
          Item ImageAlbumItem { get; set; }
         /// <summary>
-        /// Image Album Item in Mediacenter 
+        /// Video Gallery Item in Mediacenter 
         /// </summary>
          Item VideoGalleryItem { get; set; }
         /// <summary>
-        /// Video Gallery Item in Mediacenter 
+        /// Video Album Without Filters/ Video Album With Filters Item in Mediacenter 
         /// </summary>
-         Item VideoAlbumItem { get; set; }
+        Item VideoAlbumItem { get; set; }
         /// <summary>
-        /// Video Album Item in Mediacenter 
+        /// Video Album Without Filters Item in Mediacenter 
         /// </summary>
-         Item VideoItem { get; set; }
+        Item VideoAlbumWithoutFiltersItem { get; set; }
         /// <summary>
-        /// Video Item in Mediacenter 
+        /// Video Album With Filters Item in Mediacenter 
+        /// </summary>
+        Item VideoAlbumWithFiltersItem { get; set; }
+        /// <summary>
+        /// Video  Item in Mediacenter 
+        /// </summary>
+        Item VideoItem { get; set; }
+        /// <summary>
+        /// News in Mediacenter 
         /// </summary>
          Item NewsListingPageItem { get; set; }
         /// <summary>

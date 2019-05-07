@@ -131,7 +131,7 @@
     {
         <div class="media-header">
             <h3 class="heading">@Sitecore.Globalization.Translate.Text("imagegallery")</h3>
-            <a href="@(Model.ImageAlbumItem != null ? Sitecore.Links.LinkManager.GetItemUrl(Model.ImageAlbumItem, options) : String.Empty)" class="link">
+            <a href="@(Model.ImageGalleryItem != null ? Sitecore.Links.LinkManager.GetItemUrl(Model.ImageGalleryItem, options) : String.Empty)" class="link">
                 @Sitecore.Globalization.Translate.Text("viewall")
                 <i>
                     <img src="~/Assets/Project/ECM/images/icon/btn-arrow.svg" alt="arrow">
@@ -166,7 +166,7 @@
     {
         <div class="media-header">
             <h3 class="heading">@Sitecore.Globalization.Translate.Text("videogallery")</h3>
-            <a href="@(Model.VideoAlbumItem != null ? Sitecore.Links.LinkManager.GetItemUrl(Model.VideoAlbumItem, options) : String.Empty)" class="link">
+            <a href="@(Model.VideoGalleryItem != null ? Sitecore.Links.LinkManager.GetItemUrl(Model.VideoGalleryItem, options) : String.Empty)" class="link">
                 @Sitecore.Globalization.Translate.Text("viewall")
                 <i>
                     <img src="~/Assets/Project/ECM/images/icon/btn-arrow.svg" alt="arrow">
