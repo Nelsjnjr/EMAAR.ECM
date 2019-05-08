@@ -19,7 +19,22 @@
                 {
                     <div class="col-6 col-md-3">
                         <div class="footer-ul">
-                            <h2 class="footer-title upperCase">@Html.Glass().Editable(rootNav, x => x.Navigation_Title)</h2>
+                            @{
+                                //Getting Title from Link item
+                                if (rootNav.Navigation_Link != null)
+                                {
+                                    var rootItem = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(rootNav.Navigation_Link.TargetId));
+                                    if (rootItem != null)
+                                    {
+                                        <h2 class="footer-title upperCase"> @Html.Sitecore().Field("Title", rootItem)</h2>
+
+                                    }
+                                    else //If in case of external url getting Navigation item Title
+                                    {
+                                        <h2 class="footer-title upperCase">  @rootNav.Name</h2>
+                                    }
+                                }
+                            }
                             @{
                                 <!--Link with Sub navigation-->
                                 var subNavigation = new List<ISub_Navigation>(rootNav.Sub_Navigations).Count;
@@ -34,7 +49,20 @@
                                                 <li>
                                                     @using (Html.Glass().BeginRenderLink(subNav, x => x.Navigation_Link, isEditable: true))
                                                     {
-                                                        @Html.Glass().Editable(subNav, x => x.Navigation_Title)
+                                                        //Getting Title from Link item
+                                                        if (subNav.Navigation_Link != null)
+                                                        {
+                                                            var subNavItem = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(subNav.Navigation_Link.TargetId));
+                                                            if (subNavItem != null)
+                                                            {
+                                                                @Html.Sitecore().Field("Title", subNavItem)
+
+                                                            }
+                                                            else //If in case of external url getting Navigation item Title
+                                                            {
+                                                                @subNav.Name
+                                                            }
+                                                        }
                                                     }
                                                 </li>
                                             }

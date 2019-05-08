@@ -11,13 +11,6 @@ templatekey: Video Item
 created: 20190424T085746Z
 
 ----field----
-field: {EB2D8D5B-6335-44D6-9237-6AA5CE248871}
-name: Years
-key: years
-content-length: 4
-
-2019
-----field----
 field: {FBA4C0E5-44E0-4E57-9611-4AB5DC370F9C}
 name: Categories
 key: categories
@@ -27,7 +20,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 480fd3ff-d701-4500-9762-a88a5799c708
+revision: 068aecb0-afdf-4ef0-9519-b6d962fc5e94
 
 ----field----
 field: {162B4DCB-8AEB-4385-B1AC-D8A9256B775E}
@@ -40,9 +33,9 @@ Video 2019 2
 field: {F89F4F46-510B-4DFB-AE2E-F5C234E7AAE2}
 name: Video
 key: video
-content-length: 63
+content-length: 78
 
-<link linktype="external" url="https://youtu.be/UqQrXxi3i20" />
+<link linktype="external" url="https://www.youtube.com/watch?v=3XkbJi9EeiA" />
 ----field----
 field: {E6AE526A-FA8B-4B69-A0D1-277162D7FA7F}
 name: Image
@@ -63,18 +56,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-480fd3ff-d701-4500-9762-a88a5799c708
+068aecb0-afdf-4ef0-9519-b6d962fc5e94
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190425T111108Z
+20190430T102642Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 17
 
-sitecore\admin
+sitecore\NJesudos

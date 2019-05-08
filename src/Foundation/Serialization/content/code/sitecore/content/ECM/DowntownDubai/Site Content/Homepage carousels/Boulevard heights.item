@@ -20,7 +20,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: eb8f9050-a3ba-4030-bd74-ba8078f22d02
+revision: b698c5b6-df97-4b65-89ec-220ebda57768
 
 ----field----
 field: {F9401C09-1121-4BB5-ABED-48BC2B29DE71}
@@ -49,13 +49,6 @@ content-length: 248
     <li>Infinity Pool</li>
 </ul>
 ----field----
-field: {F6BA7B09-176F-4BB1-A680-C070D4B92C65}
-name: Image
-key: image
-content-length: 65
-
-<image mediaid="{4C583F9D-9299-4B1E-9256-66DE25761184}" ></image>
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -68,14 +61,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-eb8f9050-a3ba-4030-bd74-ba8078f22d02
+b698c5b6-df97-4b65-89ec-220ebda57768
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190424T090010Z
+20190501T124118Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

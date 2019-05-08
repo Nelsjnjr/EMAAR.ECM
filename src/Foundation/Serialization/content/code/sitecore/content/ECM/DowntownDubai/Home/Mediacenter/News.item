@@ -8,15 +8,8 @@ name: News
 master: {00000000-0000-0000-0000-000000000000}
 template: {21FC4198-E485-4AA7-B60E-4CC9E8F33C7B}
 templatekey: News Listing Page
-created: 20190426T111242Z
+created: 20190429T110455Z
 
-----field----
-field: {2A92BE65-8FF2-46E3-898A-8577502D5D53}
-name: Show Filters
-key: show filters
-content-length: 1
-
-1
 ----field----
 field: {44195A16-B523-44EF-B2FD-6304B28E16FB}
 name: No of Records
@@ -30,26 +23,12 @@ version: 1
 revision: 1367af32-301f-41eb-b330-4782fd7d358e
 
 ----field----
-field: {E98BF0CB-57FB-4353-9C23-1AD8D5961F2D}
-name: Title
-key: title
-content-length: 4
-
-News
-----field----
 field: {0CBA5220-AA8B-4F75-BCD6-68000B38D8C1}
 name: Introduction
 key: introduction
 content-length: 35
 
 News about Downtown Dubai Community
-----field----
-field: {D9D30585-793D-4FC2-B6D1-7A47315DCBE9}
-name: Navigation Title
-key: navigation title
-content-length: 4
-
-News
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created

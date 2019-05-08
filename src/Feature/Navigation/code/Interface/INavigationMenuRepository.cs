@@ -1,5 +1,5 @@
 ﻿#region namespace
-using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
+using EMAAR.ECM.Foundation.ORM.Models;
 #endregion
 namespace EMAAR.ECM.Feature.Navigation.Interface
 {
@@ -25,6 +25,11 @@ namespace EMAAR.ECM.Feature.Navigation.Interface
         /// </summary>
         /// <returns>Left navigation</returns>
         ILeftNavigation GetLeftNavigation();
+        /// <summary>
+        /// Getting Sitemap
+        /// </summary>
+        /// <returns>Sitemap</returns>
+        ISitemapViewModel GetSitemap();
         #endregion
     }
 }

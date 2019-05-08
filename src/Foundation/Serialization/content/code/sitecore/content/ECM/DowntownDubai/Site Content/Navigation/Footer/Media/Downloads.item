@@ -16,13 +16,6 @@ version: 1
 revision: ffd69a30-dffb-48f0-ac65-c10a5cfc0bcb
 
 ----field----
-field: {B66E4688-AB06-4FF0-A976-AA2492379CF5}
-name: Navigation Title
-key: navigation title
-content-length: 9
-
-Downloads
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created

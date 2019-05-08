@@ -6,8 +6,8 @@ path: /sitecore/content/ECM/DowntownDubai/Home/Video without filters/2018
 parent: {BB8889BD-A900-40F5-9D37-EA70B43819A2}
 name: 2018
 master: {00000000-0000-0000-0000-000000000000}
-template: {75D66F86-B219-4070-9820-AB948FD107A4}
-templatekey: Year Folder
+template: {806B8954-15D7-4FE6-BC95-DA8CE606EEAC}
+templatekey: VideoAlbum Without Filters Folder
 created: 20190505T074339Z
 
 ----field----
@@ -27,7 +27,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 2b29f84c-53bd-42a6-b441-a213c5c33ebe
+revision: be678bb8-812c-4cde-a634-9fe3b4593fee
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -42,14 +42,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2b29f84c-53bd-42a6-b441-a213c5c33ebe
+be678bb8-812c-4cde-a634-9fe3b4593fee
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190426T114730Z
+20190506T125546Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -20,7 +20,7 @@ namespace EMAAR.ECM.Feature.Listing.Interfaces
 
         INews_Listing_Page GetNewsListingPageModel();
 
-        IEvents_Listing_Page GetEventsListingPageModel();
+        IEvents_Listing_Page GetEventsListingPageModel(out string Year);
 
         IDownloads_Page GetDownloadsListingPageModel();
 

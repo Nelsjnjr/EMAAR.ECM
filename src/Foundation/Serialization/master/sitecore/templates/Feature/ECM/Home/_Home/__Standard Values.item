@@ -34,8 +34,15 @@ content-length: 145
 ----version----
 language: en
 version: 1
-revision: e91cbe1f-41bf-444e-a050-a4730ce0a348
+revision: 1e5ec5be-062a-491c-be51-07314bc6239c
 
+----field----
+field: {95191AF9-0440-42FD-AC4A-841CB29F6E0B}
+name: Include in Sitemap
+key: include in sitemap
+content-length: 1
+
+1
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -63,14 +70,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e91cbe1f-41bf-444e-a050-a4730ce0a348
+1e5ec5be-062a-491c-be51-07314bc6239c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190327T115945Z
+20190508T082436Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -20,7 +20,7 @@ content-length: 1
 ----version----
 language: en
 version: 1
-revision: 7f219885-fac2-4998-807f-5d2122ff510d
+revision: ffb98220-bf00-4faa-a0f6-4a04f5ca1cc5
 
 ----field----
 field: {F9401C09-1121-4BB5-ABED-48BC2B29DE71}
@@ -48,13 +48,6 @@ content-length: 221
     <li>Only steps away from the vibrant Sheikh Mohammed boulevard</li>
 </ul>
 ----field----
-field: {F6BA7B09-176F-4BB1-A680-C070D4B92C65}
-name: Image
-key: image
-content-length: 224
-
-<image mediapath="/Images/Feature/ECM/slider2" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Feature/ECM/slider2" mediaid="{5AF38824-DD81-4940-9D25-C0EECD544990}" ></image>
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -67,14 +60,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7f219885-fac2-4998-807f-5d2122ff510d
+ffb98220-bf00-4faa-a0f6-4a04f5ca1cc5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190424T085813Z
+20190502T104500Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

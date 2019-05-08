@@ -49,13 +49,6 @@ content-length: 248
     <li>Infinity Pool</li>
 </ul>
 ----field----
-field: {F6BA7B09-176F-4BB1-A680-C070D4B92C65}
-name: Image
-key: image
-content-length: 65
-
-<image mediaid="{4C583F9D-9299-4B1E-9256-66DE25761184}" ></image>
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created

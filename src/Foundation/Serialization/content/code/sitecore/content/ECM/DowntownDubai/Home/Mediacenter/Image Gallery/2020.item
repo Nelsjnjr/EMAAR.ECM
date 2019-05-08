@@ -6,22 +6,36 @@ path: /sitecore/content/ECM/DowntownDubai/Home/Mediacenter/Image Gallery/2020
 parent: {8A379D29-25E4-4DE5-B3AA-786E1E817F7E}
 name: 2020
 master: {00000000-0000-0000-0000-000000000000}
-template: {75D66F86-B219-4070-9820-AB948FD107A4}
-templatekey: Year Folder
-created: 20190425T080441Z
+template: {6D64A541-EA75-4422-BE92-02541C818115}
+templatekey: ImageAlbumFolder
+created: 20190429T110454Z
 
 ----field----
-field: {105BAD38-1786-44F3-8ADA-ADB697F4EC9B}
-name: Year
-key: year
-content-length: 4
+field: {44195A16-B523-44EF-B2FD-6304B28E16FB}
+name: No of Records
+key: no of records
+content-length: 2
 
-2020
+10
 ----version----
 language: en
 version: 1
-revision: dbecac09-b4a5-4873-8e85-2db1e96bad9e
+revision: 9ce3d791-dbe0-472e-aeb4-12b11fbc5dbb
 
+----field----
+field: {0CBA5220-AA8B-4F75-BCD6-68000B38D8C1}
+name: Introduction
+key: introduction
+content-length: 118
+
+Description of Image Gallery Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+----field----
+field: {FE683723-D22F-4A7E-A074-7E3BAB2817C4}
+name: Load More Label
+key: load more label
+content-length: 9
+
+Load more
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -35,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-dbecac09-b4a5-4873-8e85-2db1e96bad9e
+9ce3d791-dbe0-472e-aeb4-12b11fbc5dbb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190426T114704Z
+20190507T052326Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -13,22 +13,15 @@ created: 20190423T130608Z
 ----version----
 language: en
 version: 1
-revision: 882f63aa-7e7b-49f6-9ea0-d595e96da2c1
+revision: 8a25d91d-f0a4-4646-b058-145e81bcd1a7
 
-----field----
-field: {C00FBB0E-51B0-4563-9CEA-A39FB1DD64C2}
-name: Navigation Title
-key: navigation title
-content-length: 10
-
-CatContent
 ----field----
 field: {A5EF15AE-8FED-49C5-ADD1-33F750DF450B}
 name: Navigation Link
 key: navigation link
-content-length: 124
+content-length: 88
 
-<link text="" anchor="" linktype="internal" class="" title=""  querystring="" id="{516BCC5C-E7D1-4ADE-A606-97BABEC5565B}" />
+<link text="yahoo" linktype="external" url="http://www.yahoo.com" anchor="" target="" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -42,14 +35,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-882f63aa-7e7b-49f6-9ea0-d595e96da2c1
+8a25d91d-f0a4-4646-b058-145e81bcd1a7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190423T130804Z
+20190502T114233Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

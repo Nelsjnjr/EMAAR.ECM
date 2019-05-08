@@ -16,13 +16,6 @@ version: 1
 revision: 8c7a1e46-8c84-4789-a4fd-82e2e21649b3
 
 ----field----
-field: {B66E4688-AB06-4FF0-A976-AA2492379CF5}
-name: Navigation Title
-key: navigation title
-content-length: 5
-
-Rules
-----field----
 field: {6C2D0631-17E6-4BBB-BEDF-CEA0939448C9}
 name: Navigation Link
 key: navigation link

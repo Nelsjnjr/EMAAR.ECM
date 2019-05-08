@@ -11,13 +11,6 @@ templatekey: Video Item
 created: 20190424T091509Z
 
 ----field----
-field: {EB2D8D5B-6335-44D6-9237-6AA5CE248871}
-name: Years
-key: years
-content-length: 4
-
-2020
-----field----
 field: {FBA4C0E5-44E0-4E57-9611-4AB5DC370F9C}
 name: Categories
 key: categories

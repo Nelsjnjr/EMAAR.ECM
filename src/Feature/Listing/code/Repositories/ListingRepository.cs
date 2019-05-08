@@ -9,6 +9,7 @@ using EMAAR.ECM.Foundation.Search.Interfaces;
 using EMAAR.ECM.Foundation.Search.Models;
 using EMAAR.ECM.Foundation.SitecoreExtensions;
 using Glass.Mapper.Sc.Web.Mvc;
+using Sitecore.Data;
 
 namespace EMAAR.ECM.Feature.Listing.Repositories
 {
@@ -77,7 +78,7 @@ namespace EMAAR.ECM.Feature.Listing.Repositories
                 conditions.Add(new SearchCondition() { Name = CommonConstants.YearFacetField, Value = DateTime.UtcNow.Year.ToString(), CompareType = CompareType.ExactMatch });
             }
             //Adding filter condition for Event type
-            if (listItemTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.EventsTemplateID)) && filter!=null && !filter.ToLower().Contains(CommonConstants.EventType.ToLower()))
+            if (listItemTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.EventsTemplateID)) && filter != null && !filter.ToLower().Contains(CommonConstants.EventType.ToLower()))
             {
                 conditions.Add(new SearchCondition() { Name = CommonConstants.EventType, Value = DateTime.UtcNow.ToString(), CompareType = CompareType.GreaterOrEqual });
             }
@@ -139,17 +140,19 @@ namespace EMAAR.ECM.Feature.Listing.Repositories
 
             }
             if (listItemTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.ImageAlbumPageTemplateID)) ||
-            listItemTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.VideoAlbumWithoutFiltersTemplateID))||
+            listItemTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.VideoAlbumWithoutFiltersTemplateID)) ||
             listItemTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.VideoAlbumWithFiltersTemplateID)))
             {
-                string contentItemTemplateId = String.Empty;
+                string contentItemTemplateId = string.Empty;
                 if (listItemTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.VideoAlbumWithoutFiltersTemplateID)) ||
                     listItemTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.VideoAlbumWithFiltersTemplateID)))
                 {
                     contentItemTemplateId = CommonConstants.VideoItemTemplateID;
                 }
                 else
-                    contentItemTemplateId=CommonConstants.ImageItemTemplateID;                   
+                {
+                    contentItemTemplateId = CommonConstants.ImageItemTemplateID;
+                }
                 //Get First item's image of each album as cover image
                 int count = 0;
                 while (count < resultsList.results.results.Count)
@@ -260,10 +263,15 @@ namespace EMAAR.ECM.Feature.Listing.Repositories
         /// Method to get Events model
         /// </summary>       
         /// <returns>IEvents_Listing_Page<ListingSearchResultItem> </returns> 
-        public IEvents_Listing_Page GetEventsListingPageModel()
+        public IEvents_Listing_Page GetEventsListingPageModel(out string Year)
         {
+            Year = string.Empty;
             IMvcContext mvcContext = _mvcContext();
             IEvents_Listing_Page eventsModel = mvcContext.GetContextItem<IEvents_Listing_Page>();
+            if (mvcContext.ContextItem.TemplateID.Equals(ID.Parse(CommonConstants.EventsYearFolderTemplateID)))
+            {
+                Year = mvcContext.ContextItem.Name;
+            }
             return eventsModel ?? _eventsModel;
         }
 

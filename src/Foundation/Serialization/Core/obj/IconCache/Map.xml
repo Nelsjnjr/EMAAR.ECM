@@ -166,4 +166,14 @@
   <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Zoom/66" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text/Zoom/10" ItemIcon="/temp/iconcache/applications/32x32/document.png" />
   <Item ItemPath="/sitecore/system/Settings/Html Editor Profiles/ECM Bullet only Rich Text" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/content/Documents and settings" ItemIcon="/temp/IconCache/Applications/16x16/documents_gear.png" />
+  <Item ItemPath="/sitecore/content/Documents and settings/All users" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/content/Documents and settings/All users/Start menu" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/content/Documents and settings/All users/Start menu/Programs" ItemIcon="/temp/IconCache/Applications/24x24/media_play_green.png" />
+  <Item ItemPath="/sitecore/content/Documents and settings/All users/Start menu/Programs/Sitemap Manager" ItemIcon="/temp/IconCache/applications/32x32/text_tree.png" />
+  <Item ItemPath="/sitecore/content/Documents and settings/All users/Start menu/Programs/Sitemap Manager/Sitemap Manager" ItemIcon="/temp/IconCache/applications/32x32/text_tree.png" />
+  <Item ItemPath="/sitecore/layout" ItemIcon="/temp/IconCache/Applications/16x16/windows.png" />
+  <Item ItemPath="/sitecore/layout/Layouts" ItemIcon="/temp/IconCache/Applications/16x16/windows.png" />
+  <Item ItemPath="/sitecore/layout/Layouts/Applications" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/layout/Layouts/Applications/SitemapManager" ItemIcon="/temp/iconcache/applications/16x16/text_rich_marked.png" />
 </ItemIconCache>

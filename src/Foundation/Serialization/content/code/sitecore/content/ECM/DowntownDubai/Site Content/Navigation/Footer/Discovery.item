@@ -16,13 +16,6 @@ version: 1
 revision: 598951f7-829f-4d63-a6dc-32c1ab95ebde
 
 ----field----
-field: {C00FBB0E-51B0-4563-9CEA-A39FB1DD64C2}
-name: Navigation Title
-key: navigation title
-content-length: 9
-
-Discovery
-----field----
 field: {0C5FD746-6B36-451B-A3E1-19F9B101F442}
 name: Sub Navigations
 key: sub navigations

@@ -1,9 +1,11 @@
 ﻿#region namespace
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using EMAAR.ECM.Feature.Navigation.Interface;
 using EMAAR.ECM.Feature.Navigation.Settings;
 using EMAAR.ECM.Foundation.DependencyInjection;
+using EMAAR.ECM.Foundation.ORM.Models;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types;
 using EMAAR.ECM.Foundation.SitecoreExtensions;
@@ -11,6 +13,8 @@ using EMAAR.ECM.Foundation.SitecoreExtensions.Interfaces;
 using Glass.Mapper.Sc.Web.Mvc;
 using Sitecore.Data;
 using Sitecore.Data.Items;
+using System.Collections.Specialized;
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base;
 #endregion
 namespace EMAAR.ECM.Feature.Navigation.Repositories
 {
@@ -26,15 +30,17 @@ namespace EMAAR.ECM.Feature.Navigation.Repositories
         private readonly ISitecoreHelper _sitecoreHelper;
         private readonly ILeftNavigation _leftNavigation;
         private readonly IFooterViewModel _footerViewModel;
+        private readonly ISitemapViewModel _sitemapViewModel;
         #endregion
         #region constructor
-        public NavigationMenuRepository(Func<IMvcContext> mvcContext, ILeftNavigation leftNavigation,IFooterViewModel footerViewModel, IHeaderViewModel headerViewModel, IFooter footer, ISitecoreHelper sitecoreHelper)
+        public NavigationMenuRepository(Func<IMvcContext> mvcContext, ISitemapViewModel sitemapViewModel, ILeftNavigation leftNavigation,IFooterViewModel footerViewModel, IHeaderViewModel headerViewModel, IFooter footer, ISitecoreHelper sitecoreHelper)
         {
             _sitecoreHelper = sitecoreHelper;
             _headerViewModel = headerViewModel;
             _mvcContext = mvcContext;
             _leftNavigation = leftNavigation;
             _footerViewModel = footerViewModel;
+            _sitemapViewModel = sitemapViewModel;
         }
         #endregion
         #region method
@@ -125,6 +131,21 @@ namespace EMAAR.ECM.Feature.Navigation.Repositories
                     break;
             }
             return _leftNavigation;
+        }
+        public ISitemapViewModel GetSitemap()
+        {
+            IMvcContext mvcContext = _mvcContext();
+            INavigable rootItem = mvcContext.GetRootItem<INavigable>();              
+            var sitemapLevel1 = rootItem.Children;
+            foreach (var sitemapLevel1Item in sitemapLevel1)
+            {
+                var sitemapLevel2Item = sitemapLevel1Item.Children.Where(p => p.Include_In_Sitemap);
+                _sitemapViewModel.SitemapItems.Add(
+                    new KeyValuePair<INavigable, List<INavigable>>(sitemapLevel1Item, sitemapLevel2Item.ToList()));                
+            }
+            return _sitemapViewModel;
+
+
         }
         #endregion
 

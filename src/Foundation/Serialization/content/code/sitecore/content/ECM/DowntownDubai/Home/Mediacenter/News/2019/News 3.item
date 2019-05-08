@@ -24,18 +24,18 @@ key: date
 content-length: 16
 
 20190420T000000Z
+----field----
+field: {6D0A86EF-D757-4860-80F8-A79F4ECFDCC9}
+name: Amenities
+key: amenities
+content-length: 77
+
+{BB4FDB23-404C-4980-99F3-1634D662270D}|{C4ED3C56-2EEB-4C35-B925-5805C4230687}
 ----version----
 language: en
 version: 1
-revision: e25b48cd-6b93-49e8-989d-aa73e7b912e7
+revision: b633c1e0-9d25-4141-9565-a2ef35a7975c
 
-----field----
-field: {AF055E82-A161-43EF-BC60-523C7EF01A81}
-name: Title
-key: title
-content-length: 68
-
-Curabitur arcu erat, accumsan haujiloyt aust, aclositer 2019-->News3
 ----field----
 field: {55768EBD-52C4-4340-9471-2C948D429BCF}
 name: Introduction
@@ -47,9 +47,16 @@ News3 Introduction
 field: {82677F75-244E-42A8-BCB4-48993767346E}
 name: Banner
 key: banner
-content-length: 166
+content-length: 58
 
-<image mediapath="" alt="news-thumb" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{A158FD6B-D92C-4DE6-ABBA-A9E16BBDF3CF}" />
+<image mediaid="{6A5D6A17-9A2F-4B6D-A724-E46312C0A9C3}" />
+----field----
+field: {9E0362E2-325D-4DD1-8559-188DED2F6380}
+name: Related Pages
+key: related pages
+content-length: 77
+
+{6D90E52D-0B8E-4893-8D1A-E9822E9941F2}|{B4212038-CA0C-4E79-871B-04498C5CC2CF}
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -63,14 +70,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e25b48cd-6b93-49e8-989d-aa73e7b912e7
+b633c1e0-9d25-4141-9565-a2ef35a7975c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190429T115545Z
+20190507T073147Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

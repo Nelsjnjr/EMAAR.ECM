@@ -7,7 +7,7 @@ parent: {110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}
 name: Video without filters
 master: {00000000-0000-0000-0000-000000000000}
 template: {2C088140-3A80-4CB7-9E80-198AFCB01574}
-templatekey: Video Album
+templatekey: Video Album Without Filters
 created: 20190505T074339Z
 
 ----field----
@@ -22,20 +22,6 @@ language: en
 version: 1
 revision: a4af4b4a-02e7-4851-9e3e-596bc4687fcc
 
-----field----
-field: {E98BF0CB-57FB-4353-9C23-1AD8D5961F2D}
-name: Title
-key: title
-content-length: 13
-
-Video Gallery
-----field----
-field: {D9D30585-793D-4FC2-B6D1-7A47315DCBE9}
-name: Navigation Title
-key: navigation title
-content-length: 13
-
-Video Gallery
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created

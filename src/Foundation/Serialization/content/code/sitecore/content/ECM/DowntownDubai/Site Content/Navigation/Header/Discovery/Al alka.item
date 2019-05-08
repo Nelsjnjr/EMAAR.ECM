@@ -16,13 +16,6 @@ version: 1
 revision: 4d3b592f-fe90-41bc-9143-4d2ed0a47708
 
 ----field----
-field: {B66E4688-AB06-4FF0-A976-AA2492379CF5}
-name: Navigation Title
-key: navigation title
-content-length: 7
-
-Al Alka
-----field----
 field: {6C2D0631-17E6-4BBB-BEDF-CEA0939448C9}
 name: Navigation Link
 key: navigation link

@@ -10,25 +10,18 @@ template: {6D04D32E-59D9-4F3F-8748-3C89E5247366}
 templatekey: Downloads Page
 created: 20190427T154049Z
 
+----field----
+field: {44195A16-B523-44EF-B2FD-6304B28E16FB}
+name: No of Records
+key: no of records
+content-length: 1
+
+2
 ----version----
 language: en
 version: 1
-revision: a6248662-a1e2-432e-be33-21ff033b4f9f
+revision: 1326227e-5984-45cc-a10f-8007217f7d02
 
-----field----
-field: {E98BF0CB-57FB-4353-9C23-1AD8D5961F2D}
-name: Title
-key: title
-content-length: 9
-
-Downloads
-----field----
-field: {D9D30585-793D-4FC2-B6D1-7A47315DCBE9}
-name: Navigation Title
-key: navigation title
-content-length: 9
-
-Downloads
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -42,18 +35,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a6248662-a1e2-432e-be33-21ff033b4f9f
+1326227e-5984-45cc-a10f-8007217f7d02
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190429T082002Z
+20190430T104913Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 17
 
-sitecore\admin
+sitecore\NJesudos

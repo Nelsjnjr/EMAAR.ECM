@@ -13,7 +13,7 @@ created: 20190421T125416Z
 ----version----
 language: en
 version: 1
-revision: 69ad7b08-716b-42aa-b306-500423806e76
+revision: f2a0f0a6-6ab1-4fb6-8811-9318bf39bd2e
 
 ----field----
 field: {36CFAA10-F10C-40DD-9BBC-A8F7160DD389}
@@ -23,12 +23,12 @@ content-length: 1
 
 1
 ----field----
-field: {D9D30585-793D-4FC2-B6D1-7A47315DCBE9}
-name: Navigation Title
-key: navigation title
-content-length: 5
+field: {1DF6182C-CB17-4A2E-8803-E1C46E1D6B54}
+name: Include in Sitemap
+key: include in sitemap
+content-length: 1
 
-$name
+1
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -56,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-69ad7b08-716b-42aa-b306-500423806e76
+f2a0f0a6-6ab1-4fb6-8811-9318bf39bd2e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190423T111723Z
+20190508T082111Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

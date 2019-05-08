@@ -44,13 +44,6 @@ version: 1
 revision: 4e946328-0bae-44c6-8b28-b466e7a40a70
 
 ----field----
-field: {E98BF0CB-57FB-4353-9C23-1AD8D5961F2D}
-name: Title
-key: title
-content-length: 12
-
-$parenttitle
-----field----
 field: {0CBA5220-AA8B-4F75-BCD6-68000B38D8C1}
 name: Introduction
 key: introduction

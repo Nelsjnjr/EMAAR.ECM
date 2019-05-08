@@ -8,21 +8,7 @@ name: Image Album 2
 master: {00000000-0000-0000-0000-000000000000}
 template: {5E7F38ED-D38C-4EA8-8DBD-D3606F4E1E08}
 templatekey: Image Album
-created: 20190403T134517Z
-
-----field----
-field: {15E6FBE8-CDD0-4CCB-8295-3097CA4F3E71}
-name: Years
-key: years
-content-length: 4
-
-2018
-----field----
-field: {97AA0DCC-10C4-473C-9CA9-39BD77A50CE9}
-name: Images
-key: images
-content-length: 0
-
+created: 20190414T061625Z
 
 ----field----
 field: {BFDB03BC-9CEE-46CA-97D1-D69DE8C617C7}
@@ -43,13 +29,6 @@ language: en
 version: 1
 revision: 09312bc8-f671-4bfb-b592-87a08b0dadde
 
-----field----
-field: {E98BF0CB-57FB-4353-9C23-1AD8D5961F2D}
-name: Title
-key: title
-content-length: 13
-
-Image Album-2
 ----field----
 field: {0CBA5220-AA8B-4F75-BCD6-68000B38D8C1}
 name: Introduction

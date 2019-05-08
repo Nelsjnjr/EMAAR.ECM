@@ -30,13 +30,6 @@ version: 1
 revision: 9f1540d7-7ba6-4c54-b86a-8dc940da0043
 
 ----field----
-field: {B66E4688-AB06-4FF0-A976-AA2492379CF5}
-name: Navigation Title
-key: navigation title
-content-length: 5
-
-$name
-----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
 key: __owner

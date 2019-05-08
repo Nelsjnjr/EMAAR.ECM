@@ -16,13 +16,6 @@ version: 1
 revision: 0781a790-6e93-4525-a18f-dedbac3eb1ed
 
 ----field----
-field: {C00FBB0E-51B0-4563-9CEA-A39FB1DD64C2}
-name: Navigation Title
-key: navigation title
-content-length: 9
-
-Lifestyle
-----field----
 field: {A5EF15AE-8FED-49C5-ADD1-33F750DF450B}
 name: Navigation Link
 key: navigation link

@@ -13,7 +13,7 @@ created: 20190321T090417Z
 ----version----
 language: en
 version: 1
-revision: b42a2b29-3fa8-4e23-9c8b-97258e7228b4
+revision: 1aa9bbcd-db65-4f57-a3c4-dbd4e6f5c206
 
 ----field----
 field: {6D5D0A92-1283-4C10-B057-7D40A1B88DE6}
@@ -30,12 +30,12 @@ content-length: 155
 
 {85A94395-C637-4B3C-9EBC-20228C0CCA13}|{75153B99-995A-4796-B6DD-9D9749327252}|{E4153BAB-E86A-4D21-AD1D-78C2F031D279}|{6200803F-5957-4704-BB88-7CC7B52DC00F}
 ----field----
-field: {F6BA7B09-176F-4BB1-A680-C070D4B92C65}
+field: {DDA2F71D-C746-4A27-AEFF-208E39626BB9}
 name: Image
 key: image
-content-length: 65
+content-length: 140
 
-<image mediaid="{D1D6A8AE-395C-46F8-BF8E-106D1ACD194A}" ></image>
+<image mediaid="{D1D6A8AE-395C-46F8-BF8E-106D1ACD194A}" cropx="0.89" cropy="0.22" focusx="0.7881481029369213" focusy="0.5531249046325684" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -49,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b42a2b29-3fa8-4e23-9c8b-97258e7228b4
+1aa9bbcd-db65-4f57-a3c4-dbd4e6f5c206
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190407T055420Z
+20190501T123256Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

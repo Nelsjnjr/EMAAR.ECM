@@ -1,0 +1,29 @@
+﻿@model EMAAR.ECM.Feature.Navigation.Interface.ISitemapViewModel
+@using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
+@using Glass.Mapper.Sc.Web.Mvc
+@using EMAAR.ECM.Foundation.SitecoreExtensions
+<div class="sitemap-section">
+    <div class="section-header">
+        <h1 class="heading">@Sitecore.Globalization.Translate.Text("sitemap")</h1>
+    </div>
+    @foreach (List<KeyValuePair<INavigable, List<INavigable>>> item in Model.SitemapItems)
+    {
+        foreach (var level1 in Model.SitemapItems)
+        {
+            <div class="site-list">
+                <a class="parent-page">@level1.Key</a>
+                <ul class="listing">
+                    @foreach (var level2 in level1.Value)
+                    {
+                        <li>
+                            <a href="@level2.Url">@level2.PageTitle</a>
+                        </li>
+                    }                
+                </ul>
+            </div>
+        }
+    }
+
+
+
+</div>

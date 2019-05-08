@@ -8,6 +8,8 @@ var winWidth = $(window).width(),
     itemId = $('#templateInitializor').data('item-id'),
     listItemTemplateId = $('#templateInitializor').data('listitemtemplateid'),
     showFilters = $('#templateInitializor').data('show-filters'),
+    yearFolderItemName = $('#templateInitializor').data('itemyearname'),
+    
     total = dataPageSize,
     AjaxUrl = $('#templateInitializor').data('service-url');
     // https://jahanzebsabir.com/service/search/GetImageGalleryJson?pageSize=1&pageNumber=0&filters=”Years:4bde1ee9d4f57a05071a9f343de64|Albums:4bde1ee6659d4f57a05071a9f343de64”

@@ -13,7 +13,7 @@ created: 20190312T053532Z
 ----version----
 language: en
 version: 1
-revision: db9934bb-34d7-4f4a-9c83-91588cda6275
+revision: 0a0ac97d-f2ac-4617-8f28-3e3b07902555
 
 ----field----
 field: {31A2756E-9000-42E0-8F4C-D636C8B03849}
@@ -51,12 +51,12 @@ content-length: 332
 
 The Greens &amp; Views Master Community is strategically located next to Dubai’s Sheikh Zayed Road. From here, there is easy access to Dubai Internet City, Media City, Dubai Marina, the American University in Dubai and a selection of five star hotels and restaurants, as well as several world-class golf courses (see Community map).
 ----field----
-field: {F6BA7B09-176F-4BB1-A680-C070D4B92C65}
+field: {F4ED4C87-EC37-4DBF-8BC6-3771286D2646}
 name: Image
 key: image
-content-length: 238
+content-length: 58
 
-<image mediapath="/Images/Feature/ECM/Image_Section4" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Feature/ECM/Image_Section4" mediaid="{BE41F0E1-0D8D-49F1-AE27-DA3EBA404182}" ></image>
+<image mediaid="{BE41F0E1-0D8D-49F1-AE27-DA3EBA404182}" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -70,14 +70,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-db9934bb-34d7-4f4a-9c83-91588cda6275
+0a0ac97d-f2ac-4617-8f28-3e3b07902555
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190410T070530Z
+20190501T122812Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

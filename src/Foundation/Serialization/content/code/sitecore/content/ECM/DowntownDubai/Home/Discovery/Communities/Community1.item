@@ -30,13 +30,6 @@ version: 1
 revision: 2175b811-1282-4cb4-848e-a274e0825ef2
 
 ----field----
-field: {AF055E82-A161-43EF-BC60-523C7EF01A81}
-name: Title
-key: title
-content-length: 31
-
-I'm in Communities-->Community1
-----field----
 field: {55768EBD-52C4-4340-9471-2C948D429BCF}
 name: Introduction
 key: introduction
@@ -78,13 +71,6 @@ key: include in left navigation
 content-length: 1
 
 1
-----field----
-field: {D9D30585-793D-4FC2-B6D1-7A47315DCBE9}
-name: Navigation Title
-key: navigation title
-content-length: 10
-
-Community1
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created

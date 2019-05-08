@@ -23,13 +23,6 @@ version: 1
 revision: 2d10d058-bbeb-4325-ba0d-98fbe45842cf
 
 ----field----
-field: {AF055E82-A161-43EF-BC60-523C7EF01A81}
-name: Title
-key: title
-content-length: 4
-
-Test
-----field----
 field: {55768EBD-52C4-4340-9471-2C948D429BCF}
 name: Introduction
 key: introduction
@@ -66,13 +59,6 @@ key: related pages
 content-length: 77
 
 {B4212038-CA0C-4E79-871B-04498C5CC2CF}|{566D1178-7612-494A-AA11-42809C97C406}
-----field----
-field: {D9D30585-793D-4FC2-B6D1-7A47315DCBE9}
-name: Navigation Title
-key: navigation title
-content-length: 4
-
-Test
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created

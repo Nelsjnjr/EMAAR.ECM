@@ -6,7 +6,7 @@
 <!-- content starts here -->
 
 @if (Model != null)
-{ 
+{
     <div class="content-section">
         <div class="section-header">
 
@@ -23,14 +23,14 @@
             @if (!String.IsNullOrEmpty(ViewBag.Date))
             {
                 // Date field only displayed for News and Events pages items
-                <p>@ViewBag.Date</p>
+                @ViewBag.Date
             }
         </div>
-    
+
         <div>
-            @Html.Sitecore().AdvancedImageField("Banner", Model.ContextItem, 860, 400,"image","full-image",false)         
+            @Html.Sitecore().AdvancedImageField("Banner", Model.ContextItem, 860, 400, "image", "full-image", false)
         </div>
-        
+
         <!--Start Content from RTE-->
         @Html.Glass().Editable(Model, x => x.Content)
         <!--End Content from RTE-->

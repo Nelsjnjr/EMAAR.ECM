@@ -6,8 +6,8 @@ path: /sitecore/content/ECM/DowntownDubai/Home/Mediacenter/Video Gallery/2017
 parent: {A974A28A-6A01-431C-9403-38AFA98AF434}
 name: 2017
 master: {00000000-0000-0000-0000-000000000000}
-template: {75D66F86-B219-4070-9820-AB948FD107A4}
-templatekey: Year Folder
+template: {F3F807F7-01D0-419F-B0FD-11A9C4E66A7B}
+templatekey: VideoAlbum With Filters Folder
 created: 20190425T082033Z
 
 ----field----
@@ -27,8 +27,15 @@ content-length: 1
 ----version----
 language: en
 version: 1
-revision: fd607846-f5e0-4f4f-8397-8b12e97dfbb2
+revision: f3d2290d-ecde-4eae-a03e-8bd48b68d33f
 
+----field----
+field: {0CBA5220-AA8B-4F75-BCD6-68000B38D8C1}
+name: Introduction
+key: introduction
+content-length: 11
+
+Description
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -42,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fd607846-f5e0-4f4f-8397-8b12e97dfbb2
+f3d2290d-ecde-4eae-a03e-8bd48b68d33f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190426T114725Z
+20190507T052431Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

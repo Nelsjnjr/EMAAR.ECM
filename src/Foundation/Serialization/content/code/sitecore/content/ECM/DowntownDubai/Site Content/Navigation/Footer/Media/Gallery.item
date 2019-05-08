@@ -16,13 +16,6 @@ version: 1
 revision: d76a586a-90d7-496b-b91c-cfaa40a4accc
 
 ----field----
-field: {B66E4688-AB06-4FF0-A976-AA2492379CF5}
-name: Navigation Title
-key: navigation title
-content-length: 7
-
-Gallery
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created

@@ -8,27 +8,27 @@ name: Events
 master: {00000000-0000-0000-0000-000000000000}
 template: {967D5AE7-1742-4661-9696-3E8E9D9653C5}
 templatekey: Events Listing Page
-created: 20190427T123029Z
+created: 20190429T110454Z
 
 ----version----
 language: en
 version: 1
-revision: 6441ccbc-fca0-40d1-a23c-31153b282ba9
+revision: 645876d3-9d10-4b3a-92ab-f1faec3fc34f
 
 ----field----
-field: {E98BF0CB-57FB-4353-9C23-1AD8D5961F2D}
+field: {0CBA5220-AA8B-4F75-BCD6-68000B38D8C1}
+name: Introduction
+key: introduction
+content-length: 118
+
+Description of Image Gallery Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+----field----
+field: {C4136F1D-43EC-45CB-8E1B-5A1993D16157}
 name: Title
 key: title
-content-length: 6
+content-length: 19
 
-Events
-----field----
-field: {D9D30585-793D-4FC2-B6D1-7A47315DCBE9}
-name: Navigation Title
-key: navigation title
-content-length: 6
-
-Events
+Events listing page
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -42,14 +42,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6441ccbc-fca0-40d1-a23c-31153b282ba9
+645876d3-9d10-4b3a-92ab-f1faec3fc34f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190429T080930Z
+20190507T101416Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

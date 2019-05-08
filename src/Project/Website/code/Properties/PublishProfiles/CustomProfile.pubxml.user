@@ -19,7 +19,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/09/2019 14:00:01</publishTime>
     </File>
     <File Include="App_Config/Include/Project/ECM/website/EMAAR.ECM.Project.Website.config">
-      <publishTime>05/06/2019 17:21:21</publishTime>
+      <publishTime>05/06/2019 17:23:15</publishTime>
     </File>
     <File Include="Assets/Project/ECM/bootstrap.css">
       <publishTime>04/08/2019 10:08:51</publishTime>
@@ -415,13 +415,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/08/2019 15:04:28</publishTime>
     </File>
     <File Include="Assets/Project/ECM/js/Application/ajax.js">
-      <publishTime>04/28/2019 10:32:34</publishTime>
+      <publishTime>05/07/2019 13:33:33</publishTime>
     </File>
     <File Include="Assets/Project/ECM/js/Application/ajax.min.js">
       <publishTime>05/02/2019 15:45:11</publishTime>
     </File>
     <File Include="Assets/Project/ECM/js/Application/app.js">
-      <publishTime>04/29/2019 12:37:08</publishTime>
+      <publishTime>05/07/2019 13:34:27</publishTime>
     </File>
     <File Include="Assets/Project/ECM/js/Application/app.min.js">
       <publishTime>04/29/2019 12:37:09</publishTime>
@@ -583,37 +583,37 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/01/2019 14:31:09</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.dll">
-      <publishTime>05/01/2019 14:31:08</publishTime>
+      <publishTime>05/07/2019 11:50:50</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.dll.config">
       <publishTime>04/11/2019 09:27:16</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.pdb">
-      <publishTime>05/01/2019 14:31:08</publishTime>
+      <publishTime>05/07/2019 11:50:50</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll">
-      <publishTime>05/02/2019 15:35:09</publishTime>
+      <publishTime>05/07/2019 11:50:51</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll.config">
       <publishTime>04/11/2019 09:27:17</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.pdb">
-      <publishTime>05/02/2019 15:35:09</publishTime>
+      <publishTime>05/07/2019 11:50:51</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.SitecoreExtensions.dll">
-      <publishTime>05/01/2019 14:31:10</publishTime>
+      <publishTime>05/07/2019 11:50:52</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.SitecoreExtensions.dll.config">
       <publishTime>04/30/2019 17:02:58</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.SitecoreExtensions.pdb">
-      <publishTime>05/01/2019 14:31:10</publishTime>
+      <publishTime>05/07/2019 11:50:52</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Project.Website.dll">
-      <publishTime>05/02/2019 15:47:00</publishTime>
+      <publishTime>05/07/2019 13:07:02</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Project.Website.pdb">
-      <publishTime>05/02/2019 15:47:00</publishTime>
+      <publishTime>05/07/2019 13:07:02</publishTime>
     </File>
     <File Include="bin/Glass.Mapper.dll">
       <publishTime>04/17/2019 16:19:54</publishTime>
@@ -848,6 +848,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="bin/roslyn/VBCSCompiler.exe.config">
       <publishTime>08/08/2018 12:18:16</publishTime>
+    </File>
+    <File Include="bin/Sitecore.Framework.Fields.dll">
+      <publishTime>05/02/2019 17:07:35</publishTime>
     </File>
     <File Include="bin/Sitecore.Kernel.dll">
       <publishTime>04/17/2019 16:19:54</publishTime>
@@ -2263,7 +2266,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/21/2019 17:32:00</publishTime>
     </File>
     <File Include="Views/Shared/Projects/ECM/_baseLayout.cshtml">
-      <publishTime>05/02/2019 15:44:21</publishTime>
+      <publishTime>05/07/2019 09:16:00</publishTime>
     </File>
     <File Include="Views/Shared/Projects/ECM/_twoColumn.cshtml">
       <publishTime>04/21/2019 17:32:00</publishTime>

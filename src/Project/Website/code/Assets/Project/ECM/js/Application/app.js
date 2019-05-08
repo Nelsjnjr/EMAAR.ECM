@@ -115,6 +115,9 @@ var getData = (function ($) {
                         $(".loadmore").hide();
                     }
                     _fancyboxImage();
+                    if (yearFolderItemName == "NotYearFolder") {
+                        $('#customyear').val(yearFolderItemName);
+                    }
                 } else {
                     $('.spinner').remove();
                     var source = $(tempDiv).html(),
@@ -132,7 +135,10 @@ var getData = (function ($) {
                         template = Handlebars.compile(source),
                         html = template(data.filters);
                         $(resultDiv).append(template(errMessage));
-                        $(".loadmore").hide();
+                    $(".loadmore").hide();
+                    if (yearFolderItemName == "NotYearFolder") {
+                        $('#customyear').val(yearFolderItemName);
+                    }
                 }
             },
             error: function(error){
@@ -175,6 +181,9 @@ var getData = (function ($) {
                     } else {
                         $(".loadmore").hide();
                     }
+                    if (yearFolderItemName == "NotYearFolder") {
+                        $('#customyear').val(yearFolderItemName);
+                    }
                 
                 } else {
                     $('.spinner').remove();
@@ -193,7 +202,10 @@ var getData = (function ($) {
                         template = Handlebars.compile(source),
                         html = template(data.filters);
                         $(resultDiv).append(template(data.ErrorMessage));
-                        $(".loadmore").hide();
+                    $(".loadmore").hide();
+                    if (yearFolderItemName == "NotYearFolder") {
+                        $('#customyear').val(yearFolderItemName);
+                    }
                 }
             },
             error: function(error){
@@ -259,7 +271,9 @@ var getData = (function ($) {
                             template3 = Handlebars.compile(source3);
                             $('.section-header').append(template3(data.results.Totalcount));
                         }
-                            
+                        if (yearFolderItemName == "NotYearFolder") {
+                            $('#customyear').val(yearFolderItemName);
+                        }
                     } else {
                         $('.spinner').remove();
                         var source = $(tempDiv).html(),
@@ -279,6 +293,9 @@ var getData = (function ($) {
                         $(resultDiv).append(template(errMessage));
                         $(".loadmore").hide();
                         filterOnChange();
+                        if (yearFolderItemName == "NotYearFolder") {
+                            $('#customyear').val(yearFolderItemName);
+                        }
                     }
                 },
                 error: function(error){
@@ -331,8 +348,8 @@ var getData = (function ($) {
             _filter(url, pagination, loadmoreID, templateID, resultId);
         },
 
-        results: function(url, pagination, loadmoreID, templateID, resultId) {
-            _results(url, pagination, loadmoreID, templateID, resultId);
+        results: function (url, pagination, loadmoreID, templateID, resultId, yearFolderItemName) {
+            _results(url, pagination, loadmoreID, templateID, resultId, yearFolderItemName);
         },
 
         resultsLoad: function(url, pagination, loadmoreID, templateID, resultId) {

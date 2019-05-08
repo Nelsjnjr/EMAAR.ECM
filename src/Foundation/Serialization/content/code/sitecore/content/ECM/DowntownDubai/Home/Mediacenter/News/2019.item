@@ -6,8 +6,8 @@ path: /sitecore/content/ECM/DowntownDubai/Home/Mediacenter/News/2019
 parent: {C4FDB7F3-BF03-4582-B6CB-357FAB4014F7}
 name: 2019
 master: {00000000-0000-0000-0000-000000000000}
-template: {75D66F86-B219-4070-9820-AB948FD107A4}
-templatekey: Year Folder
+template: {C8761BF7-FA60-4FED-9CE7-55899C8A45D7}
+templatekey: NewsAlbumFolder
 created: 20190426T111330Z
 
 ----field----
@@ -20,8 +20,15 @@ content-length: 4
 ----version----
 language: en
 version: 1
-revision: 6f6886e6-58a3-40e7-8772-ad4ceb358c9e
+revision: 9fb0d2f0-7136-4606-bc0f-fd72c26a75ea
 
+----field----
+field: {0CBA5220-AA8B-4F75-BCD6-68000B38D8C1}
+name: Introduction
+key: introduction
+content-length: 35
+
+News about Downtown Dubai Community
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -35,14 +42,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6f6886e6-58a3-40e7-8772-ad4ceb358c9e
+9fb0d2f0-7136-4606-bc0f-fd72c26a75ea
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190427T085040Z
+20190507T052404Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

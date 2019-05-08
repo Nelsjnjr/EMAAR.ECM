@@ -44,13 +44,6 @@ version: 1
 revision: 9d90e4ee-fa96-4091-b450-c5d54eb5b88a
 
 ----field----
-field: {E98BF0CB-57FB-4353-9C23-1AD8D5961F2D}
-name: Title
-key: title
-content-length: 5
-
-$name
-----field----
 field: {FE683723-D22F-4A7E-A074-7E3BAB2817C4}
 name: Load More Label
 key: load more label

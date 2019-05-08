@@ -42,6 +42,11 @@ namespace EMAAR.ECM.Feature.Navigation.Controllers
         {
             return View($"{ViewPath}NavigationMenu/_LeftNavigation.cshtml", _navigationMenuRepository.GetLeftNavigation());
         }
+        public ActionResult GetSitemap()
+        {
+
+            return View($"{ViewPath}NavigationMenu/_Sitemap.cshtml", _navigationMenuRepository.GetSitemap());
+        }
         #endregion
     }
 }

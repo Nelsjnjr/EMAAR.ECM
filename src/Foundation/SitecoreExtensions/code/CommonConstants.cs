@@ -107,7 +107,10 @@
         /// Template name for News Listing Page
         /// </summary>
         public const string NewsPageTemplateName = "News Listing Page";
-        
+        /// <summary>
+        /// Include in Sitemap Field Name
+        /// </summary>
+        public const string IncludeinSitemap = "Include in Sitemap";
         #region Search
 
         /// <summary>
@@ -191,12 +194,30 @@
         /// Categories Facet Field
         /// </summary>
         public const string CategoriesFacetField = "categories";
-
-
+        /// <summary>
+        /// Home Template ID
+        /// </summary>
+        public const string HomePageTemplateID = "{337B3473-E10A-4490-88B5-8255FF80D0F2}";
+        /// <summary>
+        /// GenericContentPage Template ID
+        /// </summary>
+        public const string GenericContentPageTemplateID = "{4FB05EC1-985E-46D3-A95B-A851FF0BE873}";
+        /// <summary>
+        /// MediaCenterPageTemplateID Template ID
+        /// </summary>
+        public const string MediaCenterPageTemplateID = "{AB4F05B9-0538-4014-835A-545DED4920C1}";
+        /// <summary>
+        /// DownloadsPageTemplateID Template ID
+        /// </summary>
+        public const string DownloadsTemplateID = "{6D04D32E-59D9-4F3F-8748-3C89E5247366}";
         /// <summary>
         /// Image Album Page Template ID
         /// </summary>
         public const string ImageAlbumPageTemplateID = "{5E7F38ED-D38C-4EA8-8DBD-D3606F4E1E08}";
+        /// <summary>
+        /// Image Gallery Page Template ID
+        /// </summary>
+        public const string ImageGalleryPageTemplateID = "{70422DB2-25AF-483F-A3F1-AAF7CD751D5D}";
 
         /// <summary>
         /// Video Album with out Filter Template ID

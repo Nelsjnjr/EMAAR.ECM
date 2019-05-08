@@ -147,7 +147,8 @@ namespace EMAAR.ECM.Feature.Listing.Controllers
         [HttpGet]
         public ActionResult EventsListing()
         {
-            IEvents_Listing_Page eventsListing = _repo.GetEventsListingPageModel();
+            IEvents_Listing_Page eventsListing = _repo.GetEventsListingPageModel(out string Year);
+            ViewBag.Year = Year;
             return View($"{ViewPath}Listing/Events/EventsListing.cshtml", eventsListing);
         }
 

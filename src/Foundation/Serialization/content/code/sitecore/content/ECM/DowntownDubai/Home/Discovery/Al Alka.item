@@ -27,15 +27,8 @@ content-length: 186
 ----version----
 language: en
 version: 1
-revision: 8c85882d-bb3b-41a6-b802-4262bd4a8c84
+revision: d27bcfc6-e375-4c44-b7ae-20e7b2a38d18
 
-----field----
-field: {AF055E82-A161-43EF-BC60-523C7EF01A81}
-name: Title
-key: title
-content-length: 7
-
-Al Alka
 ----field----
 field: {55768EBD-52C4-4340-9471-2C948D429BCF}
 name: Introduction
@@ -47,9 +40,9 @@ Al Alka, Arabic for blackberry bush, is spread over Street 5 and 6 and comprises
 field: {82677F75-244E-42A8-BCB4-48993767346E}
 name: Banner
 key: banner
-content-length: 58
+content-length: 144
 
-<image mediaid="{6A5D6A17-9A2F-4B6D-A724-E46312C0A9C3}" />
+<image mediaid="{4D60CA46-3E65-44AF-981A-2EE944F9F33E}" cropx="0.39" cropy="0.58" focusx="-0.22820516733022833" focusy="-0.15000009536743164" />
 ----field----
 field: {0BC802F1-146C-454E-A508-E72E5A1CF61D}
 name: Content
@@ -72,13 +65,6 @@ content-length: 155
 
 {B4212038-CA0C-4E79-871B-04498C5CC2CF}|{65F76CB1-A28C-41C0-94C2-E4D2584356C1}|{566D1178-7612-494A-AA11-42809C97C406}|{6D90E52D-0B8E-4893-8D1A-E9822E9941F2}
 ----field----
-field: {D9D30585-793D-4FC2-B6D1-7A47315DCBE9}
-name: Navigation Title
-key: navigation title
-content-length: 7
-
-Al alka
-----field----
 field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
 name: __Final Renderings
 key: __final renderings
@@ -98,14 +84,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8c85882d-bb3b-41a6-b802-4262bd4a8c84
+d27bcfc6-e375-4c44-b7ae-20e7b2a38d18
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190423T112141Z
+20190502T102207Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

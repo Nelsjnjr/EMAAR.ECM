@@ -7,22 +7,8 @@ parent: {BE102405-8A15-4639-945A-5CF14112B3D0}
 name: Video Album1
 master: {00000000-0000-0000-0000-000000000000}
 template: {2C088140-3A80-4CB7-9E80-198AFCB01574}
-templatekey: Video Album
+templatekey: Video Album Without Filters
 created: 20190411T072210Z
-
-----field----
-field: {45F9A9B2-5213-41A8-954E-6B900355DEC5}
-name: Years
-key: years
-content-length: 4
-
-2019
-----field----
-field: {3981764A-8EC5-44D2-8500-09086145AA97}
-name: Videos
-key: videos
-content-length: 0
-
 
 ----field----
 field: {4B7178EA-4352-4D1F-A98F-81FEB23895AF}
@@ -42,21 +28,14 @@ content-length: 1
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 844
+content-length: 915
 
-<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{12B95B1A-6314-4B90-87BC-D5C12E873780}"><p:d /></r><r uid="{E23AAB1F-02D7-475C-9B95-9F94DAFD1EAA}"><p:d /></r><r uid="{6A741D4D-121C-4F08-A7CA-326C41C246EE}" p:before="*" s:ds="" s:id="{00E5BEDC-930A-4E3C-BEB8-0901394E4040}" s:par="" s:ph="ecm_header" /><r uid="{4017EC07-10C3-41BC-BC70-CBDA511B2B82}" p:after="r[@uid='{6A741D4D-121C-4F08-A7CA-326C41C246EE}']" s:ds="" s:id="{E77F7584-4498-4F34-84EB-E1C0E05DC042}" s:par="" s:ph="ecm_footer" /><r uid="{83A7B187-1C45-42A0-BB52-C293A99D2361}" p:after="r[@uid='{4017EC07-10C3-41BC-BC70-CBDA511B2B82}']" s:id="{0B762C67-B738-4E9F-9DCE-3B6A1DD97541}" s:ph="ecm_seo" /><r uid="{F4D06841-D000-4D41-BBCA-6057E4A1F90E}" p:after="*[1=2]" s:id="{B3A6593B-E8DE-42C9-AD86-37C6C014DC76}" s:ph="ecm_content" /></d></r>
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{12B95B1A-6314-4B90-87BC-D5C12E873780}"><p:d /></r><r uid="{E23AAB1F-02D7-475C-9B95-9F94DAFD1EAA}"><p:d /></r><r uid="{6A741D4D-121C-4F08-A7CA-326C41C246EE}" p:before="*" s:ds="" s:id="{00E5BEDC-930A-4E3C-BEB8-0901394E4040}" s:par="" s:ph="ecm_header" /><r uid="{4017EC07-10C3-41BC-BC70-CBDA511B2B82}" p:after="r[@uid='{6A741D4D-121C-4F08-A7CA-326C41C246EE}']" s:ds="" s:id="{E77F7584-4498-4F34-84EB-E1C0E05DC042}" s:par="" s:ph="ecm_footer" /><r uid="{83A7B187-1C45-42A0-BB52-C293A99D2361}" p:after="r[@uid='{4017EC07-10C3-41BC-BC70-CBDA511B2B82}']" s:id="{0B762C67-B738-4E9F-9DCE-3B6A1DD97541}" s:ph="ecm_seo" /><r uid="{6A5C8479-A417-4AA4-90DB-54141889CDA8}" s:par="Show filters" /><r uid="{F4D06841-D000-4D41-BBCA-6057E4A1F90E}" p:after="*[1=2]" s:id="{B3A6593B-E8DE-42C9-AD86-37C6C014DC76}" s:ph="ecm_content" /></d></r>
 ----version----
 language: en
 version: 1
-revision: cbcb1ab5-3acd-4442-96eb-32f6bcdcfc2a
+revision: 946a4aa5-5623-4c8f-9d29-9804b1f80096
 
-----field----
-field: {E98BF0CB-57FB-4353-9C23-1AD8D5961F2D}
-name: Title
-key: title
-content-length: 13
-
-Video Album 1
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -70,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cbcb1ab5-3acd-4442-96eb-32f6bcdcfc2a
+946a4aa5-5623-4c8f-9d29-9804b1f80096
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190429T083425Z
+20190507T120252Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

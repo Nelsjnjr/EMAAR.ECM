@@ -6,8 +6,8 @@ path: /sitecore/content/ECM/DowntownDubai/Home/Mediacenter/Events/2019
 parent: {4A51A628-A914-4F4B-890E-CFD1F6AB73AE}
 name: 2019
 master: {00000000-0000-0000-0000-000000000000}
-template: {75D66F86-B219-4070-9820-AB948FD107A4}
-templatekey: Year Folder
+template: {01E451AA-9122-4601-A53F-98557F85FE79}
+templatekey: EventsAlbumFolder
 created: 20190427T123037Z
 
 ----field----
@@ -20,8 +20,15 @@ content-length: 4
 ----version----
 language: en
 version: 1
-revision: 0054e048-5513-4af2-b739-7607c2e51c7e
+revision: 36bdd842-05a6-4f64-ba0d-4a29c1c75e02
 
+----field----
+field: {0CBA5220-AA8B-4F75-BCD6-68000B38D8C1}
+name: Introduction
+key: introduction
+content-length: 118
+
+Description of Image Gallery Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -35,14 +42,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0054e048-5513-4af2-b739-7607c2e51c7e
+36bdd842-05a6-4f64-ba0d-4a29c1c75e02
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190427T123038Z
+20190507T052345Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

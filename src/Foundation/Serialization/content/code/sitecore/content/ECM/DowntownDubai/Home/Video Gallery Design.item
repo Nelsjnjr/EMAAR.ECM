@@ -11,38 +11,17 @@ templatekey: Video Gallery Page
 created: 20190411T072158Z
 
 ----field----
-field: {2A92BE65-8FF2-46E3-898A-8577502D5D53}
-name: Show Filters
-key: show filters
-content-length: 1
-
-1
-----field----
 field: {44195A16-B523-44EF-B2FD-6304B28E16FB}
 name: No of Records
 key: no of records
 content-length: 1
 
 1
-----field----
-field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
-name: __Masters
-key: __masters
-content-length: 38
-
-{75D66F86-B219-4070-9820-AB948FD107A4}
 ----version----
 language: en
 version: 1
-revision: 6273f1df-a9af-4700-8e26-c86708b92500
+revision: 61b331c9-dd13-4253-a78c-59fc54b9ece1
 
-----field----
-field: {E98BF0CB-57FB-4353-9C23-1AD8D5961F2D}
-name: Title
-key: title
-content-length: 20
-
-Video Gallery Design
 ----field----
 field: {0CBA5220-AA8B-4F75-BCD6-68000B38D8C1}
 name: Introduction
@@ -50,13 +29,6 @@ key: introduction
 content-length: 32
 
 Video Gallery Page as per design
-----field----
-field: {D9D30585-793D-4FC2-B6D1-7A47315DCBE9}
-name: Navigation Title
-key: navigation title
-content-length: 13
-
-Video Gallery
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -70,14 +42,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6273f1df-a9af-4700-8e26-c86708b92500
+61b331c9-dd13-4253-a78c-59fc54b9ece1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190429T083328Z
+20190506T111935Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -6,7 +6,7 @@
 <header class="@Model.HeaderCss">
     <div class="container">
         <div class="flexBox">
-            @{ 
+            @{
                 //Switching the HEader component by verifying whether is home page or not
                 if (Model.IsHomePage)
                 {
@@ -52,7 +52,20 @@
                                                 <li class="nosub">
                                                     @using (Html.Glass().BeginRenderLink(rootNav, x => x.Navigation_Link, new { @class = "active" }, isEditable: true))
                                                     {
-                                                        @Html.Glass().Editable(rootNav, x => x.Navigation_Title)
+                                                        //Getting Title from Link item
+                                                        if (rootNav.Navigation_Link != null)
+                                                        {
+                                                            var noSubitem = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(rootNav.Navigation_Link.TargetId));
+                                                            if (noSubitem != null)
+                                                            {
+                                                                @Html.Sitecore().Field("Title", noSubitem)
+
+                                                            }
+                                                            else //If in case of external url getting Navigation item Title
+                                                            {
+                                                                @rootNav.Name
+                                                            }
+                                                        }
                                                     }
                                                 </li>
                                             }
@@ -65,7 +78,21 @@
                                                 <li class="nosub">
                                                     @using (Html.Glass().BeginRenderLink(rootNav, x => x.Navigation_Link, isEditable: true))
                                                     {
-                                                        @Html.Glass().Editable(rootNav, x => x.Navigation_Title)
+                                                        //Getting Title from Link item
+                                                        if (rootNav.Navigation_Link != null)
+                                                        {
+                                                            var subitem = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(rootNav.Navigation_Link.TargetId));
+                                                            if (subitem != null)
+                                                            {
+                                                                @Html.Sitecore().Field("Title", subitem)
+
+                                                            }
+                                                            else //If in case of external url getting Navigation item Title
+                                                            {
+                                                                @rootNav.Name
+                                                            }
+                                                        }
+
                                                     }
                                                 </li>
                                             }
@@ -76,13 +103,40 @@
                                     <li>
                                         <!--Link with Sub navigation-->
                                         <!--Setting top level item assign class to it if it has child items -->
-                                        @if (count == 0)
-                                        {
-                                            <a href="javascript:;" class="active"> @Html.Glass().Editable(rootNav, x => x.Navigation_Title)</a>
-                                        }
-                                        else
-                                        {
-                                            <a href="javascript:;"> @Html.Glass().Editable(rootNav, x => x.Navigation_Title)</a>
+
+                                        @{
+                                            if (rootNav.Navigation_Link != null)
+                                            {
+                                                var topSubitem = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(rootNav.Navigation_Link.TargetId));
+                                                if (count == 0)
+                                                {
+
+                                                    if (topSubitem != null)
+                                                    {
+                                                        <a href="javascript:;" class="active"> @Html.Sitecore().Field("Title", topSubitem)</a>
+
+                                                    }
+                                                    else //If in case of external url getting Navigation item Title
+                                                    {
+                                                        <a href="javascript:;" class="active">  @rootNav.Name</a>
+                                                    }
+
+                                                }
+                                                else
+                                                {
+                                                    if (topSubitem != null)
+                                                    {
+
+                                                        <a href="javascript:;">  @Html.Sitecore().Field("Title", topSubitem)</a>
+                                                    }
+                                                    else
+                                                    {
+                                                        @rootNav.Name
+                                                    }
+
+
+                                                }
+                                            }
 
                                         }
                                         <!--Add sub menu items-->
@@ -97,7 +151,24 @@
                                                             <li>
                                                                 @using (Html.Glass().BeginRenderLink(subNav, x => x.Navigation_Link, isEditable: true))
                                                                 {
-                                                                    @Html.Glass().Editable(subNav, x => x.Navigation_Title)
+                                                                    if (subNav.Navigation_Link.TargetId != null)
+                                                                    {
+                                                                        //Getting Title from Link item
+                                                                        if (subNav.Navigation_Link != null)
+                                                                        {
+                                                                            var item = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(subNav.Navigation_Link.TargetId));
+                                                                            if (item != null)
+                                                                            {
+                                                                                @Html.Sitecore().Field("Title", item)
+
+                                                                            }
+                                                                            else //If in case of external url getting Navigation item Title
+                                                                            {
+                                                                                @subNav.Name
+                                                                            }
+                                                                        }
+
+                                                                    }
                                                                 }
                                                             </li>
                                                         }

@@ -71,6 +71,9 @@ namespace <#=fullNamespace #>
 		[SitecoreInfo(SitecoreInfoType.Name)]
 		string Name { get; }
 
+		[SitecoreField("Title")]
+		string PageTitle { get; }
+
         [SitecoreInfo(SitecoreInfoType.DisplayName)]
         string DisplayName { get; }
 
@@ -118,6 +121,9 @@ namespace <#=fullNamespace #>
 
 		[SitecoreInfo(SitecoreInfoType.Name)]
         public virtual string Name { get; private set; }
+
+		[SitecoreField("Title")]
+		public virtual string PageTitle { get;  private set; }
 
         [SitecoreInfo(SitecoreInfoType.DisplayName)]
         public virtual string DisplayName { get; private set; }

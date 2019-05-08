@@ -13,7 +13,7 @@ created: 20190311T112008Z
 ----version----
 language: en
 version: 1
-revision: cce062d2-971d-4d9c-af72-c9a0f4f812e3
+revision: 5f63f733-0973-4372-8125-33b0f701729b
 
 ----field----
 field: {59C63C85-D835-4828-908E-0397F2C405AE}
@@ -40,9 +40,9 @@ content-length: 58
 field: {C1FCF0B0-F4D1-4866-BD3E-96FF23092858}
 name: Brand Logo Url
 key: brand logo url
-content-length: 124
+content-length: 90
 
-<link text="" anchor="" linktype="internal" class="" title=""  querystring="" id="{110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}" />
+<link text="google" linktype="external" url="http://www.google.com" anchor="" target="" />
 ----field----
 field: {59E823A8-3DA8-40BE-8799-03ACAE2A4457}
 name: Site Logo
@@ -140,14 +140,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cce062d2-971d-4d9c-af72-c9a0f4f812e3
+5f63f733-0973-4372-8125-33b0f701729b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190423T110912Z
+20190502T114003Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

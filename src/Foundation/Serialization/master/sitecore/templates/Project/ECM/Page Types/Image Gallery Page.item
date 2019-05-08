@@ -14,9 +14,9 @@ created: 20190403T134832Z
 field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
 name: __Base template
 key: __base template
-content-length: 155
+content-length: 194
 
-{1930BBEB-7805-471A-A3BE-4858AC7CF696}|{1ECE4946-3CE5-4F9E-B7D3-71AFE001CEDC}|{25263D9D-CA73-4C46-9AC7-6DCAFF60A0E3}|{57D9AAD2-B948-4544-996D-1BF3C7221A28}
+{1930BBEB-7805-471A-A3BE-4858AC7CF696}|{1ECE4946-3CE5-4F9E-B7D3-71AFE001CEDC}|{25263D9D-CA73-4C46-9AC7-6DCAFF60A0E3}|{57D9AAD2-B948-4544-996D-1BF3C7221A28}|{DA95565E-5CB7-4C2C-B195-DC55C5957181}
 ----field----
 field: {F7D48A55-2158-4F02-9356-756654404F73}
 name: __Standard values
@@ -34,7 +34,7 @@ Applications/32x32/text_rich_colored.png
 ----version----
 language: en
 version: 1
-revision: 9fd0d1b7-668a-4346-b87f-ad528b4f2155
+revision: ffca6db8-d38c-4e5c-8f90-7d9c10f25753
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -56,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9fd0d1b7-668a-4346-b87f-ad528b4f2155
+ffca6db8-d38c-4e5c-8f90-7d9c10f25753
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190428T125711Z
+20190507T052624Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

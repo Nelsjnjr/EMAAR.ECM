@@ -20,15 +20,8 @@ content-length: 350
 ----version----
 language: en
 version: 1
-revision: 5eb790cf-9563-4a37-88e7-c5ccf715f161
+revision: f9d57dab-d79a-40c9-8aad-aec19444f16b
 
-----field----
-field: {AF055E82-A161-43EF-BC60-523C7EF01A81}
-name: Title
-key: title
-content-length: 13
-
-ClientContent
 ----field----
 field: {55768EBD-52C4-4340-9471-2C948D429BCF}
 name: Introduction
@@ -40,9 +33,9 @@ Client into
 field: {82677F75-244E-42A8-BCB4-48993767346E}
 name: Banner
 key: banner
-content-length: 58
+content-length: 143
 
-<image mediaid="{6A5D6A17-9A2F-4B6D-A724-E46312C0A9C3}" />
+<image mediaid="{6A5D6A17-9A2F-4B6D-A724-E46312C0A9C3}" cropx="0.55" cropy="0.69" focusx="0.10512816600310493" focusy="-0.38124990463256836" />
 ----field----
 field: {0BC802F1-146C-454E-A508-E72E5A1CF61D}
 name: Content
@@ -65,12 +58,12 @@ content-length: 155
 
 {B4212038-CA0C-4E79-871B-04498C5CC2CF}|{566D1178-7612-494A-AA11-42809C97C406}|{6D90E52D-0B8E-4893-8D1A-E9822E9941F2}|{65F76CB1-A28C-41C0-94C2-E4D2584356C1}
 ----field----
-field: {D9D30585-793D-4FC2-B6D1-7A47315DCBE9}
-name: Navigation Title
-key: navigation title
-content-length: 13
+field: {C4136F1D-43EC-45CB-8E1B-5A1993D16157}
+name: Title
+key: title
+content-length: 14
 
-ClientContent
+Client Content
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -84,14 +77,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5eb790cf-9563-4a37-88e7-c5ccf715f161
+f9d57dab-d79a-40c9-8aad-aec19444f16b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190423T132500Z
+20190508T104042Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

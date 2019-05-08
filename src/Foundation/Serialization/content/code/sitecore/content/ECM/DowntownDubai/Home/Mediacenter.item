@@ -8,7 +8,7 @@ name: Mediacenter
 master: {00000000-0000-0000-0000-000000000000}
 template: {AB4F05B9-0538-4014-835A-545DED4920C1}
 templatekey: Mediacenter
-created: 20190422T102707Z
+created: 20190429T110449Z
 
 ----version----
 language: en
@@ -36,13 +36,6 @@ key: no image
 content-length: 189
 
 <link text="" linktype="internal" url="" anchor="" title="" class="" querystring="" target="" id="{8A379D29-25E4-4DE5-B3AA-786E1E817F7E}" mediaid="{EBC41CED-F92B-44C1-9321-6CA5D067EA22}" />
-----field----
-field: {D9D30585-793D-4FC2-B6D1-7A47315DCBE9}
-name: Navigation Title
-key: navigation title
-content-length: 11
-
-Mediacenter
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created

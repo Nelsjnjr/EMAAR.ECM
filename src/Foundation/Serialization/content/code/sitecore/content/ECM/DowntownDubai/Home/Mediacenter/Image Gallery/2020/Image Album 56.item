@@ -11,20 +11,6 @@ templatekey: Image Album
 created: 20190425T162150Z
 
 ----field----
-field: {15E6FBE8-CDD0-4CCB-8295-3097CA4F3E71}
-name: Years
-key: years
-content-length: 4
-
-2017
-----field----
-field: {97AA0DCC-10C4-473C-9CA9-39BD77A50CE9}
-name: Images
-key: images
-content-length: 77
-
-{F7684426-A76A-4402-8BE0-22E31A41EB23}|{6C60E7A8-DF02-4942-AA13-0F2DA510AF13}
-----field----
 field: {BFDB03BC-9CEE-46CA-97D1-D69DE8C617C7}
 name: Categories
 key: categories
@@ -42,21 +28,14 @@ content-length: 1
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
-content-length: 3
+content-length: 2
 
-500
+12
 ----version----
 language: en
 version: 1
-revision: 258a673c-ef3a-43c6-a412-b04ea75113d1
+revision: cd142fc3-e71a-416b-b14a-eaaae9655f0f
 
-----field----
-field: {E98BF0CB-57FB-4353-9C23-1AD8D5961F2D}
-name: Title
-key: title
-content-length: 14
-
-Image Album 56
 ----field----
 field: {0CBA5220-AA8B-4F75-BCD6-68000B38D8C1}
 name: Introduction
@@ -91,18 +70,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-258a673c-ef3a-43c6-a412-b04ea75113d1
+cd142fc3-e71a-416b-b14a-eaaae9655f0f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190429T120630Z
+20190430T064956Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 18
 
-sitecore\admin
+sitecore\NGeepalem

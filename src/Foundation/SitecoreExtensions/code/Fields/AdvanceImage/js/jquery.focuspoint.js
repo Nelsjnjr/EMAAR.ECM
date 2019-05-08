@@ -86,7 +86,7 @@
 		var containerW = $el.width();
 		var containerH = $el.height();
 		var focusX = parseFloat($el.data('focusX'));
-		var fy = parseFloat($el.data('fy'));
+        var fy = parseFloat($el.data('focusY'));
 		var $image = $el.find('img').first();
 
 		//Amount position will be shifted

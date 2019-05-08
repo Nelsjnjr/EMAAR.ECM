@@ -13,22 +13,15 @@ created: 20190326T130809Z
 ----version----
 language: en
 version: 1
-revision: 4fff8c47-fd59-416c-97d1-996bd87c9ad3
+revision: 98d90f10-6b19-44fc-aaa2-b0610e05aff0
 
-----field----
-field: {B66E4688-AB06-4FF0-A976-AA2492379CF5}
-name: Navigation Title
-key: navigation title
-content-length: 9
-
-Amenities
 ----field----
 field: {6C2D0631-17E6-4BBB-BEDF-CEA0939448C9}
 name: Navigation Link
 key: navigation link
 content-length: 140
 
-<link text="" linktype="internal" url="" anchor="" title="" class="" querystring="" target="" id="{34853065-F482-4073-9AE0-73E2E2FBFEF3}" />
+<link text="" linktype="internal" url="" anchor="" title="" class="" querystring="" target="" id="{110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -42,14 +35,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4fff8c47-fd59-416c-97d1-996bd87c9ad3
+98d90f10-6b19-44fc-aaa2-b0610e05aff0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190327T101552Z
+20190508T104313Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

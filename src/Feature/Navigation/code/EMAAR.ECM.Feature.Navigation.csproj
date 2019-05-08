@@ -221,17 +221,23 @@
     <Compile Include="Interface\IHeaderViewModel.cs" />
     <Compile Include="Interface\ILeftNavigation.cs" />
     <Compile Include="Interface\INavigationMenuRepository.cs" />
+    <Compile Include="Interface\ISitemapViewModel.cs" />
     <Compile Include="Models\FooterViewModel.cs" />
     <Compile Include="Models\LeftNavigation.cs" />
     <Compile Include="Models\HeaderViewModel.cs" />
+    <Compile Include="Models\SitemapViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\NavigationMenuRepository.cs" />
     <Compile Include="Settings\SitecoreSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <Content Include="Content\Site.css" />
     <Content Include="Views\Feature\ECM\NavigationMenu\_Footer.cshtml" />
     <Content Include="Views\Feature\ECM\NavigationMenu\_LeftNavigation.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Feature\ECM\NavigationMenu\_Sitemap.cshtml" />
     <None Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

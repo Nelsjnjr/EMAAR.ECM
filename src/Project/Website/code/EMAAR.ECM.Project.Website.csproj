@@ -229,15 +229,6 @@
     <Content Include="Assets\Project\ECM\css\fancybox\fancybox_sprite.png" />
     <Content Include="Assets\Project\ECM\css\vendors\select2.css" />
     <Content Include="Assets\Project\ECM\css\vendors\swiper.css" />
-    <Content Include="Assets\Project\ECM\Fields\AdvanceImage\css\focuspoint.css" />
-    <Content Include="Assets\Project\ECM\Fields\AdvanceImage\css\helper-tool.css" />
-    <Content Include="Assets\Project\ECM\Fields\AdvanceImage\detail.html" />
-    <Content Include="Assets\Project\ECM\Fields\AdvanceImage\js\jquery.focuspoint.js" />
-    <Content Include="Assets\Project\ECM\Fields\AdvanceImage\js\jquery.focuspoint.min.js" />
-    <Content Include="Assets\Project\ECM\Fields\AdvanceImage\template.html" />
-    <Content Include="Assets\Project\ECM\Fields\Slider\css\jquery-ui.min.css" />
-    <Content Include="Assets\Project\ECM\Fields\Slider\js\jquery-ui.min.js" />
-    <Content Include="Assets\Project\ECM\Fields\Slider\template.html" />
     <Content Include="Assets\Project\ECM\fonts\1069d95068cdf58f125fe7df3221f5f7.svg" />
     <Content Include="Assets\Project\ECM\fonts\4f2bf8530c19ba6a7c0e161d71fc65a5.svg" />
     <Content Include="Assets\Project\ECM\fonts\glyphicons-halflings-regular.svg" />
@@ -397,8 +388,6 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Project\ECM\Fields\AdvanceImage.cs" />
-    <Compile Include="Assets\Project\ECM\Fields\Slider.cs" />
     <Compile Include="Pipelines\RegisterPlatformBundles.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -412,9 +401,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Assets\Project\ECM\Fields\AdvanceImage\img\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>

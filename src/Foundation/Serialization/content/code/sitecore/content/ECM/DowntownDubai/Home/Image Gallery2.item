@@ -44,13 +44,6 @@ version: 1
 revision: 36711b1e-1654-4e62-832a-c213b52b6784
 
 ----field----
-field: {E98BF0CB-57FB-4353-9C23-1AD8D5961F2D}
-name: Title
-key: title
-content-length: 18
-
-I'm Image gallery2
-----field----
 field: {0CBA5220-AA8B-4F75-BCD6-68000B38D8C1}
 name: Introduction
 key: introduction
@@ -64,13 +57,6 @@ key: load more label
 content-length: 9
 
 Load More
-----field----
-field: {D9D30585-793D-4FC2-B6D1-7A47315DCBE9}
-name: Navigation Title
-key: navigation title
-content-length: 14
-
-Image Gallery2
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created

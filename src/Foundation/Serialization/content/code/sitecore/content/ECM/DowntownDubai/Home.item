@@ -268,15 +268,8 @@ sitecore\admin
 ----version----
 language: en
 version: 1
-revision: 34806e1f-5c33-44d5-a6c7-ed87da92a7dd
+revision: 03f6c55e-3732-47d2-bbd4-feb96988dd4f
 
-----field----
-field: {4474613D-E594-4763-9C9A-38E8E069DD18}
-name: Title
-key: title
-content-length: 26
-
-Downtown dubai Properities
 ----field----
 field: {8097066D-26C3-44B9-8527-551A2CBB5A84}
 name: Meta Title
@@ -306,6 +299,20 @@ content-length: 28
 
 country:UAE,
 Emirates:Dubai
+----field----
+field: {95191AF9-0440-42FD-AC4A-841CB29F6E0B}
+name: Include in Sitemap
+key: include in sitemap
+content-length: 0
+
+
+----field----
+field: {C4136F1D-43EC-45CB-8E1B-5A1993D16157}
+name: Title
+key: title
+content-length: 4
+
+Home
 ----field----
 field: {26C53039-4914-4EC5-BB84-AD910FAA4086}
 name: Hreflang Tags
@@ -489,14 +496,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-34806e1f-5c33-44d5-a6c7-ed87da92a7dd
+03f6c55e-3732-47d2-bbd4-feb96988dd4f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190418T061909Z
+20190508T103956Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

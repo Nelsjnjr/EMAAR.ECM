@@ -16,13 +16,6 @@ version: 1
 revision: a7ef0ac4-7a62-47be-be8b-29343455e860
 
 ----field----
-field: {C00FBB0E-51B0-4563-9CEA-A39FB1DD64C2}
-name: Navigation Title
-key: navigation title
-content-length: 5
-
-Media
-----field----
 field: {A5EF15AE-8FED-49C5-ADD1-33F750DF450B}
 name: Navigation Link
 key: navigation link
