@@ -16117,30 +16117,30 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					/// <para></para>
 					/// <para>Field Type: Treelist</para>		
 					/// <para>Field ID: 1452d535-ba8b-4a66-9a87-67d05a6e2058</para>
-					/// <para>Custom Data: </para>
+					/// <para>Custom Data: generic=System.Guid</para>
 					/// </summary>
 					[SitecoreField(ISitemap_ConfigurationConstants.Enabled_TemplatesFieldName)]
-					IEnumerable<> Enabled_Templates  {get; set;}
+					IEnumerable<System.Guid> Enabled_Templates  {get; set;}
 			
 								/// <summary>
 					/// The Exclude items field.
 					/// <para></para>
 					/// <para>Field Type: Treelist</para>		
 					/// <para>Field ID: 76002e61-2397-4b4d-84b2-98c2a8468d5a</para>
-					/// <para>Custom Data: </para>
+					/// <para>Custom Data: generic=System.Guid</para>
 					/// </summary>
 					[SitecoreField(ISitemap_ConfigurationConstants.Exclude_ItemsFieldName)]
-					IEnumerable<> Exclude_Items  {get; set;}
+					IEnumerable<System.Guid> Exclude_Items  {get; set;}
 			
 								/// <summary>
 					/// The Search engines field.
 					/// <para></para>
 					/// <para>Field Type: Multilist</para>		
 					/// <para>Field ID: 6bf47032-530c-4df3-9b29-0849e0990319</para>
-					/// <para>Custom Data: </para>
+					/// <para>Custom Data: generic=System.Guid</para>
 					/// </summary>
 					[SitecoreField(ISitemap_ConfigurationConstants.Search_EnginesFieldName)]
-					IEnumerable<> Search_Engines  {get; set;}
+					IEnumerable<System.Guid> Search_Engines  {get; set;}
 			
 				}
 
@@ -16184,33 +16184,33 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				/// <para></para>
 				/// <para>Field Type: Treelist</para>		
 				/// <para>Field ID: 1452d535-ba8b-4a66-9a87-67d05a6e2058</para>
-				/// <para>Custom Data: </para>
+				/// <para>Custom Data: generic=System.Guid</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(ISitemap_ConfigurationConstants.Enabled_TemplatesFieldName)]
-				public virtual IEnumerable<> Enabled_Templates  {get; set;}
+				public virtual IEnumerable<System.Guid> Enabled_Templates  {get; set;}
 					
 						/// <summary>
 				/// The Exclude items field.
 				/// <para></para>
 				/// <para>Field Type: Treelist</para>		
 				/// <para>Field ID: 76002e61-2397-4b4d-84b2-98c2a8468d5a</para>
-				/// <para>Custom Data: </para>
+				/// <para>Custom Data: generic=System.Guid</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(ISitemap_ConfigurationConstants.Exclude_ItemsFieldName)]
-				public virtual IEnumerable<> Exclude_Items  {get; set;}
+				public virtual IEnumerable<System.Guid> Exclude_Items  {get; set;}
 					
 						/// <summary>
 				/// The Search engines field.
 				/// <para></para>
 				/// <para>Field Type: Multilist</para>		
 				/// <para>Field ID: 6bf47032-530c-4df3-9b29-0849e0990319</para>
-				/// <para>Custom Data: </para>
+				/// <para>Custom Data: generic=System.Guid</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(ISitemap_ConfigurationConstants.Search_EnginesFieldName)]
-				public virtual IEnumerable<> Search_Engines  {get; set;}
+				public virtual IEnumerable<System.Guid> Search_Engines  {get; set;}
 					
 			
 	}

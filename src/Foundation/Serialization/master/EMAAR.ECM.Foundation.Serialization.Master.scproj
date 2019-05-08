@@ -2626,10 +2626,12 @@
     <SitecoreItem Include="sitecore\templates\Project\ECM\Page Types\Sitemap XML\Sitemap configuration\Configuration\Enabled templates.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <CodeGenData>generic=System.Guid</CodeGenData>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Project\ECM\Page Types\Sitemap XML\Sitemap configuration\Configuration\Exclude items.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <CodeGenData>generic=System.Guid</CodeGenData>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Project\ECM\Page Types\Sitemap XML\Sitemap configuration\Data.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
@@ -2638,6 +2640,7 @@
     <SitecoreItem Include="sitecore\templates\Project\ECM\Page Types\Sitemap XML\Sitemap configuration\Data\Search engines.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <CodeGenData>generic=System.Guid</CodeGenData>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Project\ECM\Page Types\Sitemap XML\Sitemap searchengine.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
