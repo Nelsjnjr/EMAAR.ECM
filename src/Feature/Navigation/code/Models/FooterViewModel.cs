@@ -13,5 +13,6 @@ namespace EMAAR.ECM.Feature.Navigation.Models
     {
         public IFooter Footer { get; set; }
         public ISiteRoot SiteRoot { get; set; }
+
     }
 }

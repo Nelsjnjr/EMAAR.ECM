@@ -1,4 +1,5 @@
-﻿using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
+﻿using EMAAR.ECM.Foundation.ORM.Models;
+using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
 using Sitecore.Data.Items;
 
 namespace EMAAR.ECM.Foundation.SitecoreExtensions.Interfaces
@@ -69,7 +70,10 @@ namespace EMAAR.ECM.Foundation.SitecoreExtensions.Interfaces
         /// Events Item in Mediacenter 
         /// </summary>
         Item EventsListingPageItem { get; }
-
+        /// <summary>
+        /// Sitemap Datasource from Header navigation datasource
+        /// </summary>
+        IHeader Sitemap { get; }
         #endregion
 
     }

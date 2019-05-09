@@ -5,7 +5,6 @@ using System.Linq;
 using EMAAR.ECM.Feature.Navigation.Interface;
 using EMAAR.ECM.Feature.Navigation.Settings;
 using EMAAR.ECM.Foundation.DependencyInjection;
-using EMAAR.ECM.Foundation.ORM.Models;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types;
 using EMAAR.ECM.Foundation.SitecoreExtensions;
@@ -13,8 +12,6 @@ using EMAAR.ECM.Foundation.SitecoreExtensions.Interfaces;
 using Glass.Mapper.Sc.Web.Mvc;
 using Sitecore.Data;
 using Sitecore.Data.Items;
-using System.Collections.Specialized;
-using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base;
 #endregion
 namespace EMAAR.ECM.Feature.Navigation.Repositories
 {
@@ -33,7 +30,7 @@ namespace EMAAR.ECM.Feature.Navigation.Repositories
         private readonly ISitemapViewModel _sitemapViewModel;
         #endregion
         #region constructor
-        public NavigationMenuRepository(Func<IMvcContext> mvcContext, ISitemapViewModel sitemapViewModel, ILeftNavigation leftNavigation,IFooterViewModel footerViewModel, IHeaderViewModel headerViewModel, IFooter footer, ISitecoreHelper sitecoreHelper)
+        public NavigationMenuRepository(Func<IMvcContext> mvcContext, ISitemapViewModel sitemapViewModel, ILeftNavigation leftNavigation, IFooterViewModel footerViewModel, IHeaderViewModel headerViewModel, IFooter footer, ISitecoreHelper sitecoreHelper)
         {
             _sitecoreHelper = sitecoreHelper;
             _headerViewModel = headerViewModel;
@@ -53,7 +50,7 @@ namespace EMAAR.ECM.Feature.Navigation.Repositories
             IMvcContext mvcContext = _mvcContext();
             //Checking the current item is the home item to display the Header based on this
             IHome contextItem = mvcContext.GetContextItem<IHome>();
-            _headerViewModel.SiteRoot= mvcContext.GetRootItem<ISiteRoot>();
+            _headerViewModel.SiteRoot = mvcContext.GetRootItem<ISiteRoot>();
             if (contextItem.TemplateId.ToString().Equals(SitecoreSettings.HomeTemplateID, StringComparison.InvariantCultureIgnoreCase))
             {
                 _headerViewModel.SearchIcon = _sitecoreHelper.HomePageSearch;
@@ -79,8 +76,8 @@ namespace EMAAR.ECM.Feature.Navigation.Repositories
         public IFooterViewModel GetFooter()
         {
             IMvcContext mvcContext = _mvcContext();
-            _footerViewModel.Footer=_sitecoreHelper.NavigationFooter;
-            _footerViewModel.SiteRoot = mvcContext.GetRootItem<ISiteRoot>(); 
+            _footerViewModel.Footer = _sitecoreHelper.NavigationFooter;
+            _footerViewModel.SiteRoot = mvcContext.GetRootItem<ISiteRoot>();
             return _footerViewModel;
         }
         /// <summary>
@@ -90,7 +87,7 @@ namespace EMAAR.ECM.Feature.Navigation.Repositories
         /// <returns>Left navigation</returns>
         public ILeftNavigation GetLeftNavigation()
         {
-            IMvcContext mvcContext = _mvcContext();  
+            IMvcContext mvcContext = _mvcContext();
             INavigable rootItem = mvcContext.GetContextItem<INavigable>();
             //Setting default to context item
             _leftNavigation.ParentNavigationItem = rootItem;
@@ -102,7 +99,7 @@ namespace EMAAR.ECM.Feature.Navigation.Repositories
                 //If context item is child of media center item template then have parent has Mediacenter
                 _leftNavigation.ParentNavigationItem = mvcContext.SitecoreService.GetItem<INavigable>(mediaCenter.FirstOrDefault().ID.ToGuid());
                 //All nested childs will always have CurrentItemNavigation has its Mediacenter immediate child from where its(context item) comes from. 
-                var currentItem = mediaCenter.FirstOrDefault().Children.Where(p => rootItem.ContextItem.Paths.LongID.Contains(p.ID.ToString())).Select(p=>p);
+                IEnumerable<Item> currentItem = mediaCenter.FirstOrDefault().Children.Where(p => rootItem.ContextItem.Paths.LongID.Contains(p.ID.ToString())).Select(p => p);
                 if (currentItem.Any())
                 {
                     _leftNavigation.CurrentNavigationItem = _mvcContext()?.SitecoreService.GetItem<INavigable>(currentItem.FirstOrDefault().ID.ToGuid());
@@ -127,25 +124,19 @@ namespace EMAAR.ECM.Feature.Navigation.Repositories
                      || ID.Parse(rootItem.TemplateId).Equals(ID.Parse(SitecoreSettings.GenericContentRootPageTemplateID)):
                     _leftNavigation.ParentNavigationItem = rootItem;
                     break;
-                default:                   
+                default:
                     break;
             }
             return _leftNavigation;
         }
+        /// <summary>
+        /// Generating Sitemap data from Header navigation datasource under(/Sitecontent/Navigation/Header)
+        /// </summary>
+        /// <returns>Sitemap datasource out of Header navigation items </returns>
         public ISitemapViewModel GetSitemap()
-        {
-            IMvcContext mvcContext = _mvcContext();
-            INavigable rootItem = mvcContext.GetRootItem<INavigable>();              
-            var sitemapLevel1 = rootItem.Children;
-            foreach (var sitemapLevel1Item in sitemapLevel1)
-            {
-                var sitemapLevel2Item = sitemapLevel1Item.Children.Where(p => p.Include_In_Sitemap);
-                _sitemapViewModel.SitemapItems.Add(
-                    new KeyValuePair<INavigable, List<INavigable>>(sitemapLevel1Item, sitemapLevel2Item.ToList()));                
-            }
+        {           
+            _sitemapViewModel.Sitemap = _sitecoreHelper.Sitemap;
             return _sitemapViewModel;
-
-
         }
         #endregion
 

@@ -7,6 +7,7 @@
     <div class="container">
         <div class="flexBox">
             @{
+
                 //Switching the HEader component by verifying whether is home page or not
                 if (Model.IsHomePage)
                 {
@@ -28,156 +29,138 @@
                         }
                     }
                 }
+
             }
             <nav class="siteNavigation">
                 <ul>
                     @{
+                        int count = 0;
                         if (Model != null && Model.Header.Root_Navigations != null)
                         {
                             var navigation = new List<INavigation>(Model.Header.Root_Navigations).Count;
                             if (navigation > 0)
                             {
-                                foreach (var rootNav in Model.Header.Root_Navigations)
+                                foreach (var level1 in Model.Header.Root_Navigations)
                                 {
-                                    int count = 0;
-                                    var subNavigation = new List<ISub_Navigation>(rootNav.Sub_Navigations).Count;
-                                    //If no Subnavigation (childs) then make this item as clickable
-                                    if (subNavigation <= 0)
+
+                                    //If no Subnavigation (childs) then make this item as clickable(example: Mediacenter)
+                                    if (!level1.Sub_Navigations.Any())
                                     {
                                         //On initial menu loading always select first item as active(example: Discovery)
-                                        if (count == 0)
+                                        //If has link set the link and referenced item's Title ,if external url then add Name of Navigation Item and Navigation_Link
+                                        if (level1.Navigation_Link != null)
                                         {
-                                            if (rootNav.Navigation_Link != null)
-                                            {
-                                                <li class="nosub">
-                                                    @using (Html.Glass().BeginRenderLink(rootNav, x => x.Navigation_Link, new { @class = "active" }, isEditable: true))
+                                            <li class="nosub">
+
+                                                @using (Html.Glass().BeginRenderLink(level1, x => x.Navigation_Link, new { @class = count == 0 ? "active" : String.Empty }, isEditable: true))
+                                                {
+                                                    //If no Url available then no need to add Title even if  Navigation Item exists in Sitecore
+                                                    //Checking Url referened item and getting its Title if Sitecore item,else displaying navigation item Name
+                                                    if (level1.Navigation_Link.Type.ToString() == "Internal")
                                                     {
-                                                        //Getting Title from Link item
-                                                        if (rootNav.Navigation_Link != null)
-                                                        {
-                                                            var noSubitem = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(rootNav.Navigation_Link.TargetId));
-                                                            if (noSubitem != null)
-                                                            {
-                                                                @Html.Sitecore().Field("Title", noSubitem)
-
-                                                            }
-                                                            else //If in case of external url getting Navigation item Title
-                                                            {
-                                                                @rootNav.Name
-                                                            }
-                                                        }
+                                                        var level1ReferencedItem = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(level1.Navigation_Link.TargetId));
+                                                        @Html.Sitecore().Field("Title", level1ReferencedItem)
                                                     }
-                                                </li>
-                                            }
-                                        }
-                                        else
-                                        {
-
-                                            if (rootNav.Navigation_Link != null)
-                                            {
-                                                <li class="nosub">
-                                                    @using (Html.Glass().BeginRenderLink(rootNav, x => x.Navigation_Link, isEditable: true))
+                                                    else //If in case of external url getting Navigation item Title
                                                     {
-                                                        //Getting Title from Link item
-                                                        if (rootNav.Navigation_Link != null)
-                                                        {
-                                                            var subitem = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(rootNav.Navigation_Link.TargetId));
-                                                            if (subitem != null)
-                                                            {
-                                                                @Html.Sitecore().Field("Title", subitem)
-
-                                                            }
-                                                            else //If in case of external url getting Navigation item Title
-                                                            {
-                                                                @rootNav.Name
-                                                            }
-                                                        }
-
+                                                        @level1.Name
                                                     }
-                                                </li>
-                                            }
+                                                }
+                                            </li>
                                         }
+
                                         count++;
                                         continue;
                                     }
                                     <li>
                                         <!--Link with Sub navigation-->
                                         <!--Setting top level item assign class to it if it has child items -->
-
                                         @{
-                                            if (rootNav.Navigation_Link != null)
+                                            //IF Level1 item itself has link example if (Discovery its self has link)
+                                            if (level1.Navigation_Link != null)
                                             {
-                                                var topSubitem = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(rootNav.Navigation_Link.TargetId));
+                                                //On initial menu loading always select first item as active(example: Discovery)
                                                 if (count == 0)
                                                 {
 
-                                                    if (topSubitem != null)
+                                                    //Checking Url referened item and getting its Title if Sitecore item,else displaying navigation item Name
+                                                    if (level1.Navigation_Link.Type.ToString() == "Internal")
                                                     {
-                                                        <a href="javascript:;" class="active"> @Html.Sitecore().Field("Title", topSubitem)</a>
-
+                                                        var level1ReferencedItem = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(level1.Navigation_Link.TargetId));
+                                                        if (level1ReferencedItem != null)
+                                                        {
+                                                            <a href="@level1.Navigation_Link.Url" class="active"> @Html.Sitecore().Field("Title", level1ReferencedItem)</a>
+                                                        }
                                                     }
                                                     else //If in case of external url getting Navigation item Title
                                                     {
-                                                        <a href="javascript:;" class="active">  @rootNav.Name</a>
+                                                        <a href="@level1.Navigation_Link.Url" class="active">  @level1.Name</a>
                                                     }
 
                                                 }
-                                                else
+                                                else //If not initial menu loading
                                                 {
-                                                    if (topSubitem != null)
+                                                    //Checking Url referened item and getting its Title if Sitecore item,else displaying navigation item Name
+                                                    if (level1.Navigation_Link.Type.ToString() == "Internal")
                                                     {
-
-                                                        <a href="javascript:;">  @Html.Sitecore().Field("Title", topSubitem)</a>
+                                                        var level1ReferencedItem = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(level1.Navigation_Link.TargetId));
+                                                        if (level1ReferencedItem != null)
+                                                        {
+                                                            <a href="javascript:;">  @Html.Sitecore().Field("Title", level1ReferencedItem)</a>
+                                                        }
                                                     }
-                                                    else
+                                                    else //If in case of external url getting Navigation item Title
                                                     {
-                                                        @rootNav.Name
+                                                        <a href="javascript:;"> @level1.Name</a>
                                                     }
 
 
                                                 }
                                             }
-
+                                            else //IF no url link available in Level1 item then just display Navigation Item name
+                                            {
+                                                <a href="javascript:;">
+                                                    @level1.Name
+                                                </a>
+                                            }
                                         }
                                         <!--Add sub menu items-->
                                         <div class="sub-menu">
                                             <ul>
-                                                @if (subNavigation > 0)
+                                                @if (level1.Sub_Navigations.Any())
                                                 {
-                                                    foreach (var subNav in rootNav.Sub_Navigations)
+                                                    foreach (var level2 in level1.Sub_Navigations)
                                                     {
-                                                        if (subNav.Navigation_Link != null)
+                                                        if (level2.Navigation_Link != null)
                                                         {
                                                             <li>
-                                                                @using (Html.Glass().BeginRenderLink(subNav, x => x.Navigation_Link, isEditable: true))
+                                                                @using (Html.Glass().BeginRenderLink(level2, x => x.Navigation_Link, isEditable: true))
                                                                 {
-                                                                    if (subNav.Navigation_Link.TargetId != null)
+                                                                    //Checking Url referened item and getting its Title if Sitecore item,else displaying navigation item Name
+                                                                    if (level2.Navigation_Link.Type.ToString() == "Internal")
                                                                     {
-                                                                        //Getting Title from Link item
-                                                                        if (subNav.Navigation_Link != null)
+                                                                        var level2ReferencedItem = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(level2.Navigation_Link.TargetId));
+                                                                        if (level2ReferencedItem != null)
                                                                         {
-                                                                            var item = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(subNav.Navigation_Link.TargetId));
-                                                                            if (item != null)
-                                                                            {
-                                                                                @Html.Sitecore().Field("Title", item)
+                                                                            @Html.Sitecore().Field("Title", level2ReferencedItem)
 
-                                                                            }
-                                                                            else //If in case of external url getting Navigation item Title
-                                                                            {
-                                                                                @subNav.Name
-                                                                            }
                                                                         }
-
+                                                                    }
+                                                                    else //If in case of external url getting Navigation item Title
+                                                                    {
+                                                                        @level2.Name
                                                                     }
                                                                 }
                                                             </li>
                                                         }
+
                                                     }
                                                 }
                                             </ul>
                                         </div>
 
                                     </li>
+
                                     count++;
                                 }
                             }

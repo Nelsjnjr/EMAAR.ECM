@@ -1,26 +1,33 @@
 ----item----
 version: 1
-id: {1DF6182C-CB17-4A2E-8803-E1C46E1D6B54}
+id: {FF88CBBD-0330-46F8-B8AA-86863C38B14B}
 database: master
-path: /sitecore/templates/Foundation/ECM/Base/_Navigable/Sitemap/Include in Sitemap
-parent: {1728B8E7-211C-4A1D-8C58-AC7CDF9D5FF8}
-name: Include in Sitemap
+path: /sitecore/templates/Foundation/ECM/Content Types/_Pages/Pages/Sitemap Page
+parent: {D22E654E-5DB8-48BB-B0AF-6243D1614D7D}
+name: Sitemap Page
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
-created: 20190508T082048Z
+created: 20190509T122558Z
 
 ----field----
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 8
+content-length: 12
 
-Checkbox
+General Link
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+300
 ----version----
 language: en
 version: 1
-revision: f6e7da52-8f02-4f77-9839-36aabd39a6d5
+revision: 3cb9b0ba-0b49-48ad-8ddd-0f6093e4bc64
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -28,21 +35,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20190508T082048Z
+20190509T122558Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-f6e7da52-8f02-4f77-9839-36aabd39a6d5
+3cb9b0ba-0b49-48ad-8ddd-0f6093e4bc64
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190508T082048Z
+20190509T122558Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

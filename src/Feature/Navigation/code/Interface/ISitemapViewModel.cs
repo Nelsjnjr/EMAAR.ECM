@@ -1,17 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using EMAAR.ECM.Foundation.ORM.Models;
+﻿#region namespace
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types;
-using Glass.Mapper.Sc.Fields;
-
+#endregion
 namespace EMAAR.ECM.Feature.Navigation.Interface
 {
+    /// <summary>
+    /// Getting Sitemap datasource
+    /// </summary>
     public interface ISitemapViewModel
     {
-        List<KeyValuePair<INavigable, List<INavigable>>> SitemapItems { get; set; }
+        #region property
+        // List<KeyValuePair<INavigable, List<INavigable>>> SitemapItems { get; set; }
+        /// <summary>
+        /// Getting Sitemap details from Header navigation datasource
+        /// </summary>
+        IHeader Sitemap { get; set; }
+        #endregion
 
     }
 }

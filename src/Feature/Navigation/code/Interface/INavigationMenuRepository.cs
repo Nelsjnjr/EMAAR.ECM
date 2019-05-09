@@ -26,9 +26,9 @@ namespace EMAAR.ECM.Feature.Navigation.Interface
         /// <returns>Left navigation</returns>
         ILeftNavigation GetLeftNavigation();
         /// <summary>
-        /// Getting Sitemap
+        /// Generating Sitemap data from Header navigation datasource under(/Sitecontent/Navigation/Header)
         /// </summary>
-        /// <returns>Sitemap</returns>
+        /// <returns>Sitemap datasource out of Header navigation items </returns>
         ISitemapViewModel GetSitemap();
         #endregion
     }

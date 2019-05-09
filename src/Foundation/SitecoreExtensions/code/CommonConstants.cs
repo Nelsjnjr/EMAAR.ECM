@@ -279,8 +279,11 @@
         /// <summary>
         /// Events Folder Template ID
         /// </summary>
-        public const string EventsYearFolderTemplateID = "{01E451AA-9122-4601-A53F-98557F85FE79}";     
-
+        public const string EventsYearFolderTemplateID = "{01E451AA-9122-4601-A53F-98557F85FE79}";
+        /// <summary>
+        /// Home Template ID
+        /// </summary>
+        public const string SitemapPageTemplateID = "{C814585C-A8DD-415A-BBAF-7412363CCF93}";
         /// <summary>
         /// All Years dictionary key
         /// </summary>

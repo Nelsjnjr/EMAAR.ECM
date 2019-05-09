@@ -15,54 +15,62 @@
         <div class="row">
             @{
                 <!--Link with Navigation-->
-                foreach (var rootNav in Model.Footer.Root_Navigations)
+                foreach (var level1 in Model.Footer.Root_Navigations)
                 {
                     <div class="col-6 col-md-3">
                         <div class="footer-ul">
                             @{
-                                //Getting Title from Link item
-                                if (rootNav.Navigation_Link != null)
+                                //If has link set the link and referenced item Title ,if external url add Title of Navigation Item and Navigation_Link
+                                //If no Url available then no need to add Title even if  Navigation Item exists in Sitecore
+                                if (level1.Navigation_Link != null)
                                 {
-                                    var rootItem = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(rootNav.Navigation_Link.TargetId));
-                                    if (rootItem != null)
+                                    //Checking Url referened item and getting its Title if Sitecore item,else displaying navigation item Name
+                                    if (level1.Navigation_Link.Type.ToString() == "Internal")
                                     {
-                                        <h2 class="footer-title upperCase"> @Html.Sitecore().Field("Title", rootItem)</h2>
-
+                                        var level1ReferencedItem = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(level1.Navigation_Link.TargetId));
+                                        if (level1ReferencedItem != null)
+                                        {
+                                            <h2 class="footer-title upperCase"> @Html.Sitecore().Field("Title", level1ReferencedItem)</h2>
+                                        }
                                     }
                                     else //If in case of external url getting Navigation item Title
                                     {
-                                        <h2 class="footer-title upperCase">  @rootNav.Name</h2>
+                                        <h2 class="footer-title upperCase">  @level1.Name</h2>
                                     }
+                                }
+                                else //If no Navigation url then have Name from Navugation Item Name
+                                {
+                                    <h2 class="footer-title upperCase">  @level1.Name</h2>
                                 }
                             }
                             @{
                                 <!--Link with Sub navigation-->
-                                var subNavigation = new List<ISub_Navigation>(rootNav.Sub_Navigations).Count;
-                                if (subNavigation > 0)
+
+                                if (level1.Sub_Navigations.Any())
                                 {
                                     <ul>
-                                        @foreach (var subNav in rootNav.Sub_Navigations)
-
+                                        @foreach (var level2 in level1.Sub_Navigations)
                                         {
-                                            if (subNav.Navigation_Link != null)
+                                            //If has link set the link and referenced item Title ,if external url add Title of Navigation Item and Navigation_Link
+                                            if (level2.Navigation_Link != null)
                                             {
                                                 <li>
-                                                    @using (Html.Glass().BeginRenderLink(subNav, x => x.Navigation_Link, isEditable: true))
+                                                    @using (Html.Glass().BeginRenderLink(level2, x => x.Navigation_Link, isEditable: true))
                                                     {
-                                                        //Getting Title from Link item
-                                                        if (subNav.Navigation_Link != null)
+                                                        //Checking Url referened item and getting its Title if Sitecore item,else displaying navigation item Name
+                                                        if (level2.Navigation_Link.Type.ToString() == "Internal")
                                                         {
-                                                            var subNavItem = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(subNav.Navigation_Link.TargetId));
-                                                            if (subNavItem != null)
+                                                            var level2ReferencedItem = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(level2.Navigation_Link.TargetId));
+                                                            if (level2ReferencedItem != null)
                                                             {
-                                                                @Html.Sitecore().Field("Title", subNavItem)
-
-                                                            }
-                                                            else //If in case of external url getting Navigation item Title
-                                                            {
-                                                                @subNav.Name
+                                                                @Html.Sitecore().Field("Title", level2ReferencedItem)
                                                             }
                                                         }
+                                                        else //If in case of external url getting Navigation item Title
+                                                        {
+                                                            @level2.Name
+                                                        }
+
                                                     }
                                                 </li>
                                             }
@@ -121,6 +129,16 @@
                         </li>
                     }
 
+                }
+                <!--Adding Sitemap link-->
+                @if (Model.SiteRoot != null && Model.SiteRoot.Sitemap_Page != null)
+                {
+                    <li>
+                        @using (Html.Glass().BeginRenderLink(Model.SiteRoot, x => x.Sitemap_Page, isEditable: true))
+                        {
+                            @Sitecore.Globalization.Translate.Text("sitemap")
+                        }
+                    </li>
                 }
             </ul>
             <p class="rights">  @Model.Footer.Copyright.ToString().Replace(CommonConstants.YearToken, System.DateTime.Now.Year.ToString())</p>

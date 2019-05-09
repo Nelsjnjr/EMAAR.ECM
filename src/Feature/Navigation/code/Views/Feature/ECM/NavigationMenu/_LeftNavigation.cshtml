@@ -8,9 +8,6 @@
         <ul>
             @if (Model.ParentNavigationItem.Children.Count() > 0 && Model.ParentNavigationItem.Include_In_Left_Navigation)
             {
-                var options = Sitecore.Links.LinkManager.GetDefaultUrlOptions();
-                options.AlwaysIncludeServerUrl = true;
-                options.SiteResolving = true;
                 //By default the left navigation heading is not clickable , but it is decided based on the selection of field from sitecore "Is Left Navigation Root Clicakable"
                 if (Model.ParentNavigationItem.Is_Left_Navigation_Root_Clickable)
                 {
@@ -18,46 +15,30 @@
                     if (Model.ParentNavigationItem.ContextItem != null)
                     {
                         <li>
-                            <a href="@Sitecore.Links.LinkManager.GetItemUrl(Model.ParentNavigationItem.ContextItem, options)">
-                                @Html.Sitecore().Field("Title", Model.ParentNavigationItem.ContextItem)
+                            <a href="@Model.ParentNavigationItem.Url">
+                                @Model.ParentNavigationItem.PageTitle
                             </a>
                         </li>
                     }
-
                 }
                 else
                 {
-                    <li><a href="javascript:;"> @Model.ParentNavigationItem.ContextItem.Name</a></li>
+                    <li><a href="javascript:;">   @Model.ParentNavigationItem.PageTitle</a></li>
                 }
 
                 foreach (var nav in Model.ParentNavigationItem.Children.ToList())
                 {
                     if (nav.Include_In_Left_Navigation)
                     {
-                        if (Model.CurrentNavigationItem.Id == nav.Id)
+                        //If context item is a child item then make active class
+                        if (nav.ContextItem != null)
                         {
-                            //Getting Title from  item
-
-                            if (nav.ContextItem != null)
-                            {
-                                <li class="active">
-                                    <a href="@Sitecore.Links.LinkManager.GetItemUrl(nav.ContextItem, options)">
-                                        @Html.Sitecore().Field("Title", nav.ContextItem)
-                                    </a>
-                                </li>
-                            }
-
-
-                        }
-                        else
-                        {
-                            <li>
-                                <a href="@Sitecore.Links.LinkManager.GetItemUrl(nav.ContextItem, options)">
-                                    @nav.ContextItem.Name
+                            <li class="@(Model.CurrentNavigationItem.Id == nav.Id?"active":String.Empty)">
+                                <a href="@nav.Url">
+                                    @nav.PageTitle
                                 </a>
                             </li>
                         }
-
                     }
                 }
             }

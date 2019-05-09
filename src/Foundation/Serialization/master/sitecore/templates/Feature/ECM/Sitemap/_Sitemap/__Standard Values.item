@@ -1,27 +1,20 @@
 ----item----
 version: 1
-id: {4B6D7B6F-589F-4A57-A165-B774E374FE27}
+id: {3D503146-8796-476C-ADEA-03875C351ED0}
 database: master
-path: /sitecore/templates/Foundation/ECM/Base/_Navigable/__Standard Values
-parent: {57D9AAD2-B948-4544-996D-1BF3C7221A28}
+path: /sitecore/templates/Feature/ECM/Sitemap/_Sitemap/__Standard Values
+parent: {363A11C5-A633-4D23-ABFB-68128ED15C63}
 name: __Standard Values
 master: {00000000-0000-0000-0000-000000000000}
-template: {57D9AAD2-B948-4544-996D-1BF3C7221A28}
-templatekey: _Navigable
-created: 20190421T125416Z
+template: {363A11C5-A633-4D23-ABFB-68128ED15C63}
+templatekey: _Sitemap
+created: 20190508T121252Z
 
 ----version----
 language: en
 version: 1
-revision: f2a0f0a6-6ab1-4fb6-8811-9318bf39bd2e
+revision: df2714be-6df7-4b5b-9ecc-35ee1d66d77d
 
-----field----
-field: {36CFAA10-F10C-40DD-9BBC-A8F7160DD389}
-name: Include in Left Navigation
-key: include in left navigation
-content-length: 1
-
-1
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -35,7 +28,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20190421T125416Z
+20190508T121252Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -49,14 +42,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f2a0f0a6-6ab1-4fb6-8811-9318bf39bd2e
+df2714be-6df7-4b5b-9ecc-35ee1d66d77d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190508T082111Z
+20190508T121252Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
