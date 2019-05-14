@@ -286,10 +286,7 @@ namespace EMAAR.ECM.Foundation.Sitemap
                     }
                     return !strs1.Contains(itm.ID.ToString());
                 });
-                return items.Where(x => x != null && 
-                x.Versions.Count > 0 && 
-                ((CheckboxField)x.Fields[CommonConstants.IncludeinSitemap] != null  && 
-                ((CheckboxField)x.Fields[CommonConstants.IncludeinSitemap]).Checked)).ToList<Item>();
+                return items.Where(x => x != null && x.Versions.Count > 0  && x.Versions.IsLatestVersion()).ToList<Item>();
             }
             else
                 return new List<Item>();

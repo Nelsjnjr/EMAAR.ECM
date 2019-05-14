@@ -224,7 +224,7 @@
     <Compile Include="SitemapManagerForm.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Foundation\ECM\SitecoreExtensions\EMAAR.ECM.Foundation.SitecoreExtensions.config">
+    <Content Include="App_Config\Include\Foundation\ECM\Sitemap\EMAAR.ECM.Foundation.SitecoreExtensions.config">
       <SubType>Designer</SubType>
     </Content>
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
