@@ -34,8 +34,15 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 390e2ffa-b66c-4a16-91f3-0de9f61ad40f
+revision: 79a0594f-e3a7-43be-9367-e75fb7227b5c
 
+----field----
+field: {9541E67D-CE8C-4225-803D-33F7F29F09EF}
+name: __Short description
+key: __short description
+content-length: 89
+
+This Logo is used to set for specific site in Content page(Ex : Downtowndubai,Greens etc)
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -49,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-390e2ffa-b66c-4a16-91f3-0de9f61ad40f
+79a0594f-e3a7-43be-9367-e75fb7227b5c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190429T111850Z
+20190514T082429Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

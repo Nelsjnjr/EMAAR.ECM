@@ -2,12 +2,23 @@
 @using Glass.Mapper.Sc.Web.Mvc
 @using EMAAR.ECM.Foundation.SitecoreExtensions
 @using EMAAR.ECM.Foundation.Search.Helpers
+@{
+    //Verifing and getting the parent item only when the requested item is Folder item
+    bool isVideoGallery = Model.Parent.ContextItem.TemplateID.Equals(Sitecore.Data.ID.Parse(CommonConstants.VideoGalleryTemplateID)) ? true : false;
+    bool isVideoAlbumWithFilters = Model.Parent.ContextItem.TemplateID.Equals(Sitecore.Data.ID.Parse(CommonConstants.VideoAlbumWithFiltersTemplateID)) ? true : false;
+    string parentItemId = String.Empty;
+    if (isVideoGallery || isVideoAlbumWithFilters)
+    {
+        parentItemId = Model.Parent.Id.ToString();
+
+    }
+}
 <div class="gallery-section">
     <div class="section-header">
         <h1 class="heading">@Html.Glass().Editable(Model, x => x.Title)</h1>
         <p>@Html.Glass().Editable(Model, x => x.Introduction)</p>
     </div>
-    <div id="templateInitializor" data-service-url="/api/sitecore/listing/GetListingJSON" data-page-size="@Model.No_Of_Records" data-item-id="@Model.Id" data-listItemTemplateId="@SearchHelper.FormatGuid(CommonConstants.VideoItemTemplateID)" data-error-message="@Model.Error_Message" data-show-filters="@(ViewBag.Showfilter !=null ?System.Convert.ToBoolean(ViewBag.Showfilter):false)">
+    <div id="templateInitializor" data-service-url="/api/sitecore/listing/GetListingJSON" data-page-size="@Model.No_Of_Records" data-item-id="@Model.Id" data-listParentItemId="@parentItemId"  data-listItemTemplateId="@SearchHelper.FormatGuid(CommonConstants.VideoItemTemplateID)" data-error-message="@Model.Error_Message" data-show-filters="@(ViewBag.Showfilter !=null ?System.Convert.ToBoolean(ViewBag.Showfilter):false)">
         <div class="selectFilters"></div>
         <script id="filter-template" type="text/x-handlebars-template">
             <div class="row">

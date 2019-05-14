@@ -60,6 +60,11 @@
 
         };
         /// <summary>
+        /// All events constants value
+        /// </summary>
+        public const string AllEvents = "AllEvents";
+
+        /// <summary>
         /// RTE Class names
         /// </summary>
         public static string[] RteClassNames => new string[] { "image-right-section", "image-left-section", "table-responsive" };
@@ -232,7 +237,6 @@
         /// Image Item Template ID
         /// </summary>
         public const string ImageItemTemplateID = "{E669E6DE-8064-4126-BDB7-1A12757A1A90}";
-
         /// <summary>
         /// Video Item Template ID
         /// </summary>
@@ -241,10 +245,24 @@
         /// Video gallery Template ID
         /// </summary>
         public const string VideoGalleryTemplateID = "{19BF6D5D-CAFC-4C5A-927F-0705A5CD4B61}";
+
         /// <summary>
         /// News Template ID
         /// </summary>
         public const string NewsTemplateID = "{835DCB81-BBC5-4CB7-970D-4BE80A2D39D8}";
+        /// <summary>
+        /// News Folder Template ID
+        /// </summary>
+        public const string NewsFolderTemplateID = "{C8761BF7-FA60-4FED-9CE7-55899C8A45D7}";
+        /// <summary>
+        /// Newslisting page Template id
+        /// </summary>
+        public const string NewsListingPageTemplateID = "{21FC4198-E485-4AA7-B60E-4CC9E8F33C7B}";
+
+        /// <summary>
+        /// Eventslisting page Template id
+        /// </summary>
+        public const string EventsListingPageTemplateID = "{967D5AE7-1742-4661-9696-3E8E9D9653C5}";
 
         /// <summary>
         /// Events Template ID

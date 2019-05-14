@@ -212,6 +212,7 @@
     <Compile Include="ComputedFields\CustomSortOrder.cs" />
     <Compile Include="ComputedFields\CustomYear.cs" />
     <Compile Include="ComputedFields\ExternalUrl.cs" />
+    <Compile Include="ComputedFields\RenderingContent.cs" />
     <Compile Include="ComputedFields\thumbnailUrl.cs" />
     <Compile Include="ComputedFields\ImageUrl.cs" />
     <Compile Include="ComputedFields\PageUrl.cs" />

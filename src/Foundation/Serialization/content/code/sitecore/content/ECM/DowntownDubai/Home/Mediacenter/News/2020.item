@@ -10,17 +10,10 @@ template: {C8761BF7-FA60-4FED-9CE7-55899C8A45D7}
 templatekey: NewsAlbumFolder
 created: 20190426T114802Z
 
-----field----
-field: {105BAD38-1786-44F3-8ADA-ADB697F4EC9B}
-name: Year
-key: year
-content-length: 4
-
-2020
 ----version----
 language: en
 version: 1
-revision: e17a56ce-eaf6-4bda-97be-e462c9b6ae7d
+revision: 0a9c64f3-deed-406c-bca7-18b126df8387
 
 ----field----
 field: {0CBA5220-AA8B-4F75-BCD6-68000B38D8C1}
@@ -42,14 +35,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e17a56ce-eaf6-4bda-97be-e462c9b6ae7d
+0a9c64f3-deed-406c-bca7-18b126df8387
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190507T052409Z
+20190513T122644Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

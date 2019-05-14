@@ -14,6 +14,10 @@
             faqId = string.Format("heading{0}", randomId + count.ToString());
             faqCollapseId = string.Format("collapse{0}", randomId + count.ToString());
             <div class="accordionWrap">
+                @if (!String.IsNullOrEmpty(faq.Faq_Header))
+                {
+                    <h3> @Html.Glass().Editable(faq, x => x.Faq_Header)</h3>
+                }
                 <div class="accordionHeading" id="@faqId">
                     <button class="collapsed" type="button" data-toggle="collapse" data-target="#@faqCollapseId" aria-expanded="false" aria-controls="@faqCollapseId">
                         @Html.Glass().Editable(faq, x => x.Title)

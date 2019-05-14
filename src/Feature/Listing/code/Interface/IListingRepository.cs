@@ -6,8 +6,9 @@ namespace EMAAR.ECM.Feature.Listing.Interfaces
     public interface IListingRepository
     {
 
-        SearchResultsGeneric<ListingSearchResultItem> GetListingModel(int pageNumber = -1, int pageSize = -1, string filter = "", string itemId = "", string listItemTemplateId = "", bool showFilters = false);
+        SearchResultsGeneric<ListingSearchResultItem> GetListingModel(int pageNumber = -1, int pageSize = -1, string filter = "", string itemId = "", string listItemTemplateId = "", bool showFilters = false,string parentItemId = "");
                        
+       // SearchResultsGeneric<ListingSearchResultItem> GetSearchResultsModel(int pageNumber = -1, int pageSize = -1, string searchTerm = "*");
 
         IImage_Gallery_Page GetImageGallery();
 
@@ -24,5 +25,6 @@ namespace EMAAR.ECM.Feature.Listing.Interfaces
 
         IDownloads_Page GetDownloadsListingPageModel();
 
+       // ISearchPage GetSearchPageModel();
     }
 }

@@ -37,6 +37,13 @@ version: 1
 revision: 46291051-1d6b-4e1f-9e1d-733f845350c6
 
 ----field----
+field: {C4136F1D-43EC-45CB-8E1B-5A1993D16157}
+name: Title
+key: title
+content-length: 18
+
+Events 3 from 2019
+----field----
 field: {2F142564-A4BB-4FA4-A366-9B78D128D9B5}
 name: Navigation URL
 key: navigation url
@@ -50,13 +57,6 @@ key: banner
 content-length: 58
 
 <image mediaid="{6A5D6A17-9A2F-4B6D-A724-E46312C0A9C3}" />
-----field----
-field: {C4136F1D-43EC-45CB-8E1B-5A1993D16157}
-name: Title
-key: title
-content-length: 18
-
-Events 3 from 2019
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created

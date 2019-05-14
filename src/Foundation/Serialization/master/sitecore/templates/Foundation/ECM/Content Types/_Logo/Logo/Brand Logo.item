@@ -34,15 +34,15 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 917acf87-612d-4480-9576-c3aac44cfa9a
+revision: 642c4cda-5b1e-49d6-bc47-4fbae3725e9f
 
 ----field----
 field: {9541E67D-CE8C-4225-803D-33F7F29F09EF}
 name: __Short description
 key: __short description
-content-length: 66
+content-length: 82
 
-This Logo is used to set for the community site  (Ex : Emaar Logo)
+This Logo is used to set for setting Home page's Logo of  the Company  (Ex: Emaar)
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -56,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-917acf87-612d-4480-9576-c3aac44cfa9a
+642c4cda-5b1e-49d6-bc47-4fbae3725e9f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190429T111850Z
+20190514T082357Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

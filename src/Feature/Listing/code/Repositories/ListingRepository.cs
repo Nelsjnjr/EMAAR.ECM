@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using EMAAR.ECM.Feature.Listing.Interfaces;
 using EMAAR.ECM.Foundation.DependencyInjection;
 using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Types;
@@ -10,6 +11,7 @@ using EMAAR.ECM.Foundation.Search.Models;
 using EMAAR.ECM.Foundation.SitecoreExtensions;
 using Glass.Mapper.Sc.Web.Mvc;
 using Sitecore.Data;
+using Sitecore.Data.Items;
 
 namespace EMAAR.ECM.Feature.Listing.Repositories
 {
@@ -27,7 +29,8 @@ namespace EMAAR.ECM.Feature.Listing.Repositories
         private readonly INews_Listing_Page _newsModel;
         private readonly IEvents_Listing_Page _eventsModel;
         private readonly IDownloads_Page _downloadsModel;
-
+      //  private readonly ISearchPage _searchPageModel;
+        
         #endregion
 
         #region constructor
@@ -43,6 +46,7 @@ namespace EMAAR.ECM.Feature.Listing.Repositories
             _newsModel = newsModel;
             _eventsModel = eventsModel;
             _downloadsModel = downloadsModel;
+          
         }
         #endregion
         #region method
@@ -53,19 +57,45 @@ namespace EMAAR.ECM.Feature.Listing.Repositories
         /// </summary>
         /// <param name="pageNumber">page number</param>
         /// <param name="pageSize">page size</param>
-        /// <param name="filter">filter</param>           
+        /// <param name="filter">filter</param>   
+        /// <param name="parentItemId">Parent id when directly access Folder item</param>       
         /// <returns>SearchResultsGeneric<ListingSearchResultItem> </returns>   
-        public SearchResultsGeneric<ListingSearchResultItem> GetListingModel(int pageNumber = -1, int pageSize = -1, string filter = "", string itemId = "", string listItemTemplateId = "", bool showFilters = false)
+        public SearchResultsGeneric<ListingSearchResultItem> GetListingModel(int pageNumber = -1, int pageSize = -1, string filter = "", string itemId = "", string listItemTemplateId = "", bool showFilters = false, string parentItemId = "")
         {
+            List<SearchCondition> yearFolderparentSearchCondition = new List<SearchCondition>();
             listItemTemplateId = SearchHelper.FormatGuid(listItemTemplateId);
             SearchResultsGeneric<ListingSearchResultItem> resultsList = new SearchResultsGeneric<ListingSearchResultItem>();
-            Sitecore.Data.ID.TryParse(itemId, out Sitecore.Data.ID id);
+            SearchResultsGeneric<ListingSearchResultItem> parentResultsList = new SearchResultsGeneric<ListingSearchResultItem>();
+            ID id = null;
+            //This is used when the context item from folder template for SEO, so get its parent listing page as context item
+            if (!string.IsNullOrEmpty(parentItemId) && !string.IsNullOrEmpty(filter))
+            {
+                Sitecore.Data.ID.TryParse(parentItemId, out id);
+            }
+            else//Context item id
+            {
+                Sitecore.Data.ID.TryParse(itemId, out id);
+            }
 
             if (id.IsNull)
             {
                 return resultsList;
             }
+            string contextItemName = string.Empty;
+            Item currentItem = null;
+            Item parent = null;
 
+            if (!string.IsNullOrEmpty(parentItemId) && string.IsNullOrEmpty(filter))
+            {
+                //Filter from parent items
+                parent = Sitecore.Context.Database.GetItem(parentItemId);
+                yearFolderparentSearchCondition = new List<SearchCondition>
+                {
+                    new SearchCondition() { Name = CommonConstants.TemplateID, Value =listItemTemplateId , CompareType = CompareType.ExactMatch },
+                    new SearchCondition() { Name = Sitecore.ContentSearch.BuiltinFields.Path, Value = SearchHelper.FormatGuid(parentItemId.ToString()), CompareType = CompareType.ExactMatch }
+                };
+            }
+            //Filter current context item childs
             List<SearchCondition> conditions = new List<SearchCondition>
             {
                 new SearchCondition() { Name = CommonConstants.TemplateID, Value = listItemTemplateId, CompareType = CompareType.ExactMatch },
@@ -77,12 +107,7 @@ namespace EMAAR.ECM.Feature.Listing.Repositories
             {
                 conditions.Add(new SearchCondition() { Name = CommonConstants.YearFacetField, Value = DateTime.UtcNow.Year.ToString(), CompareType = CompareType.ExactMatch });
             }
-            //Adding filter condition for Event type
-            if (listItemTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.EventsTemplateID)) && filter != null && !filter.ToLower().Contains(CommonConstants.EventType.ToLower()))
-            {
-                conditions.Add(new SearchCondition() { Name = CommonConstants.EventType, Value = DateTime.UtcNow.ToString(), CompareType = CompareType.GreaterOrEqual });
-            }
-
+            yearFolderparentSearchCondition = SearchHelper.AddFilterConditions(filter, yearFolderparentSearchCondition);
             conditions = SearchHelper.AddFilterConditions(filter, conditions);
             List<Facet> facets = new List<Facet>();
 
@@ -105,7 +130,35 @@ namespace EMAAR.ECM.Feature.Listing.Repositories
 
 
             //Sort Option
-            if (listItemTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.NewsTemplateID)))
+            if (parent != null && (parent.TemplateID.Equals(Sitecore.Data.ID.Parse(CommonConstants.NewsListingPageTemplateID)) ||
+               parent.TemplateID.Equals(Sitecore.Data.ID.Parse(CommonConstants.EventsListingPageTemplateID))||
+               parent.TemplateID.Equals(Sitecore.Data.ID.Parse(CommonConstants.ImageGalleryPageTemplateID))||
+               parent.TemplateID.Equals(Sitecore.Data.ID.Parse(CommonConstants.VideoGalleryTemplateID))||
+               parent.TemplateID.Equals(Sitecore.Data.ID.Parse(CommonConstants.VideoAlbumWithFiltersTemplateID))))
+            {
+                //Getting the customyear selected in the filter , if filter is empty then get the Contextitem name(year name)
+                List<string> filters = filter.Split(new char[] { '|' }, StringSplitOptions.RemoveEmptyEntries).ToList();
+                if (filters != null && filters.Any())
+                {
+                    foreach (string filterString in filters)
+                    {
+                        List<string> filterParam = filterString.Split(new char[] { ':' }, StringSplitOptions.RemoveEmptyEntries).ToList();
+                        if (filterParam != null && filterParam.Any() && filterParam[0] == CommonConstants.YearFacetField)
+                        {
+                            contextItemName = filterParam[1];
+                        }
+                    }
+                }
+                else
+                {
+                    //year name 
+                    currentItem = Sitecore.Context.Database.GetItem(id);
+                    contextItemName = currentItem.Name;
+                }
+                parentResultsList = _searchManager.GetSearchResults<ListingSearchResultItem>(yearFolderparentSearchCondition, facets, null, 0, 0, false, true, true, true, contextItemName);
+                resultsList = _searchManager.GetSearchResults<ListingSearchResultItem>(conditions, facets, null, pageNumber, pageSize, false, true);
+            }
+            else if (listItemTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.NewsTemplateID)))
             {
                 resultsList = _searchManager.GetSearchResults<ListingSearchResultItem>(conditions, facets, null, pageNumber, pageSize, false, true);
             }
@@ -127,12 +180,15 @@ namespace EMAAR.ECM.Feature.Listing.Repositories
             {
                 resultsList = _searchManager.GetSearchResults<ListingSearchResultItem>(conditions, facets, null, pageNumber, pageSize, true, false);
             }
+
+
             //Adding filter "Event Type"(Upcoming and Past events)
             if (listItemTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.EventsTemplateID)) &&
                 pageNumber <= 0 && resultsList != null && resultsList.filters != null)
             {
                 List<FilterValues> filterValues = new List<FilterValues>
                 {
+                    new FilterValues() { id = CommonConstants.AllEvents, label = Sitecore.Globalization.Translate.Text(CommonConstants.AllEvents) },
                     new FilterValues() { id = CommonConstants.Upcoming, label = Sitecore.Globalization.Translate.Text(CommonConstants.UpcomingEvents) },
                     new FilterValues() { id = CommonConstants.Past, label = Sitecore.Globalization.Translate.Text(CommonConstants.PastEvents) }
                 };
@@ -153,25 +209,29 @@ namespace EMAAR.ECM.Feature.Listing.Repositories
                 {
                     contentItemTemplateId = CommonConstants.ImageItemTemplateID;
                 }
-                //Get First item's image of each album as cover image
-                int count = 0;
-                while (count < resultsList.results.results.Count)
-                {
-                    if (resultsList.results.results[count] != null)
-                    {
-                        SearchResultsGeneric<ListingSearchResultItem> list = GetListingModel(0, 1, null, resultsList.results.results[count].ItemId.ToString(), SearchHelper.FormatGuid(contentItemTemplateId), false);
-                        if (list != null && list.results.results != null && list.results.results.Count > 0)
-                        {
-                            resultsList.results.results[count].imageUrl = list.results.results[0].imageUrl;
-                            resultsList.results.results[count].thumbnailurl = list.results.results[0].thumbnailurl;
-                        }
-                    }
+                ////Get First item's image of each album as cover image
+                //int count = 0;
+                //while (count < resultsList.results.results.Count)
+                //{
+                //    if (resultsList.results.results[count] != null)
+                //    {
+                //        SearchResultsGeneric<ListingSearchResultItem> list = GetListingModel(0, 1, null, resultsList.results.results[count].ItemId.ToString(), SearchHelper.FormatGuid(contentItemTemplateId), false);
+                //        if (list != null && list.results.results != null && list.results.results.Count > 0)
+                //        {
+                //            resultsList.results.results[count].imageUrl = list.results.results[0].imageUrl;
+                //            resultsList.results.results[count].thumbnailurl = list.results.results[0].thumbnailurl;
+                //        }
+                //    }
 
-                    count++;
-                }
+                //    count++;
+                //}
 
             }
-
+            //Changing the filter based on the template selected(whether it is folder page or listing page)
+            if (!string.IsNullOrEmpty(parentItemId) && parentResultsList.filters != null)
+            {
+                resultsList.filters = parentResultsList.filters;
+            }
 
             return resultsList;
 
@@ -292,7 +352,93 @@ namespace EMAAR.ECM.Feature.Listing.Repositories
 
         #endregion
 
+        #region Search
 
+        /// <summary>
+        /// Method to get listing model
+        /// </summary>
+        /// <param name="pageNumber">page number</param>
+        /// <param name="pageSize">page size</param>        
+        /// <returns>SearchResultsGeneric<ListingSearchResultItem> </returns>   
+        //public SearchResultsGeneric<ListingSearchResultItem> GetSearchResultsModel(int pageNumber = -1, int pageSize = -1, string searchTerm = "*")
+        //{
+
+        //    List<SearchCondition> conditions = new List<SearchCondition>
+        //    {
+        //        //new SearchCondition() { Name = CommonConstants.TitleIndexField, Value = searchTerm, CompareType = CompareType.PartialMatch, AddORcondition=true },
+        //        //new SearchCondition() { Name = CommonConstants.IntroductionIndexField, Value = searchTerm, CompareType = CompareType.PartialMatch,AddORcondition=true },
+        //        //new SearchCondition() { Name = CommonConstants.ContentIndexField, Value = searchTerm, CompareType = CompareType.PartialMatch,AddORcondition=true },
+        //        //new SearchCondition() { Name = CommonConstants.RenderingsContentIndexField, Value = searchTerm, CompareType = CompareType.PartialMatch,AddORcondition=true },
+        //        //new SearchCondition() { Name = CommonConstants.PageUrl , Value = string.Empty, CompareType = CompareType.IsNotNull }
+        //    };
+
+
+        //    conditions = SearchHelper.AddFilterConditions("", conditions);
+
+        //    SearchResultsGeneric<ListingSearchResultItem> resultsList = _searchManager.GetSearchResults<ListingSearchResultItem>(conditions, null, null, pageNumber, pageSize, false, false);
+
+        //    if (searchTerm !="*" && resultsList != null && resultsList.results != null && resultsList.results.results != null && resultsList.results.results.Count > 0)
+        //    {
+        //        int count = 0;
+        //        foreach (var listItem in resultsList.results.results)
+        //        {
+        //            resultsList.results.results[count].title = HighlightKeywords(resultsList.results.results[count].title, searchTerm);
+        //            resultsList.results.results[count].description = HighlightKeywords(resultsList.results.results[count].description, searchTerm);
+        //            if (!resultsList.results.results[count].description.Contains("<mark>"))
+        //            {
+        //                resultsList.results.results[count].description = HighlightKeywords(resultsList.results.results[count].Content, searchTerm);
+        //            }
+        //            count++;
+        //        }
+
+        //    }
+
+        //    return resultsList;
+        //}
+
+        /// <summary>
+        /// Method to get downloads model
+        /// </summary>       
+        /// <returns>IDownloads_Page<ListingSearchResultItem> </returns> 
+        ////public ISearchPage GetSearchPageModel()
+        ////{
+        ////    IMvcContext mvcContext = _mvcContext();
+        ////    ISearchPage searchPageModel = mvcContext.GetContextItem<ISearchPage>();
+        ////    return searchPageModel ?? _searchPageModel;
+        ////}
+
+
+       // protected string HighlightKeywords(string input, string term)
+       // {
+       //     if (string.IsNullOrWhiteSpace(input) || string.IsNullOrWhiteSpace(term))
+       //         return string.Empty;
+
+       ////     return Regex.Replace(input, term,
+       ////match => "<mark>" + match.Value + "</mark>",
+       ////RegexOptions.Compiled | RegexOptions.IgnoreCase);
+
+       //     //// Swap out the ,<space> for pipes and add the braces
+       //     //Regex r = new Regex(@", ?");
+       //     //keywords = "(" + r.Replace(keywords, @"|") + ")";
+
+       //     //// Get ready to replace the keywords
+       //     //r = new Regex(keywords, RegexOptions.Singleline | RegexOptions.IgnoreCase);
+
+       //     //// Do the replace
+       //     //return r.Replace(text, new MatchEvaluator(MatchEval));
+       // }
+
+        //private string MatchEval(Match match)
+        //{
+        //    if (match.Groups[1].Success)
+        //    {
+        //        return "<mark>" + match.ToString() + "</mark>";
+
+        //    }
+
+        //    return ""; //no match
+        //}
+        #endregion
         #endregion
 
     }

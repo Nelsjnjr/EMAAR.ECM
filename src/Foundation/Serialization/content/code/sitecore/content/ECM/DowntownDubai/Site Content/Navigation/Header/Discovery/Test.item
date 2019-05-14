@@ -13,15 +13,15 @@ created: 20190325T085939Z
 ----version----
 language: en
 version: 1
-revision: a09bc83f-9321-41b9-a744-fd9aa465bf38
+revision: 8cf46671-35be-45dd-976a-b4f32361ae5f
 
 ----field----
 field: {6C2D0631-17E6-4BBB-BEDF-CEA0939448C9}
 name: Navigation Link
 key: navigation link
-content-length: 168
+content-length: 0
 
-<link id="{5744FE52-85A0-4852-8E6B-A69F8551C4DA}" querystring="" text="" anchor="" title="" class="" url="/ECM/DowntownDubai/Home/Discovery/Test" linktype="internal" />
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -35,14 +35,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a09bc83f-9321-41b9-a744-fd9aa465bf38
+8cf46671-35be-45dd-976a-b4f32361ae5f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190424T061436Z
+20190508T120726Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

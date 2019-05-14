@@ -1,6 +1,7 @@
 ﻿using System;
 using EMAAR.ECM.Foundation.Search.Helpers;
 using EMAAR.ECM.Foundation.SitecoreExtensions;
+using EMAAR.ECM.Foundation.SitecoreExtensions.Settings;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.ComputedFields;
 using Sitecore.Data.Fields;
@@ -34,8 +35,6 @@ namespace EMAAR.ECM.Foundation.Search.ComputedFields
         public object ComputeFieldValue(IIndexable indexable)
         {
             Item item = null;
-            int width = 0;
-            int height = 0;
             try
             {
                 item = indexable as SitecoreIndexableItem;
@@ -44,31 +43,44 @@ namespace EMAAR.ECM.Foundation.Search.ComputedFields
                     return null;
                 }
                 string formattedTemplateId = SearchHelper.FormatGuid(item.TemplateID.ToString());
-            
+
                 if (formattedTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.NewsTemplateID)) ||
                     formattedTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.ImageItemTemplateID)) ||
                     formattedTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.VideoItemTemplateID)) ||
-                    formattedTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.DownloadItemTemplateID)))
+                    formattedTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.DownloadItemTemplateID)) ||
+                    formattedTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.ImageAlbumPageTemplateID)) ||
+                    formattedTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.VideoAlbumWithFiltersTemplateID)) ||
+                    formattedTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.VideoAlbumWithoutFiltersTemplateID)))
                 {
 
-                    ImageField imageField = item.Fields["Image"];
-                    if (SearchHelper.FormatGuid(item.TemplateID.ToString()).Equals(SearchHelper.FormatGuid(CommonConstants.NewsTemplateID)))
+                    string[] pixels = null;
+                    ImageField imageField = null;
+                    switch (SearchHelper.FormatGuid(item.TemplateID.ToString()))
                     {
-                        width = 237;
-                        height = 257;
-                        imageField = item.Fields["Banner"];
+                        //For news thumbnail
+                        case var templateId when templateId.Equals(SearchHelper.FormatGuid(CommonConstants.NewsTemplateID)):
+                            imageField = item.Fields["Banner"];
+                            pixels = SitecoreSettings.NewsThumnailPixel.ToLower().Split('x');
+                            return AdvancedImageHelper.GetImageFieldUrl(imageField, System.Convert.ToInt32(pixels[0]), System.Convert.ToInt32(pixels[1])).Replace("/sitecore/shell", "");
+                        //For downloads thumbnail
+                        case var templateId when templateId.Equals(SearchHelper.FormatGuid(CommonConstants.DownloadItemTemplateID)):
+                            imageField = item.Fields["Image"];
+                            pixels = SitecoreSettings.DownloadThumnailPixel.ToLower().Split('x');
+                            return AdvancedImageHelper.GetImageFieldUrl(imageField, System.Convert.ToInt32(pixels[0]), System.Convert.ToInt32(pixels[1])).Replace("/sitecore/shell", "");
+                        //For image and video album thumbnail
+                        case var templateId when templateId.Equals(SearchHelper.FormatGuid(CommonConstants.ImageAlbumPageTemplateID)) ||
+                            templateId.Equals(SearchHelper.FormatGuid(CommonConstants.VideoAlbumWithFiltersTemplateID)) ||
+                            templateId.Equals(SearchHelper.FormatGuid(CommonConstants.VideoAlbumWithoutFiltersTemplateID)):
+                            imageField = item.Fields["ThumbnailImage"];
+                            pixels = SitecoreSettings.AlbumThumnailPixel.ToLower().Split('x');
+                            return AdvancedImageHelper.GetImageFieldUrl(imageField, System.Convert.ToInt32(pixels[0]), System.Convert.ToInt32(pixels[1])).Replace("/sitecore/shell", "");
+                        // This is for Video item and image item thumbnail
+                        default:
+                            imageField = item.Fields["Image"];
+                            pixels = SitecoreSettings.AlbumThumnailPixel.ToLower().Split('x');
+                            return AdvancedImageHelper.GetImageFieldUrl(imageField, System.Convert.ToInt32(pixels[0]), System.Convert.ToInt32(pixels[1])).Replace("/sitecore/shell", "");
                     }
-                    else if (SearchHelper.FormatGuid(item.TemplateID.ToString()).Equals(SearchHelper.FormatGuid(CommonConstants.DownloadItemTemplateID)))
-                    {
-                        width = 237;
-                        height = 328;
-                    }
-                    else
-                    {
-                        width = 236;
-                        height = 148;
-                    }                                   
-                    return AdvancedImageHelper.GetImageFieldUrl(imageField, width,height).Replace("/sitecore/shell", "") ;
+
                 }
             }
 
@@ -89,6 +101,6 @@ namespace EMAAR.ECM.Foundation.Search.ComputedFields
 
         #endregion
 
-  
+
     }
 }

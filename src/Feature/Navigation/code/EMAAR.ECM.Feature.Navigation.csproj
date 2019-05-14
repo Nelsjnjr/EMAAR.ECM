@@ -235,8 +235,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="Views\Feature\ECM\NavigationMenu\_Footer.cshtml" />
     <Content Include="Views\Feature\ECM\NavigationMenu\_LeftNavigation.cshtml" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Feature\ECM\NavigationMenu\_Sitemap.cshtml" />
     <None Include="Web.config" />
     <Content Include="Web.Debug.config">

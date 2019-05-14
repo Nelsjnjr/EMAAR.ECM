@@ -27,8 +27,15 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 09312bc8-f671-4bfb-b592-87a08b0dadde
+revision: 09eb17c0-2816-4bc3-8f93-e17dcb37399a
 
+----field----
+field: {C4136F1D-43EC-45CB-8E1B-5A1993D16157}
+name: Title
+key: title
+content-length: 13
+
+Image album 2
 ----field----
 field: {0CBA5220-AA8B-4F75-BCD6-68000B38D8C1}
 name: Introduction
@@ -36,6 +43,13 @@ key: introduction
 content-length: 21
 
 Intro of Image Album2
+----field----
+field: {BB7B28BD-118F-4329-B83C-7C80B49309F9}
+name: ThumbnailImage
+key: thumbnailimage
+content-length: 58
+
+<image mediaid="{19A12036-A979-4BEF-9877-D32384124E05}" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -49,14 +63,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-09312bc8-f671-4bfb-b592-87a08b0dadde
+09eb17c0-2816-4bc3-8f93-e17dcb37399a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190429T121240Z
+20190513T114448Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

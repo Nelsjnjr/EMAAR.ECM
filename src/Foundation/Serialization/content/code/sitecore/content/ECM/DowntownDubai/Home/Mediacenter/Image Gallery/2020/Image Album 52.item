@@ -34,8 +34,15 @@ content-length: 1
 ----version----
 language: en
 version: 1
-revision: 93242c53-9eb6-4f0c-a434-1313cf788bee
+revision: f3df9eb9-274e-4e5b-948b-256326c807ad
 
+----field----
+field: {C4136F1D-43EC-45CB-8E1B-5A1993D16157}
+name: Title
+key: title
+content-length: 14
+
+Image album 52
 ----field----
 field: {0CBA5220-AA8B-4F75-BCD6-68000B38D8C1}
 name: Introduction
@@ -43,6 +50,13 @@ key: introduction
 content-length: 11
 
 Description
+----field----
+field: {BB7B28BD-118F-4329-B83C-7C80B49309F9}
+name: ThumbnailImage
+key: thumbnailimage
+content-length: 58
+
+<image mediaid="{BE41F0E1-0D8D-49F1-AE27-DA3EBA404182}" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -70,18 +84,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-93242c53-9eb6-4f0c-a434-1313cf788bee
+f3df9eb9-274e-4e5b-948b-256326c807ad
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190430T101503Z
+20190514T074529Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 17
+content-length: 14
 
-sitecore\NJesudos
+sitecore\admin

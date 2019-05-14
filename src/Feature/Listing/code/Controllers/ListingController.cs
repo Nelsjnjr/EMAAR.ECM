@@ -29,24 +29,31 @@ namespace EMAAR.ECM.Feature.Listing.Controllers
             _repo = repo;
         }
         #endregion
-
-
-
-
-
         /// <summary>
-        /// Method to get album images
+        /// Method to get  items from index(like albums,news,downloads,events based on template and path )
+        /// </summary>
+        /// <param name="pageNumber">page number</param>
+        /// <param name="pageSize">page size</param>
+        /// <param name="filter">filter</param>     
+        /// <param name="parentItemId">Parent id when directly access Folder item</param>       
+        /// <returns>json string.</returns>   
+        public string GetListingJSON(int pageNumber = -1, int pageSize = -1, string filter = "", string itemId = "", string listItemTemplateId = "", bool showFilters = false, string parentItemId = "")
+        {
+            return JsonConvert.SerializeObject(_repo.GetListingModel(pageNumber, pageSize, filter, itemId, listItemTemplateId, showFilters,parentItemId), Formatting.None);
+
+        }
+    /// <summary>
+        /// Method to get search results json
         /// </summary>
         /// <param name="pageNumber">page number</param>
         /// <param name="pageSize">page size</param>
         /// <param name="filter">filter</param>          
         /// <returns>json string.</returns>   
-        public string GetListingJSON(int pageNumber = -1, int pageSize = -1, string filter = "", string itemId = "", string listItemTemplateId = "", bool showFilters = false)
-        {
-            return JsonConvert.SerializeObject(_repo.GetListingModel(pageNumber, pageSize, filter, itemId, listItemTemplateId, showFilters), Formatting.None);
+        //public string GetSearchJSON(int pageNumber = -1, int pageSize = -1, string searchTerm = "*")
+        //{
+        //    return JsonConvert.SerializeObject(_repo.GetSearchResultsModel(pageNumber, pageSize, searchTerm), Formatting.None);
 
-        }
-
+        //}
         #region Image Gallery
 
         /// <summary>
@@ -169,6 +176,23 @@ namespace EMAAR.ECM.Feature.Listing.Controllers
             IDownloads_Page downloadsListing = _repo.GetDownloadsListingPageModel();
             return View($"{ViewPath}Listing/Downloads/DownloadsListing.cshtml", downloadsListing);
         }
+
+        #endregion
+
+        #region Search
+
+        /// <summary>
+        /// Method to get Search Results
+        /// </summary>
+        /// <param name="pageNumber">page number</param>
+        /// <param name="pageSize">page size</param>
+        /// <param name="filter">filter</param>          
+        /// <returns>json string.</returns>   
+        //[HttpGet]
+        //public ActionResult SearchResults()
+        //{          
+        //    return View($"{ViewPath}Listing/Search/SearchResults.cshtml", _repo.GetSearchPageModel());
+        //}
 
         #endregion
     }

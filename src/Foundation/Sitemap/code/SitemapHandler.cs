@@ -15,8 +15,7 @@ namespace EMAAR.ECM.Foundation.Sitemap
         public void RefreshSitemap(object sender, EventArgs args)
         {
             SitemapManager sitemapManager = new SitemapManager();
-            sitemapManager.SubmitSitemapToSearchenginesByHttp();
-           // sitemapManager.RegisterSitemapToRobotsFile();
+            sitemapManager.SubmitSitemapToSearchenginesByHttp();          
         }
     }
 }

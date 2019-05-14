@@ -5,7 +5,8 @@
 @using Sitecore.Framework.Helper
 <!-- mainLayout starts here -->
 @{
-    var heroimage = AdvancedImageHelper.GetImageFieldUrl(Model.ContextItem,"Hero Image", 1920, 900) ;
+    var pixel = SitecoreSettings.HeroImagepixel.ToLower().Split('x');
+    var heroimage = AdvancedImageHelper.GetImageFieldUrl(Model.ContextItem,"Hero Image",System.Convert.ToInt32(pixel[0]), System.Convert.ToInt32(pixel[1])) ;
     //TODO:Mobile in HEro
     var mobheroimage = Model.Mobile_Hero_Image != null ? Model.Mobile_Hero_Image.Src : String.Empty;
 }

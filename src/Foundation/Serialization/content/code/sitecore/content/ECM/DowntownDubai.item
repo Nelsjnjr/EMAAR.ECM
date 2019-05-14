@@ -13,7 +13,7 @@ created: 20190311T112008Z
 ----version----
 language: en
 version: 1
-revision: 5f63f733-0973-4372-8125-33b0f701729b
+revision: f68770a3-f5a1-456c-abb6-50352aae5b0d
 
 ----field----
 field: {59C63C85-D835-4828-908E-0397F2C405AE}
@@ -79,10 +79,17 @@ content-length: 140
 
 <link text="" linktype="internal" url="" anchor="" title="" class="" querystring="" target="" id="{110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}" />
 ----field----
+field: {FF88CBBD-0330-46F8-B8AA-86863C38B14B}
+name: Sitemap Page
+key: sitemap page
+content-length: 124
+
+<link text="" anchor="" linktype="internal" class="" title=""  querystring="" id="{908B54BC-E3D8-4048-AE98-2AC90652598E}" />
+----field----
 field: {1F0AD353-B94C-4B2E-B135-DD129E1A2509}
 name: Robots File content
 key: robots file content
-content-length: 229
+content-length: 303
 
 User-agent: *
 Disallow: /sitecore
@@ -95,6 +102,8 @@ Disallow: /App_Data/
 Disallow: /temp/
 Disallow: /upload/
 Disallow: /xsl/
+
+Sitemap: http://stgdowntowndubai.emaar.com/sitemap-dd-en.xml
 ----field----
 field: {67C36A77-5A20-4FD3-AD59-54F50BE2D851}
 name: Pre Site scripts
@@ -140,14 +149,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5f63f733-0973-4372-8125-33b0f701729b
+f68770a3-f5a1-456c-abb6-50352aae5b0d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190502T114003Z
+20190514T063302Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

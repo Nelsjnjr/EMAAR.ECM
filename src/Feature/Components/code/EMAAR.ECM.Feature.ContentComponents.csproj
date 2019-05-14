@@ -235,9 +235,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Feature\ECM\ContentPage\ContentPage.cshtml" />
-    <Content Include="App_Config\Include\Feature\ECM\ContentComponenets\EMAAR.ECM.Feature.ContentComponents.master.config">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="App_Config\Include\Feature\ECM\ContentComponenets\EMAAR.ECM.Feature.ContentComponents.master.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="Views\Feature\ECM\ContentPage\Amenities\_Amenities.cshtml" />
     <Content Include="Views\Feature\ECM\ContentPage\Faqs\_Faqs.cshtml" />

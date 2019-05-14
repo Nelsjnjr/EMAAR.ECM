@@ -1,0 +1,73 @@
+----item----
+version: 1
+id: {AC868D27-CB55-4F4F-A465-44A1137A9BEA}
+database: master
+path: /sitecore/content/ECM/DowntownDubai/Home/Mediacenter/News/2018
+parent: {C4FDB7F3-BF03-4582-B6CB-357FAB4014F7}
+name: 2018
+master: {00000000-0000-0000-0000-000000000000}
+template: {C8761BF7-FA60-4FED-9CE7-55899C8A45D7}
+templatekey: NewsAlbumFolder
+created: 20190512T081310Z
+
+----version----
+language: en
+version: 1
+revision: de0dc796-9dd7-426a-b7e3-8c98bc596ab5
+
+----field----
+field: {0CBA5220-AA8B-4F75-BCD6-68000B38D8C1}
+name: Introduction
+key: introduction
+content-length: 35
+
+News about Downtown Dubai Community
+----field----
+field: {8097066D-26C3-44B9-8527-551A2CBB5A84}
+name: Meta Title
+key: meta title
+content-length: 4
+
+2018
+----field----
+field: {4F39872D-258B-45B8-926B-6297E2DC7CD4}
+name: og title
+key: og title
+content-length: 4
+
+2018
+----field----
+field: {E4395580-B216-41E6-AD1F-8EC542DE11D6}
+name: twiiter title
+key: twiiter title
+content-length: 4
+
+2018
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190512T081310Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+de0dc796-9dd7-426a-b7e3-8c98bc596ab5
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190513T122644Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

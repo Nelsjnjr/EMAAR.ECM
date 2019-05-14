@@ -5,8 +5,8 @@
 @using EMAAR.ECM.Foundation.Search.Helpers
 @using Sitecore.Framework.Helper
 @{
-
-    var image = AdvancedImageHelper.GetImageFieldUrl(Model.ContextItem, "Image", 1920, 900);
+    var pixel = SitecoreSettings.Parallaxpixel.ToLower().Split('x');
+    var image = AdvancedImageHelper.GetImageFieldUrl(Model.ContextItem, "Image", System.Convert.ToInt32(pixel[0]), System.Convert.ToInt32(pixel[1]));
 }
 <!-- Start Parallax-->
 @using (Html.BeginEditFrame(Model.FullPath, "FullBannerImage", "Edit Background Image"))

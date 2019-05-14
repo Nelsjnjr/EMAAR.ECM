@@ -55,5 +55,41 @@ namespace EMAAR.ECM.Foundation.SitecoreExtensions.Settings
         /// Getting date format
         /// </summary>
         public static string DateFormat { get; set; } = GetSetting("EMAAR.ECM.Foundation.SitecoreExtensions.DateFormat");
+        /// <summary>
+        ///  NewsThumnailPixel
+        /// </summary>
+        public static string NewsThumnailPixel { get; set; } = GetSetting("EMAAR.ECM.Foundation.SitecoreExtensions.NewsThumnailPixel");
+        /// <summary>
+        ///  DownloadThumnailPixel
+        /// </summary>
+        public static string DownloadThumnailPixel { get; set; } = GetSetting("EMAAR.ECM.Foundation.SitecoreExtensions.DownloadThumnailPixel");
+        /// <summary>
+        ///  AlbumThumnailPixel
+        /// </summary>
+        public static string AlbumThumnailPixel { get; set; } = GetSetting("EMAAR.ECM.Foundation.SitecoreExtensions.AlbumThumnailPixel");
+        /// <summary>
+        ///  HeroImage image pixel
+        /// </summary>
+        public static string HeroImagepixel { get; set; } = GetSetting("EMAAR.ECM.Foundation.SitecoreExtensions.HeroImagepixel");
+        /// <summary> 
+        ///  HomePageCarousel image pixel
+        /// </summary>
+        public static string HomePageCarouselpixel { get; set; } = GetSetting("EMAAR.ECM.Foundation.SitecoreExtensions.HomePageCarouselpixel");
+        /// <summary>
+        ///  ImageText image pixel
+        /// </summary>
+        public static string ImageTextpixel { get; set; } = GetSetting("EMAAR.ECM.Foundation.SitecoreExtensions.ImageTextpixel");
+        /// <summary>
+        ///  Parallax image pixel
+        /// </summary>
+        public static string Parallaxpixel { get; set; } = GetSetting("EMAAR.ECM.Foundation.SitecoreExtensions.Parallaxpixel");
+        /// <summary>
+        ///  ContentPageBannerpixel image pixel
+        /// </summary>
+        public static string ContentPageBannerpixel { get; set; } = GetSetting("EMAAR.ECM.Foundation.SitecoreExtensions.ContentPageBannerpixel");
+        /// <summary>
+        ///  RelatedPages image pixel
+        /// </summary>
+        public static string RelatedPages { get; set; } = GetSetting("EMAAR.ECM.Foundation.SitecoreExtensions.RelatedPages");
     }
 }

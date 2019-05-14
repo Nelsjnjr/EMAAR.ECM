@@ -11,13 +11,6 @@ templatekey: VideoAlbum With Filters Folder
 created: 20190425T082012Z
 
 ----field----
-field: {105BAD38-1786-44F3-8ADA-ADB697F4EC9B}
-name: Year
-key: year
-content-length: 4
-
-2019
-----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -27,7 +20,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 286529e3-41e7-4272-8cc4-5bcb3fdbb0fc
+revision: 8f7f8074-cbf5-43e8-9ad0-358b49712514
 
 ----field----
 field: {0CBA5220-AA8B-4F75-BCD6-68000B38D8C1}
@@ -49,14 +42,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-286529e3-41e7-4272-8cc4-5bcb3fdbb0fc
+8f7f8074-cbf5-43e8-9ad0-358b49712514
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190507T052451Z
+20190513T122726Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

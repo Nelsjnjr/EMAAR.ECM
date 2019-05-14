@@ -3496,7 +3496,7 @@ pre {
     width: 100%;
     max-width: 100%;
     margin-bottom: 1rem;
-    background-color: transparent
+    background-color: rgba(0,0,0,0)
 }
 
     .table td, .table th {
@@ -15595,6 +15595,20 @@ button:focus, input:focus {
             text-decoration: none
         }
 
+    #mainLayout:after {
+        content: '';
+        background: -webkit-linear-gradient(top,rgba(125,185,232,0) 0,#030711 100%);
+        background: -webkit-gradient(linear,left top,left bottom,from(rgba(125,185,232,0)),to(#030711));
+        background: -o-linear-gradient(top,rgba(125,185,232,0) 0,#030711 100%);
+        background: linear-gradient(to bottom,rgba(125,185,232,0) 0,#030711 100%);
+        height: 310px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1
+    }
+
 @media (max-width:767px) {
     #mainLayout .sectionImage {
         display: none
@@ -18074,6 +18088,10 @@ footer {
             opacity: 1
         }
 
+.gallery-item.for-mob .gallery-item-link:hover .title {
+    color: #64615b
+}
+
 .fullscreen-overlay {
     top: 0 !important;
     right: 0 !important;
@@ -18087,7 +18105,7 @@ footer {
 }
 
     .fullscreen-overlay .fancybox-close {
-        right: 0 !important;
+        right: 15px !important;
         top: 0 !important
     }
 
@@ -18601,10 +18619,18 @@ footer {
         margin-bottom: 35px
     }
 
+.image-left-section {
+    margin-top: 20px
+}
+
+.image-right-section {
+    margin-top: 20px
+}
+
 .left-img-content {
     float: left;
     margin-right: 30px;
-    margin-bottom: 30px
+    margin-bottom: 20px
 }
 
 @media screen and (max-width:991px) {
@@ -18624,7 +18650,7 @@ footer {
 .right-img-content {
     float: right;
     margin-left: 30px;
-    margin-bottom: 30px
+    margin-bottom: 20px
 }
 
 @media screen and (max-width:991px) {

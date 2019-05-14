@@ -34,8 +34,15 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: e675563b-e030-4c49-9b80-00bcad1fa15f
+revision: 1c5d423a-62b5-4ac7-b3bd-3a1d0b32e5c7
 
+----field----
+field: {9541E67D-CE8C-4225-803D-33F7F29F09EF}
+name: __Short description
+key: __short description
+content-length: 85
+
+This Logo is used to set for setting Content page's Logo of  the Company  (Ex: Emaar)
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -49,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e675563b-e030-4c49-9b80-00bcad1fa15f
+1c5d423a-62b5-4ac7-b3bd-3a1d0b32e5c7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190429T111850Z
+20190514T082351Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

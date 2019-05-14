@@ -13,6 +13,7 @@
         <h1 class="heading"> @Html.Glass().Editable(Model.Mediacenter, x => x.Title)</h1>
         <p> @Html.Glass().Editable(Model.Mediacenter, x => x.Summary)</p>
     </div>
+    <!--Start News Items-->
     @if (Model.NewsItems != null && Model.NewsItems.results != null &&
          Model.NewsItems.results.results != null && Model.NewsItems.results.results.Any())
     {
@@ -45,6 +46,8 @@
 
         </div>
     }
+    <!--End News Items-->
+    <!--Start Events Items-->
     @if (Model.EventsItems != null && Model.EventsItems.results != null &&
          Model.EventsItems.results.results != null && Model.EventsItems.results.results.Any())
     {
@@ -62,23 +65,40 @@
             @foreach (var albumDetails in Model.EventsItems.results.results)
             {
                 <div class="event">
+                    @if (!String.IsNullOrEmpty(albumDetails.pageUrl))
+                    {
+                        <a href="@albumDetails.pageUrl" class="event-item">
+                            <div class="datesec">
+                                <span class="date">@albumDetails.date</span>
+                                <span class="day">@albumDetails.month</span>
+                            </div>
 
-                    <a href="@(!String.IsNullOrEmpty(albumDetails.pageUrl)?albumDetails.pageUrl:"javascript:;")" class="event-item">
-                        <div class="datesec">
-                            <span class="date">@albumDetails.date</span>
-                            <span class="day">@albumDetails.month</span>
-                        </div>
+                            <div class="descSec">
+                                <p class="title">@albumDetails.title</p>
+                            </div>
+                        </a>
+                    }
+                    else
+                    {
+                        <a class="event-item">
+                            <div class="datesec">
+                                <span class="date">@albumDetails.date</span>
+                                <span class="day">@albumDetails.month</span>
+                            </div>
+                            <div class="descSec">
+                                <p class="title">@albumDetails.title</p>
+                            </div>
+                        </a>
+                    }
 
-                        <div class="descSec">
-                            <p class="title">@albumDetails.title</p>
-                        </div>
-                    </a>
                 </div>
             }
 
 
         </div>
     }
+    <!--End Events Items-->
+    <!--Start Downloads Items-->
     @if (Model.DownloadsItems != null && Model.DownloadsItems.results != null &&
     Model.DownloadsItems.results.results != null && Model.DownloadsItems.results.results.Any())
     {
@@ -126,6 +146,8 @@
 
         </div>
     }
+    <!--End Downloads Items-->
+    <!--Start Image Albums Items-->
     @if (Model.ImageAlbumItems != null && Model.ImageAlbumItems.results != null &&
                Model.ImageAlbumItems.results.results != null && Model.ImageAlbumItems.results.results.Any())
     {
@@ -161,6 +183,8 @@
 
         </div>
     }
+    <!--End Image Albums Items-->
+    <!--Start Video Albums Items-->
     @if (Model.VideoAlbumItems != null && Model.VideoAlbumItems.results != null &&
             Model.VideoAlbumItems.results.results != null && Model.VideoAlbumItems.results.results.Any())
     {
@@ -181,9 +205,13 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="gallery-item">
                         <a href="@albumDetails.pageUrl"
-                           class="@( Model.IsVideoAlbum == true ? "fancybox.iframe gallery-item-link various" : String.Empty)">
+                           class="@( Model.IsVideoAlbum == true ? "fancybox.iframe gallery-item-link various" : "fancyimages gallery-item-link")">
                             <img src="@(!String.IsNullOrEmpty(albumDetails.thumbnailurl) ? albumDetails.thumbnailurl : Model.Mediacenter.No_Image.Src)" alt="video" class="img">
-                            <img src="~/Assets/Project/ECM/images/icon/play-button.svg" alt="playicon" class="playicon">
+                            @{ if (Model.IsVideoAlbum)
+                                {
+                                    <img src="~/Assets/Project/ECM/images/icon/play-button.svg" alt="playicon" class="playicon">
+                                }
+                            }
                             <div class="title">@albumDetails.title</div>
                         </a>
 
@@ -192,5 +220,6 @@
             }
         </div>
     }
+    <!--End Video Albums Items-->
 </div>
 

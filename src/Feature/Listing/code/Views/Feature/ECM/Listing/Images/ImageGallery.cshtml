@@ -2,15 +2,18 @@
 @using Glass.Mapper.Sc.Web.Mvc
 @using EMAAR.ECM.Foundation.SitecoreExtensions
 @using EMAAR.ECM.Foundation.Search.Helpers
+@{
+    bool isfolder = Model.Parent.ContextItem.TemplateID.Equals(Sitecore.Data.ID.Parse(CommonConstants.ImageGalleryPageTemplateID)) ? true : false;
+    string parentItemId = isfolder ? Model.Parent.Id.ToString() : String.Empty;
 
+}
 <div class="gallery-section">
     <div class="section-header">
         <h1 class="heading"> @Html.Glass().Editable(Model, x => x.Title)</h1>
         <p>@Html.Glass().Editable(Model, x => x.Introduction)</p>
     </div>
-    <div id="templateInitializor" data-service-url="/api/sitecore/listing/GetListingJSON" data-page-size="@Model.No_Of_Records" data-item-id="@Model.Id" data-listItemTemplateId="@SearchHelper.FormatGuid(CommonConstants.ImageAlbumPageTemplateID)" data-error-message="@Model.Error_Message" data-show-filters="true">
+    <div id="templateInitializor" data-service-url="/api/sitecore/listing/GetListingJSON" data-page-size="@Model.No_Of_Records" data-item-id="@Model.Id" data-listParentItemId="@parentItemId"  data-listItemTemplateId="@SearchHelper.FormatGuid(CommonConstants.ImageAlbumPageTemplateID)" data-error-message="@Model.Error_Message" data-show-filters="true">
         <div class="selectFilters"></div>
-
         <script id="filter-template" type="text/x-handlebars-template">
             <div class="row">
                 {{#each this}}
@@ -28,9 +31,7 @@
                 {{/each}}
             </div>
         </script>
-
         <div class="galleryWrap">
-
             <div class="row gallerygrid" id="filter-template-result">
                 <!-- template generate -->
             </div>
@@ -49,13 +50,10 @@
                     {{this}}
                 </div>
             </script>
-
             <div class="lm-btn-wrap">
                 <a href="javascript:;" class="btn btn-loadmore loadmore" data-pagenumber="0">@Html.Glass().Editable(Model, x => x.Load_More_Label)</a>
             </div>
         </div>
     </div>
 </div>
-
-
 

@@ -1,0 +1,87 @@
+----item----
+version: 1
+id: {2044AFE8-978D-4925-BDDF-F8E2613B983E}
+database: master
+path: /sitecore/content/ECM/DowntownDubai/Home/Mediacenter/News/2018/News 2018
+parent: {AC868D27-CB55-4F4F-A465-44A1137A9BEA}
+name: News 2018
+master: {00000000-0000-0000-0000-000000000000}
+template: {835DCB81-BBC5-4CB7-970D-4BE80A2D39D8}
+templatekey: News Page
+created: 20190512T081319Z
+
+----field----
+field: {4589BF11-0DAA-49BB-A5CA-4161FF9BDB79}
+name: Categories
+key: categories
+content-length: 38
+
+{2F879FEB-4352-4833-87FF-F2EC3CECD857}
+----field----
+field: {CF42E222-73D6-460B-81EE-02DD95643CC0}
+name: Date
+key: date
+content-length: 16
+
+20180512T000000Z
+----version----
+language: en
+version: 1
+revision: 998e216d-4442-4121-80be-346cf3a409dd
+
+----field----
+field: {55768EBD-52C4-4340-9471-2C948D429BCF}
+name: Introduction
+key: introduction
+content-length: 14
+
+NEws from 2018
+----field----
+field: {8097066D-26C3-44B9-8527-551A2CBB5A84}
+name: Meta Title
+key: meta title
+content-length: 9
+
+News 2018
+----field----
+field: {4F39872D-258B-45B8-926B-6297E2DC7CD4}
+name: og title
+key: og title
+content-length: 9
+
+News 2018
+----field----
+field: {E4395580-B216-41E6-AD1F-8EC542DE11D6}
+name: twiiter title
+key: twiiter title
+content-length: 9
+
+News 2018
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190512T081319Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+998e216d-4442-4121-80be-346cf3a409dd
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190512T081336Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

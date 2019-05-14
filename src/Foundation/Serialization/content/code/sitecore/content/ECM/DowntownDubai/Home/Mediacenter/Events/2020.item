@@ -10,17 +10,10 @@ template: {01E451AA-9122-4601-A53F-98557F85FE79}
 templatekey: EventsAlbumFolder
 created: 20190427T123132Z
 
-----field----
-field: {105BAD38-1786-44F3-8ADA-ADB697F4EC9B}
-name: Year
-key: year
-content-length: 4
-
-2020
 ----version----
 language: en
 version: 1
-revision: 3e08f241-540e-4b7f-85b0-6e29d446e612
+revision: 7b1d3635-50d4-4aa5-a2c1-6e447a94e33a
 
 ----field----
 field: {0CBA5220-AA8B-4F75-BCD6-68000B38D8C1}
@@ -42,14 +35,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3e08f241-540e-4b7f-85b0-6e29d446e612
+7b1d3635-50d4-4aa5-a2c1-6e447a94e33a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190507T052352Z
+20190513T122623Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

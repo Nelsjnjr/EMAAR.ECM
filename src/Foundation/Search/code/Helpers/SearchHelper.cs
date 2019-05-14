@@ -228,7 +228,7 @@ namespace EMAAR.ECM.Foundation.Search.Helpers
                         List<string> filterParam = filterString.Split(new char[] { ':' }, StringSplitOptions.RemoveEmptyEntries).ToList();
                         if (filterParam != null && filterParam.Any())
                         {
-                            if (filterParam[1].Equals(CommonConstants.AllValue))
+                            if (filterParam[1].Equals(CommonConstants.AllValue) || filterParam[1].Equals(CommonConstants.AllEvents))
                             {
                                 continue;
                             }

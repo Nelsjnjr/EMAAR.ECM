@@ -2,8 +2,8 @@
 version: 1
 id: {2F164476-2D00-4EA3-B854-FE059290543E}
 database: master
-path: /sitecore/content/ECM/DowntownDubai/Home/Video Gallery Design/2019/Video Album1/2020/Video 2 - Copy
-parent: {22642618-61A5-42A4-BCE1-763CC342C4FB}
+path: /sitecore/content/ECM/DowntownDubai/Home/Mediacenter/Video Gallery Design/2019/Video Album1/Video 2 - Copy
+parent: {36C8D82C-A37B-418C-AF17-87761669936D}
 name: Video 2 - Copy
 master: {00000000-0000-0000-0000-000000000000}
 template: {AF5D11D7-F83A-4D16-8747-D92F6F873071}
@@ -20,15 +20,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 1bf48090-3936-4706-89c5-798b08e1511c
+revision: 7c230095-9f9c-41f6-8fd8-afcf4284f883
 
 ----field----
 field: {162B4DCB-8AEB-4385-B1AC-D8A9256B775E}
 name: Title
 key: title
-content-length: 12
+content-length: 52
 
-Video 2017 2
+Video 2019 2 from video gallery page without filters
 ----field----
 field: {F89F4F46-510B-4DFB-AE2E-F5C234E7AAE2}
 name: Video
@@ -56,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1bf48090-3936-4706-89c5-798b08e1511c
+7c230095-9f9c-41f6-8fd8-afcf4284f883
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190428T132442Z
+20190513T080911Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

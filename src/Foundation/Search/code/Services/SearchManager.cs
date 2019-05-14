@@ -1,15 +1,14 @@
-﻿using EMAAR.ECM.Foundation.SitecoreExtensions;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 using EMAAR.ECM.Foundation.DependencyInjection;
 using EMAAR.ECM.Foundation.Search.Helpers;
 using EMAAR.ECM.Foundation.Search.Interfaces;
 using EMAAR.ECM.Foundation.Search.Models;
+using EMAAR.ECM.Foundation.SitecoreExtensions;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.Linq;
-using Sitecore.ContentSearch.SearchTypes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
 
 namespace EMAAR.ECM.Foundation.Search.Services
 {
@@ -27,7 +26,7 @@ namespace EMAAR.ECM.Foundation.Search.Services
         /// <param name="pageNo">Page Number.</param>
         /// <param name="pageSize">Page Size.</param>
         /// <returns>Search Results of Generic Type</returns>        
-        public SearchResultsGeneric<T> GetSearchResults<T>(List<SearchCondition> searchConditions,List<Facet> facetFields=null,  SortOption sortOption= null, int pageNo = -1, int pageSize = -1, bool sortByYearAndOrder=false, bool sortByDateAndOrder = false, bool sortByDateAscAndOrder = false) where T : ListingSearchResultItem
+        public SearchResultsGeneric<T> GetSearchResults<T>(List<SearchCondition> searchConditions, List<Facet> facetFields = null, SortOption sortOption = null, int pageNo = -1, int pageSize = -1, bool sortByYearAndOrder = false, bool sortByDateAndOrder = false, bool sortByDateAscAndOrder = false, bool isFolder = false, string CurrentItemName = null) where T : ListingSearchResultItem
         {
             searchConditions = SearchHelper.AddBasicSearchConditions(searchConditions);
             IProviderSearchContext searchContext = SearchHelper.GetIndex().CreateSearchContext();
@@ -51,62 +50,68 @@ namespace EMAAR.ECM.Foundation.Search.Services
             {
                 // Pass CultureExecutionContext object to pick index analyzer for query
                 if (sortOption.SortOrder.Equals(SortOrder.Descending))
+                {
                     searchQuery = searchContext.GetQueryable<T>(new CultureExecutionContext(Sitecore.Context.Language.CultureInfo)).Where(predicate).OrderByDescending(x => x[sortOption.SortFieldName]);
+                }
                 else
+                {
                     searchQuery = searchContext.GetQueryable<T>(new CultureExecutionContext(Sitecore.Context.Language.CultureInfo)).Where(predicate).OrderBy(x => x[sortOption.SortFieldName]);
-
+                }
             }
             else
+            {
                 searchQuery = searchContext.GetQueryable<T>(new CultureExecutionContext(Sitecore.Context.Language.CultureInfo)).Where(predicate);
+            }
 
             if (facetFields != null && facetFields.Any())
-            {                
+            {
                 // Add facets to the search query
-                foreach (var facet in facetFields)
+                foreach (Facet facet in facetFields)
                 {
                     searchQuery = searchQuery.FacetOn(f => f[facet.facetField], facet.minCount);
                 }
             }
 
-            var facets = searchQuery.GetFacets();
+            FacetResults facets = searchQuery.GetFacets();
             SearchResultsGeneric<T> searchResults = new SearchResultsGeneric<T>();
 
             if (pageNo == -1 && pageSize == -1)
+            {
                 searchResults.results = new Results<T>() { results = searchQuery.ToList(), Totalcount = searchQuery.GetResults().Count() };
+            }
             else
             {
-                searchResults.results = new Results<T>() { results = searchQuery.Page(pageNo,pageSize).ToList(), Totalcount = searchQuery.GetResults().Count() };
+                searchResults.results = new Results<T>() { results = searchQuery.Page(pageNo, pageSize).ToList(), Totalcount = searchQuery.GetResults().Count() };
             }
             List<string> itemIdsList = new List<string>();
             if (facets != null && facets.Categories != null && facets.Categories.Any())
             {
                 List<Filters> filters = new List<Filters>();
-                foreach (var category in facets.Categories)
-                {                               
+                foreach (FacetCategory category in facets.Categories)
+                {
                     List<FilterValues> filterValuesList = new List<FilterValues>();
-                    foreach (var val in category.Values)
+                    foreach (FacetValue val in category.Values)
                     {
-                        Guid id;
-                        bool parse = Guid.TryParse(val.Name, out id);
+                        bool parse = Guid.TryParse(val.Name, out Guid id);
                         if (parse && id != null)
                         {
                             itemIdsList.Add(val.Name);
                         }
-                        
+
                         filterValuesList.Add(new FilterValues() { id = val.Name, label = val.Name });
                     }
 
-                 
+
                     filters.Add(new Filters() { filterLabel = category.Name, filterValues = filterValuesList });
                 }
 
 
 
-                Dictionary<string, string> itemIdsWithValues = GetItemIdValues(itemIdsList);               
+                Dictionary<string, string> itemIdsWithValues = GetItemIdValues(itemIdsList);
 
-                foreach (var filter in filters)
+                foreach (Filters filter in filters)
                 {
-                    foreach (var filterVal in filter.filterValues)
+                    foreach (FilterValues filterVal in filter.filterValues)
                     {
                         if (!string.IsNullOrWhiteSpace(itemIdsWithValues.SingleOrDefault(x => x.Key.Equals(filterVal.label)).Value))
                         {
@@ -120,19 +125,41 @@ namespace EMAAR.ECM.Foundation.Search.Services
                     }
                     else
                     {
-                        filter.filterValues = filter.filterValues.OrderBy(x=>x.label).ToList();
+                        filter.filterValues = filter.filterValues.OrderBy(x => x.label).ToList();
                     }
 
 
-                    if (facets.Categories.Any(x=>x.Name.ToLower().Equals(filter.filterLabel.ToLower())))
+                    if (facets.Categories.Any(x => x.Name.ToLower().Equals(filter.filterLabel.ToLower())))
                     {
-                        var label = facetFields.SingleOrDefault(x => (x.facetField.Equals(facets.Categories.SingleOrDefault(y => y.Name.ToLower().Equals(filter.filterLabel.ToLower())).Name))).allLabel;
+                        string label = facetFields.SingleOrDefault(x => (x.facetField.Equals(facets.Categories.SingleOrDefault(y => y.Name.ToLower().Equals(filter.filterLabel.ToLower())).Name))).allLabel;
                         filter.filterValues.Insert(0, new FilterValues() { id = CommonConstants.AllValue, label = label });
                     }
 
-               }
-
-                searchResults.filters = filters;
+                }
+                //If directly browsing the year folder of(news/events/video/image gallery)
+                if (isFolder)
+                {
+                    //This is the place to manually sort the folder item in the year dropdown and selects all filters from parent and 
+                    //make it available in the dropdowns
+                    List<Filters> seofilters = new List<Filters>();
+                    List<FilterValues> filtervalues = new List<FilterValues>();
+                    seofilters.Add(filters[0]);
+                    if (filters.Count > 1)
+                    {
+                        int yearFolderIndex = filters[1].filterValues.IndexOf(filters[1].filterValues.FirstOrDefault(i => i.label == CurrentItemName));
+                        FilterValues yearFolderItem = filters[1].filterValues.FirstOrDefault(p => p.label == CurrentItemName);
+                        filters[1].filterValues.RemoveAt(yearFolderIndex);
+                        filters[1].filterValues.Insert(0, yearFolderItem);
+                        filtervalues.AddRange(filters[1].filterValues);
+                        seofilters.Add(new Filters() { filterLabel = CommonConstants.YearFacetField, filterValues = filtervalues });
+                        searchResults.filters = seofilters;
+                    }
+                }
+                else
+                {
+                    //Default filters
+                    searchResults.filters = filters;
+                }
             }
 
             return searchResults;
@@ -148,7 +175,7 @@ namespace EMAAR.ECM.Foundation.Search.Services
         public Dictionary<string, string> GetItemIdValues(List<string> allItemIds)
         {
             Dictionary<string, string> itemIdsWithValues = new Dictionary<string, string>();
-            
+
             //Making batch wise calls to get search results for Ids
             int batch = 0;
             while (CommonConstants.BatchSize * batch <= allItemIds.Count)
@@ -158,12 +185,23 @@ namespace EMAAR.ECM.Foundation.Search.Services
                 List<string> itemIdsFormatted = new List<string>();
                 foreach (string id in itemIds)
                 {
-                    if (string.IsNullOrEmpty(id)) continue;
+                    if (string.IsNullOrEmpty(id))
+                    {
+                        continue;
+                    }
+
                     if (id.Contains("-"))
+                    {
                         itemIdsFormatted.Add(id.Substring(0, id.IndexOf("-")));
+                    }
+
                     itemIdsFormatted.Add(id);
                 }
-                if (itemIdsFormatted.Count <= 0) return itemIdsWithValues;
+                if (itemIdsFormatted.Count <= 0)
+                {
+                    return itemIdsWithValues;
+                }
+
                 searchFilters.Add(new SearchCondition() { Name = CommonConstants.IndexIdField, Value = string.Join(",", itemIdsFormatted) });
 
                 SearchResultsGeneric<ListingSearchResultItem> resultsPayload = GetSearchResults<ListingSearchResultItem>(searchFilters);
@@ -176,15 +214,22 @@ namespace EMAAR.ECM.Foundation.Search.Services
                         if (!itemIdsWithValues.ContainsKey(id))
                         {
                             if (itemIds.Any(x => x.Contains(id + "-")))
+                            {
                                 id = itemIds.Single(x => x.Contains(id + "-"));
+                            }
 
                             if (!string.IsNullOrWhiteSpace(result.title) && !result.title.Equals(CommonConstants.NameStandardValueToken))
+                            {
                                 itemIdsWithValues.Add(id, result.title);
+                            }
                             else if (!string.IsNullOrWhiteSpace(result.value))
+                            {
                                 itemIdsWithValues.Add(id, result.value);
+                            }
                             else
+                            {
                                 itemIdsWithValues.Add(id, result.Name);
-
+                            }
                         }
 
                     }

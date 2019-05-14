@@ -39,12 +39,7 @@ namespace EMAAR.ECM.Foundation.Sitemap
             {
                 return Factory.GetDatabase(SitemapManagerConfiguration.WorkingDatabase);
             }
-        }
-
-        //public static string Restrict301URLInSitemap
-        //{
-        //    get { return System.Configuration.ConfigurationManager.AppSettings["Restrict301URLInSitemap"]; }
-        //}
+        }      
         public SitemapManager()
         {
             SitemapManager.m_Sites = SitemapManagerConfiguration.GetSites();
@@ -79,8 +74,7 @@ namespace EMAAR.ECM.Foundation.Sitemap
             if (enabledLanguages.Count == 0)
             {   //if the config doesn't specify any enabled languages, use the current context to retrieve items
                 sitemapItems = this.GetSitemapItems(siteContext.StartPath, null);
-                //if (Restrict301URLInSitemap.ToLower().Equals("true"))
-                //    sitemapItems = this.GetHeaders(sitemapItems, site, null);
+             
                 xDoc = this.BuildSitemapXML(xDoc, sitemapItems, site, null);
             }
             else
@@ -89,8 +83,6 @@ namespace EMAAR.ECM.Foundation.Sitemap
                 foreach (var language in enabledLanguages)
                 {
                     sitemapItems = this.GetSitemapItems(siteContext.StartPath, Sitecore.Globalization.Language.Parse(language));
-                    //if (Restrict301URLInSitemap.ToLower().Equals("true"))
-                    //    sitemapItems = this.GetHeaders(sitemapItems, site, Sitecore.Globalization.Language.Parse(language));
                     xDoc = this.BuildSitemapXML(xDoc, sitemapItems, site, Sitecore.Globalization.Language.Parse(language));
                 }
             }
@@ -133,7 +125,6 @@ namespace EMAAR.ECM.Foundation.Sitemap
         private string GetSitemapPriority(Item item)
         {
             var templateId = item.TemplateID.ToString();
-            //var formattedTemplate = templateId.Substring(1, templateId.Length - 2);
             switch (templateId)
             {
                 case (CommonConstants.HomePageTemplateID):
@@ -309,31 +300,7 @@ namespace EMAAR.ECM.Foundation.Sitemap
             return HttpUtility.HtmlEncode(text);
         }
 
-        //public void RegisterSitemapToRobotsFile()
-        //{
-        //    string str = MainUtil.MapPath(string.Concat("/", "robots.txt"));
-        //    StringBuilder stringBuilder = new StringBuilder(string.Empty);
-        //    if (File.Exists(str))
-        //    {
-        //        StreamReader streamReader = new StreamReader(str);
-        //        stringBuilder.Append(streamReader.ReadToEnd());
-        //        streamReader.Close();
-        //    }
-
-        //    StreamWriter streamWriter = new StreamWriter(str, false);
-        //    foreach (string key in SitemapManager.m_Sites.Keys)
-        //    {
-
-        //        string str1 = string.Concat("Sitemap: ", String.Format("http://{0}/{1}", SitemapManagerConfiguration.GetServerUrlBySite(key), SitemapManager.m_Sites[key]));
-        //        if (stringBuilder.ToString().Contains(str1))
-        //        {
-        //            continue;
-        //        }
-        //        stringBuilder.AppendLine(str1);
-        //    }
-        //    streamWriter.Write(stringBuilder.ToString());
-        //    streamWriter.Close();
-        //}
+  
 
         private void SubmitEngine(string engine, string sitemapUrl)
         {

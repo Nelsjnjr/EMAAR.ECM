@@ -9,6 +9,8 @@ var winWidth = $(window).width(),
     listItemTemplateId = $('#templateInitializor').data('listitemtemplateid'),
     showFilters = $('#templateInitializor').data('show-filters'),
     yearFolderItemName = $('#templateInitializor').data('itemyearname'),
+    parentItemId = $('#templateInitializor').data('listparentitemid'),
+    
     
     total = dataPageSize,
     AjaxUrl = $('#templateInitializor').data('service-url');
@@ -37,7 +39,7 @@ function getImageGallery(pagination){
         n = 0;
         AjaxUrl = $('#templateInitializor').data('service-url');
     
-    var dataParam = { pageNumber: pagenumber, pageSize: dataPageSize, filter: '', itemId: itemId, listItemTemplateId: listItemTemplateId, showFilters: showFilters};
+    var dataParam = { pageNumber: pagenumber, pageSize: dataPageSize, filter: '', itemId: itemId, listItemTemplateId: listItemTemplateId, showFilters: showFilters, parentItemId:parentItemId};
         
     // var JSONurl = AjaxUrl + "?" + yearLabel + "=" + year + "&" + albumLabel + "=" + albums;
     getData.filter(AjaxUrl, pagination, dataParam);
@@ -84,7 +86,8 @@ function getImageGalleryOnChange(pagination){
         filter: filterParam,
         itemId: itemId,
         listItemTemplateId: listItemTemplateId,
-        showFilters: showFilters
+        showFilters: showFilters,
+        parentItemId: parentItemId
     };
 
     getData.results(AjaxUrl, pagination, filterParam);
@@ -119,7 +122,8 @@ function getImageGalleryOnLoad(pagination){
         filter: filterParam,
         itemId: itemId,
         listItemTemplateId: listItemTemplateId,
-        showFilters: showFilters
+        showFilters: showFilters,
+        parentItemId: parentItemId
     };
 
     getData.resultsLoad(AjaxUrl, pagination, filterParam);

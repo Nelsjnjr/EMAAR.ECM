@@ -15,15 +15,20 @@
                     if (Model.ParentNavigationItem.ContextItem != null)
                     {
                         <li>
-                            <a href="@Model.ParentNavigationItem.Url">
-                                @Model.ParentNavigationItem.PageTitle
-                            </a>
+                            @{ //If there is no Title field then don not show the link in Left navigation
+                                if (!String.IsNullOrEmpty(Model.ParentNavigationItem.PageTitle))
+                                {
+                                    <a href="@Model.ParentNavigationItem.Url">
+                                        @Model.ParentNavigationItem.PageTitle
+                                    </a>
+                                }
+                            }
                         </li>
                     }
                 }
                 else
                 {
-                    <li><a href="javascript:;">   @Model.ParentNavigationItem.PageTitle</a></li>
+                    <li><a>   @Model.ParentNavigationItem.PageTitle</a></li>
                 }
 
                 foreach (var nav in Model.ParentNavigationItem.Children.ToList())
@@ -33,10 +38,16 @@
                         //If context item is a child item then make active class
                         if (nav.ContextItem != null)
                         {
-                            <li class="@(Model.CurrentNavigationItem.Id == nav.Id?"active":String.Empty)">
-                                <a href="@nav.Url">
-                                    @nav.PageTitle
-                                </a>
+                            <li class="@(Model.CurrentNavigationItem.Id == nav.Id ? "active" : String.Empty)">
+
+                                @{ //If there is no Title field then don not show the link in Left navigation
+                                    if (!String.IsNullOrEmpty(nav.PageTitle))
+                                    {
+                                        <a href="@nav.Url">
+                                            @nav.PageTitle
+                                        </a>
+                                    }
+                                }
                             </li>
                         }
                     }

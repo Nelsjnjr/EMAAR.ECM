@@ -19,7 +19,13 @@ namespace EMAAR.ECM.Feature.ContentComponents.Settings
         /// CSS Field Name from Siteroot template
         /// </summary>
         public static string SiteRootCSSFieldName { get; set; } = ISiteRootConstants.CSSFileFieldName;
+        /// <summary>
+        /// News Page Template ID
+        /// </summary>
         public static string NewsPageTemplateID { get; set; } = INews_PageConstants.TemplateIdString;
+        /// <summary>
+        /// Events Page Template ID
+        /// </summary>
         public static string EventsPageTemplateID { get; set; } = IEvent_PageConstants.TemplateIdString;
         #endregion
     }
