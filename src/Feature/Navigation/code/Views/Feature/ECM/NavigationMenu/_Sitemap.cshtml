@@ -4,7 +4,7 @@
 @using EMAAR.ECM.Foundation.SitecoreExtensions
 <div class="sitemap-section">
     <div class="section-header">
-        <h1 class="heading">@Sitecore.Globalization.Translate.Text("sitemap")</h1>
+        <h1 class="heading">@Sitecore.Globalization.Translate.Text(CommonConstants.Sitemap)</h1>
     </div>
     @foreach (var level1 in Model.Sitemap.Root_Navigations)
     {
@@ -18,7 +18,7 @@
                     var urlreferedItem = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(level1.Navigation_Link.TargetId));
                     if (urlreferedItem != null)
                     {
-                        <a href="@level1.Navigation_Link.Url" class="parent-page"> @Html.Sitecore().Field("Title", urlreferedItem)</a>
+                        <a href="@level1.Navigation_Link.Url" class="parent-page"> @Html.Sitecore().Field(CommonConstants.Title, urlreferedItem)</a>
                     }
                 }
                 else //If in case of external url getting Navigation item Title
@@ -40,13 +40,13 @@
                             if (level2.Navigation_Link != null)
                             {
                                 //Checking Url referened item and getting its Title if Sitecore item,else displaying navigation item Name
-                                if (level2.Navigation_Link.Type.ToString() == "Internal")
+                                if (level2.Navigation_Link.Type.ToString() == CommonConstants.Internal)
                                 {
                                     var urlreferedItem = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(level2.Navigation_Link.TargetId));
                                     if (urlreferedItem != null)
                                     {
                                         <li>
-                                            <a href="@level2.Navigation_Link.Url">  @Html.Sitecore().Field("Title", urlreferedItem)</a>
+                                            <a href="@level2.Navigation_Link.Url">  @Html.Sitecore().Field(CommonConstants.Title, urlreferedItem)</a>
                                         </li>
                                     }
                                 }

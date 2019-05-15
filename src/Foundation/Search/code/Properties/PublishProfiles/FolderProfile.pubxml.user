@@ -10,7 +10,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="App_Config/Include/Foundation/ECM/Search/EMAAR.ECM.Foundation.Search.config">
-      <publishTime>05/14/2019 09:54:22</publishTime>
+      <publishTime>05/15/2019 14:13:08</publishTime>
     </File>
     <File Include="App_Config/Include/Foundation/ECM/Search/EMAAR.ECM.Foundation.Search.Master.Index.config">
       <publishTime>04/11/2019 15:56:09</publishTime>
@@ -31,13 +31,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/17/2019 16:19:54</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Feature.ContentComponents.dll">
-      <publishTime>05/14/2019 12:49:11</publishTime>
+      <publishTime>05/15/2019 13:18:30</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Feature.ContentComponents.dll.config">
       <publishTime>04/30/2019 17:02:58</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Feature.ContentComponents.pdb">
-      <publishTime>05/14/2019 12:49:11</publishTime>
+      <publishTime>05/15/2019 13:18:30</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.Constants.dll">
       <publishTime>04/02/2019 14:46:54</publishTime>
@@ -58,37 +58,37 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/02/2019 10:03:33</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.dll">
-      <publishTime>05/14/2019 12:34:52</publishTime>
+      <publishTime>05/15/2019 11:19:03</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.dll.config">
       <publishTime>04/11/2019 09:27:16</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.DependencyInjection.pdb">
-      <publishTime>05/14/2019 12:34:52</publishTime>
+      <publishTime>05/15/2019 11:19:03</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll">
-      <publishTime>05/14/2019 12:49:10</publishTime>
+      <publishTime>05/15/2019 13:18:28</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.dll.config">
       <publishTime>04/11/2019 09:27:17</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.ORM.pdb">
-      <publishTime>05/14/2019 12:49:10</publishTime>
+      <publishTime>05/15/2019 13:18:28</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.Search.dll">
-      <publishTime>05/14/2019 12:49:18</publishTime>
+      <publishTime>05/15/2019 14:33:37</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.Search.pdb">
-      <publishTime>05/14/2019 12:49:18</publishTime>
+      <publishTime>05/15/2019 14:33:37</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.SitecoreExtensions.dll">
-      <publishTime>05/14/2019 12:49:11</publishTime>
+      <publishTime>05/15/2019 14:20:19</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.SitecoreExtensions.dll.config">
       <publishTime>04/30/2019 17:02:58</publishTime>
     </File>
     <File Include="bin/EMAAR.ECM.Foundation.SitecoreExtensions.pdb">
-      <publishTime>05/14/2019 12:49:11</publishTime>
+      <publishTime>05/15/2019 14:20:19</publishTime>
     </File>
     <File Include="bin/Glass.Mapper.dll">
       <publishTime>04/16/2019 08:44:26</publishTime>

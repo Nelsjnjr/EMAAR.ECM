@@ -14,7 +14,7 @@
                 {{#each this}}
                 <div class="col-sm-6">
                     <div class="selectWrap pb-5">
-                        <select name="" id="" class="js-example-basic-single imageGallery_year filters-support" data-label="{{this.filterLabel}}">
+                        <select name="{{this.filterLabel}}" id="{{this.filterLabel}}" class="js-example-basic-single imageGallery_year filters-support" data-label="{{this.filterLabel}}">
                             {{#each this.filterValues}}
                             {{#if this}}
                             <option value="{{id}}">{{label}}</option>

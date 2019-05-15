@@ -176,4 +176,5 @@
   <Item ItemPath="/sitecore/layout/Layouts" ItemIcon="/temp/IconCache/Applications/16x16/windows.png" />
   <Item ItemPath="/sitecore/layout/Layouts/Applications" ItemIcon="/temp/iconcache/applications/16x16/folder.png" />
   <Item ItemPath="/sitecore/layout/Layouts/Applications/SitemapManager" ItemIcon="/temp/iconcache/applications/16x16/text_rich_marked.png" />
+  <Item ItemPath="/sitecore/content/Applications/SitemapManager" ItemIcon="/temp/IconCache/Applications/32x32/text_tree.png" />
 </ItemIconCache>

@@ -80,9 +80,7 @@ namespace EMAAR.ECM.Feature.Listing.Repositories
             if (id.IsNull)
             {
                 return resultsList;
-            }
-            string contextItemName = string.Empty;
-            Item currentItem = null;
+            }      
             Item parent = null;
 
             if (!string.IsNullOrEmpty(parentItemId) && string.IsNullOrEmpty(filter))
@@ -135,27 +133,8 @@ namespace EMAAR.ECM.Feature.Listing.Repositories
                parent.TemplateID.Equals(Sitecore.Data.ID.Parse(CommonConstants.ImageGalleryPageTemplateID))||
                parent.TemplateID.Equals(Sitecore.Data.ID.Parse(CommonConstants.VideoGalleryTemplateID))||
                parent.TemplateID.Equals(Sitecore.Data.ID.Parse(CommonConstants.VideoAlbumWithFiltersTemplateID))))
-            {
-                //Getting the customyear selected in the filter , if filter is empty then get the Contextitem name(year name)
-                List<string> filters = filter.Split(new char[] { '|' }, StringSplitOptions.RemoveEmptyEntries).ToList();
-                if (filters != null && filters.Any())
-                {
-                    foreach (string filterString in filters)
-                    {
-                        List<string> filterParam = filterString.Split(new char[] { ':' }, StringSplitOptions.RemoveEmptyEntries).ToList();
-                        if (filterParam != null && filterParam.Any() && filterParam[0] == CommonConstants.YearFacetField)
-                        {
-                            contextItemName = filterParam[1];
-                        }
-                    }
-                }
-                else
-                {
-                    //year name 
-                    currentItem = Sitecore.Context.Database.GetItem(id);
-                    contextItemName = currentItem.Name;
-                }
-                parentResultsList = _searchManager.GetSearchResults<ListingSearchResultItem>(yearFolderparentSearchCondition, facets, null, 0, 0, false, true, true, true, contextItemName);
+            {               
+                parentResultsList = _searchManager.GetSearchResults<ListingSearchResultItem>(yearFolderparentSearchCondition, facets, null, 0, 0, false, true, true);
                 resultsList = _searchManager.GetSearchResults<ListingSearchResultItem>(conditions, facets, null, pageNumber, pageSize, false, true);
             }
             else if (listItemTemplateId.Equals(SearchHelper.FormatGuid(CommonConstants.NewsTemplateID)))
@@ -208,31 +187,15 @@ namespace EMAAR.ECM.Feature.Listing.Repositories
                 else
                 {
                     contentItemTemplateId = CommonConstants.ImageItemTemplateID;
-                }
-                ////Get First item's image of each album as cover image
-                //int count = 0;
-                //while (count < resultsList.results.results.Count)
-                //{
-                //    if (resultsList.results.results[count] != null)
-                //    {
-                //        SearchResultsGeneric<ListingSearchResultItem> list = GetListingModel(0, 1, null, resultsList.results.results[count].ItemId.ToString(), SearchHelper.FormatGuid(contentItemTemplateId), false);
-                //        if (list != null && list.results.results != null && list.results.results.Count > 0)
-                //        {
-                //            resultsList.results.results[count].imageUrl = list.results.results[0].imageUrl;
-                //            resultsList.results.results[count].thumbnailurl = list.results.results[0].thumbnailurl;
-                //        }
-                //    }
-
-                //    count++;
-                //}
+                }         
 
             }
             //Changing the filter based on the template selected(whether it is folder page or listing page)
             if (!string.IsNullOrEmpty(parentItemId) && parentResultsList.filters != null)
             {
+
                 resultsList.filters = parentResultsList.filters;
             }
-
             return resultsList;
 
 

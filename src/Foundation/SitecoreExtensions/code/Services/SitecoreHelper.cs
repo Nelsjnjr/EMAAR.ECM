@@ -5,6 +5,7 @@ using EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Cont
 using EMAAR.ECM.Foundation.SitecoreExtensions.Interfaces;
 using EMAAR.ECM.Foundation.SitecoreExtensions.Settings;
 using Glass.Mapper.Sc.Web.Mvc;
+using Sitecore.Data;
 using Sitecore.Data.Items;
 #endregion
 
@@ -106,6 +107,7 @@ namespace EMAAR.ECM.Foundation.SitecoreExtensions
         /// </summary>
         public IHeader Sitemap => _mvcContext()?.SitecoreService.GetItem<IHeader>
             ($"{Sitecore.Context.Site.RootPath}{SitecoreSettings.NavigationHeaderPath}");
+             
         #endregion
 
 

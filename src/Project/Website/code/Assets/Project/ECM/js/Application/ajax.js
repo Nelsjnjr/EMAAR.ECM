@@ -8,81 +8,79 @@ var winWidth = $(window).width(),
     itemId = $('#templateInitializor').data('item-id'),
     listItemTemplateId = $('#templateInitializor').data('listitemtemplateid'),
     showFilters = $('#templateInitializor').data('show-filters'),
+    total = dataPageSize,
     yearFolderItemName = $('#templateInitializor').data('itemyearname'),
     parentItemId = $('#templateInitializor').data('listparentitemid'),
-    
-    
-    total = dataPageSize,
     AjaxUrl = $('#templateInitializor').data('service-url');
     // https://jahanzebsabir.com/service/search/GetImageGalleryJson?pageSize=1&pageNumber=0&filters=”Years:4bde1ee9d4f57a05071a9f343de64|Albums:4bde1ee6659d4f57a05071a9f343de64”
-// page init
-jQuery(function () {
-    getImageGallery();
-    loadMore();
-    searchInput();
-});
+    // page init
+    jQuery(function () {
+        getImageGallery();
+        loadMore();
+        searchInput();
+    });
 
 function isNullUndefinedOrWhiteSpace(str) {
     return str === undefined || str === null ? true : !/\S/.test(str);
 }
 
 function filterOnChange() {
-    $('.js-example-basic-single').on('change', function(){
+    $('.js-example-basic-single').on('change', function () {
         $('.loadmore').attr('data-pagenumber', 0);
         pagenumber = $('.loadmore').data('pagenumber');
         getImageGalleryOnChange(0);
     });
 }
 
-function getImageGallery(pagination){
-    var parameterlabel= [],
+function getImageGallery(pagination) {
+    var parameterlabel = [],
         n = 0;
-        AjaxUrl = $('#templateInitializor').data('service-url');
-    
-    var dataParam = { pageNumber: pagenumber, pageSize: dataPageSize, filter: '', itemId: itemId, listItemTemplateId: listItemTemplateId, showFilters: showFilters, parentItemId:parentItemId};
-        
+    AjaxUrl = $('#templateInitializor').data('service-url');
+
+    var dataParam = { pageNumber: pagenumber, pageSize: dataPageSize, filter: '', itemId: itemId, listItemTemplateId: listItemTemplateId, showFilters: showFilters, parentItemId: parentItemId };
+
     // var JSONurl = AjaxUrl + "?" + yearLabel + "=" + year + "&" + albumLabel + "=" + albums;
     getData.filter(AjaxUrl, pagination, dataParam);
 
 }
 
 function searchInput() {
-    $('#searchBox').on('submit', function(e) {
+    $('#searchBox').on('submit', function (e) {
         e.preventDefault();
         var searchValue = $(this).find('.input-field').val(),
             AjaxUrl = $('#templateInitializor').data('service-url'),
             pagination = 0,
-            dataParam = {pageNumber: pagenumber,pageSize:dataPageSize,filter:'', searchTerm: searchValue};
+            dataParam = { pageNumber: pagenumber, pageSize: dataPageSize, filter: '', searchTerm: searchValue };
         getData.results(AjaxUrl, pagination, dataParam);
     })
 }
 
-function getImageGalleryOnChange(pagination){
-    var parameterlabel= [],
+function getImageGalleryOnChange(pagination) {
+    var parameterlabel = [],
         n = 0,
         filterParam = '';
-        AjaxUrl = $('#templateInitializor').data('service-url');
+    AjaxUrl = $('#templateInitializor').data('service-url');
 
-    $('.filters-support').each(function(){
+    $('.filters-support').each(function () {
         var $this = $(this);
         var $value = $this.val();
-        parameterlabel[n] = {Label: $this.data('label'), Value: $value};
+        parameterlabel[n] = { Label: $this.data('label'), Value: $value };
         n++;
     });
 
     // console.log(parameterlabel);
-    
+
     if (parameterlabel.length) {
-        for(index in parameterlabel) {
+        for (index in parameterlabel) {
             var sep = index == 0 ? '' : '|';
-            filterParam +=  sep+parameterlabel[index].Label + ':'+ parameterlabel[index].Value;
+            filterParam += sep + parameterlabel[index].Label + ':' + parameterlabel[index].Value;
         }
     }
-    
+
     var chkPagi = pagination ? pagination : pagenumber;
     filterParam = {
-        pageNumber:chkPagi,
-        pageSize:dataPageSize,
+        pageNumber: chkPagi,
+        pageSize: dataPageSize,
         filter: filterParam,
         itemId: itemId,
         listItemTemplateId: listItemTemplateId,
@@ -93,32 +91,32 @@ function getImageGalleryOnChange(pagination){
     getData.results(AjaxUrl, pagination, filterParam);
 }
 
-function getImageGalleryOnLoad(pagination){
-    var parameterlabel= [],
+function getImageGalleryOnLoad(pagination) {
+    var parameterlabel = [],
         n = 0,
         filterParam = '';
-        AjaxUrl = $('#templateInitializor').data('service-url');
+    AjaxUrl = $('#templateInitializor').data('service-url');
 
-    $('.filters-support').each(function(){
+    $('.filters-support').each(function () {
         var $this = $(this);
         var $value = $this.val();
-        parameterlabel[n] = {Label: $this.data('label'), Value: $value};
+        parameterlabel[n] = { Label: $this.data('label'), Value: $value };
         n++;
     });
 
     // console.log(parameterlabel);
-    
+
     if (parameterlabel.length) {
-        for(index in parameterlabel) {
+        for (index in parameterlabel) {
             var sep = index == 0 ? '' : '|';
-            filterParam +=  sep+parameterlabel[index].Label + ':'+ parameterlabel[index].Value;
+            filterParam += sep + parameterlabel[index].Label + ':' + parameterlabel[index].Value;
         }
     }
-    
+
     var chkPagi = pagination ? pagination : pagenumber;
     filterParam = {
-        pageNumber:chkPagi,
-        pageSize:dataPageSize,
+        pageNumber: chkPagi,
+        pageSize: dataPageSize,
         filter: filterParam,
         itemId: itemId,
         listItemTemplateId: listItemTemplateId,
@@ -130,12 +128,12 @@ function getImageGalleryOnLoad(pagination){
 }
 
 function loadMore() {
-    $('.loadmore').on('click', function() {
+    $('.loadmore').on('click', function () {
         var datatotalcount = $('.loadmore').data('count');
-        if ((total * (pagenumber+1)) < datatotalcount) {
+        if ((total * (pagenumber + 1)) < datatotalcount) {
             pagenumber += 1;
             $('.loadmore').attr('data-pagenumber', pagenumber);
-            getImageGalleryOnLoad(); 
+            getImageGalleryOnLoad();
         }
     });
 }

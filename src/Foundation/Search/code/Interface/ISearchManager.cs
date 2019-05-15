@@ -18,6 +18,6 @@ namespace EMAAR.ECM.Foundation.Search.Interfaces
         /// <param name="facetFields">facets</param>
         /// <param name="sortOptions">sort options</param>
         /// <returns>Search Results of Generic Type</returns>  
-        SearchResultsGeneric<T> GetSearchResults<T>(List<SearchCondition> searchConditions, List<Facet> facetFields= null, SortOption sortOption = null, int pageNo = -1, int pageSize = -1, bool sortByYearAndOrder = false, bool sortByDateAndOrder = false, bool sortByDateAscAndOrder = false,bool isFolder= false, string CurrentItemName=null) where T : ListingSearchResultItem;
+        SearchResultsGeneric<T> GetSearchResults<T>(List<SearchCondition> searchConditions, List<Facet> facetFields= null, SortOption sortOption = null, int pageNo = -1, int pageSize = -1, bool sortByYearAndOrder = false, bool sortByDateAndOrder = false, bool sortByDateAscAndOrder = false) where T : ListingSearchResultItem;
     }
 }

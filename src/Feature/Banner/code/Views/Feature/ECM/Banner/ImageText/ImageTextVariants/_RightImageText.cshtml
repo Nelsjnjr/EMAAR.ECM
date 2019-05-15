@@ -1,6 +1,7 @@
 ﻿@using Glass.Mapper.Sc.Web.Mvc
 @using Glass.Mapper.Sc
 @using EMAAR.ECM.Foundation.SitecoreExtensions.Settings
+@using EMAAR.ECM.Foundation.SitecoreExtensions
 @using Sitecore.Framework.Fields.Extensions
 @model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Banner.IImageText
 <!-- image with text starts -->
@@ -25,9 +26,10 @@
             </div>
             <div class="col-sm-6 d-none d-xl-block d-md-block">
                 <div class="imgWrap wow fadeInUp">
-                    @{ 
+                    @{
+                        //Spilting wxh(Ex: 300x900)
                         var pixel = SitecoreSettings.ImageTextpixel.ToLower().Split('x');
-                        @Html.Sitecore().AdvancedImageField("Image", Model.ContextItem, System.Convert.ToInt32(pixel[0]), System.Convert.ToInt32(pixel[1]), "image", "img-fluid", false)
+                        @Html.Sitecore().AdvancedImageField(CommonConstants.Image, Model.ContextItem, System.Convert.ToInt32(pixel[0]), System.Convert.ToInt32(pixel[1]), "image", "img-fluid", false)
                     }
                 </div>
             </div>

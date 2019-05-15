@@ -6,7 +6,14 @@
     return;
 }
 @{
-    <title>@Model.Title</title>
+    if (!string.IsNullOrEmpty(Model.Browser_Title))
+    {
+        <title>@Model.Browser_Title</title>
+    }
+    else
+    {
+        <title>@Model.Title</title>
+    }
     <!--Start Meta tags-->
     if (!string.IsNullOrEmpty(Model.Meta_Title))
     {

@@ -22,10 +22,7 @@
         /// Getting Content Page Css Class name
         /// </summary>
         public static string ContentPageHeaderCss { get; } = "siteHeader innerHeader";
-        /// <summary>
-        /// Title Field Name
-        /// </summary>
-        public static string Title { get; } = "Title";
+
         /// <summary>
         /// Introduction Field Name
         /// </summary>
@@ -59,11 +56,96 @@
             "~/Assets/Project/ECM/js/application/main.js",
 
         };
+        #region Dictionarykey
+        /// <summary>
+        /// Dictionary key for ViewAll
+        /// </summary>
+        public const string ViewAll = "viewall";
+        /// <summary>
+        /// Dictionary key for News
+        /// </summary>
+        public const string News = "news";
+        /// <summary>
+        /// Dictionary key for Events
+        /// </summary>
+        public const string Events = "events";
+        /// <summary>
+        /// Dictionary key for Downloads
+        /// </summary>
+        public const string Downloads = "downloads";
+        /// <summary>
+        /// Dictionary key for Download
+        /// </summary>
+        public const string Download = "download";
+        /// <summary>
+        /// Dictionary key for ReadOnline
+        /// </summary>
+        public const string ReadOnline = "ReadOnline";
+        /// <summary>
+        /// Dictionary key for ImageGallery
+        /// </summary>
+        public const string ImageGallery = "imagegallery";
+        /// <summary>
+        /// Dictionary key for VideoGallery
+        /// </summary>
+        public const string VideoGallery = "videogallery";
+        /// <summary>
+        /// Dictionary key for ScrollDown
+        /// </summary>
+        public const string ScrollDown = "scrolldown";
+        /// <summary>
+        /// Dictionary key for Amenities
+        /// </summary>
+        public const string Amenities = "amenities";
+        /// <summary>
+        /// Sitemap key for Amenities
+        /// </summary>
+        public const string Sitemap = "sitemap";
+
+        #endregion Dictionarykey
+
+        #region ItemFieldName
+        /// <summary>
+        /// FullBannerImage Field Name
+        /// </summary>
+        public const string FullBannerImage = "FullBannerImage";
+        /// <summary>
+        /// Banner Field Name
+        /// </summary>
+        public const string Banner = "Banner";
+        /// <summary>
+        /// Image Field Name
+        /// </summary>
+        public const string Image = "Image";
+        /// <summary>
+        /// ThumbnailImage Field Name
+        /// </summary>
+        public const string ThumbnailImage = "ThumbnailImage";
+        /// <summary>
+        /// Hero Image Field Name
+        /// </summary>
+        public const string HeroImage = "Hero Image";
+        /// <summary>
+        /// Title Field Name
+        /// </summary>
+        public const string Title = "Title";
+        #endregion ItemFieldName
+        /// <summary>
+        /// Internal constants value
+        /// </summary>
+        public const string Internal = "Internal";
+        /// <summary>
+        /// Global constants value
+        /// </summary>
+        public const string Global = "Global";
         /// <summary>
         /// All events constants value
         /// </summary>
         public const string AllEvents = "AllEvents";
-
+        /// <summary>
+        /// Used as text in Experience editor for complex image fields
+        /// </summary>
+        public const string WebEditExperinceEditorImageEditingText = "Edit Background Image";
         /// <summary>
         /// RTE Class names
         /// </summary>
@@ -200,6 +282,10 @@
         /// </summary>
         public const string CategoriesFacetField = "categories";
         /// <summary>
+        /// No Image Item ID
+        /// </summary>
+        public const string NoImageItemID = "{D232B38D-8294-4609-B626-B880CEB31B8D}";
+        /// <summary>
         /// Home Template ID
         /// </summary>
         public const string HomePageTemplateID = "{337B3473-E10A-4490-88B5-8255FF80D0F2}";
@@ -279,9 +365,18 @@
         /// </summary>
         public const string YearFolderTemplateID = "{75D66F86-B219-4070-9820-AB948FD107A4}";
         /// <summary>
+        /// Video Album with Filters  Folder Template ID
+        /// </summary>
+        public const string VideoAlbumWithFiltersYearFolderTemplateID = "{F3F807F7-01D0-419F-B0FD-11A9C4E66A7B}";
+        /// <summary>
         /// Image Album Folder Template ID
         /// </summary>
         public const string ImageAlbumYearFolderTemplateID = "{6D64A541-EA75-4422-BE92-02541C818115}";
+        /// <summary>
+        /// Video Gallery Folder Template ID
+        /// </summary>
+        public const string VideoGalleryYearFolderTemplateID = "{187707E8-702D-4C9D-A058-D39D62049416}";
+
         /// <summary>
         /// Video Album Folder Template ID
         /// </summary>

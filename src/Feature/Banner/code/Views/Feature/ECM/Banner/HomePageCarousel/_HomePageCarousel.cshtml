@@ -23,7 +23,7 @@
                                         <div class="explore-item-img">
                                             @{
                                                 var pixel = SitecoreSettings.HomePageCarouselpixel.ToLower().Split('x');
-                                                @Html.Sitecore().AdvancedImageField("Image", carousels.ContextItem, System.Convert.ToInt32(pixel[0]), System.Convert.ToInt32(pixel[1]), "image", "img-fluid", false)
+                                                @Html.Sitecore().AdvancedImageField(CommonConstants.Image, carousels.ContextItem, System.Convert.ToInt32(pixel[0]), System.Convert.ToInt32(pixel[1]), "image", "img-fluid", false)
                                             }
 
                                             <h3 class="title">@Html.Glass().Editable(carousels, x => x.Title)</h3>

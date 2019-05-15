@@ -56,10 +56,10 @@
                                                 {
                                                     //If no Url available then no need to add Title even if  Navigation Item exists in Sitecore
                                                     //Checking Url referened item and getting its Title if Sitecore item,else displaying navigation item Name
-                                                    if (level1.Navigation_Link.Type.ToString() == "Internal")
+                                                    if (level1.Navigation_Link.Type.ToString() == CommonConstants.Internal)
                                                     {
                                                         var level1ReferencedItem = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(level1.Navigation_Link.TargetId));
-                                                        @Html.Sitecore().Field("Title", level1ReferencedItem)
+                                                        @Html.Sitecore().Field(CommonConstants.Title, level1ReferencedItem)
                                                     }
                                                     else //If in case of external url getting Navigation item Title
                                                     {
@@ -84,7 +84,7 @@
                                                 {
 
                                                     //Checking Url referened item and getting its Title if Sitecore item,else displaying navigation item Name
-                                                    if (level1.Navigation_Link.Type.ToString() == "Internal")
+                                                    if (level1.Navigation_Link.Type.ToString() == CommonConstants.Internal)
                                                     {
                                                         var level1ReferencedItem = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(level1.Navigation_Link.TargetId));
                                                         if (level1ReferencedItem != null)
@@ -101,12 +101,12 @@
                                                 else //If not initial menu loading
                                                 {
                                                     //Checking Url referened item and getting its Title if Sitecore item,else displaying navigation item Name
-                                                    if (level1.Navigation_Link.Type.ToString() == "Internal")
+                                                    if (level1.Navigation_Link.Type.ToString() == CommonConstants.Internal)
                                                     {
                                                         var level1ReferencedItem = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(level1.Navigation_Link.TargetId));
                                                         if (level1ReferencedItem != null)
                                                         {
-                                                            <a href="javascript:;">  @Html.Sitecore().Field("Title", level1ReferencedItem)</a>
+                                                            <a href="javascript:;">  @Html.Sitecore().Field(CommonConstants.Title, level1ReferencedItem)</a>
                                                         }
                                                     }
                                                     else //If in case of external url getting Navigation item Title
@@ -137,12 +137,12 @@
                                                                 @using (Html.Glass().BeginRenderLink(level2, x => x.Navigation_Link, isEditable: true))
                                                                 {
                                                                     //Checking Url referened item and getting its Title if Sitecore item,else displaying navigation item Name
-                                                                    if (level2.Navigation_Link.Type.ToString() == "Internal")
+                                                                    if (level2.Navigation_Link.Type.ToString() == CommonConstants.Internal)
                                                                     {
                                                                         var level2ReferencedItem = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(level2.Navigation_Link.TargetId));
                                                                         if (level2ReferencedItem != null)
                                                                         {
-                                                                            @Html.Sitecore().Field("Title", level2ReferencedItem)
+                                                                            @Html.Sitecore().Field(CommonConstants.Title, level2ReferencedItem)
 
                                                                         }
                                                                     }

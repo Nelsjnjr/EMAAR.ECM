@@ -26,7 +26,7 @@ namespace EMAAR.ECM.Foundation.Search.Services
         /// <param name="pageNo">Page Number.</param>
         /// <param name="pageSize">Page Size.</param>
         /// <returns>Search Results of Generic Type</returns>        
-        public SearchResultsGeneric<T> GetSearchResults<T>(List<SearchCondition> searchConditions, List<Facet> facetFields = null, SortOption sortOption = null, int pageNo = -1, int pageSize = -1, bool sortByYearAndOrder = false, bool sortByDateAndOrder = false, bool sortByDateAscAndOrder = false, bool isFolder = false, string CurrentItemName = null) where T : ListingSearchResultItem
+        public SearchResultsGeneric<T> GetSearchResults<T>(List<SearchCondition> searchConditions, List<Facet> facetFields = null, SortOption sortOption = null, int pageNo = -1, int pageSize = -1, bool sortByYearAndOrder = false, bool sortByDateAndOrder = false, bool sortByDateAscAndOrder = false) where T : ListingSearchResultItem
         {
             searchConditions = SearchHelper.AddBasicSearchConditions(searchConditions);
             IProviderSearchContext searchContext = SearchHelper.GetIndex().CreateSearchContext();
@@ -136,30 +136,9 @@ namespace EMAAR.ECM.Foundation.Search.Services
                     }
 
                 }
-                //If directly browsing the year folder of(news/events/video/image gallery)
-                if (isFolder)
-                {
-                    //This is the place to manually sort the folder item in the year dropdown and selects all filters from parent and 
-                    //make it available in the dropdowns
-                    List<Filters> seofilters = new List<Filters>();
-                    List<FilterValues> filtervalues = new List<FilterValues>();
-                    seofilters.Add(filters[0]);
-                    if (filters.Count > 1)
-                    {
-                        int yearFolderIndex = filters[1].filterValues.IndexOf(filters[1].filterValues.FirstOrDefault(i => i.label == CurrentItemName));
-                        FilterValues yearFolderItem = filters[1].filterValues.FirstOrDefault(p => p.label == CurrentItemName);
-                        filters[1].filterValues.RemoveAt(yearFolderIndex);
-                        filters[1].filterValues.Insert(0, yearFolderItem);
-                        filtervalues.AddRange(filters[1].filterValues);
-                        seofilters.Add(new Filters() { filterLabel = CommonConstants.YearFacetField, filterValues = filtervalues });
-                        searchResults.filters = seofilters;
-                    }
-                }
-                else
-                {
-                    //Default filters
-                    searchResults.filters = filters;
-                }
+                //Default filters
+                searchResults.filters = filters;
+
             }
 
             return searchResults;

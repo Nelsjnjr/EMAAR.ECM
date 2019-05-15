@@ -217,6 +217,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 			public const string IntroductionFieldName = "Introduction";
 			
 					
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
+			
+					
 			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
 			public const string TitleFieldName = "Title";
 			
@@ -283,6 +287,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 					
 			public static readonly ID Hreflang_TagsFieldId = new ID("26c53039-4914-4ec5-bb84-ad910faa4086");
 			public const string Hreflang_TagsFieldName = "Hreflang Tags";
+			
+					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
 			
 					
 			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
@@ -367,6 +375,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IEventsAlbumFolderConstants.IntroductionFieldName)]
 				public virtual string Introduction  {get; set;}
+					
+						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IEventsAlbumFolderConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -554,6 +573,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IEventsAlbumFolderConstants.Hreflang_TagsFieldName)]
 				public virtual string Hreflang_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IEventsAlbumFolderConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
 					
 						/// <summary>
 				/// The twiiter title field.
@@ -1762,6 +1792,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 			public const string IntroductionFieldName = "Introduction";
 			
 					
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
+			
+					
 			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
 			public const string TitleFieldName = "Title";
 			
@@ -1828,6 +1862,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 					
 			public static readonly ID Hreflang_TagsFieldId = new ID("26c53039-4914-4ec5-bb84-ad910faa4086");
 			public const string Hreflang_TagsFieldName = "Hreflang Tags";
+			
+					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
 			
 					
 			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
@@ -1912,6 +1950,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IVideoGalleryFolderConstants.IntroductionFieldName)]
 				public virtual string Introduction  {get; set;}
+					
+						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideoGalleryFolderConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -2101,6 +2150,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 				public virtual string Hreflang_Tags  {get; set;}
 					
 						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideoGalleryFolderConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
+					
+						/// <summary>
 				/// The twiiter title field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -2216,6 +2276,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string Is_Left_Navigation_Root_ClickableFieldName = "Is Left Navigation Root Clickable";
 			
 					
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
+			
+					
 			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
 			public const string TitleFieldName = "Title";
 			
@@ -2282,6 +2346,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 			public static readonly ID Hreflang_TagsFieldId = new ID("26c53039-4914-4ec5-bb84-ad910faa4086");
 			public const string Hreflang_TagsFieldName = "Hreflang Tags";
+			
+					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
 			
 					
 			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
@@ -2380,7 +2448,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 						/// <summary>
 				/// The Is Left Navigation Root Clickable field.
-				/// <para>In Left Navigation the this Item Name will not be clickable by default and it is only clickable for "Mediacenter", Selecting the checkbox then this page will be clickable in Left navigation</para>
+				/// <para>Add this item as clickable in Left navigation</para>
 				/// <para>Field Type: Checkbox</para>		
 				/// <para>Field ID: 6b80f5a4-7b14-4ce7-a140-187e88fd8e82</para>
 				/// <para>Custom Data: </para>
@@ -2388,6 +2456,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IVideo_Gallery_PageConstants.Is_Left_Navigation_Root_ClickableFieldName)]
 				public virtual bool Is_Left_Navigation_Root_Clickable  {get; set;}
+					
+						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_Gallery_PageConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -2575,6 +2654,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IVideo_Gallery_PageConstants.Hreflang_TagsFieldName)]
 				public virtual string Hreflang_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_Gallery_PageConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
 					
 						/// <summary>
 				/// The twiiter title field.
@@ -3012,6 +3102,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string Is_Left_Navigation_Root_ClickableFieldName = "Is Left Navigation Root Clickable";
 			
 					
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
+			
+					
 			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
 			public const string TitleFieldName = "Title";
 			
@@ -3078,6 +3172,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 			public static readonly ID Hreflang_TagsFieldId = new ID("26c53039-4914-4ec5-bb84-ad910faa4086");
 			public const string Hreflang_TagsFieldName = "Hreflang Tags";
+			
+					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
 			
 					
 			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
@@ -3176,7 +3274,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 						/// <summary>
 				/// The Is Left Navigation Root Clickable field.
-				/// <para>In Left Navigation the this Item Name will not be clickable by default and it is only clickable for "Mediacenter", Selecting the checkbox then this page will be clickable in Left navigation</para>
+				/// <para>Add this item as clickable in Left navigation</para>
 				/// <para>Field Type: Checkbox</para>		
 				/// <para>Field ID: 6b80f5a4-7b14-4ce7-a140-187e88fd8e82</para>
 				/// <para>Custom Data: </para>
@@ -3184,6 +3282,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(INews_Listing_PageConstants.Is_Left_Navigation_Root_ClickableFieldName)]
 				public virtual bool Is_Left_Navigation_Root_Clickable  {get; set;}
+					
+						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(INews_Listing_PageConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -3371,6 +3480,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(INews_Listing_PageConstants.Hreflang_TagsFieldName)]
 				public virtual string Hreflang_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(INews_Listing_PageConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
 					
 						/// <summary>
 				/// The twiiter title field.
@@ -3621,8 +3741,104 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string TemplateName = "GenericContentRootPage";
 
 					
-			public static readonly ID TitleFieldId = new ID("523933ea-645c-4879-a1ed-9757573716b2");
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
+			
+					
+			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
 			public const string TitleFieldName = "Title";
+			
+					
+			public static readonly ID Og_DescriptionFieldId = new ID("89f0fe3c-744e-416c-b216-340e05f86eac");
+			public const string Og_DescriptionFieldName = "og description";
+			
+					
+			public static readonly ID Og_ImageFieldId = new ID("4499fdb8-d0cd-4012-a7ea-b08003c96e26");
+			public const string Og_ImageFieldName = "og image";
+			
+					
+			public static readonly ID Og_LocaleFieldId = new ID("ace133e4-a79f-4aba-afa9-3b876082d908");
+			public const string Og_LocaleFieldName = "og locale";
+			
+					
+			public static readonly ID Og_Site_NameFieldId = new ID("b41e43e9-8ab5-4a00-b76b-1664c7161f82");
+			public const string Og_Site_NameFieldName = "og site_name";
+			
+					
+			public static readonly ID Og_TitleFieldId = new ID("4f39872d-258b-45b8-926b-6297e2dc7cd4");
+			public const string Og_TitleFieldName = "og title";
+			
+					
+			public static readonly ID Og_TypeFieldId = new ID("2f2f8274-9494-4fbd-936d-ac6d03a8cf9b");
+			public const string Og_TypeFieldName = "og type";
+			
+					
+			public static readonly ID Og_UrlFieldId = new ID("cd25bc97-065e-4f79-b991-7c515dedab45");
+			public const string Og_UrlFieldName = "og url";
+			
+					
+			public static readonly ID Og_VideoFieldId = new ID("7bc4f422-380e-4a89-a82a-74e5249e609c");
+			public const string Og_VideoFieldName = "og video";
+			
+					
+			public static readonly ID Custom_Meta_TagsFieldId = new ID("dd32da75-5cc3-4961-b3c6-8ee0664bd31e");
+			public const string Custom_Meta_TagsFieldName = "Custom Meta Tags";
+			
+					
+			public static readonly ID Meta_DescriptionFieldId = new ID("8453af30-1477-46fb-8094-bd5fde72c89a");
+			public const string Meta_DescriptionFieldName = "Meta Description";
+			
+					
+			public static readonly ID Meta_KeywordsFieldId = new ID("dace23af-d8b3-48f1-94e7-9ae3ee07cb35");
+			public const string Meta_KeywordsFieldName = "Meta Keywords";
+			
+					
+			public static readonly ID Meta_TitleFieldId = new ID("8097066d-26c3-44b9-8527-551a2cbb5a84");
+			public const string Meta_TitleFieldName = "Meta Title";
+			
+					
+			public static readonly ID Robots_Follow_This_PageFieldId = new ID("daad817a-930f-4dae-be58-687bb95d6ed9");
+			public const string Robots_Follow_This_PageFieldName = "Robots Follow this page";
+			
+					
+			public static readonly ID Robots_Index_This_PageFieldId = new ID("88d50871-3afa-4e05-ac0e-9fcb7a41353e");
+			public const string Robots_Index_This_PageFieldName = "Robots Index this page";
+			
+					
+			public static readonly ID Canonical_TagsFieldId = new ID("074b8d28-6f24-4dcc-812f-14e14f67f1e8");
+			public const string Canonical_TagsFieldName = "Canonical Tags";
+			
+					
+			public static readonly ID Hreflang_TagsFieldId = new ID("26c53039-4914-4ec5-bb84-ad910faa4086");
+			public const string Hreflang_TagsFieldName = "Hreflang Tags";
+			
+					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
+			
+					
+			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
+			public const string Twiiter_TitleFieldName = "twiiter title";
+			
+					
+			public static readonly ID Twitter_CardFieldId = new ID("6466bde7-35cf-4e65-bda5-132e5cf0a9eb");
+			public const string Twitter_CardFieldName = "twitter card";
+			
+					
+			public static readonly ID Twitter_CreatorFieldId = new ID("1078ff0c-7c59-4fd4-b4d1-1f693848928f");
+			public const string Twitter_CreatorFieldName = "twitter creator";
+			
+					
+			public static readonly ID Twitter_DescriptionFieldId = new ID("ce1be2a8-5e5c-49d9-b9a9-63834309b252");
+			public const string Twitter_DescriptionFieldName = "twitter description";
+			
+					
+			public static readonly ID Twitter_ImageFieldId = new ID("bebb8543-e760-4bbe-9a9e-e7eaaedd101e");
+			public const string Twitter_ImageFieldName = "twitter image";
+			
+					
+			public static readonly ID Twitter_SiteFieldId = new ID("1827467a-8817-4a16-b39c-53503b35d15e");
+			public const string Twitter_SiteFieldName = "twitter site";
 			
 					
 			public static readonly ID Include_In_Left_NavigationFieldId = new ID("36cfaa10-f10c-40dd-9bbc-a8f7160dd389");
@@ -3649,15 +3865,279 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 	{
 	   
 						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGenericContentRootPageConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
+					
+						/// <summary>
 				/// The Title field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
-				/// <para>Field ID: 523933ea-645c-4879-a1ed-9757573716b2</para>
+				/// <para>Field ID: c4136f1d-43ec-45cb-8e1b-5a1993d16157</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IGenericContentRootPageConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
+					
+						/// <summary>
+				/// The og description field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 89f0fe3c-744e-416c-b216-340e05f86eac</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGenericContentRootPageConstants.Og_DescriptionFieldName)]
+				public virtual string Og_Description  {get; set;}
+					
+						/// <summary>
+				/// The og image field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 4499fdb8-d0cd-4012-a7ea-b08003c96e26</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGenericContentRootPageConstants.Og_ImageFieldName)]
+				public virtual string Og_Image  {get; set;}
+					
+						/// <summary>
+				/// The og locale field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: ace133e4-a79f-4aba-afa9-3b876082d908</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGenericContentRootPageConstants.Og_LocaleFieldName)]
+				public virtual string Og_Locale  {get; set;}
+					
+						/// <summary>
+				/// The og site_name field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: b41e43e9-8ab5-4a00-b76b-1664c7161f82</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGenericContentRootPageConstants.Og_Site_NameFieldName)]
+				public virtual string Og_Site_Name  {get; set;}
+					
+						/// <summary>
+				/// The og title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 4f39872d-258b-45b8-926b-6297e2dc7cd4</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGenericContentRootPageConstants.Og_TitleFieldName)]
+				public virtual string Og_Title  {get; set;}
+					
+						/// <summary>
+				/// The og type field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 2f2f8274-9494-4fbd-936d-ac6d03a8cf9b</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGenericContentRootPageConstants.Og_TypeFieldName)]
+				public virtual string Og_Type  {get; set;}
+					
+						/// <summary>
+				/// The og url field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: cd25bc97-065e-4f79-b991-7c515dedab45</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGenericContentRootPageConstants.Og_UrlFieldName)]
+				public virtual string Og_Url  {get; set;}
+					
+						/// <summary>
+				/// The og video field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 7bc4f422-380e-4a89-a82a-74e5249e609c</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGenericContentRootPageConstants.Og_VideoFieldName)]
+				public virtual string Og_Video  {get; set;}
+					
+						/// <summary>
+				/// The Custom Meta Tags field.
+				/// <para></para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: dd32da75-5cc3-4961-b3c6-8ee0664bd31e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGenericContentRootPageConstants.Custom_Meta_TagsFieldName)]
+				public virtual string Custom_Meta_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Meta Description field.
+				/// <para></para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: 8453af30-1477-46fb-8094-bd5fde72c89a</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGenericContentRootPageConstants.Meta_DescriptionFieldName)]
+				public virtual string Meta_Description  {get; set;}
+					
+						/// <summary>
+				/// The Meta Keywords field.
+				/// <para></para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: dace23af-d8b3-48f1-94e7-9ae3ee07cb35</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGenericContentRootPageConstants.Meta_KeywordsFieldName)]
+				public virtual string Meta_Keywords  {get; set;}
+					
+						/// <summary>
+				/// The Meta Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 8097066d-26c3-44b9-8527-551a2cbb5a84</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGenericContentRootPageConstants.Meta_TitleFieldName)]
+				public virtual string Meta_Title  {get; set;}
+					
+						/// <summary>
+				/// The Robots Follow this page field.
+				/// <para>Search bots to follow the links in the page or not, If set bots will follow the links !!</para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: daad817a-930f-4dae-be58-687bb95d6ed9</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGenericContentRootPageConstants.Robots_Follow_This_PageFieldName)]
+				public virtual bool Robots_Follow_This_Page  {get; set;}
+					
+						/// <summary>
+				/// The Robots Index this page field.
+				/// <para>Search engine to index this page,If set this page will be indexed by search engines lilke google etc !!</para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 88d50871-3afa-4e05-ac0e-9fcb7a41353e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGenericContentRootPageConstants.Robots_Index_This_PageFieldName)]
+				public virtual bool Robots_Index_This_Page  {get; set;}
+					
+						/// <summary>
+				/// The Canonical Tags field.
+				/// <para>Add comma separated canonical tags. Ex:  (https//www.ecm.com/en/login, https//www.ecm.com/en/loginpage)</para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: 074b8d28-6f24-4dcc-812f-14e14f67f1e8</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGenericContentRootPageConstants.Canonical_TagsFieldName)]
+				public virtual string Canonical_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Hreflang Tags field.
+				/// <para>Add comma separated hreflang tags. Ex:  languagecode:Page url  (en:https//www.ecm.com/en/login,ar:https//www.ecm.com/ar/login)</para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: 26c53039-4914-4ec5-bb84-ad910faa4086</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGenericContentRootPageConstants.Hreflang_TagsFieldName)]
+				public virtual string Hreflang_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGenericContentRootPageConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
+					
+						/// <summary>
+				/// The twiiter title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: e4395580-b216-41e6-ad1f-8ec542de11d6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGenericContentRootPageConstants.Twiiter_TitleFieldName)]
+				public virtual string Twiiter_Title  {get; set;}
+					
+						/// <summary>
+				/// The twitter card field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6466bde7-35cf-4e65-bda5-132e5cf0a9eb</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGenericContentRootPageConstants.Twitter_CardFieldName)]
+				public virtual string Twitter_Card  {get; set;}
+					
+						/// <summary>
+				/// The twitter creator field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 1078ff0c-7c59-4fd4-b4d1-1f693848928f</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGenericContentRootPageConstants.Twitter_CreatorFieldName)]
+				public virtual string Twitter_Creator  {get; set;}
+					
+						/// <summary>
+				/// The twitter description field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: ce1be2a8-5e5c-49d9-b9a9-63834309b252</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGenericContentRootPageConstants.Twitter_DescriptionFieldName)]
+				public virtual string Twitter_Description  {get; set;}
+					
+						/// <summary>
+				/// The twitter image field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: bebb8543-e760-4bbe-9a9e-e7eaaedd101e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGenericContentRootPageConstants.Twitter_ImageFieldName)]
+				public virtual string Twitter_Image  {get; set;}
+					
+						/// <summary>
+				/// The twitter site field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 1827467a-8817-4a16-b39c-53503b35d15e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGenericContentRootPageConstants.Twitter_SiteFieldName)]
+				public virtual string Twitter_Site  {get; set;}
 					
 						/// <summary>
 				/// The Include in Left Navigation field.
@@ -3672,7 +4152,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 						/// <summary>
 				/// The Is Left Navigation Root Clickable field.
-				/// <para>In Left Navigation the this Item Name will not be clickable by default and it is only clickable for "Mediacenter", Selecting the checkbox then this page will be clickable in Left navigation</para>
+				/// <para>Add this item as clickable in Left navigation</para>
 				/// <para>Field Type: Checkbox</para>		
 				/// <para>Field ID: 6b80f5a4-7b14-4ce7-a140-187e88fd8e82</para>
 				/// <para>Custom Data: </para>
@@ -3948,6 +4428,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string Is_Left_Navigation_Root_ClickableFieldName = "Is Left Navigation Root Clickable";
 			
 					
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
+			
+					
 			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
 			public const string TitleFieldName = "Title";
 			
@@ -4014,6 +4498,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 			public static readonly ID Hreflang_TagsFieldId = new ID("26c53039-4914-4ec5-bb84-ad910faa4086");
 			public const string Hreflang_TagsFieldName = "Hreflang Tags";
+			
+					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
 			
 					
 			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
@@ -4134,7 +4622,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 						/// <summary>
 				/// The Is Left Navigation Root Clickable field.
-				/// <para>In Left Navigation the this Item Name will not be clickable by default and it is only clickable for "Mediacenter", Selecting the checkbox then this page will be clickable in Left navigation</para>
+				/// <para>Add this item as clickable in Left navigation</para>
 				/// <para>Field Type: Checkbox</para>		
 				/// <para>Field ID: 6b80f5a4-7b14-4ce7-a140-187e88fd8e82</para>
 				/// <para>Custom Data: </para>
@@ -4142,6 +4630,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IVideo_Album_Without_FiltersConstants.Is_Left_Navigation_Root_ClickableFieldName)]
 				public virtual bool Is_Left_Navigation_Root_Clickable  {get; set;}
+					
+						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_Album_Without_FiltersConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -4329,6 +4828,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IVideo_Album_Without_FiltersConstants.Hreflang_TagsFieldName)]
 				public virtual string Hreflang_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_Album_Without_FiltersConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
 					
 						/// <summary>
 				/// The twiiter title field.
@@ -4858,6 +5368,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string TemplateName = "Home";
 
 					
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
+			
+					
 			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
 			public const string TitleFieldName = "Title";
 			
@@ -4926,6 +5440,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string Hreflang_TagsFieldName = "Hreflang Tags";
 			
 					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
+			
+					
 			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
 			public const string Twiiter_TitleFieldName = "twiiter title";
 			
@@ -4965,6 +5483,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 	public partial class Home  : GlassBase, IHome 
 	{
 	   
+						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IHomeConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
+					
 						/// <summary>
 				/// The Title field.
 				/// <para></para>
@@ -5151,6 +5680,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IHomeConstants.Hreflang_TagsFieldName)]
 				public virtual string Hreflang_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IHomeConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
 					
 						/// <summary>
 				/// The twiiter title field.
@@ -5370,6 +5910,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Sitemap
 			public const string TemplateName = "_Sitemap";
 
 					
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
+			
+					
 			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
 			public const string TitleFieldName = "Title";
 			
@@ -5438,6 +5982,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Sitemap
 			public const string Hreflang_TagsFieldName = "Hreflang Tags";
 			
 					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
+			
+					
 			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
 			public const string Twiiter_TitleFieldName = "twiiter title";
 			
@@ -5477,6 +6025,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Sitemap
 	public partial class _Sitemap  : GlassBase, I_Sitemap 
 	{
 	   
+						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_SitemapConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
+					
 						/// <summary>
 				/// The Title field.
 				/// <para></para>
@@ -5663,6 +6222,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Sitemap
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_SitemapConstants.Hreflang_TagsFieldName)]
 				public virtual string Hreflang_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_SitemapConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
 					
 						/// <summary>
 				/// The twiiter title field.
@@ -7835,6 +8405,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string Related_PagesFieldName = "Related Pages";
 			
 					
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
+			
+					
 			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
 			public const string TitleFieldName = "Title";
 			
@@ -7901,6 +8475,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 			public static readonly ID Hreflang_TagsFieldId = new ID("26c53039-4914-4ec5-bb84-ad910faa4086");
 			public const string Hreflang_TagsFieldName = "Hreflang Tags";
+			
+					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
 			
 					
 			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
@@ -8015,6 +8593,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IGeneric_ContentPageConstants.Related_PagesFieldName)]
 				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Pages.IRelated_Page> Related_Pages  {get; set;}
+					
+						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGeneric_ContentPageConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -8204,6 +8793,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				public virtual string Hreflang_Tags  {get; set;}
 					
 						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IGeneric_ContentPageConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
+					
+						/// <summary>
 				/// The twiiter title field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -8282,7 +8882,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 						/// <summary>
 				/// The Is Left Navigation Root Clickable field.
-				/// <para>In Left Navigation the this Item Name will not be clickable by default and it is only clickable for "Mediacenter", Selecting the checkbox then this page will be clickable in Left navigation</para>
+				/// <para>Add this item as clickable in Left navigation</para>
 				/// <para>Field Type: Checkbox</para>		
 				/// <para>Field ID: 6b80f5a4-7b14-4ce7-a140-187e88fd8e82</para>
 				/// <para>Custom Data: </para>
@@ -8720,6 +9320,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Content
 			public const string Related_PagesFieldName = "Related Pages";
 			
 					
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
+			
+					
 			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
 			public const string TitleFieldName = "Title";
 			
@@ -8786,6 +9390,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Content
 					
 			public static readonly ID Hreflang_TagsFieldId = new ID("26c53039-4914-4ec5-bb84-ad910faa4086");
 			public const string Hreflang_TagsFieldName = "Hreflang Tags";
+			
+					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
 			
 					
 			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
@@ -8892,6 +9500,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Content
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_GenericContentPageConstants.Related_PagesFieldName)]
 				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Pages.IRelated_Page> Related_Pages  {get; set;}
+					
+						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentPageConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -9081,6 +9700,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Content
 				public virtual string Hreflang_Tags  {get; set;}
 					
 						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentPageConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
+					
+						/// <summary>
 				/// The twiiter title field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -9174,7 +9804,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 			
 								/// <summary>
 					/// The Is Left Navigation Root Clickable field.
-					/// <para>In Left Navigation the this Item Name will not be clickable by default and it is only clickable for "Mediacenter", Selecting the checkbox then this page will be clickable in Left navigation</para>
+					/// <para>Add this item as clickable in Left navigation</para>
 					/// <para>Field Type: Checkbox</para>		
 					/// <para>Field ID: 6b80f5a4-7b14-4ce7-a140-187e88fd8e82</para>
 					/// <para>Custom Data: </para>
@@ -9228,7 +9858,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 					
 						/// <summary>
 				/// The Is Left Navigation Root Clickable field.
-				/// <para>In Left Navigation the this Item Name will not be clickable by default and it is only clickable for "Mediacenter", Selecting the checkbox then this page will be clickable in Left navigation</para>
+				/// <para>Add this item as clickable in Left navigation</para>
 				/// <para>Field Type: Checkbox</para>		
 				/// <para>Field ID: 6b80f5a4-7b14-4ce7-a140-187e88fd8e82</para>
 				/// <para>Custom Data: </para>
@@ -9293,6 +9923,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 			public static readonly ID Is_Left_Navigation_Root_ClickableFieldId = new ID("6b80f5a4-7b14-4ce7-a140-187e88fd8e82");
 			public const string Is_Left_Navigation_Root_ClickableFieldName = "Is Left Navigation Root Clickable";
+			
+					
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
 			
 					
 			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
@@ -9361,6 +9995,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 			public static readonly ID Hreflang_TagsFieldId = new ID("26c53039-4914-4ec5-bb84-ad910faa4086");
 			public const string Hreflang_TagsFieldName = "Hreflang Tags";
+			
+					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
 			
 					
 			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
@@ -9481,7 +10119,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 						/// <summary>
 				/// The Is Left Navigation Root Clickable field.
-				/// <para>In Left Navigation the this Item Name will not be clickable by default and it is only clickable for "Mediacenter", Selecting the checkbox then this page will be clickable in Left navigation</para>
+				/// <para>Add this item as clickable in Left navigation</para>
 				/// <para>Field Type: Checkbox</para>		
 				/// <para>Field ID: 6b80f5a4-7b14-4ce7-a140-187e88fd8e82</para>
 				/// <para>Custom Data: </para>
@@ -9489,6 +10127,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IImage_AlbumConstants.Is_Left_Navigation_Root_ClickableFieldName)]
 				public virtual bool Is_Left_Navigation_Root_Clickable  {get; set;}
+					
+						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IImage_AlbumConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -9676,6 +10325,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IImage_AlbumConstants.Hreflang_TagsFieldName)]
 				public virtual string Hreflang_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IImage_AlbumConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
 					
 						/// <summary>
 				/// The twiiter title field.
@@ -10276,6 +10936,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Home
 			public const string TemplateName = "_Home";
 
 					
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
+			
+					
 			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
 			public const string TitleFieldName = "Title";
 			
@@ -10344,6 +11008,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Home
 			public const string Hreflang_TagsFieldName = "Hreflang Tags";
 			
 					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
+			
+					
 			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
 			public const string Twiiter_TitleFieldName = "twiiter title";
 			
@@ -10383,6 +11051,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Home
 	public partial class _Home  : GlassBase, I_Home 
 	{
 	   
+						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_HomeConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
+					
 						/// <summary>
 				/// The Title field.
 				/// <para></para>
@@ -10569,6 +11248,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Home
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_HomeConstants.Hreflang_TagsFieldName)]
 				public virtual string Hreflang_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_HomeConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
 					
 						/// <summary>
 				/// The twiiter title field.
@@ -11137,6 +11827,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string Is_Left_Navigation_Root_ClickableFieldName = "Is Left Navigation Root Clickable";
 			
 					
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
+			
+					
 			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
 			public const string TitleFieldName = "Title";
 			
@@ -11203,6 +11897,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 			public static readonly ID Hreflang_TagsFieldId = new ID("26c53039-4914-4ec5-bb84-ad910faa4086");
 			public const string Hreflang_TagsFieldName = "Hreflang Tags";
+			
+					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
 			
 					
 			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
@@ -11301,7 +11999,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 						/// <summary>
 				/// The Is Left Navigation Root Clickable field.
-				/// <para>In Left Navigation the this Item Name will not be clickable by default and it is only clickable for "Mediacenter", Selecting the checkbox then this page will be clickable in Left navigation</para>
+				/// <para>Add this item as clickable in Left navigation</para>
 				/// <para>Field Type: Checkbox</para>		
 				/// <para>Field ID: 6b80f5a4-7b14-4ce7-a140-187e88fd8e82</para>
 				/// <para>Custom Data: </para>
@@ -11309,6 +12007,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IDownloads_PageConstants.Is_Left_Navigation_Root_ClickableFieldName)]
 				public virtual bool Is_Left_Navigation_Root_Clickable  {get; set;}
+					
+						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IDownloads_PageConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -11498,6 +12207,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				public virtual string Hreflang_Tags  {get; set;}
 					
 						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IDownloads_PageConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
+					
+						/// <summary>
 				/// The twiiter title field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -11605,6 +12325,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 			public const string No_Of_RecordsFieldName = "No of Records";
 			
 					
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
+			
+					
 			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
 			public const string TitleFieldName = "Title";
 			
@@ -11671,6 +12395,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 					
 			public static readonly ID Hreflang_TagsFieldId = new ID("26c53039-4914-4ec5-bb84-ad910faa4086");
 			public const string Hreflang_TagsFieldName = "Hreflang Tags";
+			
+					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
 			
 					
 			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
@@ -11755,6 +12483,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IImageAlbumFolderConstants.No_Of_RecordsFieldName)]
 				public virtual int No_Of_Records  {get; set;}
+					
+						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IImageAlbumFolderConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -11942,6 +12681,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IImageAlbumFolderConstants.Hreflang_TagsFieldName)]
 				public virtual string Hreflang_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IImageAlbumFolderConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
 					
 						/// <summary>
 				/// The twiiter title field.
@@ -12175,6 +12925,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string Is_Left_Navigation_Root_ClickableFieldName = "Is Left Navigation Root Clickable";
 			
 					
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
+			
+					
 			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
 			public const string TitleFieldName = "Title";
 			
@@ -12241,6 +12995,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 			public static readonly ID Hreflang_TagsFieldId = new ID("26c53039-4914-4ec5-bb84-ad910faa4086");
 			public const string Hreflang_TagsFieldName = "Hreflang Tags";
+			
+					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
 			
 					
 			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
@@ -12339,7 +13097,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 						/// <summary>
 				/// The Is Left Navigation Root Clickable field.
-				/// <para>In Left Navigation the this Item Name will not be clickable by default and it is only clickable for "Mediacenter", Selecting the checkbox then this page will be clickable in Left navigation</para>
+				/// <para>Add this item as clickable in Left navigation</para>
 				/// <para>Field Type: Checkbox</para>		
 				/// <para>Field ID: 6b80f5a4-7b14-4ce7-a140-187e88fd8e82</para>
 				/// <para>Custom Data: </para>
@@ -12347,6 +13105,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IImage_Gallery_PageConstants.Is_Left_Navigation_Root_ClickableFieldName)]
 				public virtual bool Is_Left_Navigation_Root_Clickable  {get; set;}
+					
+						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IImage_Gallery_PageConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -12534,6 +13303,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IImage_Gallery_PageConstants.Hreflang_TagsFieldName)]
 				public virtual string Hreflang_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IImage_Gallery_PageConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
 					
 						/// <summary>
 				/// The twiiter title field.
@@ -13160,6 +13940,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 			public const string IntroductionFieldName = "Introduction";
 			
 					
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
+			
+					
 			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
 			public const string TitleFieldName = "Title";
 			
@@ -13226,6 +14010,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 					
 			public static readonly ID Hreflang_TagsFieldId = new ID("26c53039-4914-4ec5-bb84-ad910faa4086");
 			public const string Hreflang_TagsFieldName = "Hreflang Tags";
+			
+					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
 			
 					
 			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
@@ -13321,6 +14109,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IVideoAlbum_Without_Filters_FolderConstants.IntroductionFieldName)]
 				public virtual string Introduction  {get; set;}
+					
+						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideoAlbum_Without_Filters_FolderConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -13508,6 +14307,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IVideoAlbum_Without_Filters_FolderConstants.Hreflang_TagsFieldName)]
 				public virtual string Hreflang_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideoAlbum_Without_Filters_FolderConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
 					
 						/// <summary>
 				/// The twiiter title field.
@@ -13911,6 +14721,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string Related_PagesFieldName = "Related Pages";
 			
 					
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
+			
+					
 			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
 			public const string TitleFieldName = "Title";
 			
@@ -13977,6 +14791,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 			public static readonly ID Hreflang_TagsFieldId = new ID("26c53039-4914-4ec5-bb84-ad910faa4086");
 			public const string Hreflang_TagsFieldName = "Hreflang Tags";
+			
+					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
 			
 					
 			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
@@ -14105,6 +14923,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(INews_PageConstants.Related_PagesFieldName)]
 				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Pages.IRelated_Page> Related_Pages  {get; set;}
+					
+						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(INews_PageConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -14292,6 +15121,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(INews_PageConstants.Hreflang_TagsFieldName)]
 				public virtual string Hreflang_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(INews_PageConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
 					
 						/// <summary>
 				/// The twiiter title field.
@@ -14840,6 +15680,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string Is_Left_Navigation_Root_ClickableFieldName = "Is Left Navigation Root Clickable";
 			
 					
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
+			
+					
 			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
 			public const string TitleFieldName = "Title";
 			
@@ -14906,6 +15750,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 			public static readonly ID Hreflang_TagsFieldId = new ID("26c53039-4914-4ec5-bb84-ad910faa4086");
 			public const string Hreflang_TagsFieldName = "Hreflang Tags";
+			
+					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
 			
 					
 			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
@@ -15004,7 +15852,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 						/// <summary>
 				/// The Is Left Navigation Root Clickable field.
-				/// <para>In Left Navigation the this Item Name will not be clickable by default and it is only clickable for "Mediacenter", Selecting the checkbox then this page will be clickable in Left navigation</para>
+				/// <para>Add this item as clickable in Left navigation</para>
 				/// <para>Field Type: Checkbox</para>		
 				/// <para>Field ID: 6b80f5a4-7b14-4ce7-a140-187e88fd8e82</para>
 				/// <para>Custom Data: </para>
@@ -15012,6 +15860,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IEvents_Listing_PageConstants.Is_Left_Navigation_Root_ClickableFieldName)]
 				public virtual bool Is_Left_Navigation_Root_Clickable  {get; set;}
+					
+						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IEvents_Listing_PageConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -15199,6 +16058,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IEvents_Listing_PageConstants.Hreflang_TagsFieldName)]
 				public virtual string Hreflang_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IEvents_Listing_PageConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
 					
 						/// <summary>
 				/// The twiiter title field.
@@ -15394,7 +16264,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 					
 						/// <summary>
 				/// The Is Left Navigation Root Clickable field.
-				/// <para>In Left Navigation the this Item Name will not be clickable by default and it is only clickable for "Mediacenter", Selecting the checkbox then this page will be clickable in Left navigation</para>
+				/// <para>Add this item as clickable in Left navigation</para>
 				/// <para>Field Type: Checkbox</para>		
 				/// <para>Field ID: 6b80f5a4-7b14-4ce7-a140-187e88fd8e82</para>
 				/// <para>Custom Data: </para>
@@ -15402,6 +16272,72 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(INavigableConstants.Is_Left_Navigation_Root_ClickableFieldName)]
 				public virtual bool Is_Left_Navigation_Root_Clickable  {get; set;}
+					
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types
+{
+
+
+ 	/// <summary>
+	/// I_NoImage Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Content Types/_NoImage</para>	
+	/// <para>ID: 9fe913ff-be42-4500-a039-cb9a1d519bca</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_NoImageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_NoImage : IGlassBase 
+	{
+								/// <summary>
+					/// The Image field.
+					/// <para></para>
+					/// <para>Field Type: Advance Image</para>		
+					/// <para>Field ID: 82e583bf-7a53-4f8a-8651-ef2b821e957a</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_NoImageConstants.ImageFieldName)]
+					object /* UNKNOWN */ Image  {get; set;}
+			
+				}
+
+
+	public static partial class I_NoImageConstants{
+
+			public const string TemplateIdString = "9fe913ff-be42-4500-a039-cb9a1d519bca";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_NoImage";
+
+					
+			public static readonly ID ImageFieldId = new ID("82e583bf-7a53-4f8a-8651-ef2b821e957a");
+			public const string ImageFieldName = "Image";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _NoImage
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Content Types/_NoImage</para>	
+	/// <para>ID: 9fe913ff-be42-4500-a039-cb9a1d519bca</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_NoImageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_NoImage))]
+	public partial class _NoImage  : GlassBase, I_NoImage 
+	{
+	   
+						/// <summary>
+				/// The Image field.
+				/// <para></para>
+				/// <para>Field Type: Advance Image</para>		
+				/// <para>Field ID: 82e583bf-7a53-4f8a-8651-ef2b821e957a</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_NoImageConstants.ImageFieldName)]
+				public virtual object /* UNKNOWN */ Image  {get; set;}
 					
 			
 	}
@@ -15731,6 +16667,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string Related_PagesFieldName = "Related Pages";
 			
 					
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
+			
+					
 			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
 			public const string TitleFieldName = "Title";
 			
@@ -15797,6 +16737,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 			public static readonly ID Hreflang_TagsFieldId = new ID("26c53039-4914-4ec5-bb84-ad910faa4086");
 			public const string Hreflang_TagsFieldName = "Hreflang Tags";
+			
+					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
 			
 					
 			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
@@ -15919,6 +16863,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IEvent_PageConstants.Related_PagesFieldName)]
 				public virtual IEnumerable<EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Related_Pages.IRelated_Page> Related_Pages  {get; set;}
+					
+						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IEvent_PageConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -16106,6 +17061,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IEvent_PageConstants.Hreflang_TagsFieldName)]
 				public virtual string Hreflang_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IEvent_PageConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
 					
 						/// <summary>
 				/// The twiiter title field.
@@ -16332,8 +17298,104 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string SummaryFieldName = "Summary";
 			
 					
-			public static readonly ID TitleFieldId = new ID("523933ea-645c-4879-a1ed-9757573716b2");
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
+			
+					
+			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
 			public const string TitleFieldName = "Title";
+			
+					
+			public static readonly ID Og_DescriptionFieldId = new ID("89f0fe3c-744e-416c-b216-340e05f86eac");
+			public const string Og_DescriptionFieldName = "og description";
+			
+					
+			public static readonly ID Og_ImageFieldId = new ID("4499fdb8-d0cd-4012-a7ea-b08003c96e26");
+			public const string Og_ImageFieldName = "og image";
+			
+					
+			public static readonly ID Og_LocaleFieldId = new ID("ace133e4-a79f-4aba-afa9-3b876082d908");
+			public const string Og_LocaleFieldName = "og locale";
+			
+					
+			public static readonly ID Og_Site_NameFieldId = new ID("b41e43e9-8ab5-4a00-b76b-1664c7161f82");
+			public const string Og_Site_NameFieldName = "og site_name";
+			
+					
+			public static readonly ID Og_TitleFieldId = new ID("4f39872d-258b-45b8-926b-6297e2dc7cd4");
+			public const string Og_TitleFieldName = "og title";
+			
+					
+			public static readonly ID Og_TypeFieldId = new ID("2f2f8274-9494-4fbd-936d-ac6d03a8cf9b");
+			public const string Og_TypeFieldName = "og type";
+			
+					
+			public static readonly ID Og_UrlFieldId = new ID("cd25bc97-065e-4f79-b991-7c515dedab45");
+			public const string Og_UrlFieldName = "og url";
+			
+					
+			public static readonly ID Og_VideoFieldId = new ID("7bc4f422-380e-4a89-a82a-74e5249e609c");
+			public const string Og_VideoFieldName = "og video";
+			
+					
+			public static readonly ID Custom_Meta_TagsFieldId = new ID("dd32da75-5cc3-4961-b3c6-8ee0664bd31e");
+			public const string Custom_Meta_TagsFieldName = "Custom Meta Tags";
+			
+					
+			public static readonly ID Meta_DescriptionFieldId = new ID("8453af30-1477-46fb-8094-bd5fde72c89a");
+			public const string Meta_DescriptionFieldName = "Meta Description";
+			
+					
+			public static readonly ID Meta_KeywordsFieldId = new ID("dace23af-d8b3-48f1-94e7-9ae3ee07cb35");
+			public const string Meta_KeywordsFieldName = "Meta Keywords";
+			
+					
+			public static readonly ID Meta_TitleFieldId = new ID("8097066d-26c3-44b9-8527-551a2cbb5a84");
+			public const string Meta_TitleFieldName = "Meta Title";
+			
+					
+			public static readonly ID Robots_Follow_This_PageFieldId = new ID("daad817a-930f-4dae-be58-687bb95d6ed9");
+			public const string Robots_Follow_This_PageFieldName = "Robots Follow this page";
+			
+					
+			public static readonly ID Robots_Index_This_PageFieldId = new ID("88d50871-3afa-4e05-ac0e-9fcb7a41353e");
+			public const string Robots_Index_This_PageFieldName = "Robots Index this page";
+			
+					
+			public static readonly ID Canonical_TagsFieldId = new ID("074b8d28-6f24-4dcc-812f-14e14f67f1e8");
+			public const string Canonical_TagsFieldName = "Canonical Tags";
+			
+					
+			public static readonly ID Hreflang_TagsFieldId = new ID("26c53039-4914-4ec5-bb84-ad910faa4086");
+			public const string Hreflang_TagsFieldName = "Hreflang Tags";
+			
+					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
+			
+					
+			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
+			public const string Twiiter_TitleFieldName = "twiiter title";
+			
+					
+			public static readonly ID Twitter_CardFieldId = new ID("6466bde7-35cf-4e65-bda5-132e5cf0a9eb");
+			public const string Twitter_CardFieldName = "twitter card";
+			
+					
+			public static readonly ID Twitter_CreatorFieldId = new ID("1078ff0c-7c59-4fd4-b4d1-1f693848928f");
+			public const string Twitter_CreatorFieldName = "twitter creator";
+			
+					
+			public static readonly ID Twitter_DescriptionFieldId = new ID("ce1be2a8-5e5c-49d9-b9a9-63834309b252");
+			public const string Twitter_DescriptionFieldName = "twitter description";
+			
+					
+			public static readonly ID Twitter_ImageFieldId = new ID("bebb8543-e760-4bbe-9a9e-e7eaaedd101e");
+			public const string Twitter_ImageFieldName = "twitter image";
+			
+					
+			public static readonly ID Twitter_SiteFieldId = new ID("1827467a-8817-4a16-b39c-53503b35d15e");
+			public const string Twitter_SiteFieldName = "twitter site";
 			
 					
 			public static readonly ID Include_In_Left_NavigationFieldId = new ID("36cfaa10-f10c-40dd-9bbc-a8f7160dd389");
@@ -16382,15 +17444,279 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				public virtual string Summary  {get; set;}
 					
 						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
+					
+						/// <summary>
 				/// The Title field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
-				/// <para>Field ID: 523933ea-645c-4879-a1ed-9757573716b2</para>
+				/// <para>Field ID: c4136f1d-43ec-45cb-8e1b-5a1993d16157</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IMediacenterConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
+					
+						/// <summary>
+				/// The og description field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 89f0fe3c-744e-416c-b216-340e05f86eac</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.Og_DescriptionFieldName)]
+				public virtual string Og_Description  {get; set;}
+					
+						/// <summary>
+				/// The og image field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 4499fdb8-d0cd-4012-a7ea-b08003c96e26</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.Og_ImageFieldName)]
+				public virtual string Og_Image  {get; set;}
+					
+						/// <summary>
+				/// The og locale field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: ace133e4-a79f-4aba-afa9-3b876082d908</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.Og_LocaleFieldName)]
+				public virtual string Og_Locale  {get; set;}
+					
+						/// <summary>
+				/// The og site_name field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: b41e43e9-8ab5-4a00-b76b-1664c7161f82</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.Og_Site_NameFieldName)]
+				public virtual string Og_Site_Name  {get; set;}
+					
+						/// <summary>
+				/// The og title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 4f39872d-258b-45b8-926b-6297e2dc7cd4</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.Og_TitleFieldName)]
+				public virtual string Og_Title  {get; set;}
+					
+						/// <summary>
+				/// The og type field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 2f2f8274-9494-4fbd-936d-ac6d03a8cf9b</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.Og_TypeFieldName)]
+				public virtual string Og_Type  {get; set;}
+					
+						/// <summary>
+				/// The og url field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: cd25bc97-065e-4f79-b991-7c515dedab45</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.Og_UrlFieldName)]
+				public virtual string Og_Url  {get; set;}
+					
+						/// <summary>
+				/// The og video field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 7bc4f422-380e-4a89-a82a-74e5249e609c</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.Og_VideoFieldName)]
+				public virtual string Og_Video  {get; set;}
+					
+						/// <summary>
+				/// The Custom Meta Tags field.
+				/// <para></para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: dd32da75-5cc3-4961-b3c6-8ee0664bd31e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.Custom_Meta_TagsFieldName)]
+				public virtual string Custom_Meta_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Meta Description field.
+				/// <para></para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: 8453af30-1477-46fb-8094-bd5fde72c89a</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.Meta_DescriptionFieldName)]
+				public virtual string Meta_Description  {get; set;}
+					
+						/// <summary>
+				/// The Meta Keywords field.
+				/// <para></para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: dace23af-d8b3-48f1-94e7-9ae3ee07cb35</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.Meta_KeywordsFieldName)]
+				public virtual string Meta_Keywords  {get; set;}
+					
+						/// <summary>
+				/// The Meta Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 8097066d-26c3-44b9-8527-551a2cbb5a84</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.Meta_TitleFieldName)]
+				public virtual string Meta_Title  {get; set;}
+					
+						/// <summary>
+				/// The Robots Follow this page field.
+				/// <para>Search bots to follow the links in the page or not, If set bots will follow the links !!</para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: daad817a-930f-4dae-be58-687bb95d6ed9</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.Robots_Follow_This_PageFieldName)]
+				public virtual bool Robots_Follow_This_Page  {get; set;}
+					
+						/// <summary>
+				/// The Robots Index this page field.
+				/// <para>Search engine to index this page,If set this page will be indexed by search engines lilke google etc !!</para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 88d50871-3afa-4e05-ac0e-9fcb7a41353e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.Robots_Index_This_PageFieldName)]
+				public virtual bool Robots_Index_This_Page  {get; set;}
+					
+						/// <summary>
+				/// The Canonical Tags field.
+				/// <para>Add comma separated canonical tags. Ex:  (https//www.ecm.com/en/login, https//www.ecm.com/en/loginpage)</para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: 074b8d28-6f24-4dcc-812f-14e14f67f1e8</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.Canonical_TagsFieldName)]
+				public virtual string Canonical_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Hreflang Tags field.
+				/// <para>Add comma separated hreflang tags. Ex:  languagecode:Page url  (en:https//www.ecm.com/en/login,ar:https//www.ecm.com/ar/login)</para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: 26c53039-4914-4ec5-bb84-ad910faa4086</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.Hreflang_TagsFieldName)]
+				public virtual string Hreflang_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
+					
+						/// <summary>
+				/// The twiiter title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: e4395580-b216-41e6-ad1f-8ec542de11d6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.Twiiter_TitleFieldName)]
+				public virtual string Twiiter_Title  {get; set;}
+					
+						/// <summary>
+				/// The twitter card field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6466bde7-35cf-4e65-bda5-132e5cf0a9eb</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.Twitter_CardFieldName)]
+				public virtual string Twitter_Card  {get; set;}
+					
+						/// <summary>
+				/// The twitter creator field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 1078ff0c-7c59-4fd4-b4d1-1f693848928f</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.Twitter_CreatorFieldName)]
+				public virtual string Twitter_Creator  {get; set;}
+					
+						/// <summary>
+				/// The twitter description field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: ce1be2a8-5e5c-49d9-b9a9-63834309b252</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.Twitter_DescriptionFieldName)]
+				public virtual string Twitter_Description  {get; set;}
+					
+						/// <summary>
+				/// The twitter image field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: bebb8543-e760-4bbe-9a9e-e7eaaedd101e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.Twitter_ImageFieldName)]
+				public virtual string Twitter_Image  {get; set;}
+					
+						/// <summary>
+				/// The twitter site field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 1827467a-8817-4a16-b39c-53503b35d15e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IMediacenterConstants.Twitter_SiteFieldName)]
+				public virtual string Twitter_Site  {get; set;}
 					
 						/// <summary>
 				/// The Include in Left Navigation field.
@@ -16405,7 +17731,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 						/// <summary>
 				/// The Is Left Navigation Root Clickable field.
-				/// <para>In Left Navigation the this Item Name will not be clickable by default and it is only clickable for "Mediacenter", Selecting the checkbox then this page will be clickable in Left navigation</para>
+				/// <para>Add this item as clickable in Left navigation</para>
 				/// <para>Field Type: Checkbox</para>		
 				/// <para>Field ID: 6b80f5a4-7b14-4ce7-a140-187e88fd8e82</para>
 				/// <para>Custom Data: </para>
@@ -17282,8 +18608,104 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Mediace
 			public const string SummaryFieldName = "Summary";
 			
 					
-			public static readonly ID TitleFieldId = new ID("523933ea-645c-4879-a1ed-9757573716b2");
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
+			
+					
+			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
 			public const string TitleFieldName = "Title";
+			
+					
+			public static readonly ID Og_DescriptionFieldId = new ID("89f0fe3c-744e-416c-b216-340e05f86eac");
+			public const string Og_DescriptionFieldName = "og description";
+			
+					
+			public static readonly ID Og_ImageFieldId = new ID("4499fdb8-d0cd-4012-a7ea-b08003c96e26");
+			public const string Og_ImageFieldName = "og image";
+			
+					
+			public static readonly ID Og_LocaleFieldId = new ID("ace133e4-a79f-4aba-afa9-3b876082d908");
+			public const string Og_LocaleFieldName = "og locale";
+			
+					
+			public static readonly ID Og_Site_NameFieldId = new ID("b41e43e9-8ab5-4a00-b76b-1664c7161f82");
+			public const string Og_Site_NameFieldName = "og site_name";
+			
+					
+			public static readonly ID Og_TitleFieldId = new ID("4f39872d-258b-45b8-926b-6297e2dc7cd4");
+			public const string Og_TitleFieldName = "og title";
+			
+					
+			public static readonly ID Og_TypeFieldId = new ID("2f2f8274-9494-4fbd-936d-ac6d03a8cf9b");
+			public const string Og_TypeFieldName = "og type";
+			
+					
+			public static readonly ID Og_UrlFieldId = new ID("cd25bc97-065e-4f79-b991-7c515dedab45");
+			public const string Og_UrlFieldName = "og url";
+			
+					
+			public static readonly ID Og_VideoFieldId = new ID("7bc4f422-380e-4a89-a82a-74e5249e609c");
+			public const string Og_VideoFieldName = "og video";
+			
+					
+			public static readonly ID Custom_Meta_TagsFieldId = new ID("dd32da75-5cc3-4961-b3c6-8ee0664bd31e");
+			public const string Custom_Meta_TagsFieldName = "Custom Meta Tags";
+			
+					
+			public static readonly ID Meta_DescriptionFieldId = new ID("8453af30-1477-46fb-8094-bd5fde72c89a");
+			public const string Meta_DescriptionFieldName = "Meta Description";
+			
+					
+			public static readonly ID Meta_KeywordsFieldId = new ID("dace23af-d8b3-48f1-94e7-9ae3ee07cb35");
+			public const string Meta_KeywordsFieldName = "Meta Keywords";
+			
+					
+			public static readonly ID Meta_TitleFieldId = new ID("8097066d-26c3-44b9-8527-551a2cbb5a84");
+			public const string Meta_TitleFieldName = "Meta Title";
+			
+					
+			public static readonly ID Robots_Follow_This_PageFieldId = new ID("daad817a-930f-4dae-be58-687bb95d6ed9");
+			public const string Robots_Follow_This_PageFieldName = "Robots Follow this page";
+			
+					
+			public static readonly ID Robots_Index_This_PageFieldId = new ID("88d50871-3afa-4e05-ac0e-9fcb7a41353e");
+			public const string Robots_Index_This_PageFieldName = "Robots Index this page";
+			
+					
+			public static readonly ID Canonical_TagsFieldId = new ID("074b8d28-6f24-4dcc-812f-14e14f67f1e8");
+			public const string Canonical_TagsFieldName = "Canonical Tags";
+			
+					
+			public static readonly ID Hreflang_TagsFieldId = new ID("26c53039-4914-4ec5-bb84-ad910faa4086");
+			public const string Hreflang_TagsFieldName = "Hreflang Tags";
+			
+					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
+			
+					
+			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
+			public const string Twiiter_TitleFieldName = "twiiter title";
+			
+					
+			public static readonly ID Twitter_CardFieldId = new ID("6466bde7-35cf-4e65-bda5-132e5cf0a9eb");
+			public const string Twitter_CardFieldName = "twitter card";
+			
+					
+			public static readonly ID Twitter_CreatorFieldId = new ID("1078ff0c-7c59-4fd4-b4d1-1f693848928f");
+			public const string Twitter_CreatorFieldName = "twitter creator";
+			
+					
+			public static readonly ID Twitter_DescriptionFieldId = new ID("ce1be2a8-5e5c-49d9-b9a9-63834309b252");
+			public const string Twitter_DescriptionFieldName = "twitter description";
+			
+					
+			public static readonly ID Twitter_ImageFieldId = new ID("bebb8543-e760-4bbe-9a9e-e7eaaedd101e");
+			public const string Twitter_ImageFieldName = "twitter image";
+			
+					
+			public static readonly ID Twitter_SiteFieldId = new ID("1827467a-8817-4a16-b39c-53503b35d15e");
+			public const string Twitter_SiteFieldName = "twitter site";
 			
 					
 			public static readonly ID Include_In_Left_NavigationFieldId = new ID("36cfaa10-f10c-40dd-9bbc-a8f7160dd389");
@@ -17332,15 +18754,279 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Mediace
 				public virtual string Summary  {get; set;}
 					
 						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
+					
+						/// <summary>
 				/// The Title field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
-				/// <para>Field ID: 523933ea-645c-4879-a1ed-9757573716b2</para>
+				/// <para>Field ID: c4136f1d-43ec-45cb-8e1b-5a1993d16157</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_MediacenterConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
+					
+						/// <summary>
+				/// The og description field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 89f0fe3c-744e-416c-b216-340e05f86eac</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.Og_DescriptionFieldName)]
+				public virtual string Og_Description  {get; set;}
+					
+						/// <summary>
+				/// The og image field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 4499fdb8-d0cd-4012-a7ea-b08003c96e26</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.Og_ImageFieldName)]
+				public virtual string Og_Image  {get; set;}
+					
+						/// <summary>
+				/// The og locale field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: ace133e4-a79f-4aba-afa9-3b876082d908</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.Og_LocaleFieldName)]
+				public virtual string Og_Locale  {get; set;}
+					
+						/// <summary>
+				/// The og site_name field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: b41e43e9-8ab5-4a00-b76b-1664c7161f82</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.Og_Site_NameFieldName)]
+				public virtual string Og_Site_Name  {get; set;}
+					
+						/// <summary>
+				/// The og title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 4f39872d-258b-45b8-926b-6297e2dc7cd4</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.Og_TitleFieldName)]
+				public virtual string Og_Title  {get; set;}
+					
+						/// <summary>
+				/// The og type field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 2f2f8274-9494-4fbd-936d-ac6d03a8cf9b</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.Og_TypeFieldName)]
+				public virtual string Og_Type  {get; set;}
+					
+						/// <summary>
+				/// The og url field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: cd25bc97-065e-4f79-b991-7c515dedab45</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.Og_UrlFieldName)]
+				public virtual string Og_Url  {get; set;}
+					
+						/// <summary>
+				/// The og video field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 7bc4f422-380e-4a89-a82a-74e5249e609c</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.Og_VideoFieldName)]
+				public virtual string Og_Video  {get; set;}
+					
+						/// <summary>
+				/// The Custom Meta Tags field.
+				/// <para></para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: dd32da75-5cc3-4961-b3c6-8ee0664bd31e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.Custom_Meta_TagsFieldName)]
+				public virtual string Custom_Meta_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Meta Description field.
+				/// <para></para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: 8453af30-1477-46fb-8094-bd5fde72c89a</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.Meta_DescriptionFieldName)]
+				public virtual string Meta_Description  {get; set;}
+					
+						/// <summary>
+				/// The Meta Keywords field.
+				/// <para></para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: dace23af-d8b3-48f1-94e7-9ae3ee07cb35</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.Meta_KeywordsFieldName)]
+				public virtual string Meta_Keywords  {get; set;}
+					
+						/// <summary>
+				/// The Meta Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 8097066d-26c3-44b9-8527-551a2cbb5a84</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.Meta_TitleFieldName)]
+				public virtual string Meta_Title  {get; set;}
+					
+						/// <summary>
+				/// The Robots Follow this page field.
+				/// <para>Search bots to follow the links in the page or not, If set bots will follow the links !!</para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: daad817a-930f-4dae-be58-687bb95d6ed9</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.Robots_Follow_This_PageFieldName)]
+				public virtual bool Robots_Follow_This_Page  {get; set;}
+					
+						/// <summary>
+				/// The Robots Index this page field.
+				/// <para>Search engine to index this page,If set this page will be indexed by search engines lilke google etc !!</para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 88d50871-3afa-4e05-ac0e-9fcb7a41353e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.Robots_Index_This_PageFieldName)]
+				public virtual bool Robots_Index_This_Page  {get; set;}
+					
+						/// <summary>
+				/// The Canonical Tags field.
+				/// <para>Add comma separated canonical tags. Ex:  (https//www.ecm.com/en/login, https//www.ecm.com/en/loginpage)</para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: 074b8d28-6f24-4dcc-812f-14e14f67f1e8</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.Canonical_TagsFieldName)]
+				public virtual string Canonical_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Hreflang Tags field.
+				/// <para>Add comma separated hreflang tags. Ex:  languagecode:Page url  (en:https//www.ecm.com/en/login,ar:https//www.ecm.com/ar/login)</para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: 26c53039-4914-4ec5-bb84-ad910faa4086</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.Hreflang_TagsFieldName)]
+				public virtual string Hreflang_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
+					
+						/// <summary>
+				/// The twiiter title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: e4395580-b216-41e6-ad1f-8ec542de11d6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.Twiiter_TitleFieldName)]
+				public virtual string Twiiter_Title  {get; set;}
+					
+						/// <summary>
+				/// The twitter card field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6466bde7-35cf-4e65-bda5-132e5cf0a9eb</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.Twitter_CardFieldName)]
+				public virtual string Twitter_Card  {get; set;}
+					
+						/// <summary>
+				/// The twitter creator field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 1078ff0c-7c59-4fd4-b4d1-1f693848928f</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.Twitter_CreatorFieldName)]
+				public virtual string Twitter_Creator  {get; set;}
+					
+						/// <summary>
+				/// The twitter description field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: ce1be2a8-5e5c-49d9-b9a9-63834309b252</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.Twitter_DescriptionFieldName)]
+				public virtual string Twitter_Description  {get; set;}
+					
+						/// <summary>
+				/// The twitter image field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: bebb8543-e760-4bbe-9a9e-e7eaaedd101e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.Twitter_ImageFieldName)]
+				public virtual string Twitter_Image  {get; set;}
+					
+						/// <summary>
+				/// The twitter site field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 1827467a-8817-4a16-b39c-53503b35d15e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_MediacenterConstants.Twitter_SiteFieldName)]
+				public virtual string Twitter_Site  {get; set;}
 					
 						/// <summary>
 				/// The Include in Left Navigation field.
@@ -17355,7 +19041,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Mediace
 					
 						/// <summary>
 				/// The Is Left Navigation Root Clickable field.
-				/// <para>In Left Navigation the this Item Name will not be clickable by default and it is only clickable for "Mediacenter", Selecting the checkbox then this page will be clickable in Left navigation</para>
+				/// <para>Add this item as clickable in Left navigation</para>
 				/// <para>Field Type: Checkbox</para>		
 				/// <para>Field ID: 6b80f5a4-7b14-4ce7-a140-187e88fd8e82</para>
 				/// <para>Custom Data: </para>
@@ -17363,6 +19049,62 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Mediace
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_MediacenterConstants.Is_Left_Navigation_Root_ClickableFieldName)]
 				public virtual bool Is_Left_Navigation_Root_Clickable  {get; set;}
+					
+			
+	}
+}
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
+{
+
+
+ 	/// <summary>
+	/// INoImage Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/NoImage</para>	
+	/// <para>ID: b97bce5f-7ac0-4a3a-b6bc-f423c054b674</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=INoImageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface INoImage : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types.I_NoImage
+	{
+				}
+
+
+	public static partial class INoImageConstants{
+
+			public const string TemplateIdString = "b97bce5f-7ac0-4a3a-b6bc-f423c054b674";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "NoImage";
+
+					
+			public static readonly ID ImageFieldId = new ID("82e583bf-7a53-4f8a-8651-ef2b821e957a");
+			public const string ImageFieldName = "Image";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// NoImage
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Project/ECM/Common/Content Types/NoImage</para>	
+	/// <para>ID: b97bce5f-7ac0-4a3a-b6bc-f423c054b674</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=INoImageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(INoImage))]
+	public partial class NoImage  : GlassBase, INoImage 
+	{
+	   
+						/// <summary>
+				/// The Image field.
+				/// <para></para>
+				/// <para>Field Type: Advance Image</para>		
+				/// <para>Field ID: 82e583bf-7a53-4f8a-8651-ef2b821e957a</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(INoImageConstants.ImageFieldName)]
+				public virtual object /* UNKNOWN */ Image  {get; set;}
 					
 			
 	}
@@ -17624,6 +19366,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string Is_Left_Navigation_Root_ClickableFieldName = "Is Left Navigation Root Clickable";
 			
 					
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
+			
+					
 			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
 			public const string TitleFieldName = "Title";
 			
@@ -17690,6 +19436,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 			public static readonly ID Hreflang_TagsFieldId = new ID("26c53039-4914-4ec5-bb84-ad910faa4086");
 			public const string Hreflang_TagsFieldName = "Hreflang Tags";
+			
+					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
 			
 					
 			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
@@ -17810,7 +19560,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 					
 						/// <summary>
 				/// The Is Left Navigation Root Clickable field.
-				/// <para>In Left Navigation the this Item Name will not be clickable by default and it is only clickable for "Mediacenter", Selecting the checkbox then this page will be clickable in Left navigation</para>
+				/// <para>Add this item as clickable in Left navigation</para>
 				/// <para>Field Type: Checkbox</para>		
 				/// <para>Field ID: 6b80f5a4-7b14-4ce7-a140-187e88fd8e82</para>
 				/// <para>Custom Data: </para>
@@ -17818,6 +19568,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IVideo_Album_With_FiltersConstants.Is_Left_Navigation_Root_ClickableFieldName)]
 				public virtual bool Is_Left_Navigation_Root_Clickable  {get; set;}
+					
+						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_Album_With_FiltersConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -18005,6 +19766,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IVideo_Album_With_FiltersConstants.Hreflang_TagsFieldName)]
 				public virtual string Hreflang_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideo_Album_With_FiltersConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
 					
 						/// <summary>
 				/// The twiiter title field.
@@ -18452,6 +20224,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string TemplateName = "SitemapPage";
 
 					
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
+			
+					
 			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
 			public const string TitleFieldName = "Title";
 			
@@ -18520,6 +20296,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 			public const string Hreflang_TagsFieldName = "Hreflang Tags";
 			
 					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
+			
+					
 			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
 			public const string Twiiter_TitleFieldName = "twiiter title";
 			
@@ -18559,6 +20339,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 	public partial class SitemapPage  : GlassBase, ISitemapPage 
 	{
 	   
+						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(ISitemapPageConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
+					
 						/// <summary>
 				/// The Title field.
 				/// <para></para>
@@ -18747,6 +20538,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Page_Ty
 				public virtual string Hreflang_Tags  {get; set;}
 					
 						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(ISitemapPageConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
+					
+						/// <summary>
 				/// The twiiter title field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -18854,6 +20656,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 			public const string IntroductionFieldName = "Introduction";
 			
 					
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
+			
+					
 			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
 			public const string TitleFieldName = "Title";
 			
@@ -18920,6 +20726,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 					
 			public static readonly ID Hreflang_TagsFieldId = new ID("26c53039-4914-4ec5-bb84-ad910faa4086");
 			public const string Hreflang_TagsFieldName = "Hreflang Tags";
+			
+					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
 			
 					
 			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
@@ -19004,6 +20814,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(INewsAlbumFolderConstants.IntroductionFieldName)]
 				public virtual string Introduction  {get; set;}
+					
+						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(INewsAlbumFolderConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -19191,6 +21012,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(INewsAlbumFolderConstants.Hreflang_TagsFieldName)]
 				public virtual string Hreflang_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(INewsAlbumFolderConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
 					
 						/// <summary>
 				/// The twiiter title field.
@@ -19627,18 +21459,8 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Content
 	/// <para>ID: d22da0d6-8dcc-4956-99ef-0cb617c1b0b0</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=I_GenericContentRootPageConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
-	public partial interface I_GenericContentRootPage : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_Navigable
+	public partial interface I_GenericContentRootPage : IGlassBase , global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_PageBase, global::EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base.I_Navigable
 	{
-								/// <summary>
-					/// The Title field.
-					/// <para></para>
-					/// <para>Field Type: Single-Line Text</para>		
-					/// <para>Field ID: 523933ea-645c-4879-a1ed-9757573716b2</para>
-					/// <para>Custom Data: </para>
-					/// </summary>
-					[SitecoreField(I_GenericContentRootPageConstants.TitleFieldName)]
-					string Title  {get; set;}
-			
 				}
 
 
@@ -19649,8 +21471,104 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Content
 			public const string TemplateName = "_GenericContentRootPage";
 
 					
-			public static readonly ID TitleFieldId = new ID("523933ea-645c-4879-a1ed-9757573716b2");
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
+			
+					
+			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
 			public const string TitleFieldName = "Title";
+			
+					
+			public static readonly ID Og_DescriptionFieldId = new ID("89f0fe3c-744e-416c-b216-340e05f86eac");
+			public const string Og_DescriptionFieldName = "og description";
+			
+					
+			public static readonly ID Og_ImageFieldId = new ID("4499fdb8-d0cd-4012-a7ea-b08003c96e26");
+			public const string Og_ImageFieldName = "og image";
+			
+					
+			public static readonly ID Og_LocaleFieldId = new ID("ace133e4-a79f-4aba-afa9-3b876082d908");
+			public const string Og_LocaleFieldName = "og locale";
+			
+					
+			public static readonly ID Og_Site_NameFieldId = new ID("b41e43e9-8ab5-4a00-b76b-1664c7161f82");
+			public const string Og_Site_NameFieldName = "og site_name";
+			
+					
+			public static readonly ID Og_TitleFieldId = new ID("4f39872d-258b-45b8-926b-6297e2dc7cd4");
+			public const string Og_TitleFieldName = "og title";
+			
+					
+			public static readonly ID Og_TypeFieldId = new ID("2f2f8274-9494-4fbd-936d-ac6d03a8cf9b");
+			public const string Og_TypeFieldName = "og type";
+			
+					
+			public static readonly ID Og_UrlFieldId = new ID("cd25bc97-065e-4f79-b991-7c515dedab45");
+			public const string Og_UrlFieldName = "og url";
+			
+					
+			public static readonly ID Og_VideoFieldId = new ID("7bc4f422-380e-4a89-a82a-74e5249e609c");
+			public const string Og_VideoFieldName = "og video";
+			
+					
+			public static readonly ID Custom_Meta_TagsFieldId = new ID("dd32da75-5cc3-4961-b3c6-8ee0664bd31e");
+			public const string Custom_Meta_TagsFieldName = "Custom Meta Tags";
+			
+					
+			public static readonly ID Meta_DescriptionFieldId = new ID("8453af30-1477-46fb-8094-bd5fde72c89a");
+			public const string Meta_DescriptionFieldName = "Meta Description";
+			
+					
+			public static readonly ID Meta_KeywordsFieldId = new ID("dace23af-d8b3-48f1-94e7-9ae3ee07cb35");
+			public const string Meta_KeywordsFieldName = "Meta Keywords";
+			
+					
+			public static readonly ID Meta_TitleFieldId = new ID("8097066d-26c3-44b9-8527-551a2cbb5a84");
+			public const string Meta_TitleFieldName = "Meta Title";
+			
+					
+			public static readonly ID Robots_Follow_This_PageFieldId = new ID("daad817a-930f-4dae-be58-687bb95d6ed9");
+			public const string Robots_Follow_This_PageFieldName = "Robots Follow this page";
+			
+					
+			public static readonly ID Robots_Index_This_PageFieldId = new ID("88d50871-3afa-4e05-ac0e-9fcb7a41353e");
+			public const string Robots_Index_This_PageFieldName = "Robots Index this page";
+			
+					
+			public static readonly ID Canonical_TagsFieldId = new ID("074b8d28-6f24-4dcc-812f-14e14f67f1e8");
+			public const string Canonical_TagsFieldName = "Canonical Tags";
+			
+					
+			public static readonly ID Hreflang_TagsFieldId = new ID("26c53039-4914-4ec5-bb84-ad910faa4086");
+			public const string Hreflang_TagsFieldName = "Hreflang Tags";
+			
+					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
+			
+					
+			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
+			public const string Twiiter_TitleFieldName = "twiiter title";
+			
+					
+			public static readonly ID Twitter_CardFieldId = new ID("6466bde7-35cf-4e65-bda5-132e5cf0a9eb");
+			public const string Twitter_CardFieldName = "twitter card";
+			
+					
+			public static readonly ID Twitter_CreatorFieldId = new ID("1078ff0c-7c59-4fd4-b4d1-1f693848928f");
+			public const string Twitter_CreatorFieldName = "twitter creator";
+			
+					
+			public static readonly ID Twitter_DescriptionFieldId = new ID("ce1be2a8-5e5c-49d9-b9a9-63834309b252");
+			public const string Twitter_DescriptionFieldName = "twitter description";
+			
+					
+			public static readonly ID Twitter_ImageFieldId = new ID("bebb8543-e760-4bbe-9a9e-e7eaaedd101e");
+			public const string Twitter_ImageFieldName = "twitter image";
+			
+					
+			public static readonly ID Twitter_SiteFieldId = new ID("1827467a-8817-4a16-b39c-53503b35d15e");
+			public const string Twitter_SiteFieldName = "twitter site";
 			
 					
 			public static readonly ID Include_In_Left_NavigationFieldId = new ID("36cfaa10-f10c-40dd-9bbc-a8f7160dd389");
@@ -19677,15 +21595,279 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Content
 	{
 	   
 						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentRootPageConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
+					
+						/// <summary>
 				/// The Title field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
-				/// <para>Field ID: 523933ea-645c-4879-a1ed-9757573716b2</para>
+				/// <para>Field ID: c4136f1d-43ec-45cb-8e1b-5a1993d16157</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_GenericContentRootPageConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
+					
+						/// <summary>
+				/// The og description field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 89f0fe3c-744e-416c-b216-340e05f86eac</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentRootPageConstants.Og_DescriptionFieldName)]
+				public virtual string Og_Description  {get; set;}
+					
+						/// <summary>
+				/// The og image field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 4499fdb8-d0cd-4012-a7ea-b08003c96e26</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentRootPageConstants.Og_ImageFieldName)]
+				public virtual string Og_Image  {get; set;}
+					
+						/// <summary>
+				/// The og locale field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: ace133e4-a79f-4aba-afa9-3b876082d908</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentRootPageConstants.Og_LocaleFieldName)]
+				public virtual string Og_Locale  {get; set;}
+					
+						/// <summary>
+				/// The og site_name field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: b41e43e9-8ab5-4a00-b76b-1664c7161f82</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentRootPageConstants.Og_Site_NameFieldName)]
+				public virtual string Og_Site_Name  {get; set;}
+					
+						/// <summary>
+				/// The og title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 4f39872d-258b-45b8-926b-6297e2dc7cd4</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentRootPageConstants.Og_TitleFieldName)]
+				public virtual string Og_Title  {get; set;}
+					
+						/// <summary>
+				/// The og type field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 2f2f8274-9494-4fbd-936d-ac6d03a8cf9b</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentRootPageConstants.Og_TypeFieldName)]
+				public virtual string Og_Type  {get; set;}
+					
+						/// <summary>
+				/// The og url field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: cd25bc97-065e-4f79-b991-7c515dedab45</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentRootPageConstants.Og_UrlFieldName)]
+				public virtual string Og_Url  {get; set;}
+					
+						/// <summary>
+				/// The og video field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 7bc4f422-380e-4a89-a82a-74e5249e609c</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentRootPageConstants.Og_VideoFieldName)]
+				public virtual string Og_Video  {get; set;}
+					
+						/// <summary>
+				/// The Custom Meta Tags field.
+				/// <para></para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: dd32da75-5cc3-4961-b3c6-8ee0664bd31e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentRootPageConstants.Custom_Meta_TagsFieldName)]
+				public virtual string Custom_Meta_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Meta Description field.
+				/// <para></para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: 8453af30-1477-46fb-8094-bd5fde72c89a</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentRootPageConstants.Meta_DescriptionFieldName)]
+				public virtual string Meta_Description  {get; set;}
+					
+						/// <summary>
+				/// The Meta Keywords field.
+				/// <para></para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: dace23af-d8b3-48f1-94e7-9ae3ee07cb35</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentRootPageConstants.Meta_KeywordsFieldName)]
+				public virtual string Meta_Keywords  {get; set;}
+					
+						/// <summary>
+				/// The Meta Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 8097066d-26c3-44b9-8527-551a2cbb5a84</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentRootPageConstants.Meta_TitleFieldName)]
+				public virtual string Meta_Title  {get; set;}
+					
+						/// <summary>
+				/// The Robots Follow this page field.
+				/// <para>Search bots to follow the links in the page or not, If set bots will follow the links !!</para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: daad817a-930f-4dae-be58-687bb95d6ed9</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentRootPageConstants.Robots_Follow_This_PageFieldName)]
+				public virtual bool Robots_Follow_This_Page  {get; set;}
+					
+						/// <summary>
+				/// The Robots Index this page field.
+				/// <para>Search engine to index this page,If set this page will be indexed by search engines lilke google etc !!</para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 88d50871-3afa-4e05-ac0e-9fcb7a41353e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentRootPageConstants.Robots_Index_This_PageFieldName)]
+				public virtual bool Robots_Index_This_Page  {get; set;}
+					
+						/// <summary>
+				/// The Canonical Tags field.
+				/// <para>Add comma separated canonical tags. Ex:  (https//www.ecm.com/en/login, https//www.ecm.com/en/loginpage)</para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: 074b8d28-6f24-4dcc-812f-14e14f67f1e8</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentRootPageConstants.Canonical_TagsFieldName)]
+				public virtual string Canonical_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Hreflang Tags field.
+				/// <para>Add comma separated hreflang tags. Ex:  languagecode:Page url  (en:https//www.ecm.com/en/login,ar:https//www.ecm.com/ar/login)</para>
+				/// <para>Field Type: Multi-Line Text</para>		
+				/// <para>Field ID: 26c53039-4914-4ec5-bb84-ad910faa4086</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentRootPageConstants.Hreflang_TagsFieldName)]
+				public virtual string Hreflang_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentRootPageConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
+					
+						/// <summary>
+				/// The twiiter title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: e4395580-b216-41e6-ad1f-8ec542de11d6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentRootPageConstants.Twiiter_TitleFieldName)]
+				public virtual string Twiiter_Title  {get; set;}
+					
+						/// <summary>
+				/// The twitter card field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6466bde7-35cf-4e65-bda5-132e5cf0a9eb</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentRootPageConstants.Twitter_CardFieldName)]
+				public virtual string Twitter_Card  {get; set;}
+					
+						/// <summary>
+				/// The twitter creator field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 1078ff0c-7c59-4fd4-b4d1-1f693848928f</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentRootPageConstants.Twitter_CreatorFieldName)]
+				public virtual string Twitter_Creator  {get; set;}
+					
+						/// <summary>
+				/// The twitter description field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: ce1be2a8-5e5c-49d9-b9a9-63834309b252</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentRootPageConstants.Twitter_DescriptionFieldName)]
+				public virtual string Twitter_Description  {get; set;}
+					
+						/// <summary>
+				/// The twitter image field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: bebb8543-e760-4bbe-9a9e-e7eaaedd101e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentRootPageConstants.Twitter_ImageFieldName)]
+				public virtual string Twitter_Image  {get; set;}
+					
+						/// <summary>
+				/// The twitter site field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 1827467a-8817-4a16-b39c-53503b35d15e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_GenericContentRootPageConstants.Twitter_SiteFieldName)]
+				public virtual string Twitter_Site  {get; set;}
 					
 						/// <summary>
 				/// The Include in Left Navigation field.
@@ -19700,7 +21882,7 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Content
 					
 						/// <summary>
 				/// The Is Left Navigation Root Clickable field.
-				/// <para>In Left Navigation the this Item Name will not be clickable by default and it is only clickable for "Mediacenter", Selecting the checkbox then this page will be clickable in Left navigation</para>
+				/// <para>Add this item as clickable in Left navigation</para>
 				/// <para>Field Type: Checkbox</para>		
 				/// <para>Field ID: 6b80f5a4-7b14-4ce7-a140-187e88fd8e82</para>
 				/// <para>Custom Data: </para>
@@ -19930,6 +22112,16 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 	public partial interface I_PageBase : IGlassBase 
 	{
 								/// <summary>
+					/// The Browser Title field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_PageBaseConstants.Browser_TitleFieldName)]
+					string Browser_Title  {get; set;}
+			
+								/// <summary>
 					/// The Title field.
 					/// <para></para>
 					/// <para>Field Type: Single-Line Text</para>		
@@ -20100,6 +22292,16 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 					string Hreflang_Tags  {get; set;}
 			
 								/// <summary>
+					/// The Include in Sitemap XML field.
+					/// <para></para>
+					/// <para>Field Type: Checkbox</para>		
+					/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_PageBaseConstants.Include_In_Sitemap_XMLFieldName)]
+					bool Include_In_Sitemap_XML  {get; set;}
+			
+								/// <summary>
 					/// The twiiter title field.
 					/// <para></para>
 					/// <para>Field Type: Single-Line Text</para>		
@@ -20169,6 +22371,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 			public const string TemplateName = "_PageBase";
 
 					
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
+			
+					
 			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
 			public const string TitleFieldName = "Title";
 			
@@ -20237,6 +22443,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 			public const string Hreflang_TagsFieldName = "Hreflang Tags";
 			
 					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
+			
+					
 			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
 			public const string Twiiter_TitleFieldName = "twiiter title";
 			
@@ -20276,6 +22486,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 	public partial class _PageBase  : GlassBase, I_PageBase 
 	{
 	   
+						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_PageBaseConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
+					
 						/// <summary>
 				/// The Title field.
 				/// <para></para>
@@ -20462,6 +22683,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Base
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(I_PageBaseConstants.Hreflang_TagsFieldName)]
 				public virtual string Hreflang_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_PageBaseConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
 					
 						/// <summary>
 				/// The twiiter title field.
@@ -21136,6 +23368,72 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Feature.ECM.Listing
 			
 	}
 }
+namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Foundation.ECM.Content_Types
+{
+
+
+ 	/// <summary>
+	/// I_Sitemap Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Content Types/_Sitemap</para>	
+	/// <para>ID: ed6ad492-144c-4158-9230-f0a63a6199ab</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_SitemapConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	public partial interface I_Sitemap : IGlassBase 
+	{
+								/// <summary>
+					/// The Include in Sitemap XML field.
+					/// <para></para>
+					/// <para>Field Type: Checkbox</para>		
+					/// <para>Field ID: fed788ba-c3ed-416d-85a4-83ebda58e056</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(I_SitemapConstants.Include_In_Sitemap_XMLFieldName)]
+					bool Include_In_Sitemap_XML  {get; set;}
+			
+				}
+
+
+	public static partial class I_SitemapConstants{
+
+			public const string TemplateIdString = "ed6ad492-144c-4158-9230-f0a63a6199ab";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "_Sitemap";
+
+					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("fed788ba-c3ed-416d-85a4-83ebda58e056");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// _Sitemap
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Foundation/ECM/Content Types/_Sitemap</para>	
+	/// <para>ID: ed6ad492-144c-4158-9230-f0a63a6199ab</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=I_SitemapConstants.TemplateIdString,AutoMap=true )] //, Cachable = true
+	 [Service(typeof(I_Sitemap))]
+	public partial class _Sitemap  : GlassBase, I_Sitemap 
+	{
+	   
+						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: fed788ba-c3ed-416d-85a4-83ebda58e056</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(I_SitemapConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
+					
+			
+	}
+}
 namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.Content_Types
 {
 
@@ -21745,6 +24043,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 			public const string IntroductionFieldName = "Introduction";
 			
 					
+			public static readonly ID Browser_TitleFieldId = new ID("6d6eee6b-edcc-4941-8ba3-4199566ad03e");
+			public const string Browser_TitleFieldName = "Browser Title";
+			
+					
 			public static readonly ID TitleFieldId = new ID("c4136f1d-43ec-45cb-8e1b-5a1993d16157");
 			public const string TitleFieldName = "Title";
 			
@@ -21811,6 +24113,10 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 					
 			public static readonly ID Hreflang_TagsFieldId = new ID("26c53039-4914-4ec5-bb84-ad910faa4086");
 			public const string Hreflang_TagsFieldName = "Hreflang Tags";
+			
+					
+			public static readonly ID Include_In_Sitemap_XMLFieldId = new ID("4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6");
+			public const string Include_In_Sitemap_XMLFieldName = "Include in Sitemap XML";
 			
 					
 			public static readonly ID Twiiter_TitleFieldId = new ID("e4395580-b216-41e6-ad1f-8ec542de11d6");
@@ -21895,6 +24201,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IVideoAlbum_With_Filters_FolderConstants.IntroductionFieldName)]
 				public virtual string Introduction  {get; set;}
+					
+						/// <summary>
+				/// The Browser Title field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 6d6eee6b-edcc-4941-8ba3-4199566ad03e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideoAlbum_With_Filters_FolderConstants.Browser_TitleFieldName)]
+				public virtual string Browser_Title  {get; set;}
 					
 						/// <summary>
 				/// The Title field.
@@ -22082,6 +24399,17 @@ namespace EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Common.
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IVideoAlbum_With_Filters_FolderConstants.Hreflang_TagsFieldName)]
 				public virtual string Hreflang_Tags  {get; set;}
+					
+						/// <summary>
+				/// The Include in Sitemap XML field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 4eecccc0-c96c-4ee6-b865-8f1dcc0bb1c6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IVideoAlbum_With_Filters_FolderConstants.Include_In_Sitemap_XMLFieldName)]
+				public virtual bool Include_In_Sitemap_XML  {get; set;}
 					
 						/// <summary>
 				/// The twiiter title field.

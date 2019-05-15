@@ -12,20 +12,25 @@
         parentItemId = Model.Parent.Id.ToString();
 
     }
+    string Year = String.Empty;
+    if (Model.ContextItem.TemplateID.Equals(Sitecore.Data.ID.Parse(CommonConstants.VideoAlbumWithFiltersYearFolderTemplateID)))
+    {
+        Year = Model.ContextItem.Name;
+    }
 }
 <div class="gallery-section">
     <div class="section-header">
         <h1 class="heading">@Html.Glass().Editable(Model, x => x.Title)</h1>
         <p>@Html.Glass().Editable(Model, x => x.Introduction)</p>
     </div>
-    <div id="templateInitializor" data-service-url="/api/sitecore/listing/GetListingJSON" data-page-size="@Model.No_Of_Records" data-item-id="@Model.Id" data-listParentItemId="@parentItemId"  data-listItemTemplateId="@SearchHelper.FormatGuid(CommonConstants.VideoItemTemplateID)" data-error-message="@Model.Error_Message" data-show-filters="@(ViewBag.Showfilter !=null ?System.Convert.ToBoolean(ViewBag.Showfilter):false)">
+    <div id="templateInitializor" data-service-url="/api/sitecore/listing/GetListingJSON" data-ItemYearName="@Year" data-page-size="@Model.No_Of_Records" data-item-id="@Model.Id" data-listParentItemId="@parentItemId"  data-listItemTemplateId="@SearchHelper.FormatGuid(CommonConstants.VideoItemTemplateID)" data-error-message="@Model.Error_Message" data-show-filters="@(ViewBag.Showfilter !=null ?System.Convert.ToBoolean(ViewBag.Showfilter):false)">
         <div class="selectFilters"></div>
         <script id="filter-template" type="text/x-handlebars-template">
             <div class="row">
                 {{#each this}}
                 <div class="col-sm-6">
                     <div class="selectWrap pb-5">
-                        <select name="" id="" class="js-example-basic-single imageGallery_year filters-support" data-label="{{this.filterLabel}}">
+                        <select name="{{this.filterLabel}}" id="{{this.filterLabel}}" class="js-example-basic-single imageGallery_year filters-support" data-label="{{this.filterLabel}}">
                             {{#each this.filterValues}}
                             {{#if this}}
                             <option value="{{id}}">{{label}}</option>

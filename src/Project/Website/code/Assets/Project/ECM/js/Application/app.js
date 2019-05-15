@@ -5,15 +5,15 @@ var getData = (function ($) {
 
     var spinner = '<div class="spinner"><div class="lds-ripple"><div></div><div></div></div></div>';
 
-    var _fancyboxImage = function() {
+    var _fancyboxImage = function () {
         if ($('.fancyimages').length) {
             $(".fancyimages").fancybox({
-                openEffect	: "none",
-                closeEffect	: "none",
-        
-                helpers : {
-                    title : {
-                        type : 'inside'
+                openEffect: "none",
+                closeEffect: "none",
+
+                helpers: {
+                    title: {
+                        type: 'inside'
                     }
                 }
             });
@@ -21,14 +21,14 @@ var getData = (function ($) {
 
         if ($('.various').length) {
             $(".various").fancybox({
-                fitToView:!1,
-                autoSize:!1,
-                closeClick:!1,
-                openEffect:"none",
-                closeEffect:"none",
-                width:"100%",
-                height:"100%",
-                wrapCSS:"fullscreen-overlay"
+                fitToView: !1,
+                autoSize: !1,
+                closeClick: !1,
+                openEffect: "none",
+                closeEffect: "none",
+                width: "100%",
+                height: "100%",
+                wrapCSS: "fullscreen-overlay"
             });
         }
 
@@ -77,20 +77,20 @@ var getData = (function ($) {
                 })
 
 
-            } else {}
+            } else { }
         })
     }
-    
+
     var _results = function (url, pagination, dataparam) {
         var loadID = ".loadmore",
             tempDiv = "#filter-template",
             galleryTemp = "#gallery-template",
             errorTemp = "#error-template",
             resultDiv = "#filter-template-result",
-			errMessage = $('#templateInitializor').data('error-message'),
+            errMessage = $('#templateInitializor').data('error-message'),
             pageNumber = $('.loadmore').attr('data-pagenumber');
         var dataPageSize = $('#templateInitializor').data('page-size');
-        
+
         $("#filter-template-result").html(spinner);
         pageNumber = pagination ? pagination : pageNumber;
         $.ajax({
@@ -99,45 +99,43 @@ var getData = (function ($) {
             data: JSON.stringify(dataparam),
             contentType: "application/json",
             dataType: "json",
-            success:function (data) {
+            success: function (data) {
                 if (data.results.results != null && data.results.results.length > 0) {
                     var source2 = $(galleryTemp).html(),
-                    template2 = Handlebars.compile(source2);
-                    
+                        template2 = Handlebars.compile(source2);
+
                     $('.spinner').remove();
-                    for (var j = 0; dataPageSize > j && j <= data.results.Totalcount && j < data.results.results.length; j++){
+                    for (var j = 0; dataPageSize > j && j <= data.results.Totalcount && j < data.results.results.length; j++) {
                         $(resultDiv).append(template2(data.results.results[j]));
                     }
-                    
+
                     if (data.results != null && (dataPageSize * (parseInt(pageNumber) + 1)) < data.results.Totalcount) {
-                        $(".loadmore").css({'display': 'inline-block'});
+                        $(".loadmore").css({ 'display': 'inline-block' });
                     } else {
                         $(".loadmore").hide();
                     }
                     _fancyboxImage();
-                   
                 } else {
                     $('.spinner').remove();
                     var source = $(tempDiv).html(),
                         template = Handlebars.compile(source),
                         html = template(data.filters);
-                        if (!$('.select2').length) {
-                            $('.selectFilters').html(html);
-                        }
+                    if (!$('.select2').length) {
+                        $('.selectFilters').html(html);
+                    }
 
-                        if ($('.selectFilters .js-example-basic-single').length) {
-                            $('.js-example-basic-single').select2();
-                        }
+                    if ($('.selectFilters .js-example-basic-single').length) {
+                        $('.js-example-basic-single').select2();
+                    }
 
-                        var source = $(errorTemp).html(),
+                    var source = $(errorTemp).html(),
                         template = Handlebars.compile(source),
                         html = template(data.filters);
-                        $(resultDiv).append(template(errMessage));
+                    $(resultDiv).append(template(errMessage));
                     $(".loadmore").hide();
-                 
                 }
             },
-            error: function(error){
+            error: function (error) {
                 // console.log(error);
                 $(".loadmore").hide();
             }
@@ -152,7 +150,7 @@ var getData = (function ($) {
             resultDiv = "#filter-template-result",
             pageNumber = $('.loadmore').attr('data-pagenumber');
         var dataPageSize = $('#templateInitializor').data('page-size');
-        
+
         $("#filter-template-result").append(spinner);
         pageNumber = pagination ? pagination : pageNumber;
         $.ajax({
@@ -161,46 +159,44 @@ var getData = (function ($) {
             data: JSON.stringify(dataparam),
             contentType: "application/json",
             dataType: "json",
-            success:function (data) {
+            success: function (data) {
                 if (data.results.results != null && data.results.results.length > 0) {
                     var source2 = $(galleryTemp).html(),
-                    template2 = Handlebars.compile(source2);
-                    
+                        template2 = Handlebars.compile(source2);
+
                     $('.spinner').remove();
-                    
-                    for (var j = 0; j < data.results.Totalcount && j < data.results.results.length; j++){
+
+                    for (var j = 0; j < data.results.Totalcount && j < data.results.results.length; j++) {
                         $(resultDiv).append(template2(data.results.results[j]));
                     }
                     _fancyboxImage();
                     if (data.results != null && (dataPageSize * (parseInt(pageNumber) + 1)) < data.results.Totalcount) {
-                        $(".loadmore").css({'display': 'inline-block'});
+                        $(".loadmore").css({ 'display': 'inline-block' });
                     } else {
                         $(".loadmore").hide();
                     }
-                    
-                
+
                 } else {
                     $('.spinner').remove();
                     var source = $(tempDiv).html(),
                         template = Handlebars.compile(source),
                         html = template(data.filters);
-                        if (!$('.select2').length) {
-                            $('.selectFilters').html(html);
-                        }
+                    if (!$('.select2').length) {
+                        $('.selectFilters').html(html);
+                    }
 
-                        if ($('.selectFilters .js-example-basic-single').length) {
-                            $('.js-example-basic-single').select2();
-                        }
+                    if ($('.selectFilters .js-example-basic-single').length) {
+                        $('.js-example-basic-single').select2();
+                    }
 
-                        var source = $(errorTemp).html(),
+                    var source = $(errorTemp).html(),
                         template = Handlebars.compile(source),
                         html = template(data.filters);
-                        $(resultDiv).append(template(data.ErrorMessage));
+                    $(resultDiv).append(template(data.ErrorMessage));
                     $(".loadmore").hide();
-                   
                 }
             },
-            error: function(error){
+            error: function (error) {
                 // console.log(error);
                 $(".loadmore").hide();
             }
@@ -216,59 +212,21 @@ var getData = (function ($) {
             errorTemp = "#error-template",
             resultDiv = "#filter-template-result",
             dataPageSize = $('#templateInitializor').data('page-size'),
-			errMessage = $('#templateInitializor').data('error-message'),
+            errMessage = $('#templateInitializor').data('error-message'),
             pageNumber = $('.loadmore').data('pagenumber');
-            $("#filter-template-result").html(spinner);
+        $("#filter-template-result").html(spinner);
         $.ajax({
-                type: "POST",
-                url: url,
-                data: JSON.stringify(dataparam),
-                contentType: "application/json",
-                dataType: "json",
-                success: function (data) {
-                    if (data.results.results != null && data.results.results.length > 0) {
-                        if ($(tempDiv).length) {
-                            var source = $(tempDiv).html(),
+            type: "POST",
+            url: url,
+            data: JSON.stringify(dataparam),
+            contentType: "application/json",
+            dataType: "json",
+            success: function (data) {
+                if (data.results.results != null && data.results.results.length > 0) {
+                    if ($(tempDiv).length) {
+                        var source = $(tempDiv).html(),
                             template = Handlebars.compile(source),
                             html = template(data.filters);
-                            if (!$('.select2').length) {
-                                $('.selectFilters').html(html);
-                            }
-
-                            if ($('.selectFilters .js-example-basic-single').length) {
-                                $('.js-example-basic-single').select2();
-                            }
-                        }
-                       
-                        var source2 = $(galleryTemp).html(),
-                            template2 = Handlebars.compile(source2);
-                            $('.spinner').remove();
-                            
-                            for (var j = 0; j < data.results.Totalcount && j < dataPageSize && j < data.results.results.length; j++){
-                                $(resultDiv).append(template2(data.results.results[j]));
-                            }
-                            
-                            if (data.results != null && (dataPageSize * (pageNumber + 1)) < data.results.Totalcount) {
-                                $(".loadmore").css({'display': 'inline-block'});
-                                // $(".loadmore").attr({ "data-pagenumber": 1 });
-                                $(".loadmore").attr({ "data-count": data.results.Totalcount });
-                            } else {
-                                $(".loadmore").hide();
-                            }
-                            filterOnChange();
-                            _fancyboxImage();
-
-                        if ($('.search-section').length) {
-                            var source3 = $(sectionTitleTemp).html(),
-                            template3 = Handlebars.compile(source3);
-                            $('.section-header').append(template3(data.results.Totalcount));
-                        }
-                        
-                    } else {
-                        $('.spinner').remove();
-                        var source = $(tempDiv).html(),
-                        template = Handlebars.compile(source),
-                        html = template(data.filters);
                         if (!$('.select2').length) {
                             $('.selectFilters').html(html);
                         }
@@ -276,20 +234,64 @@ var getData = (function ($) {
                         if ($('.selectFilters .js-example-basic-single').length) {
                             $('.js-example-basic-single').select2();
                         }
-
-                        var source = $(errorTemp).html(),
-                        template = Handlebars.compile(source),
-                        html = template(data.filters);						
-                        $(resultDiv).append(template(errMessage));
-                        $(".loadmore").hide();
-                        filterOnChange();
-                       
                     }
-                },
-                error: function(error){
-                    // console.log(error);
+
+                    var source2 = $(galleryTemp).html(),
+                        template2 = Handlebars.compile(source2);
+                    $('.spinner').remove();
+
+                    for (var j = 0; j < data.results.Totalcount && j < dataPageSize && j < data.results.results.length; j++) {
+                        $(resultDiv).append(template2(data.results.results[j]));
+                    }
+
+                    if (data.results != null && (dataPageSize * (pageNumber + 1)) < data.results.Totalcount) {
+                        $(".loadmore").css({ 'display': 'inline-block' });
+                        // $(".loadmore").attr({ "data-pagenumber": 1 });
+                        $(".loadmore").attr({ "data-count": data.results.Totalcount });
+                    } else {
+                        $(".loadmore").hide();
+                    }
+                    filterOnChange();
+                    _fancyboxImage();
+
+                    if ($('.search-section').length) {
+                        var source3 = $(sectionTitleTemp).html(),
+                            template3 = Handlebars.compile(source3);
+                        $('.section-header').append(template3(data.results.Totalcount));
+                    }
+                    if (pagenumber == 0 && $('#templateInitializor').data('itemyearname') != "") {
+                        $('#select2-customyear-container').text($('#templateInitializor').data('itemyearname'));
+                    }
+
+                } else {
+                    $('.spinner').remove();
+                    var source = $(tempDiv).html(),
+                        template = Handlebars.compile(source),
+                        html = template(data.filters);
+                    if (!$('.select2').length) {
+                        $('.selectFilters').html(html);
+                    }
+
+                    if ($('.selectFilters .js-example-basic-single').length) {
+                        $('.js-example-basic-single').select2();
+                    }
+
+                    var source = $(errorTemp).html(),
+                        template = Handlebars.compile(source),
+                        html = template(data.filters);
+                    $(resultDiv).append(template(errMessage));
                     $(".loadmore").hide();
+                    filterOnChange();
+
+                    if (pagenumber == 0 && $('#templateInitializor').data('itemyearname') != "") {
+                        $('#select2-customyear-container').text($('#templateInitializor').data('itemyearname'));
+                    }
                 }
+            },
+            error: function (error) {
+                // console.log(error);
+                $(".loadmore").hide();
+            }
         });
     }
 

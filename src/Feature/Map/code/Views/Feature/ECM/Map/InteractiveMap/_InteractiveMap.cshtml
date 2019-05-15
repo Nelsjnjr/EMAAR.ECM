@@ -1,5 +1,6 @@
 ﻿@model EMAAR.ECM.Foundation.ORM.Models.sitecore.templates.Project.ECM.Content_Types.Interactive_Map.IInteractive_Map
 @using Sitecore.Framework.Fields.Extensions
+@using EMAAR.ECM.Foundation.SitecoreExtensions
 @using Glass.Mapper.Sc.Web.Mvc
 <!-- Interactive map starts here -->
 <section id="map-section" class="map-section viewport-section">
@@ -8,13 +9,13 @@
             <h2 class="heading wow fadeInUp"> @Html.Glass().Editable(Model, x => x.Title)</h2>
         </div>
     </div>
-    @using (Html.BeginEditFrame(Model.FullPath, "FullBannerImage", "Edit Background Image"))
+    @using (Html.BeginEditFrame(Model.FullPath, CommonConstants.FullBannerImage, CommonConstants.WebEditExperinceEditorImageEditingText))
     {
         <div class="map-section-inner">
             <div class="map-section-frame">
-             
-                    @Html.Sitecore().AdvancedImageField("Image", Model.ContextItem, 0,0, "image description", "mapMainimage", false)
-             
+
+                @Html.Sitecore().AdvancedImageField(CommonConstants.Image, Model.ContextItem, 0, 0, "image description", "mapMainimage", false)
+
                 @{
                     float delay = 0.3f;
                 }

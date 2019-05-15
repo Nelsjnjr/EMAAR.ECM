@@ -13,7 +13,7 @@ created: 20190426T111330Z
 ----version----
 language: en
 version: 1
-revision: cf7a505e-bc7d-444a-b141-c5265aad32a6
+revision: d4e0c300-d7f2-4037-920b-0e8f158f962c
 
 ----field----
 field: {0CBA5220-AA8B-4F75-BCD6-68000B38D8C1}
@@ -22,6 +22,20 @@ key: introduction
 content-length: 35
 
 News about Downtown Dubai Community
+----field----
+field: {6D6EEE6B-EDCC-4941-8BA3-4199566AD03E}
+name: Browser Title
+key: browser title
+content-length: 0
+
+
+----field----
+field: {C4136F1D-43EC-45CB-8E1B-5A1993D16157}
+name: Title
+key: title
+content-length: 9
+
+NEws 2019
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -35,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cf7a505e-bc7d-444a-b141-c5265aad32a6
+d4e0c300-d7f2-4037-920b-0e8f158f962c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190513T122644Z
+20190515T063915Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

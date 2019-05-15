@@ -18,9 +18,9 @@
          Model.NewsItems.results.results != null && Model.NewsItems.results.results.Any())
     {
         <div class="media-header">
-            <h3 class="heading">     @Sitecore.Globalization.Translate.Text("news")</h3>
+            <h3 class="heading">     @Sitecore.Globalization.Translate.Text(CommonConstants.News)</h3>
             <a href="@(Model.NewsListingPageItem !=null?Sitecore.Links.LinkManager.GetItemUrl(Model.NewsListingPageItem, options):String.Empty)" class="link">
-                @Sitecore.Globalization.Translate.Text("viewall")
+                @Sitecore.Globalization.Translate.Text(CommonConstants.ViewAll)
                 <i>
                     <img src="~/Assets/Project/ECM/images/icon/btn-arrow.svg" alt="arrow">
                 </i>
@@ -35,7 +35,7 @@
                         <a href="@albumDetails.pageUrl" class="news-item-link">
                             <div class="imgholder">
                                 <span class="date">@albumDetails.date</span>
-                                <img src="@(!String.IsNullOrEmpty(albumDetails.thumbnailurl)?albumDetails.thumbnailurl:Model.Mediacenter.No_Image.Src)" alt="Downloads-thumbnail" class="img">
+                                <img src="@albumDetails.thumbnailurl" alt="Downloads-thumbnail" class="img">
                             </div>
                             <div class="title">@albumDetails.title</div>
                         </a>
@@ -52,9 +52,9 @@
          Model.EventsItems.results.results != null && Model.EventsItems.results.results.Any())
     {
         <div class="media-header">
-            <h3 class="heading">@Sitecore.Globalization.Translate.Text("events")</h3>
+            <h3 class="heading">@Sitecore.Globalization.Translate.Text(CommonConstants.Events)</h3>
             <a href="@(Model.EventsListingPageItem !=null?Sitecore.Links.LinkManager.GetItemUrl(Model.EventsListingPageItem, options):String.Empty)" class="link">
-                @Sitecore.Globalization.Translate.Text("viewall")
+                @Sitecore.Globalization.Translate.Text(CommonConstants.ViewAll)
                 <i>
                     <img src="~/Assets/Project/ECM/images/icon/btn-arrow.svg" alt="arrow">
                 </i>
@@ -103,9 +103,9 @@
     Model.DownloadsItems.results.results != null && Model.DownloadsItems.results.results.Any())
     {
         <div class="media-header">
-            <h3 class="heading">@Sitecore.Globalization.Translate.Text("downloads")</h3>
+            <h3 class="heading">@Sitecore.Globalization.Translate.Text(CommonConstants.Downloads)</h3>
             <a href="@(Model.DownloadPageItem != null ? Sitecore.Links.LinkManager.GetItemUrl(Model.DownloadPageItem, options) : String.Empty)" class="link">
-                @Sitecore.Globalization.Translate.Text("viewall")
+                @Sitecore.Globalization.Translate.Text(CommonConstants.ViewAll)
                 <i>
                     <img src="~/Assets/Project/ECM/images/icon/btn-arrow.svg" alt="arrow">
                 </i>
@@ -119,7 +119,7 @@
                     <div class="download-item">
                         <div class="imgholder">
                             <span class="pdf"><img src="~/Assets/Project/ECM/images/icon/Pdf.svg" alt="pdf icon"></span>
-                            <img src="@(!String.IsNullOrEmpty(albumDetails.thumbnailurl) ? albumDetails.thumbnailurl : Model.Mediacenter.No_Image.Src)" alt="Downloads-thumbnail"
+                            <img src="@albumDetails.thumbnailurl" alt="Downloads-thumbnail"
                                  class="img">
                             <div class="hoverHolder">
                                 <a href="@albumDetails.pageUrl" class="link">
@@ -127,14 +127,14 @@
                                         <img src="~/Assets/Project/ECM/images/icon/download.svg" class="svg"
                                              alt="download icon">
                                     </i>
-                                    <div>@Sitecore.Globalization.Translate.Text("download")</div>
+                                    <div>@Sitecore.Globalization.Translate.Text(CommonConstants.Download)</div>
                                 </a>
                                 <a href="@albumDetails.externalURL" target="_blank" class="link">
                                     <i class="icon">
                                         <img src="~/Assets/Project/ECM/images/icon/external.svg" class="svg"
                                              alt="external icon">
                                     </i>
-                                    <div>@Sitecore.Globalization.Translate.Text("ReadOnline")</div>
+                                    <div>@Sitecore.Globalization.Translate.Text(CommonConstants.ReadOnline)</div>
                                 </a>
                             </div>
                         </div>
@@ -152,9 +152,9 @@
                Model.ImageAlbumItems.results.results != null && Model.ImageAlbumItems.results.results.Any())
     {
         <div class="media-header">
-            <h3 class="heading">@Sitecore.Globalization.Translate.Text("imagegallery")</h3>
+            <h3 class="heading">@Sitecore.Globalization.Translate.Text(CommonConstants.ImageGallery)</h3>
             <a href="@(Model.ImageGalleryItem != null ? Sitecore.Links.LinkManager.GetItemUrl(Model.ImageGalleryItem, options) : String.Empty)" class="link">
-                @Sitecore.Globalization.Translate.Text("viewall")
+                @Sitecore.Globalization.Translate.Text(CommonConstants.ViewAll)
                 <i>
                     <img src="~/Assets/Project/ECM/images/icon/btn-arrow.svg" alt="arrow">
                 </i>
@@ -171,7 +171,7 @@
                         <a href="@(Model.IsImageAlbum == true ? albumDetails.imageUrl : albumDetails.pageUrl)" rel="1"
                            class="fancyimages gallery-item-link"
                            title="@albumDetails.title">
-                            <img src="@(!String.IsNullOrEmpty(albumDetails.thumbnailurl) ? albumDetails.thumbnailurl : Model.Mediacenter.No_Image.Src)" alt="gallery1" class="img">
+                            <img src="@albumDetails.thumbnailurl" alt="gallery1" class="img">
                             <div class="title">@albumDetails.title</div>
                         </a>
 
@@ -189,9 +189,9 @@
             Model.VideoAlbumItems.results.results != null && Model.VideoAlbumItems.results.results.Any())
     {
         <div class="media-header">
-            <h3 class="heading">@Sitecore.Globalization.Translate.Text("videogallery")</h3>
+            <h3 class="heading">@Sitecore.Globalization.Translate.Text(CommonConstants.VideoGallery)</h3>
             <a href="@(Model.VideoGalleryItem != null ? Sitecore.Links.LinkManager.GetItemUrl(Model.VideoGalleryItem, options) : String.Empty)" class="link">
-                @Sitecore.Globalization.Translate.Text("viewall")
+                @Sitecore.Globalization.Translate.Text(CommonConstants.ViewAll)
                 <i>
                     <img src="~/Assets/Project/ECM/images/icon/btn-arrow.svg" alt="arrow">
                 </i>
@@ -206,7 +206,7 @@
                     <div class="gallery-item">
                         <a href="@albumDetails.pageUrl"
                            class="@( Model.IsVideoAlbum == true ? "fancybox.iframe gallery-item-link various" : "fancyimages gallery-item-link")">
-                            <img src="@(!String.IsNullOrEmpty(albumDetails.thumbnailurl) ? albumDetails.thumbnailurl : Model.Mediacenter.No_Image.Src)" alt="video" class="img">
+                            <img src="@albumDetails.thumbnailurl" alt="video" class="img">
                             @{ if (Model.IsVideoAlbum)
                                 {
                                     <img src="~/Assets/Project/ECM/images/icon/play-button.svg" alt="playicon" class="playicon">

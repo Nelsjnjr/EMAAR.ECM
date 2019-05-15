@@ -25,12 +25,12 @@
                                 if (level1.Navigation_Link != null)
                                 {
                                     //Checking Url referened item and getting its Title if Sitecore item,else displaying navigation item Name
-                                    if (level1.Navigation_Link.Type.ToString() == "Internal")
+                                    if (level1.Navigation_Link.Type.ToString() == CommonConstants.Internal)
                                     {
                                         var level1ReferencedItem = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(level1.Navigation_Link.TargetId));
                                         if (level1ReferencedItem != null)
                                         {
-                                            <h2 class="footer-title upperCase"> @Html.Sitecore().Field("Title", level1ReferencedItem)</h2>
+                                            <h2 class="footer-title upperCase"> @Html.Sitecore().Field(CommonConstants.Title, level1ReferencedItem)</h2>
                                         }
                                     }
                                     else //If in case of external url getting Navigation item Title
@@ -58,12 +58,12 @@
                                                     @using (Html.Glass().BeginRenderLink(level2, x => x.Navigation_Link, isEditable: true))
                                                     {
                                                         //Checking Url referened item and getting its Title if Sitecore item,else displaying navigation item Name
-                                                        if (level2.Navigation_Link.Type.ToString() == "Internal")
+                                                        if (level2.Navigation_Link.Type.ToString() == CommonConstants.Internal)
                                                         {
                                                             var level2ReferencedItem = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(level2.Navigation_Link.TargetId));
                                                             if (level2ReferencedItem != null)
                                                             {
-                                                                @Html.Sitecore().Field("Title", level2ReferencedItem)
+                                                                @Html.Sitecore().Field(CommonConstants.Title, level2ReferencedItem)
                                                             }
                                                         }
                                                         else //If in case of external url getting Navigation item Title
@@ -136,7 +136,7 @@
                     <li>
                         @using (Html.Glass().BeginRenderLink(Model.SiteRoot, x => x.Sitemap_Page, isEditable: true))
                         {
-                            @Sitecore.Globalization.Translate.Text("sitemap")
+                            @Sitecore.Globalization.Translate.Text(CommonConstants.Sitemap)
                         }
                     </li>
                 }

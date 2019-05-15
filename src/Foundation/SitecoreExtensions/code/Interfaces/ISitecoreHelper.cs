@@ -74,6 +74,7 @@ namespace EMAAR.ECM.Foundation.SitecoreExtensions.Interfaces
         /// Sitemap Datasource from Header navigation datasource
         /// </summary>
         IHeader Sitemap { get; }
+      
         #endregion
 
     }

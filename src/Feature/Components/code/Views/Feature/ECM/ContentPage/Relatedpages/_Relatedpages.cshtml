@@ -18,7 +18,7 @@
                             <div class="explore-item-img">
                                 @if (relatedPages != null && relatedPages.Image != null)
                                 {
-                                    @Html.Sitecore().AdvancedImageField("Image", relatedPages.ContextItem, 255, 350, "image", "img-fluid", false)                                
+                                    @Html.Sitecore().AdvancedImageField(CommonConstants.Image, relatedPages.ContextItem, 255, 350, "image", "img-fluid", false)                                
 
                                 }
                                 <h3 class="title">@Html.Glass().Editable(relatedPages, x => x.Title)</h3>

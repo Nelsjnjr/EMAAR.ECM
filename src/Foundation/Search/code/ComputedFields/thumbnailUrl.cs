@@ -4,6 +4,7 @@ using EMAAR.ECM.Foundation.SitecoreExtensions;
 using EMAAR.ECM.Foundation.SitecoreExtensions.Settings;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.ComputedFields;
+using Sitecore.Data;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Framework.Helper;
@@ -60,11 +61,19 @@ namespace EMAAR.ECM.Foundation.Search.ComputedFields
                         //For news thumbnail
                         case var templateId when templateId.Equals(SearchHelper.FormatGuid(CommonConstants.NewsTemplateID)):
                             imageField = item.Fields["Banner"];
+                            if(imageField.MediaID.IsNull)
+                            {
+                                imageField = item.Database.GetItem(ID.Parse(CommonConstants.NoImageItemID)).Fields[CommonConstants.Image];
+                            }
                             pixels = SitecoreSettings.NewsThumnailPixel.ToLower().Split('x');
                             return AdvancedImageHelper.GetImageFieldUrl(imageField, System.Convert.ToInt32(pixels[0]), System.Convert.ToInt32(pixels[1])).Replace("/sitecore/shell", "");
                         //For downloads thumbnail
                         case var templateId when templateId.Equals(SearchHelper.FormatGuid(CommonConstants.DownloadItemTemplateID)):
                             imageField = item.Fields["Image"];
+                            if (imageField.MediaID.IsNull)
+                            {
+                                imageField = item.Database.GetItem(ID.Parse(CommonConstants.NoImageItemID)).Fields[CommonConstants.Image];
+                            }
                             pixels = SitecoreSettings.DownloadThumnailPixel.ToLower().Split('x');
                             return AdvancedImageHelper.GetImageFieldUrl(imageField, System.Convert.ToInt32(pixels[0]), System.Convert.ToInt32(pixels[1])).Replace("/sitecore/shell", "");
                         //For image and video album thumbnail
@@ -72,6 +81,10 @@ namespace EMAAR.ECM.Foundation.Search.ComputedFields
                             templateId.Equals(SearchHelper.FormatGuid(CommonConstants.VideoAlbumWithFiltersTemplateID)) ||
                             templateId.Equals(SearchHelper.FormatGuid(CommonConstants.VideoAlbumWithoutFiltersTemplateID)):
                             imageField = item.Fields["ThumbnailImage"];
+                            if (imageField.MediaID.IsNull)
+                            {
+                                imageField = item.Database.GetItem(ID.Parse(CommonConstants.NoImageItemID)).Fields[CommonConstants.Image];
+                            }
                             pixels = SitecoreSettings.AlbumThumnailPixel.ToLower().Split('x');
                             return AdvancedImageHelper.GetImageFieldUrl(imageField, System.Convert.ToInt32(pixels[0]), System.Convert.ToInt32(pixels[1])).Replace("/sitecore/shell", "");
                         // This is for Video item and image item thumbnail
